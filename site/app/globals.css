@@ -46,6 +46,9 @@ nav { display: flex; align-items: center; gap: 28px; font-size: 13px; }
 .monthly-item p { margin: 0; color: #aeb1a8; font-size: 12px; line-height: 1.65; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .monthly-arrow { color: #777b72; font-size: 20px; transition: color .2s, transform .2s; }
 .monthly-item:hover .monthly-arrow { color: var(--acid); transform: translate(3px, -3px); }
+.monthly-toggle { width: 100%; margin-top: 30px; padding: 18px 0; border: 0; border-bottom: 1px solid #555850; background: transparent; color: var(--acid); display: flex; align-items: center; justify-content: space-between; cursor: pointer; font: 600 11px var(--font-geist-mono); letter-spacing: .06em; text-align: left; }
+.monthly-toggle b { font-size: 16px; transition: transform .2s; }
+.monthly-toggle:hover b { transform: translateY(3px); }
 .read-more { margin-top: auto; color: var(--acid); font-size: 12px; }
 .read-more b { margin-left: 6px; font-size: 16px; }
 

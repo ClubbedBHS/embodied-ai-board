@@ -58,6 +58,7 @@ export default function Home() {
   const [topic, setTopic] = useState("all");
   const [query, setQuery] = useState("");
   const [selected, setSelected] = useState<Paper | null>(null);
+  const [showAllMonthly, setShowAllMonthly] = useState(false);
 
   const topics = useMemo(() => {
     const counts = new Map<string, number>();
@@ -86,11 +87,10 @@ export default function Home() {
       paper.date?.startsWith(latestMonth) &&
       (paper.selectionScore || 0) >= 90
     )
-    .sort((a, b) => (b.selectionScore || 0) - (a.selectionScore || 0))
-    .slice(0, 5);
+    .sort((a, b) => (b.selectionScore || 0) - (a.selectionScore || 0));
 
   const monthlyLead = monthlyHighlights[0];
-  const monthlyRest = monthlyHighlights.slice(1);
+  const monthlyRest = showAllMonthly ? monthlyHighlights.slice(1) : [];
   const weeklyHighlights = papers
     .filter((paper) => paper.importance === "featured")
     .sort((a, b) => {
@@ -109,7 +109,6 @@ export default function Home() {
         <nav aria-label="主导航">
           <a href="#top">本月关注</a>
           <a href="#latest">论文库</a>
-          <a href="#topics">研究方向</a>
           <span className="update-pill"><i /> 上次更新：2026.07.23</span>
         </nav>
       </header>
@@ -147,6 +146,21 @@ export default function Home() {
             </button>
           ))}
         </div>
+        {monthlyHighlights.length > 1 && (
+          <button
+            className="monthly-toggle"
+            type="button"
+            aria-expanded={showAllMonthly}
+            onClick={() => setShowAllMonthly((value) => !value)}
+          >
+            <span>
+              {showAllMonthly
+                ? "收起月度列表"
+                : `展开查看全部 ${monthlyHighlights.length} 篇 90 分以上论文`}
+            </span>
+            <b aria-hidden="true">{showAllMonthly ? "↑" : "↓"}</b>
+          </button>
+        )}
       </section>
 
       <section className="weekly-focus" aria-labelledby="weekly-title">
