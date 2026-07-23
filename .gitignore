@@ -17,6 +17,7 @@ site/node_modules/
 site/.next/
 site/.vinext/
 site/dist/
+site/pages-dist/
 site/out/
 site/.wrangler/
 site/coverage/

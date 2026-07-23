@@ -52,3 +52,19 @@ workbench/
 ```
 
 `papers/` 只放发布型结构化内容；PDF、HTML、TXT、抓取缓存和 Agent 临时文件不得写入该目录。
+
+## GitHub Pages
+
+网页静态版本由 `.github/workflows/pages.yml` 自动发布。每次推送 `main` 后，工作流会：
+
+1. 从 `papers/` 重新生成 `site/app/papers.generated.json`；
+2. 构建纯静态站点到 `site/pages-dist/`；
+3. 发布到 GitHub Pages。
+
+本地验证：
+
+```bash
+cd site
+npm ci
+npm run build:pages
+```
