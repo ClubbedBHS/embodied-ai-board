@@ -1,0 +1,140 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-1909.13072",
+  "title": "Regression Planning Networks",
+  "title_zh": "回归规划网络",
+  "abstract": "Recent learning-to-plan methods have shown promising results on planning directly from observation space. Yet, their ability to plan for long-horizon tasks is limited by the accuracy of the prediction model. On the other hand, classical symbolic planners show remarkable capabilities in solving long-horizon tasks, but they require predefined symbolic rules and symbolic states, restricting their real-world applicability. In this work, we combine the benefits of these two paradigms and propose a learning-to-plan method that can directly generate a long-term symbolic plan conditioned on high-dimensional observations. We borrow the idea of regression (backward) planning from classical planning literature and introduce Regression Planning Networks (RPN), a neural network architecture that plans backward starting at a task goal and generates a sequence of intermediate goals that reaches the current observation. We show that our model not only inherits many favorable traits from symbolic planning, e.g., the ability to solve previously unseen tasks but also can learn from visual inputs in an end-to-end manner. We evaluate the capabilities of RPN in a grid world environment and a simulated 3D kitchen environment featuring complex visual scenes and long task horizons, and show that it achieves near-optimal performance in completely new task instances.",
+  "paper_url": "https://arxiv.org/abs/1909.13072",
+  "pdf_url": "https://arxiv.org/pdf/1909.13072",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Danfei Xu",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Roberto Martín-Martín",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "De-An Huang",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Yuke Zhu",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Silvio Savarese",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Li Fei-Fei",
+      "affiliations": [
+        "stanford"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "stanford",
+      "name": "Stanford University (Stanford Vision and Learning Lab)",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2019-09-28",
+    "last_revision": "2019-09-28"
+  },
+  "venue": {
+    "name": "NeurIPS 2019",
+    "year": 2019,
+    "status": "published"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "planning",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [],
+    "properties": [
+      "simulation-only"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "将经典符号规划中的回归（后向）规划思想与神经网络结合，提出了从目标状态反向生成子目标序列的回归规划网络（RPN），能够端到端地从视觉输入学习长期任务规划，在 Grid World 和 BulletPhysics 3D 仿真厨房中展现了组合泛化到新任务实例的能力（NeurIPS 2019）。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-21",
+    "confidence": "high",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文使用 BulletPhysics [34] 而非 AI2-THOR 构建 3D 厨房环境，已通过 ar5iv 全文核实并修正",
+      "状态表示使用 object-centric representation（对象边界框 + CNN 编码），与场景图类似但并非完全等同",
+      "未在论文或 arXiv 页面中找到项目主页或公开代码仓库链接",
+      "实验细节已通过 ar5iv 全文核实（Table 1, Table 2），关键数字已确认"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/1909.13072"
+    }
+  ],
+  "suggested_new_tags": [],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "ar5iv-html",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/1909.13072",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 Problem Definition and Preliminaries",
+      "4 Method",
+      "5 Experiments",
+      "6 Conclusions",
+      "7 Acknowledgement",
+      "8 Appendix"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-22"
+  }
+}

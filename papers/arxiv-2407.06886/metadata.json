@@ -1,0 +1,184 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2407.06886",
+  "title": "Aligning Cyber Space with Physical World: A Comprehensive Survey on Embodied AI",
+  "title_zh": "对齐虚拟与物理空间：具身人工智能综述",
+  "abstract": "Embodied Artificial Intelligence (Embodied AI) is crucial for achieving Artificial General Intelligence (AGI) and serves as a foundation for various applications (e.g., intelligent mechatronics systems, smart manufacturing) that bridge cyberspace and the physical world. Recently, the emergence of Multi-modal Large Models (MLMs) and World Models (WMs) have attracted significant attention due to their remarkable perception, interaction, and reasoning capabilities, making them a promising architecture for embodied agents. In this survey, we give a comprehensive exploration of the latest advancements in Embodied AI. Our analysis firstly navigates through the forefront of representative works of embodied robots and simulators, to fully understand the research focuses and their limitations. Then, we analyze four main research targets: 1) embodied perception, 2) embodied interaction, 3) embodied agent, and 4) sim-to-real adaptation, covering state-of-the-art methods, essential paradigms, and comprehensive datasets. Additionally, we explore the complexities of MLMs in virtual and real embodied agents, highlighting their significance in facilitating interactions in digital and physical environments. Finally, we summarize the challenges and limitations of embodied AI and discuss potential future directions. We hope this survey will serve as a foundational reference for the research community. The associated project can be found at https://github.com/HCPLab-SYSU/Embodied_AI_Paper_List.",
+  "paper_url": "https://arxiv.org/abs/2407.06886",
+  "pdf_url": "https://arxiv.org/pdf/2407.06886",
+  "project_url": "https://github.com/HCPLab-SYSU/Embodied_AI_Paper_List",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yang Liu",
+      "affiliations": [
+        "sysu"
+      ]
+    },
+    {
+      "name": "Weixing Chen",
+      "affiliations": [
+        "sysu"
+      ]
+    },
+    {
+      "name": "Yongjie Bai",
+      "affiliations": [
+        "sysu"
+      ]
+    },
+    {
+      "name": "Xiaodan Liang",
+      "affiliations": [
+        "sysu-shenzhen",
+        "pcl"
+      ]
+    },
+    {
+      "name": "Guanbin Li",
+      "affiliations": [
+        "sysu",
+        "pcl"
+      ]
+    },
+    {
+      "name": "Wen Gao",
+      "affiliations": [
+        "pku",
+        "pcl"
+      ]
+    },
+    {
+      "name": "Liang Lin",
+      "affiliations": [
+        "sysu",
+        "pcl"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "sysu",
+      "name": "Sun Yat-sen University",
+      "role": "primary"
+    },
+    {
+      "id": "sysu-shenzhen",
+      "name": "Sun Yat-sen University (Shenzhen Campus)",
+      "role": "collaborator"
+    },
+    {
+      "id": "pcl",
+      "name": "Peng Cheng Laboratory",
+      "role": "collaborator"
+    },
+    {
+      "id": "pku",
+      "name": "Peking University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2024-07-09",
+    "last_revision": "2025-08-25"
+  },
+  "venue": {
+    "name": "arXiv",
+    "year": 2024,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "surveys"
+    ],
+    "topics": [
+      "vla",
+      "foundation-model",
+      "world-model",
+      "planning",
+      "sim-to-real",
+      "representation-learning"
+    ],
+    "tasks": [
+      "navigation",
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm",
+      "mobile-robot",
+      "humanoid",
+      "quadruped"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "proprioception",
+      "action"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [],
+    "properties": [
+      "open-source"
+    ]
+  },
+  "paper_type": [
+    "survey"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "MLM/WM时代系统性综述具身AI的论文，以九章结构覆盖具身机器人（六类形态）、通用与真实场景仿真器（10款通用+7款真实场景）、具身感知（主动视觉感知/3D视觉定位/VLN/非视觉感知）、具身交互（EQA/抓取）、具身智能体（多模态基础模型/任务规划/动作规划）、sim-to-real迁移（具身世界模型/数据采集/具身控制）等六个核心维度，是目前该领域引用面较广的具身AI综述之一。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-22",
+    "confidence": "high",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文中未提及ARIO数据集——该数据集（~3M episodes / 258 series / 321K tasks）在v0.1摘要中为幻觉内容，已移除",
+      "论文未使用'ABC模型（AI Brain / Body / Cross-modal sensors）'分类框架，仅以'embodied world model as brain'作比喻（Section I, Figure 2），实际结构为I-IX共9个常规章节",
+      "通用仿真器Table II共列出10款（Isaac Sim, Isaac Gym, Gazebo, PyBullet, Webots, MuJoCo, Unity ML-Agents, AirSim, MORSE, CoppeliaSim），非v0.1声称的11款。Carla在真实场景仿真器Table III中被列出",
+      "论文未提及在IEEE/ASME Transactions on Mechatronics发表，v0.1摘要中该项为错误信息，已修正为arXiv preprint",
+      "EQA（具身问答）在论文中属于Section V Embodied Interaction，非Section IV Embodied Perception；Section IV的Embodied Perception子方向为VLN而非EQA",
+      "Xiaodan Liang的affiliation同时标注Shenzhen Campus of SYSU和Peng Cheng Laboratory",
+      "论文PDF第1页列出7位作者（含Liang Lin为通讯作者），已核验"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "ar5iv-html",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2407.06886",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "I. Introduction",
+      "II. Embodied Robots",
+      "III. Embodied Simulators",
+      "IV. Embodied Perception",
+      "V. Embodied Interaction",
+      "VI. Embodied Agent",
+      "VII. Sim-to-Real Adaptation",
+      "VIII. Challenges and Future Directions",
+      "IX. Conclusion"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-22"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2407.06886"
+    },
+    {
+      "type": "project-page",
+      "url": "https://github.com/HCPLab-SYSU/Embodied_AI_Paper_List"
+    }
+  ],
+  "suggested_new_tags": [],
+  "content_type": "paper",
+  "source_scope": "full-source"
+}

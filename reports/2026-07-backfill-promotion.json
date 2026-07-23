@@ -1,0 +1,372 @@
+{
+  "promoted_at": "2026-07-23",
+  "count": 61,
+  "records": [
+    {
+      "id": "arxiv-2607.14183",
+      "batch": "batch-01",
+      "decision": "featured",
+      "score": 94
+    },
+    {
+      "id": "arxiv-2607.02501",
+      "batch": "batch-01",
+      "decision": "featured",
+      "score": 88
+    },
+    {
+      "id": "arxiv-2607.14021",
+      "batch": "batch-01",
+      "decision": "include",
+      "score": 77
+    },
+    {
+      "id": "arxiv-2607.00678",
+      "batch": "batch-01",
+      "decision": "featured",
+      "score": 83
+    },
+    {
+      "id": "arxiv-2607.07608",
+      "batch": "batch-01",
+      "decision": "include",
+      "score": 74
+    },
+    {
+      "id": "arxiv-2607.13017",
+      "batch": "batch-01",
+      "decision": "featured",
+      "score": 84
+    },
+    {
+      "id": "arxiv-2607.14852",
+      "batch": "batch-01",
+      "decision": "include",
+      "score": 75
+    },
+    {
+      "id": "arxiv-2607.16506",
+      "batch": "batch-01",
+      "decision": "include",
+      "score": 79
+    },
+    {
+      "id": "arxiv-2607.01586",
+      "batch": "batch-01",
+      "decision": "featured",
+      "score": 85
+    },
+    {
+      "id": "arxiv-2607.03461",
+      "batch": "batch-01",
+      "decision": "include",
+      "score": 72
+    },
+    {
+      "id": "arxiv-2607.04927",
+      "batch": "batch-01",
+      "decision": "include",
+      "score": 73
+    },
+    {
+      "id": "arxiv-2607.06052",
+      "batch": "batch-01",
+      "decision": "include",
+      "score": 79
+    },
+    {
+      "id": "arxiv-2607.08751",
+      "batch": "batch-01",
+      "decision": "featured",
+      "score": 89
+    },
+    {
+      "id": "arxiv-2607.09190",
+      "batch": "batch-01",
+      "decision": "featured",
+      "score": 83
+    },
+    {
+      "id": "arxiv-2607.16187",
+      "batch": "batch-01",
+      "decision": "include",
+      "score": 76
+    },
+    {
+      "id": "arxiv-2607.01067",
+      "batch": "batch-01",
+      "decision": "featured",
+      "score": 87
+    },
+    {
+      "id": "arxiv-2607.04434",
+      "batch": "batch-01",
+      "decision": "featured",
+      "score": 96
+    },
+    {
+      "id": "arxiv-2607.13059",
+      "batch": "batch-01",
+      "decision": "featured",
+      "score": 87
+    },
+    {
+      "id": "arxiv-2607.05765",
+      "batch": "batch-01",
+      "decision": "featured",
+      "score": 94
+    },
+    {
+      "id": "arxiv-2607.06699",
+      "batch": "batch-01",
+      "decision": "featured",
+      "score": 88
+    },
+    {
+      "id": "arxiv-2607.10172",
+      "batch": "batch-01",
+      "decision": "featured",
+      "score": 80
+    },
+    {
+      "id": "arxiv-2607.01212",
+      "batch": "batch-01",
+      "decision": "featured",
+      "score": 81
+    },
+    {
+      "id": "arxiv-2607.03693",
+      "batch": "batch-02",
+      "decision": "include",
+      "score": 74
+    },
+    {
+      "id": "arxiv-2607.04234",
+      "batch": "batch-02",
+      "decision": "featured",
+      "score": 87
+    },
+    {
+      "id": "arxiv-2607.05390",
+      "batch": "batch-02",
+      "decision": "featured",
+      "score": 89
+    },
+    {
+      "id": "arxiv-2607.06256",
+      "batch": "batch-02",
+      "decision": "include",
+      "score": 78
+    },
+    {
+      "id": "arxiv-2607.06464",
+      "batch": "batch-02",
+      "decision": "include",
+      "score": 77
+    },
+    {
+      "id": "arxiv-2607.09818",
+      "batch": "batch-02",
+      "decision": "include",
+      "score": 70
+    },
+    {
+      "id": "arxiv-2607.12287",
+      "batch": "batch-02",
+      "decision": "include",
+      "score": 71
+    },
+    {
+      "id": "arxiv-2607.12931",
+      "batch": "batch-02",
+      "decision": "include",
+      "score": 74
+    },
+    {
+      "id": "arxiv-2607.15330",
+      "batch": "batch-02",
+      "decision": "include",
+      "score": 77
+    },
+    {
+      "id": "arxiv-2607.01378",
+      "batch": "batch-02",
+      "decision": "include",
+      "score": 79
+    },
+    {
+      "id": "arxiv-2607.02332",
+      "batch": "batch-02",
+      "decision": "include",
+      "score": 79
+    },
+    {
+      "id": "arxiv-2607.06558",
+      "batch": "batch-02",
+      "decision": "featured",
+      "score": 86
+    },
+    {
+      "id": "arxiv-2607.06701",
+      "batch": "batch-02",
+      "decision": "include",
+      "score": 78
+    },
+    {
+      "id": "arxiv-2607.11481",
+      "batch": "batch-02",
+      "decision": "featured",
+      "score": 83
+    },
+    {
+      "id": "arxiv-2607.11498",
+      "batch": "batch-02",
+      "decision": "featured",
+      "score": 80
+    },
+    {
+      "id": "arxiv-2607.13621",
+      "batch": "batch-02",
+      "decision": "include",
+      "score": 74
+    },
+    {
+      "id": "arxiv-2607.15620",
+      "batch": "batch-02",
+      "decision": "featured",
+      "score": 85
+    },
+    {
+      "id": "arxiv-2607.16401",
+      "batch": "batch-02",
+      "decision": "include",
+      "score": 75
+    },
+    {
+      "id": "arxiv-2607.17454",
+      "batch": "batch-02",
+      "decision": "featured",
+      "score": 81
+    },
+    {
+      "id": "arxiv-2607.02604",
+      "batch": "batch-02",
+      "decision": "include",
+      "score": 74
+    },
+    {
+      "id": "arxiv-2607.02092",
+      "batch": "batch-02",
+      "decision": "include",
+      "score": 65
+    },
+    {
+      "id": "arxiv-2607.03570",
+      "batch": "batch-03",
+      "decision": "include",
+      "score": 73
+    },
+    {
+      "id": "arxiv-2607.04554",
+      "batch": "batch-03",
+      "decision": "include",
+      "score": 76
+    },
+    {
+      "id": "arxiv-2607.04816",
+      "batch": "batch-03",
+      "decision": "include",
+      "score": 73
+    },
+    {
+      "id": "arxiv-2607.06370",
+      "batch": "batch-03",
+      "decision": "include",
+      "score": 66
+    },
+    {
+      "id": "arxiv-2607.12571",
+      "batch": "batch-03",
+      "decision": "include",
+      "score": 74
+    },
+    {
+      "id": "arxiv-2607.13033",
+      "batch": "batch-03",
+      "decision": "include",
+      "score": 79
+    },
+    {
+      "id": "arxiv-2607.14635",
+      "batch": "batch-03",
+      "decision": "include",
+      "score": 74
+    },
+    {
+      "id": "arxiv-2607.14739",
+      "batch": "batch-03",
+      "decision": "include",
+      "score": 75
+    },
+    {
+      "id": "arxiv-2607.02503",
+      "batch": "batch-03",
+      "decision": "include",
+      "score": 77
+    },
+    {
+      "id": "arxiv-2607.02642",
+      "batch": "batch-03",
+      "decision": "featured",
+      "score": 83
+    },
+    {
+      "id": "arxiv-2607.03449",
+      "batch": "batch-03",
+      "decision": "include",
+      "score": 74
+    },
+    {
+      "id": "arxiv-2607.04652",
+      "batch": "batch-03",
+      "decision": "include",
+      "score": 67
+    },
+    {
+      "id": "arxiv-2607.04880",
+      "batch": "batch-03",
+      "decision": "include",
+      "score": 71
+    },
+    {
+      "id": "arxiv-2607.05396",
+      "batch": "batch-03",
+      "decision": "include",
+      "score": 76
+    },
+    {
+      "id": "arxiv-2607.07287",
+      "batch": "batch-03",
+      "decision": "featured",
+      "score": 80
+    },
+    {
+      "id": "arxiv-2607.07459",
+      "batch": "batch-03",
+      "decision": "featured",
+      "score": 85
+    },
+    {
+      "id": "arxiv-2607.12356",
+      "batch": "batch-03",
+      "decision": "include",
+      "score": 75
+    },
+    {
+      "id": "arxiv-2607.13818",
+      "batch": "batch-03",
+      "decision": "include",
+      "score": 71
+    }
+  ]
+}

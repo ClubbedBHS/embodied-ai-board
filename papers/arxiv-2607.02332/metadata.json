@@ -1,0 +1,127 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.02332",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "HEFT: Heavy-Payload Full-size Humanoid Teleoperation with Privileged Motion Guidance and Windowed Payload Curriculum",
+  "title_zh": null,
+  "abstract": "General motion tracking and teleoperation offer a promising path to scalable humanoid skill acquisition, yet most existing frameworks are validated on compact platforms or without real payload interaction, leaving full-size humanoids with real payloads largely unexplored. Scaling to full-size humanoids introduces two compounding challenges: their larger inertia and tighter balance margins make tracking highly sensitive to noise, drift, and retargeting errors from commodity VR trackers, while their payload potential remains largely underutilized. We present HEFT, a heavy-payload full-size humanoid teleoperation framework that addresses both challenges. HEFT learns from deployable noisy VR references with physically plausible reconstructed references through Privileged Motion Guidance (PMG), and uses a Windowed Payload Curriculum (WPC) with expert-guided payload caps to acquire robust heavy-payload tracking. We deploy HEFT on L7, a 175cm, 65kg humanoid. The robot tracks motions including turns, forward/backward locomotion, and squats under payloads up to 24kg.",
+  "paper_url": "https://arxiv.org/abs/2607.02332",
+  "pdf_url": "https://arxiv.org/pdf/2607.02332",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Chenxin Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Qingzhou Lu",
+      "affiliations": []
+    },
+    {
+      "name": "Guangxiao Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Xuanyang Shi",
+      "affiliations": []
+    },
+    {
+      "name": "Chenghan Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Yanjiang Guo",
+      "affiliations": []
+    },
+    {
+      "name": "Jianyu Chen",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-02",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "control",
+      "reinforcement-learning",
+      "sim-to-real"
+    ],
+    "tasks": [
+      "locomotion",
+      "humanoid-control"
+    ],
+    "platforms": [
+      "humanoid"
+    ],
+    "modalities": [
+      "action"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 79,
+    "selection_reason": "针对全尺寸重载 humanoid，把 noisy VR reference 的 privileged motion guidance 与 windowed payload curriculum 联合训练。 第3节给出PMG/WPC；第4节做模块对照、curriculum与L7实机，175cm/65kg机器人执行转向、前后行和深蹲，载荷最高24kg；第5–6节含结论局限。 看板缺少重载全尺寸humanoid teleoperation；相对Human2Any，HEFT更聚焦VR噪声与payload curriculum。",
+    "candidate_run": "2026-07-backfill/batch-02",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "任务主要是运动追踪而非复杂物体操作",
+      "单一机器人平台",
+      "未核验代码/策略权重"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.02332",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.02332"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.02332"
+    }
+  ],
+  "suggested_new_tags": []
+}

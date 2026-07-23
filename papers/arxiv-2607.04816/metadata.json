@@ -1,0 +1,142 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.04816",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "CAC-VLA: Context-Gated Action Conditioning for Vision-Language-Action Models",
+  "title_zh": null,
+  "abstract": "Vision-Language-Action (VLA) models have become a promising paradigm for generalist robot manipulation, where visual-language representations are used to condition continuous action generation. However, these representations are not explicitly optimized for action conditioning, leaving the action expert to bridge the gap between multimodal understanding and precise motor control. Recent action-reasoning methods introduce additional modules to generate explicit action plans or action-space reasoning signals, demonstrating the benefit of action-level guidance but often requiring separate action-generation frameworks. We propose CAC-VLA, a Context-Gated Action Conditioning framework that learns a lightweight latent-action interface directly within the VLM. Instead of generating executable trajectories, CAC-VLA trains the VLM to predict coarse-to-fine latent actions, which are structured representations encoded from future action segments, and adaptively leverages them to condition the action expert via a context gate. This enables VLM-native action conditioning while calibrating the influence of latent-action guidance on expert action generation. Experiments on LIBERO and LIBERO-Plus demonstrate the effectiveness of CAC-VLA, achieving 98.3% average success rate on LIBERO and 89.5% LIBERO-Plus, suggesting that context-gated latent-action conditioning is an effective interface for continuous expert control.",
+  "paper_url": "https://arxiv.org/abs/2607.04816",
+  "pdf_url": "https://arxiv.org/pdf/2607.04816",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yifu Xiong",
+      "affiliations": []
+    },
+    {
+      "name": "Wenhao Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Jiaxuan Lin",
+      "affiliations": []
+    },
+    {
+      "name": "Bojun Zou",
+      "affiliations": []
+    },
+    {
+      "name": "Jiahao Li",
+      "affiliations": []
+    },
+    {
+      "name": "Lu Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Yanyong Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Jianmin Ji",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-06",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla"
+    ],
+    "tasks": [
+      "manipulation",
+      "generalist-control"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 73,
+    "selection_reason": "这项工作在 VLA 模型的动作条件化问题上提出 CAC-VLA 框架，通过在 VLM 内部引入潜在动作查询令牌（latent query tokens）预测粗到细的潜在动作，并使用上下文门控（context gate）自适应地将潜在动作信息注入到动作专家中。在 LIBERO（98.3%）和 LIBERO-Plus（89.5%）上取得强结果，真机 UR7e 实验（Full SR 64% vs π0.5 的 16%）验证了实际部署可行性。消融实验证实了潜在动作视野和上下文门控的重要性。",
+    "candidate_run": "2026-07-backfill/batch-03",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "hermes-agent",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "真机评估仅限单一桌面 pick-and-place 任务和单一机器人（UR7e）",
+      "少量演示数据（small number of demonstrations）",
+      "潜在动作预测不准确或固定视野不匹配当前任务阶段时可能失败",
+      "未在更长期或更多样化的操作场景中验证"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.04816",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.04816"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.04816"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "foundation-models",
+      "name": "foundation-models",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "这项工作在 VLA 模型的动作条件化问题上提出 CAC-VLA 框架，通过在 VLM 内部引入潜在动作查询令牌（latent query tokens）预测粗到细的潜在动作，并使用上下文门控（context gate）自适应地将潜在动作信息注入到动作专家中。在 LIBERO（98.3%）和 LIBERO-Plus（89.5%）上取得强结果，真机 UR7e 实验（Full SR 64% vs π0.5 的 16%）验证了实际部署可行性。消融实验证实了潜在动作视野和上下文门控的重要性。"
+    }
+  ]
+}

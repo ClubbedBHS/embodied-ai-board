@@ -1,0 +1,128 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.05765",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Image2Sim: Scaling Embodied Navigation via Generative Neural Simulator",
+  "title_zh": null,
+  "abstract": "Embodied navigation aims to build agents that interpret multimodal goals, reason in 3D space, and reach target destinations reliably in the real world. However, progress remains constrained by the lack of scalable, high-fidelity, and physically grounded interactive environments. Although real-world scanned datasets offer visual realism, they are limited by scale. In contrast, synthetic simulators scale more easily but often exhibit large sim-to-real gaps. We introduce Image2Sim, a real-time neural simulation framework that constructs high-quality interactive environments from posed RGB-D image sequences. The central idea is to decouple 3D spatial anchoring from photorealistic observation synthesis. For scene construction, Image2Sim uses a feed-forward feature Gaussian model that lifts posed RGB-D observations into a 3D feature-Gaussian representation in a single pass. For rendering, we propose a Geometry-Aware One-Step Pixel Flow model that transforms sparse and noisy Gaussian projections into high-quality panoramic RGB-D observations. Image2Sim also serves as a fully automated embodied data engine that generates high-fidelity observations, executable actions, and diverse navigation instructions at scale. It converts large collections of videos and images into nearly 20K interactive scenes and synthesizes more than 10 million navigation training samples. Navigation models trained entirely in these neural environments achieve strong improvements on major benchmarks and transfer effectively to real-world zero-shot settings. These results suggest that scalable neural simulation can serve as a practical training substrate for embodied navigation at scale.",
+  "paper_url": "https://arxiv.org/abs/2607.05765",
+  "pdf_url": "https://arxiv.org/pdf/2607.05765",
+  "project_url": null,
+  "code_url": "https://github.com/MrZihan/Image2Sim",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Zihan Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Seungjun Lee",
+      "affiliations": []
+    },
+    {
+      "name": "Yinghao Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Gim Hee Lee",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-07",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "simulators",
+      "data"
+    ],
+    "topics": [
+      "world-model",
+      "representation-learning",
+      "sim-to-real"
+    ],
+    "tasks": [
+      "navigation"
+    ],
+    "platforms": [
+      "mobile-robot"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action",
+      "point-cloud"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [
+      "code"
+    ],
+    "properties": [
+      "real-robot-evaluation",
+      "large-scale-data",
+      "zero-shot"
+    ]
+  },
+  "paper_type": [
+    "dataset",
+    "simulator"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 94,
+    "selection_reason": "这项工作在其问题上提出明确增量：把真实扫描的视觉真实性与 synthetic simulator 的规模结合成从图像到实时交互/数据生成的一体化 neural simulator。 渲染、跨 simulator、scaling 和真实 zero-shot 形成强证据链；代码仓库当前可访问。 最近邻 SimFoundry；SimFoundry自动生成模块化场景，Image2Sim从真实 RGB-D 生成 neural interactive scenes 并给出 10M 导航样本与实机迁移。",
+    "candidate_run": "2026-07-backfill/batch-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "以导航为主，操控/接触物理未验证",
+      "静态场景和渲染误差可能限制动态交互"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.05765",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.05765"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.05765"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://github.com/MrZihan/Image2Sim"
+    }
+  ],
+  "suggested_new_tags": []
+}

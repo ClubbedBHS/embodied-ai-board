@@ -1,0 +1,131 @@
+{
+  "schema_version": "0.3",
+  "id": "phd-danfei-xu-2021",
+  "title": "Compositional Reasoning in Robot Learning",
+  "title_zh": "机器人学习中的组合推理",
+  "abstract": "To carry out diverse tasks in everyday human environments, future robots must generalize beyond the knowledge they are equipped with. However, despite recent advances in \"end-to-end\" deep learning, today's robot learning methods are still limited to specializing in one task at a time. At the same time, humans perform everyday tasks with ease. But instead of learning each task in silos, we distill reusable abstractions from our daily experiences and solve new tasks by composing known building blocks. Such compositional reasoning capability is crucial for developing future robots that are both competent and versatile. This two-part thesis presents a spectrum of techniques for building compositional generalization capabilities into robot learning systems. Part I starts by drawing prominent ideas from classical structured approaches in AI such as program induction and graphical models and design algorithms with strong representational priors. Neural Task Programming (NTP) represents task-subtask hierarchies using modular neural programs. NTP is designed to simultaneously exploit the representational capacity of neural networks for handling unstructured input and the compositional nature of programs for few-shot generalization. Similarly, Neural Task Graphs (NTGs) represent manipulation skills as nodes in a graph and leverage structures in skill preconditions for generalization. Regression Planning Network (RPN) further dissects the goal specification by grounding symbolic goals with object-centric representation and achieve zero-shot generalization to new task goals. To bring compositional reasoning closer to real-world settings, Part II of this thesis introduces our recent efforts to relax the strong representational prior assumptions: learning from unstructured video demonstrations and learning through trial-and-error. We first describe a framework for simultaneously learning complex visuomotor skills and discovering implicit compositional structures from human demonstrations. Experiment shows the approach allows a physical robot to perform long-horizon manipulation in a kitchen setup. Then we further relax the assumption of having demonstration data and enable a robot to learn compact planning representations by characterizing the pre- and post-condition of motion primitives through active interaction.",
+  "paper_url": "https://purl.stanford.edu/ys432pr6718",
+  "pdf_url": "https://stacks.stanford.edu/file/druid:ys432pr6718/Thesis-augmented.pdf",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": "https://youtu.be/YdHiaRS0QE0",
+  "authors": [
+    {
+      "name": "Danfei Xu",
+      "affiliations": [
+        "stanford"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "stanford",
+      "name": "Stanford University",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2021-08-27",
+    "last_revision": null
+  },
+  "venue": {
+    "name": "Stanford University PhD Dissertation",
+    "year": 2021,
+    "status": "published"
+  },
+  "labels": {
+    "sections": [
+      "surveys"
+    ],
+    "topics": [
+      "imitation-learning",
+      "behavior-cloning",
+      "planning",
+      "representation-learning",
+      "reinforcement-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "proprioception",
+      "point-cloud",
+      "depth"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation",
+      "few-shot",
+      "zero-shot"
+    ]
+  },
+  "paper_type": [
+    "survey"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_reason": "该博士论文系统性地阐述了组合推理在机器人学习中的核心思想，从强结构化先验（NTP、NTG、RPN）到弱先验（从视频演示学习和主动交互学习），呈现了一条完整的技术演进路径。论文涵盖的 Neural Task Programming、Neural Task Graphs 和 Regression Planning Networks 均为该领域的代表性工作，对后续的组合式策略学习和 TAMP 与学习结合方向有深远影响。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-22",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "无法下载论文全文 PDF — stacks.stanford.edu 从当前环境不可达（TCP 连接超时），摘要及元数据基于 Stanford Digital Repository MODS 记录和已发表工作（NTP、NTG、RPN 等）推断",
+      "论文确切的提交日期未知，first_publication 使用 Stanford SDR MODS 记录创建日期 2021-08-27（recordCreationDate: 210827）",
+      "论文第二部分提及「从视频演示学习」的工作指向 arxiv-2003.06085 (Learning to Generalize Across Long-Horizon Tasks from Human Demonstrations)，「主动交互学习」的工作指向 arxiv-2011.08424 (Deep Affordance Foresight)，但论文中可能包含未单独发表的内容",
+      "DenseFusion (arxiv-1901.04780) 为 Danfei Xu 合作发表，但论文摘要中未专门提及，可能作为背景但非论文主体贡献",
+      "MODS metadata 确认导师为 Fei-Fei Li 和 Silvio Savarese，委员会成员包括 Jeannette Bohg 和 Dorsa Sadigh"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://purl.stanford.edu/ys432pr6718"
+    },
+    {
+      "type": "metadata",
+      "url": "https://purl.stanford.edu/ys432pr6718.mods"
+    },
+    {
+      "type": "author-page",
+      "url": "https://faculty.cc.gatech.edu/~danfei/"
+    },
+    {
+      "type": "video",
+      "url": "https://youtu.be/YdHiaRS0QE0"
+    }
+  ],
+  "suggested_new_tags": [
+    "compositional-reasoning",
+    "neural-program-induction",
+    "task-planning",
+    "hierarchical-rl"
+  ],
+  "content_type": "thesis",
+  "source_scope": "metadata-only",
+  "source_access": {
+    "method": "stanford-repo-metadata",
+    "pdf_attempted": true,
+    "pdf_accessible": false,
+    "pdf_url": "https://stacks.stanford.edu/file/druid:ys432pr6718/Thesis-augmented.pdf",
+    "pdf_failure_reason": "stacks.stanford.edu (171.67.37.91) unreachable from agent environment — TCP connection timeout",
+    "landing_page_accessible": true,
+    "landing_page_url": "https://purl.stanford.edu/ys432pr6718",
+    "mods_metadata_accessible": true,
+    "mods_metadata_url": "https://purl.stanford.edu/ys432pr6718.mods",
+    "defense_video_accessible": false,
+    "notes": "MODS metadata confirms title, author, advisors (Fei-Fei Li, Silvio Savarese), committee (Jeannette Bohg, Dorsa Sadigh), date (2021), license (CC BY-NC 3.0), and abstract. Full-text PDF not reachable from agent network."
+  }
+}

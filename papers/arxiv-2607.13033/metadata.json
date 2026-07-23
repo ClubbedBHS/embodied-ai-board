@@ -1,0 +1,165 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.13033",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "DenseReward: Dense Reward Learning via Failure Synthesis for Robotic Manipulation",
+  "title_zh": null,
+  "abstract": "Reinforcement learning holds great promise for improving robot policies beyond the limits of imitation learning. However, its practical adoption remains bottlenecked by the lack of reliable vision-language reward models that provide dense and informative feedback. Two key challenges remain: acquiring diverse failure data at scale and obtaining fine-grained reward signals beyond sparse trajectory-level success labels. Collecting failure trajectories typically requires laborious human effort, while pseudo-failures constructed by relabeling successful demonstrations fail to capture the diverse physical failure modes that arise during robot execution. Meanwhile, existing reward models often predict sparse binary or trajectory-level rewards, which provide limited guidance for efficient policy optimization. We introduce DenseReward, a dense robotic reward model that addresses both challenges. To train DenseReward, we develop an automated failure data generation pipeline that synthesizes physically realistic failure trajectories in simulation without human labeling, covering diverse failure modes such as collisions, missed grasps, object drops, and recovery behaviors. DenseReward predicts dense frame-level reward scores from visual observations and language instructions, enabling fine-grained estimation of task progress throughout an episode. Experiments show that DenseReward outperforms general-purpose VLMs and existing robotic reward models in dense reward prediction across both simulated and real-world manipulation. We further demonstrate that DenseReward provides effective reward guidance for downstream model predictive control and reinforcement learning. We release the dataset, trained reward models, and evaluation suite to support the development of failure-aware dense reward modeling for robot learning.",
+  "paper_url": "https://arxiv.org/abs/2607.13033",
+  "pdf_url": "https://arxiv.org/pdf/2607.13033",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yu Fang",
+      "affiliations": []
+    },
+    {
+      "name": "Wanxi Dong",
+      "affiliations": []
+    },
+    {
+      "name": "Jiaqi Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Yue Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Mingxiao Huo",
+      "affiliations": []
+    },
+    {
+      "name": "Yao Mu",
+      "affiliations": []
+    },
+    {
+      "name": "Huaxiu Yao",
+      "affiliations": []
+    },
+    {
+      "name": "Li Erran Li",
+      "affiliations": []
+    },
+    {
+      "name": "Daniel Szafir",
+      "affiliations": []
+    },
+    {
+      "name": "Mingyu Ding",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "unc-chapel-hill",
+      "name": "UNC Chapel Hill",
+      "role": "unknown"
+    },
+    {
+      "id": "carnegie-mellon-university",
+      "name": "Carnegie Mellon University",
+      "role": "unknown"
+    },
+    {
+      "id": "shanghai-jiao-tong-university",
+      "name": "Shanghai Jiao Tong University",
+      "role": "unknown"
+    },
+    {
+      "id": "amazon-aws-ai",
+      "name": "Amazon AWS AI",
+      "role": "unknown"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-07-14",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "foundation-model"
+    ],
+    "tasks": [
+      "manipulation",
+      "generalist-control"
+    ],
+    "platforms": [
+      "dexterous-hand",
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action",
+      "tactile"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 79,
+    "selection_reason": "DenseReward addresses the critical gap of dense reward signals for robotic RL by synthesizing failure trajectories via phase-decomposed perturbations and training a VLM-based dense reward model. Compared to sparse trajectory-level reward models, it provides per-timestep progress feedback. Demonstrated effective in MPC and RL (PPO+π0 on LIBERO, DSRL+π0 on real-world Franka: 40%→80% and 30%→70%).",
+    "candidate_run": "2026-07-backfill/batch-03",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "hermes-agent",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "Single-run results without confidence intervals",
+      "Reward model may not generalize to novel manipulation tasks beyond training distribution",
+      "Project page (dense-reward.github.io) exists but HTTP 200 not verified; code release status pending"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.13033",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.13033"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.13033"
+    }
+  ],
+  "suggested_new_tags": []
+}

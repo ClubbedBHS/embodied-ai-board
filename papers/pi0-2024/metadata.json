@@ -1,0 +1,131 @@
+{
+  "schema_version": "0.3",
+  "id": "pi0-2024",
+  "title": "π0: Our First Generalist Policy",
+  "title_zh": "π0：首个通用机器人策略",
+  "abstract": "π0 is a general-purpose robot foundation model that combines large-scale multi-task and multi-robot data collection with a novel network architecture to enable dexterous generalist robot control. The model uses a pre-trained vision-language model (VLM) as its backbone and augments it with continuous action outputs via flow matching, a variant of diffusion models. Trained on a diverse mixture of internet-scale VLM pre-training, the Open X-Embodiment dataset, and a proprietary dexterous manipulation dataset spanning 8 distinct robots, π0 can be either prompted for zero-shot task execution or fine-tuned for specialized downstream applications. In evaluations, π0 significantly outperforms prior robot foundation models (OpenVLA, Octo) on challenging manipulation tasks including laundry folding, table bussing, box assembly, and grocery bagging. The model weights and code were open-sourced in February 2025.",
+  "paper_url": "https://www.pi.website/blog/pi0",
+  "pdf_url": "https://www.pi.website/download/pi0.pdf",
+  "project_url": null,
+  "code_url": "https://github.com/Physical-Intelligence/openpi",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [],
+  "organizations": [
+    {
+      "id": "physical-intelligence",
+      "name": "Physical Intelligence",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2024-10-31",
+    "last_revision": "2024-10-31"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "published"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "foundation-model",
+      "behavior-cloning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm",
+      "mobile-robot"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "proprioception",
+      "action"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [
+      "code"
+    ],
+    "properties": [
+      "open-source",
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "Physical Intelligence推出的首个通用机器人基础模型。将VLM预训练与流匹配动作生成相结合，在8种机器人平台上训练单一跨embodiment策略。此为官方博客/技术报告，非同行评审论文。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-21",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "博客文章未列出个人作者姓名，PDF下载超时无法获取完整作者名单",
+      "PDF包含更完整的技术细节但未能成功下载，摘要基于博客正文",
+      "此为技术报告/博客文章，未经同行评审",
+      "具体模型参数量、训练超参数等细节博客未完整披露"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "blog-post",
+    "fulltext_source": "blog-post",
+    "fulltext_url": "https://www.pi.website/blog/pi0",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Introduction",
+      "The promise of generalist robot policies",
+      "A cross-embodiment training mixture",
+      "Inheriting Internet-scale semantic understanding",
+      "Post-training for dexterous manipulation",
+      "Evaluating and comparing π0 to prior models",
+      "Where do we go from here?"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-21"
+  },
+  "sources": [
+    {
+      "type": "blog-post",
+      "url": "https://www.pi.website/blog/pi0"
+    },
+    {
+      "type": "paper",
+      "url": "https://www.pi.website/download/pi0.pdf"
+    },
+    {
+      "type": "blog-post",
+      "url": "https://www.pi.website/blog/openpi"
+    },
+    {
+      "type": "code-repository",
+      "url": "https://github.com/Physical-Intelligence/openpi"
+    },
+    {
+      "type": "model-repository",
+      "url": "https://huggingface.co/lerobot"
+    }
+  ],
+  "suggested_new_tags": [],
+  "content_type": "official-blog",
+  "source_scope": "full-source",
+  "migration": {
+    "from_schema_version": "0.2",
+    "migrated_at": "2026-07-22",
+    "note": "从 v0.2 迁移；source_access 可证明已读取完整官方博客来源。"
+  }
+}

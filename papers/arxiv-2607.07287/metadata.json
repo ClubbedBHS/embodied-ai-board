@@ -1,0 +1,170 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.07287",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "TouchWorld: A Predictive and Reactive Tactile Foundation Model for Dexterous Manipulation",
+  "title_zh": null,
+  "abstract": "Dexterous manipulation in everyday environments requires both anticipation and reaction: a robot must predict how contact should evolve while rapidly correcting local errors caused by slip, misalignment, unstable grasping, or force mismatch. Vision and language provide semantic and geometric guidance, but they cannot reliably reveal hidden contact states such as force, slip, and contact stability. Although tactile sensing exposes these physical cues, most existing policies treat touch as a low-frequency observation stream within a monolithic action model, coupling slow task reasoning, action generation, and fast contact feedback in a single loop. We introduce TouchWorld, a predictive-and-reactive tactile foundation model for dexterous manipulation. TouchWorld uses a hierarchical policy that separates vision-language subtask planning, tactile world-model prediction, visuo-tactile goal-conditioned action generation, and high-frequency tactile residual refinement. A High-Level Planning Layer produces executable subtasks and predicts tactile subgoals; a Visuo-Tactile Goal-Conditioned Policy generates nominal action chunks; and a Tactile-Conditioned Refinement Policy performs online residual correction using recent tactile and proprioceptive feedback. By using touch as both a predictive contact reference and a fast feedback signal, TouchWorld preserves the semantic generalization of vision-language-action policies while improving local contact adaptation. Across six long-horizon and contact-rich dexterous manipulation tasks, TouchWorld achieves 65.0% success in the clean setting and 53.7% success under human perturbations, outperforming the strongest baseline by 15.7 and 18.5 percentage points, respectively.",
+  "paper_url": "https://arxiv.org/abs/2607.07287",
+  "pdf_url": "https://arxiv.org/pdf/2607.07287",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Jianyi Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Feiyang Hong",
+      "affiliations": []
+    },
+    {
+      "name": "Yunhao Li",
+      "affiliations": []
+    },
+    {
+      "name": "Yicheng Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Yongjue Cen",
+      "affiliations": []
+    },
+    {
+      "name": "Zirui Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Jiakang Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Zirui Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Ruiyang Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Weizhuo Zhu",
+      "affiliations": []
+    },
+    {
+      "name": "Xuhua Song",
+      "affiliations": []
+    },
+    {
+      "name": "Shuo Yang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-08",
+    "last_revision": "2026-07-09"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "foundation-model"
+    ],
+    "tasks": [
+      "manipulation",
+      "generalist-control"
+    ],
+    "platforms": [
+      "dexterous-hand",
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action",
+      "tactile",
+      "proprioception"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 80,
+    "selection_reason": "TouchWorld在灵巧操控的触觉基础模型上提出范式级增量：首次将预测性触觉世界模型与反应性触觉修正统一为分层操控策略，显式分离语义规划、预测性子目标生成、名义动作生成和快速触觉修正四个时间尺度。6个真实机器人任务+人类扰动变体提供坚实证据(65.0%/53.7%，最强基线+15.7/18.5pp)，消融实验清晰定位各组件贡献。相较看板中的触觉工作(TactiDex batch-01、batch-02的SoftVTBench)，新增信息是预测性触觉子目标+在线修正的分层架构，以及人类触觉数据预训练的迁移策略。主要风险：资产未公开验证；任务限于6个，依赖特定传感器/手部形态；调度参数需手工设定。",
+    "candidate_run": "2026-07-backfill/batch-03",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "hermes-agent",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "代码/数据/权重仓库未探测到HTTP 200可访问资产",
+      "6个真实机器人任务覆盖面有限，未穷尽家居操控多样性(S5明确讨论)",
+      "触觉世界模型仅预测短时程子目标，长时程预测仍困难",
+      "系统与特定传感器布局和手部形态绑定，迁移需要校准和适配数据",
+      "调度超参数为固定配置，未自适应"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.07287v2",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.07287"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.07287v2"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "tactile",
+      "name": "tactile",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "TouchWorld在灵巧操控的触觉基础模型上提出范式级增量：首次将预测性触觉世界模型与反应性触觉修正统一为分层操控策略，显式分离语义规划、预测性子目标生成、名义动作生成和快速触觉修正四个时间尺度。6个真实机器人任务+人类扰动变体提供坚实证据(65.0%/53.7%，最强基线+15.7/18.5pp)，消融实验清晰定位各组件贡献。相较看板中的触觉工作(TactiDex batch-01、batch-02的SoftVTBench)，新增信息是预测性触觉子目标+在线修正的分层架构，以及人类触觉数据预训练的迁移策略。主要风险：资产未公开验证；任务限于6个，依赖特定传感器/手部形态；调度参数需手工设定。"
+    },
+    {
+      "dimension": "topics",
+      "slug": "dexterous-manipulation",
+      "name": "dexterous-manipulation",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "TouchWorld在灵巧操控的触觉基础模型上提出范式级增量：首次将预测性触觉世界模型与反应性触觉修正统一为分层操控策略，显式分离语义规划、预测性子目标生成、名义动作生成和快速触觉修正四个时间尺度。6个真实机器人任务+人类扰动变体提供坚实证据(65.0%/53.7%，最强基线+15.7/18.5pp)，消融实验清晰定位各组件贡献。相较看板中的触觉工作(TactiDex batch-01、batch-02的SoftVTBench)，新增信息是预测性触觉子目标+在线修正的分层架构，以及人类触觉数据预训练的迁移策略。主要风险：资产未公开验证；任务限于6个，依赖特定传感器/手部形态；调度参数需手工设定。"
+    }
+  ]
+}

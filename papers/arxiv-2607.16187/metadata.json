@@ -1,0 +1,144 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.16187",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Handroid: Bridging Dexterous Hand and Humanoid",
+  "title_zh": null,
+  "abstract": "Dexterous hands and humanoid robots are typically developed as distinct embodiments: the former enable contact-rich manipulation at the object scale, whereas the latter provide mobility and whole-body interaction in human-centered environments. We introduce \\textbf{Handroid}, a desktop-scale dual-embodiment robot that integrates both capabilities within a single reconfigurable platform. Handroid reuses one 27-DoF electromechanical body as either a dexterous hand or a desktop humanoid, measuring 0.33 m in height and 2.05 kg in weight. In the dexterous hand embodiment, 20 DoFs form an anthropomorphic hand closely matching the kinematic structure of the human hand. In the humanoid embodiment, the same articulated modules are reconfigured into a humanoid with a head, arms, and legs, including a 12-DoF lower-limb structure for locomotion and whole-body motion. Handroid further provides a unified control and learning framework supporting hand teleoperation, dexterous grasping, in-hand manipulation, humanoid locomotion, gait generation, and interactive motion authoring. We validate the platform through real-world dexterous manipulation, reinforcement-learning-based locomotion, keyframe motion deployment, and a long-horizon task involving embodiment reconfiguration, locomotion, docking, and dexterous pick-and-place. These results position Handroid as a compact and reproducible platform for advancing morphology-reconfigurable robotics and cross-embodiment robot learning.",
+  "paper_url": "https://arxiv.org/abs/2607.16187",
+  "pdf_url": "https://arxiv.org/pdf/2607.16187",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Ruogu Li",
+      "affiliations": []
+    },
+    {
+      "name": "Chenyang Ma",
+      "affiliations": []
+    },
+    {
+      "name": "Sikai Li",
+      "affiliations": []
+    },
+    {
+      "name": "Zhenyu Wei",
+      "affiliations": []
+    },
+    {
+      "name": "Yunchao Yao",
+      "affiliations": []
+    },
+    {
+      "name": "Haochen Shi",
+      "affiliations": []
+    },
+    {
+      "name": "C. Karen Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Shuran Song",
+      "affiliations": []
+    },
+    {
+      "name": "Mingyu Ding",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-17",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "infrastructure",
+      "algorithms"
+    ],
+    "topics": [
+      "control",
+      "reinforcement-learning",
+      "imitation-learning"
+    ],
+    "tasks": [
+      "locomotion",
+      "humanoid-control",
+      "manipulation"
+    ],
+    "platforms": [
+      "humanoid",
+      "dexterous-hand",
+      "robot-arm",
+      "multi-robot"
+    ],
+    "modalities": [
+      "action",
+      "tactile"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 76,
+    "selection_reason": "这项工作在其问题上提出明确增量：不是简单装配灵巧手，而是同一硬件在两种 morphology 间重构并共享学习/控制接口。 真实硬件证据多样，但定量主要集中于 10 物体抓取；其余 locomotion/切换多为定性演示。 当前看板缺少 morphology-reconfigurable 平台；相对 Isaac Lab 的通用仿真基础设施，Handroid提供真实双 embodiment 研究硬件。",
+    "candidate_run": "2026-07-backfill/batch-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "多数实验是定性 demo",
+      "未确认硬件图纸/代码公开",
+      "桌面尺度对全尺寸 humanoid 外推有限"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.16187",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.16187"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.16187"
+    }
+  ],
+  "suggested_new_tags": []
+}

@@ -1,0 +1,151 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.13621",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "UESF-Bench: Benchmarking and Probing for Unified Embodied Seeking and Following",
+  "title_zh": null,
+  "abstract": "Language-guided human following is an important capability for embodied agents, but existing benchmarks typically assume that the target person is visible at the start of an episode. This setting simplifies the problem and overlooks a more realistic requirement: an agent often needs to first find a language-described target and then persistently follow that target in a dynamic environment. While recent work has started to study human search, existing settings are typically evaluated in task-specific scenarios and often rely on stronger prior knowledge of the environment. Moreover, they usually treat searching and following as separate tasks and still lack a unified benchmark for systematic evaluation. To address these limitations, we introduce the Unified Embodied Seeking and Following Benchmark (UESF-Bench), a large-scale and diverse benchmark for embodied human seeking and following. The benchmark requires agents to handle semantic-guided exploration, reliable behavior switching and recovery, and delayed identity grounding. To this end, we propose SeekFollow-VLA, a vision-language-action framework with a task-driven routing mechanism for latent phase inference and transition modeling between seeking and following. Experimental results show that SeekFollow-VLA achieves clear improvements over both single-head and dual-head baselines across single-person and multi-person environments, establishing a baseline for unified embodied seek-and-follow.",
+  "paper_url": "https://arxiv.org/abs/2607.13621",
+  "pdf_url": "https://arxiv.org/pdf/2607.13621",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Kun Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Jianhua Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Yixiang Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Changwei Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Hongyuan Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Yan Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Fushuo Huo",
+      "affiliations": []
+    },
+    {
+      "name": "Ya Jing",
+      "affiliations": []
+    },
+    {
+      "name": "Zhumin Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Keji He",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-15",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data",
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "planning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "dexterous-hand"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [],
+    "properties": [
+      "large-scale-data"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "dataset"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 74,
+    "selection_reason": "首次统一“先寻找语言描述的人、再持续跟随”，并以latent phase routing处理切换、恢复和延迟身份grounding。 第3节构建单/多人模拟benchmark；第4节给出single/dual/task-driven router；第5节比较两类环境、消融和routing dynamics；第6节总结。 当前看板导航覆盖薄弱；UESF-Bench填补统一seek-follow任务，但暂无实机证据。",
+    "candidate_run": "2026-07-backfill/batch-02",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "仿真为主",
+      "未发现benchmark/code公开入口",
+      "与通用操控主线关联较弱"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.13621",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.13621"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.13621"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "navigation",
+      "name": "navigation",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "首次统一“先寻找语言描述的人、再持续跟随”，并以latent phase routing处理切换、恢复和延迟身份grounding。 第3节构建单/多人模拟benchmark；第4节给出single/dual/task-driven router；第5节比较两类环境、消融和routing dynamics；第6节总结。 当前看板导航覆盖薄弱；UESF-Bench填补统一seek-follow任务，但暂无实机证据。"
+    }
+  ]
+}

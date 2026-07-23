@@ -1,0 +1,197 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2302.12422",
+  "title": "MimicPlay: Long-Horizon Imitation Learning by Watching Human Play",
+  "title_zh": "MimicPlay：通过观看人类玩耍实现长视野模仿学习",
+  "abstract": "Imitation learning from human demonstrations is a promising paradigm for teaching robots manipulation skills in the real world. However, learning complex long-horizon tasks often requires an unattainable amount of demonstrations. To reduce the high data requirement, we resort to human play data — video sequences of people freely interacting with the environment using their hands. Even with different morphologies, we hypothesize that human play data contain rich and salient information about physical interactions that can readily facilitate robot policy learning. Motivated by this, we introduce a hierarchical learning framework named MimicPlay that learns latent plans from human play data to guide low-level visuomotor control trained on a small number of teleoperated demonstrations. With systematic evaluations of 14 long-horizon manipulation tasks in the real world, we show that MimicPlay outperforms state-of-the-art imitation learning methods in task success rate, generalization ability, and robustness to disturbances. Code and videos are available at https://mimic-play.github.io.",
+  "paper_url": "https://arxiv.org/abs/2302.12422",
+  "pdf_url": "https://arxiv.org/pdf/2302.12422",
+  "project_url": "https://mimic-play.github.io",
+  "code_url": "https://github.com/j96w/MimicPlay",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Chen Wang",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Linxi Fan",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Jiankai Sun",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Ruohan Zhang",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Li Fei-Fei",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Danfei Xu",
+      "affiliations": [
+        "nvidia",
+        "georgia-tech"
+      ]
+    },
+    {
+      "name": "Yuke Zhu",
+      "affiliations": [
+        "nvidia",
+        "ut-austin"
+      ]
+    },
+    {
+      "name": "Anima Anandkumar",
+      "affiliations": [
+        "nvidia",
+        "caltech"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "stanford",
+      "name": "Stanford University",
+      "role": "primary"
+    },
+    {
+      "id": "nvidia",
+      "name": "NVIDIA",
+      "role": "collaborator"
+    },
+    {
+      "id": "georgia-tech",
+      "name": "Georgia Tech",
+      "role": "collaborator"
+    },
+    {
+      "id": "ut-austin",
+      "name": "UT Austin",
+      "role": "collaborator"
+    },
+    {
+      "id": "caltech",
+      "name": "Caltech",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2023-02-24",
+    "last_revision": "2023-10-13"
+  },
+  "venue": {
+    "name": "CoRL 2023 (Oral)",
+    "year": 2023,
+    "status": "published"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "imitation-learning",
+      "behavior-cloning",
+      "planning",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "proprioception",
+      "action"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [
+      "code"
+    ],
+    "properties": [
+      "open-source",
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "提出了利用无标签人类玩耍数据来训练3D-aware latent planner的分层模仿学习框架，仅需20-40条任务演示即可在14个长视野操作任务上显著超越已有方法（Table 1, Table 2），对减少机器人学习对标注数据的依赖具有重要价值。CoRL 2023 Oral。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-22",
+    "confidence": "high",
+    "needs_human_review": true,
+    "uncertainties": [
+      "Georgia Tech和Caltech机构信息来自ar5iv全文HTML中的作者上标标注，实体关系准确但建议人工复核",
+      "Appendix中包含仿真实验（multi-seed evaluation in simulation），environments可考虑添加simulation标签"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "ar5iv-html",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2302.12422",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 MimicPlay (Method)",
+      "4 Experiment Setups",
+      "5 Results",
+      "6 Conclusion and Limitations",
+      "Acknowledgments",
+      "References",
+      "Appendix"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-22"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2302.12422"
+    },
+    {
+      "type": "project-page",
+      "url": "https://mimic-play.github.io"
+    },
+    {
+      "type": "code",
+      "url": "https://github.com/j96w/MimicPlay"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "hierarchical-imitation-learning",
+      "name": "分层模仿学习",
+      "reason": "论文的核心贡献是提出高低两层分层的模仿学习架构（高层latent planner + 低层plan-guided policy），现有的imitation-learning标签无法区分分层与非分层方法。该方法将高层规划从人类玩耍数据中学习，低层控制从机器人遥操作演示中学习。",
+      "evidence": "Section 3描述了完整的分层框架：高层planner P从人类玩耍数据学习3D-aware latent plans，低层transformer-based policy π从遥操作数据学习plan-guided控制（Sec 3.2, 3.3）。Table 1和Table 2的消融实验验证了分层设计的重要性（Ours(0% human) vs Ours差异>23%）。"
+    }
+  ],
+  "content_type": "paper",
+  "source_scope": "full-source"
+}

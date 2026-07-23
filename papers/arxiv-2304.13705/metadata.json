@@ -1,0 +1,153 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2304.13705",
+  "title": "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware",
+  "title_zh": "基于低成本硬件的精细双手操作学习",
+  "abstract": "Fine manipulation tasks, such as threading cable ties or slotting a battery, are notoriously difficult for robots because they require precision, careful coordination of contact forces, and closed-loop visual feedback. Performing these tasks typically requires high-end robots, accurate sensors, or careful calibration, which can be expensive and difficult to set up. Can learning enable low-cost and imprecise hardware to perform these fine manipulation tasks? We present a low-cost system that performs end-to-end imitation learning directly from real demonstrations, collected with a custom teleoperation interface. Imitation learning, however, presents its own challenges, particularly in high-precision domains: errors in the policy can compound over time, and human demonstrations can be non-stationary. To address these challenges, we develop a simple yet novel algorithm, Action Chunking with Transformers (ACT), which learns a generative model over action sequences. ACT allows the robot to learn 6 difficult tasks in the real world, such as opening a translucent condiment cup and slotting a battery with 80-90% success, with only 10 minutes worth of demonstrations.",
+  "paper_url": "https://arxiv.org/abs/2304.13705",
+  "pdf_url": "https://arxiv.org/pdf/2304.13705",
+  "project_url": "https://tonyzhaozh.github.io/aloha/",
+  "code_url": "https://github.com/tonyzhaozh/aloha",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": "https://tonyzhaozh.github.io/aloha/",
+  "authors": [
+    {
+      "name": "Tony Z. Zhao",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Vikash Kumar",
+      "affiliations": [
+        "meta"
+      ]
+    },
+    {
+      "name": "Sergey Levine",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Chelsea Finn",
+      "affiliations": [
+        "stanford"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "stanford",
+      "name": "Stanford University",
+      "role": "primary"
+    },
+    {
+      "id": "uc-berkeley",
+      "name": "UC Berkeley",
+      "role": "collaborator"
+    },
+    {
+      "id": "meta",
+      "name": "Meta",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2023-04-23",
+    "last_revision": "2023-04-23"
+  },
+  "venue": {
+    "name": "Robotics: Science and Systems (RSS)",
+    "year": 2023,
+    "status": "published"
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "ar5iv-html",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2304.13705",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "I. Introduction",
+      "II. Related Work",
+      "III. ALOHA Hardware System",
+      "IV. Action Chunking with Transformers (Method)",
+      "V. Experiments",
+      "VI. Ablations",
+      "VII. Limitations and Conclusion"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-21"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "imitation-learning",
+      "behavior-cloning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "proprioception"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [
+      "code"
+    ],
+    "properties": [
+      "open-source",
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "system"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "ACT（Action Chunking with Transformers）是模仿学习领域的里程碑工作，提出了Action Chunking + Temporal Ensemble的创新范式，配合低成本的ALOHA双臂遥操作系统（总成本约$20k），仅用10分钟演示数据即可在6项精细操作任务上达到80-90%成功率。该工作开创了低成本双臂精细操作的新范式，开源硬件和代码极大地推动了具身智能社区的民主化进程，是近年来最具影响力的机器人操作论文之一。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-21",
+    "confidence": "high",
+    "needs_human_review": true,
+    "uncertainties": [
+      "GitHub仓库因网络限制未能在生成时完整验证可访问性",
+      "RSS 2023 venue通过公开渠道交叉确认，arXiv页面未标注"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2304.13705"
+    },
+    {
+      "type": "html-fulltext",
+      "url": "https://ar5iv.labs.arxiv.org/html/2304.13705"
+    },
+    {
+      "type": "project-page",
+      "url": "https://tonyzhaozh.github.io/aloha/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "migration": {
+    "from_schema_version": "0.2",
+    "migrated_at": "2026-07-22",
+    "note": "从 v0.2 迁移；source_access 可证明已读取完整论文来源。"
+  }
+}

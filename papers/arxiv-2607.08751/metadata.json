@@ -1,0 +1,181 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.08751",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "DexVerse: A Modular Benchmark for Multi-Task, Multi-Embodiment Dexterous Manipulation",
+  "title_zh": null,
+  "abstract": "Building general-purpose dexterous manipulation policies requires benchmarks that go beyond isolated tasks to systematically evaluate policies across diverse interaction modes, sensory conditions, and robot embodiments. However, existing benchmarks remain limited in task and data diversity, embodiment coverage, or controllable visual variation, hindering studies of cross-task and cross-embodiment generalization. We present DexVerse, a large-scale and modular benchmark for dexterous manipulation. DexVerse includes 100 tasks spanning a broad range of manipulation skills, including object grasping and relocation, articulated-object interaction, functional tool use, bimanual coordination, non-prehensile control, contact-rich behaviors, multi-goal execution, and long-horizon multi-stage task completion. It supports 3 robot arms and 6 dexterous hands, and is extensible to new tasks, assets, and embodiments. To evaluate visuomotor generalization, DexVerse provides configurable visual variations in textures, background, lighting, and camera viewpoints. We further provide a VR-based teleoperation interface and 3,180 demonstrations with synchronized proprioceptive, RGB, depth, point-cloud, and state observations. We benchmark representative methods, including Diffusion Policy, DP3, OpenVLA, and $π_{0.5}$, across 19 tasks. Results reveal substantial challenges in task generalization and visuomotor robustness, establishing DexVerse as a promising testbed for general-purpose dexterous manipulation. Project page: https://ycyao216.github.io/DexVerse.site",
+  "paper_url": "https://arxiv.org/abs/2607.08751",
+  "pdf_url": "https://arxiv.org/pdf/2607.08751",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yunchao Yao",
+      "affiliations": []
+    },
+    {
+      "name": "Zhuxiu Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Tianqi Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Zixian Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Sikai Li",
+      "affiliations": []
+    },
+    {
+      "name": "Zhenyu Wei",
+      "affiliations": []
+    },
+    {
+      "name": "Feng Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Dihong Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Kechang Wan",
+      "affiliations": []
+    },
+    {
+      "name": "Chenyang Ma",
+      "affiliations": []
+    },
+    {
+      "name": "Shuqi Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Shenghua Gao",
+      "affiliations": []
+    },
+    {
+      "name": "Masayoshi Tomizuka",
+      "affiliations": []
+    },
+    {
+      "name": "Yi Ma",
+      "affiliations": []
+    },
+    {
+      "name": "Mingyu Ding",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-09",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "simulators",
+      "data",
+      "infrastructure"
+    ],
+    "topics": [
+      "imitation-learning",
+      "vla",
+      "diffusion-policy"
+    ],
+    "tasks": [
+      "manipulation",
+      "generalist-control"
+    ],
+    "platforms": [
+      "dexterous-hand",
+      "robot-arm",
+      "multi-robot"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action",
+      "depth",
+      "point-cloud",
+      "proprioception"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [],
+    "properties": [
+      "simulation-only",
+      "large-scale-data"
+    ]
+  },
+  "paper_type": [
+    "dataset",
+    "simulator",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 89,
+    "selection_reason": "这项工作在其问题上提出明确增量：同时扩展任务覆盖、hand/arm embodiment 和可控视觉 variation 的 dexterous benchmark。 代表性 BC、3D policy 与 VLA 基线共同暴露 generalization gap；项目页本次未通，但仿真资产 HF 入口出现在全文。 最近邻为 Isaac Lab 和 KinDER；DexVerse新增大规模多 embodiment 灵巧操控任务与 VLA/DP 基线。",
+    "candidate_run": "2026-07-backfill/batch-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "主要是仿真 benchmark",
+      "项目页本次网络探测失败",
+      "数据规模相对 100 任务仍稀疏"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.08751",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.08751"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.08751"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://ycyao216.github.io/DexVerse.site/"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://huggingface.co/datasets/Extwin/Synthesis-Sim-Ready-Assets"
+    }
+  ],
+  "suggested_new_tags": []
+}

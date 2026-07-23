@@ -1,0 +1,128 @@
+{
+  "schema_version": "0.3",
+  "id": "pi06-2025",
+  "title": "π*₀.₆: A VLA that Learns from Experience",
+  "title_zh": "π*₀.₆：从经验中学习的视觉-语言-动作模型",
+  "abstract": "π*₀.₆ is the RL-trained version of Physical Intelligence's π₀.₆ VLA (vision-language-action) model. The work introduces RECAP (RL with Experience & Corrections via Advantage-conditioned Policies), a method that enables generalist robot policies to improve from autonomous experience. RECAP trains the robot with three stages: (1) demonstrations for initial skill acquisition, (2) coaching with human corrections to fix large mistakes, and (3) online reinforcement learning where the robot learns from its own practice. The key technical innovation is advantage-conditioned policy extraction: a value function is trained to perform credit assignment, and the VLA is conditioned on the advantage (change in value) so that it learns to prefer high-advantage actions while retaining all training data. Applied to three real-world tasks — making espresso drinks, folding diverse laundry, and assembling boxes — RECAP more than doubles throughput on the hardest tasks (espresso making) and decreases failure rates by 2× or more. The resulting π*₀.₆ model achieves practical robustness: running espresso service for an entire day, folding 50 novel laundry items in a new home without interruption, and assembling 59 boxes in a real factory.",
+  "paper_url": "https://www.pi.website/blog/pistar06",
+  "pdf_url": "https://www.pi.website/download/pistar06.pdf",
+  "project_url": "https://www.pi.website/blog/pistar06",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": "https://www.pi.website/blog/pistar06",
+  "authors": [],
+  "organizations": [
+    {
+      "id": "physical-intelligence",
+      "name": "Physical Intelligence",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2025-11-17",
+    "last_revision": "2025-11-17"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "published"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "foundation-model",
+      "reinforcement-learning",
+      "imitation-learning",
+      "behavior-cloning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "proprioception",
+      "action"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "首次在VLA模型上完整实现示范→纠正→在线RL三阶段训练，通过优势条件化解决信用分配问题。在真实任务上吞吐量翻倍、故障率减半，展示了在线RL将VLA推向可靠部署的关键路径。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-21",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "博客未列完整作者名单，仅以Physical Intelligence署名",
+      "模型权重和代码未公开",
+      "博客文章为唯一内容源，部分技术细节无法核验"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "blog-post",
+    "fulltext_source": "blog-post",
+    "fulltext_url": "https://www.pi.website/blog/pistar06",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Introduction",
+      "RECAP method overview",
+      "Real-world results",
+      "Conclusion"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-21"
+  },
+  "sources": [
+    {
+      "type": "blog-post",
+      "url": "https://www.pi.website/blog/pistar06"
+    },
+    {
+      "type": "paper",
+      "url": "https://www.pi.website/download/pistar06.pdf"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "online-rl",
+      "name": "Online Reinforcement Learning",
+      "reason": "现有reinforcement-learning标签不区分离线RL和在线RL，π0.6的核心贡献是在线RL自我改进。",
+      "evidence": "博客第3节明确描述了三阶段在线RL训练流程。"
+    },
+    {
+      "dimension": "properties",
+      "slug": "advantage-conditioning",
+      "name": "Advantage Conditioning",
+      "reason": "优势条件化是π0.6的核心技术机制，现有词表无对应标签。",
+      "evidence": "RECAP通过value function计算advantage并条件化VLA策略。"
+    }
+  ],
+  "content_type": "official-blog",
+  "source_scope": "full-source",
+  "migration": {
+    "from_schema_version": "0.2",
+    "migrated_at": "2026-07-22",
+    "note": "从 v0.2 迁移；source_access 可证明已读取完整官方博客来源。"
+  }
+}

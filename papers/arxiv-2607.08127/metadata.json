@@ -1,0 +1,156 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.08127",
+  "title": "Understanding and Mitigating the Video-Action Generalization Gap via Temporal Ratio",
+  "title_zh": "理解和缓解视频-动作泛化差距：基于时序比率的方法",
+  "abstract": "Generative video foundation models exhibit strong compositional priors, yet world-action models (WAMs) and video-action models (VAMs) often lose these priors after finetuning on robotic action data. We refer to this discrepancy as the video-action generalization gap. In this paper, we systematically investigate this gap by evaluating a comprehensive design space of VAMs, demonstrating that standard design choices yield no emergent explanation pattern. To explain this behavior, we introduce the Temporal Ratio (TR), an attention-based measure of how strongly the action head relies on future latent rollouts relative to the anchored current frame. TR has two key properties: first, a model's structural reliance on future-predictive latents, measured via TR, acts as a predictor of its compositional generalization capacity; second, it natively fluctuates based on task phase, shifting attention to future frames during planning and reverting to the present frame for precise manipulation. Finally, based on these findings, we propose an inference-time adaptive guidance method, which exploits this intrinsic feature attention pattern to dynamically amplify compositional video conditioning signals precisely when the policy relies on future rollouts. Evaluated on the LIBERO benchmark and real-world tasks, our approach mitigates the OOD-ID compositional generalization gap.",
+  "paper_url": "https://arxiv.org/abs/2607.08127",
+  "pdf_url": "https://arxiv.org/pdf/2607.08127",
+  "project_url": "https://umishra.me/temporal-ratio/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Utkarsh A. Mishra",
+      "affiliations": [
+        "georgia-tech",
+        "amazon-far"
+      ]
+    },
+    {
+      "name": "Yongxin Chen",
+      "affiliations": [
+        "georgia-tech"
+      ]
+    },
+    {
+      "name": "Danfei Xu",
+      "affiliations": [
+        "georgia-tech"
+      ]
+    },
+    {
+      "name": "Yang Liu",
+      "affiliations": [
+        "amazon-far"
+      ]
+    },
+    {
+      "name": "Xi Chen",
+      "affiliations": [
+        "amazon-far"
+      ]
+    },
+    {
+      "name": "Jiayuan Mao",
+      "affiliations": [
+        "amazon-far"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "georgia-tech",
+      "name": "Georgia Institute of Technology",
+      "role": "primary"
+    },
+    {
+      "id": "amazon-far",
+      "name": "Amazon FAR (Foundational AI Research)",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-07-09",
+    "last_revision": "2026-07-09"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model",
+      "representation-learning",
+      "behavior-cloning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "proprioception",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "analysis"
+  ],
+  "editorial": {
+    "importance": "high",
+    "selection_reason": "首次系统性地定义并研究了视频-动作泛化差距（VAG gap），提出了时序比率（Temporal Ratio）这一可解释的注意力度量来诊断世界-动作模型何时真正利用视频预测未来进行规划。基于此发现提出的推理时自适应引导方法在 LIBERO 和真实双臂任务上将 OOD 组合泛化成功率提升至远超先前 WAM/VAM 的水平，对理解视频基础模型到机器人策略的知识迁移具有重要启发。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-21",
+    "confidence": "high",
+    "needs_human_review": true,
+    "uncertainties": [
+      "Utkarsh A. Mishra 标注在 Georgia Tech 但工作是在 Amazon FAR 实习期间完成的，双重归属已记录",
+      "论文声明将在双盲审稿结束后开源代码和模型，目前尚未公开",
+      "Amazon FAR 全称 Foundational AI Research，论文中缩写为 FAR"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.08127"
+    },
+    {
+      "type": "project-page",
+      "url": "https://umishra.me/temporal-ratio/"
+    }
+  ],
+  "suggested_new_tags": [
+    "world-action-model"
+  ],
+  "content_type": "paper",
+  "source_scope": "partial-source",
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-pdf",
+    "fulltext_url": "https://arxiv.org/pdf/2607.08127",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Introduction",
+      "Design Space of Video-Action Models",
+      "Systematic Analysis of the Video-Action Generalization Gap",
+      "Understanding and Mitigating the VAG Gap via Temporal Ratio",
+      "Experimental Results",
+      "Related Work",
+      "Conclusion"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-22",
+    "note": "ar5iv HTML not available (307 redirect to arXiv abs page). Full text accessed via PDF + pdftotext extraction. Method (Sec 4), Experiments (Sec 5), Conclusion (Sec 7), and Limitations all read and verified."
+  }
+}

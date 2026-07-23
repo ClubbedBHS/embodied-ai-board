@@ -1,0 +1,247 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.00033",
+  "title": "Learning Dexterous Manipulation Using Contact Wrench Guidance From Human Demonstration",
+  "title_zh": "利用人类演示中的接触力旋量引导学习灵巧操作",
+  "abstract": "Dexterous robot manipulation can benefit from the abundance of human demonstrations, but transferring such demonstrations to robot policies remains challenging. We present Contact Wrench Guidance from Human Demonstration in Robotic Dexterous Manipulation (CHORD), a framework for long-horizon manipulation of rigid and articulated objects with reinforcement learning. The key idea is object-centric contact wrench space guidance: we represent human and robot motions by the forces and torques they can induce on the object, enabling similarity to be measured by the induced instantaneous motions. This guidance makes reinforcement learning more scalable for contact-rich dexterous manipulation. We further introduce a large-scale simulation benchmark with 4,739 bimanual dexterous manipulation tasks, constructed from motion-capture datasets and reconstructed in-house videos. Evaluated on 1,831 benchmark tasks, CHORD achieves an average success rate of 82.12%, demonstrating strong scalability. CHORD also generalizes to whole-body manipulation from hand-only and third-person demonstrations, achieving a 90.77% success rate, and the learned policies transfer to the real world in both open-loop and closed-loop settings. Videos and code are available at https://nvidia-isaac.github.io/video_to_data/chord/.",
+  "paper_url": "https://arxiv.org/abs/2607.00033",
+  "pdf_url": "https://arxiv.org/pdf/2607.00033",
+  "project_url": "https://nvidia-isaac.github.io/video_to_data/chord/",
+  "code_url": "https://nvidia-isaac.github.io/video_to_data/chord/",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": "https://nvidia-isaac.github.io/video_to_data/chord/",
+  "authors": [
+    {
+      "name": "Xinghao Zhu",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Zixi Liu",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Shalin Jain",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Chenran Li",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Milad Noori",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Huihua Zhao",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "John Welsh",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Michael Andres Lin",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Wei Liu",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Tingwu Wang",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Xingye Da",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Zhengyi Luo",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Vishal Kulkarni",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Naema Bhatti",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Yuke Zhu",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Linxi Fan",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Bowen Wen",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Danfei Xu",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Soha Pouya",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Yan Chang",
+      "affiliations": [
+        "nvidia"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "nvidia",
+      "name": "NVIDIA",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-22",
+    "last_revision": "2026-06-22"
+  },
+  "venue": {
+    "name": "arXiv",
+    "year": 2026,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "imitation-learning",
+      "sim-to-real",
+      "control"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "dexterous-hand",
+      "humanoid"
+    ],
+    "modalities": [
+      "proprioception"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [
+      "code"
+    ],
+    "properties": [
+      "open-source",
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "提出接触力旋量空间引导（CWG）的新范式，将人类演示的接触模式转移到机器人策略中，并在大规模基准（4,739 任务）和真实机器人上验证了可扩展性与 sim-to-real 能力。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-21",
+    "confidence": "high",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文仅列出 NVIDIA 作为作者单位，但部分作者（Danfei Xu、Yuke Zhu）已知有 Georgia Tech 和 UT Austin 的双重 affiliation，PDF 中未体现"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.00033"
+    },
+    {
+      "type": "project-page",
+      "url": "https://nvidia-isaac.github.io/video_to_data/chord/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-htmlv2",
+    "fulltext_url": "https://arxiv.org/html/2607.00033",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 Method",
+      "3.1 RL with Wrench Space Contact Guidance",
+      "3.2 Efficient, Robust, and Generalizable Policy Learning",
+      "3.3 Dexterous Manipulation Benchmark with Human References",
+      "4 Experiments",
+      "4.1 Quantitative Analysis",
+      "4.2 Examining Contact Wrench Guidance",
+      "4.3 Correlation between Contact Wrench Reward and Task Success",
+      "4.4 Diverse Capabilities Enable Long-Horizon Manipulation",
+      "4.5 CHORD Extends to Whole-Body Manipulation",
+      "4.6 Evaluation on Real World",
+      "4.7 Comparing CHORD to Teleoperation",
+      "5 Conclusion and Discussion",
+      "6 Limitations",
+      "Appendix A Ablation Studies",
+      "Appendix B Implementation Details",
+      "Appendix C CHORD Validation from Human Video",
+      "Appendix D Benchmark Details",
+      "Appendix E Whole Body Manipulation",
+      "Appendix F Hardware Setup",
+      "Appendix G Baseline Reproduction"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-22",
+    "note": "ar5iv redirected to arXiv abs page (paper too recent for ar5iv), used arXiv HTMLv2 experimental view instead. Full text read including method, experiments, conclusion, and limitations."
+  }
+}

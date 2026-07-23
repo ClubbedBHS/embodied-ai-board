@@ -1,0 +1,138 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.12287",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Reducing Temporal Redundancy for Efficient Vision-Language-Action Inference",
+  "title_zh": null,
+  "abstract": "Vision-Language-Action (VLA) models exhibit strong generalization for robotic manipulation, yet their high inference latency limits real time deployment. We identify two primary sources of temporal redundancy in existing VLA pipelines: repeated visual encoding of highly similar consecutive frames and multi step iterative sampling in diffusion based policies. To address this, we propose a system level acceleration strategy that reduces computation in both perception and action generation. On the perception side, we incrementally update only tokens corresponding to dynamic scene regions instead of re-encoding entire frames. On the policy side, we compress diffusion sampling into a compact 2-step schedule through efficiency oriented training while preserving action precision. Experiments on Libero, RobotWin, and Real Robot Platforms demonstrate over 2 times speedup while maintaining high performance, achieving up to 98% success rate on general manipulation benchmarks. Our codes will be released on Github.",
+  "paper_url": "https://arxiv.org/abs/2607.12287",
+  "pdf_url": "https://arxiv.org/pdf/2607.12287",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yuzhou Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Yuxin Zheng",
+      "affiliations": []
+    },
+    {
+      "name": "Muchun Niu",
+      "affiliations": []
+    },
+    {
+      "name": "Yishan Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Tianhao Liu",
+      "affiliations": []
+    },
+    {
+      "name": "hanwen kang",
+      "affiliations": []
+    },
+    {
+      "name": "Jiajian Jing",
+      "affiliations": []
+    },
+    {
+      "name": "Linfeng Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Chuan Wen",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-14",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "infrastructure",
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "diffusion-policy"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 71,
+    "selection_reason": "联合消除连续帧视觉重编码和 diffusion 多步采样两类时间冗余。 第III节给出动态区域 token reuse 与2-step flow schedule；第IV节覆盖 LIBERO、RoboTwin、实机、效率和系统消融，报告2×以上加速与最高98%成功；第V节含局限。 相对 Embodied.cpp 的通用runtime，本工作是模型级 temporal token reuse+flow step compression，覆盖更窄。",
+    "candidate_run": "2026-07-backfill/batch-02",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "代码只承诺未来发布",
+      "token reuse 对快速遮挡/接触变化的失效范围需核验"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.12287",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.12287"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.12287"
+    }
+  ],
+  "suggested_new_tags": []
+}

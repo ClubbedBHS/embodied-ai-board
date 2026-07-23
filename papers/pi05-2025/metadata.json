@@ -1,0 +1,116 @@
+{
+  "schema_version": "0.3",
+  "id": "pi05-2025",
+  "title": "π0.5: A VLA with Open-World Generalization",
+  "title_zh": "π0.5：具备开放世界泛化能力的视觉-语言-动作模型",
+  "abstract": "π0.5 is a vision-language-action (VLA) model that extends π0 with open-world generalization. By co-training on heterogeneous data sources — including multimodal web data, cross-embodiment robot data, multi-environment data, and mobile manipulation demonstrations — π0.5 enables a mobile manipulator to perform complex long-horizon cleaning tasks in entirely new kitchens and bedrooms never seen during training. The model uses a chain-of-thought inference procedure where the same VLA first produces high-level semantic actions in text, then outputs low-level motor commands via flow matching. In evaluations, π0.5 achieves 83% in-distribution success rate and 94% out-of-distribution success and language-following rates. Ablation studies demonstrate that all data mixture components contribute significantly, with web data being critical for OOD object recognition and multi-environment/cross-embodiment data essential for physical skill transfer. Scaling experiments show that with approximately 100 distinct training environments, π0.5 approaches the performance of a model directly trained on test environments.",
+  "paper_url": "https://www.pi.website/blog/pi05",
+  "pdf_url": "https://www.pi.website/download/pi05.pdf",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [],
+  "organizations": [
+    {
+      "id": "physical-intelligence",
+      "name": "Physical Intelligence",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2025-04-22",
+    "last_revision": "2025-04-22"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "published"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "foundation-model",
+      "behavior-cloning"
+    ],
+    "tasks": [
+      "mobile-manipulation",
+      "manipulation"
+    ],
+    "platforms": [
+      "mobile-robot"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action",
+      "proprioception"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation",
+      "zero-shot"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "π0.5 是 Physical Intelligence 在 π0 基础上的重要迭代，首次展示了 VLA 模型在完全未见过的家庭环境中执行长序列清洁任务的开放世界泛化能力，OOD 成功率 94%。其异构数据联合训练方案为 VLA 泛化提供了可复现的配方。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-21",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "博客文章未列出个体作者姓名，仅以 Physical Intelligence 机构名义发表",
+      "PDF 论文下载超时，未能读取完整论文正文以核验技术细节",
+      "模型参数量、具体架构细节、训练计算量在博客文章中未披露",
+      "代码、模型权重和数据集均未公开",
+      "π0.5 是否为 π0 的微调版本还是从头训练的变体，博客未明确说明"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "blog-post",
+    "fulltext_source": "blog-post-html",
+    "fulltext_url": "https://www.pi.website/blog/pi05",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Introduction",
+      "How does it work?",
+      "Training and inference",
+      "Generalization to new homes",
+      "Where do we go from here?"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-21"
+  },
+  "sources": [
+    {
+      "type": "blog-post",
+      "url": "https://www.pi.website/blog/pi05"
+    },
+    {
+      "type": "paper",
+      "url": "https://www.pi.website/download/pi05.pdf"
+    }
+  ],
+  "suggested_new_tags": [],
+  "content_type": "official-blog",
+  "source_scope": "full-source",
+  "migration": {
+    "from_schema_version": "0.2",
+    "migrated_at": "2026-07-22",
+    "note": "从 v0.2 迁移；source_access 可证明已读取完整官方博客来源。"
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.12356",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "VistaVLA: Geometry- and Semantic-Aware 3D Gaussian-Grounded VLA for Robotic Manipulation",
+  "title_zh": null,
+  "abstract": "Vision-Language-Action (VLA) models have emerged as a powerful end-to-end paradigm for robotic manipulation by mapping language instructions and 2D visual inputs directly to actions. However, these models lack an explicit, scene-level 3D representation, limiting their ability to reason over spatial layouts and geometric constraints. While recent efforts incorporate explicit 3D cues, such as depth maps or point clouds, to improve geometric awareness, they primarily capture low-level structures and lack high-level semantic grounding in 3D space. In human cognition, interaction with the physical world relies on a 3D semantic cognitive map - an internal mental model that integrates spatial layouts with semantic context to enable persistent, viewpoint-invariant reasoning. In light of this, we present VistaVLA, a novel two-stage framework that constructs a geometry- and semantics-aware 3D cognitive representation from 3D Gaussian primitives and grounds it as compact context tokens for VLA policy learning. Specifically, VistaVLA lifts multi-view vision-language features into 3D Gaussian primitives, forming geometry-anchored semantic tokens that align view-consistent spatial grounding with 2D visual feature spaces. To make this 3D representation computationally tractable for effective VLA control, we introduce Merge-then-Query (MtQ), a token summarization mechanism. MtQ compresses dense Gaussian primitives into a highly compact set of spatially informative tokens, achieving a 99% token reduction while preserving action-relevant 3D layouts and semantic context. Extensive evaluations in both simulated and real-world environments demonstrate the effectiveness of VistaVLA. Notably, in real-world scenarios, VistaVLA improves success rates by 22.8% across seven real-world tasks and by 30.0% over the VLA-Adapter baseline on challenging out-of-distribution tasks.",
+  "paper_url": "https://arxiv.org/abs/2607.12356",
+  "pdf_url": "https://arxiv.org/pdf/2607.12356",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Mohan Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Zhihao Gu",
+      "affiliations": []
+    },
+    {
+      "name": "Xuanyu Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Haitian Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Kaimin Mao",
+      "affiliations": []
+    },
+    {
+      "name": "Yan Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Wei-Yun Yau",
+      "affiliations": []
+    },
+    {
+      "name": "Lin Wang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-14",
+    "last_revision": "2026-07-16"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action",
+      "depth",
+      "point-cloud"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 75,
+    "selection_reason": "VistaVLA在VLA空间认知上提出明确增量：将3D语义高斯场作为VLA策略的空间认知接口，并通过MtQ实现99% token压缩以高效注入策略。7个真实任务+空间扰动测试+仿真实验提供多维度证据，显著超越VLA-Adapter基线(22.8%)和通用VLA(π0.5)。相较看板中已有的3D增强VLA(如batch-02的See like a Robot/Robot-Centric Pointmaps和GeoVLA相关方向)，新增信息是语义高斯原语+MtQ压缩的多视图一致3D语义-几何表示，而非仅点云/深度注入。主要风险：资产未公开验证；表1结果依赖标定多视图相机；7个任务均为桌面操控。",
+    "candidate_run": "2026-07-backfill/batch-03",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "hermes-agent",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "代码/数据/权重仓库未探测到HTTP 200可访问资产",
+      "依赖标定多视图相机构建高斯场，无标定场景适用性未验证(S5明确讨论)",
+      "7个任务均为桌面操控，未覆盖更大工作空间或动态遮挡",
+      "与VLA-Adapter+Depth比较中，depth增强仅带来有限提升，但可能存在depth集成方式的优化空间",
+      "MtQ压缩的信息损失未在操控精度维度上充分量化"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.12356v2",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.12356"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.12356v2"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "manipulation",
+      "name": "manipulation",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "VistaVLA在VLA空间认知上提出明确增量：将3D语义高斯场作为VLA策略的空间认知接口，并通过MtQ实现99% token压缩以高效注入策略。7个真实任务+空间扰动测试+仿真实验提供多维度证据，显著超越VLA-Adapter基线(22.8%)和通用VLA(π0.5)。相较看板中已有的3D增强VLA(如batch-02的See like a Robot/Robot-Centric Pointmaps和GeoVLA相关方向)，新增信息是语义高斯原语+MtQ压缩的多视图一致3D语义-几何表示，而非仅点云/深度注入。主要风险：资产未公开验证；表1结果依赖标定多视图相机；7个任务均为桌面操控。"
+    },
+    {
+      "dimension": "topics",
+      "slug": "3d-representation",
+      "name": "3d-representation",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "VistaVLA在VLA空间认知上提出明确增量：将3D语义高斯场作为VLA策略的空间认知接口，并通过MtQ实现99% token压缩以高效注入策略。7个真实任务+空间扰动测试+仿真实验提供多维度证据，显著超越VLA-Adapter基线(22.8%)和通用VLA(π0.5)。相较看板中已有的3D增强VLA(如batch-02的See like a Robot/Robot-Centric Pointmaps和GeoVLA相关方向)，新增信息是语义高斯原语+MtQ压缩的多视图一致3D语义-几何表示，而非仅点云/深度注入。主要风险：资产未公开验证；表1结果依赖标定多视图相机；7个任务均为桌面操控。"
+    }
+  ]
+}

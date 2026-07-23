@@ -1,0 +1,136 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.01586",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "VLAFlow: A Unified Training Framework for Vision-Language-Action Models via Co-training and Future Latent Alignment",
+  "title_zh": null,
+  "abstract": "Vision-language-action models (VLAs) have recently advanced robotic manipulation, yet the effects of different robot-data pre-training paradigms remain difficult to compare because existing models often differ in architecture, data, action space, and evaluation protocol. We present VLAFlow (Vision-Language-Action Flow), a unified flow-matching framework for controlled comparison of VLA training objectives. Using a heterogeneous robot corpus, OXEMix, containing approximately 5,000 hours of data from DROID, OpenX-Embodiment, OpenX-Augmented, and RoboCOIN, we evaluate four paradigms under the same pi0-style architecture, shared VLM backbone, action expert, and 14-dimensional action space: action-only modeling (MindPI), language-supervised co-training (MindLPI), future latent alignment (MindWPI), and their combination (MindLWPI). Experiments on LIBERO, LIBERO-Plus, and SimplerEnv show that action-only pre-training is sensitive to heterogeneous data. In contrast, language supervision helps preserve vision-language generalization, while future latent alignment improves state-transition and action-outcome modeling. By combining both signals, MindLWPI achieves the most stable overall transfer performance across benchmarks. These results suggest a meta-action space view: language and future latent representations provide complementary intermediate constraints that make heterogeneous action supervision smoother and more transferable.",
+  "paper_url": "https://arxiv.org/abs/2607.01586",
+  "pdf_url": "https://arxiv.org/pdf/2607.01586",
+  "project_url": null,
+  "code_url": "https://github.com/MindVLA-Team/VLAFlow",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Guoyang Xia",
+      "affiliations": []
+    },
+    {
+      "name": "Fengfa Li",
+      "affiliations": []
+    },
+    {
+      "name": "Hongjin Ji",
+      "affiliations": []
+    },
+    {
+      "name": "Lei Ren",
+      "affiliations": []
+    },
+    {
+      "name": "Fangxiang Feng",
+      "affiliations": []
+    },
+    {
+      "name": "Kun Zhan",
+      "affiliations": []
+    },
+    {
+      "name": "Yan Xie",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-02",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "behavior-cloning",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm",
+      "multi-robot"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [
+      "code"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 85,
+    "selection_reason": "这项工作在其问题上提出明确增量：用受控架构/数据/动作空间分离此前被模型差异混淆的 VLA 预训练目标效果。 跨三个 benchmark、明确负迁移定义、checkpoint 选择规则和消融，证据设计强；主要缺口是真实机器人验证。 最近邻为 π0/π0.5 与 EgoWAM；VLAFlow新增同构受控比较，分离语言共训和未来 latent alignment 的作用。",
+    "candidate_run": "2026-07-backfill/batch-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "仅仿真 benchmark",
+      "OXEMix 数据混合及公开数据偏差可能限制外推"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.01586",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.01586"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.01586"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://github.com/MindVLA-Team/VLAFlow"
+    }
+  ],
+  "suggested_new_tags": []
+}

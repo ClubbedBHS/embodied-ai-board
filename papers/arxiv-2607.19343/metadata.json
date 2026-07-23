@@ -1,0 +1,168 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.19343",
+  "title": "Masked Visual Actions for Unified World Modeling",
+  "title_zh": "Masked Visual Actions：用于统一世界建模的遮罩视觉动作",
+  "abstract": "Video models absorb rich priors over how the visual world moves, interacts, and responds to contact, making them promising substrates for robotic world modeling. The central challenge is how to communicate action to such models in a form aligned with the visual space in which they learned these interaction priors, yet still grounded in physical manipulation. We introduce Masked Visual Actions, a pixel-space control interface that expresses action as a partially revealed trajectory of an arbitrary entity in a video. Revealing robot motion makes the model act as a forward dynamics model that predicts the scene's response to low-level robot actions, while revealing desired object motion makes the same model recover robot behavior consistent with that outcome. Finetuned with only 15 hours of masked examples from real videos and simulation, a single checkpoint achieves strong visual fidelity and controllability across diverse scenes and multiple embodiments. In downstream manipulation settings, the model produces imagined rollouts whose outcomes correlate with real-world execution for policy evaluation, improves decision making by ranking candidate futures in model-based planning, and supports inverse modeling by synthesizing robot motion from desired object motion.",
+  "paper_url": "https://arxiv.org/abs/2607.19343",
+  "pdf_url": "https://arxiv.org/pdf/2607.19343",
+  "project_url": "https://masked-visual-actions.github.io",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Hadi Alzayer",
+      "affiliations": []
+    },
+    {
+      "name": "Wenlong Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Haonan Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Christopher Luey",
+      "affiliations": []
+    },
+    {
+      "name": "Lvmin Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Maneesh Agrawala",
+      "affiliations": []
+    },
+    {
+      "name": "Gordon Wetzstein",
+      "affiliations": []
+    },
+    {
+      "name": "Li Fei-Fei",
+      "affiliations": []
+    },
+    {
+      "name": "Yilun Du",
+      "affiliations": []
+    },
+    {
+      "name": "Jiajun Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Jia-Bin Huang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "stanford-university",
+      "name": "Stanford University",
+      "role": "unknown"
+    },
+    {
+      "id": "university-of-maryland-college-park",
+      "name": "University of Maryland, College Park",
+      "role": "unknown"
+    },
+    {
+      "id": "harvard-university",
+      "name": "Harvard University",
+      "role": "unknown"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-07-21",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model",
+      "planning",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [
+      "vision",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 84,
+    "selection_reason": "统一视觉动作表征同时支持世界预测、规划和动作恢复，且包含跨 embodiment 与真实机器人证据；当前主要扣分来自代码、数据和权重仍写为将来发布。",
+    "candidate_run": "2026-07-22",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "代码、数据和模型权重尚未确认公开",
+      "未通过图片逐帧核验所有生成质量结论"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.19343"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.19343"
+    },
+    {
+      "type": "project-page",
+      "url": "https://masked-visual-actions.github.io"
+    }
+  ],
+  "suggested_new_tags": [],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.19343",
+    "fulltext_accessed": true,
+    "fulltext_note": "Used official arXiv HTML and checked method, experiments, conclusion/limitations sections.",
+    "sections_detected": [
+      "Introduction",
+      "Masked Visual Actions",
+      "Method",
+      "Experiments",
+      "Discussion and Conclusions",
+      "Limitations",
+      "Reproducibility"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  }
+}

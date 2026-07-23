@@ -1,0 +1,153 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2603.02646",
+  "title": "Compositional Visual Planning via Inference-Time Diffusion Scaling",
+  "title_zh": "基于推理时扩散缩放的组合式视觉规划",
+  "abstract": "Diffusion models excel at short-horizon robot planning, yet scaling them to long-horizon tasks remains challenging due to computational constraints and limited training data. Existing compositional approaches stitch together short segments by separately denoising each component and averaging overlapping regions. However, this suffers from instability as the factorization assumption breaks down in noisy data space, leading to inconsistent global plans. We propose that the key to stable compositional generation lies in enforcing boundary agreement on the estimated clean data (Tweedie estimates) rather than on noisy intermediate states. Our method formulates long-horizon planning as inference over a chain-structured factor graph of overlapping video chunks, where pretrained short-horizon video diffusion models provide local priors. At inference time, we enforce boundary agreement through a novel combination of synchronous and asynchronous message passing that operates on Tweedie estimates, producing globally consistent guidance without requiring additional training. Our training-free framework demonstrates significant improvements over existing baselines, effectively generalizing to unseen start-goal combinations that were not present in the original training data. Project website: https://comp-visual-planning.github.io/",
+  "paper_url": "https://arxiv.org/abs/2603.02646",
+  "pdf_url": "https://arxiv.org/pdf/2603.02646",
+  "project_url": "https://comp-visual-planning.github.io/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yixin Zhang",
+      "affiliations": [
+        "georgia-tech"
+      ]
+    },
+    {
+      "name": "Yunhao Luo",
+      "affiliations": [
+        "georgia-tech",
+        "umich"
+      ]
+    },
+    {
+      "name": "Utkarsh Aashu Mishra",
+      "affiliations": [
+        "georgia-tech"
+      ]
+    },
+    {
+      "name": "Woo Chul Shin",
+      "affiliations": [
+        "georgia-tech"
+      ]
+    },
+    {
+      "name": "Yongxin Chen",
+      "affiliations": [
+        "georgia-tech"
+      ]
+    },
+    {
+      "name": "Danfei Xu",
+      "affiliations": [
+        "georgia-tech"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "georgia-tech",
+      "name": "Georgia Institute of Technology",
+      "role": "primary"
+    },
+    {
+      "id": "umich",
+      "name": "University of Michigan",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-03-03",
+    "last_revision": "2026-03-03"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "diffusion-policy",
+      "planning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "action"
+    ],
+    "environments": [
+      "mixed",
+      "simulation",
+      "real-world"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "提出了一种训练无关的推理时扩散缩放方法，通过因子图上的同步/异步消息传递在 Tweedie 估计层面强制边界一致性，将短视界扩散策略组合为长视界规划，在未见过的起止目标组合上展现了泛化能力。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-22",
+    "confidence": "high",
+    "needs_human_review": true,
+    "uncertainties": [
+      "代码承诺开源但截至审核日尚未确认公开",
+      "部分定量结果受 HTML 表格渲染影响，建议人工核对 PDF 原始表格",
+      "论文未包含显式 Limitations/Discussion 小节，局限性为编辑推断"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2603.02646"
+    },
+    {
+      "type": "project-page",
+      "url": "https://comp-visual-planning.github.io/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "ar5iv-html",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2603.02646",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 Preliminaries",
+      "4 Method",
+      "5 Experiments",
+      "6 Conclusion",
+      "Reproducibility Statement",
+      "Acknowledgments",
+      "LLM Usage Disclosure"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-22"
+  }
+}

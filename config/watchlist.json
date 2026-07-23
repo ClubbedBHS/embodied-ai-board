@@ -1,0 +1,177 @@
+{
+  "version": "0.1",
+  "updated_at": "2026-07-22",
+  "purpose": "Embodied AI Board 的论文发现观察名单。命中观察名单只提高发现优先级，不直接增加论文质量分。",
+  "identity_policy": {
+    "organization": "优先使用实验室或机构官网的稳定 URL 作为身份依据。",
+    "author": "优先使用 Semantic Scholar authorId、ORCID 或个人主页；不得只凭姓名去重。",
+    "scoring": "watchlist 命中仅写入 discovery_signals，不计入 selection-rubric 的 100 分。"
+  },
+  "sources": [
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "type": "paper-index",
+      "url": "https://arxiv.org/",
+      "priority": 1,
+      "cadence": "daily",
+      "notes": "按关键词和 cs.RO、cs.AI、cs.CV、cs.LG 交叉发现；元数据从摘要页读取，全文优先 ar5iv 或 arXiv HTML。"
+    },
+    {
+      "id": "huggingface-daily-papers",
+      "name": "Hugging Face Daily Papers",
+      "type": "recommendation-feed",
+      "url": "https://huggingface.co/papers",
+      "priority": 2,
+      "cadence": "daily",
+      "notes": "用于发现热度候选；点赞或讨论量不能作为质量分。"
+    },
+    {
+      "id": "semantic-scholar-recommendations",
+      "name": "Semantic Scholar Recommendations API",
+      "type": "recommendation-api",
+      "url": "https://api.semanticscholar.org/api-docs/recommendations",
+      "priority": 2,
+      "cadence": "twice-weekly",
+      "notes": "以已收录高质量论文作为 positive seeds，以已拒绝或明显偏题论文作为 negative seeds。"
+    },
+    {
+      "id": "openreview",
+      "name": "OpenReview",
+      "type": "venue-index",
+      "url": "https://openreview.net/",
+      "priority": 2,
+      "cadence": "twice-weekly",
+      "notes": "关注 CoRL、ICLR、NeurIPS 等 venue 的新投稿、修订与公开评审；评审分数只作证据之一。"
+    },
+    {
+      "id": "github-releases",
+      "name": "GitHub Releases",
+      "type": "asset-feed",
+      "url": "https://github.com/",
+      "priority": 3,
+      "cadence": "twice-weekly",
+      "notes": "发现论文配套代码、数据、模型和仿真器更新，不用 star 数替代研究质量判断。"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "physical-intelligence",
+      "name": "Physical Intelligence",
+      "homepage": "https://www.pi.website/",
+      "focus": ["vla", "foundation-model", "generalist-control", "robot-learning"],
+      "priority": 1
+    },
+    {
+      "id": "nvidia-gear",
+      "name": "NVIDIA GEAR Lab",
+      "homepage": "https://research.nvidia.com/labs/gear/",
+      "publications_url": "https://research.nvidia.com/labs/gear/publications/",
+      "focus": ["robot-learning", "world-model", "humanoid-control", "simulation"],
+      "priority": 1
+    },
+    {
+      "id": "google-deepmind-robotics",
+      "name": "Google DeepMind Robotics",
+      "homepage": "https://deepmind.google/research/",
+      "focus": ["vla", "foundation-model", "planning", "generalist-control"],
+      "priority": 1
+    },
+    {
+      "id": "stanford-iris",
+      "name": "Stanford IRIS Lab",
+      "homepage": "https://irislab.stanford.edu/",
+      "focus": ["robot-learning", "imitation-learning", "foundation-model", "manipulation"],
+      "priority": 1
+    },
+    {
+      "id": "berkeley-robot-learning",
+      "name": "Berkeley Robot Learning / BAIR",
+      "homepage": "https://bair.berkeley.edu/",
+      "focus": ["robot-learning", "reinforcement-learning", "imitation-learning", "manipulation"],
+      "priority": 1
+    },
+    {
+      "id": "toyota-research-institute-robotics",
+      "name": "Toyota Research Institute Robotics",
+      "homepage": "https://www.tri.global/our-work/robotics",
+      "focus": ["robot-learning", "diffusion-policy", "large-scale-data", "manipulation"],
+      "priority": 1
+    },
+    {
+      "id": "mit-improbable-ai",
+      "name": "MIT Improbable AI Lab",
+      "homepage": "https://improbableai.github.io/",
+      "focus": ["locomotion", "humanoid-control", "reinforcement-learning", "sim-to-real"],
+      "priority": 2
+    },
+    {
+      "id": "cmu-robot-learning",
+      "name": "CMU Robot Learning",
+      "homepage": "https://www.ri.cmu.edu/research/robot-learning/",
+      "focus": ["robot-learning", "reinforcement-learning", "navigation", "manipulation"],
+      "priority": 2
+    },
+    {
+      "id": "columbia-creative-machines",
+      "name": "Columbia Robot Learning / Creative Machines Lab",
+      "homepage": "https://www.cs.columbia.edu/robotics/",
+      "focus": ["manipulation", "world-model", "data", "generalist-control"],
+      "priority": 2
+    },
+    {
+      "id": "georgia-tech-rl2",
+      "name": "Georgia Tech Robot Learning and Reasoning Lab",
+      "homepage": "https://rl2.gatech.edu/",
+      "focus": ["manipulation", "world-model", "imitation-learning", "data"],
+      "priority": 1
+    },
+    {
+      "id": "behavior-benchmark",
+      "name": "BEHAVIOR / Stanford Vision and Learning Lab",
+      "homepage": "https://behavior.stanford.edu/",
+      "focus": ["simulation", "benchmark", "household-activities"],
+      "priority": 2
+    },
+    {
+      "id": "habitat",
+      "name": "Habitat",
+      "homepage": "https://aihabitat.org/",
+      "focus": ["simulation", "navigation", "benchmark", "embodied-agent"],
+      "priority": 2
+    },
+    {
+      "id": "maniskill",
+      "name": "ManiSkill",
+      "homepage": "https://maniskill.readthedocs.io/",
+      "focus": ["simulation", "manipulation", "benchmark", "data"],
+      "priority": 2
+    }
+  ],
+  "authors": [
+    {"name": "Chelsea Finn", "homepage": "https://ai.stanford.edu/~cbfinn/", "focus": ["imitation-learning", "meta-learning", "robot-learning"]},
+    {"name": "Sergey Levine", "homepage": "https://people.eecs.berkeley.edu/~svlevine/", "focus": ["reinforcement-learning", "robot-learning", "foundation-model"]},
+    {"name": "Pieter Abbeel", "homepage": "https://people.eecs.berkeley.edu/~pabbeel/", "focus": ["reinforcement-learning", "robot-learning"]},
+    {"name": "Dorsa Sadigh", "homepage": "https://dorsa.fyi/", "focus": ["human-robot-interaction", "robot-learning"]},
+    {"name": "Shuran Song", "homepage": "https://shurans.github.io/", "focus": ["manipulation", "robot-learning", "3d-vision"]},
+    {"name": "Danfei Xu", "homepage": "https://danfei.info/", "focus": ["manipulation", "world-model", "imitation-learning"]},
+    {"name": "Deepak Pathak", "homepage": "https://www.cs.cmu.edu/~dpathak/", "focus": ["reinforcement-learning", "robot-learning", "world-model"]},
+    {"name": "Yuke Zhu", "homepage": "https://www.cs.utexas.edu/~yukez/", "focus": ["robot-learning", "simulation", "foundation-model"]},
+    {"name": "Linxi Jim Fan", "homepage": "https://www.jimfan.me/", "focus": ["foundation-model", "simulation", "generalist-agent"]},
+    {"name": "Ajay Mandlekar", "homepage": "https://ai.stanford.edu/~amandlek/", "focus": ["imitation-learning", "data", "manipulation"]},
+    {"name": "Guanya Shi", "homepage": "https://www.gshi.me/", "focus": ["control", "reinforcement-learning", "locomotion"]},
+    {"name": "Zhengyi Luo", "homepage": "https://www.zhengyiluo.com/", "focus": ["humanoid-control", "reinforcement-learning", "motion"]}
+  ],
+  "queries": {
+    "include_any": [
+      "embodied AI", "robot learning", "vision-language-action", "VLA", "world action model",
+      "robot foundation model", "generalist robot", "diffusion policy", "imitation learning robot",
+      "humanoid control", "dexterous manipulation", "mobile manipulation", "robot simulator",
+      "robotics benchmark", "robot dataset", "sim-to-real"
+    ],
+    "exclude_unless_robot_evidence": [
+      "autonomous driving", "medical imaging", "pure language model", "image generation",
+      "video generation", "game agent", "software agent"
+    ]
+  }
+}

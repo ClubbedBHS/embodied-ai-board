@@ -1,0 +1,122 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.14852",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Towards Human-like Physical Intelligence: Lifelong Vision-Language-Action Learning for Robotic Manipulation",
+  "title_zh": null,
+  "abstract": "Similar to the natural capabilities of humans to sequentially learn new tasks, robots with Vision-Language-Action (VLA) models should possess lifelong learning ability to learn a new task when deployed in open-world environments. However, most recently proposed lifelong learning models aim to effectively learn the current task (plasticity) or maintain high accuracy on previous tasks (stability), while the plasticity-stability trade-off remains largely unsolved in robotic manipulation models. To address this fundamental challenge, we propose a cache-efficient lifelong Vision-Language-Action learning framework for robotic manipulation (i.e., LifelongVLA), which alleviates the plasticity-stability trade-off with a dual-timescale adaptation mechanism while achieving low-cost robotic deployment with a cache-efficient replay strategy. More concretely, we propose a dual-timescale LoRA gating module to decompose VLA adaptation into two lightweight pathways: a short-term adapter for plasticity and a long-term adapter for stable consolidation. These pathways are integrated via a task-aware gate, enabling explicit control of the plasticity-stability trade-off. In the skill replay phase, a cache-efficient stochastic replay strategy is proposed to preserve more balanced retention signals without full-trajectory storage. Finally, experiments show that LifelongVLA outperforms existing baselines, demonstrating efficient skill expansion, robust retention of learned manipulation behaviors, and reduced reliance on retraining for real-world deployment on an xArm robot.",
+  "paper_url": "https://arxiv.org/abs/2607.14852",
+  "pdf_url": "https://arxiv.org/pdf/2607.14852",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yao He",
+      "affiliations": []
+    },
+    {
+      "name": "Gan Sun",
+      "affiliations": []
+    },
+    {
+      "name": "Wenqi Liang",
+      "affiliations": []
+    },
+    {
+      "name": "Fazeng Li",
+      "affiliations": []
+    },
+    {
+      "name": "Yang Cong",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-16",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "imitation-learning",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 75,
+    "selection_reason": "这项工作在其问题上提出明确增量：把 dual-timescale adapter composition 与 cache-efficient stochastic replay 专门用于 VLA 连续技能学习。 基线、内存/参数消融与真实机器人流支持主张，但实机只有五任务且未报告多任务顺序统计。 最近邻为 π0.6（从经验学习）；π0.6侧重 RL/experience，LifelongVLA专门测连续技能加入后的遗忘和 replay 成本。",
+    "candidate_run": "2026-07-backfill/batch-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "五任务规模不足以证明长期 lifelong learning",
+      "未开放代码/权重",
+      "任务顺序和多随机流统计不足"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.14852",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.14852"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.14852"
+    }
+  ],
+  "suggested_new_tags": []
+}

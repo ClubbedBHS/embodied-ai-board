@@ -1,0 +1,171 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.13017",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "FlowWAM: Optical Flow as a Unified Action Representation for World Action Models",
+  "title_zh": null,
+  "abstract": "World Action Models (WAMs) are able to leverage pretrained video generators for both world modeling and action prediction. However, directly leveraging such video generators for control raises a new challenge: how to represent actions in a suitable form that aligns with pretrained video generators while carrying enough motion cues for accurate control. Existing numerical actions fail to satisfy the former, and prior visual action representations overlook the temporal motion structure across frames. We address this issue with FlowWAM, a dual-stream diffusion framework that adopts optical flow as a unified, video-native action representation. Flow videos share the same format as RGB videos and encode rich per-pixel displacement. By jointly modeling them within a shared pretrained video generator, FlowWAM can naturally implement two modes of WAMs. In policy mode, FlowWAM generates flow for action prediction, while in world-model mode, it uses target flow sequences to guide future video generation. Moreover, since flow can be easily extracted from raw videos without action labels, FlowWAM can leverage large-scale action-unlabeled video datasets for pretraining. We empirically find that our flow-based action representation delivers gains across both modes. On RoboTwin manipulation, FlowWAM raises the success rate to 92.94% on the Clean setting and 92.14% on Random, outperforming both VLA and WAM baselines. On WorldArena world modeling, it achieves the best overall EWMScore (63.71) with an 18.4% relative improvement in trajectory accuracy. More results can be found on our project website: https://flow-wam.github.io .",
+  "paper_url": "https://arxiv.org/abs/2607.13017",
+  "pdf_url": "https://arxiv.org/pdf/2607.13017",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yixiang Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Peiyan Li",
+      "affiliations": []
+    },
+    {
+      "name": "Yuan Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Qisen Ma",
+      "affiliations": []
+    },
+    {
+      "name": "Jiabing Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Kai Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Jianhua Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Dong An",
+      "affiliations": []
+    },
+    {
+      "name": "He Guan",
+      "affiliations": []
+    },
+    {
+      "name": "Gaoteng Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Jianlou Si",
+      "affiliations": []
+    },
+    {
+      "name": "Jun Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Jing Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Nianfeng Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Yan Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Liang Wang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-14",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model",
+      "representation-learning",
+      "imitation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action",
+      "point-cloud"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [],
+    "properties": [
+      "simulation-only",
+      "large-scale-data"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 84,
+    "selection_reason": "这项工作在其问题上提出明确增量：光流既与视频生成器格式对齐，又保留跨帧稠密运动，可从无动作视频提取，统一 forward/inverse 用途。 仿真、世界模型指标、消融和单/双臂真实任务形成多层证据；项目页可见但本次未验证代码仓库。 最近邻为 EgoWAM；EgoWAM比较 pixel/DINO/3D flow 的人到机器人迁移，FlowWAM把 optical flow 变成同一 WAM 的可生成动作接口并评测双模式。",
+    "candidate_run": "2026-07-backfill/batch-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "项目页本次网络探测失败",
+      "光流对遮挡、相机运动和接触力不可观测性的敏感性需进一步核验"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.13017",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.13017"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.13017"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://flow-wam.github.io"
+    }
+  ],
+  "suggested_new_tags": []
+}

@@ -1,0 +1,233 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2602.16710",
+  "title": "EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data",
+  "title_zh": "EgoScale：利用大规模以自我为中心的人类数据扩展灵巧操作",
+  "abstract": "Human behavior is among the most scalable sources of data for learning physical intelligence, yet how to effectively leverage it for dexterous manipulation remains unclear. While prior work demonstrates human-to-robot transfer in constrained settings, it is unclear whether large-scale human data can support fine-grained, high-degree-of-freedom dexterous manipulation. We present EgoScale, a human-to-dexterous-manipulation transfer framework built on large-scale egocentric human data. We train a Vision–Language–Action (VLA) model on over 20,854 hours of action-labeled egocentric human video—more than 20× larger than prior efforts—and uncover a log-linear scaling law between human data scale and validation loss. This validation loss strongly correlates with downstream real-robot performance, establishing large-scale human data as a predictable supervision source. Beyond scale, we introduce a simple two-stage transfer recipe: large-scale human pretraining followed by lightweight aligned human–robot mid-training. This enables strong long-horizon dexterous manipulation and one-shot task adaptation with minimal robot supervision. Our final policy improves average success rate by 54% over a no-pretraining baseline using a 22-DoF dexterous robotic hand, and transfers effectively to robots with lower-DoF hands, indicating that large-scale human motion provides a reusable, embodiment-agnostic motor prior.",
+  "paper_url": "https://arxiv.org/abs/2602.16710",
+  "pdf_url": "https://arxiv.org/pdf/2602.16710",
+  "project_url": "https://research.nvidia.com/labs/gear/egoscale/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": "https://research.nvidia.com/labs/gear/egoscale/",
+  "authors": [
+    {
+      "name": "Ruijie Zheng",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Dantong Niu",
+      "affiliations": [
+        "nvidia",
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Yuqi Xie",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Jing Wang",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Mengda Xu",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Yunfan Jiang",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Fernando Castañeda",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Fengyuan Hu",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "You Liang Tan",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Letian Fu",
+      "affiliations": [
+        "nvidia",
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Trevor Darrell",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Furong Huang",
+      "affiliations": [
+        "university-of-maryland"
+      ]
+    },
+    {
+      "name": "Yuke Zhu",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Danfei Xu",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Linxi Fan",
+      "affiliations": [
+        "nvidia"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "nvidia",
+      "name": "NVIDIA",
+      "role": "primary"
+    },
+    {
+      "id": "uc-berkeley",
+      "name": "UC Berkeley",
+      "role": "collaborator"
+    },
+    {
+      "id": "university-of-maryland",
+      "name": "University of Maryland",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-02-18",
+    "last_revision": "2026-02-18"
+  },
+  "venue": {
+    "name": "arXiv",
+    "year": 2026,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "imitation-learning",
+      "behavior-cloning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "dexterous-hand",
+      "humanoid"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "proprioception"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation",
+      "large-scale-data"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "high",
+    "selection_reason": "首次在超 2 万小时第一人称人类视频上发现灵巧操作策略的 log-linear 扩展规律，提出大规模人类预训练 + 少量对齐人机 mid-training 的两阶段迁移范式，实现 22-DoF 灵巧手的长程操作和 one-shot 任务适应，并展示了跨具身迁移能力。扩展规律的发现对社区理解人-机数据关系具有重要价值。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-21",
+    "confidence": "high",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文仅列出 NVIDIA、UC Berkeley 和 University of Maryland 三个机构，但已知 Danfei Xu 有 Georgia Tech 双重 affiliation、Yuke Zhu 有 UT Austin 双重 affiliation，PDF 中未体现",
+      "代码标注为 'Coming Soon'，尚未公开，assets 和 properties 据此留空",
+      "Figure 4 中的逐任务完成分和成功率数据为图表（图片），文本中仅给出了超过 55% 的平均提升幅度和 54% 的平均成功率提升（Abstract）；summary.zh.md 中的 0.83 平均完成分和 Syringe 0.88 成功率无法从文本独立验证，依据原始 PDF/图表核验"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2602.16710"
+    },
+    {
+      "type": "project-page",
+      "url": "https://research.nvidia.com/labs/gear/egoscale/"
+    }
+  ],
+  "suggested_new_tags": [
+    "scaling-law",
+    "dexterous-manipulation",
+    "cross-embodiment",
+    "flow-matching",
+    "egocentric"
+  ],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "ar5iv-html",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2602.16710",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Method",
+      "2.1 Human Action Representation",
+      "2.2 Human Data Sources and Processing",
+      "2.3 Model Architecture",
+      "2.4 Training Recipe",
+      "2.5 Robot Systems and Control",
+      "3 Experiment",
+      "3.1 Experiment Setup",
+      "3.2 Large-Scale Human Pretraining Is Key to Strong Dexterous Manipulation Policy Performance",
+      "3.3 Policy Performance Scales with Pretraining Data Size",
+      "3.4 Aligned Human-Robot Mid-Training Enables One-Shot Transfer",
+      "3.5 Human Pretraining Enables Cross-embodiment Transfer",
+      "3.6 Hand Action Space Design for Human Pretraining",
+      "4 Related Work",
+      "5 Acknowledgement",
+      "6 Conclusion",
+      "Appendix A: Details of Robot System",
+      "Appendix B: Task Descriptions and Evaluation Rubric",
+      "Appendix C: Details of In-the-wild Human Data Curation",
+      "Appendix D: Hand Retargeting Algorithm"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-22"
+  }
+}

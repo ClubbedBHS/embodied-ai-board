@@ -1,0 +1,146 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.06699",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "RoboSnap: One-Shot Real-to-Sim Scene Generation for Generalizable Robot Learning and Evaluation",
+  "title_zh": null,
+  "abstract": "Recovering real-world scenes as interactive simulation environments can enable generalizable robot learning and reproducible policy evaluation. However, constructing scenes that are both physically stable and visually faithful remains slow and expensive. In this work, we present RoboSnap, a real-to-sim framework that turns a single RGB image into a simulation-ready scene. The key idea is a layered design that separates the physics-critical interaction area from the surrounding visual context: collision-aware foreground assets are refined for stable robot interaction, while a 3D Gaussian splatting visual layer preserves faithful background appearance under novel views. Experiments on DROID scenes and real-robot tasks show that RoboSnap achieves reliable trajectory replay in the recovered scenes, supports task-specific synthetic data generation for policy training, and yields meaningful sim-real correlation for policy evaluation. To further support real-to-sim research, we introduce DROID-Sim, a real-to-sim companion dataset constructed from 564 real-world scenes in DROID. Extensive experiments suggest that the value of real-to-sim methods lies not only in high-fidelity visual reconstruction, but in turning real environments into reusable infrastructure for robot learning and evaluation.",
+  "paper_url": "https://arxiv.org/abs/2607.06699",
+  "pdf_url": "https://arxiv.org/pdf/2607.06699",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Shujie Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Jingkun Yi",
+      "affiliations": []
+    },
+    {
+      "name": "Weipeng Zhong",
+      "affiliations": []
+    },
+    {
+      "name": "Zirui Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Yangkun Zhu",
+      "affiliations": []
+    },
+    {
+      "name": "Hanqing Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Xudong Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Weinan Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Chunhua Shen",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-07",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "simulators",
+      "infrastructure",
+      "data"
+    ],
+    "topics": [
+      "sim-to-real",
+      "world-model",
+      "imitation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [
+      "vision",
+      "action",
+      "point-cloud"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "dataset",
+    "simulator",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 88,
+    "selection_reason": "这项工作在其问题上提出明确增量：单图 real-to-sim 同时针对视觉背景和接触前景分层优化，并把恢复场景用于数据生成与 policy ranking。 DROID 场景与真实任务上的 replay、training、sim-real correlation 支撑主张；项目页本次未通，未确认代码。 最近邻 SimFoundry；RoboSnap新增单图 real-to-sim、分层视觉/物理表示和 DROID 564 场景 companion dataset。",
+    "candidate_run": "2026-07-backfill/batch-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "单视图不可见几何与材质参数不可辨识",
+      "项目页本次网络探测失败",
+      "policy ranking 的泛化需外部复核"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.06699",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.06699"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.06699"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://robosnap.github.io/"
+    }
+  ],
+  "suggested_new_tags": []
+}

@@ -1,0 +1,138 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.18016",
+  "title": "Closing the Loop in Humanoid VLA: Persistent 3D Object Tokens for Verifiable Loco-Manipulation",
+  "title_zh": "面向可验证人形机器人移动操控的持久化 3D 对象 Token",
+  "abstract": "Vision-language-action policies are a promising foundation for general robot control, but long-horizon humanoid loco-manipulation requires the robot to treat task objects as persistent physical entities across movement, contact, occlusion, and recovery. We study this problem as object-state divergence: the object state used to condition a whole-body action can differ from the state used to decide whether the action achieved the intended physical relation. We propose \\emph{Persistent Object Tokenization} (POT), which maintains role-indexed 3D object records from RGB-D observations and converts them into object tokens for a whole-body action expert. Instantiated as \\emph{POT-VLA}, the same object records condition action generation and support geometric predicate checks, yielding a closed-loop execution system in which object state is both actionable and verifiable. On a Unitree G1, POT-VLA improves a matched direct GR00T-N1.7 baseline from 39/80 to 71/80 successes over eight real-world task families. In an external Being-0-aligned reference, POT-VLA achieves 44/50 successes on aligned service tasks, compared with the 37/50 success reported by the Being-0 paper. The largest gains occur on tasks requiring maintained 3D relations, suggesting that persistent object-centered state is a useful abstraction for verifiable humanoid VLA execution.",
+  "paper_url": "https://arxiv.org/abs/2607.18016",
+  "pdf_url": "https://arxiv.org/pdf/2607.18016",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Peng Ren",
+      "affiliations": []
+    },
+    {
+      "name": "Haoyang Ge",
+      "affiliations": []
+    },
+    {
+      "name": "Jiang Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Cong Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Yukun Shi",
+      "affiliations": []
+    },
+    {
+      "name": "Pei Chi",
+      "affiliations": []
+    },
+    {
+      "name": "Kai Chen",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-20",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "planning",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation",
+      "locomotion",
+      "mobile-manipulation",
+      "humanoid-control"
+    ],
+    "platforms": [
+      "humanoid"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "depth",
+      "proprioception",
+      "action"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "system"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 75,
+    "selection_reason": "把对象状态持久化、动作生成与可验证恢复闭环连接起来，真实 humanoid 证据明确；但系统依赖 RGB-D、人工几何谓词和单一平台，更适合作为常规系统案例收录。",
+    "candidate_run": "2026-07-22",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "代码、训练数据和模型权重尚未确认公开",
+      "Being-0 比较不是同地复现，不能作为严格对照"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.18016"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.18016"
+    }
+  ],
+  "suggested_new_tags": [],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.18016",
+    "fulltext_accessed": true,
+    "fulltext_note": "Used official arXiv HTML and checked method, experiments, conclusion/limitations sections.",
+    "sections_detected": [
+      "Introduction",
+      "Persistent Object Tokenization",
+      "Closed-loop Execution",
+      "Experiments",
+      "Conclusion and Limitations",
+      "Appendix"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  }
+}

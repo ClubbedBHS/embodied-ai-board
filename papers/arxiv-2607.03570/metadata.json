@@ -1,0 +1,139 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.03570",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Cross-Embodiment Robot Manipulation via a Unified Hand Action Space",
+  "title_zh": null,
+  "abstract": "Robot manipulation policies are typically tied to specific robotic hand embodiments, limiting the transfer of learned behaviors across platforms with different kinematic structures. In this work, we propose the Unified Hand Action Space (UHAS), a sphere-based unified action representation for cross-embodiment dexterous manipulation. UHAS represents robotic hand actions as geometric deformations of a canonical sphere and uses a Cascade Inverse Kinematics (CIK) algorithm to map the shared representation to embodiment-specific joint configurations. Using reinforcement learning, we train dexterous manipulation policies directly in the proposed action space for in-hand cube reorientation tasks. We evaluate our method in both simulation and real-world experiments across multiple robotic hands, including the Allegro Hand, LEAP Hand, Shadow Hand, and MANO Human Hand. Experimental results demonstrate effective dexterous manipulation, zero-shot transfer to unseen hands, rapid finetuning across embodiments, and successful real-world deployment. Our experiments show that the proposed UHAS representation enables stable dexterous control and cross-embodiment policy transfer across robotic hands.",
+  "paper_url": "https://arxiv.org/abs/2607.03570",
+  "pdf_url": "https://arxiv.org/pdf/2607.03570",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Luis Felipe Casas",
+      "affiliations": []
+    },
+    {
+      "name": "Robert Teal",
+      "affiliations": []
+    },
+    {
+      "name": "Keval Shah",
+      "affiliations": []
+    },
+    {
+      "name": "Abhijit Tadepalli",
+      "affiliations": []
+    },
+    {
+      "name": "Wanxin Jin",
+      "affiliations": []
+    },
+    {
+      "name": "Yu Xiang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-03",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "dexterous-hand",
+      "robot-arm",
+      "multi-robot"
+    ],
+    "modalities": [
+      "action",
+      "tactile"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation",
+      "zero-shot"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 73,
+    "selection_reason": "这项工作在跨具身灵巧操作（cross-embodiment dexterous manipulation）问题上提出了一种基于球面几何的统一手部动作空间 UHAS，通过球面变形参数化和级联逆运动学（CIK）算法，将共享的动作表示映射到不同机器人手的关节配置。在 Allegro、LEAP、Shadow 和 MANO 四种手上通过强化学习训练灵巧的立方体重新定向策略，实验覆盖多手训练、零样本迁移、微调和真机部署（LEAP Hand）四个维度，证明了提出的统一表示能够实现跨具身的策略迁移。",
+    "candidate_run": "2026-07-backfill/batch-03",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "hermes-agent",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "仅测试了正方体重新定向这一种任务，泛化到更多灵巧操作任务未验证",
+      "4指到5指手的跨形态迁移存在性能退化",
+      "对PD控制器参数和强化学习奖励设计敏感，调参成本高"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.03570",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.03570"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.03570"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "cross-embodiment",
+      "name": "cross-embodiment",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "这项工作在跨具身灵巧操作（cross-embodiment dexterous manipulation）问题上提出了一种基于球面几何的统一手部动作空间 UHAS，通过球面变形参数化和级联逆运动学（CIK）算法，将共享的动作表示映射到不同机器人手的关节配置。在 Allegro、LEAP、Shadow 和 MANO 四种手上通过强化学习训练灵巧的立方体重新定向策略，实验覆盖多手训练、零样本迁移、微调和真机部署（LEAP Hand）四个维度，证明了提出的统一表示能够实现跨具身的策略迁移。"
+    },
+    {
+      "dimension": "topics",
+      "slug": "dexterous-manipulation",
+      "name": "dexterous-manipulation",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "这项工作在跨具身灵巧操作（cross-embodiment dexterous manipulation）问题上提出了一种基于球面几何的统一手部动作空间 UHAS，通过球面变形参数化和级联逆运动学（CIK）算法，将共享的动作表示映射到不同机器人手的关节配置。在 Allegro、LEAP、Shadow 和 MANO 四种手上通过强化学习训练灵巧的立方体重新定向策略，实验覆盖多手训练、零样本迁移、微调和真机部署（LEAP Hand）四个维度，证明了提出的统一表示能够实现跨具身的策略迁移。"
+    }
+  ]
+}

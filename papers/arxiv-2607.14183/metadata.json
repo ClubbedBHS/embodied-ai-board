@@ -1,0 +1,241 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.14183",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Open-AoE: An Open Egocentric Manipulation Dataset and Toolchain for Embodied Learning",
+  "title_zh": null,
+  "abstract": "Egocentric videos of human manipulation provide scalable supervision for embodied intelligence, yet existing resources rarely combine low-cost continuous capture, manipulation-level structured annotations, and reusable tools for robot learning. We present Open-AoE, an open, community-oriented egocentric manipulation dataset and toolchain spanning the full pipeline from smartphone capture to model training. Its first release contains approximately 2,000 hours of manipulation video collected in natural environments by 500+ contributors using 400+ smartphones. The dataset provides text annotations, MANO-based hand poses, camera trajectories, and temporally localized atomic actions. Open-AoE further includes a data processing pipeline that transforms raw recordings into structured samples through temporal action segmentation, semantic annotation, hand reconstruction, and camera trajectory reconstruction. Meanwhile, we provide a separate downstream toolchain supports visualization, cross-embodiment retargeting, model-specific data conversion, and training recipes for VLA policies, WAMs, and World Models. By integrating scalable capture, structured processing, and downstream adaptation, Open-AoE reduces the barriers to both data contribution and reuse, providing practical open infrastructure for embodied model training, human-to-robot transfer, and world modeling.",
+  "paper_url": "https://arxiv.org/abs/2607.14183",
+  "pdf_url": "https://arxiv.org/pdf/2607.14183",
+  "project_url": null,
+  "code_url": "https://github.com/ant-research/Open-AoE",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Zishuo Li",
+      "affiliations": []
+    },
+    {
+      "name": "Bowen Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Changtao Miao",
+      "affiliations": []
+    },
+    {
+      "name": "Kai Zhu",
+      "affiliations": []
+    },
+    {
+      "name": "Hao Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Qingze Guan",
+      "affiliations": []
+    },
+    {
+      "name": "Zhengxing Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Wanke Zhan",
+      "affiliations": []
+    },
+    {
+      "name": "Yang Sun",
+      "affiliations": []
+    },
+    {
+      "name": "Zhiyi Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Zitong Shan",
+      "affiliations": []
+    },
+    {
+      "name": "Zhenchao Jin",
+      "affiliations": []
+    },
+    {
+      "name": "Jiadong Hong",
+      "affiliations": []
+    },
+    {
+      "name": "Taowen Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Yushi Feng",
+      "affiliations": []
+    },
+    {
+      "name": "You Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Yibo Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Yifan Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Zhaowen Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Man Luo",
+      "affiliations": []
+    },
+    {
+      "name": "Hao Cheng",
+      "affiliations": []
+    },
+    {
+      "name": "Bo Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Jianshu Li",
+      "affiliations": []
+    },
+    {
+      "name": "Jiansheng Cai",
+      "affiliations": []
+    },
+    {
+      "name": "Guocai Yao",
+      "affiliations": []
+    },
+    {
+      "name": "Jize Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Chenhao Lin",
+      "affiliations": []
+    },
+    {
+      "name": "Renjing Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Lequan Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Chao Shen",
+      "affiliations": []
+    },
+    {
+      "name": "Chunhua Shen",
+      "affiliations": []
+    },
+    {
+      "name": "Zhe Li",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-15",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data",
+      "infrastructure"
+    ],
+    "topics": [
+      "imitation-learning",
+      "representation-learning",
+      "world-model"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "dexterous-hand",
+      "robot-arm",
+      "multi-robot"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [
+      "code"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "dataset",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 94,
+    "selection_reason": "这项工作在其问题上提出明确增量：不是只放视频，而是提供低成本连续采集、结构化几何/语义标注和 VLA/WAM/世界模型消费工具链。 规模、信号完整性、时间连续性和五类监督覆盖均在正文第 3、5 节量化；数据和工具当前有可访问入口。 最近邻为 arxiv-2604.07607 EgoVerse 与 arxiv-2602.16710 EgoScale；Open-AoE 的新增信息是 2,000 小时开放手机采集、原子动作+MANO+相机轨迹，以及直接面向多类模型的工具链。",
+    "candidate_run": "2026-07-backfill/batch-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "关键质量分析主要基于随机 100 小时子集",
+      "手机域和自动标注误差对真实机器人策略效果仍需下游实证"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.14183",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.14183"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.14183"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://github.com/ant-research/Open-AoE"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://huggingface.co/datasets/inclusionAI/OpenAoE-2000h"
+    }
+  ],
+  "suggested_new_tags": []
+}

@@ -1,0 +1,244 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.15330",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Xiaomi-Robotics-1: Scaling Vision-Language-Action Models with over 100K Hours of Real-World Trajectories",
+  "title_zh": null,
+  "abstract": "We present Xiaomi-Robotics-1, a foundational vision-language-action (VLA) model capable of (1) following diverse language instructions to perform a wide range of mobile manipulation tasks in unseen environments out-of-the-box, and (2) efficiently adapting to novel downstream tasks with minimal fine-tuning data. We propose a two-stage training recipe consisting of pre-training and post-training. During pre-training, we imbue the model with broad and generalizable action-generation capabilities by training on over 100k hours of real-world manipulation trajectories collected via UMI devices. Crucially, we develop a scalable auto-labeling pipeline that annotates trajectory clips with natural languages describing scene state transitions, providing rich and precise conditioning for action learning. During post-training, we aim to align these capabilities with robot embodiments and imperative instructions that humans naturally use to prompt robots. Extensive experiments demonstrate strong scaling behavior. Xiaomi-Robotics-1 consistently improves with increased data scales and model sizes during pre-training. This scaling behavior directly transfers to post-training, where a stronger pre-training model yields better out-of-the-box real-robot performance in unseen environments. Furthermore, Xiaomi-Robotics-1 serves as a strong robot foundation policy that can be efficiently fine-tuned on complex, dexterous tasks with high data efficiency. Across multiple simulation benchmarks, Xiaomi-Robotics-1 outperforms state-of-the-art methods. Notably, it establishes a new state-of-the-art with a 57.6% success rate on RoboCasa365, surpassing the previous best of 46.6%. Furthermore, it achieves an average score of 20.07 on RoboDojo, significantly outperforming the prior state-of-the-art (13.07). Code and model checkpoints will be released. Project page: https://robotics.xiaomi.com/xiaomi-robotics-1.html",
+  "paper_url": "https://arxiv.org/abs/2607.15330",
+  "pdf_url": "https://arxiv.org/pdf/2607.15330",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Xiaomi Robotics Team",
+      "affiliations": []
+    },
+    {
+      "name": "Jun Guo",
+      "affiliations": []
+    },
+    {
+      "name": "Piaopiao Jin",
+      "affiliations": []
+    },
+    {
+      "name": "Jason Li",
+      "affiliations": []
+    },
+    {
+      "name": "Peiyan Li",
+      "affiliations": []
+    },
+    {
+      "name": "Yingyan Li",
+      "affiliations": []
+    },
+    {
+      "name": "Futeng Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Wanli Peng",
+      "affiliations": []
+    },
+    {
+      "name": "Optimus Qin",
+      "affiliations": []
+    },
+    {
+      "name": "Yifei Su",
+      "affiliations": []
+    },
+    {
+      "name": "Nan Sun",
+      "affiliations": []
+    },
+    {
+      "name": "Qiao Sun",
+      "affiliations": []
+    },
+    {
+      "name": "Runze Suo",
+      "affiliations": []
+    },
+    {
+      "name": "Heyun Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Yunhong Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Rujie Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Caoyu Xia",
+      "affiliations": []
+    },
+    {
+      "name": "Lina Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Jack Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Guoliang Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Wenlong Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Xinze He",
+      "affiliations": []
+    },
+    {
+      "name": "Bin Li",
+      "affiliations": []
+    },
+    {
+      "name": "Qing Li",
+      "affiliations": []
+    },
+    {
+      "name": "Zhuorong Li",
+      "affiliations": []
+    },
+    {
+      "name": "Heng Qu",
+      "affiliations": []
+    },
+    {
+      "name": "Wenxuan Song",
+      "affiliations": []
+    },
+    {
+      "name": "Diyun Xiang",
+      "affiliations": []
+    },
+    {
+      "name": "Yifan Xie",
+      "affiliations": []
+    },
+    {
+      "name": "Peiran Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Hangjun Ye",
+      "affiliations": []
+    },
+    {
+      "name": "Wen Ye",
+      "affiliations": []
+    },
+    {
+      "name": "Han Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Quanyun Zhou",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-16",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data"
+    ],
+    "topics": [
+      "vla",
+      "foundation-model",
+      "behavior-cloning"
+    ],
+    "tasks": [
+      "mobile-manipulation",
+      "manipulation",
+      "generalist-control"
+    ],
+    "platforms": [
+      "dexterous-hand",
+      "mobile-robot",
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "dataset"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 77,
+    "selection_reason": "用自动语言标注扩展到100K+小时真实 UMI 轨迹，并系统研究数据/模型 scaling 到移动操控和下游适配。 第2节描述两阶段训练和自动 state-transition caption；第3节含数据/模型 scaling、未见环境实机、下游微调和仿真，RoboCasa365 57.6% vs 46.6%，RoboDojo 20.07 vs 13.07。 相对 π0.5 与 Open-AoE，新增100K小时规模和移动操控，但数据/资产封闭显著限制复核。",
+    "candidate_run": "2026-07-backfill/batch-02",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "代码和checkpoint尚未发布",
+      "100K小时私有数据不可审计",
+      "真实评测协议与失败统计需重点人工复核"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.15330",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.15330"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.15330"
+    }
+  ],
+  "suggested_new_tags": []
+}

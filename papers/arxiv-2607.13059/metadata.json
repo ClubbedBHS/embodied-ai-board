@@ -1,0 +1,129 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.13059",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "GPUSimBench: Towards Scalable and Reliable GPU-Accelerated Simulators in Embodied AI",
+  "title_zh": null,
+  "abstract": "Data-driven embodied AI is rapidly transitioning into a paradigm that scales training through massively parallel simulation, where GPU-accelerated simulators serve as the foundational data infrastructure. However, as computational throughput scales, the underlying trade-offs between parallel efficiency, physical fidelity, and execution determinism remain largely unexamined, hindering the development of reliable robot learning. In this paper, we expose the hidden limits of mainstream GPU-based robotic simulators (e.g., Isaac Lab, Genesis) by introducing GPUSimBench, which focuses on scalability, physical consistency, and computational determinism. First, GPUSimBench establishes a physical grounding evaluation with a controlled inclined-plane task, quantifying the distributional alignment between simulated dynamics and their real-world counterparts. Second, we benchmark parallel scalability by measuring throughput and memory footprints across scaling environment counts. Crucially, beyond standard performance metrics, we unveil and quantify the inherent non-determinism introduced by GPU-batched execution, characterized by significant run-to-run and inter-environment variability even under identical initial conditions. Finally, we identify four empirical regimes of stochasticity within current simulator stacks, highlighting that unbounded scaling can compromise reproducibility without explicit constraints.",
+  "paper_url": "https://arxiv.org/abs/2607.13059",
+  "pdf_url": "https://arxiv.org/pdf/2607.13059",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Huzhenyu Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Shenghai Yuan",
+      "affiliations": []
+    },
+    {
+      "name": "Wenrui Yan",
+      "affiliations": []
+    },
+    {
+      "name": "Li Ma",
+      "affiliations": []
+    },
+    {
+      "name": "Hengjie Li",
+      "affiliations": []
+    },
+    {
+      "name": "Jingcheng Pang",
+      "affiliations": []
+    },
+    {
+      "name": "Dmitry Yudin",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-06",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "simulators",
+      "infrastructure"
+    ],
+    "topics": [
+      "sim-to-real",
+      "control"
+    ],
+    "tasks": [
+      "generalist-control"
+    ],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "simulator",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 87,
+    "selection_reason": "这项工作在其问题上提出明确增量：把吞吐、物理一致性和 GPU batched non-determinism 放进同一基准，而非只比 FPS。 受控物理任务、跨规模分布和真实对齐支撑发现；尚未发现 GPUSimBench 自身公开仓库。 最近邻 arxiv-2511.04831 Isaac Lab；GPUSimBench不是新 simulator，而是横向暴露 GPU simulator 的 determinism/physics/scaling trade-off。",
+    "candidate_run": "2026-07-backfill/batch-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "基准物理任务较少",
+      "不同版本/硬件/驱动对结论敏感",
+      "未核验基准代码公开"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.13059",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.13059"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.13059"
+    }
+  ],
+  "suggested_new_tags": []
+}

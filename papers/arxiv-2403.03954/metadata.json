@@ -1,0 +1,178 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2403.03954",
+  "title": "3D Diffusion Policy: Generalizable Visuomotor Policy Learning via Simple 3D Representations",
+  "title_zh": "3D Diffusion Policy：通过简单3D表征实现可泛化的视觉运动策略学习",
+  "abstract": "Imitation learning provides an efficient way to teach robots dexterous skills; however, learning complex skills robustly and generalizablely usually consumes large amounts of human demonstrations. To tackle this challenging problem, we present 3D Diffusion Policy (DP3), a novel visual imitation learning approach that incorporates the power of 3D visual representations into diffusion policies, a class of conditional action generative models. The core design of DP3 is the utilization of a compact 3D visual representation, extracted from sparse point clouds with an efficient point encoder. In our experiments involving 72 simulation tasks, DP3 successfully handles most tasks with just 10 demonstrations and surpasses baselines with a 24.2% relative improvement. In 4 real robot tasks, DP3 demonstrates precise control with a high success rate of 85%, given only 40 demonstrations of each task, and shows excellent generalization abilities in diverse aspects, including space, viewpoint, appearance, and instance. Interestingly, in real robot experiments, DP3 rarely violates safety requirements, in contrast to baseline methods which frequently do, necessitating human intervention. Our extensive evaluation highlights the critical importance of 3D representations in real-world robot learning. Videos, code, and data are available on https://3d-diffusion-policy.github.io.",
+  "paper_url": "https://arxiv.org/abs/2403.03954",
+  "pdf_url": "https://arxiv.org/pdf/2403.03954",
+  "project_url": "https://3d-diffusion-policy.github.io",
+  "code_url": "https://github.com/YanjieZe/3D-Diffusion-Policy",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yanjie Ze",
+      "affiliations": [
+        "shanghai-qizhi-institute"
+      ]
+    },
+    {
+      "name": "Gu Zhang",
+      "affiliations": [
+        "shanghai-qizhi-institute",
+        "shanghai-jiao-tong-university"
+      ]
+    },
+    {
+      "name": "Kangning Zhang",
+      "affiliations": [
+        "shanghai-qizhi-institute",
+        "shanghai-jiao-tong-university"
+      ]
+    },
+    {
+      "name": "Chenyuan Hu",
+      "affiliations": [
+        "shanghai-qizhi-institute",
+        "tsinghua-university"
+      ]
+    },
+    {
+      "name": "Muhan Wang",
+      "affiliations": [
+        "shanghai-qizhi-institute",
+        "tsinghua-university"
+      ]
+    },
+    {
+      "name": "Huazhe Xu",
+      "affiliations": [
+        "tsinghua-university",
+        "shanghai-ai-lab"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "shanghai-qizhi-institute",
+      "name": "Shanghai Qizhi Institute",
+      "role": "primary"
+    },
+    {
+      "id": "shanghai-jiao-tong-university",
+      "name": "Shanghai Jiao Tong University",
+      "role": "collaborator"
+    },
+    {
+      "id": "tsinghua-university",
+      "name": "Tsinghua University",
+      "role": "collaborator"
+    },
+    {
+      "id": "shanghai-ai-lab",
+      "name": "Shanghai AI Lab",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2024-03-06",
+    "last_revision": "2024-09-27"
+  },
+  "venue": {
+    "name": "Robotics: Science and Systems (RSS)",
+    "year": 2024,
+    "status": "published"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "imitation-learning",
+      "behavior-cloning",
+      "diffusion-policy",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "proprioception",
+      "point-cloud",
+      "depth"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [
+      "code"
+    ],
+    "properties": [
+      "real-robot-evaluation",
+      "open-source"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "将3D点云表征与扩散策略结合，在72个仿真任务和4个真实机器人任务上系统证明了3D表征对视觉模仿学习的关键作用，仅需10-40个演示即可取得85%真实世界成功率，且安全违规率为零。RSS 2024已发表，是3D扩散策略方向的开创性工作。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-21",
+    "confidence": "high",
+    "needs_human_review": true,
+    "uncertainties": [
+      "Yanjie Ze 和 Gu Zhang 为共同第一作者（*标注），ar5iv HTML 文本确认该信息",
+      "GitHub 仓库已确认存在（YanjieZe/3D-Diffusion-Policy），但未成功获取 stars/license 等元数据",
+      "论文中部分作者的 affiliation 数字标注可能不完全对应（如编号1/2/3/4在 ar5iv 文本中的显示）"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "ar5iv-html",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2403.03954",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Introduction",
+      "Related Work",
+      "Method",
+      "Simulation Experiments",
+      "Real World Experiments",
+      "Conclusion"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-21"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2403.03954"
+    },
+    {
+      "type": "project-page",
+      "url": "https://3d-diffusion-policy.github.io"
+    },
+    {
+      "type": "code-repo",
+      "url": "https://github.com/YanjieZe/3D-Diffusion-Policy"
+    }
+  ],
+  "suggested_new_tags": [],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "migration": {
+    "from_schema_version": "0.2",
+    "migrated_at": "2026-07-22",
+    "note": "从 v0.2 迁移；source_access 可证明已读取完整论文来源。"
+  }
+}

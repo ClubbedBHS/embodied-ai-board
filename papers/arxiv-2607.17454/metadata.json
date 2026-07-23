@@ -1,0 +1,129 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.17454",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Test-Time Scaling for World Action Models via Zero-Shot Geometric Evaluation",
+  "title_zh": null,
+  "abstract": "Test-time scaling improves foundation-model inference by spending additional computation, but robot control requires deciding whether extra compute is useful before executing an action. World Action Models (WAMs) make this decision natural: each rollout exposes both an action chunk and predicted future observations. We propose \\methodgated, a training-free selective test-time scaling framework for WAMs. We first instantiate \\method, a fixed-budget Best-of-$N$ selector that ranks sampled rollouts by cross-view depth reprojection consistency of their predicted futures, computed with a frozen geometry foundation model. \\methodgated\\ adds a lightweight action--future consistency gate that invokes \\method\\ only when the initial rollout appears internally inconsistent. Across five benchmark--backbone settings on RoboCasa, LIBERO Long, and RoboTwin~2.0, fixed-budget \\method\\ improves $N{=}8$ task success in every setting, e.g., raising the RoboCasa group average from $66.3\\%$ to $68.4\\%$ with Cosmos Policy and from $80.8\\%$ to $82.5\\%$ with X-WAM. With gating enabled, \\methodgated\\ recovers on average $74.8\\%$ of the always-on success gain while triggering additional sampling on only $26.2\\%$ of decision points. Offline diagnostics show that cross-view reprojection is a strong task-label-free selector, and we identify false low-score selections as a failure mode that helps explain why performance can saturate or degrade as $N$ increases.",
+  "paper_url": "https://arxiv.org/abs/2607.17454",
+  "pdf_url": "https://arxiv.org/pdf/2607.17454",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Zesen Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Minkyoung Cho",
+      "affiliations": []
+    },
+    {
+      "name": "Hui shen",
+      "affiliations": []
+    },
+    {
+      "name": "Boyuan Zheng",
+      "affiliations": []
+    },
+    {
+      "name": "Kunxiao Gao",
+      "affiliations": []
+    },
+    {
+      "name": "Yulong Cao",
+      "affiliations": []
+    },
+    {
+      "name": "Z. Morley Mao",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-20",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model",
+      "planning"
+    ],
+    "tasks": [
+      "generalist-control"
+    ],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [
+      "vision",
+      "action",
+      "depth"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [],
+    "properties": [
+      "zero-shot"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 81,
+    "selection_reason": "用冻结几何模型的跨视角深度重投影做WAM rollout selector，并以action-future一致性gate只在必要时增加采样。 第3节给出GeoBoN/gate；第4节在RoboCasa、LIBERO Long、RoboTwin 2.0的5个benchmark-backbone设置均提高N=8成功，gate仅26.2%决策点触发且保留74.8%增益，并分析N增大退化。 相对EgoWAM/FlowWAM的训练贡献，该工作提供training-free selective test-time scaling和失败分析。",
+    "candidate_run": "2026-07-backfill/batch-02",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "绝对成功增益约1.7–2.1点，计算成本仍高",
+      "依赖多视角深度与冻结几何模型",
+      "无核验代码"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.17454",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.17454"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.17454"
+    }
+  ],
+  "suggested_new_tags": []
+}

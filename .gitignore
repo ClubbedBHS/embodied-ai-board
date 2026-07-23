@@ -1,0 +1,34 @@
+.DS_Store
+*.pem
+.env
+.env.*
+
+# Local agent and editor state
+.claude/
+.codex/
+.codex-tmp/
+
+# Agent downloads and transient extraction notes
+workbench/downloads/
+workbench/notes/
+
+# Website dependencies and build output
+site/node_modules/
+site/.next/
+site/.vinext/
+site/dist/
+site/out/
+site/.wrangler/
+site/coverage/
+site/.pnp
+site/.pnp.*
+site/.yarn/
+site/.vercel/
+site/next-env.d.ts
+
+# Logs and package-manager diagnostics
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*

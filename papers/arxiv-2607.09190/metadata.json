@@ -1,0 +1,138 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.09190",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "TactiDex: A Real-World Tactile-Guided Benchmark for Human-Like Dexterous Manipulation",
+  "title_zh": null,
+  "abstract": "Tactile feedback is fundamental to Hand-Object Interaction (HOI), governing contact formation, force regulation, and stable manipulation, making it essential for achieving true human-like dexterous manipulation. Yet, current human-to-robot dexterous transfer pipelines primarily rely on kinematic trajectories, resulting in motion imitation without physically grounded interaction. To address this, we introduce TactiDex, a real-world tactile-guided benchmark specifically designed to move dexterous manipulation beyond kinematic mimicry toward contact-level human-likeness. TactiDex provides a comprehensive dataset that elegantly aligns whole-hand tactile signals with multi-granularity kinematic and object states, coupled with standardized evaluation metrics. Building upon this data paradigm, we propose a tactile-driven transfer framework that effectively translates human demonstrations into physically plausible robotic execution. We introduce TactiSkill, a framework built upon a novel tri-component tactile reward that innovatively uses tactile signals as structured supervision. This reward unifies guidance, human-like alignment, and contact constraints into a single objective. Through comprehensive experiments on both single and bimanual tasks, we demonstrate that TactiSkill achieves superior performance in manipulation success and physical realism. This work lays a crucial foundation for advancing tactile-aware dexterous manipulation. Our project page at https://tactidex.github.io/.",
+  "paper_url": "https://arxiv.org/abs/2607.09190",
+  "pdf_url": "https://arxiv.org/pdf/2607.09190",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Suting Ni",
+      "affiliations": []
+    },
+    {
+      "name": "Hanbing Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Zhenyu Wei",
+      "affiliations": []
+    },
+    {
+      "name": "Guo Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Chixuan Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Ye Shi",
+      "affiliations": []
+    },
+    {
+      "name": "Jingya Wang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-10",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data",
+      "algorithms"
+    ],
+    "topics": [
+      "imitation-learning",
+      "representation-learning",
+      "control"
+    ],
+    "tasks": [
+      "manipulation",
+      "generalist-control"
+    ],
+    "platforms": [
+      "dexterous-hand",
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "action",
+      "tactile"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "dataset"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 83,
+    "selection_reason": "这项工作在其问题上提出明确增量：把触觉作为 human-to-robot dexterous transfer 的结构化监督和标准评测目标，而非附加传感器输入。 多任务、消融和实机支撑 success/physical realism 主张，但项目页本次不可访问，无法计公开资产。 看板没有 tactile-guided benchmark；相对 EgoScale 的视觉人类数据迁移，TactiDex新增同步触觉与接触级 reward/metrics。",
+    "candidate_run": "2026-07-backfill/batch-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "项目页本次网络探测失败",
+      "真实部署采用开环 command mapping，闭环鲁棒性有限",
+      "数据规模与跨传感器泛化需人工复核"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.09190",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.09190"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.09190"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://tactidex.github.io/"
+    }
+  ],
+  "suggested_new_tags": []
+}

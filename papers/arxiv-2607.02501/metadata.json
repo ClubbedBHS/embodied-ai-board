@@ -1,0 +1,143 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.02501",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Embodied.cpp: A Portable Inference Runtime of Embodied AI Models on Heterogeneous Robots",
+  "title_zh": null,
+  "abstract": "Embodied AI models now span vision-language-action (VLA) models and world-action models (WAMs), but practical deployment remains fragmented across model-specific Python stacks, backend assumptions, and robot-side glue code, especially on heterogeneous edge devices. Existing inference runtimes are designed mainly for request-response serving and therefore do not satisfy the runtime contract of embodied deployment: multi-rate execution inside closed-loop control, latency-first batch-1 inference on heterogeneous hardware, and extensible embodied interfaces beyond fixed token I/O. We present Embodied$.$cpp, a portable C++ inference runtime for embodied models. Based on an architectural analysis of representative VLA models and WAMs, Embodied$.$cpp captures a shared execution path and organizes it into five layers: input adapters, sequence builders, backbone execution, head plugins, and deployment adapters. The runtime provides modular multi-rate execution, latency-first fused inference, and extensible operator and I/O support, enabling deployment across heterogeneous devices, robots, and simulators through one backend abstraction. We evaluate Embodied$.$cpp on two VLA models, HY-VLA and pi0.5, and on a preliminary WAM benchmark using a LingBot-VA Transformer block. The VLA deployments achieve successful closed-loop execution with 100.0% and 91.0% task success rates, respectively. The WAM benchmark reduces block memory from 312.2 MiB to 88.1 MiB. These results show that Embodied$.$cpp improves deployment efficiency while preserving high accuracy across diverse embodied model architectures.",
+  "paper_url": "https://arxiv.org/abs/2607.02501",
+  "pdf_url": "https://arxiv.org/pdf/2607.02501",
+  "project_url": null,
+  "code_url": "https://github.com/SEU-PAISys/Embodied.cpp",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Ling Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Chuyu Han",
+      "affiliations": []
+    },
+    {
+      "name": "Borui Li",
+      "affiliations": []
+    },
+    {
+      "name": "Hao Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Shiqi Jiang",
+      "affiliations": []
+    },
+    {
+      "name": "Ting Cao",
+      "affiliations": []
+    },
+    {
+      "name": "Chuanyou Li",
+      "affiliations": []
+    },
+    {
+      "name": "Sheng Zhong",
+      "affiliations": []
+    },
+    {
+      "name": "Shuai Wang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-02",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "infrastructure"
+    ],
+    "topics": [
+      "vla",
+      "world-model",
+      "foundation-model"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "multi-robot"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [
+      "code"
+    ],
+    "properties": [
+      "simulation-only"
+    ]
+  },
+  "paper_type": [
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 88,
+    "selection_reason": "这项工作在其问题上提出明确增量：提供面向闭环、多速率、batch-1 和异构 edge 的统一 C++ embodied inference contract，而非通用 request-response serving。 两类 VLA 的闭环任务与一个 WAM block 的效率结果支撑部署主张；WAM 端到端覆盖仍不足。 最近邻为 arxiv-2602.22818 LeRobot；LeRobot侧重训练/数据生态，Embodied.cpp补充生产部署期的 C++ 多速率异构推理。",
+    "candidate_run": "2026-07-backfill/batch-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "WAM 仅 block 级初步基准",
+      "支持模型数量仍少，跨更多机器人/加速器的可移植性需验证"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.02501",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.02501"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.02501"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://github.com/SEU-PAISys/Embodied.cpp"
+    }
+  ],
+  "suggested_new_tags": []
+}

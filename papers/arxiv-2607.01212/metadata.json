@@ -1,0 +1,132 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.01212",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "FurnitureVLA: Learning Long-Horizon Bimanual Furniture Assembly with Vision-Language-Action Model",
+  "title_zh": null,
+  "abstract": "Current work on robot furniture assembly mostly focuses on toy-scale settings or single-arm manipulation. We introduce FurnitureVLA, the first systematic study of real-scale bimanual furniture assembly using Vision-Language-Action models (VLAs). We formalize the task, develop a scalable simulation pipeline for expert data generation and evaluation, and build a VR teleoperation system for single-operator bimanual control to collect high-quality real-world demonstrations. To address extreme long-horizon assembly with up to 7 subtasks and 1550 control steps, we propose a progress-enhanced VLA, finetuned on semantically grounded subtasks, that jointly predicts actions and a continuous progress signal, enabling automatic subtask transitions and reducing compounding errors during inference. We further study perception and control design factors that critically affect precision in real-scale assembly. FurnitureVLA improves average simulation success from 48% to 80% compared to baselines across three furniture types, with an additional 21% gain from our design factor study. We validate on a real Kinova Gen3 platform with only 16% drop on the hardest task.",
+  "paper_url": "https://arxiv.org/abs/2607.01212",
+  "pdf_url": "https://arxiv.org/pdf/2607.01212",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Chenyang Ma",
+      "affiliations": []
+    },
+    {
+      "name": "Yue Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Radu Corcodel",
+      "affiliations": []
+    },
+    {
+      "name": "Siddarth Jain",
+      "affiliations": []
+    },
+    {
+      "name": "Andrew Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Chiori Hori",
+      "affiliations": []
+    },
+    {
+      "name": "Diego Romeres",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-01",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data"
+    ],
+    "topics": [
+      "vla",
+      "behavior-cloning",
+      "planning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "dataset"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 81,
+    "selection_reason": "这项工作在其问题上提出明确增量：首次系统研究实尺度、长程、双臂家具装配 VLA，并用进度信号解决子任务切换。 多家具仿真、设计因素消融和 Kinova Gen3 实机形成完整证据；未确认代码/数据公开。 最近邻 arxiv-2304.13705 ACT 与 π0.5；FurnitureVLA新增实尺度家具、最长 1,550 步、进度监督和仿真—实机系统。",
+    "candidate_run": "2026-07-backfill/batch-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "核心资产未确认公开",
+      "真实机器人平台与任务数有限",
+      "依赖语义子任务标注"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.01212",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.01212"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.01212"
+    }
+  ],
+  "suggested_new_tags": []
+}

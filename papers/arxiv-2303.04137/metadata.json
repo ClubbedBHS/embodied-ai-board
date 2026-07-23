@@ -1,0 +1,187 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2303.04137",
+  "title": "Diffusion Policy: Visuomotor Policy Learning via Action Diffusion",
+  "title_zh": "扩散策略：通过动作扩散进行视觉运动策略学习",
+  "abstract": "This paper introduces Diffusion Policy, a new way of generating robot behavior by representing a robot's visuomotor policy as a conditional denoising diffusion process. We benchmark Diffusion Policy across 12 different tasks from 4 different robot manipulation benchmarks and find that it consistently outperforms existing state-of-the-art robot learning methods with an average improvement of 46.9%. Diffusion Policy learns the gradient of the action-distribution score function and iteratively optimizes with respect to this gradient field during inference via a series of stochastic Langevin dynamics steps. We find that the diffusion formulation yields powerful advantages when used for robot policies, including gracefully handling multimodal action distributions, being suitable for high-dimensional action spaces, and exhibiting impressive training stability. To fully unlock the potential of diffusion models for visuomotor policy learning on physical robots, this paper presents a set of key technical contributions including the incorporation of receding horizon control, visual conditioning, and the time-series diffusion transformer. We hope this work will help motivate a new generation of policy learning techniques that are able to leverage the powerful generative modeling capabilities of diffusion models. Code, data, and training details is publicly available diffusion-policy.cs.columbia.edu",
+  "paper_url": "https://arxiv.org/abs/2303.04137",
+  "pdf_url": "https://arxiv.org/pdf/2303.04137",
+  "project_url": "https://diffusion-policy.cs.columbia.edu",
+  "code_url": "https://github.com/real-stanford/diffusion_policy",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Cheng Chi",
+      "affiliations": [
+        "columbia-university"
+      ]
+    },
+    {
+      "name": "Zhenjia Xu",
+      "affiliations": [
+        "columbia-university"
+      ]
+    },
+    {
+      "name": "Siyuan Feng",
+      "affiliations": [
+        "toyota-research-institute"
+      ]
+    },
+    {
+      "name": "Eric Cousineau",
+      "affiliations": [
+        "toyota-research-institute"
+      ]
+    },
+    {
+      "name": "Yilun Du",
+      "affiliations": [
+        "mit"
+      ]
+    },
+    {
+      "name": "Benjamin Burchfiel",
+      "affiliations": [
+        "toyota-research-institute"
+      ]
+    },
+    {
+      "name": "Russ Tedrake",
+      "affiliations": [
+        "toyota-research-institute",
+        "mit"
+      ]
+    },
+    {
+      "name": "Shuran Song",
+      "affiliations": [
+        "columbia-university"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "columbia-university",
+      "name": "Columbia University",
+      "role": "primary"
+    },
+    {
+      "id": "toyota-research-institute",
+      "name": "Toyota Research Institute",
+      "role": "primary"
+    },
+    {
+      "id": "mit",
+      "name": "Massachusetts Institute of Technology",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2023-03-07",
+    "last_revision": "2024-03-14"
+  },
+  "venue": {
+    "name": "Robotics: Science and Systems (RSS)",
+    "year": 2023,
+    "status": "published"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "imitation-learning",
+      "behavior-cloning",
+      "diffusion-policy"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "proprioception",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [
+      "code"
+    ],
+    "properties": [
+      "real-robot-evaluation",
+      "open-source"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "首次将去噪扩散概率模型（DDPM）系统性地应用于视觉运动策略学习，在12个任务、4个基准上以46.9%的平均提升一致超越此前方法。提出了闭环动作序列预测、视觉条件化和时间序列扩散Transformer三项关键设计，并提供了CNN和Transformer两种骨干网络实现。论文在仿真和真实机器人上均进行了全面验证，代码开源且已被广泛采用，是扩散策略方向的奠基性工作。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-21",
+    "confidence": "high",
+    "needs_human_review": true,
+    "uncertainties": [
+      "arXiv元数据列出8位作者（含Russ Tedrake），但ar5iv渲染的v5版本PDF正文仅列出7位作者（不含Russ Tedrake），已按arXiv元数据收录全部8位作者",
+      "Russ Tedrake的affiliation在v5正文中未明确列出，根据v1版本推断为Toyota Research Institute和MIT",
+      "论文标注为'RSS2023论文的扩展期刊版本'，但未说明具体期刊名称，venue以RSS 2023记录",
+      "GitHub仓库通过API确认存在（repo ID 610943527），但网络限制无法完整验证页面内容"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "ar5iv-html",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2303.04137",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Introduction",
+      "Diffusion Policy Formulation",
+      "Key Design Decisions",
+      "Intriguing Properties of Diffusion Policy",
+      "Evaluation",
+      "Realworld Evaluation",
+      "Related Work",
+      "Limitations and Future Work",
+      "Conclusion"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-21"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2303.04137"
+    },
+    {
+      "type": "html-fulltext",
+      "url": "https://ar5iv.labs.arxiv.org/html/2303.04137"
+    },
+    {
+      "type": "project-page",
+      "url": "https://diffusion-policy.cs.columbia.edu"
+    },
+    {
+      "type": "code-repository",
+      "url": "https://github.com/real-stanford/diffusion_policy"
+    }
+  ],
+  "suggested_new_tags": [],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "migration": {
+    "from_schema_version": "0.2",
+    "migrated_at": "2026-07-22",
+    "note": "从 v0.2 迁移；source_access 可证明已读取完整论文来源。"
+  }
+}

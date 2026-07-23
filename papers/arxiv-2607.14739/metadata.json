@@ -1,0 +1,149 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.14739",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "FoMoVLA: Bridging Visual Foresight and Motion Guidance for Vision-Language-Action Models",
+  "title_zh": null,
+  "abstract": "Vision-Language-Action (VLA) models have achieved impressive results in visuomotor policy learning, yet remain fundamentally reactive, mapping current observations and language to actions without explicit forward prediction of world dynamics. Existing visual foresight methods predict future visual states but lack explicit motion guidance: they show where to go but not how to get there. We argue that future feature prediction and sparse point tracking are naturally complementary: the former provides the goal state, while the latter captures the continuous motion path toward it. We propose FoMoVLA, a framework that augments VLA representations with explicit spatio-temporal supervision by jointly learning future feature foresight and sparse 2D point tracking, enhancing the continuous action policy. FoMoVLA introduces compact foresight tokens to decode future feature states, decodes sparse temporal 2D point trajectories to model compact geometric motion, and couples both through a lightweight future-conditioned cross-attention module that enables consistent reasoning between anticipated states and point dynamics. Extensive experiments on LIBERO, RoboCasa GR-1 Tabletop, and LIBERO-Plus demonstrate state-of-the-art performance and strong zero-shot generalization. Project page is available at https://liauto-research.github.io/FoMoVLA.",
+  "paper_url": "https://arxiv.org/abs/2607.14739",
+  "pdf_url": "https://arxiv.org/pdf/2607.14739",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Wei Li",
+      "affiliations": []
+    },
+    {
+      "name": "Peijin Jia",
+      "affiliations": []
+    },
+    {
+      "name": "Yuan Ma",
+      "affiliations": []
+    },
+    {
+      "name": "Xuefeng Jiang",
+      "affiliations": []
+    },
+    {
+      "name": "Titong Jiang",
+      "affiliations": []
+    },
+    {
+      "name": "Sheng Sun",
+      "affiliations": []
+    },
+    {
+      "name": "Yujian Li",
+      "affiliations": []
+    },
+    {
+      "name": "Xin Wen",
+      "affiliations": []
+    },
+    {
+      "name": "Han Hong",
+      "affiliations": []
+    },
+    {
+      "name": "Zhikang Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Bailin Li",
+      "affiliations": []
+    },
+    {
+      "name": "Kun Zhan",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-16",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [],
+    "properties": [
+      "zero-shot"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 75,
+    "selection_reason": "FoMoVLA augments VLA representations with explicit spatio-temporal supervision by jointly learning future feature prediction (where to go) and sparse 2D point tracking (how to get there), coupled via future-conditioned cross-attention. Training-only auxiliary losses add zero inference overhead. Strong results across LIBERO, RoboCasa, and LIBERO-Plus with thorough ablation studies.",
+    "candidate_run": "2026-07-backfill/batch-03",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "hermes-agent",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "Project page (liauto-research.github.io/FoMoVLA) exists but no verified code release",
+      "2D point tracking may not capture 3D geometry (acknowledged limitation)",
+      "Built on StarVLA-GR00T backbone; gains may be backbone-specific"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.14739",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.14739"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.14739"
+    }
+  ],
+  "suggested_new_tags": []
+}

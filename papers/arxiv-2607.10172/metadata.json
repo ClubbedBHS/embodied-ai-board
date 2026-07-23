@@ -1,0 +1,124 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.10172",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "On the Efficiency of LoRA Fine-Tuning for Vision-Language-Action Models in Industrial Robotic Manipulation",
+  "title_zh": null,
+  "abstract": "Deploying billion-parameter Vision-Language-Action (VLA) models on industrial hardware requires fine-tuning to bridge the embodiment gap. Full Fine-Tuning (FFT) provides maximal plasticity but requires data centre-grade GPUs. We present a systematic study of Low-Rank Adaptation (LoRA) for $π_0$, a flow-matching VLA, evaluated on four precision assembly tasks with a UR5e robotic manipulator. Across a sweep of LoRA ranks (r=8 to 256), allocation strategies, and component-freezing ablations, we find no statistically significant advantage of FFT over certain LoRA configurations. Performance saturates at r=32, and uniform allocation across the Vision-Language-Model (VLM) backbone and action expert proves sufficient. Freezing the VLM or restricting the vision encoder to LoRA significantly degrades performance, indicating that embodiment adaptation requires both semantic and visual plasticity. These results suggest that LoRA at r=32 with full vision encoder fine-tuning is a practical approach, reducing static peak VRAM from 36.2 to 10.8 GiB (parameters and optimizer states, activation memory excluded) without detectable performance loss.",
+  "paper_url": "https://arxiv.org/abs/2607.10172",
+  "pdf_url": "https://arxiv.org/pdf/2607.10172",
+  "project_url": null,
+  "code_url": "https://github.com/F-Fer/openpi-ur5e",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Finn Ferchau",
+      "affiliations": []
+    },
+    {
+      "name": "Daniel Pommer",
+      "affiliations": []
+    },
+    {
+      "name": "Cristian Axenie",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-11",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "topics": [
+      "vla",
+      "foundation-model",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [
+      "code"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 80,
+    "selection_reason": "这项工作在其问题上提出明确增量：不是提出新 VLA，而是对 π0 embodiment adaptation 的 rank、模块分配和 FFT 对照做系统实证。 四任务、rank sweep、冻结消融与显著性检验匹配主张；配套 UR5e 代码仓库当前可访问。 最近邻 π0 与 LeRobot；本工作新增 π0 工业适配的统计性 PEFT 指南和真实硬件资源账本。",
+    "candidate_run": "2026-07-backfill/batch-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "只研究 π0 和 UR5e 四任务",
+      "显存数字排除 activation，不能等同训练总峰值",
+      "LoRA 结论可能不泛化到其他 VLA"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.10172",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.10172"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.10172"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://github.com/F-Fer/openpi-ur5e"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://github.com/F-Fer/lerobot_ur5e_gello"
+    }
+  ],
+  "suggested_new_tags": []
+}

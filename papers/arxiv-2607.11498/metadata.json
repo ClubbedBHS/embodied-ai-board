@@ -1,0 +1,127 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.11498",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "See like a Robot: Robot-Centric Pointmaps for Vision-Language-Action Models",
+  "title_zh": null,
+  "abstract": "Vision-language-action (VLA) models predict robot actions from visual observations and language instructions. These actions are defined in the robot's own 3D coordinate frame, yet most VLAs observe the scene in the camera frame, creating a frame mismatch between where the scene is observed and where actions are defined. The mismatch is benign under a fixed viewpoint, where the policy can memorize a single observation-to-action mapping, but grows harder as large-scale datasets aggregate demonstrations across diverse camera setups and the policy must generalize this mapping across viewpoints. We address this mismatch with robot-centric pointmaps, images whose pixels store the 3D coordinates of scene points in the robot frame. Pointmaps provide robot-frame 3D geometry while preserving the dense H x W grid expected by pretrained 2D VLAs, so they integrate into existing VLAs with minimal architectural change. On RoboCasa, pointmaps improve both pi0.5 and SmolVLA and outperform representative camera-viewpoint and 3D-aware baselines. In real-robot experiments, their advantage over an RGB-only policy widens when the camera is moved to a placement unseen during training.",
+  "paper_url": "https://arxiv.org/abs/2607.11498",
+  "pdf_url": "https://arxiv.org/pdf/2607.11498",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Byungkun Lee",
+      "affiliations": []
+    },
+    {
+      "name": "Dongyoon Hwang",
+      "affiliations": []
+    },
+    {
+      "name": "Dongjin Kim",
+      "affiliations": []
+    },
+    {
+      "name": "Hojoon Lee",
+      "affiliations": []
+    },
+    {
+      "name": "Minho Park",
+      "affiliations": []
+    },
+    {
+      "name": "Jaegul Choo",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-13",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action",
+      "point-cloud"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation",
+      "large-scale-data"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 80,
+    "selection_reason": "把每像素3D坐标变换到robot frame，同时保持H×W图像结构，直接解决相机观测帧与动作帧错配。 第4节受控比较camera info、pointcloud、centering和viewpoint variation；第5节在RoboCasa上改善π0.5/SmolVLA并优于3D/viewpoint baseline，实机相机移到未见位置时优势扩大；第6节列局限。 相对3D Diffusion Policy，pointmap以robot-frame图像形式复用2D VLA backbone，特别针对跨视角动作对齐。",
+    "candidate_run": "2026-07-backfill/batch-02",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "项目页本次不可访问",
+      "依赖深度/标定质量",
+      "真实任务数量需人工复核"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.11498",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.11498"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.11498"
+    }
+  ],
+  "suggested_new_tags": []
+}

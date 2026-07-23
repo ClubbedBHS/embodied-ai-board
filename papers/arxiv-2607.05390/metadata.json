@@ -1,0 +1,161 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.05390",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Deform360: A Massive Multi-view Visuotactile Dataset for Deformable World Models",
+  "title_zh": null,
+  "abstract": "Predicting object dynamics (i.e., world modeling) is a fundamental challenge for robotic manipulation, and modeling deformable objects presents a particularly difficult case due to their high-dimensional state spaces and complex material properties. While current world models approach this through two distinct paradigms: learning the dynamics over the 2D pixel space or more explicit 3D geometric space. A systematic understanding of their relative strengths and limitations remains elusive due to the lack of diverse, large-scale real-world data. To address this, we present Deform360, a large-scale visuotactile dataset featuring 198 daily-life objects, 1,980 interaction sequences, and over 215 hours of observations from 41 surround-view cameras and bimanual tactile grippers to capture both global motion and contact-induced local deformations. Leveraging a novel markerless visuotactile 3D tracking pipeline to extract dense geometry and motion, we systematically evaluate current state-of-the-art world models, comparing 2D video models against 3D particle models. Finally, we provide a preliminary demonstration indicating the real-world applicability of our dataset by performing robot planning tasks on deformable objects. Our analysis reveals key insights into the trade-offs between structural priors and scalability, providing a solid benchmark for future research in generalizable deformable object-centric world modeling. Project website: https://deform360.lhy.xyz",
+  "paper_url": "https://arxiv.org/abs/2607.05390",
+  "pdf_url": "https://arxiv.org/pdf/2607.05390",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Hongyu Li",
+      "affiliations": []
+    },
+    {
+      "name": "Wanjia Fu",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaoyan Cong",
+      "affiliations": []
+    },
+    {
+      "name": "Zekun Li",
+      "affiliations": []
+    },
+    {
+      "name": "Binghao Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Hanxiao Jiang",
+      "affiliations": []
+    },
+    {
+      "name": "Xintong He",
+      "affiliations": []
+    },
+    {
+      "name": "Yiqing Liang",
+      "affiliations": []
+    },
+    {
+      "name": "Rao Fu",
+      "affiliations": []
+    },
+    {
+      "name": "Tao Lu",
+      "affiliations": []
+    },
+    {
+      "name": "Srinath Sridhar",
+      "affiliations": []
+    },
+    {
+      "name": "Kevin A. Smith",
+      "affiliations": []
+    },
+    {
+      "name": "George Konidaris",
+      "affiliations": []
+    },
+    {
+      "name": "Yunzhu Li",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-06",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data",
+      "infrastructure"
+    ],
+    "topics": [
+      "world-model",
+      "representation-learning",
+      "planning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "action",
+      "tactile",
+      "point-cloud"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation",
+      "large-scale-data"
+    ]
+  },
+  "paper_type": [
+    "dataset",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 89,
+    "selection_reason": "提供41视角+双手触觉的大规模真实软体动态数据，并在同一资源上系统比较2D video与3D particle world models。 第3–4节记录198物体、1,980序列、215+小时及 markerless 3D tracking；第5节核验重建/追踪、接触预测、world-model benchmark 和真实规划，随后单列局限。 相对 EgoVerse/EgoScale 的人类视频，Deform360新增多视角触觉、显式3D软体动态和2D/3D world-model对照。",
+    "candidate_run": "2026-07-backfill/batch-02",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "真实规划只是 preliminary demonstration",
+      "项目页本次未验证可访问，数据许可证需人工确认"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.05390",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.05390"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.05390"
+    }
+  ],
+  "suggested_new_tags": []
+}

@@ -1,0 +1,163 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.28813",
+  "title": "Human2Any: Human-to-Robot Transfer via Constraint-Aware Compositional Planning",
+  "title_zh": "Human2Any：基于约束感知组合规划的人机技能迁移",
+  "abstract": "Human videos are a scalable source of supervision for robot manipulation, as they are abundant and naturally capture rich object interactions. However, transferring human demonstrations to robots remains challenging due to embodiment mismatch, scene variation, and robot-specific feasibility constraints. We present Human2Any, a framework for learning reusable object-centric interaction priors from human videos without requiring real-world robot demonstrations in the target task contexts. Human2Any represents manipulation through object-object interaction motion, capturing task-relevant scene changes while abstracting away embodiment-specific details. It composes learned interaction priors with robot-side feasibility reasoning and motion planning, allowing the same human-derived knowledge to adapt to different embodiments, scene geometries, and task contexts. We validate Human2Any across diverse manipulation settings, including real-world experiments on a Franka tabletop setup and an RBY-1 humanoid mobile robot, demonstrating robust interaction-centric manipulation without real-world robot training data.",
+  "paper_url": "https://arxiv.org/abs/2606.28813",
+  "pdf_url": "https://arxiv.org/pdf/2606.28813",
+  "project_url": "https://human2any.github.io/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Shuo Cheng",
+      "affiliations": [
+        "georgia-tech"
+      ]
+    },
+    {
+      "name": "Chuye Zhang",
+      "affiliations": [
+        "georgia-tech"
+      ]
+    },
+    {
+      "name": "Alfred Cueva",
+      "affiliations": [
+        "georgia-tech"
+      ]
+    },
+    {
+      "name": "Caelan Garrett",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Ajay Mandlekar",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Danfei Xu",
+      "affiliations": [
+        "georgia-tech"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "georgia-tech",
+      "name": "Georgia Institute of Technology",
+      "role": "primary"
+    },
+    {
+      "id": "nvidia",
+      "name": "NVIDIA Corporation",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-27",
+    "last_revision": "2026-06-27"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "behavior-cloning",
+      "imitation-learning",
+      "diffusion-policy",
+      "planning",
+      "control"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm",
+      "humanoid"
+    ],
+    "modalities": [
+      "vision",
+      "depth",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation",
+      "zero-shot"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "提出了一种从人类视频中学习物体交互先验并通过约束感知组合规划跨不同机器人形态部署的方法，在 Franka 和人形机器人 RBY-1 上实现了零样本迁移，不需要目标场景的机器人演示数据。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-21",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "未在论文中找到公开代码仓库或数据集链接，项目主页仅在论文中提及但代码尚未公开",
+      "人类视频数据的具体来源和数量论文未明确披露",
+      "作者声明 Shuo Cheng 和 Chuye Zhang 为共同一作（Equal Contribution），Caelan Garrett、Ajay Mandlekar、Danfei Xu 为共同通讯或资深作者（标注*），具体通讯作者顺序未完全确认"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.28813"
+    },
+    {
+      "type": "pdf",
+      "url": "https://arxiv.org/pdf/2606.28813"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://ar5iv.labs.arxiv.org/html/2606.28813"
+    },
+    {
+      "type": "project-page",
+      "url": "https://human2any.github.io/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "ar5iv-html",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.28813",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1. Introduction",
+      "2. Related Work",
+      "3. Learning Interaction Priors from Video",
+      "4. Constraint-Aware Composition",
+      "5. Experiments",
+      "6. Limitations",
+      "7. Conclusion"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-22"
+  },
+  "summary_version": "0.2"
+}

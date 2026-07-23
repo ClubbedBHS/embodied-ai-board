@@ -1,0 +1,156 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.02642",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "GigaWorld-1: A Roadmap to Build World Models for Robot Policy Evaluation",
+  "title_zh": null,
+  "abstract": "Evaluating embodied robot foundation models remains a critical bottleneck; unlike large language models efficiently assessed via digital benchmarks, robotic policies require slow, costly real-world rollouts limited by hardware and human supervision, which has driven interest in world models as surrogate policy evaluators, yet the key properties that make a world model reliable for policy assessment remain poorly understood. This work presents a systematic study of world models for robotic policy evaluation and introduces WMBench, a benchmark constructed from real-robot teleoperation data and matched policy rollouts covering diverse manipulation tasks to enable controlled comparisons across model families, action encodings, rollout horizons, and evaluation metrics. Using WMBench, we analyze 7 video world models, 4 action representation schemes, and over 324,000 simulated policy rollouts paired with real robot executions, further enriching our analysis with large-scale community submissions from the CVPR 2026 GigaBrain Challenge, curated synthetic trajectories, and a training videos spanning more than 12,000 hours. Our experiments deliver three core insights: evaluator quality is dominated by long-horizon, action-faithful rollout consistency rather than short-term visual realism; pretraining gains stem not only from data scale but from balancing general world knowledge with robot-specific controllability; and architectural choices including action encoding, memory design, and evaluator-focused post-training strongly determine alignment with real-world robot behavior. Drawing on these results, we derive a practical design roadmap and realize it in \\textit{GigaWorld-1}, a world model specially optimized for policy evaluation, and we fully release our code, models, datasets, and toolkits to advance scalable evaluation research for embodied foundation models.",
+  "paper_url": "https://arxiv.org/abs/2607.02642",
+  "pdf_url": "https://arxiv.org/pdf/2607.02642",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "GigaWorld Team",
+      "affiliations": []
+    },
+    {
+      "name": "Angyuan Ma",
+      "affiliations": []
+    },
+    {
+      "name": "Boyuan Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Bohan Li",
+      "affiliations": []
+    },
+    {
+      "name": "Chaojun Ni",
+      "affiliations": []
+    },
+    {
+      "name": "Guo Li",
+      "affiliations": []
+    },
+    {
+      "name": "Guan Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Guosheng Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Hao Li",
+      "affiliations": []
+    },
+    {
+      "name": "Hengtao Li",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "gigaai",
+      "name": "GigaAI",
+      "role": "unknown"
+    },
+    {
+      "id": "tsinghua-university",
+      "name": "Tsinghua University",
+      "role": "unknown"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-07-02",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "infrastructure",
+      "algorithms"
+    ],
+    "topics": [
+      "world-model",
+      "foundation-model"
+    ],
+    "tasks": [
+      "manipulation",
+      "generalist-control"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation",
+      "large-scale-data"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 83,
+    "selection_reason": "GigaWorld-1 presents the first systematic study of world models as robot policy evaluators, introducing WMBench (7 world models, 4 action encodings, 324k rollouts) and a design recipe for building reliable evaluator models. Key insight: evaluator quality requires preserving policy-relevant causality under iterative rollout, not just plausible video generation. Fills a critical infrastructure gap for scalable robot policy assessment.",
+    "candidate_run": "2026-07-backfill/batch-03",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "hermes-agent",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "GigaWorld-1 described as internal pipeline; public release scope unclear",
+      "World-model-based evaluation may not fully replace real-world rollouts for safety-critical tasks",
+      "HF dataset URL not HTTP-verified due to timeout; project page at open-gigaai.github.io/giga-world-1 exists"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.02642",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.02642"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.02642"
+    }
+  ],
+  "suggested_new_tags": []
+}

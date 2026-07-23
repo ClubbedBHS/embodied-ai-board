@@ -1,0 +1,154 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.14021",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Industrial Dexterity Benchmark: A Hardware-Software Benchmarking Platform for Industrial Dexterous Manipulation",
+  "title_zh": null,
+  "abstract": "Dexterous manipulation remains a critical bottleneck in industrial automation; tasks such as cable routing, connector insertion, and precision assembly still rely heavily on manual labor despite decades of robotics research. This work presents a progression from classical, modular robotics pipelines toward an end-to-end multimodal imitation-learning framework for industrial dexterous manipulation. As a part of this work, we introduce three key contributions: a set of Industrial Dexterity Benchmark (IDB) boards aimed to mimic datacenter cable management, automotive cable harnesses, and gearbox assembly tasks; a scalable imitation learning framework (DAG-ROS); and a multimodal diffusion-based policy framework (AG-iDP3) that creates models fusing RGB images, point clouds, joint positions, and wrist-frame wrench data. Focusing on the datacenter cable manipulation board, we evaluate the performance of a task involving cleaning a single cable over variations of an end-to-end AI policy using 48 trials per configuration. The best performing configuration, a multimodal expansion Diffusion Policy (DP), includes a multi-view RGB image source passed through an R3M encoder and reaches a 78% grasp and insert combined task success rate. This performance marks a significant improvement over the 36% observed from the single-camera RGB DP baseline. Each of the tested configurations requires only approximately 100 teleoperated demonstrations per task phase. These results indicate that the correct learned policy can outperform classical vision and control robotic methods in robustness, generalization, and deployment efficiency, justifying a shift toward scalable robotic automation for high up-time industrial environments.",
+  "paper_url": "https://arxiv.org/abs/2607.14021",
+  "pdf_url": "https://arxiv.org/pdf/2607.14021",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Honglu He",
+      "affiliations": []
+    },
+    {
+      "name": "Jacob Laufer",
+      "affiliations": []
+    },
+    {
+      "name": "Zhiwu Zheng",
+      "affiliations": []
+    },
+    {
+      "name": "David Elkan-gonzalez",
+      "affiliations": []
+    },
+    {
+      "name": "Raman Goyal",
+      "affiliations": []
+    },
+    {
+      "name": "Xinyi Li",
+      "affiliations": []
+    },
+    {
+      "name": "Su Lu",
+      "affiliations": []
+    },
+    {
+      "name": "Mishek Musa",
+      "affiliations": []
+    },
+    {
+      "name": "Berke Saat",
+      "affiliations": []
+    },
+    {
+      "name": "Nicolas Tan",
+      "affiliations": []
+    },
+    {
+      "name": "Colm Prendergast",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-15",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data",
+      "infrastructure",
+      "algorithms"
+    ],
+    "topics": [
+      "diffusion-policy",
+      "imitation-learning",
+      "control"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "dexterous-hand",
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "action",
+      "point-cloud"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [
+      "benchmark"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method",
+    "dataset",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 77,
+    "selection_reason": "这项工作在其问题上提出明确增量：把开放硬件板、ROS 数据流水线、多模态 diffusion policy 和系统部署组合为工业级可重复 benchmark。 量化覆盖六种感知配置和 48 次/配置，但只完整评测三块板中的第一块、一个主任务。 最近邻为 arxiv-2403.03954 3D Diffusion Policy；IDB 新增工业硬件基准、力/点云多模态与部署栈，但算法验证范围更窄。",
+    "candidate_run": "2026-07-backfill/batch-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "只对 IDB Board #1 做完整 head-to-head",
+      "背景微变即失效，泛化结论弱于摘要措辞"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.14021",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.14021"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.14021"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://github.com/adi-innersource/ag-industrial-dexterity-benchmarks"
+    }
+  ],
+  "suggested_new_tags": []
+}

@@ -1,0 +1,213 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2511.04831",
+  "title": "Isaac Lab: A GPU-Accelerated Simulation Framework for Multi-Modal Robot Learning",
+  "title_zh": "Isaac Lab：面向多模态机器人学习的GPU加速仿真框架",
+  "abstract": "We present Isaac Lab, the natural successor to Isaac Gym, which extends the paradigm of GPU-native robotics simulation into the era of large-scale multi-modal learning. Isaac Lab combines high-fidelity GPU parallel physics, photorealistic rendering, and a modular, composable architecture for designing environments and training robot policies. Beyond physics and rendering, the framework integrates actuator models, multi-frequency sensor simulation, data collection pipelines, and domain randomization tools, unifying best practices for reinforcement and imitation learning at scale within a single extensible platform. We highlight its application to a diverse set of challenges, including whole-body control, cross-embodiment mobility, contact-rich and dexterous manipulation, and the integration of human demonstrations for skill acquisition. Finally, we discuss upcoming integration with the differentiable, GPU-accelerated Newton physics engine, which promises new opportunities for scalable, data-efficient, and gradient-based approaches to robot learning.",
+  "paper_url": "https://arxiv.org/abs/2511.04831",
+  "pdf_url": "https://arxiv.org/pdf/2511.04831",
+  "project_url": "https://isaac-sim.github.io/IsaacLab",
+  "code_url": "https://github.com/isaac-sim/IsaacLab",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Mayank Mittal",
+      "affiliations": [
+        "nvidia",
+        "eth"
+      ]
+    },
+    {
+      "name": "Yunrong Guo",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Pascal Roth",
+      "affiliations": [
+        "nvidia",
+        "eth"
+      ]
+    },
+    {
+      "name": "David Hoeller",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "James Tigue",
+      "affiliations": [
+        "rai"
+      ]
+    },
+    {
+      "name": "Antoine Richard",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Octi Zhang",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Peter Du",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Antonio Serrano-Muñoz",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Xinjie Yao",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "René Zurbrügg",
+      "affiliations": [
+        "eth"
+      ]
+    },
+    {
+      "name": "Nikita Rudin",
+      "affiliations": [
+        "nvidia"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "nvidia",
+      "name": "NVIDIA",
+      "role": "primary"
+    },
+    {
+      "id": "eth",
+      "name": "ETH Zürich",
+      "role": "collaborator"
+    },
+    {
+      "id": "rai",
+      "name": "Robotics and AI Institute",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2025-11-06",
+    "last_revision": "2025-11-06"
+  },
+  "venue": {
+    "name": "arXiv preprint",
+    "year": 2025,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "simulators"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "imitation-learning",
+      "sim-to-real"
+    ],
+    "tasks": [
+      "locomotion",
+      "manipulation",
+      "navigation",
+      "mobile-manipulation",
+      "humanoid-control",
+      "generalist-control"
+    ],
+    "platforms": [
+      "platform-agnostic",
+      "robot-arm",
+      "humanoid",
+      "quadruped",
+      "dexterous-hand",
+      "mobile-robot",
+      "multi-robot"
+    ],
+    "modalities": [
+      "vision",
+      "proprioception",
+      "depth",
+      "tactile",
+      "language"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [
+      "code",
+      "simulator"
+    ],
+    "properties": [
+      "open-source",
+      "simulation-only"
+    ]
+  },
+  "paper_type": [
+    "simulator"
+  ],
+  "editorial": {
+    "importance": "high",
+    "selection_reason": "Isaac Lab是Isaac Gym的正统继任者，将GPU并行仿真范式从纯物理扩展到多模态感知、执行器建模和远程操作。作为NVIDIA在具身智能仿真的旗舰框架，它集成了PhysX物理引擎与RTX光追渲染，提供manager-based和direct两种工作流，已被广泛用于四足/人形机器人locomotion、灵巧操控、工业装配、医疗手术等前沿研究。该论文是理解NVIDIA仿真技术栈和具身智能基础设施的关键文献。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-21",
+    "confidence": "high",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文正文列出NVIDIA等核心贡献者，完整贡献者名单超过100人（见Appendix A）；个别应用案例（如AutoMate）的精确数字需交叉验证对应子论文"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2511.04831"
+    },
+    {
+      "type": "pdf",
+      "url": "https://arxiv.org/pdf/2511.04831"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://ar5iv.labs.arxiv.org/html/2511.04831"
+    }
+  ],
+  "suggested_new_tags": [],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "ar5iv-html",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2511.04831",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1. Introduction",
+      "2. Core Simulation Infrastructure (USD for Robotics, Physics Simulation, Rendering)",
+      "3. Isaac Lab Design and Features (Assets, Actuators, Sensors, Controllers, Teleoperation, Scene Generation, Task Framework)",
+      "4. Simulation Performance (Environment Throughput, Sensor Throughput)",
+      "5. Learning Techniques and Workflows (Reinforcement Learning, PBT, Domain Randomization, Imitation Learning, Synthetic Data Generation)",
+      "6. Application to Robotics Research (Locomotion, Whole-body Control, Navigation, Industrial Manipulation, Dexterous Manipulation, Healthcare, Foundation Models)",
+      "7. Future Work and Discussion (Newton Engine, Policy Evaluation and Benchmarks)",
+      "8. Conclusion"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-22"
+  }
+}

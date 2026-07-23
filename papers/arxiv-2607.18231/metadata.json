@@ -1,0 +1,149 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.18231",
+  "title": "FM-VLA: Force-based Memory for Vision-Language-Action Models in Contact-Rich Manipulation",
+  "title_zh": "FM-VLA：用于接触丰富操控的力觉记忆视觉语言动作模型",
+  "abstract": "Vision-language-action (VLA) models have achieved impressive generalization in robotic manipulation, and recent memory-augmented VLAs have relaxed the Markovian assumption by conditioning on past images or language summaries. Vision-based memory approaches address this by conditioning on sampled past image frames, but they are computationally expensive and fundamentally limited when temporal events are visually ambiguous, e.g., pushing a button multiple times with small movements. We propose FM-VLA, a VLA model with force-based memory, enabling temporal context reasoning for non-Markovian, contact-rich manipulation. We encode force histories into compact force memory tokens with a variational autoencoder (VAE) pretrained with force time series reconstruction. By projecting force latent representations and short state history as additional conditioning tokens to the action expert module, we enable VLAs to leverage accumulated contact event history to guide manipulation. We evaluate FM-VLA on three memory-dependent tasks, including finding a hidden block, pressing a button, and wiping a dish for a specific number of times. Our lightweight force memory achieves over 80% success rate with minimal inference overhead, significantly outperforming baseline approaches. Project page: https://qft-333.github.io/FM-VLA-Page/",
+  "paper_url": "https://arxiv.org/abs/2607.18231",
+  "pdf_url": "https://arxiv.org/pdf/2607.18231",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Ruicheng Li",
+      "affiliations": []
+    },
+    {
+      "name": "Qixiu Li",
+      "affiliations": []
+    },
+    {
+      "name": "Ruichun Ma",
+      "affiliations": []
+    },
+    {
+      "name": "Yu Deng",
+      "affiliations": []
+    },
+    {
+      "name": "Lin Luo",
+      "affiliations": []
+    },
+    {
+      "name": "Zhiying Du",
+      "affiliations": []
+    },
+    {
+      "name": "Jianfeng Xiang",
+      "affiliations": []
+    },
+    {
+      "name": "Huizhi Liang",
+      "affiliations": []
+    },
+    {
+      "name": "Ruicheng Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Jiaolong Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Baining Guo",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-20",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "humanoid"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "proprioception",
+      "action",
+      "tactile"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 73,
+    "selection_reason": "为 VLA 增加触觉/力觉记忆的方向清晰，真实双臂证据直接，但任务数仅三个且 force VAE 的跨平台泛化仍未知。",
+    "candidate_run": "2026-07-22",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "代码和模型尚未确认公开",
+      "跨平台力传感器校准与迁移能力未验证"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.18231"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.18231"
+    }
+  ],
+  "suggested_new_tags": [],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.18231",
+    "fulltext_accessed": true,
+    "fulltext_note": "Used official arXiv HTML and checked method, experiments, conclusion/limitations sections.",
+    "sections_detected": [
+      "Introduction",
+      "Method",
+      "Experiments",
+      "Limitations",
+      "Conclusion",
+      "Additional Real-World Results"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  }
+}

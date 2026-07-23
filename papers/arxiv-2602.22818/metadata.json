@@ -1,0 +1,232 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2602.22818",
+  "title": "LeRobot: An Open-Source Library for End-to-End Robot Learning",
+  "title_zh": "LeRobot：面向端到端机器人学习的开源库",
+  "abstract": "Robotics is undergoing a significant transformation powered by advances in high-level control techniques based on machine learning, giving rise to the field of robot learning. Recent progress in robot learning has been accelerated by the increasing availability of affordable teleoperation systems, large-scale openly available datasets, and scalable learning-based methods. However, development in the field of robot learning is often slowed by fragmented, closed-source tools designed to only address specific sub-components within the robotics stack. In this paper, we present lerobot, an open-source library that integrates across the entire robot learning stack, from low-level middleware communication for motor controls to large-scale dataset collection, storage and streaming. The library is designed with a strong focus on real-world robotics, supporting accessible hardware platforms while remaining extensible to new embodiments. It also supports efficient implementations for various state-of-the-art robot learning algorithms from multiple prominent paradigms, as well as a generalized asynchronous inference stack. Unlike traditional pipelines which heavily rely on hand-crafted techniques, lerobot emphasizes scalable learning approaches that improve directly with more data and compute. Designed for accessibility, scalability, and openness, lerobot lowers the barrier to entry for researchers and practitioners to robotics while providing a platform for reproducible, state-of-the-art robot learning.",
+  "paper_url": "https://arxiv.org/abs/2602.22818",
+  "pdf_url": "https://arxiv.org/pdf/2602.22818",
+  "project_url": null,
+  "code_url": "https://github.com/huggingface/lerobot",
+  "dataset_url": "https://huggingface.co/lerobot",
+  "model_url": "https://huggingface.co/lerobot",
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Remi Cadene",
+      "affiliations": [
+        "huggingface"
+      ]
+    },
+    {
+      "name": "Simon Aliberts",
+      "affiliations": [
+        "huggingface"
+      ]
+    },
+    {
+      "name": "Francesco Capuano",
+      "affiliations": [
+        "oxford",
+        "huggingface"
+      ]
+    },
+    {
+      "name": "Michel Aractingi",
+      "affiliations": [
+        "huggingface"
+      ]
+    },
+    {
+      "name": "Adil Zouitine",
+      "affiliations": [
+        "huggingface"
+      ]
+    },
+    {
+      "name": "Pepijn Kooijmans",
+      "affiliations": [
+        "huggingface"
+      ]
+    },
+    {
+      "name": "Jade Choghari",
+      "affiliations": [
+        "huggingface"
+      ]
+    },
+    {
+      "name": "Martino Russi",
+      "affiliations": [
+        "huggingface"
+      ]
+    },
+    {
+      "name": "Caroline Pascal",
+      "affiliations": [
+        "huggingface"
+      ]
+    },
+    {
+      "name": "Steven Palma",
+      "affiliations": [
+        "huggingface"
+      ]
+    },
+    {
+      "name": "Mustafa Shukor",
+      "affiliations": [
+        "huggingface"
+      ]
+    },
+    {
+      "name": "Jess Moss",
+      "affiliations": [
+        "huggingface"
+      ]
+    },
+    {
+      "name": "Alexander Soare",
+      "affiliations": [
+        "huggingface"
+      ]
+    },
+    {
+      "name": "Dana Aubakirova",
+      "affiliations": [
+        "huggingface"
+      ]
+    },
+    {
+      "name": "Quentin Lhoest",
+      "affiliations": [
+        "huggingface"
+      ]
+    },
+    {
+      "name": "Quentin Gallouédec",
+      "affiliations": [
+        "huggingface"
+      ]
+    },
+    {
+      "name": "Thomas Wolf",
+      "affiliations": [
+        "huggingface"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "huggingface",
+      "name": "Hugging Face",
+      "role": "primary"
+    },
+    {
+      "id": "oxford",
+      "name": "University of Oxford",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-02-26",
+    "last_revision": "2026-02-26"
+  },
+  "venue": {
+    "name": "arXiv",
+    "year": 2026,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "infrastructure"
+    ],
+    "topics": [
+      "behavior-cloning",
+      "imitation-learning",
+      "reinforcement-learning",
+      "foundation-model",
+      "diffusion-policy"
+    ],
+    "tasks": [
+      "manipulation",
+      "mobile-manipulation"
+    ],
+    "platforms": [
+      "robot-arm",
+      "humanoid",
+      "mobile-robot",
+      "multi-robot"
+    ],
+    "modalities": [
+      "vision",
+      "proprioception",
+      "action",
+      "language"
+    ],
+    "environments": [
+      "real-world",
+      "simulation"
+    ],
+    "assets": [
+      "code",
+      "dataset",
+      "model-weights"
+    ],
+    "properties": [
+      "open-source",
+      "real-robot-evaluation",
+      "large-scale-data"
+    ]
+  },
+  "paper_type": [
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "HuggingFace 推出的端到端机器人学习开源库，垂直整合了从底层电机控制中间件到大规模数据采集存储流式传输、再到训练部署推理的完整技术栈。截至2025年9月已有16K+数据集、2.2K+贡献者，支持SO-10X、ALOHA-2、Stretch-3等8款机器人平台，以及ACT、Diffusion Policy、π₀、SmolVLA等SOTA算法实现，是推动机器人学习社区走向标准化和可复现的重要基础设施级工作。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-21",
+    "confidence": "high",
+    "needs_human_review": true,
+    "uncertainties": [
+      "Francesco Capuano 的 affiliation 在 PDF 中标注为 University of Oxford 但注明工作是在 HuggingFace 期间完成，已同时保留两个机构",
+      "论文模型和数据集链接均为 https://huggingface.co/lerobot 的 HuggingFace Hub 组织页面，未确认是否有独立的 project page"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2602.22818"
+    },
+    {
+      "type": "code-repository",
+      "url": "https://github.com/huggingface/lerobot"
+    },
+    {
+      "type": "dataset-repository",
+      "url": "https://huggingface.co/lerobot"
+    }
+  ],
+  "suggested_new_tags": [],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "ar5iv-html",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2602.22818",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Background",
+      "3 Features",
+      "4 Simulation",
+      "5 Conclusions"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-22"
+  }
+}

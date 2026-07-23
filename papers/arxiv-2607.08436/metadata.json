@@ -1,0 +1,146 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.08436",
+  "title": "EgoWAM: World Action Models Beyond Pixels with In-the-Wild Egocentric Human Data",
+  "title_zh": "EgoWAM：超越像素的世界动作模型——利用野外第一人称人类数据",
+  "abstract": "Egocentric human data offers scalable supervision for robot manipulation. However, behavior cloning entangles transferable content like objects, scenes, and task semantics, with non-transferable factors like human morphology, head motion, and behavioral style. We study whether World Action Models (WAMs) provide a better training signal by requiring policies to predict not only actions, but also how the scene evolves. The central question is what world representation best enables human-to-robot transfer. We hypothesize that an effective world target should abstract appearance, capture agent-invariant physical effects, and separate camera motion from environment change. We introduce EgoWAM, a controlled human-robot co-training framework that fixes the policy backbone, action head, and data mixture while varying only the world prediction target, comparing Pixel, DINO, and 3D motion flow. Across three real-world bimanual tasks, WAM co-training scales more effectively with in-the-wild egocentric human data than behavior cloning. Pixel-based prediction transfers weakly, while DINO and 3D flow yield substantial gains: DINO improves out-of-distribution object and scene generalization by up to 4×, and 3D flow improves in-domain performance by 20–30%.",
+  "paper_url": "https://arxiv.org/abs/2607.08436",
+  "pdf_url": "https://arxiv.org/pdf/2607.08436",
+  "project_url": "https://gatech-rl2.github.io/egowam.github.io",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Baoyu Li",
+      "affiliations": [
+        "georgia-tech"
+      ]
+    },
+    {
+      "name": "Xinchen Yin",
+      "affiliations": [
+        "georgia-tech"
+      ]
+    },
+    {
+      "name": "Mengying Lin",
+      "affiliations": [
+        "georgia-tech"
+      ]
+    },
+    {
+      "name": "Yixin Zhang",
+      "affiliations": [
+        "georgia-tech"
+      ]
+    },
+    {
+      "name": "Danfei Xu",
+      "affiliations": [
+        "georgia-tech"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "georgia-tech",
+      "name": "Georgia Institute of Technology",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-07-08",
+    "last_revision": "2026-07-08"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "depth",
+      "action",
+      "point-cloud"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "在受控框架下系统研究了世界动作模型（WAM）中世界表征的选择对跨形态人机协同训练的影响，比较了 Pixel VAE、DINO 特征和 3D 运动流三种目标，提出了表征应满足的三个条件：外观抽象、跨形态一致性、自运动分解。在双臂真实机器人三个任务上验证了 WAM 协同训练优于 BC 协同训练。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-21",
+    "confidence": "high",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文未公开代码仓库链接，项目页面仅提及但代码尚未确认已公开",
+      "Baoyu Li 和 Xinchen Yin 标注为共同一作（*），通讯作者确认为 Danfei Xu",
+      "论文使用的 EgoVerse 数据集来自另一篇论文（arxiv-2604.07607），本身并非本文贡献"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.08436"
+    },
+    {
+      "type": "project-page",
+      "url": "https://gatech-rl2.github.io/egowam.github.io"
+    }
+  ],
+  "suggested_new_tags": [
+    "world-action-model"
+  ],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.08436v1",
+    "fulltext_accessed": true,
+    "fulltext_note": "ar5iv URL redirects to arXiv abs page; used official arXiv LaTeXML HTML instead.",
+    "sections_detected": [
+      "abstract",
+      "introduction",
+      "related-work",
+      "method-human-robot-wam-co-training",
+      "method-egowam-world-representations",
+      "experiments",
+      "conclusion",
+      "limitations",
+      "appendix-a-real-world-results",
+      "appendix-b-implementation-details",
+      "appendix-c-experiment-details",
+      "appendix-d-robotwin-simulation"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-22"
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2209.11302",
+  "title": "ProgPrompt: Generating Situated Robot Task Plans using Large Language Models",
+  "title_zh": "ProgPrompt：基于大语言模型的具身机器人任务规划",
+  "abstract": "Task planning can require defining myriad domain knowledge about the world in which a robot needs to act. To ameliorate that effort, large language models (LLMs) can be used to score potential next actions during task planning, and even generate action sequences directly, given an instruction in natural language with no additional domain information. However, such methods either require enumerating all possible next steps for scoring, or generate free-form text that may contain actions not possible on a given robot in its current context. We present a programmatic LLM prompt structure that enables plan generation functional across situated environments, robot capabilities, and tasks. Our key insight is to prompt the LLM with program-like specifications of the available actions and objects in an environment, as well as with example programs that can be executed. We make concrete recommendations about prompt structure and generation constraints through ablation experiments, demonstrate state of the art success rates in VirtualHome household tasks, and deploy our method on a physical robot arm for tabletop tasks. Website at progprompt.github.io",
+  "paper_url": "https://arxiv.org/abs/2209.11302",
+  "pdf_url": "https://arxiv.org/pdf/2209.11302",
+  "project_url": "https://progprompt.github.io",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Ishika Singh",
+      "affiliations": [
+        "usc"
+      ]
+    },
+    {
+      "name": "Valts Blukis",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Arsalan Mousavian",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Ankit Goyal",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Danfei Xu",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Jonathan Tremblay",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Dieter Fox",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Jesse Thomason",
+      "affiliations": [
+        "usc"
+      ]
+    },
+    {
+      "name": "Animesh Garg",
+      "affiliations": [
+        "nvidia"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "usc",
+      "name": "University of Southern California",
+      "role": "primary"
+    },
+    {
+      "id": "nvidia",
+      "name": "NVIDIA",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2022-09-22",
+    "last_revision": "2022-09-22"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "planning",
+      "foundation-model"
+    ],
+    "tasks": [
+      "manipulation",
+      "mobile-manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "language"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "该论文是早期探索LLM用于机器人任务规划的代表性工作之一，提出了以程序化prompt结构（Pythonic代码格式）将环境状态和机器人能力编码给LLM的方案，并进行了真实机器人验证，对后续LLM-based planning方向有重要影响。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-21",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "代码仓库链接无法从论文或项目主页中确认，code_url 设为 null；项目主页 progprompt.github.io 当前无响应，但论文明确列出该URL，故保留为 project_url"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2209.11302"
+    },
+    {
+      "type": "html-fulltext",
+      "url": "https://ar5iv.labs.arxiv.org/html/2209.11302"
+    }
+  ],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "ar5iv-html",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2209.11302",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Introduction",
+      "Background and Related Work",
+      "Our Method: ProgPrompt",
+      "Experiments",
+      "Results",
+      "Conclusions and Future Work"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-22"
+  },
+  "suggested_new_tags": []
+}

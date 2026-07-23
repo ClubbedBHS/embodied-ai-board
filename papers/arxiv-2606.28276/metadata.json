@@ -1,0 +1,233 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.28276",
+  "title": "SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation",
+  "title_zh": "SimFoundry：面向策略学习与评估的模块化自动化场景生成系统",
+  "abstract": "Training and evaluating robot policies in the real world is costly and difficult to scale. We introduce SimFoundry, a modular and automated system for zero-shot real-to-sim scene construction from a video. SimFoundry generates sim-ready digital twins and supports object, scene, and task editing, enabling the automated generation of diverse digital cousins: affordance-preserving variations of reconstructed real-world scenes. Policies trained on SimFoundry data transfer zero-shot to challenging real tasks involving multi-step manipulation, articulated object interaction, and bimanual interaction, and its digital cousins (variations of the original scene, objects, and tasks) facilitate generalization to new real-world conditions. Across 7 manipulation tasks and 5 policy architectures, SimFoundry simulation evaluations strongly predict real-world performance, with mean Pearson correlation 0.911 and mean maximum ranking violation 0.018. When evaluating sim-trained policies zero-shot in the real world, policies trained with object, scene, and task cousins in simulation show average task success rate improvements of 17%, 21%, and 40%, respectively. Additional details at https://research.nvidia.com/labs/gear/simfoundry/.",
+  "paper_url": "https://arxiv.org/abs/2606.28276",
+  "pdf_url": "https://arxiv.org/pdf/2606.28276",
+  "project_url": "https://research.nvidia.com/labs/gear/simfoundry/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Nadun Ranawaka",
+      "affiliations": ["nvidia", "gatech"]
+    },
+    {
+      "name": "Josiah Wong",
+      "affiliations": ["nvidia", "stanford"]
+    },
+    {
+      "name": "Wei-Lin Pai",
+      "affiliations": ["stanford"]
+    },
+    {
+      "name": "Wei-Teng Chu",
+      "affiliations": ["stanford"]
+    },
+    {
+      "name": "Tianyuan Dai",
+      "affiliations": ["nvidia", "utexas"]
+    },
+    {
+      "name": "Masoud Moghani",
+      "affiliations": ["nvidia", "utoronto"]
+    },
+    {
+      "name": "Hang Yin",
+      "affiliations": ["stanford"]
+    },
+    {
+      "name": "Yunfan Jiang",
+      "affiliations": ["nvidia", "stanford"]
+    },
+    {
+      "name": "Wesley Durbano",
+      "affiliations": ["nvidia"]
+    },
+    {
+      "name": "Brandon Huynh",
+      "affiliations": ["nvidia"]
+    },
+    {
+      "name": "Yu Fang",
+      "affiliations": ["nvidia"]
+    },
+    {
+      "name": "Linxi Fan",
+      "affiliations": ["nvidia"]
+    },
+    {
+      "name": "Danfei Xu",
+      "affiliations": ["nvidia", "gatech"]
+    },
+    {
+      "name": "Ruohan Zhang",
+      "affiliations": ["stanford"]
+    },
+    {
+      "name": "Li Fei-Fei",
+      "affiliations": ["stanford"]
+    },
+    {
+      "name": "Bowen Wen",
+      "affiliations": ["nvidia"]
+    },
+    {
+      "name": "Ajay Mandlekar",
+      "affiliations": ["nvidia"]
+    },
+    {
+      "name": "Yuke Zhu",
+      "affiliations": ["nvidia", "utexas"]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "nvidia",
+      "name": "NVIDIA",
+      "role": "primary"
+    },
+    {
+      "id": "stanford",
+      "name": "Stanford University",
+      "role": "collaborator"
+    },
+    {
+      "id": "gatech",
+      "name": "Georgia Institute of Technology",
+      "role": "collaborator"
+    },
+    {
+      "id": "utexas",
+      "name": "The University of Texas at Austin",
+      "role": "collaborator"
+    },
+    {
+      "id": "utoronto",
+      "name": "University of Toronto",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-26",
+    "last_revision": "2026-07-21"
+  },
+  "venue": {
+    "name": "arXiv",
+    "year": 2026,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "simulators",
+      "infrastructure"
+    ],
+    "topics": [
+      "sim-to-real",
+      "foundation-model",
+      "imitation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "depth",
+      "action"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "system"
+  ],
+  "editorial": {
+    "importance": "high",
+    "selection_reason": "SimFoundry是NVIDIA GEAR实验室推出的全自动化real-to-sim场景构建与策略训练评估系统。其核心创新在于数字孪生(digital twin)与数字表亲(digital cousins)的统一框架：从单段视频自动重建sim-ready交互式场景，并通过对象、场景、任务三个维度的affordance-preserving变体生成无限训练数据。实验覆盖7个操作任务和5种策略架构(π0、π0.5、GR00T N1.6/N1.7、DreamZero)，跨DROID和YAM两种机器人平台，sim-to-real评估Pearson相关系数高达0.911，MMRV仅0.018。数字表亲分别带来17%(object)、21%(scene)、40%(task)的零样本成功率提升。该工作展示了仿真如何在大规模策略训练和可靠评估中替代昂贵且不可扩展的真实世界数据采集，是具身智能基础设施方向的重要进展。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-22",
+    "confidence": "high",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文中未提供公开代码URL，仅提供了NVIDIA GEAR项目页面(https://research.nvidia.com/labs/gear/simfoundry/)。code_url已设为null，待确认是否有后续代码发布",
+      "各底层基础模型(V_*符号)的具体版本在正文中未完全列出，详细列表见Appendix E.2，本metadata未逐项列出",
+      "5种策略架构中的DreamZero [100]是否为已发表工作有待确认，本metadata按论文原文标注",
+      "18名作者中标注*为同等贡献、†为共同指导：*为Nadun Ranawaka/Josiah Wong/Wesley Durbano/Brandon Huynh，†为Ajay Mandlekar/Yuke Zhu"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.28276"
+    },
+    {
+      "type": "pdf",
+      "url": "https://arxiv.org/pdf/2606.28276"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://ar5iv.labs.arxiv.org/html/2606.28276"
+    },
+    {
+      "type": "project-page",
+      "url": "https://research.nvidia.com/labs/gear/simfoundry/"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "real-to-sim",
+      "name": "Real-to-Sim",
+      "reason": "SimFoundry 的核心是从真实视频自动构建可交互仿真场景，现有 sim-to-real 无法完整表达这一反向流程。",
+      "evidence": "论文标题、摘要与第 4 节将系统定义为 automated real-to-sim scene construction pipeline。"
+    },
+    {
+      "dimension": "topics",
+      "slug": "scene-generation",
+      "name": "Scene Generation",
+      "reason": "论文的主要系统贡献包含自动场景生成与数字变体生成，现有主题词表缺少对应概念。",
+      "evidence": "论文第 4、5 节介绍场景重建和 digital cousins 生成流程。"
+    },
+    {
+      "dimension": "topics",
+      "slug": "policy-evaluation",
+      "name": "Policy Evaluation",
+      "reason": "论文将仿真用于预测真实策略表现，现有主题词表没有策略评估标签。",
+      "evidence": "论文第 6 节报告 simulation evaluation 与 real-world performance 的相关性。"
+    }
+  ],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "ar5iv-html",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.28276",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1. Introduction",
+      "2. Related Work",
+      "3. Preliminaries",
+      "4. SimFoundry: A modular, automated real-to-sim generation pipeline",
+      "5. Experiments",
+      "6. Limitations",
+      "7. Conclusion",
+      "8. Acknowledgments"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-22"
+  },
+  "summary_version": "0.2"
+}

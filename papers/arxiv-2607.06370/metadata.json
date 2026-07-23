@@ -1,0 +1,138 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.06370",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Training-Free Acceleration for Vision-Language-Action Models with Action Caching and Refinement",
+  "title_zh": null,
+  "abstract": "Vision-Language-Action (VLA) models have emerged as a promising approach for generalizable robotic manipulations. In particular, flow matching-based VLA models have shown remarkable success due to their capability to generate precise and smooth action sequences and capture multimodal distributions. However, the iterative denoising process in the action head acts as a major computational bottleneck, posing a critical challenge for real-time deployment. To address this challenge, we propose ActionCache, a plug-and-play external cache that opportunistically reuses past intermediate actions to warm-start generations from the vicinity of target actions, thereby drastically reducing the inference latency. Specifically, ActionCache stores the intermediate actions with compact multimodal keys, which enables retrieval from similar past contexts across different episodes or even different tasks. Experimental results in simulation and real-world environments demonstrate that ActionCache maintains high task success rates in a low-latency regime, achieving inference acceleration of up to $11.75\\times$ and $34.43\\times$ for representative flow-based VLA models, $π_{0.5}$ and GR00T-N1.6, respectively.",
+  "paper_url": "https://arxiv.org/abs/2607.06370",
+  "pdf_url": "https://arxiv.org/pdf/2607.06370",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Ryuji Oi",
+      "affiliations": []
+    },
+    {
+      "name": "Hikari Otsuka",
+      "affiliations": []
+    },
+    {
+      "name": "Kosuke Matsushima",
+      "affiliations": []
+    },
+    {
+      "name": "Yuki Ichikawa",
+      "affiliations": []
+    },
+    {
+      "name": "Masato Motomura",
+      "affiliations": []
+    },
+    {
+      "name": "Tatsuya Kaneko",
+      "affiliations": []
+    },
+    {
+      "name": "Daichi Fujiki",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-07",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "topics": [
+      "vla"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 66,
+    "selection_reason": "这项工作在 VLA 推理加速问题上提出 ActionCache，一种免训练的即插即用外部缓存机制，通过存储和检索具有紧凑多模态键的中间动作来热启动流匹配去噪过程，在 π0.5 和 GR00T-N1.6 上分别实现 11.75× 和 34.43× 推理加速，同时保持高任务成功率。实验覆盖仿真（LIBERO）和真机，分析跨任务动作复用和检索质量影响，对 VLA 实时部署有明确的工程价值。",
+    "candidate_run": "2026-07-backfill/batch-03",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "hermes-agent",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "缓存命中率直接影响性能，在全新未见场景下加速效果可能下降",
+      "仅针对流匹配型 VLA（π0.5、GR00T-N1.6），对其他架构的通用性未验证",
+      "方法的实用性取决于缓存管理策略，长期部署的缓存增长问题未深入讨论"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.06370",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.06370"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.06370"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "deployment",
+      "name": "deployment",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "这项工作在 VLA 推理加速问题上提出 ActionCache，一种免训练的即插即用外部缓存机制，通过存储和检索具有紧凑多模态键的中间动作来热启动流匹配去噪过程，在 π0.5 和 GR00T-N1.6 上分别实现 11.75× 和 34.43× 推理加速，同时保持高任务成功率。实验覆盖仿真（LIBERO）和真机，分析跨任务动作复用和检索质量影响，对 VLA 实时部署有明确的工程价值。"
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2604.25788",
+  "title": "KinDER: A Physical Reasoning Benchmark for Robot Learning and Planning",
+  "title_zh": "KinDER：面向机器人学习与规划的物理推理基准",
+  "abstract": "Robotic systems that interact with the physical world must reason about kinematic and dynamic constraints imposed by their own embodiment, their environment, and the task at hand. We introduce KinDER, a benchmark for Kinematic and Dynamic Embodied Reasoning that targets physical reasoning challenges arising in robot learning and planning. KinDER comprises 25 procedurally generated environments, a Gymnasium-compatible Python library with parameterized skills and demonstrations, and a standardized evaluation suite with 13 implemented baselines spanning task and motion planning, imitation learning, reinforcement learning, and foundation-model-based approaches. The environments are designed to isolate five core physical reasoning challenges: basic spatial relations, nonprehensile multi-object manipulation, tool use, combinatorial geometric constraints, and dynamic constraints, disentangled from perception, language understanding, and application-specific complexity. Empirical evaluation shows that existing methods struggle to solve many of the environments, indicating substantial gaps in current approaches to physical reasoning. We additionally include real-to-sim-to-real experiments on a mobile manipulator to assess the correspondence between simulation and real-world physical interaction. KinDER is fully open-sourced and intended to enable systematic comparison across diverse paradigms for advancing physical reasoning in robotics.",
+  "paper_url": "https://arxiv.org/abs/2604.25788",
+  "pdf_url": "https://arxiv.org/pdf/2604.25788",
+  "project_url": "https://prpl-group.com/kinder-site/",
+  "code_url": "https://prpl-group.com/kinder-site/",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yixuan Huang",
+      "affiliations": [
+        "princeton"
+      ]
+    },
+    {
+      "name": "Bowen Li",
+      "affiliations": [
+        "cmu"
+      ]
+    },
+    {
+      "name": "Vaibhav Saxena",
+      "affiliations": [
+        "georgia-tech"
+      ]
+    },
+    {
+      "name": "Yichao Liang",
+      "affiliations": [
+        "cambridge"
+      ]
+    },
+    {
+      "name": "Utkarsh A. Mishra",
+      "affiliations": [
+        "georgia-tech"
+      ]
+    },
+    {
+      "name": "Liang Ji",
+      "affiliations": [
+        "princeton"
+      ]
+    },
+    {
+      "name": "Lihan Zha",
+      "affiliations": [
+        "princeton"
+      ]
+    },
+    {
+      "name": "Jimmy Wu",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Nishanth Kumar",
+      "affiliations": [
+        "mit"
+      ]
+    },
+    {
+      "name": "Sebastian Scherer",
+      "affiliations": [
+        "cmu"
+      ]
+    },
+    {
+      "name": "Danfei Xu",
+      "affiliations": [
+        "georgia-tech",
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Tom Silver",
+      "affiliations": [
+        "princeton"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "princeton",
+      "name": "Princeton University",
+      "role": "primary"
+    },
+    {
+      "id": "cmu",
+      "name": "Carnegie Mellon University",
+      "role": "collaborator"
+    },
+    {
+      "id": "georgia-tech",
+      "name": "Georgia Tech",
+      "role": "collaborator"
+    },
+    {
+      "id": "cambridge",
+      "name": "University of Cambridge",
+      "role": "collaborator"
+    },
+    {
+      "id": "nvidia",
+      "name": "NVIDIA",
+      "role": "collaborator"
+    },
+    {
+      "id": "mit",
+      "name": "MIT",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-04-28",
+    "last_revision": "2026-05-04"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data"
+    ],
+    "topics": [
+      "planning",
+      "control",
+      "imitation-learning",
+      "reinforcement-learning",
+      "foundation-model",
+      "sim-to-real"
+    ],
+    "tasks": [
+      "mobile-manipulation",
+      "manipulation"
+    ],
+    "platforms": [
+      "mobile-robot",
+      "robot-arm"
+    ],
+    "modalities": [
+      "proprioception",
+      "vision",
+      "language"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [
+      "code",
+      "benchmark"
+    ],
+    "properties": [
+      "open-source",
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "benchmark"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "首个系统性地隔离并评估机器人物理推理五大核心挑战（空间关系、非抓取多物体操作、工具使用、组合几何约束、动态约束）的基准，覆盖 TAMP、IL、RL、FM 四大范式共 13 个基线，填补了物理推理专项评测的空白。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-21",
+    "confidence": "high",
+    "needs_human_review": true,
+    "uncertainties": [
+      "arXiv 2604 论文的首发日期精确到日尚无法从正文中确认，使用 2026-04-28 为近似值",
+      "代码和项目主页均指向同一网站 https://prpl-group.com/kinder-site/，是否为独立的 GitHub 仓库待确认"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2604.25788"
+    },
+    {
+      "type": "project-page",
+      "url": "https://prpl-group.com/kinder-site/"
+    }
+  ],
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "ar5iv-html",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2604.25788",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "I. Introduction",
+      "II. Core Challenges",
+      "III. Related Work",
+      "IV. KinDERGarden: Environments",
+      "V. KinDERGym: Accessible Software",
+      "VI. KinDERBench: Baselines and Metrics",
+      "VII. Real World Validation",
+      "VIII. Limitations and Discussion"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-22"
+  },
+  "suggested_new_tags": [],
+  "content_type": "paper"
+}

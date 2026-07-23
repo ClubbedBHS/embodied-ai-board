@@ -1,0 +1,180 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.07459",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI",
+  "title_zh": null,
+  "abstract": "We present EmbodiedGen V2, a generative 3D world engine for building executable policy-ready environments for embodied intelligence. Sim-ready 3D asset generation has advanced rapidly, yet assembling such assets into policy-ready task environments remains largely manual, limiting scalable closed-loop learning. EmbodiedGen V2 addresses this gap through a unified sim-ready representation that connects cross-simulator assets, interaction affordances, task-driven worlds, large-scale multi-room scenes, and stateful Vibe Coding into a generative, editable, and reusable simulation pipeline. The generated environments support manipulation, navigation, mobile manipulation, cross-simulator deployment, and embodied policy training. In evaluation, the asset pipeline achieves 96.5% human acceptance and 98.6% collision success, and 83.3% of task-driven worlds are directly usable for downstream simulation without manual modification. Online reinforcement learning with generated environments further improves simulation success from 9.7% to 79.8%, and transfers to real robots with task success increasing from 21.7% to 75.0%. These results establish EmbodiedGen V2 as scalable simulation infrastructure for training, evaluating, and deploying embodied policies.",
+  "paper_url": "https://arxiv.org/abs/2607.07459",
+  "pdf_url": "https://arxiv.org/pdf/2607.07459",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Xinjie Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Liu Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Taojun Ding",
+      "affiliations": []
+    },
+    {
+      "name": "Andrew Choi",
+      "affiliations": []
+    },
+    {
+      "name": "Chaodong Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Mengao Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Ziang Li",
+      "affiliations": []
+    },
+    {
+      "name": "Jackson Jiang",
+      "affiliations": []
+    },
+    {
+      "name": "Chunlei Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Shengxiang Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Wei Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Zhizhong Su",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-08",
+    "last_revision": "2026-07-12"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "simulators",
+      "infrastructure",
+      "data"
+    ],
+    "topics": [
+      "world-model"
+    ],
+    "tasks": [
+      "mobile-manipulation",
+      "navigation",
+      "manipulation"
+    ],
+    "platforms": [
+      "mobile-robot",
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "action",
+      "tactile",
+      "point-cloud"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation",
+      "large-scale-data"
+    ]
+  },
+  "paper_type": [
+    "dataset",
+    "simulator",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 85,
+    "selection_reason": "EmbodiedGen V2在仿真基础设施上提出系统级增量：从生成式3D内容工具升级为完整的sim-ready世界引擎，填补了从3D资产生成到策略训练环境之间的关键空白。实验证据全面：资产质量消融(96.5%/98.6%)、任务世界可用率(83.3%)、闭环RL验证(仿真9.7%→79.8%，sim-to-real 21.7%→75.0%)三项指标构成完整证据链。相较看板中的仿真器/场景生成工作(GPUSimBench batch-01、Image2Sim batch-01、RoboSnap batch-01、SPEAR batch-02)，新增信息是统一的sim-ready表示+affordance语义+可编辑世界状态+跨仿真器+闭环策略验证的端到端管线。主要风险：资产未公开验证(项目页声明但未探测到HTTP 200仓库)；大规模声明(4K+资产、多房间场景)需人工复核。",
+    "candidate_run": "2026-07-backfill/batch-03",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "hermes-agent",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "项目页(horizonrobotics.github.io/EmbodiedGen)声明开源但本轮未探测到可访问代码/资产仓库",
+      "4K+资产集、多房间场景生成的规模和真实性需人工复核下载、许可和可用性",
+      "S3.3 RL实验中具体任务和基线VLA架构细节需进一步确认",
+      "Vibe Coding编辑的边界和语义理解准确性未量化评估"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.07459v2",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.07459"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.07459v2"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "sim2real",
+      "name": "sim2real",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "EmbodiedGen V2在仿真基础设施上提出系统级增量：从生成式3D内容工具升级为完整的sim-ready世界引擎，填补了从3D资产生成到策略训练环境之间的关键空白。实验证据全面：资产质量消融(96.5%/98.6%)、任务世界可用率(83.3%)、闭环RL验证(仿真9.7%→79.8%，sim-to-real 21.7%→75.0%)三项指标构成完整证据链。相较看板中的仿真器/场景生成工作(GPUSimBench batch-01、Image2Sim batch-01、RoboSnap batch-01、SPEAR batch-02)，新增信息是统一的sim-ready表示+affordance语义+可编辑世界状态+跨仿真器+闭环策略验证的端到端管线。主要风险：资产未公开验证(项目页声明但未探测到HTTP 200仓库)；大规模声明(4K+资产、多房间场景)需人工复核。"
+    },
+    {
+      "dimension": "topics",
+      "slug": "simulation",
+      "name": "simulation",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "EmbodiedGen V2在仿真基础设施上提出系统级增量：从生成式3D内容工具升级为完整的sim-ready世界引擎，填补了从3D资产生成到策略训练环境之间的关键空白。实验证据全面：资产质量消融(96.5%/98.6%)、任务世界可用率(83.3%)、闭环RL验证(仿真9.7%→79.8%，sim-to-real 21.7%→75.0%)三项指标构成完整证据链。相较看板中的仿真器/场景生成工作(GPUSimBench batch-01、Image2Sim batch-01、RoboSnap batch-01、SPEAR batch-02)，新增信息是统一的sim-ready表示+affordance语义+可编辑世界状态+跨仿真器+闭环策略验证的端到端管线。主要风险：资产未公开验证(项目页声明但未探测到HTTP 200仓库)；大规模声明(4K+资产、多房间场景)需人工复核。"
+    },
+    {
+      "dimension": "topics",
+      "slug": "manipulation",
+      "name": "manipulation",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "EmbodiedGen V2在仿真基础设施上提出系统级增量：从生成式3D内容工具升级为完整的sim-ready世界引擎，填补了从3D资产生成到策略训练环境之间的关键空白。实验证据全面：资产质量消融(96.5%/98.6%)、任务世界可用率(83.3%)、闭环RL验证(仿真9.7%→79.8%，sim-to-real 21.7%→75.0%)三项指标构成完整证据链。相较看板中的仿真器/场景生成工作(GPUSimBench batch-01、Image2Sim batch-01、RoboSnap batch-01、SPEAR batch-02)，新增信息是统一的sim-ready表示+affordance语义+可编辑世界状态+跨仿真器+闭环策略验证的端到端管线。主要风险：资产未公开验证(项目页声明但未探测到HTTP 200仓库)；大规模声明(4K+资产、多房间场景)需人工复核。"
+    }
+  ]
+}

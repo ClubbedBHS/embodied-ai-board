@@ -1,0 +1,130 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.12931",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "ExToken: Structured Exploration for Efficient Vision-Language-Action Reinforcement Fine-tuning",
+  "title_zh": null,
+  "abstract": "Reinforcement Learning (RL) has demonstrated significant potential for improving Vision-Language-Action (VLA) models on complex manipulation tasks. However, its practical scalability remains severely limited by the substantial cost of environmental interactions. In this work, we first investigate the exploration stagnation bottleneck in current VLA-RL frameworks and reveal that trajectory diversity is fundamentally more important to sample efficiency than the sheer quantity of collected rollouts. Motivated by these insights, we introduce RL Exploration Token (ExToken), a simple yet general framework that condition VLA policies on discrete behavioral priors derived from offline demonstrations for structured exploration. By conditioning the policy on different tokens during rollout collection, ExToken encourages the agent to explore diverse behavioral modes, substantially improving state-action coverage and exploration efficiency. To bridge exploration during training with deterministic inference at deployment, ExToken further incorporates a state-conditioned token selector that adaptively predicts effective behavioral modes for unseen scenarios. Extensive experiments across simulated and real-world robotic manipulation tasks demonstrate that ExToken consistently accelerates convergence, improves task performance, and exhibits strong robustness under highly constrained interaction budgets.",
+  "paper_url": "https://arxiv.org/abs/2607.12931",
+  "pdf_url": "https://arxiv.org/pdf/2607.12931",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yilun Kong",
+      "affiliations": []
+    },
+    {
+      "name": "Yunpeng Qing",
+      "affiliations": []
+    },
+    {
+      "name": "Guozheng Ma",
+      "affiliations": []
+    },
+    {
+      "name": "Haoyu Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Li Shen",
+      "affiliations": []
+    },
+    {
+      "name": "Zhi Hou",
+      "affiliations": []
+    },
+    {
+      "name": "Dacheng Tao",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-14",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "reinforcement-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action",
+      "tactile"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 74,
+    "selection_reason": "把离线示范聚类出的行为先验编码为 exploration token，提高 VLA-RL rollout 多样性，并学习部署时 token selector。 第2节先诊断 trajectory diversity 比 rollout 数量更关键；第3节给出 token/selector；第4节含仿真、实机、受限交互预算和进一步分析。 相对 π0.6 的经验学习，ExToken新增结构化探索先验而非改变 reward/model。",
+    "candidate_run": "2026-07-backfill/batch-02",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "未发现作者代码",
+      "token 离散化质量依赖离线 demonstrations",
+      "跨更多 VLA/RL 算法泛化未知"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.12931",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.12931"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.12931"
+    }
+  ],
+  "suggested_new_tags": []
+}

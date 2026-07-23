@@ -1,0 +1,162 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.04927",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "DSWAM: A Dual-System World Action Foundation Model for Fine-Grained Robot Manipulation",
+  "title_zh": null,
+  "abstract": "World Action Models (WAMs) provide a promising alternative to Vision-Language-Action (VLA) policies by using video-based world modeling as dense supervision for robot action learning. Existing WAMs excel at physically grounded execution, but typically lack the explicit language-level planning interface in VLM-based VLAs for decomposing coarse instructions. Such decomposition becomes important when household tasks involve complex multi-step goals, where coarse user commands need to be converted into sequences of fine-grained executable subtasks. Meanwhile, the field still lacks a fair real-robot comparison between VLA and WAM execution capabilities, since existing systems often differ in data, robot embodiments, and task protocols. To address both the decomposition gap and the need for a controlled WAM-VLA comparison, we introduce DSWAM, a Dual-System World Action Foundation Model for fine-grained robot manipulation. DSWAM keeps a System 1 WAM executor as the default control path and optionally activates a System 2 vision-language subtask planner only when task decomposition is useful. The planner predicts executable subtasks from short-term visual history and a global task prompt, while the WAM executor performs world-aware action generation for each instruction or subtask. The executor is trained with action prediction and video co-training, but inference directly predicts action chunks without explicit future video generation. To make this execution path practical on real robots, we further integrate TensorRT acceleration, asynchronous execution, and real-time chunking (RTC) so that policy queries do not block robot control. To provide a fair real-robot comparison with VLA policies, we build and evaluate DSWAM under the DeMaVLA real-world deformable manipulation setting with matched robot platform, pretraining data, post-training data, and evaluation criteria.",
+  "paper_url": "https://arxiv.org/abs/2607.04927",
+  "pdf_url": "https://arxiv.org/pdf/2607.04927",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Jian Zhu",
+      "affiliations": []
+    },
+    {
+      "name": "Jianjun Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Taiyi Su",
+      "affiliations": []
+    },
+    {
+      "name": "Tianbin Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Zhangyuan Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Kai Xie",
+      "affiliations": []
+    },
+    {
+      "name": "Zitai Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Chong Ma",
+      "affiliations": []
+    },
+    {
+      "name": "Youzhang He",
+      "affiliations": []
+    },
+    {
+      "name": "Tianjian Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Hanyang Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Weihao Ding",
+      "affiliations": []
+    },
+    {
+      "name": "Yi Xu",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-06",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "topics": [
+      "world-model",
+      "vla",
+      "planning",
+      "control"
+    ],
+    "tasks": [
+      "manipulation",
+      "generalist-control"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 73,
+    "selection_reason": "这项工作在其问题上提出明确增量：在严格匹配条件下比较 WAM/VLA，并只在任务需要时启用语言 planner，避免所有控制都走慢推理。 仿真、匹配实机和部署性能均覆盖，但只有项目页，当前未核验代码/权重。 最近邻为 EgoWAM 和 ReSteer；DSWAM新增 matched WAM-VLA 实机对照及可选双系统分解。",
+    "candidate_run": "2026-07-backfill/batch-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "项目页本次探测失败",
+      "真实对比集中于 deformable folding",
+      "System-2 收益对任务分解标注依赖较强"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.04927",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.04927"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.04927"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://ds-wam.github.io/"
+    }
+  ],
+  "suggested_new_tags": []
+}

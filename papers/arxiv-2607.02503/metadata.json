@@ -1,0 +1,168 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.02503",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "VT-WAM: Visual-Tactile World Action Model for Contact-Rich Manipulation",
+  "title_zh": null,
+  "abstract": "Contact-rich manipulation requires policies to react to local deformation, pressure, slip, and friction, yet these cues are temporally sparse and often invisible in visual observations. Existing visual-tactile policies usually feed tactile observations directly into action prediction, but rarely model tactile deformation dynamics during action generation. In this paper, we introduce VT-WAM, a Visual-Tactile World Action Model that jointly learns future visual prediction, tactile deformation prediction, and action prediction within a unified flow matching framework. In particular, VT-WAM introduces (1) Asymmetric Mixture-of-Transformers (MoT) attention to bridge a first-frame visual anchor with temporal tactile dynamics, and (2) contact-gated Action-Visual-Tactile Attention Guidance (AVTAG) to encourage action queries to rely on tactile evidence during contact phases. Across six real-world contact-rich manipulation tasks, VT-WAM achieves a 71.67% average success rate, outperforming Fast-WAM by 26.67% and OmniVTLA by 35.84%. Ablations demonstrate that modeling tactile deformation dynamics and guiding contact-phase tactile attention are both important for contact-rich tasks. Project website: https://vt-wam.github.io/.",
+  "paper_url": "https://arxiv.org/abs/2607.02503",
+  "pdf_url": "https://arxiv.org/pdf/2607.02503",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Shuai Tian",
+      "affiliations": []
+    },
+    {
+      "name": "Yupeng Zheng",
+      "affiliations": []
+    },
+    {
+      "name": "Yuhang Zheng",
+      "affiliations": []
+    },
+    {
+      "name": "Songen Gu",
+      "affiliations": []
+    },
+    {
+      "name": "Yujie Zang",
+      "affiliations": []
+    },
+    {
+      "name": "Yuxing Qin",
+      "affiliations": []
+    },
+    {
+      "name": "Weize Li",
+      "affiliations": []
+    },
+    {
+      "name": "Haoran Li",
+      "affiliations": []
+    },
+    {
+      "name": "Wenchao Ding",
+      "affiliations": []
+    },
+    {
+      "name": "Dongbin Zhao",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "casia",
+      "name": "CASIA",
+      "role": "unknown"
+    },
+    {
+      "id": "ucas",
+      "name": "UCAS",
+      "role": "unknown"
+    },
+    {
+      "id": "tars-robotics",
+      "name": "TARS Robotics",
+      "role": "unknown"
+    },
+    {
+      "id": "nus",
+      "name": "NUS",
+      "role": "unknown"
+    },
+    {
+      "id": "fudan-university",
+      "name": "Fudan University",
+      "role": "unknown"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-07-02",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model",
+      "vla"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "action",
+      "tactile"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 77,
+    "selection_reason": "VT-WAM extends World Action Models to tactile domain by jointly learning future visual prediction, tactile deformation prediction, and action prediction in a unified flow matching framework. Asymmetric MoT Attention bridges visual anchor with temporal tactile dynamics; contact-gated AVTAG reduces visual-dominance bias. Achieves 71.67% on 6 real-world contact-rich tasks, +26.67% over Fast-WAM.",
+    "candidate_run": "2026-07-backfill/batch-03",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "hermes-agent",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "100 demos per task is limited data",
+      "Requires specialized Xense tactile sensors",
+      "Project page exists (vt-wam.github.io) but code not verified; HTTP verification timed out",
+      "Single real-world platform (xArm7) may limit generality claims"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.02503",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.02503"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.02503"
+    }
+  ],
+  "suggested_new_tags": []
+}

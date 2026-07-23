@@ -1,0 +1,139 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.14635",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Action QFormer: Structured Representation Shaping under Action Supervision in Vision-Language-Action Models",
+  "title_zh": null,
+  "abstract": "Action supervision in vision-language-action (VLA) models is often treated as a downstream objective for learning action prediction. In this paper, we study it instead as a force that shapes inherited multimodal representations. We show that this shaping has a dual effect: it is necessary for forming action-compatible representations, but when action supervision is applied too directly to the inherited multimodal pathway, it can also destabilize representations that support language-side processing and object grounding. To address this tension, we introduce Action QFormer, a query-based action-facing interface that uses instruction-conditioned queries to reorganize inherited multimodal information into action-facing representations before downstream action generation. In zero-shot sim-to-real navigation, Action QFormer improves average closed-loop task success from 18.8% to 56.3%, raises fixed-instruction action-generation correctness from 22.5% to 75.5%, and nearly eliminates out-of-distribution instruction generations. Further analyses show that Action QFormer changes how action supervision shapes inherited multimodal representations, reducing broad upstream rewriting while preserving targeted and sometimes constructive action-supervised adaptation. These results suggest that improving VLA performance requires not only stronger pretrained backbones, but also better ways of selecting and organizing inherited multimodal information while controlling how it is shaped under action supervision.",
+  "paper_url": "https://arxiv.org/abs/2607.14635",
+  "pdf_url": "https://arxiv.org/pdf/2607.14635",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yufeng Ji",
+      "affiliations": []
+    },
+    {
+      "name": "Wenhao Tang",
+      "affiliations": []
+    },
+    {
+      "name": "Haoyi Niu",
+      "affiliations": []
+    },
+    {
+      "name": "Koushil Sreenath",
+      "affiliations": []
+    },
+    {
+      "name": "Yi Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Zhongyu Li",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "uc-berkeley",
+      "name": "UC Berkeley",
+      "role": "unknown"
+    },
+    {
+      "id": "tsinghua-university",
+      "name": "Tsinghua University",
+      "role": "unknown"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-07-16",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "representation-learning"
+    ],
+    "tasks": [
+      "navigation"
+    ],
+    "platforms": [
+      "mobile-robot"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action",
+      "tactile"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [],
+    "properties": [
+      "simulation-only",
+      "zero-shot"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 74,
+    "selection_reason": "Action QFormer studies how action supervision shapes inherited multimodal representations in VLA, proposing a query-based action-facing interface that preserves language-side processing and object grounding while enabling action-compatible representations. Demonstrates 3x improvement in zero-shot sim-to-real navigation (18.8%→56.3%) with extensive mechanistic analysis of representation stability and targeted adaptation.",
+    "candidate_run": "2026-07-backfill/batch-03",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "hermes-agent",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "Navigation-only evaluation (not manipulation)",
+      "Single-frame setting may not capture temporal dependencies",
+      "No code or project page URL found; reproducibility unclear",
+      "Limited to navigation domain; extension to manipulation untested"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.14635",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.14635"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.14635"
+    }
+  ],
+  "suggested_new_tags": []
+}

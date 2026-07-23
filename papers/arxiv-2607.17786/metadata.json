@@ -1,0 +1,116 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.17786",
+  "title": "Reasoning as a Double-Edged Sword: Architecture and Cross-Stage Robustness in Vision-Language-Action Models",
+  "title_zh": "推理是一把双刃剑：VLA 架构与跨阶段鲁棒性",
+  "abstract": "Does adding a reasoning step make a Vision-Language-Action (VLA) model more robust to perturbation? Intuitively, a policy that reasons before acting should absorb a perturbed input better than one that maps observations directly to actions. We test this premise head-on across three models that span the reasoning spectrum (no reasoning, a text chain-of-thought, and a latent iterative loop), perturbing each at the vision, reasoning, and action stages on LIBERO and SimplerEnv. Two questions organize the study: does the reasoning design shift robustness, and can the reasoning be read back at runtime as a safety signal? We find that the latent-iterative model is by far the least robust: under both stochastic noise and white-box perturbation its task success collapses, while the other two hold. This fragility is structural rather than cumulative: varying the reasoning depth at inference barely moves it. Reasoning outputs can in principle be monitored, but the monitors fail under fair tests. A plan--action consistency probe that looks near-perfect under naive evaluation falls to chance under adaptive attack. Under matched-FPR calibration, fusing it with an action-anomaly probe never lifts defended success above undefended. Scoped to these output-level behavioral probes under white-box vision-stage attack, this ceiling is a precondition that any viable defense must first satisfy.",
+  "paper_url": "https://arxiv.org/abs/2607.17786",
+  "pdf_url": "https://arxiv.org/pdf/2607.17786",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Tuan Duong Trinh",
+      "affiliations": []
+    },
+    {
+      "name": "Naveed Akhtar",
+      "affiliations": []
+    },
+    {
+      "name": "Basim Azam",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-20",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "foundation-model"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [],
+    "properties": [
+      "simulation-only"
+    ]
+  },
+  "paper_type": [
+    "analysis",
+    "benchmark"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 79,
+    "selection_reason": "提供少见的负结果与安全评测视角，实验量充足，对 VLA 推理层“天然更稳健”的直觉形成有价值反证；但仅仿真且每种范式只有单一模型。",
+    "candidate_run": "2026-07-22",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "代码尚未确认公开",
+      "不同 reasoning paradigm 之间存在模型级混杂因素"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.17786"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.17786"
+    }
+  ],
+  "suggested_new_tags": [],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.17786",
+    "fulltext_accessed": true,
+    "fulltext_note": "Used official arXiv HTML and checked method, experiments, conclusion/limitations sections.",
+    "sections_detected": [
+      "Introduction",
+      "Threat Model",
+      "Evaluation",
+      "Discussion and Conclusion",
+      "Limitations",
+      "Extended Experimental Details"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  }
+}

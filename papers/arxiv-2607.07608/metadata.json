@@ -1,0 +1,143 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.07608",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Dual Latent Memory in Vision-Language-Action Models for Robotic Manipulation",
+  "title_zh": null,
+  "abstract": "Mainstream Vision-Language-Action (VLA) models predict actions primarily from the current observation under a Markovian assumption, thus struggling with long-horizon, temporally dependent tasks. Existing memory-augmented VLAs either expand the observation window or retrieve history from the memory bank as auxiliary policy-side context. However, they leave memory outside the native latent embedding space of VLA reasoning, preventing historical experience from being fluidly interleaved with multimodal reasoning and action formation. To this end, we introduce LaMem-VLA, a latent-memory-native framework that reconstructs historical experience into latent memory tokens and directly interweaves them with VLA reasoning. At its core, LaMem-VLA introduces four coordinated components: (i) a curator that organizes historical experience into two complementary short-term and long-term memory vaults; (ii) a seeker that queries both vaults using the multimodal cognition to retrieve context-relevant evidence; (iii) a condenser that reconstructs the retrieved evidence into compact short-term and long-term latent memory tokens; and (iv) a weaver that injects these memory tokens with the current observation and instruction into one continuous embedding sequence. By representing, retrieving, and consuming historical experience entirely in the same continuous latent space, LaMem-VLA enables memory to directly participate in VLA reasoning and guide action generation under a bounded context. Extensive experiments on SimplerEnv and LIBERO demonstrate the superiority of our LaMem-VLA.",
+  "paper_url": "https://arxiv.org/abs/2607.07608",
+  "pdf_url": "https://arxiv.org/pdf/2607.07608",
+  "project_url": null,
+  "code_url": "https://github.com/quhongyu/LaMem-VLA",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Hongyu Qu",
+      "affiliations": []
+    },
+    {
+      "name": "Jianzhe Gao",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaobin Hu",
+      "affiliations": []
+    },
+    {
+      "name": "Shaohuan Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Xinlei Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Rui Yan",
+      "affiliations": []
+    },
+    {
+      "name": "Wenguan Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Xiangbo Shu",
+      "affiliations": []
+    },
+    {
+      "name": "Shuicheng Yan",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-08",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "planning",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [
+      "code"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 74,
+    "selection_reason": "这项工作在其问题上提出明确增量：记忆不再作为外部图像/文本附件，而是以同一连续 latent space 参与 VLA 推理与动作形成。 两个仿真套件和模块消融支撑增益，但没有真实机器人、跨 embodiment 或长期部署证据。 最近邻为 arxiv-2603.17300 ReSteer 和 π0 系列；LaMem-VLA补充历史依赖 latent memory，而非多任务 steerability 或基础行为克隆。",
+    "candidate_run": "2026-07-backfill/batch-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "仅仿真验证",
+      "摘要与正文未给出跨长期真实任务的鲁棒性证据"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.07608",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.07608"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.07608"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://github.com/quhongyu/LaMem-VLA"
+    }
+  ],
+  "suggested_new_tags": []
+}

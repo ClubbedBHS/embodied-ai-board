@@ -1,0 +1,129 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.04880",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "PRISM: Personalized Robotic Dataset Generation via Image-based Scene and Motion Synthesis",
+  "title_zh": null,
+  "abstract": "Recent advances in large-scale pretrained vision-language-action models have improved robot policy learning, but directly deploying such policies in user-specific environments remains challenging due to limited generalization, which inevitably requires collecting a dataset tailored to the target environment. Teleoperation yields well-aligned data but is costly and difficult to scale, whereas simulation scales easily but struggles to resemble the target environment and generate task-specific trajectories. To meet both simultaneously, we propose PRISM, an end-to-end pipeline that generates personalized robotic datasets from a single image and a natural-language instruction. PRISM constructs digital cousin scenes that are semantically and geometrically aligned with the user environment yet diverse at the instance level, and synthesizes executable demonstrations without human teleoperation. Extensive experiments show that policies trained on PRISM-generated datasets outperform those trained on baseline-generated datasets on LIBERO and LIBERO-Plus, achieve up to 100\\% success rate on three real-world manipulation tasks, and maintain stronger performance when evaluated in environments that differ from those seen during training.",
+  "paper_url": "https://arxiv.org/abs/2607.04880",
+  "pdf_url": "https://arxiv.org/pdf/2607.04880",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Dogyu Ko",
+      "affiliations": []
+    },
+    {
+      "name": "Haneul Kim",
+      "affiliations": []
+    },
+    {
+      "name": "Chanyoung Yeo",
+      "affiliations": []
+    },
+    {
+      "name": "Dowoon Lee",
+      "affiliations": []
+    },
+    {
+      "name": "Taeho Park",
+      "affiliations": []
+    },
+    {
+      "name": "Hyoseok Hwang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-06",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data",
+      "simulators"
+    ],
+    "topics": [
+      "foundation-model",
+      "sim-to-real"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation",
+      "large-scale-data"
+    ]
+  },
+  "paper_type": [
+    "dataset",
+    "simulator"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 71,
+    "selection_reason": "PRISM generates personalized robotic datasets from a single environment image and natural-language instruction by constructing digital cousin scenes and synthesizing executable demonstrations via TAMP. Policies trained on PRISM datasets outperform those trained on RoboTwin 2.0 and X-Sim data on LIBERO and LIBERO-Plus, with successful real-to-sim-to-real transfer.",
+    "candidate_run": "2026-07-backfill/batch-03",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "hermes-agent",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "No code or project page URL found",
+      "Pipeline requires VLM-based reasoning at multiple stages; quality depends on VLM reliability",
+      "Digital cousin approach may not capture all physical properties (e.g., friction, mass) of real objects",
+      "Evaluated on tabletop pick-and-place; complex dexterous tasks untested"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.04880",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.04880"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.04880"
+    }
+  ],
+  "suggested_new_tags": []
+}

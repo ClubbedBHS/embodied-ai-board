@@ -1,0 +1,159 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.06701",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "SPEAR: A Simulator for Photorealistic Embodied AI Research",
+  "title_zh": null,
+  "abstract": "Interactive simulators have become powerful tools for training embodied agents and generating synthetic visual data, but existing photorealistic simulators suffer from limited generality, programmability, and rendering speed. We address these limitations by introducing SPEAR: A Simulator for Photorealistic Embodied AI Research. At its core, SPEAR is a Python library that can connect to, and programmatically control, any Unreal Engine (UE) application via a modular plugin architecture. SPEAR exposes over 14K unique UE functions to Python, representing an order-of-magnitude increase in programmable functionality over existing UE-based simulators. Additionally, a single SPEAR instance can render 1920x1080 photorealistic beauty images directly into a user's NumPy array at 73 frames per second - an order of magnitude faster than existing UE plugins - while also providing ground truth image modalities that are not available in any existing UE-based simulator (e.g., a non-diffuse intrinsic image decomposition, material IDs, and physically based shading parameters). Finally, SPEAR introduces an expressive high-level programming model that enables users to specify complex graphs of UE work with arbitrary data dependencies among work items, and to execute these graphs deterministically within a single UE frame. We demonstrate the utility of SPEAR through a diverse collection of example applications: controlling multiple embodied agents with distinct action spaces (e.g., humans, cars, and robots) across several in-the-wild UE projects; rendering photorealistic city-scale environments; manipulating UE's procedural content generation systems; rendering synchronized multi-view images of detailed human faces; coordinating an interactive co-simulation with the MuJoCo physics simulator; and editing scenes with natural language via an AI coding assistant.",
+  "paper_url": "https://arxiv.org/abs/2607.06701",
+  "pdf_url": "https://arxiv.org/pdf/2607.06701",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Mike Roberts",
+      "affiliations": []
+    },
+    {
+      "name": "Renhan Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Rushikesh Zawar",
+      "affiliations": []
+    },
+    {
+      "name": "Rachith Dey-Prakash",
+      "affiliations": []
+    },
+    {
+      "name": "Quentin Leboutet",
+      "affiliations": []
+    },
+    {
+      "name": "Stephan R. Richter",
+      "affiliations": []
+    },
+    {
+      "name": "Matthias Müller",
+      "affiliations": []
+    },
+    {
+      "name": "German Ros",
+      "affiliations": []
+    },
+    {
+      "name": "Rui Tang",
+      "affiliations": []
+    },
+    {
+      "name": "Stefan Leutenegger",
+      "affiliations": []
+    },
+    {
+      "name": "Yannick Hold-Geoffroy",
+      "affiliations": []
+    },
+    {
+      "name": "Kalyan Sunkavalli",
+      "affiliations": []
+    },
+    {
+      "name": "Vladlen Koltun",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-07",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "simulators",
+      "infrastructure"
+    ],
+    "topics": [
+      "representation-learning",
+      "control"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [],
+    "properties": [
+      "simulation-only"
+    ]
+  },
+  "paper_type": [
+    "simulator",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 78,
+    "selection_reason": "通过模块化UE插件让Python控制任意UE应用，暴露14K+函数、确定性单帧工作图和多种额外ground-truth通道。 第3–4节给出programming model/system architecture；第5节测1080p 73FPS并展示多agent、城市、PCG、多视图人脸、MuJoCo co-sim和自然语言编辑；第6节总结。 相对 Isaac Lab 的机器人学习/物理仿真，SPEAR主要补充任意UE应用的可编程photorealistic感知与co-simulation。",
+    "candidate_run": "2026-07-backfill/batch-02",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "GitHub仓库本次探测失败，未计开放资产",
+      "示例广但缺统一下游policy benchmark",
+      "UE许可/版本兼容性需人工复核"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.06701",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.06701"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.06701"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://github.com/spear-sim/spear"
+    }
+  ],
+  "suggested_new_tags": []
+}

@@ -1,0 +1,133 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.03461",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "WorldBagel: Uncovering the Power of Unified Multimodal Models for Vision-Language-Action-World Modeling",
+  "title_zh": null,
+  "abstract": "World models aim to capture environment dynamics in ways that support perception, reasoning, and action, and have recently become a central direction in Vision-Language-Action-World (VLAW) modeling. Meanwhile, unified vision-language models have demonstrated strong multimodal generation capabilities, yet their potential as world models remains underexplored. In this work, we introduce \\texttt{WorldBagel}, a unified VLAW framework built on BAGEL, a modern multimodal unified model, and use it to systematically investigate the role of unification in world modeling. Across multi-task robotic manipulation and cross-domain experiments, \\texttt{WorldBagel} consistently outperforms task-specific alternatives and learns action representations that are more structured and semantically aligned with visual and linguistic context. Experiments on LIBERO, Language Table, and Franka show that unification is not only an architectural convenience, but also a key factor in learning effective VLAW models, leading to consistent empirical gains and deeper insights into multimodal world modeling. Code and model checkpoints will be released upon acceptance.",
+  "paper_url": "https://arxiv.org/abs/2607.03461",
+  "pdf_url": "https://arxiv.org/pdf/2607.03461",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Zelin Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Min Shi",
+      "affiliations": []
+    },
+    {
+      "name": "Bo Yuan",
+      "affiliations": []
+    },
+    {
+      "name": "Haotian Xue",
+      "affiliations": []
+    },
+    {
+      "name": "Jialuo Li",
+      "affiliations": []
+    },
+    {
+      "name": "Lama Moukheiber",
+      "affiliations": []
+    },
+    {
+      "name": "Humphrey Shi",
+      "affiliations": []
+    },
+    {
+      "name": "Yongxin Chen",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-03",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "world-model",
+      "foundation-model",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 72,
+    "selection_reason": "这项工作在其问题上提出明确增量：系统研究 unified multimodal generation backbone 对 VLA+world modeling 联合训练的作用，并提出 Fourier action 表示。 多数据域和 action-representation 消融支撑结论，但代码和 checkpoint 明确写为 upon acceptance，当前不可计入。 最近邻为 EgoWAM；WorldBagel新增统一 multimodal generation backbone 和 Fourier action 编码，而非比较人类视频 world targets。",
+    "candidate_run": "2026-07-backfill/batch-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "核心资产尚未发布",
+      "真实机器人覆盖和重复次数需人工复核",
+      "统一模型的计算成本未充分讨论"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.03461",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.03461"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.03461"
+    }
+  ],
+  "suggested_new_tags": []
+}

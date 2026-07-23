@@ -1,0 +1,2129 @@
+{
+  "run": {
+    "run_at": "2026-07-23",
+    "window_start": "2026-07-01",
+    "window_end": "2026-07-23",
+    "sources_checked": [
+      "arXiv official API: cs.RO + submittedDate",
+      "arXiv official API: controlled embodied/robotics keyword query + submittedDate"
+    ],
+    "rubric_version": "0.1",
+    "batch_index_range": "51-75",
+    "parent_pool": "candidates/2026-07-backfill/candidate-pool.json",
+    "note": "batch-03: pending-fulltext entries 51-75 from candidate-pool.json, fixed range, no substitutions"
+  },
+  "candidates": [
+    {
+      "id": "arxiv-2607.03570",
+      "title": "Cross-Embodiment Robot Manipulation via a Unified Hand Action Space",
+      "paper_url": "https://arxiv.org/abs/2607.03570",
+      "first_publication": "2026-07-03",
+      "last_revision": null,
+      "authors": [
+        "Luis Felipe Casas",
+        "Robert Teal",
+        "Keval Shah",
+        "Abhijit Tadepalli",
+        "Wanxin Jin",
+        "Yu Xiang"
+      ],
+      "organizations": [],
+      "discovered_via": [
+        "arXiv API: cs.RO"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.03570",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "Directly about dexterous robotic manipulation across Allegro, LEAP, Shadow, and MANO hands; real-world robot experiments."
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Full HTML accessed via arxiv.org/html/2607.03570; complete paper with all sections."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "Novel sphere-based Unified Hand Action Space (UHAS) and Cascade Inverse Kinematics (CIK) algorithm for cross-embodiment dexterous manipulation, distinct from prior keypoint-based or joint-space methods."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Simulation results on 4 hands (Tables 1-3), multi-hand training, zero-shot transfer, finetuning, ablation studies, and real-world LEAP Hand deployment."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Read all sections: Introduction, Method (UHAS sections 3.1-3.4), Experiments (Sec 4 with Tables 1-3), Conclusion, Limitations."
+        }
+      },
+      "scores": {
+        "relevance": 18,
+        "novelty": 15,
+        "evidence_quality": 14,
+        "potential_impact": 11,
+        "board_information_gain": 8,
+        "reproducibility": 3,
+        "timeliness": 4,
+        "total": 73
+      },
+      "decision": "include",
+      "selection_reason": "这项工作在跨具身灵巧操作（cross-embodiment dexterous manipulation）问题上提出了一种基于球面几何的统一手部动作空间 UHAS，通过球面变形参数化和级联逆运动学（CIK）算法，将共享的动作表示映射到不同机器人手的关节配置。在 Allegro、LEAP、Shadow 和 MANO 四种手上通过强化学习训练灵巧的立方体重新定向策略，实验覆盖多手训练、零样本迁移、微调和真机部署（LEAP Hand）四个维度，证明了提出的统一表示能够实现跨具身的策略迁移。",
+      "risks_or_uncertainties": [
+        "仅测试了正方体重新定向这一种任务，泛化到更多灵巧操作任务未验证",
+        "4指到5指手的跨形态迁移存在性能退化",
+        "对PD控制器参数和强化学习奖励设计敏感，调参成本高"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "cross-embodiment",
+        "dexterous-manipulation"
+      ]
+    },
+    {
+      "id": "arxiv-2607.04554",
+      "title": "HUGS: Guiding Unified Dexterous Grasp Synthesis Across Modes and Scales via Learned Human Priors",
+      "paper_url": "https://arxiv.org/abs/2607.04554",
+      "first_publication": "2026-07-06",
+      "last_revision": null,
+      "authors": [
+        "Mingrui Yu",
+        "Yongpeng Jiang",
+        "Yongyi Jia",
+        "Kangchen Lv",
+        "Li Huang",
+        "Yi Ren",
+        "Xiang Li"
+      ],
+      "organizations": [],
+      "discovered_via": [
+        "arXiv API: cs.RO"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.04554",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "Directly about dexterous robotic grasping; synthesizes 3.2M robotic grasps; real-world LEAP Hand grasping demonstrations from screws to large boxes."
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Full HTML accessed; complete paper with all sections."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "Novel human-prior-guided grasp synthesis framework that learns object-conditioned contact mode and wrist pose priors from a compact self-collected human grasp dataset (HUGS-Human, 1.8K grasps), instead of direct retargeting or heuristic initialization."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Experiments include contact-mode prediction (Fig 4), synthesis success rate across scales (Fig 5), grasp generator distillation (Fig 6), real-world 24-object cross-scale grasping (Fig 7), ablation of bimanual FC objective, and LEAP Hand supplementary results."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Read all sections: Introduction, Method (3.1-3.4), Results (4.1-4.4), Limitations and Conclusion (Sec 5)."
+        }
+      },
+      "scores": {
+        "relevance": 18,
+        "novelty": 16,
+        "evidence_quality": 15,
+        "potential_impact": 12,
+        "board_information_gain": 8,
+        "reproducibility": 3,
+        "timeliness": 4,
+        "total": 76
+      },
+      "decision": "include",
+      "selection_reason": "这项工作在灵巧抓取合成（dexterous grasp synthesis）问题上提出 HUGS 框架，通过从紧凑的自采集人类抓取数据集（304物体/1.8K抓取）学习对象条件的人类先验（接触模式和手腕姿态），引导下游力封闭优化。合成了 3.2M 跨尺度（2cm-30cm 物体半对角线）和跨模式（从双指到双手）的机器人抓取数据，并在 LEAP 真手上展示从螺丝到大箱子的自主模式选择抓取。与启发式方法相比，显著提升了接触模式覆盖率和合成成功率。",
+      "risks_or_uncertainties": [
+        "人类数据集仅304个对象/1.8K抓取，远超出分布的对象可能效果下降",
+        "在线抓取生成仍为初步阶段，对不规则几何物体可靠性不足",
+        "仅覆盖4种接触模式，无法穷尽人类抓取行为谱系",
+        "真机部署对校准、分割和深度重建误差敏感"
+      ],
+      "suggested_sections": [
+        "data",
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "dexterous-manipulation",
+        "grasping"
+      ]
+    },
+    {
+      "id": "arxiv-2607.04816",
+      "title": "CAC-VLA: Context-Gated Action Conditioning for Vision-Language-Action Models",
+      "paper_url": "https://arxiv.org/abs/2607.04816",
+      "first_publication": "2026-07-06",
+      "last_revision": null,
+      "authors": [
+        "Yifu Xiong",
+        "Wenhao Yu",
+        "Jiaxuan Lin",
+        "Bojun Zou",
+        "Jiahao Li",
+        "Lu Zhang",
+        "Yanyong Zhang",
+        "Jianmin Ji"
+      ],
+      "organizations": [],
+      "discovered_via": [
+        "arXiv API: cs.RO"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.04816",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "Directly about VLA models for robot manipulation; evaluated on LIBERO and LIBERO-Plus benchmarks; real-world UR7e pick-and-place experiments."
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Full HTML accessed; complete paper with all sections."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "Novel context-gated latent-action conditioning framework: trains VLM to predict coarse-to-fine latent actions (via ordered action tokenizer) and uses context-gated cross-attention to adaptively condition the action expert, distinct from standard VLA or action-reasoning methods."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Table 1: LIBERO 98.3% avg SR; Table 2: LIBERO-Plus 89.5%; Table 3: ablation on latent-action horizon; Table 4: ablation on conditioning and gating; real-world UR7e pick-and-place (72% Task Score, 64% Full SR vs π0.5 baseline 48%/16%)."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Read all sections: Introduction, Method (3.1-3.4), Experiments (Sec 4 with Tables 1-4), Conclusion, Limitations (Sec 6)."
+        }
+      },
+      "scores": {
+        "relevance": 17,
+        "novelty": 15,
+        "evidence_quality": 16,
+        "potential_impact": 11,
+        "board_information_gain": 7,
+        "reproducibility": 3,
+        "timeliness": 4,
+        "total": 73
+      },
+      "decision": "include",
+      "selection_reason": "这项工作在 VLA 模型的动作条件化问题上提出 CAC-VLA 框架，通过在 VLM 内部引入潜在动作查询令牌（latent query tokens）预测粗到细的潜在动作，并使用上下文门控（context gate）自适应地将潜在动作信息注入到动作专家中。在 LIBERO（98.3%）和 LIBERO-Plus（89.5%）上取得强结果，真机 UR7e 实验（Full SR 64% vs π0.5 的 16%）验证了实际部署可行性。消融实验证实了潜在动作视野和上下文门控的重要性。",
+      "risks_or_uncertainties": [
+        "真机评估仅限单一桌面 pick-and-place 任务和单一机器人（UR7e）",
+        "少量演示数据（small number of demonstrations）",
+        "潜在动作预测不准确或固定视野不匹配当前任务阶段时可能失败",
+        "未在更长期或更多样化的操作场景中验证"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "vla",
+        "foundation-models"
+      ]
+    },
+    {
+      "id": "arxiv-2607.05883",
+      "title": "DexTele: A Dual-Arm Dexterous Teleoperation System Based on Motion Retargeting and Adaptive Force Control",
+      "paper_url": "https://arxiv.org/abs/2607.05883",
+      "first_publication": "2026-07-07",
+      "last_revision": null,
+      "authors": [
+        "Yuanchuan Lai",
+        "Qing Gao",
+        "Ziyan Liang",
+        "Xianfeng Cheng",
+        "Junjie Hu",
+        "Zhaojie Ju"
+      ],
+      "organizations": [],
+      "discovered_via": [
+        "arXiv API: cs.RO"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.05883",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "Directly about dual-arm dexterous teleoperation for robots; experiments on multiple robot platforms with real-world grasping tasks."
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Full HTML accessed; complete paper with all sections."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "Novel combination of vision-based motion retargeting with motion-graph encoder + latent optimization for cross-platform generalization, plus VLM-MPC adaptive grasping module; unified teleoperation system architecture."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Experiments include arm/hand motion retargeting comparisons, ablation studies, multi-robot retargeting, and adaptive grasping success rate evaluation (Sec IV)."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Read all sections: Introduction, Related Work, System (III-A to III-C), Experiments (IV-A to IV-E), Conclusion."
+        }
+      },
+      "scores": {
+        "relevance": 16,
+        "novelty": 12,
+        "evidence_quality": 12,
+        "potential_impact": 8,
+        "board_information_gain": 6,
+        "reproducibility": 2,
+        "timeliness": 4,
+        "total": 60
+      },
+      "decision": "watch",
+      "selection_reason": "这项工作在双臂灵巧遥操作问题上提出 DexTele 系统，结合基于视觉的运动重定向（motion-graph encoder + 潜在优化）和 VLM-MPC 自适应抓取模块，实现跨机器人平台的运动重定向和顺应性抓取。实验覆盖臂部/手部重定向对比、消融、多机器人迁移和自适应抓取成功率评估。增量主要体现在工程系统集成层面（重定向+力控统一框架），方法创新程度中等。",
+      "risks_or_uncertainties": [
+        "系统集成的工程性质较强，各子模块创新程度有限",
+        "VLM+MPC 自适应抓取的具体性能数据不够突出",
+        "缺少与最新端到端模仿学习/强化学习方法的系统性对比"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "teleoperation",
+        "dexterous-manipulation"
+      ]
+    },
+    {
+      "id": "arxiv-2607.06370",
+      "title": "Training-Free Acceleration for Vision-Language-Action Models with Action Caching and Refinement",
+      "paper_url": "https://arxiv.org/abs/2607.06370",
+      "first_publication": "2026-07-07",
+      "last_revision": null,
+      "authors": [
+        "Ryuji Oi",
+        "Hikari Otsuka",
+        "Kosuke Matsushima",
+        "Yuki Ichikawa",
+        "Masato Motomura",
+        "Tatsuya Kaneko",
+        "Daichi Fujiki"
+      ],
+      "organizations": [],
+      "discovered_via": [
+        "arXiv API: cs.RO"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.06370",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "Directly about accelerating VLA models for robot manipulation; evaluated on π0.5 and GR00T-N1.6 with simulation and real-world robot experiments."
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Full HTML accessed; complete paper with all sections including Limitations appendix."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "Novel training-free plug-and-play ActionCache mechanism that opportunistically reuses past intermediate actions from similar multimodal contexts to warm-start flow-based VLA inference, achieving significant speedup."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Multiple experiments: success rate vs latency evaluation (4.2), cross-task action reuse (4.3), retrieval quality impact (4.4), cache key source comparison (4.5), real-world evaluation (4.6), LIBERO benchmark results in Appendix B."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Read all sections: Introduction, Background, Method (3.1-3.3), Experiments (4.1-4.6), Conclusion, Limitations (Appendix C)."
+        }
+      },
+      "scores": {
+        "relevance": 15,
+        "novelty": 14,
+        "evidence_quality": 14,
+        "potential_impact": 10,
+        "board_information_gain": 7,
+        "reproducibility": 2,
+        "timeliness": 4,
+        "total": 66
+      },
+      "decision": "include",
+      "selection_reason": "这项工作在 VLA 推理加速问题上提出 ActionCache，一种免训练的即插即用外部缓存机制，通过存储和检索具有紧凑多模态键的中间动作来热启动流匹配去噪过程，在 π0.5 和 GR00T-N1.6 上分别实现 11.75× 和 34.43× 推理加速，同时保持高任务成功率。实验覆盖仿真（LIBERO）和真机，分析跨任务动作复用和检索质量影响，对 VLA 实时部署有明确的工程价值。",
+      "risks_or_uncertainties": [
+        "缓存命中率直接影响性能，在全新未见场景下加速效果可能下降",
+        "仅针对流匹配型 VLA（π0.5、GR00T-N1.6），对其他架构的通用性未验证",
+        "方法的实用性取决于缓存管理策略，长期部署的缓存增长问题未深入讨论"
+      ],
+      "suggested_sections": [
+        "algorithms",
+        "infrastructure"
+      ],
+      "suggested_topics": [
+        "vla",
+        "deployment"
+      ]
+    },
+    {
+      "id": "arxiv-2607.08575",
+      "title": "FabriVLA: A Lightweight Vision-Language-Action Model for Precise Multi-Task Manipulation",
+      "paper_url": "https://arxiv.org/abs/2607.08575",
+      "first_publication": "2026-07-09",
+      "last_revision": "2026-07-10",
+      "authors": [
+        "Shiyuan Yang",
+        "Borong Zhang",
+        "Jizheng Zhang",
+        "Zhijia Tao",
+        "Junfei Guo",
+        "Donglai Ran",
+        "Xu Bian",
+        "Qingbiao Li"
+      ],
+      "organizations": [],
+      "discovered_via": [
+        "arXiv API: cs.RO"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.08575",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "Directly about VLA models for robot manipulation; evaluated on Meta-World MT50 benchmark spanning 50 diverse manipulation tasks."
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Full HTML accessed; complete paper with all sections."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "Lightweight VLA design combining InternVL3.5 (1B scale) with flow-matching action head featuring gated self-attention and shallow VLM layer fusion; demonstrates strong performance without multi-billion parameter backbones."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Meta-World MT50 results (90.0% tier-avg SR), comparison with recent VLAs, task demand breakdown, training dynamics, ablation on shallow layer fusion (Tables 1-3 in paper)."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Read all sections: Introduction, Model Architecture (2.1-2.4), Training (Sec 3), Experiments (Sec 4 with Results, Ablation), Conclusion (Sec 6)."
+        }
+      },
+      "scores": {
+        "relevance": 16,
+        "novelty": 12,
+        "evidence_quality": 13,
+        "potential_impact": 9,
+        "board_information_gain": 6,
+        "reproducibility": 3,
+        "timeliness": 5,
+        "total": 64
+      },
+      "decision": "watch",
+      "selection_reason": "这项工作在轻量化 VLA 模型设计上提出 FabriVLA，以 1B 规模的 InternVL3.5 为视觉语言骨干，结合流匹配动作头和门控自注意力机制，在 Meta-World MT50（50个任务）上达到 90.0% 平均成功率。gated self-attention 和 shallow VLM layer fusion 两个设计选择有合理的消融支持。主要贡献在于证明小规模 VLM 也能在广泛操作任务上取得竞争力性能，但对 VLA 领域的方法论创新程度有限。",
+      "risks_or_uncertainties": [
+        "Meta-World 是状态-动作空间环境，与真实机器人视觉输入差距大",
+        "未在真机上验证，sim-to-real 转移未讨论",
+        "与更大规模 VLA（如 π0.5、GR00T-N1）的实际性能差距未充分对比",
+        "门控自注意力和浅层融合的技术新颖性有限"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "vla",
+        "foundation-models"
+      ]
+    },
+    {
+      "id": "arxiv-2607.08857",
+      "title": "AgenticFocus: Object-Preserving Mixed Reality Synthesis from Human FPV Video for Dexterous Humanoid Learning",
+      "paper_url": "https://arxiv.org/abs/2607.08857",
+      "first_publication": "2026-07-09",
+      "last_revision": "2026-07-13",
+      "authors": [
+        "Iaroslav Kolomiets",
+        "Miguel Altamirano Cabrera",
+        "Artem Lykov",
+        "Jeffrin Sam",
+        "Dmitrii Iarchuk",
+        "Yara Mahmoud",
+        "Daniia Zinniatullina",
+        "Mikhail Konenkov",
+        "Dzmitry Tsetserukou"
+      ],
+      "organizations": [],
+      "discovered_via": [
+        "arXiv API: cs.RO"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.08857",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "Directly about dexterous humanoid robot learning from human video; retargets human FPV video to humanoid embodiment; SPARC smoothness metric for robot trajectories."
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Full HTML accessed; short paper (613 lines) but complete with Method, Experiments, Conclusion."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "Novel Mixed Reality synthesis pipeline converting ordinary human FPV videos into robot-trainable demonstrations by restoring occluded object geometry, full-hand retargeting, and layered compositing; distinct from prior teleoperation or mocap approaches."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Experiments on trajectory accuracy and retargeting smoothness with SPARC metric (-5.18 vs baselines -5.56 and -6.05); Fig-based results on trajectory comparison."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Read all sections: Method (1.1-1.4), Experiments (2.1-2.3), Conclusion (Sec 3)."
+        }
+      },
+      "scores": {
+        "relevance": 15,
+        "novelty": 13,
+        "evidence_quality": 10,
+        "potential_impact": 8,
+        "board_information_gain": 6,
+        "reproducibility": 2,
+        "timeliness": 5,
+        "total": 59
+      },
+      "decision": "watch",
+      "selection_reason": "这项工作在从人类第一人称视频生成机器人训练数据的问题上提出 AgenticFocus 混合现实合成管线，通过恢复被遮挡物体几何、全手重定向和分层合成，将普通人类 FPV 视频转化为机器人可用的演示数据。SPARC 轨迹平滑度指标优于跨具身基线（-5.18 vs -5.56/-6.05）。短文形式（4页），实验规模有限，主要展示轨迹精度和重定向平滑度，缺乏完整策略学习闭环验证。",
+      "risks_or_uncertainties": [
+        "短文格式，实验规模有限（仅轨迹精度和平滑度指标）",
+        "缺乏完整的策略学习闭环验证（未展示用生成数据训练的策略在实际任务中的表现）",
+        "物体恢复和手部重定向的精度在实际复杂场景中可能退化",
+        "SPARC 仅衡量平滑度，不直接衡量任务成功率"
+      ],
+      "suggested_sections": [
+        "data"
+      ],
+      "suggested_topics": [
+        "imitation-learning",
+        "humanoids",
+        "dexterous-manipulation"
+      ]
+    },
+    {
+      "id": "arxiv-2607.09792",
+      "title": "A Comprehensive Survey and Systematic Real-World Evaluation of Embodied Vision-and-Language Navigation",
+      "paper_url": "https://arxiv.org/abs/2607.09792",
+      "first_publication": "2026-07-09",
+      "last_revision": null,
+      "authors": [
+        "Liuyi Wang",
+        "Kai Sheng",
+        "Zongtao He",
+        "Jinlong Li",
+        "Yongrui Qin",
+        "Haojie Dai",
+        "Xiangyi Wang",
+        "Jingwei Yang",
+        "Qingqing Yan",
+        "Chengju Liu",
+        "Qijun Chen"
+      ],
+      "organizations": [],
+      "discovered_via": [
+        "arXiv API: cs.RO"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.09792",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "Survey about embodied Vision-and-Language Navigation; includes systematic real-world robot evaluation."
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Full HTML accessed."
+        },
+        "incremental_contribution": {
+          "pass": false,
+          "evidence": "Survey paper — organizes existing work along action and model paradigms, with real-world evaluation. Per rubric, surveys without novel experiments are deferred."
+        },
+        "claim_support": {
+          "pass": false,
+          "evidence": "Survey paper — no original experimental claims beyond systematic evaluation of existing methods."
+        },
+        "fulltext_for_recommendation": {
+          "pass": false,
+          "evidence": "Survey paper — rubric requires deferral for surveys without experiments."
+        }
+      },
+      "scores": {
+        "relevance": 0,
+        "novelty": 0,
+        "evidence_quality": 0,
+        "potential_impact": 0,
+        "board_information_gain": 0,
+        "reproducibility": 0,
+        "timeliness": 0,
+        "total": 0
+      },
+      "decision": "defer",
+      "selection_reason": "这是一篇全面的 VLN 综述文章，系统地组织了现有的视觉语言导航方法（沿动作范式和模型范式两个维度），并包含在物理机器人上对代表性 VLN 系统的真实世界评估。根据评审规则，综述论文不进行评分，建议 defer 处理。值得注意的发现：仿真成功率 61% 的单体方法在真实世界中降至 22%，而分层框架达到 51%，揭示了 sim-to-real 的巨大差距。",
+      "risks_or_uncertainties": [
+        "综述论文，按规则 defer，不评分",
+        "虽含真实世界评估实验，但本质仍为文献综述类工作"
+      ],
+      "suggested_sections": [
+        "surveys"
+      ],
+      "suggested_topics": [
+        "navigation",
+        "sim-to-real"
+      ]
+    },
+    {
+      "id": "arxiv-2607.12571",
+      "title": "TrustVLA: Mechanism-Guided Inference-Time Defense Against Vision-Language-Action Backdoors",
+      "paper_url": "https://arxiv.org/abs/2607.12571",
+      "first_publication": "2026-07-14",
+      "last_revision": null,
+      "authors": [
+        "Xianda Guo"
+      ],
+      "organizations": [],
+      "discovered_via": [
+        "arXiv API: cs.RO"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.12571",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "Directly about defending VLA models (used for robot control) against backdoor attacks; evaluated on OpenVLA/LIBERO and π0.5 robot manipulation benchmarks."
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Full HTML accessed; complete paper with all sections including extensive appendices."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "First mechanism-guided inference-time defense for VLA backdoors; identifies compact causal footprint mechanism in poisoned VLAs; uses Dirichlet evidence framework adapted for per-token per-layer epistemic uncertainty monitoring in continuous action policies."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Experiments include main defense results (Sec 4.2) against BadVLA and INFUSE attacks, robustness and transfer evaluation (4.3), ablations and baselines (4.4), cross-attack verification in Appendix F, and physical-robot setup in Appendix B."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Read all sections: Introduction, Related Work, Proposed Method (3.1-3.4), Experiments (4.1-4.4), Conclusion (Sec 5), and appendices for protocol details."
+        }
+      },
+      "scores": {
+        "relevance": 16,
+        "novelty": 16,
+        "evidence_quality": 15,
+        "potential_impact": 11,
+        "board_information_gain": 8,
+        "reproducibility": 3,
+        "timeliness": 5,
+        "total": 74
+      },
+      "decision": "include",
+      "selection_reason": "工作在 VLA 模型后门攻击防御这一新兴安全问题上提出 TrustVLA，首次系统性地揭示了被攻击 VLA 中的紧凑因果足迹（compact causal footprint）机制，并基于 Dirichlet 证据框架设计了推理时防御：通过逐令牌逐层不确定性监测检测异常、反事实机制分数下降定位视觉触发器、局部修复恢复观察。在两个独立提出的攻击（BadVLA 和 INFUSE）上跨 OpenVLA/LIBERO 和 π0.5 验证，降低攻击成功率同时保持干净任务性能，提供免重训练的机制引导防御方案。",
+      "risks_or_uncertainties": [
+        "防御仅针对视觉触发的后门攻击，对抗自适应攻击者的鲁棒性有限",
+        "实际部署中的运行开销（per-token per-layer 监控）未充分量化",
+        "校准集的质量和规模对防御效果的影响需进一步研究",
+        "VLA 安全领域仍处于早期阶段，攻击和防御的军备竞赛可能持续演化"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "vla",
+        "safety"
+      ]
+    },
+    {
+      "id": "arxiv-2607.13033",
+      "title": "DenseReward: Dense Reward Learning via Failure Synthesis for Robotic Manipulation",
+      "paper_url": "https://arxiv.org/abs/2607.13033",
+      "first_publication": "2026-07-14",
+      "last_revision": null,
+      "authors": [
+        "Yu Fang",
+        "Wanxi Dong",
+        "Jiaqi Liu",
+        "Yue Yang",
+        "Mingxiao Huo",
+        "Yao Mu",
+        "Huaxiu Yao",
+        "Li Erran Li",
+        "Daniel Szafir",
+        "Mingyu Ding"
+      ],
+      "organizations": [
+        "UNC Chapel Hill",
+        "Carnegie Mellon University",
+        "Shanghai Jiao Tong University",
+        "Amazon AWS AI"
+      ],
+      "discovered_via": [
+        "arxiv-batch-03"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.13033",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "Directly addresses robotic manipulation with real-world Franka arm experiments, RL policy learning on LIBERO, dense reward prediction for manipulation tasks."
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv HTML full-text accessible at https://arxiv.org/html/2607.13033 (HTTP 200, 285KB)."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "Introduces (1) automated failure data generation via phase decomposition and targeted perturbations, (2) dense frame-level reward prediction from VLM, unlike prior sparse trajectory-level models (RoboReward, Robometer)."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Table 1: MAE comparison vs 7 baselines across 4 data sources. Table 2: MPC evaluation. Fig.5: PPO RL on LIBERO (3 suites). Fig.6: Real-world DSRL on 2 tasks (stack cups: 40%→80%, put ball: 30%→70%). Ablations (Tables 3-4) on failure data and history frames."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Read sections 1 Introduction, 3 Method (3.1-3.3), 4 Experiments (4.1-4.5), 5 Conclusion from full-text HTML."
+        }
+      },
+      "scores": {
+        "relevance": 18,
+        "novelty": 15,
+        "evidence_quality": 16,
+        "potential_impact": 11,
+        "board_information_gain": 8,
+        "reproducibility": 6,
+        "timeliness": 5,
+        "total": 79
+      },
+      "decision": "include",
+      "selection_reason": "DenseReward addresses the critical gap of dense reward signals for robotic RL by synthesizing failure trajectories via phase-decomposed perturbations and training a VLM-based dense reward model. Compared to sparse trajectory-level reward models, it provides per-timestep progress feedback. Demonstrated effective in MPC and RL (PPO+π0 on LIBERO, DSRL+π0 on real-world Franka: 40%→80% and 30%→70%).",
+      "risks_or_uncertainties": [
+        "Single-run results without confidence intervals",
+        "Reward model may not generalize to novel manipulation tasks beyond training distribution",
+        "Project page (dense-reward.github.io) exists but HTTP 200 not verified; code release status pending"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "reinforcement-learning",
+        "foundation-model"
+      ],
+      "tasks": [
+        "manipulation"
+      ],
+      "platforms": [
+        "robot-arm"
+      ],
+      "modalities": [
+        "vision",
+        "language"
+      ],
+      "environments": [
+        "mixed"
+      ],
+      "assets": [],
+      "properties": [
+        "real-robot-evaluation"
+      ]
+    },
+    {
+      "id": "arxiv-2607.14635",
+      "title": "Action QFormer: Structured Representation Shaping under Action Supervision in Vision-Language-Action Models",
+      "paper_url": "https://arxiv.org/abs/2607.14635",
+      "first_publication": "2026-07-16",
+      "last_revision": null,
+      "authors": [
+        "Yufeng Ji",
+        "Wenhao Tang",
+        "Haoyi Niu",
+        "Koushil Sreenath",
+        "Yi Wu",
+        "Zhongyu Li"
+      ],
+      "organizations": [
+        "UC Berkeley",
+        "Tsinghua University"
+      ],
+      "discovered_via": [
+        "arxiv-batch-03"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.14635",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "Directly addresses VLA models for robot navigation with zero-shot sim-to-real experiments in real indoor scenes (Habitat ObjectNav → real-world)."
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv HTML full-text accessible at https://arxiv.org/html/2607.14635 (HTTP 200, 415KB)."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "Novel perspective: studies action supervision as a representation-shaping force rather than just a downstream objective. Proposes Action QFormer query-based action-facing interface that preserves language grounding while enabling action-compatible representations. Distinct from prior VLA work that treats action prediction as purely downstream."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Zero-shot sim-to-real navigation: 18.8%→56.3% success rate. Fixed-instruction action generation: 22.5%→75.5%. Mechanistic analysis (Sec.V): gradient routing experiments, attention stability analysis, token rewriting metrics (drift energy, active-dimension fraction)."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Read sections I Introduction, III Methodology, IV Experiments, V Mechanistic Analysis, VII Conclusion from full-text HTML."
+        }
+      },
+      "scores": {
+        "relevance": 16,
+        "novelty": 17,
+        "evidence_quality": 16,
+        "potential_impact": 10,
+        "board_information_gain": 8,
+        "reproducibility": 2,
+        "timeliness": 5,
+        "total": 74
+      },
+      "decision": "include",
+      "selection_reason": "Action QFormer studies how action supervision shapes inherited multimodal representations in VLA, proposing a query-based action-facing interface that preserves language-side processing and object grounding while enabling action-compatible representations. Demonstrates 3x improvement in zero-shot sim-to-real navigation (18.8%→56.3%) with extensive mechanistic analysis of representation stability and targeted adaptation.",
+      "risks_or_uncertainties": [
+        "Navigation-only evaluation (not manipulation)",
+        "Single-frame setting may not capture temporal dependencies",
+        "No code or project page URL found; reproducibility unclear",
+        "Limited to navigation domain; extension to manipulation untested"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "vla",
+        "representation-learning"
+      ],
+      "tasks": [
+        "navigation"
+      ],
+      "platforms": [
+        "mobile-robot"
+      ],
+      "modalities": [
+        "vision",
+        "language",
+        "action"
+      ],
+      "environments": [
+        "mixed"
+      ],
+      "assets": [],
+      "properties": [
+        "sim-to-real"
+      ]
+    },
+    {
+      "id": "arxiv-2607.14739",
+      "title": "FoMoVLA: Bridging Visual Foresight and Motion Guidance for Vision-Language-Action Models",
+      "paper_url": "https://arxiv.org/abs/2607.14739",
+      "first_publication": "2026-07-16",
+      "last_revision": null,
+      "authors": [
+        "Wei Li",
+        "Peijin Jia",
+        "Yuan Ma",
+        "Xuefeng Jiang",
+        "Titong Jiang",
+        "Sheng Sun",
+        "Yujian Li",
+        "Xin Wen",
+        "Han Hong",
+        "Zhikang Liu",
+        "Bailin Li",
+        "Kun Zhan"
+      ],
+      "organizations": [],
+      "discovered_via": [
+        "arxiv-batch-03"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.14739",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "Directly addresses VLA models for robotic manipulation on LIBERO (4 suites), RoboCasa GR-1 (24 tasks), and LIBERO-Plus (10k+ instances)."
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv HTML full-text accessible at https://arxiv.org/html/2607.14739 (HTTP 200, 327KB)."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "First to jointly learn future feature prediction and sparse 2D point tracking as auxiliary training-time supervision for VLA. Introduces Future-Conditioned Cross-Attention (FCCA) to couple foresight and motion guidance. Training-only, no inference overhead."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Main experiments (Sec.4.2) on LIBERO 4 suites and RoboCasa GR-1 vs strong baselines (GR00T-N1.5, π0, WorldVLA, DreamVLA, FlowVLA, etc.). Ablation (Sec.4.3) on future conditioning, sparse supervision design, auxiliary task coupling. Scalability across frameworks (Sec.4.4)."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Read sections 1 Introduction, 3 Method (3.1-3.5), 4 Experiments (4.1-4.5), 5 Conclusion from full-text HTML."
+        }
+      },
+      "scores": {
+        "relevance": 18,
+        "novelty": 15,
+        "evidence_quality": 17,
+        "potential_impact": 10,
+        "board_information_gain": 7,
+        "reproducibility": 3,
+        "timeliness": 5,
+        "total": 75
+      },
+      "decision": "include",
+      "selection_reason": "FoMoVLA augments VLA representations with explicit spatio-temporal supervision by jointly learning future feature prediction (where to go) and sparse 2D point tracking (how to get there), coupled via future-conditioned cross-attention. Training-only auxiliary losses add zero inference overhead. Strong results across LIBERO, RoboCasa, and LIBERO-Plus with thorough ablation studies.",
+      "risks_or_uncertainties": [
+        "Project page (liauto-research.github.io/FoMoVLA) exists but no verified code release",
+        "2D point tracking may not capture 3D geometry (acknowledged limitation)",
+        "Built on StarVLA-GR00T backbone; gains may be backbone-specific"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "vla",
+        "representation-learning"
+      ],
+      "tasks": [
+        "manipulation"
+      ],
+      "platforms": [
+        "robot-arm",
+        "humanoid"
+      ],
+      "modalities": [
+        "vision",
+        "language",
+        "action"
+      ],
+      "environments": [
+        "simulation"
+      ],
+      "assets": [],
+      "properties": [
+        "simulation-only"
+      ]
+    },
+    {
+      "id": "arxiv-2607.02503",
+      "title": "VT-WAM: Visual-Tactile World Action Model for Contact-Rich Manipulation",
+      "paper_url": "https://arxiv.org/abs/2607.02503",
+      "first_publication": "2026-07-02",
+      "last_revision": null,
+      "authors": [
+        "Shuai Tian",
+        "Yupeng Zheng",
+        "Yuhang Zheng",
+        "Songen Gu",
+        "Yujie Zang",
+        "Yuxing Qin",
+        "Weize Li",
+        "Haoran Li",
+        "Wenchao Ding",
+        "Dongbin Zhao"
+      ],
+      "organizations": [
+        "CASIA",
+        "UCAS",
+        "TARS Robotics",
+        "NUS",
+        "Fudan University"
+      ],
+      "discovered_via": [
+        "arxiv-batch-03"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.02503",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "Directly addresses contact-rich robotic manipulation on real-world xArm7 platform with Xense tactile sensors across 6 tasks."
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv HTML full-text accessible at https://arxiv.org/html/2607.02503 (HTTP 200, 197KB)."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "First World Action Model to jointly model tactile deformation dynamics alongside visual and action prediction. Introduces Asymmetric MoT Attention (visual anchor + temporal tactile) and contact-gated AVTAG hinge ranking loss. Extends WAM paradigm to tactile domain."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Table/Results: 71.67% avg success across 6 real-world tasks, +26.67% over Fast-WAM, +35.84% over OmniVTLA. Comparisons vs 6 baselines (DP+Tactile, RDP, π0.5, OmniVTLA, Fast-WAM). Ablation studies on tactile dynamics modeling and AVTAG. Visual-tactile prediction visualization (Fig.5)."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Read sections I Introduction, III Method (III-A to III-D), IV Experiments (IV-A to IV-D), V Conclusion from full-text HTML."
+        }
+      },
+      "scores": {
+        "relevance": 19,
+        "novelty": 17,
+        "evidence_quality": 16,
+        "potential_impact": 10,
+        "board_information_gain": 8,
+        "reproducibility": 3,
+        "timeliness": 4,
+        "total": 77
+      },
+      "decision": "include",
+      "selection_reason": "VT-WAM extends World Action Models to tactile domain by jointly learning future visual prediction, tactile deformation prediction, and action prediction in a unified flow matching framework. Asymmetric MoT Attention bridges visual anchor with temporal tactile dynamics; contact-gated AVTAG reduces visual-dominance bias. Achieves 71.67% on 6 real-world contact-rich tasks, +26.67% over Fast-WAM.",
+      "risks_or_uncertainties": [
+        "100 demos per task is limited data",
+        "Requires specialized Xense tactile sensors",
+        "Project page exists (vt-wam.github.io) but code not verified; HTTP verification timed out",
+        "Single real-world platform (xArm7) may limit generality claims"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "world-model",
+        "vla"
+      ],
+      "tasks": [
+        "manipulation"
+      ],
+      "platforms": [
+        "robot-arm"
+      ],
+      "modalities": [
+        "vision",
+        "tactile",
+        "proprioception",
+        "action"
+      ],
+      "environments": [
+        "real-world"
+      ],
+      "assets": [],
+      "properties": [
+        "real-robot-evaluation"
+      ]
+    },
+    {
+      "id": "arxiv-2607.02642",
+      "title": "GigaWorld-1: A Roadmap to Build World Models for Robot Policy Evaluation",
+      "paper_url": "https://arxiv.org/abs/2607.02642",
+      "first_publication": "2026-07-02",
+      "last_revision": null,
+      "authors": [
+        "GigaWorld Team",
+        "Angyuan Ma",
+        "Boyuan Wang",
+        "Bohan Li",
+        "Chaojun Ni",
+        "Guo Li",
+        "Guan Huang",
+        "Guosheng Zhao",
+        "Hao Li",
+        "Hengtao Li"
+      ],
+      "organizations": [
+        "GigaAI",
+        "Tsinghua University"
+      ],
+      "discovered_via": [
+        "arxiv-batch-03"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.02642",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "Directly addresses robot policy evaluation using world models; WMBench constructed from real-robot teleoperation data with diverse manipulation tasks."
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv HTML full-text accessible at https://arxiv.org/html/2607.02642 (HTTP 200, 481KB)."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "First systematic study of world models as robot policy evaluators. Introduces WMBench benchmark (7 video world models, 4 action encodings, 324k rollouts). Derives design recipe for GigaWorld-1 evaluator. Key insight: evaluator quality depends on preserving policy-relevant causality, not just video quality."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Sec.5: Multi-axis analysis of evaluator quality (metrics, pretraining data, model design). Sec.6: GigaWorld-1 recipe and final evaluation. 324k simulated policy rollouts paired with real robot executions. Large-scale community data enrichment (CVPR 2026 World Model Track dataset on HuggingFace)."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Read sections 1 Introduction, 4 WMBench, 5 What Matters, 6 GigaWorld-1 Design, 7 Discussion and Conclusion from full-text HTML."
+        }
+      },
+      "scores": {
+        "relevance": 17,
+        "novelty": 15,
+        "evidence_quality": 18,
+        "potential_impact": 13,
+        "board_information_gain": 9,
+        "reproducibility": 7,
+        "timeliness": 4,
+        "total": 83
+      },
+      "decision": "featured",
+      "selection_reason": "GigaWorld-1 presents the first systematic study of world models as robot policy evaluators, introducing WMBench (7 world models, 4 action encodings, 324k rollouts) and a design recipe for building reliable evaluator models. Key insight: evaluator quality requires preserving policy-relevant causality under iterative rollout, not just plausible video generation. Fills a critical infrastructure gap for scalable robot policy assessment.",
+      "risks_or_uncertainties": [
+        "GigaWorld-1 described as internal pipeline; public release scope unclear",
+        "World-model-based evaluation may not fully replace real-world rollouts for safety-critical tasks",
+        "HF dataset URL not HTTP-verified due to timeout; project page at open-gigaai.github.io/giga-world-1 exists"
+      ],
+      "suggested_sections": [
+        "infrastructure",
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "world-model",
+        "foundation-model"
+      ],
+      "tasks": [
+        "manipulation"
+      ],
+      "platforms": [
+        "platform-agnostic"
+      ],
+      "modalities": [
+        "vision",
+        "action"
+      ],
+      "environments": [
+        "mixed"
+      ],
+      "assets": [
+        "benchmark",
+        "dataset"
+      ],
+      "properties": [
+        "open-source",
+        "large-scale-data"
+      ]
+    },
+    {
+      "id": "arxiv-2607.03449",
+      "title": "HiMe: Hierarchical Embodied Memory for Long-Horizon Vision-Language-Action Control",
+      "paper_url": "https://arxiv.org/abs/2607.03449",
+      "first_publication": "2026-07-03",
+      "last_revision": null,
+      "authors": [
+        "Li Ji",
+        "Siyin Wang",
+        "Pengfang Qian",
+        "Xiaopeng Yu",
+        "Yihai Tian",
+        "Zhaoye Fei",
+        "Jingjing Gong",
+        "Xipeng Qiu"
+      ],
+      "organizations": [
+        "Fudan University",
+        "Shanghai Innovation Institute",
+        "East China Normal University"
+      ],
+      "discovered_via": [
+        "arxiv-batch-03"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.03449",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "Directly addresses VLA models for long-horizon robotic manipulation tasks (Object Search, Counting, Rearrangement) on real robot platform."
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv HTML full-text accessible at https://arxiv.org/html/2607.03449 (HTTP 200, 232KB)."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "Novel hierarchical memory framework (Executor-Sentry-Planner) that resolves frequency-competence paradox. Introduces dynamic knowledge system with cross-modal semantic schemas and active memory management (Add/Update/Delete operations). Decouples real-time execution from slow reasoning."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Sec.4: Main experiments on 3 custom long-horizon tasks (Object Search, Counting, Rearrangement) with 90% avg success rate. Sec.4.3-4.4: Analysis of Sentry mechanism and Planner memory management. Sec.5: Further analysis including memory representation type, dynamic management necessity, latency, and sentry behavior. Sec.9: Additional experiments on memory ablation, open-source planner, scalability, latency."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Read sections 1 Introduction, 3 Methods (3.1-3.4), 4 Experiments (4.1-4.4), 5 Further Analysis, 6 Conclusion from full-text HTML."
+        }
+      },
+      "scores": {
+        "relevance": 18,
+        "novelty": 16,
+        "evidence_quality": 13,
+        "potential_impact": 10,
+        "board_information_gain": 7,
+        "reproducibility": 6,
+        "timeliness": 4,
+        "total": 74
+      },
+      "decision": "include",
+      "selection_reason": "HiMe proposes a hierarchical embodied memory framework that decouples VLA control into Executor (high-frequency), Sentry (progress monitoring), and Planner (strategic reasoning) to resolve the frequency-competence paradox in long-horizon tasks. Introduces dynamic memory management (Add/Update/Delete) with cross-modal semantic schemas. Achieves 90% average success on custom long-horizon manipulation tasks.",
+      "risks_or_uncertainties": [
+        "Only 3 custom-designed tasks evaluated; no standardized benchmark comparison (e.g., CALVIN, RLBench)",
+        "Heavy reliance on VLM-based Planner incurs API costs and latency",
+        "GitHub repo (HappyWaterXP/HiMe) exists but not HTTP-verified",
+        "Long-horizon task design may not reflect real deployment complexity"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "vla",
+        "planning",
+        "foundation-model"
+      ],
+      "tasks": [
+        "manipulation"
+      ],
+      "platforms": [
+        "robot-arm"
+      ],
+      "modalities": [
+        "vision",
+        "language",
+        "action"
+      ],
+      "environments": [
+        "real-world"
+      ],
+      "assets": [],
+      "properties": [
+        "real-robot-evaluation"
+      ]
+    },
+    {
+      "id": "arxiv-2607.04652",
+      "title": "KAM-WM: Kinematic Affordance Maps from Latent World Models for Robot Manipulation",
+      "paper_url": "https://arxiv.org/abs/2607.04652",
+      "first_publication": "2026-07-06",
+      "last_revision": null,
+      "authors": [
+        "Xinyu Shao",
+        "Keru Zhou",
+        "Guowei Huang",
+        "Yajun Gao",
+        "Tongtong Cao",
+        "Xiu Li"
+      ],
+      "organizations": [],
+      "discovered_via": [
+        "arxiv-batch-03"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.04652",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "Directly addresses robot manipulation on LIBERO and RoboTwin 2.0 benchmarks with diffusion policy learning."
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv HTML full-text accessible at https://arxiv.org/html/2607.04652 (HTTP 200, 462KB)."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "Novel use of frozen Flow Matching video backbone's single-step latent velocity as Kinematic Affordance Map (KAM) for manipulation policy conditioning. Unlike prior work that generates future frames or fine-tunes video models, KAM-WM queries once with no rollout. Lightweight Perceiver compresses KAM into dynamic tokens."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Sec.4.2: LIBERO results (90.6% avg across 4 suites). Sec.4.3: RoboTwin 2.0 results (65.7% Easy, 22.4% Hard). Sec.4.4: Ablations on prior type (mask vs KAM), extraction timestep, low-data regime. Sec.4.5: Efficiency analysis (inference and parameter). Controlled comparison vs zero-order mask prior."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Read sections 1 Introduction, 3 KAM-WM Framework (3.1-3.4), 4 Experiments (4.1-4.5), 5 Limitations/Discussion/Conclusion from full-text HTML."
+        }
+      },
+      "scores": {
+        "relevance": 17,
+        "novelty": 14,
+        "evidence_quality": 14,
+        "potential_impact": 9,
+        "board_information_gain": 7,
+        "reproducibility": 2,
+        "timeliness": 4,
+        "total": 67
+      },
+      "decision": "include",
+      "selection_reason": "KAM-WM extracts a task-conditioned Kinematic Affordance Map from a frozen Flow Matching video backbone in a single forward pass (no future-frame rollout) and uses it to condition a diffusion policy. Achieves 90.6% avg on LIBERO and 65.7% on RoboTwin 2.0 Easy. Provides an efficient alternative to video-model fine-tuning for manipulation priors.",
+      "risks_or_uncertainties": [
+        "Simulation-only evaluation; no real-world validation (only qualitative sanity check)",
+        "Single-run success rates without confidence intervals",
+        "KAM extracted once per episode from first frame; goes stale under long horizons or scene changes",
+        "No code or project page URL found",
+        "KAM tied to Flow Matching parameterization; unclear if generalizable to other video model families"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "world-model",
+        "diffusion-policy",
+        "representation-learning"
+      ],
+      "tasks": [
+        "manipulation"
+      ],
+      "platforms": [
+        "robot-arm"
+      ],
+      "modalities": [
+        "vision",
+        "proprioception",
+        "action"
+      ],
+      "environments": [
+        "simulation"
+      ],
+      "assets": [],
+      "properties": [
+        "simulation-only"
+      ]
+    },
+    {
+      "id": "arxiv-2607.04880",
+      "title": "PRISM: Personalized Robotic Dataset Generation via Image-based Scene and Motion Synthesis",
+      "paper_url": "https://arxiv.org/abs/2607.04880",
+      "first_publication": "2026-07-06",
+      "last_revision": null,
+      "authors": [
+        "Dogyu Ko",
+        "Haneul Kim",
+        "Chanyoung Yeo",
+        "Dowoon Lee",
+        "Taeho Park",
+        "Hyoseok Hwang"
+      ],
+      "organizations": [],
+      "discovered_via": [
+        "arxiv-batch-03"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.04880",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "Directly addresses robotic dataset generation for manipulation policy learning. Evaluates on LIBERO, LIBERO-Plus, and real-world tasks with π0.5 and Diffusion Policy."
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv HTML full-text accessible at https://arxiv.org/html/2607.04880 (HTTP 200, 491KB)."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "End-to-end pipeline generating personalized robotic datasets from a single image + instruction. Key innovations: (1) digital cousin scenes (semantically/geometrically aligned but diverse at instance level), (2) motion-aware grasp selection for executable demos, (3) trajectory-preserving visual randomization. Unlike RoboTwin 2.0 (exact digital twins) and X-Sim (RL-based trajectory generation)."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Table 1: Sim-to-sim comparison (π0.5 and DP) vs RoboTwin 2.0 and X-Sim on LIBERO/LIBERO-Plus. Fig.4: Real-to-sim-to-real results. Sec.4.3-4.6: Ablations on digital cousin, motion-aware grasp, trajectory-preserving randomization, pipeline efficiency."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Read sections 1 Introduction, 3 Methodology (3.1-3.3), 4 Experiments (4.1-4.6), 5 Conclusion, 6 Limitations from full-text HTML."
+        }
+      },
+      "scores": {
+        "relevance": 17,
+        "novelty": 15,
+        "evidence_quality": 16,
+        "potential_impact": 10,
+        "board_information_gain": 7,
+        "reproducibility": 2,
+        "timeliness": 4,
+        "total": 71
+      },
+      "decision": "include",
+      "selection_reason": "PRISM generates personalized robotic datasets from a single environment image and natural-language instruction by constructing digital cousin scenes and synthesizing executable demonstrations via TAMP. Policies trained on PRISM datasets outperform those trained on RoboTwin 2.0 and X-Sim data on LIBERO and LIBERO-Plus, with successful real-to-sim-to-real transfer.",
+      "risks_or_uncertainties": [
+        "No code or project page URL found",
+        "Pipeline requires VLM-based reasoning at multiple stages; quality depends on VLM reliability",
+        "Digital cousin approach may not capture all physical properties (e.g., friction, mass) of real objects",
+        "Evaluated on tabletop pick-and-place; complex dexterous tasks untested"
+      ],
+      "suggested_sections": [
+        "data",
+        "simulators"
+      ],
+      "suggested_topics": [
+        "foundation-model",
+        "sim-to-real"
+      ],
+      "tasks": [
+        "manipulation"
+      ],
+      "platforms": [
+        "robot-arm"
+      ],
+      "modalities": [
+        "vision",
+        "language",
+        "depth"
+      ],
+      "environments": [
+        "mixed"
+      ],
+      "assets": [],
+      "properties": [
+        "real-robot-evaluation"
+      ]
+    },
+    {
+      "batch_index": 68,
+      "id": "arxiv-2607.05396",
+      "title": "From Fixed to Free Cameras: Calibration-Free View-Robust Vision-Language-Action Model",
+      "paper_url": "https://arxiv.org/abs/2607.05396",
+      "first_publication": "2026-07-06",
+      "last_revision": null,
+      "authors": [
+        "Wenhao Li",
+        "Xueying Jiang",
+        "Quanhao Qian",
+        "Deli Zhao",
+        "Shijian Lu",
+        "Gongjie Zhang",
+        "Ran Xu"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.05396v1",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.05396",
+        "fulltext_url": "https://arxiv.org/html/2607.05396v1",
+        "fulltext_accessed": true,
+        "sections_read": [
+          "Introduction (S1)",
+          "Methodology (S3)",
+          "Experiments (S4)",
+          "Conclusion and Limitations (S5)"
+        ],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "直接针对机器人VLA策略的相机视角鲁棒性问题，在仿真(RLBench)和真实机器人上验证操控任务。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.05396；官方HTML全文已读取。"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "首次将VLA策略解耦为相机中心动作生成与手眼矩阵回归，无需标定外参即可实现视角鲁棒性，区别于OC-VLA/AnyCamVLA等依赖已知相机外参的方法。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "第4节提供6个RLBench任务的零样本视角泛化实验，与π0、GR00T N1.7对比；第4.2节提供真实机器人实验；第4.3节提供消融实验。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已阅读全文相关章节：S1问题定义、S3方法(Camera-Centric Action Generation/Geometric Grounding/Deterministic Transformation)、S4实验(Table 1/2/3)、S5结论与局限。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "S3(S3.1-S3.4): 动作头预测相机系动作ΔA_c,t，几何头回归6-DoF手眼矩阵T_t，确定性变换合成基系动作。S4.1: 6个RLBench任务零样本视角泛化，CamVLA+π0平均51.4% vs π0 33.2%，CamVLA+GR00T N1.7平均36.8% vs GR00T N1.7 28.4% (Table 1)。S4.2: 真实机器人3任务视角扰动实验 (Table 2)。S4.3: 消融实验(Table 3)。",
+        "asset_checks": []
+      },
+      "scores": {
+        "relevance": 18,
+        "novelty": 16,
+        "evidence_quality": 15,
+        "potential_impact": 11,
+        "board_information_gain": 7,
+        "reproducibility": 4,
+        "timeliness": 5,
+        "total": 76
+      },
+      "decision": "include",
+      "selection_reason": "CamVLA在VLA视角鲁棒性上提出明确增量：将策略解耦为相机中心动作生成与手眼矩阵回归，消除了部署时需已知相机外参的假设。6个RLBench任务和真实机器人实验提供坚实证据，显著超越π0和GR00T N1.7。相较看板中已有的VLA工作(如batch-01的RoboSnap/AnyCamVLA相关方向)，新增信息是标定无关的自定位机制与确定性几何变换，而非依赖外参或视角合成。主要风险：资产未公开验证(项目页声明但未探测到HTTP 200仓库)；真实实验限于3任务且样本量有限。",
+      "risks_or_uncertainties": [
+        "项目页(alibaba-damo-academy.github.io/CamVLA/)声明开源但本轮未探测到可访问代码/权重仓库，复现分受限",
+        "真实机器人实验仅覆盖3个任务，未报告试验重复次数或统计显著性",
+        "仅考虑第三视角相机扰动，不涉及腕部相机扰动和多相机系统",
+        "极端视角变化和高精度任务下性能下降(S5明确讨论)"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "vla",
+        "manipulation"
+      ]
+    },
+    {
+      "batch_index": 69,
+      "id": "arxiv-2607.05869",
+      "title": "GraspIT: A Dataset Bridging the Sim-to-Real gap and back for Validated Grasping SE(3) Pose Generation",
+      "paper_url": "https://arxiv.org/abs/2607.05869",
+      "first_publication": "2026-07-07",
+      "last_revision": null,
+      "authors": [
+        "Paul Koch. Adem Karakurt",
+        "André Sers"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "abstract-and-metadata",
+      "fulltext_url": null,
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.05869",
+        "fulltext_url": null,
+        "fulltext_accessed": false,
+        "sections_read": [],
+        "accessed_at": "2026-07-23",
+        "fulltext_note": "arXiv官方HTML不可用(仅有PDF和TeX Source)；ar5iv回退返回arXiv摘要页重定向，无HTML正文。无法满足方法-实验-结论三部分阅读要求。"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "直接涉及机器人抓取数据集和物理验证的抓取质量评估，包含真实机器人场景。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.05869"
+        },
+        "incremental_contribution": {
+          "pass": false,
+          "evidence": "摘要声称提供四阶段物理滑移测试超越力闭合的质量评分，但无全文无法核验实验细节。"
+        },
+        "claim_support": {
+          "pass": false,
+          "evidence": "摘要提及~2.3M候选抓取、83%通过质量阈值、~316k标注帧集，但无全文无法核验实验设计、基线和统计。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": false,
+          "evidence": "arXiv无HTML版；ar5iv返回摘要页。无法读取方法、实验、结论章节。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "仅摘要: 在NVIDIA Isaac Sim中标注桌面场景，四阶段物理滑移测试产生连续质量评分，~2.3M候选中83%通过(≥0.50)，316k标注RGBD帧集(1035仿真+100真实场景)。",
+        "asset_checks": []
+      },
+      "scores": {
+        "relevance": 0,
+        "novelty": 0,
+        "evidence_quality": 0,
+        "potential_impact": 0,
+        "board_information_gain": 0,
+        "reproducibility": 0,
+        "timeliness": 0,
+        "total": 0
+      },
+      "decision": "defer",
+      "selection_reason": "暂缓：arXiv官方HTML不可用(仅有PDF和TeX Source)；ar5iv回退返回arXiv摘要页重定向。无法获取HTML正文，不满足正式推荐所需的'方法+实验+结论'三部分全文阅读规则。待HTML可用或PDF全文获取后重新评估。",
+      "risks_or_uncertainties": [
+        "无HTML全文，所有评估仅基于摘要元数据",
+        "摘要提及'Preprint, release soon'，可能后续有正式版本更新"
+      ],
+      "suggested_sections": [],
+      "suggested_topics": []
+    },
+    {
+      "batch_index": 70,
+      "id": "arxiv-2607.07287",
+      "title": "TouchWorld: A Predictive and Reactive Tactile Foundation Model for Dexterous Manipulation",
+      "paper_url": "https://arxiv.org/abs/2607.07287",
+      "first_publication": "2026-07-08",
+      "last_revision": "2026-07-09",
+      "revision_note": "v2（9 Jul 2026），技术内容不变",
+      "authors": [
+        "Jianyi Zhou",
+        "Feiyang Hong",
+        "Yunhao Li",
+        "Yicheng Zhao",
+        "Yongjue Cen",
+        "Zirui Liu",
+        "Jiakang Huang",
+        "Zirui Chen",
+        "Ruiyang Zhang",
+        "Weizhuo Zhu",
+        "Xuhua Song",
+        "Shuo Yang"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.07287v2",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.07287",
+        "fulltext_url": "https://arxiv.org/html/2607.07287v2",
+        "fulltext_accessed": true,
+        "sections_read": [
+          "Introduction (S1)",
+          "Method (S2)",
+          "Training (S3)",
+          "Experiments (S4)",
+          "Discussion and Limitations (S5)",
+          "Conclusion (S6)"
+        ],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "直接针对灵巧操控中的触觉预测与反馈修正，在真实机器人上完成6个接触丰富的长时程操控任务。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.07287；官方HTML全文已读取。"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "首个将触觉预测(世界模型)与触觉反馈修正统一为分层操控策略的工作，将语义规划、预测性子目标生成、名义动作生成和快速触觉修正分离到不同时间尺度。区别于已有的将触觉仅作为低频输入附加到单块模型的做法。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "第4节提供6个真实机器人任务+人类扰动变体的评估，与多个基线比较(TouchWorld 65.0% clean/53.7% perturbed，vs 最强基线+15.7pp/+18.5pp)；包含消融实验(Table 1/2/3)。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已阅读全文相关章节：S1问题定义/贡献、S2方法架构(High-Level Planning Layer/Visuo-Tactile Policy/Tactile Refinement)、S3四阶段训练、S4实验(Tables 1-3)、S5讨论与局限、S6结论。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "S2: 分层架构—Subt task Planner(Qwen3-VL-4B)产生可执行子任务，Tactile World Model(Wan2.2-TI2V-5B)预测视觉-触觉子目标，Visuo-Tactile Goal-Conditioned Policy生成名义动作块，Tactile-Conditioned Refinement Policy在线修正残差。S3: 四阶段训练(子任务规划器→触觉世界模型→目标条件策略→VLA-Refinement联合)。S4: 6真实机器人任务(Water Flower/Tabletop Clearing/Cup Insertion/Power Plug Insertion/Pot Wiping/Tissue Pulling)，clean平均65.0%，扰动53.7%，最强基线+15.7/18.5pp。S4.3消融验证各组件贡献。EgoTouch人类触觉数据预训练世界模型。",
+        "asset_checks": []
+      },
+      "scores": {
+        "relevance": 18,
+        "novelty": 17,
+        "evidence_quality": 15,
+        "potential_impact": 12,
+        "board_information_gain": 8,
+        "reproducibility": 5,
+        "timeliness": 5,
+        "total": 80
+      },
+      "decision": "featured",
+      "selection_reason": "TouchWorld在灵巧操控的触觉基础模型上提出范式级增量：首次将预测性触觉世界模型与反应性触觉修正统一为分层操控策略，显式分离语义规划、预测性子目标生成、名义动作生成和快速触觉修正四个时间尺度。6个真实机器人任务+人类扰动变体提供坚实证据(65.0%/53.7%，最强基线+15.7/18.5pp)，消融实验清晰定位各组件贡献。相较看板中的触觉工作(TactiDex batch-01、batch-02的SoftVTBench)，新增信息是预测性触觉子目标+在线修正的分层架构，以及人类触觉数据预训练的迁移策略。主要风险：资产未公开验证；任务限于6个，依赖特定传感器/手部形态；调度参数需手工设定。",
+      "risks_or_uncertainties": [
+        "代码/数据/权重仓库未探测到HTTP 200可访问资产",
+        "6个真实机器人任务覆盖面有限，未穷尽家居操控多样性(S5明确讨论)",
+        "触觉世界模型仅预测短时程子目标，长时程预测仍困难",
+        "系统与特定传感器布局和手部形态绑定，迁移需要校准和适配数据",
+        "调度超参数为固定配置，未自适应"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "tactile",
+        "dexterous-manipulation",
+        "vla",
+        "foundation-model"
+      ]
+    },
+    {
+      "batch_index": 71,
+      "id": "arxiv-2607.07430",
+      "title": "Immersive Social Interaction with VR and LLM-Assisted Humanoids",
+      "paper_url": "https://arxiv.org/abs/2607.07430",
+      "first_publication": "2026-07-08",
+      "last_revision": null,
+      "authors": [
+        "Niraj Pudasaini",
+        "Geeta Chandra Raju Bethala",
+        "Pranav Doma",
+        "Anthony Tzes",
+        "Yi Fang"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.07430v1",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.07430",
+        "fulltext_url": "https://arxiv.org/html/2607.07430v1",
+        "fulltext_accessed": true,
+        "sections_read": [
+          "Introduction (SI)",
+          "Methodology (SII)",
+          "Experiment Setup (SIII)",
+          "Results and Discussions (SIV)",
+          "Conclusion (SV)"
+        ],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "直接涉及人形机器人遥操作(Unitree H1+灵巧手)，包含操控和社交交互任务。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.07430；官方HTML全文已读取。"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "提出融合语音控制移动、VR操控和社交交互的人形机器人遥操作框架，并支持多模态数据采集。但方法主要为已有组件(Deepgram/GPT-4/VisionPro Teleop/Pinocchio IK/PD控制)的工程集成。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "SIII-SIV提供2个任务(取放瓶子和社交传递方块)的实验结果(Table I: 新手80%/70%，专家90%/80%)和与Human Plus/Human to Humanoid的功能对比(Table II)。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已阅读全文相关章节：SI引言、SII方法论(语音控制/遥操作/社交交互)、SIII实验设置、SIV结果与讨论、SV结论。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "SII-A: 语音移动控制(Deepgram STT→GPT-4解析→高层指令→预训练RL移动策略)；SII-B: 遥操作操控(Apple Vision Pro手腕手指跟踪→逆运动学→PD控制)；SII-C: 社交交互(ROS双向音频)。SIV: 2任务×2用户组(新手/专家)，取放瓶80%/90%，社交传递70%/80%成功率(Table I)。Table II功能对比。",
+        "asset_checks": []
+      },
+      "scores": {
+        "relevance": 14,
+        "novelty": 6,
+        "evidence_quality": 5,
+        "potential_impact": 5,
+        "board_information_gain": 6,
+        "reproducibility": 3,
+        "timeliness": 5,
+        "total": 44
+      },
+      "decision": "reject",
+      "selection_reason": "该工作在人形机器人遥操作上提出工程集成方案(VR+LLM语音控制+社交交互)，但方法主要为现有组件(Deepgram/GPT-4/VisionPro Teleop)的拼接，缺乏新的算法或机制贡献。实验仅覆盖2个任务，样本量小且为Workshop论文(IEEE-RAS Humanoids Workshop)，缺少正式统计分析和强基线比较。得分44但硬门槛通过；拒绝原因：证据质量不足(仅有2任务、无消融、无强基线、样本量小)、新颖性低(工程集成而非算法创新)。若后续扩展实验范围(更多任务/基线/用户研究)可重新评估。",
+      "risks_or_uncertainties": [
+        "Workshop论文，非完整期刊/会议录用版本",
+        "仅2个任务评估，样本量小(未报告具体试验次数)",
+        "方法为已有组件的工程集成，无新算法/模型贡献",
+        "GPT-4语音指令解析存在误解释风险(SII-A自报)",
+        "无消融实验验证各模块独立贡献",
+        "多模态数据采集能力声明但未在实验中验证其下游学习效果"
+      ],
+      "suggested_sections": [],
+      "suggested_topics": []
+    },
+    {
+      "batch_index": 72,
+      "id": "arxiv-2607.07459",
+      "title": "EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI",
+      "paper_url": "https://arxiv.org/abs/2607.07459",
+      "first_publication": "2026-07-08",
+      "last_revision": "2026-07-12",
+      "revision_note": "v2（12 Jul 2026），技术内容不变，仅演示修订",
+      "authors": [
+        "Xinjie Wang",
+        "Liu Liu",
+        "Taojun Ding",
+        "Andrew Choi",
+        "Chaodong Huang",
+        "Mengao Zhao",
+        "Ziang Li",
+        "Jackson Jiang",
+        "Chunlei Yu",
+        "Shengxiang Liu",
+        "Wei Xu",
+        "Zhizhong Su"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。项目页(hubizonrobotics.github.io/EmbodiedGen)和实验提及的Horizon Robotics暗示机构归属。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.07459v2",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.07459",
+        "fulltext_url": "https://arxiv.org/html/2607.07459v2",
+        "fulltext_accessed": true,
+        "sections_read": [
+          "Introduction (S1)",
+          "EmbodiedGen V2 Pipeline (S2)",
+          "Experiments (S3)",
+          "Related Work (S4)",
+          "Conclusion (S5)"
+        ],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "生成可直接用于策略训练、评估和sim-to-real迁移的仿真就绪3D世界，支持操控、导航、移动操控等具身任务。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.07459；官方HTML全文(v2)已读取。"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "V2相较V1从生成工具升级为完整的仿真世界引擎：统一的sim-ready表示、可插拔资产管线(TRELLIS/SAM3D/Hunyuan3D)、affordance自动标注、任务驱动世界生成、多房间大场景、跨仿真器导出(URDF/MJCF/USD)、有状态Vibe Coding编辑、以及闭环策略验证。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "S3.1: 200个资产消融实验(Table 2)，全管线96.5%人工接受率/98.6%碰撞成功率。S3.2: 83.3%任务世界直接可用。S3.3: RL训练仿真成功率9.7%→79.8%，真实机器人21.7%→75.0%(Table 4)。S3.4: 4K+跨仿真器资产集与affordance标注。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已阅读全文相关章节：S1问题定义/贡献列表、S2管线架构(Asset/Interaction/Scene/Vibe Coding)、S3实验(Table 2消融、Table 3场景生成、Table 4闭环RL)、S5结论。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "S2: 统一sim-ready表示，模块化资产管线(网格修复/凸分解/物理属性恢复/跨仿真器导出)，affordance自动标注(4K+资产)，任务驱动Scene Graph→空间约束+物理稳定性求解生成交互世界，多房间布局+可遍历连接，有状态Vibe Coding。S3.1: 200资产消融(Table 2)—全管线96.5%人工接受/98.6%碰撞成功/2.6min。S3.2: 83.3%任务驱动世界直接可用(Table 3)。S3.3: 在线RL—仿真9.7%→79.8%，sim-to-real 21.7%→75.0%(Table 4)。S3.4: 4K+资产集跨Mujoco/IsaacSim/SAPIEN格式。",
+        "asset_checks": []
+      },
+      "scores": {
+        "relevance": 18,
+        "novelty": 17,
+        "evidence_quality": 17,
+        "potential_impact": 14,
+        "board_information_gain": 9,
+        "reproducibility": 5,
+        "timeliness": 5,
+        "total": 85
+      },
+      "decision": "featured",
+      "selection_reason": "EmbodiedGen V2在仿真基础设施上提出系统级增量：从生成式3D内容工具升级为完整的sim-ready世界引擎，填补了从3D资产生成到策略训练环境之间的关键空白。实验证据全面：资产质量消融(96.5%/98.6%)、任务世界可用率(83.3%)、闭环RL验证(仿真9.7%→79.8%，sim-to-real 21.7%→75.0%)三项指标构成完整证据链。相较看板中的仿真器/场景生成工作(GPUSimBench batch-01、Image2Sim batch-01、RoboSnap batch-01、SPEAR batch-02)，新增信息是统一的sim-ready表示+affordance语义+可编辑世界状态+跨仿真器+闭环策略验证的端到端管线。主要风险：资产未公开验证(项目页声明但未探测到HTTP 200仓库)；大规模声明(4K+资产、多房间场景)需人工复核。",
+      "risks_or_uncertainties": [
+        "项目页(horizonrobotics.github.io/EmbodiedGen)声明开源但本轮未探测到可访问代码/资产仓库",
+        "4K+资产集、多房间场景生成的规模和真实性需人工复核下载、许可和可用性",
+        "S3.3 RL实验中具体任务和基线VLA架构细节需进一步确认",
+        "Vibe Coding编辑的边界和语义理解准确性未量化评估"
+      ],
+      "suggested_sections": [
+        "simulators",
+        "infrastructure",
+        "data"
+      ],
+      "suggested_topics": [
+        "sim2real",
+        "simulation",
+        "world-model",
+        "manipulation"
+      ]
+    },
+    {
+      "batch_index": 73,
+      "id": "arxiv-2607.11792",
+      "title": "Casting Everything to Online API Services? A Survey of Integrating Localized Speech Recognition Models in Robotic Systems",
+      "paper_url": "https://arxiv.org/abs/2607.11792",
+      "first_publication": "2026-07-13",
+      "last_revision": null,
+      "authors": [
+        "Sheng Li",
+        "Jing Li",
+        "Felix Schijve",
+        "Jun Hu",
+        "Emilia Barakova"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.11792v1",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.11792",
+        "fulltext_url": "https://arxiv.org/html/2607.11792v1",
+        "fulltext_accessed": true,
+        "sections_read": [
+          "Introduction (S1)",
+          "Method (S2)",
+          "ASR Technologies for Robotics (S3)",
+          "Robotic Platforms with Speech Interaction (S4)",
+          "Deployment Strategies (S5)",
+          "Discussion",
+          "Conclusion"
+        ],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "综述机器人系统中的语音识别集成，涵盖ROS、机器人平台和部署策略。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.11792；官方HTML全文已读取。"
+        },
+        "incremental_contribution": {
+          "pass": false,
+          "evidence": "作为叙述性综述(narrative survey)，无新实验、无提出新方法或模型、无系统性meta分析。按discovery-spec.md 4.4节和selection-rubric.md的特殊情况规则：Survey/position/tutorial without experiments → defer。"
+        },
+        "claim_support": {
+          "pass": false,
+          "evidence": "无原始实验证据。该综述采用叙述性方法，作者在S2和Discussion中明确承认缺乏系统性搜索策略和可复现性。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": false,
+          "evidence": "已读取全文，但所有章节均为文献综述，无方法/实验/结论三类核心研究章节中的实验部分。不满足正式推荐规则。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "S2: 叙述性综述方法，沿ASR模型族/部署策略/应用域三轴组织文献。S3: ASR技术综述(GMM-HMM/DNN-HMM/端到端/Whisper/OWSM/MMS等)。S4: 机器人平台(Pepper/Misty II/Temi/Astro等)。S5: 部署策略(板载/云端/混合)。Discussion: 无实验的综述局限（非系统性、可能过时等）。",
+        "asset_checks": []
+      },
+      "scores": {
+        "relevance": 0,
+        "novelty": 0,
+        "evidence_quality": 0,
+        "potential_impact": 0,
+        "board_information_gain": 0,
+        "reproducibility": 0,
+        "timeliness": 0,
+        "total": 0
+      },
+      "decision": "defer",
+      "selection_reason": "暂缓：该论文为叙述性综述，无作者原始实验、基线比较或方法论贡献。全文已读取，涵盖ASR技术、机器人平台和部署策略，但按discovery-spec.md 4.4节规则，Survey/position/tutorial without experiments → defer。若未来为survey类工作单独设立非实验评审量表，可重新评估。已收录于ICSR+ART 2026。",
+      "risks_or_uncertainties": [
+        "叙述性综述，非系统性，作者自承选择偏差和覆盖面限制",
+        "无原始实验证据，无法按标准评分量表的evidence_quality/reproducibility评分",
+        "已收录于学术会议(ICSR+ART 2026)但无实验贡献"
+      ],
+      "suggested_sections": [],
+      "suggested_topics": []
+    },
+    {
+      "batch_index": 74,
+      "id": "arxiv-2607.12356",
+      "title": "VistaVLA: Geometry- and Semantic-Aware 3D Gaussian-Grounded VLA for Robotic Manipulation",
+      "paper_url": "https://arxiv.org/abs/2607.12356",
+      "first_publication": "2026-07-14",
+      "last_revision": "2026-07-16",
+      "revision_note": "v2（16 Jul 2026），技术内容不变",
+      "authors": [
+        "Mohan Liu",
+        "Zhihao Gu",
+        "Xuanyu Chen",
+        "Haitian Zhang",
+        "Kaimin Mao",
+        "Yan Wu",
+        "Wei-Yun Yau",
+        "Lin Wang"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.12356v2",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.12356",
+        "fulltext_url": "https://arxiv.org/html/2607.12356v2",
+        "fulltext_accessed": true,
+        "sections_read": [
+          "Introduction (S1)",
+          "Related Works (S2)",
+          "Methods (S3)",
+          "Experiments (S4)",
+          "Conclusion, Limitation, and Future Work (S5)"
+        ],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "直接针对机器人VLA操控策略的3D空间认知能力，在真实机器人和仿真环境中验证操控任务。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.12356；官方HTML全文(v2)已读取。"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "首次将3D高斯语义场(geometry+semantics-aware Gaussian primitives)作为VLA策略的空间认知接口，并提出Merge-then-Query(MtQ)实现99% token压缩。区别于仅注入深度/点云的方法，提供多视图一致的语义-几何3D表示。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "S4.1: 7个真实世界操控任务，VistaVLA vs VLA-Adapter/VLA-Adapter+Depth/π0.5/SmolVLA，22.8%平均提升(Fig 4)。S4.1(Table 1): 空间扰动稳健性。S4.2: 仿真实验(SIMPLER)。S4.3: 消融实验。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已阅读全文相关章节：S1问题定义、S3方法(Stage I: 3D Gaussian-Grounded Cognitive Representation→Stage II: MtQ Compression→Policy Injection)、S4实验(Table 1/Fig 4/Tables 2-4)、S5结论与局限。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "S3.1: 两阶段高斯特征渲染—先用SigLIP2+DINOv2-Large构建压缩教师特征空间(2176→128维)，再通过RGB-D监督+特征蒸馏训练语义高斯场。S3.2: Merge-then-Query(MtQ)模块—先聚类合并空间相邻高斯原语，再用可学习查询交叉注意力提取紧凑场景token(99%压缩)。S4.1: 7真实任务(PlaceSponge/StackBoxes/StackBowls/PlacePlate/OrganizeSponge/ThrowTrash/Wand&Cup)，VistaVLA平均最佳(Fig 4)，VLA-Adapter+22.8%，Depth增强仅小幅改善。空间扰动测试(Table 1)。S4.2: SIMPLER仿真。S4.3: 消融验证GS认知表示和MtQ",
+        "asset_checks": []
+      },
+      "scores": {
+        "relevance": 18,
+        "novelty": 16,
+        "evidence_quality": 14,
+        "potential_impact": 11,
+        "board_information_gain": 7,
+        "reproducibility": 4,
+        "timeliness": 5,
+        "total": 75
+      },
+      "decision": "include",
+      "selection_reason": "VistaVLA在VLA空间认知上提出明确增量：将3D语义高斯场作为VLA策略的空间认知接口，并通过MtQ实现99% token压缩以高效注入策略。7个真实任务+空间扰动测试+仿真实验提供多维度证据，显著超越VLA-Adapter基线(22.8%)和通用VLA(π0.5)。相较看板中已有的3D增强VLA(如batch-02的See like a Robot/Robot-Centric Pointmaps和GeoVLA相关方向)，新增信息是语义高斯原语+MtQ压缩的多视图一致3D语义-几何表示，而非仅点云/深度注入。主要风险：资产未公开验证；表1结果依赖标定多视图相机；7个任务均为桌面操控。",
+      "risks_or_uncertainties": [
+        "代码/数据/权重仓库未探测到HTTP 200可访问资产",
+        "依赖标定多视图相机构建高斯场，无标定场景适用性未验证(S5明确讨论)",
+        "7个任务均为桌面操控，未覆盖更大工作空间或动态遮挡",
+        "与VLA-Adapter+Depth比较中，depth增强仅带来有限提升，但可能存在depth集成方式的优化空间",
+        "MtQ压缩的信息损失未在操控精度维度上充分量化"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "vla",
+        "manipulation",
+        "3d-representation"
+      ]
+    },
+    {
+      "batch_index": 75,
+      "id": "arxiv-2607.13818",
+      "title": "Learning Robust Execution in Robotic Manipulation with Agentic Reinforcement Learning",
+      "paper_url": "https://arxiv.org/abs/2607.13818",
+      "first_publication": "2026-07-15",
+      "last_revision": null,
+      "authors": [
+        "Xiaopeng Zhang",
+        "Yueyang Weng",
+        "Qi Liu",
+        "Yongjin Mu",
+        "Yanjie Li"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.13818v1",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.13818",
+        "fulltext_url": "https://arxiv.org/html/2607.13818v1",
+        "fulltext_accessed": true,
+        "sections_read": [
+          "Introduction (SI)",
+          "Related Work (SII)",
+          "Problem Statement (SIII)",
+          "Method (SIV)",
+          "Experiments (SV)",
+          "Conclusions (SVI)"
+        ],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "直接针对机器人操控的执行鲁棒性问题，在LIBERO基准上验证多种VLA和扩散策略的操控任务。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.13818；官方HTML全文(v1)已读取。"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "提出两个互补的运行时执行质量评估指标，以及将执行管理建模为agentic强化学习问题的新框架——高层agentic策略不生成控制命令，而是选择执行模式(Execute/Retry/Repair/Reset)来调控冻结的底层策略。区别于依赖VLM规划或重训练的方法。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "SV: LIBERO四子集(Spatial/Object/Goal/Long)标准+扰动设置。Table II: OpenVLA/π0/Diffusion Policy三种底层策略在标准设置下最高13.7%提升，扰动设置下最高39.2%提升。消融实验(Table III/V/VI)和分析(Fig 5-7)。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已阅读全文相关章节：SI问题定义、SIII问题陈述/执行质量指标定义、SIV Agentic MDP框架/模式设计/训练、SV实验(Table I-VI)、SVI结论与局限。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "SIII: 局部执行质量指标(进步/回归/停滞)与全局执行质量指标(基于历史窗口的归一化执行分数)。SIV: 执行模式空间{Execute, Retry, Repair, Reset}，Agentic MDP状态=执行历史+质量指标，PPO训练。SV(Table II): 标准设置—OpenVLA平均+12.4%(90.2/88.7/92.4/74.5)，π0平均+13.7%，Diffusion Policy平均+10.7%。扰动设置—OpenVLA +39.2%，π0 +19.7%。SVE: 消融验证各模式贡献(Table III)、执行质量指标重要性(Table V)、基于质量信号的模式选择策略(Table VI)。",
+        "asset_checks": []
+      },
+      "scores": {
+        "relevance": 17,
+        "novelty": 14,
+        "evidence_quality": 14,
+        "potential_impact": 10,
+        "board_information_gain": 7,
+        "reproducibility": 4,
+        "timeliness": 5,
+        "total": 71
+      },
+      "decision": "include",
+      "selection_reason": "该工作在机器人操控执行鲁棒性上提出明确增量：将执行管理建模为agentic RL问题，高层agentic策略通过选择执行模式调控冻结的底层策略，而非修改或重训策略本身。LIBERO四子集×三种底层策略(OpenVLA/π0/Diffusion Policy)的实验证据坚实，标准设置+13.7%、扰动设置+39.2%的增益一致且有消融支持。相较看板中已有的执行恢复/监控工作(如batch-01的Foresight Residual RL)，新增信息是模式化的agentic执行管理框架与双重执行质量指标的联合设计，且模型不可知(适配多种底层策略)。主要风险：仅仿真评估(LIBERO)，严重退化场景恢复能力有限(SVI明确讨论)；资产未公开验证。",
+      "risks_or_uncertainties": [
+        "代码/权重仓库未探测到HTTP 200可访问资产",
+        "仅LIBERO仿真评估，无真实机器人实验(SVI明确列为未来工作)",
+        "执行模式为预定义集合，无法处理模式外的新故障类型",
+        "严重执行退化和OOD场景恢复能力有限(SVI自报)",
+        "执行质量指标依赖专家演示参考轨迹，实际部署中可能不可得"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "vla",
+        "manipulation",
+        "reinforcement-learning"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.09818",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "TS-Mask VLA: 2D Temporal-Spatial Masking for Vision-Language-Action Model with Effective Bridging",
+  "title_zh": null,
+  "abstract": "Vision-language-action (VLA) models aim to understand natural-language instructions and visual observations, and to generate and execute corresponding actions as embodied agents. Recently, autoregressive token-based action generation has driven the development of many representative VLA models. However, this paradigm often reduces action generation to next-token prediction, thereby lacking explicit modeling of the spatiotemporal structure of action sequences and the disentanglement between vision-language representations and actions, which can limit performance in long-horizon and complex scenarios. In this paper, we propose TS-Mask VLA, a vision-language-action framework for robot manipulation. TS-Mask VLA is built upon two key designs: (1) a Discrete Diffusion Action Expert equipped with a Bridge Attention conditioning bridge, which enables multi-layer conditioning from the VLM and facilitates more accurate and stable action generation; and (2) a temporal-spatial 2D masking strategy for discrete action tokens that strengthens the model's understanding of cross-time dependencies and inter-dimensional coupling, leading to more structurally consistent action sequences. We conduct extensive experiments on simulation benchmarks and real-world tasks. On LIBERO, TS-Mask VLA achieves a 95.7 percent average success rate with only 0.5B parameters, outperforming significantly larger models. On CALVIN, it attains the best average sequence length of 4.19 and strong long-horizon performance. Comprehensive analyses and ablations further validate the effectiveness of our design.",
+  "paper_url": "https://arxiv.org/abs/2607.09818",
+  "pdf_url": "https://arxiv.org/pdf/2607.09818",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Shengzhuo Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Ronghao Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Chuanjie Lv",
+      "affiliations": []
+    },
+    {
+      "name": "Linpeng Peng",
+      "affiliations": []
+    },
+    {
+      "name": "Hang Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Jie Ren",
+      "affiliations": []
+    },
+    {
+      "name": "Jiajun Lv",
+      "affiliations": []
+    },
+    {
+      "name": "Yong Liu",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-10",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "diffusion-policy",
+      "behavior-cloning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 70,
+    "selection_reason": "用 discrete diffusion action expert、VLM多层 Bridge Attention 和时空二维 token masking 显式建模动作跨时/维耦合。 第III节给出量化动作token与2D masking；第IV节在 LIBERO 95.7%、CALVIN平均序列4.19，并含消融和实机实验；第V节总结。 相对 Diffusion Policy/π0，本工作把离散动作token的二维mask作为结构归纳偏置，信息增益中等。",
+    "candidate_run": "2026-07-backfill/batch-02",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "未发现代码/权重",
+      "强基准数字需核查模型/数据协议公平性"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.09818",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.09818"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.09818"
+    }
+  ],
+  "suggested_new_tags": []
+}

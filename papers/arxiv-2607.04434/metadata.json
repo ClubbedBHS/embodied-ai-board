@@ -1,0 +1,291 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.04434",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies",
+  "title_zh": null,
+  "abstract": "Generalist robot manipulation policies have advanced rapidly, yet existing benchmarks remain limited in systematically evaluating their capabilities. Many rely on simple, short-horizon, or skill-narrow tasks with limited capability coverage, and are often conducted only in simulation or only in the real world. Simulation enables scalable feedback but misses physical deployment challenges, while real-world evaluation is costly, time-consuming, and difficult to reproduce. We introduce RoboDojo, a unified sim-and-real benchmark for comprehensive evaluation of generalist robot manipulation policies. RoboDojo includes 42 simulation tasks and 18 real-world tasks covering diverse and complementary manipulation capabilities. The simulation benchmark evaluates five dimensions: generalization, memory, precision, long-horizon execution, and open-vocabulary instruction following, while the real-world benchmark exposes policies to challenging physical-world deployment conditions. RoboDojo supports scalable evaluation through heterogeneous parallel simulation in Isaac Sim and provides RoboDojo-RealEval, a reproducible real-world evaluation system with remote cloud access, standardized hardware, scene reset, evaluation protocol, and deployment interface. Together with XPolicyLab, policies can be integrated once and evaluated across simulation and real-world settings with minimal adaptation. We integrate 30 policies into XPolicyLab and evaluate them on RoboDojo, establishing a public leaderboard and systematic analysis of current policy performance. The website is available at http://robodojo-benchmark.com/.",
+  "paper_url": "https://arxiv.org/abs/2607.04434",
+  "pdf_url": "https://arxiv.org/pdf/2607.04434",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Tianxing Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Yue Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Zixuan Li",
+      "affiliations": []
+    },
+    {
+      "name": "Junyuan Tang",
+      "affiliations": []
+    },
+    {
+      "name": "Kailun Su",
+      "affiliations": []
+    },
+    {
+      "name": "Haoran Lu",
+      "affiliations": []
+    },
+    {
+      "name": "Weijie Wan",
+      "affiliations": []
+    },
+    {
+      "name": "Baijun Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Songling Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Haowen Yan",
+      "affiliations": []
+    },
+    {
+      "name": "Honghao Su",
+      "affiliations": []
+    },
+    {
+      "name": "Zhiyang Dou",
+      "affiliations": []
+    },
+    {
+      "name": "Kaixuan Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Dandan Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Yunze Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Yan Qin",
+      "affiliations": []
+    },
+    {
+      "name": "Qiwei Liang",
+      "affiliations": []
+    },
+    {
+      "name": "Qiwei Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Zijian Lin",
+      "affiliations": []
+    },
+    {
+      "name": "Wenwei Lin",
+      "affiliations": []
+    },
+    {
+      "name": "Yuran Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Minghua He",
+      "affiliations": []
+    },
+    {
+      "name": "Tianshu Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Ruihai Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Jingquan Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Kai-Chong Lei",
+      "affiliations": []
+    },
+    {
+      "name": "Haibao Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Yuanfeng Ji",
+      "affiliations": []
+    },
+    {
+      "name": "Weiyang Jin",
+      "affiliations": []
+    },
+    {
+      "name": "Guanyu Lin",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaofan Li",
+      "affiliations": []
+    },
+    {
+      "name": "Qi Xiong",
+      "affiliations": []
+    },
+    {
+      "name": "Renjing Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Zhongyu Li",
+      "affiliations": []
+    },
+    {
+      "name": "Wenhao Chai",
+      "affiliations": []
+    },
+    {
+      "name": "Enze Xie",
+      "affiliations": []
+    },
+    {
+      "name": "Ziwei Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Yao Mu",
+      "affiliations": []
+    },
+    {
+      "name": "Hao Dong",
+      "affiliations": []
+    },
+    {
+      "name": "Wojciech Matusik",
+      "affiliations": []
+    },
+    {
+      "name": "Mingyu Ding",
+      "affiliations": []
+    },
+    {
+      "name": "Wenbo Ding",
+      "affiliations": []
+    },
+    {
+      "name": "Ping Luo",
+      "affiliations": []
+    },
+    {
+      "name": "Masayoshi Tomizuka",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-05",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "infrastructure",
+      "simulators",
+      "data"
+    ],
+    "topics": [
+      "vla",
+      "imitation-learning",
+      "control"
+    ],
+    "tasks": [
+      "manipulation",
+      "generalist-control"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "language",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [
+      "benchmark"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "dataset",
+    "simulator",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 96,
+    "selection_reason": "这项工作在其问题上提出明确增量：把广覆盖 simulation feedback 与可远程复现实机评测真正接到同一 policy adapter/leaderboard。 任务、方法、效率与稳定性覆盖极广，且代码仓库当前可访问；仍需人工检查远程硬件服务可用性。 最近邻 KinDER 是物理推理 benchmark、Isaac Lab 是 simulator；RoboDojo新增 42+18 任务的 sim-real 统一 policy evaluation 与远程实机系统。",
+    "candidate_run": "2026-07-backfill/batch-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "大型作者团队自身集成的 30 个 policy 版本/配置公平性需抽查",
+      "远程实机服务长期可用性与排队成本未知"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.04434",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.04434"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.04434"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://github.com/RoboDojo-Benchmark/RoboDojo"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://github.com/XPolicyLab/XPolicyLab"
+    }
+  ],
+  "suggested_new_tags": []
+}

@@ -1,0 +1,3107 @@
+{
+  "run": {
+    "run_id": "2026-07-backfill-02",
+    "run_at": "2026-07-23",
+    "batch": "batch-02",
+    "candidate_input": "candidates/2026-07-backfill/candidate-pool.json",
+    "selection_rule": "pending-fulltext原顺序第26–50条（1-based）",
+    "sources_checked": [
+      "arXiv abstract HTML",
+      "arXiv official HTML",
+      "ar5iv fallback",
+      "paper-declared assets"
+    ],
+    "rubric_version": "0.1",
+    "calibration": "80+要求显著增量、充分实验和高信息增益；不因热门标题、规模声明或项目页加分。"
+  },
+  "candidates": [
+    {
+      "batch_index": 26,
+      "id": "arxiv-2607.03693",
+      "title": "CoRE-VLA: Towards Scalable and Robust Vision-Language-Action Modeling via Conditional Routing of Experts",
+      "paper_url": "https://arxiv.org/abs/2607.03693",
+      "first_publication": "2026-07-04",
+      "last_revision": null,
+      "authors": [
+        "Haozhe Zhang",
+        "Sixian Li",
+        "Yifei Zhang",
+        "Zezheng Huai",
+        "Hao Chen",
+        "Chunhua Shen",
+        "Jingjing Gong",
+        "Xipeng Qiu"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.03693",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.03693",
+        "fulltext_url": "https://arxiv.org/html/2607.03693",
+        "fulltext_accessed": true,
+        "sections_read": [
+          "Method/Approach",
+          "Experiments/Evaluation",
+          "Conclusion/Limitations"
+        ],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "用传感器可用性和任务意图条件化稀疏 experts，使同一 VLA 能利用辅助深度并在传感器缺失时降级。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.03693"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "用传感器可用性和任务意图条件化稀疏 experts，使同一 VLA 能利用辅助深度并在传感器缺失时降级。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "第3节给出 modality/intent routing 与 dropout；第4节覆盖 LIBERO、RoboCasa GR1 和双臂实机，并比较 dense ablation、预训练 VLA 和缺深度部署。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已阅读全文相关章节：第3节给出 modality/intent routing 与 dropout；第4节覆盖 LIBERO、RoboCasa GR1 和双臂实机，并比较 dense ablation、预训练 VLA 和缺深度部署。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "第3节给出 modality/intent routing 与 dropout；第4节覆盖 LIBERO、RoboCasa GR1 和双臂实机，并比较 dense ablation、预训练 VLA 和缺深度部署。",
+        "asset_checks": []
+      },
+      "scores": {
+        "relevance": 19,
+        "novelty": 15,
+        "evidence_quality": 16,
+        "potential_impact": 11,
+        "board_information_gain": 6,
+        "reproducibility": 3,
+        "timeliness": 4,
+        "total": 74
+      },
+      "score_evidence": {
+        "relevance": {
+          "score": 19,
+          "evidence": "用传感器可用性和任务意图条件化稀疏 experts，使同一 VLA 能利用辅助深度并在传感器缺失时降级。"
+        },
+        "novelty": {
+          "score": 15,
+          "evidence": "用传感器可用性和任务意图条件化稀疏 experts，使同一 VLA 能利用辅助深度并在传感器缺失时降级。"
+        },
+        "evidence_quality": {
+          "score": 16,
+          "evidence": "第3节给出 modality/intent routing 与 dropout；第4节覆盖 LIBERO、RoboCasa GR1 和双臂实机，并比较 dense ablation、预训练 VLA 和缺深度部署。"
+        },
+        "potential_impact": {
+          "score": 11,
+          "evidence": "用传感器可用性和任务意图条件化稀疏 experts，使同一 VLA 能利用辅助深度并在传感器缺失时降级。"
+        },
+        "board_information_gain": {
+          "score": 6,
+          "evidence": "相对 ReSteer 的多任务可控性，CoRE-VLA新增传感器缺失鲁棒性与 sparse conditional compute。"
+        },
+        "reproducibility": {
+          "score": 3,
+          "evidence": "无已确认可访问核心资产，仅按正文细节计分。"
+        },
+        "timeliness": {
+          "score": 4,
+          "evidence": "2026年7月首次公开。"
+        }
+      },
+      "decision": "include",
+      "selection_reason": "用传感器可用性和任务意图条件化稀疏 experts，使同一 VLA 能利用辅助深度并在传感器缺失时降级。 第3节给出 modality/intent routing 与 dropout；第4节覆盖 LIBERO、RoboCasa GR1 和双臂实机，并比较 dense ablation、预训练 VLA 和缺深度部署。 相对 ReSteer 的多任务可控性，CoRE-VLA新增传感器缺失鲁棒性与 sparse conditional compute。",
+      "risks_or_uncertainties": [
+        "实验只用 depth 代表异构辅助传感器",
+        "未发现作者代码/权重公开"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "vla",
+        "foundation-model",
+        "representation-learning"
+      ],
+      "nearest_board_comparison": "相对 ReSteer 的多任务可控性，CoRE-VLA新增传感器缺失鲁棒性与 sparse conditional compute。",
+      "sources": [
+        "https://arxiv.org/abs/2607.03693",
+        "https://arxiv.org/html/2607.03693"
+      ]
+    },
+    {
+      "batch_index": 27,
+      "id": "arxiv-2607.04234",
+      "title": "SoftVTBench: A Safety-Aware Visuo-Tactile Benchmark for Physically Constrained Robotic Manipulation of Deformable Objects",
+      "paper_url": "https://arxiv.org/abs/2607.04234",
+      "first_publication": "2026-07-05",
+      "last_revision": null,
+      "authors": [
+        "Bowen Jing",
+        "Mingxin Wang",
+        "Ruiyang Hao",
+        "Chenchen Ge",
+        "Hanwen Shen",
+        "Junjie He",
+        "Yang Cui",
+        "Yiming Hou",
+        "Weitao Zhou",
+        "Jiawei Wang",
+        "Minglei Li",
+        "Dandan Zhang",
+        "Ding Zhao",
+        "Houde Liu",
+        "Xiaofan Li",
+        "Si Liu",
+        "Ping Luo",
+        "Haibao Yu"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.04234",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.04234",
+        "fulltext_url": "https://arxiv.org/html/2607.04234",
+        "fulltext_accessed": true,
+        "sections_read": [
+          "Method/Approach",
+          "Experiments/Evaluation",
+          "Conclusion/Limitations"
+        ],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "把目标成功与物理安全分开，用隐藏 FEM 状态定义 drop 与对象特定峰值形变门槛。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.04234"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "把目标成功与物理安全分开，用隐藏 FEM 状态定义 drop 与对象特定峰值形变门槛。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "第3节定义四个 deformable/rigid×object/spatial 套件与 Goal/Safety Success；第4节显示触觉令 object-centric deformable Safety Success 从21.4%升至35.6%，并分析形变。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已阅读全文相关章节：第3节定义四个 deformable/rigid×object/spatial 套件与 Goal/Safety Success；第4节显示触觉令 object-centric deformable Safety Success 从21.4%升至35.6%，并分析形变。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "第3节定义四个 deformable/rigid×object/spatial 套件与 Goal/Safety Success；第4节显示触觉令 object-centric deformable Safety Success 从21.4%升至35.6%，并分析形变。",
+        "asset_checks": [
+          {
+            "url": "https://github.com/TuojingAI/SoftVTBench",
+            "kind": "benchmark",
+            "accessible": true,
+            "http_status": 200,
+            "note": "HTTP 200 on 2026-07-23"
+          }
+        ]
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 16,
+        "evidence_quality": 17,
+        "potential_impact": 12,
+        "board_information_gain": 9,
+        "reproducibility": 9,
+        "timeliness": 4,
+        "total": 87
+      },
+      "score_evidence": {
+        "relevance": {
+          "score": 20,
+          "evidence": "把目标成功与物理安全分开，用隐藏 FEM 状态定义 drop 与对象特定峰值形变门槛。"
+        },
+        "novelty": {
+          "score": 16,
+          "evidence": "把目标成功与物理安全分开，用隐藏 FEM 状态定义 drop 与对象特定峰值形变门槛。"
+        },
+        "evidence_quality": {
+          "score": 17,
+          "evidence": "第3节定义四个 deformable/rigid×object/spatial 套件与 Goal/Safety Success；第4节显示触觉令 object-centric deformable Safety Success 从21.4%升至35.6%，并分析形变。"
+        },
+        "potential_impact": {
+          "score": 12,
+          "evidence": "把目标成功与物理安全分开，用隐藏 FEM 状态定义 drop 与对象特定峰值形变门槛。"
+        },
+        "board_information_gain": {
+          "score": 9,
+          "evidence": "相对 KinDER 的物理推理评测，SoftVTBench补充持续接触安全、软体 FEM 和 visuo-tactile policy 评测。"
+        },
+        "reproducibility": {
+          "score": 9,
+          "evidence": "仅按HTTP 200资产与正文细节计分。"
+        },
+        "timeliness": {
+          "score": 4,
+          "evidence": "2026年7月首次公开。"
+        }
+      },
+      "decision": "featured",
+      "selection_reason": "把目标成功与物理安全分开，用隐藏 FEM 状态定义 drop 与对象特定峰值形变门槛。 第3节定义四个 deformable/rigid×object/spatial 套件与 Goal/Safety Success；第4节显示触觉令 object-centric deformable Safety Success 从21.4%升至35.6%，并分析形变。 相对 KinDER 的物理推理评测，SoftVTBench补充持续接触安全、软体 FEM 和 visuo-tactile policy 评测。",
+      "risks_or_uncertainties": [
+        "FEM 仿真安全阈值向真实软体物体迁移仍未验证"
+      ],
+      "suggested_sections": [
+        "simulators",
+        "infrastructure",
+        "data"
+      ],
+      "suggested_topics": [
+        "control",
+        "imitation-learning"
+      ],
+      "nearest_board_comparison": "相对 KinDER 的物理推理评测，SoftVTBench补充持续接触安全、软体 FEM 和 visuo-tactile policy 评测。",
+      "sources": [
+        "https://arxiv.org/abs/2607.04234",
+        "https://arxiv.org/html/2607.04234",
+        "https://github.com/TuojingAI/SoftVTBench"
+      ]
+    },
+    {
+      "batch_index": 28,
+      "id": "arxiv-2607.05390",
+      "title": "Deform360: A Massive Multi-view Visuotactile Dataset for Deformable World Models",
+      "paper_url": "https://arxiv.org/abs/2607.05390",
+      "first_publication": "2026-07-06",
+      "last_revision": null,
+      "authors": [
+        "Hongyu Li",
+        "Wanjia Fu",
+        "Xiaoyan Cong",
+        "Zekun Li",
+        "Binghao Huang",
+        "Hanxiao Jiang",
+        "Xintong He",
+        "Yiqing Liang",
+        "Rao Fu",
+        "Tao Lu",
+        "Srinath Sridhar",
+        "Kevin A. Smith",
+        "George Konidaris",
+        "Yunzhu Li"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.05390",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.05390",
+        "fulltext_url": "https://arxiv.org/html/2607.05390",
+        "fulltext_accessed": true,
+        "sections_read": [
+          "Method/Approach",
+          "Experiments/Evaluation",
+          "Conclusion/Limitations"
+        ],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "提供41视角+双手触觉的大规模真实软体动态数据，并在同一资源上系统比较2D video与3D particle world models。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.05390"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "提供41视角+双手触觉的大规模真实软体动态数据，并在同一资源上系统比较2D video与3D particle world models。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "第3–4节记录198物体、1,980序列、215+小时及 markerless 3D tracking；第5节核验重建/追踪、接触预测、world-model benchmark 和真实规划，随后单列局限。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已阅读全文相关章节：第3–4节记录198物体、1,980序列、215+小时及 markerless 3D tracking；第5节核验重建/追踪、接触预测、world-model benchmark 和真实规划，随后单列局限。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "第3–4节记录198物体、1,980序列、215+小时及 markerless 3D tracking；第5节核验重建/追踪、接触预测、world-model benchmark 和真实规划，随后单列局限。",
+        "asset_checks": []
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 18,
+        "evidence_quality": 18,
+        "potential_impact": 14,
+        "board_information_gain": 10,
+        "reproducibility": 5,
+        "timeliness": 4,
+        "total": 89
+      },
+      "score_evidence": {
+        "relevance": {
+          "score": 20,
+          "evidence": "提供41视角+双手触觉的大规模真实软体动态数据，并在同一资源上系统比较2D video与3D particle world models。"
+        },
+        "novelty": {
+          "score": 18,
+          "evidence": "提供41视角+双手触觉的大规模真实软体动态数据，并在同一资源上系统比较2D video与3D particle world models。"
+        },
+        "evidence_quality": {
+          "score": 18,
+          "evidence": "第3–4节记录198物体、1,980序列、215+小时及 markerless 3D tracking；第5节核验重建/追踪、接触预测、world-model benchmark 和真实规划，随后单列局限。"
+        },
+        "potential_impact": {
+          "score": 14,
+          "evidence": "提供41视角+双手触觉的大规模真实软体动态数据，并在同一资源上系统比较2D video与3D particle world models。"
+        },
+        "board_information_gain": {
+          "score": 10,
+          "evidence": "相对 EgoVerse/EgoScale 的人类视频，Deform360新增多视角触觉、显式3D软体动态和2D/3D world-model对照。"
+        },
+        "reproducibility": {
+          "score": 5,
+          "evidence": "无已确认可访问核心资产，仅按正文细节计分。"
+        },
+        "timeliness": {
+          "score": 4,
+          "evidence": "2026年7月首次公开。"
+        }
+      },
+      "decision": "featured",
+      "selection_reason": "提供41视角+双手触觉的大规模真实软体动态数据，并在同一资源上系统比较2D video与3D particle world models。 第3–4节记录198物体、1,980序列、215+小时及 markerless 3D tracking；第5节核验重建/追踪、接触预测、world-model benchmark 和真实规划，随后单列局限。 相对 EgoVerse/EgoScale 的人类视频，Deform360新增多视角触觉、显式3D软体动态和2D/3D world-model对照。",
+      "risks_or_uncertainties": [
+        "真实规划只是 preliminary demonstration",
+        "项目页本次未验证可访问，数据许可证需人工确认"
+      ],
+      "suggested_sections": [
+        "data",
+        "infrastructure"
+      ],
+      "suggested_topics": [
+        "world-model",
+        "representation-learning",
+        "planning"
+      ],
+      "nearest_board_comparison": "相对 EgoVerse/EgoScale 的人类视频，Deform360新增多视角触觉、显式3D软体动态和2D/3D world-model对照。",
+      "sources": [
+        "https://arxiv.org/abs/2607.05390",
+        "https://arxiv.org/html/2607.05390"
+      ]
+    },
+    {
+      "batch_index": 29,
+      "id": "arxiv-2607.06256",
+      "title": "Diagnosing Semantic Handoff Failures in Agent-Orchestrated Vision-Language-Action Skill Composition",
+      "paper_url": "https://arxiv.org/abs/2607.06256",
+      "first_publication": "2026-07-07",
+      "last_revision": null,
+      "authors": [
+        "Ke Rui",
+        "Yushen Zuo",
+        "Jiawei Wang",
+        "Haoran Jia",
+        "Jinming Ma",
+        "Weitao Zhou",
+        "Minglei Li"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.06256",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.06256",
+        "fulltext_url": "https://arxiv.org/html/2607.06256",
+        "fulltext_accessed": true,
+        "sections_read": [
+          "Method/Approach",
+          "Experiments/Evaluation",
+          "Conclusion/Limitations"
+        ],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "提出 semantic handoff 诊断，把单技能 competence 与 chained-state readiness 分离，并用 typed contracts/verify-replan traces 归因。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.06256"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "提出 semantic handoff 诊断，把单技能 competence 与 chained-state readiness 分离，并用 typed contracts/verify-replan traces 归因。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "第III节给出技能契约与 plan-act-verify-replan harness；第IV节在 BEHAVIOR-1K 比较干净边界快照与链式终态：单技能77–100%，组合仍频繁停滞；第V节列局限。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已阅读全文相关章节：第III节给出技能契约与 plan-act-verify-replan harness；第IV节在 BEHAVIOR-1K 比较干净边界快照与链式终态：单技能77–100%，组合仍频繁停滞；第V节列局限。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "第III节给出技能契约与 plan-act-verify-replan harness；第IV节在 BEHAVIOR-1K 比较干净边界快照与链式终态：单技能77–100%，组合仍频繁停滞；第V节列局限。",
+        "asset_checks": []
+      },
+      "scores": {
+        "relevance": 19,
+        "novelty": 16,
+        "evidence_quality": 16,
+        "potential_impact": 11,
+        "board_information_gain": 9,
+        "reproducibility": 3,
+        "timeliness": 4,
+        "total": 78
+      },
+      "score_evidence": {
+        "relevance": {
+          "score": 19,
+          "evidence": "提出 semantic handoff 诊断，把单技能 competence 与 chained-state readiness 分离，并用 typed contracts/verify-replan traces 归因。"
+        },
+        "novelty": {
+          "score": 16,
+          "evidence": "提出 semantic handoff 诊断，把单技能 competence 与 chained-state readiness 分离，并用 typed contracts/verify-replan traces 归因。"
+        },
+        "evidence_quality": {
+          "score": 16,
+          "evidence": "第III节给出技能契约与 plan-act-verify-replan harness；第IV节在 BEHAVIOR-1K 比较干净边界快照与链式终态：单技能77–100%，组合仍频繁停滞；第V节列局限。"
+        },
+        "potential_impact": {
+          "score": 11,
+          "evidence": "提出 semantic handoff 诊断，把单技能 competence 与 chained-state readiness 分离，并用 typed contracts/verify-replan traces 归因。"
+        },
+        "board_information_gain": {
+          "score": 9,
+          "evidence": "相对 LEAGUE 的技能组合学习，该工作聚焦现成 VLA 技能库在真实 chained-state distribution 的语义交接失效。"
+        },
+        "reproducibility": {
+          "score": 3,
+          "evidence": "无已确认可访问核心资产，仅按正文细节计分。"
+        },
+        "timeliness": {
+          "score": 4,
+          "evidence": "2026年7月首次公开。"
+        }
+      },
+      "decision": "include",
+      "selection_reason": "提出 semantic handoff 诊断，把单技能 competence 与 chained-state readiness 分离，并用 typed contracts/verify-replan traces 归因。 第III节给出技能契约与 plan-act-verify-replan harness；第IV节在 BEHAVIOR-1K 比较干净边界快照与链式终态：单技能77–100%，组合仍频繁停滞；第V节列局限。 相对 LEAGUE 的技能组合学习，该工作聚焦现成 VLA 技能库在真实 chained-state distribution 的语义交接失效。",
+      "risks_or_uncertainties": [
+        "完整长程成功接近零，当前贡献主要是诊断而非解决方案",
+        "依赖 VLM verifier 与人工复核"
+      ],
+      "suggested_sections": [
+        "algorithms",
+        "infrastructure"
+      ],
+      "suggested_topics": [
+        "vla",
+        "planning"
+      ],
+      "nearest_board_comparison": "相对 LEAGUE 的技能组合学习，该工作聚焦现成 VLA 技能库在真实 chained-state distribution 的语义交接失效。",
+      "sources": [
+        "https://arxiv.org/abs/2607.06256",
+        "https://arxiv.org/html/2607.06256"
+      ]
+    },
+    {
+      "batch_index": 30,
+      "id": "arxiv-2607.06464",
+      "title": "Hilti-Trimble-Oxford Dataset: 360 Visual-Inertial Benchmark with Floor Plan Priors for SLAM and Localization",
+      "paper_url": "https://arxiv.org/abs/2607.06464",
+      "first_publication": "2026-07-07",
+      "last_revision": null,
+      "authors": [
+        "Samuele Centanni",
+        "Yuhao Zhang",
+        "Yifu Tao",
+        "Julien Kindle",
+        "Frank Neuhaus",
+        "Tilman Koß",
+        "Aryaman Patel",
+        "Michael Helmberger",
+        "Emilia Szymańska",
+        "Torben Gräber",
+        "Maurice Fallon"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.06464",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.06464",
+        "fulltext_url": "https://arxiv.org/html/2607.06464",
+        "fulltext_accessed": true,
+        "sections_read": [
+          "Method/Approach",
+          "Experiments/Evaluation",
+          "Conclusion/Limitations"
+        ],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "提供跨8个月、7层施工现场的30条360 visual-inertial序列、LiDAR-inertial真值和 floor-plan localization challenge。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.06464"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "提供跨8个月、7层施工现场的30条360 visual-inertial序列、LiDAR-inertial真值和 floor-plan localization challenge。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "第III–V节详述标定、同步、真值优化与平面图对齐；第VI节报告62个SLAM队伍、22个定位队伍的公开 challenge 结果、指标与已知问题。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已阅读全文相关章节：第III–V节详述标定、同步、真值优化与平面图对齐；第VI节报告62个SLAM队伍、22个定位队伍的公开 challenge 结果、指标与已知问题。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "第III–V节详述标定、同步、真值优化与平面图对齐；第VI节报告62个SLAM队伍、22个定位队伍的公开 challenge 结果、指标与已知问题。",
+        "asset_checks": [
+          {
+            "url": "https://hilti-trimble-challenge.com/dataset-2026",
+            "kind": "dataset",
+            "accessible": true,
+            "http_status": 200,
+            "note": "HTTP 200 on 2026-07-23"
+          }
+        ]
+      },
+      "scores": {
+        "relevance": 16,
+        "novelty": 12,
+        "evidence_quality": 17,
+        "potential_impact": 10,
+        "board_information_gain": 9,
+        "reproducibility": 9,
+        "timeliness": 4,
+        "total": 77
+      },
+      "score_evidence": {
+        "relevance": {
+          "score": 16,
+          "evidence": "提供跨8个月、7层施工现场的30条360 visual-inertial序列、LiDAR-inertial真值和 floor-plan localization challenge。"
+        },
+        "novelty": {
+          "score": 12,
+          "evidence": "提供跨8个月、7层施工现场的30条360 visual-inertial序列、LiDAR-inertial真值和 floor-plan localization challenge。"
+        },
+        "evidence_quality": {
+          "score": 17,
+          "evidence": "第III–V节详述标定、同步、真值优化与平面图对齐；第VI节报告62个SLAM队伍、22个定位队伍的公开 challenge 结果、指标与已知问题。"
+        },
+        "potential_impact": {
+          "score": 10,
+          "evidence": "提供跨8个月、7层施工现场的30条360 visual-inertial序列、LiDAR-inertial真值和 floor-plan localization challenge。"
+        },
+        "board_information_gain": {
+          "score": 9,
+          "evidence": "当前看板缺少长期真实施工场景定位数据；与机器人学习主线关联较间接。"
+        },
+        "reproducibility": {
+          "score": 9,
+          "evidence": "仅按HTTP 200资产与正文细节计分。"
+        },
+        "timeliness": {
+          "score": 4,
+          "evidence": "2026年7月首次公开。"
+        }
+      },
+      "decision": "include",
+      "selection_reason": "提供跨8个月、7层施工现场的30条360 visual-inertial序列、LiDAR-inertial真值和 floor-plan localization challenge。 第III–V节详述标定、同步、真值优化与平面图对齐；第VI节报告62个SLAM队伍、22个定位队伍的公开 challenge 结果、指标与已知问题。 当前看板缺少长期真实施工场景定位数据；与机器人学习主线关联较间接。",
+      "risks_or_uncertainties": [
+        "偏 SLAM/施工监测，不是策略学习",
+        "场地数量有限"
+      ],
+      "suggested_sections": [
+        "data",
+        "infrastructure"
+      ],
+      "suggested_topics": [
+        "representation-learning"
+      ],
+      "nearest_board_comparison": "当前看板缺少长期真实施工场景定位数据；与机器人学习主线关联较间接。",
+      "sources": [
+        "https://arxiv.org/abs/2607.06464",
+        "https://arxiv.org/html/2607.06464",
+        "https://hilti-trimble-challenge.com/dataset-2026"
+      ]
+    },
+    {
+      "batch_index": 31,
+      "id": "arxiv-2607.09818",
+      "title": "TS-Mask VLA: 2D Temporal-Spatial Masking for Vision-Language-Action Model with Effective Bridging",
+      "paper_url": "https://arxiv.org/abs/2607.09818",
+      "first_publication": "2026-07-10",
+      "last_revision": null,
+      "authors": [
+        "Shengzhuo Yang",
+        "Ronghao Yu",
+        "Chuanjie Lv",
+        "Linpeng Peng",
+        "Hang Yu",
+        "Jie Ren",
+        "Jiajun Lv",
+        "Yong Liu"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.09818",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.09818",
+        "fulltext_url": "https://arxiv.org/html/2607.09818",
+        "fulltext_accessed": true,
+        "sections_read": [
+          "Method/Approach",
+          "Experiments/Evaluation",
+          "Conclusion/Limitations"
+        ],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "用 discrete diffusion action expert、VLM多层 Bridge Attention 和时空二维 token masking 显式建模动作跨时/维耦合。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.09818"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "用 discrete diffusion action expert、VLM多层 Bridge Attention 和时空二维 token masking 显式建模动作跨时/维耦合。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "第III节给出量化动作token与2D masking；第IV节在 LIBERO 95.7%、CALVIN平均序列4.19，并含消融和实机实验；第V节总结。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已阅读全文相关章节：第III节给出量化动作token与2D masking；第IV节在 LIBERO 95.7%、CALVIN平均序列4.19，并含消融和实机实验；第V节总结。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "第III节给出量化动作token与2D masking；第IV节在 LIBERO 95.7%、CALVIN平均序列4.19，并含消融和实机实验；第V节总结。",
+        "asset_checks": []
+      },
+      "scores": {
+        "relevance": 19,
+        "novelty": 14,
+        "evidence_quality": 15,
+        "potential_impact": 10,
+        "board_information_gain": 5,
+        "reproducibility": 2,
+        "timeliness": 5,
+        "total": 70
+      },
+      "score_evidence": {
+        "relevance": {
+          "score": 19,
+          "evidence": "用 discrete diffusion action expert、VLM多层 Bridge Attention 和时空二维 token masking 显式建模动作跨时/维耦合。"
+        },
+        "novelty": {
+          "score": 14,
+          "evidence": "用 discrete diffusion action expert、VLM多层 Bridge Attention 和时空二维 token masking 显式建模动作跨时/维耦合。"
+        },
+        "evidence_quality": {
+          "score": 15,
+          "evidence": "第III节给出量化动作token与2D masking；第IV节在 LIBERO 95.7%、CALVIN平均序列4.19，并含消融和实机实验；第V节总结。"
+        },
+        "potential_impact": {
+          "score": 10,
+          "evidence": "用 discrete diffusion action expert、VLM多层 Bridge Attention 和时空二维 token masking 显式建模动作跨时/维耦合。"
+        },
+        "board_information_gain": {
+          "score": 5,
+          "evidence": "相对 Diffusion Policy/π0，本工作把离散动作token的二维mask作为结构归纳偏置，信息增益中等。"
+        },
+        "reproducibility": {
+          "score": 2,
+          "evidence": "无已确认可访问核心资产，仅按正文细节计分。"
+        },
+        "timeliness": {
+          "score": 5,
+          "evidence": "2026年7月首次公开。"
+        }
+      },
+      "decision": "include",
+      "selection_reason": "用 discrete diffusion action expert、VLM多层 Bridge Attention 和时空二维 token masking 显式建模动作跨时/维耦合。 第III节给出量化动作token与2D masking；第IV节在 LIBERO 95.7%、CALVIN平均序列4.19，并含消融和实机实验；第V节总结。 相对 Diffusion Policy/π0，本工作把离散动作token的二维mask作为结构归纳偏置，信息增益中等。",
+      "risks_or_uncertainties": [
+        "未发现代码/权重",
+        "强基准数字需核查模型/数据协议公平性"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "vla",
+        "diffusion-policy",
+        "behavior-cloning"
+      ],
+      "nearest_board_comparison": "相对 Diffusion Policy/π0，本工作把离散动作token的二维mask作为结构归纳偏置，信息增益中等。",
+      "sources": [
+        "https://arxiv.org/abs/2607.09818",
+        "https://arxiv.org/html/2607.09818"
+      ]
+    },
+    {
+      "batch_index": 32,
+      "id": "arxiv-2607.12287",
+      "title": "Reducing Temporal Redundancy for Efficient Vision-Language-Action Inference",
+      "paper_url": "https://arxiv.org/abs/2607.12287",
+      "first_publication": "2026-07-14",
+      "last_revision": null,
+      "authors": [
+        "Yuzhou Wu",
+        "Yuxin Zheng",
+        "Muchun Niu",
+        "Yishan Yang",
+        "Tianhao Liu",
+        "hanwen kang",
+        "Jiajian Jing",
+        "Linfeng Zhang",
+        "Chuan Wen"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.12287",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.12287",
+        "fulltext_url": "https://arxiv.org/html/2607.12287",
+        "fulltext_accessed": true,
+        "sections_read": [
+          "Method/Approach",
+          "Experiments/Evaluation",
+          "Conclusion/Limitations"
+        ],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "联合消除连续帧视觉重编码和 diffusion 多步采样两类时间冗余。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.12287"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "联合消除连续帧视觉重编码和 diffusion 多步采样两类时间冗余。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "第III节给出动态区域 token reuse 与2-step flow schedule；第IV节覆盖 LIBERO、RoboTwin、实机、效率和系统消融，报告2×以上加速与最高98%成功；第V节含局限。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已阅读全文相关章节：第III节给出动态区域 token reuse 与2-step flow schedule；第IV节覆盖 LIBERO、RoboTwin、实机、效率和系统消融，报告2×以上加速与最高98%成功；第V节含局限。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "第III节给出动态区域 token reuse 与2-step flow schedule；第IV节覆盖 LIBERO、RoboTwin、实机、效率和系统消融，报告2×以上加速与最高98%成功；第V节含局限。",
+        "asset_checks": []
+      },
+      "scores": {
+        "relevance": 19,
+        "novelty": 13,
+        "evidence_quality": 15,
+        "potential_impact": 10,
+        "board_information_gain": 7,
+        "reproducibility": 2,
+        "timeliness": 5,
+        "total": 71
+      },
+      "score_evidence": {
+        "relevance": {
+          "score": 19,
+          "evidence": "联合消除连续帧视觉重编码和 diffusion 多步采样两类时间冗余。"
+        },
+        "novelty": {
+          "score": 13,
+          "evidence": "联合消除连续帧视觉重编码和 diffusion 多步采样两类时间冗余。"
+        },
+        "evidence_quality": {
+          "score": 15,
+          "evidence": "第III节给出动态区域 token reuse 与2-step flow schedule；第IV节覆盖 LIBERO、RoboTwin、实机、效率和系统消融，报告2×以上加速与最高98%成功；第V节含局限。"
+        },
+        "potential_impact": {
+          "score": 10,
+          "evidence": "联合消除连续帧视觉重编码和 diffusion 多步采样两类时间冗余。"
+        },
+        "board_information_gain": {
+          "score": 7,
+          "evidence": "相对 Embodied.cpp 的通用runtime，本工作是模型级 temporal token reuse+flow step compression，覆盖更窄。"
+        },
+        "reproducibility": {
+          "score": 2,
+          "evidence": "无已确认可访问核心资产，仅按正文细节计分。"
+        },
+        "timeliness": {
+          "score": 5,
+          "evidence": "2026年7月首次公开。"
+        }
+      },
+      "decision": "include",
+      "selection_reason": "联合消除连续帧视觉重编码和 diffusion 多步采样两类时间冗余。 第III节给出动态区域 token reuse 与2-step flow schedule；第IV节覆盖 LIBERO、RoboTwin、实机、效率和系统消融，报告2×以上加速与最高98%成功；第V节含局限。 相对 Embodied.cpp 的通用runtime，本工作是模型级 temporal token reuse+flow step compression，覆盖更窄。",
+      "risks_or_uncertainties": [
+        "代码只承诺未来发布",
+        "token reuse 对快速遮挡/接触变化的失效范围需核验"
+      ],
+      "suggested_sections": [
+        "infrastructure",
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "vla",
+        "diffusion-policy"
+      ],
+      "nearest_board_comparison": "相对 Embodied.cpp 的通用runtime，本工作是模型级 temporal token reuse+flow step compression，覆盖更窄。",
+      "sources": [
+        "https://arxiv.org/abs/2607.12287",
+        "https://arxiv.org/html/2607.12287"
+      ]
+    },
+    {
+      "batch_index": 33,
+      "id": "arxiv-2607.12931",
+      "title": "ExToken: Structured Exploration for Efficient Vision-Language-Action Reinforcement Fine-tuning",
+      "paper_url": "https://arxiv.org/abs/2607.12931",
+      "first_publication": "2026-07-14",
+      "last_revision": null,
+      "authors": [
+        "Yilun Kong",
+        "Yunpeng Qing",
+        "Guozheng Ma",
+        "Haoyu Wang",
+        "Li Shen",
+        "Zhi Hou",
+        "Dacheng Tao"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.12931",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.12931",
+        "fulltext_url": "https://arxiv.org/html/2607.12931",
+        "fulltext_accessed": true,
+        "sections_read": [
+          "Method/Approach",
+          "Experiments/Evaluation",
+          "Conclusion/Limitations"
+        ],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "把离线示范聚类出的行为先验编码为 exploration token，提高 VLA-RL rollout 多样性，并学习部署时 token selector。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.12931"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "把离线示范聚类出的行为先验编码为 exploration token，提高 VLA-RL rollout 多样性，并学习部署时 token selector。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "第2节先诊断 trajectory diversity 比 rollout 数量更关键；第3节给出 token/selector；第4节含仿真、实机、受限交互预算和进一步分析。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已阅读全文相关章节：第2节先诊断 trajectory diversity 比 rollout 数量更关键；第3节给出 token/selector；第4节含仿真、实机、受限交互预算和进一步分析。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "第2节先诊断 trajectory diversity 比 rollout 数量更关键；第3节给出 token/selector；第4节含仿真、实机、受限交互预算和进一步分析。",
+        "asset_checks": []
+      },
+      "scores": {
+        "relevance": 19,
+        "novelty": 15,
+        "evidence_quality": 15,
+        "potential_impact": 11,
+        "board_information_gain": 7,
+        "reproducibility": 3,
+        "timeliness": 4,
+        "total": 74
+      },
+      "score_evidence": {
+        "relevance": {
+          "score": 19,
+          "evidence": "把离线示范聚类出的行为先验编码为 exploration token，提高 VLA-RL rollout 多样性，并学习部署时 token selector。"
+        },
+        "novelty": {
+          "score": 15,
+          "evidence": "把离线示范聚类出的行为先验编码为 exploration token，提高 VLA-RL rollout 多样性，并学习部署时 token selector。"
+        },
+        "evidence_quality": {
+          "score": 15,
+          "evidence": "第2节先诊断 trajectory diversity 比 rollout 数量更关键；第3节给出 token/selector；第4节含仿真、实机、受限交互预算和进一步分析。"
+        },
+        "potential_impact": {
+          "score": 11,
+          "evidence": "把离线示范聚类出的行为先验编码为 exploration token，提高 VLA-RL rollout 多样性，并学习部署时 token selector。"
+        },
+        "board_information_gain": {
+          "score": 7,
+          "evidence": "相对 π0.6 的经验学习，ExToken新增结构化探索先验而非改变 reward/model。"
+        },
+        "reproducibility": {
+          "score": 3,
+          "evidence": "无已确认可访问核心资产，仅按正文细节计分。"
+        },
+        "timeliness": {
+          "score": 4,
+          "evidence": "2026年7月首次公开。"
+        }
+      },
+      "decision": "include",
+      "selection_reason": "把离线示范聚类出的行为先验编码为 exploration token，提高 VLA-RL rollout 多样性，并学习部署时 token selector。 第2节先诊断 trajectory diversity 比 rollout 数量更关键；第3节给出 token/selector；第4节含仿真、实机、受限交互预算和进一步分析。 相对 π0.6 的经验学习，ExToken新增结构化探索先验而非改变 reward/model。",
+      "risks_or_uncertainties": [
+        "未发现作者代码",
+        "token 离散化质量依赖离线 demonstrations",
+        "跨更多 VLA/RL 算法泛化未知"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "vla",
+        "reinforcement-learning"
+      ],
+      "nearest_board_comparison": "相对 π0.6 的经验学习，ExToken新增结构化探索先验而非改变 reward/model。",
+      "sources": [
+        "https://arxiv.org/abs/2607.12931",
+        "https://arxiv.org/html/2607.12931"
+      ]
+    },
+    {
+      "batch_index": 34,
+      "id": "arxiv-2607.15330",
+      "title": "Xiaomi-Robotics-1: Scaling Vision-Language-Action Models with over 100K Hours of Real-World Trajectories",
+      "paper_url": "https://arxiv.org/abs/2607.15330",
+      "first_publication": "2026-07-16",
+      "last_revision": null,
+      "authors": [
+        "Xiaomi Robotics Team",
+        "Jun Guo",
+        "Piaopiao Jin",
+        "Jason Li",
+        "Peiyan Li",
+        "Yingyan Li",
+        "Futeng Liu",
+        "Wanli Peng",
+        "Optimus Qin",
+        "Yifei Su",
+        "Nan Sun",
+        "Qiao Sun",
+        "Runze Suo",
+        "Heyun Wang",
+        "Yunhong Wang",
+        "Rujie Wu",
+        "Caoyu Xia",
+        "Lina Zhang",
+        "Jack Zhao",
+        "Guoliang Chen",
+        "Wenlong Chen",
+        "Xinze He",
+        "Bin Li",
+        "Qing Li",
+        "Zhuorong Li",
+        "Heng Qu",
+        "Wenxuan Song",
+        "Diyun Xiang",
+        "Yifan Xie",
+        "Peiran Xu",
+        "Hangjun Ye",
+        "Wen Ye",
+        "Han Zhao",
+        "Quanyun Zhou"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.15330",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.15330",
+        "fulltext_url": "https://arxiv.org/html/2607.15330",
+        "fulltext_accessed": true,
+        "sections_read": [
+          "Method/Approach",
+          "Experiments/Evaluation",
+          "Conclusion/Limitations"
+        ],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "用自动语言标注扩展到100K+小时真实 UMI 轨迹，并系统研究数据/模型 scaling 到移动操控和下游适配。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.15330"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "用自动语言标注扩展到100K+小时真实 UMI 轨迹，并系统研究数据/模型 scaling 到移动操控和下游适配。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "第2节描述两阶段训练和自动 state-transition caption；第3节含数据/模型 scaling、未见环境实机、下游微调和仿真，RoboCasa365 57.6% vs 46.6%，RoboDojo 20.07 vs 13.07。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已阅读全文相关章节：第2节描述两阶段训练和自动 state-transition caption；第3节含数据/模型 scaling、未见环境实机、下游微调和仿真，RoboCasa365 57.6% vs 46.6%，RoboDojo 20.07 vs 13.07。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "第2节描述两阶段训练和自动 state-transition caption；第3节含数据/模型 scaling、未见环境实机、下游微调和仿真，RoboCasa365 57.6% vs 46.6%，RoboDojo 20.07 vs 13.07。",
+        "asset_checks": []
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 15,
+        "evidence_quality": 16,
+        "potential_impact": 13,
+        "board_information_gain": 7,
+        "reproducibility": 1,
+        "timeliness": 5,
+        "total": 77
+      },
+      "score_evidence": {
+        "relevance": {
+          "score": 20,
+          "evidence": "用自动语言标注扩展到100K+小时真实 UMI 轨迹，并系统研究数据/模型 scaling 到移动操控和下游适配。"
+        },
+        "novelty": {
+          "score": 15,
+          "evidence": "用自动语言标注扩展到100K+小时真实 UMI 轨迹，并系统研究数据/模型 scaling 到移动操控和下游适配。"
+        },
+        "evidence_quality": {
+          "score": 16,
+          "evidence": "第2节描述两阶段训练和自动 state-transition caption；第3节含数据/模型 scaling、未见环境实机、下游微调和仿真，RoboCasa365 57.6% vs 46.6%，RoboDojo 20.07 vs 13.07。"
+        },
+        "potential_impact": {
+          "score": 13,
+          "evidence": "用自动语言标注扩展到100K+小时真实 UMI 轨迹，并系统研究数据/模型 scaling 到移动操控和下游适配。"
+        },
+        "board_information_gain": {
+          "score": 7,
+          "evidence": "相对 π0.5 与 Open-AoE，新增100K小时规模和移动操控，但数据/资产封闭显著限制复核。"
+        },
+        "reproducibility": {
+          "score": 1,
+          "evidence": "无已确认可访问核心资产，仅按正文细节计分。"
+        },
+        "timeliness": {
+          "score": 5,
+          "evidence": "2026年7月首次公开。"
+        }
+      },
+      "decision": "include",
+      "selection_reason": "用自动语言标注扩展到100K+小时真实 UMI 轨迹，并系统研究数据/模型 scaling 到移动操控和下游适配。 第2节描述两阶段训练和自动 state-transition caption；第3节含数据/模型 scaling、未见环境实机、下游微调和仿真，RoboCasa365 57.6% vs 46.6%，RoboDojo 20.07 vs 13.07。 相对 π0.5 与 Open-AoE，新增100K小时规模和移动操控，但数据/资产封闭显著限制复核。",
+      "risks_or_uncertainties": [
+        "代码和checkpoint尚未发布",
+        "100K小时私有数据不可审计",
+        "真实评测协议与失败统计需重点人工复核"
+      ],
+      "suggested_sections": [
+        "algorithms",
+        "data"
+      ],
+      "suggested_topics": [
+        "vla",
+        "foundation-model",
+        "behavior-cloning"
+      ],
+      "nearest_board_comparison": "相对 π0.5 与 Open-AoE，新增100K小时规模和移动操控，但数据/资产封闭显著限制复核。",
+      "sources": [
+        "https://arxiv.org/abs/2607.15330",
+        "https://arxiv.org/html/2607.15330"
+      ]
+    },
+    {
+      "batch_index": 35,
+      "id": "arxiv-2607.15641",
+      "title": "IMBench: A Benchmark for Intuitive Robotic Manipulation",
+      "paper_url": "https://arxiv.org/abs/2607.15641",
+      "first_publication": "2026-07-17",
+      "last_revision": null,
+      "authors": [
+        "Anurag Maurya",
+        "Sukhvansh Jain",
+        "Prajwal Avhad",
+        "Gautham Balachandran",
+        "Ziyi Zhou",
+        "Atharva Kshirsagar",
+        "Satyam Singh",
+        "Bowen Li. Rishabh Mukund",
+        "Ritul Singh",
+        "Jatin Vira",
+        "Suvonil Chatterjee",
+        "Devesh K. Jha"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "abstract-and-metadata",
+      "fulltext_url": "https://arxiv.org/html/2607.15641",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.15641",
+        "fulltext_url": "https://arxiv.org/html/2607.15641",
+        "fulltext_accessed": false,
+        "sections_read": [],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "提出35任务、14K轨迹的 intuitive manipulation benchmark，联合物理推理与执行。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.15641"
+        },
+        "incremental_contribution": {
+          "pass": false,
+          "evidence": "提出35任务、14K轨迹的 intuitive manipulation benchmark，联合物理推理与执行。"
+        },
+        "claim_support": {
+          "pass": false,
+          "evidence": "arXiv摘要可读，但官方HTML返回404、ar5iv回退只得到摘要页，未能阅读全文方法/实验/局限。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": false,
+          "evidence": "arXiv摘要可读，但官方HTML返回404、ar5iv回退只得到摘要页，未能阅读全文方法/实验/局限。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "arXiv摘要可读，但官方HTML返回404、ar5iv回退只得到摘要页，未能阅读全文方法/实验/局限。",
+        "asset_checks": []
+      },
+      "scores": {
+        "relevance": 0,
+        "novelty": 0,
+        "evidence_quality": 0,
+        "potential_impact": 0,
+        "board_information_gain": 0,
+        "reproducibility": 0,
+        "timeliness": 0,
+        "total": 0
+      },
+      "score_evidence": {},
+      "decision": "defer",
+      "selection_reason": "暂缓：arXiv摘要可读，但官方HTML返回404、ar5iv回退只得到摘要页，未能阅读全文方法/实验/局限。",
+      "risks_or_uncertainties": [
+        "全文HTML当前不可访问",
+        "无法核验35任务生成、过滤、基线和统计"
+      ],
+      "suggested_sections": [
+        "data",
+        "infrastructure"
+      ],
+      "suggested_topics": [
+        "planning",
+        "foundation-model"
+      ],
+      "nearest_board_comparison": "相对 KinDER，IMBench声称更强调推理—动作闭环，但本轮无法全文核验。",
+      "sources": [
+        "https://arxiv.org/abs/2607.15641",
+        "https://arxiv.org/html/2607.15641"
+      ]
+    },
+    {
+      "batch_index": 36,
+      "id": "arxiv-2607.01378",
+      "title": "Neuro-Symbolic Safety Guidance for Vision-Language-Action Models via Constrained Flow Matching",
+      "paper_url": "https://arxiv.org/abs/2607.01378",
+      "first_publication": "2026-07-01",
+      "last_revision": null,
+      "authors": [
+        "William English",
+        "Hao Zheng",
+        "Rickard Ewetz"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.01378",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.01378",
+        "fulltext_url": "https://arxiv.org/html/2607.01378",
+        "fulltext_accessed": true,
+        "sections_read": [
+          "Method/Approach",
+          "Experiments/Evaluation",
+          "Conclusion/Limitations"
+        ],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "在 flow-matching VLA denoising 中解最小范数约束优化，把 CBF 从单步反应扩展到预测动作轨迹。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.01378"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "在 flow-matching VLA denoising 中解最小范数约束优化，把 CBF 从单步反应扩展到预测动作轨迹。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "第4节给出轨迹碰撞建模与CBF注入；第5节 SafeLIBERO 得到82.8%避碰、81.6%任务成功，比单步方法+6.3/+19.8点，并分析长程/困难案例；第6节总结。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已阅读全文相关章节：第4节给出轨迹碰撞建模与CBF注入；第5节 SafeLIBERO 得到82.8%避碰、81.6%任务成功，比单步方法+6.3/+19.8点，并分析长程/困难案例；第6节总结。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "第4节给出轨迹碰撞建模与CBF注入；第5节 SafeLIBERO 得到82.8%避碰、81.6%任务成功，比单步方法+6.3/+19.8点，并分析长程/困难案例；第6节总结。",
+        "asset_checks": []
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 16,
+        "evidence_quality": 16,
+        "potential_impact": 12,
+        "board_information_gain": 8,
+        "reproducibility": 3,
+        "timeliness": 4,
+        "total": 79
+      },
+      "score_evidence": {
+        "relevance": {
+          "score": 20,
+          "evidence": "在 flow-matching VLA denoising 中解最小范数约束优化，把 CBF 从单步反应扩展到预测动作轨迹。"
+        },
+        "novelty": {
+          "score": 16,
+          "evidence": "在 flow-matching VLA denoising 中解最小范数约束优化，把 CBF 从单步反应扩展到预测动作轨迹。"
+        },
+        "evidence_quality": {
+          "score": 16,
+          "evidence": "第4节给出轨迹碰撞建模与CBF注入；第5节 SafeLIBERO 得到82.8%避碰、81.6%任务成功，比单步方法+6.3/+19.8点，并分析长程/困难案例；第6节总结。"
+        },
+        "potential_impact": {
+          "score": 12,
+          "evidence": "在 flow-matching VLA denoising 中解最小范数约束优化，把 CBF 从单步反应扩展到预测动作轨迹。"
+        },
+        "board_information_gain": {
+          "score": 8,
+          "evidence": "当前看板缺少VLA安全；相对 ReSteer 的可控性，本工作直接约束生成轨迹的预测碰撞。"
+        },
+        "reproducibility": {
+          "score": 3,
+          "evidence": "无已确认可访问核心资产，仅按正文细节计分。"
+        },
+        "timeliness": {
+          "score": 4,
+          "evidence": "2026年7月首次公开。"
+        }
+      },
+      "decision": "include",
+      "selection_reason": "在 flow-matching VLA denoising 中解最小范数约束优化，把 CBF 从单步反应扩展到预测动作轨迹。 第4节给出轨迹碰撞建模与CBF注入；第5节 SafeLIBERO 得到82.8%避碰、81.6%任务成功，比单步方法+6.3/+19.8点，并分析长程/困难案例；第6节总结。 当前看板缺少VLA安全；相对 ReSteer 的可控性，本工作直接约束生成轨迹的预测碰撞。",
+      "risks_or_uncertainties": [
+        "仅仿真 SafeLIBERO",
+        "依赖环境几何/障碍模型",
+        "无核验代码"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "vla",
+        "control",
+        "planning"
+      ],
+      "nearest_board_comparison": "当前看板缺少VLA安全；相对 ReSteer 的可控性，本工作直接约束生成轨迹的预测碰撞。",
+      "sources": [
+        "https://arxiv.org/abs/2607.01378",
+        "https://arxiv.org/html/2607.01378"
+      ]
+    },
+    {
+      "batch_index": 37,
+      "id": "arxiv-2607.02332",
+      "title": "HEFT: Heavy-Payload Full-size Humanoid Teleoperation with Privileged Motion Guidance and Windowed Payload Curriculum",
+      "paper_url": "https://arxiv.org/abs/2607.02332",
+      "first_publication": "2026-07-02",
+      "last_revision": null,
+      "authors": [
+        "Chenxin Liu",
+        "Qingzhou Lu",
+        "Guangxiao Yang",
+        "Xuanyang Shi",
+        "Chenghan Yang",
+        "Yanjiang Guo",
+        "Jianyu Chen"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.02332",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.02332",
+        "fulltext_url": "https://arxiv.org/html/2607.02332",
+        "fulltext_accessed": true,
+        "sections_read": [
+          "Method/Approach",
+          "Experiments/Evaluation",
+          "Conclusion/Limitations"
+        ],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "针对全尺寸重载 humanoid，把 noisy VR reference 的 privileged motion guidance 与 windowed payload curriculum 联合训练。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.02332"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "针对全尺寸重载 humanoid，把 noisy VR reference 的 privileged motion guidance 与 windowed payload curriculum 联合训练。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "第3节给出PMG/WPC；第4节做模块对照、curriculum与L7实机，175cm/65kg机器人执行转向、前后行和深蹲，载荷最高24kg；第5–6节含结论局限。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已阅读全文相关章节：第3节给出PMG/WPC；第4节做模块对照、curriculum与L7实机，175cm/65kg机器人执行转向、前后行和深蹲，载荷最高24kg；第5–6节含结论局限。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "第3节给出PMG/WPC；第4节做模块对照、curriculum与L7实机，175cm/65kg机器人执行转向、前后行和深蹲，载荷最高24kg；第5–6节含结论局限。",
+        "asset_checks": []
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 16,
+        "evidence_quality": 15,
+        "potential_impact": 12,
+        "board_information_gain": 9,
+        "reproducibility": 3,
+        "timeliness": 4,
+        "total": 79
+      },
+      "score_evidence": {
+        "relevance": {
+          "score": 20,
+          "evidence": "针对全尺寸重载 humanoid，把 noisy VR reference 的 privileged motion guidance 与 windowed payload curriculum 联合训练。"
+        },
+        "novelty": {
+          "score": 16,
+          "evidence": "针对全尺寸重载 humanoid，把 noisy VR reference 的 privileged motion guidance 与 windowed payload curriculum 联合训练。"
+        },
+        "evidence_quality": {
+          "score": 15,
+          "evidence": "第3节给出PMG/WPC；第4节做模块对照、curriculum与L7实机，175cm/65kg机器人执行转向、前后行和深蹲，载荷最高24kg；第5–6节含结论局限。"
+        },
+        "potential_impact": {
+          "score": 12,
+          "evidence": "针对全尺寸重载 humanoid，把 noisy VR reference 的 privileged motion guidance 与 windowed payload curriculum 联合训练。"
+        },
+        "board_information_gain": {
+          "score": 9,
+          "evidence": "看板缺少重载全尺寸humanoid teleoperation；相对Human2Any，HEFT更聚焦VR噪声与payload curriculum。"
+        },
+        "reproducibility": {
+          "score": 3,
+          "evidence": "无已确认可访问核心资产，仅按正文细节计分。"
+        },
+        "timeliness": {
+          "score": 4,
+          "evidence": "2026年7月首次公开。"
+        }
+      },
+      "decision": "include",
+      "selection_reason": "针对全尺寸重载 humanoid，把 noisy VR reference 的 privileged motion guidance 与 windowed payload curriculum 联合训练。 第3节给出PMG/WPC；第4节做模块对照、curriculum与L7实机，175cm/65kg机器人执行转向、前后行和深蹲，载荷最高24kg；第5–6节含结论局限。 看板缺少重载全尺寸humanoid teleoperation；相对Human2Any，HEFT更聚焦VR噪声与payload curriculum。",
+      "risks_or_uncertainties": [
+        "任务主要是运动追踪而非复杂物体操作",
+        "单一机器人平台",
+        "未核验代码/策略权重"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "control",
+        "reinforcement-learning",
+        "sim-to-real"
+      ],
+      "nearest_board_comparison": "看板缺少重载全尺寸humanoid teleoperation；相对Human2Any，HEFT更聚焦VR噪声与payload curriculum。",
+      "sources": [
+        "https://arxiv.org/abs/2607.02332",
+        "https://arxiv.org/html/2607.02332"
+      ]
+    },
+    {
+      "batch_index": 38,
+      "id": "arxiv-2607.03182",
+      "title": "AnchorVLA: Bridging Discrete Decisions and Continuous Trajectories for Vision-Language-Action Planning",
+      "paper_url": "https://arxiv.org/abs/2607.03182",
+      "first_publication": "2026-07-03",
+      "last_revision": null,
+      "authors": [
+        "Qi Liu",
+        "Yabei Li",
+        "Hongsong Wang",
+        "Heng Zhang",
+        "Lei He"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.03182",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.03182",
+        "fulltext_url": "https://arxiv.org/html/2607.03182",
+        "fulltext_accessed": true,
+        "sections_read": [],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": false,
+          "evidence": "按发现规范，纯自动驾驶且无机器人迁移实验默认排除"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.03182"
+        },
+        "incremental_contribution": {
+          "pass": false,
+          "evidence": "用trajectory-pattern anchor衔接驾驶高层决策和连续 residual flow trajectory。"
+        },
+        "claim_support": {
+          "pass": false,
+          "evidence": "已读取第3节方法、第4节Bench2Drive实验和第5节讨论；核心任务、指标和验证均为自动驾驶。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": false,
+          "evidence": "已读取第3节方法、第4节Bench2Drive实验和第5节讨论；核心任务、指标和验证均为自动驾驶。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "已读取第3节方法、第4节Bench2Drive实验和第5节讨论；核心任务、指标和验证均为自动驾驶。",
+        "asset_checks": []
+      },
+      "scores": {
+        "relevance": 0,
+        "novelty": 0,
+        "evidence_quality": 0,
+        "potential_impact": 0,
+        "board_information_gain": 0,
+        "reproducibility": 0,
+        "timeliness": 0,
+        "total": 0
+      },
+      "score_evidence": {},
+      "decision": "reject",
+      "selection_reason": "拒绝：已读取第3节方法、第4节Bench2Drive实验和第5节讨论；核心任务、指标和验证均为自动驾驶。",
+      "risks_or_uncertainties": [
+        "按发现规范，纯自动驾驶且无机器人迁移实验默认排除"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "vla",
+        "planning",
+        "control"
+      ],
+      "nearest_board_comparison": "与当前通用具身/机器人看板范围不匹配。",
+      "sources": [
+        "https://arxiv.org/abs/2607.03182",
+        "https://arxiv.org/html/2607.03182"
+      ]
+    },
+    {
+      "batch_index": 39,
+      "id": "arxiv-2607.06558",
+      "title": "RynnWorld-Teleop: An Action-Conditioned World Model for Digital Teleoperation",
+      "paper_url": "https://arxiv.org/abs/2607.06558",
+      "first_publication": "2026-07-07",
+      "last_revision": null,
+      "authors": [
+        "Haoyu Zhao",
+        "Xingyue Zhao",
+        "Hangyu Li",
+        "Biao Gong",
+        "Kehan Li",
+        "Siteng Huang",
+        "Xin Li",
+        "Deli Zhao",
+        "Zhongyu Li"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.06558",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.06558",
+        "fulltext_url": "https://arxiv.org/html/2607.06558",
+        "fulltext_accessed": true,
+        "sections_read": [
+          "Method/Approach",
+          "Experiments/Evaluation",
+          "Conclusion/Limitations"
+        ],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "提出 digital teleoperation：操作员驱动 action-conditioned world model 生成可迁移的机器人中心视频/动作轨迹，解耦硬件采集。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.06558"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "提出 digital teleoperation：操作员驱动 action-conditioned world model 生成可迁移的机器人中心视频/动作轨迹，解耦硬件采集。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "第3–4节给出深度骨架条件、progressive cross-domain training、单步autoregressive distillation和数据引擎；第5节评测40+FPS、世界模型、消融、纯生成数据的zero-shot Sim2Real及混合数据增益。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已阅读全文相关章节：第3–4节给出深度骨架条件、progressive cross-domain training、单步autoregressive distillation和数据引擎；第5节评测40+FPS、世界模型、消融、纯生成数据的zero-shot Sim2Real及混合数据增益。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "第3–4节给出深度骨架条件、progressive cross-domain training、单步autoregressive distillation和数据引擎；第5节评测40+FPS、世界模型、消融、纯生成数据的zero-shot Sim2Real及混合数据增益。",
+        "asset_checks": [
+          {
+            "url": "https://github.com/alibaba-damo-academy/RynnWorld-Teleop",
+            "kind": "code",
+            "accessible": false,
+            "http_status": null,
+            "note": "本次探测失败或未验证，不作为正向复现证据"
+          },
+          {
+            "url": "https://huggingface.co/Alibaba-DAMO-Academy/RynnWorld-Teleop",
+            "kind": "model",
+            "accessible": false,
+            "http_status": null,
+            "note": "本次探测失败或未验证，不作为正向复现证据"
+          }
+        ]
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 18,
+        "evidence_quality": 17,
+        "potential_impact": 14,
+        "board_information_gain": 9,
+        "reproducibility": 4,
+        "timeliness": 4,
+        "total": 86
+      },
+      "score_evidence": {
+        "relevance": {
+          "score": 20,
+          "evidence": "提出 digital teleoperation：操作员驱动 action-conditioned world model 生成可迁移的机器人中心视频/动作轨迹，解耦硬件采集。"
+        },
+        "novelty": {
+          "score": 18,
+          "evidence": "提出 digital teleoperation：操作员驱动 action-conditioned world model 生成可迁移的机器人中心视频/动作轨迹，解耦硬件采集。"
+        },
+        "evidence_quality": {
+          "score": 17,
+          "evidence": "第3–4节给出深度骨架条件、progressive cross-domain training、单步autoregressive distillation和数据引擎；第5节评测40+FPS、世界模型、消融、纯生成数据的zero-shot Sim2Real及混合数据增益。"
+        },
+        "potential_impact": {
+          "score": 14,
+          "evidence": "提出 digital teleoperation：操作员驱动 action-conditioned world model 生成可迁移的机器人中心视频/动作轨迹，解耦硬件采集。"
+        },
+        "board_information_gain": {
+          "score": 9,
+          "evidence": "相对 SimFoundry/RoboSnap，RynnWorld-Teleop新增人在生成世界中实时遥操作并产出 embodiment-agnostic action labels。"
+        },
+        "reproducibility": {
+          "score": 4,
+          "evidence": "无已确认可访问核心资产，仅按正文细节计分。"
+        },
+        "timeliness": {
+          "score": 4,
+          "evidence": "2026年7月首次公开。"
+        }
+      },
+      "decision": "featured",
+      "selection_reason": "提出 digital teleoperation：操作员驱动 action-conditioned world model 生成可迁移的机器人中心视频/动作轨迹，解耦硬件采集。 第3–4节给出深度骨架条件、progressive cross-domain training、单步autoregressive distillation和数据引擎；第5节评测40+FPS、世界模型、消融、纯生成数据的zero-shot Sim2Real及混合数据增益。 相对 SimFoundry/RoboSnap，RynnWorld-Teleop新增人在生成世界中实时遥操作并产出 embodiment-agnostic action labels。",
+      "risks_or_uncertainties": [
+        "40+FPS依赖单张H100",
+        "项目/模型入口本次网络探测失败",
+        "生成偏差的安全性与长期闭环未充分验证"
+      ],
+      "suggested_sections": [
+        "algorithms",
+        "data",
+        "infrastructure"
+      ],
+      "suggested_topics": [
+        "world-model",
+        "imitation-learning",
+        "sim-to-real"
+      ],
+      "nearest_board_comparison": "相对 SimFoundry/RoboSnap，RynnWorld-Teleop新增人在生成世界中实时遥操作并产出 embodiment-agnostic action labels。",
+      "sources": [
+        "https://arxiv.org/abs/2607.06558",
+        "https://arxiv.org/html/2607.06558",
+        "https://github.com/alibaba-damo-academy/RynnWorld-Teleop",
+        "https://huggingface.co/Alibaba-DAMO-Academy/RynnWorld-Teleop"
+      ]
+    },
+    {
+      "batch_index": 40,
+      "id": "arxiv-2607.06701",
+      "title": "SPEAR: A Simulator for Photorealistic Embodied AI Research",
+      "paper_url": "https://arxiv.org/abs/2607.06701",
+      "first_publication": "2026-07-07",
+      "last_revision": null,
+      "authors": [
+        "Mike Roberts",
+        "Renhan Wang",
+        "Rushikesh Zawar",
+        "Rachith Dey-Prakash",
+        "Quentin Leboutet",
+        "Stephan R. Richter",
+        "Matthias Müller",
+        "German Ros",
+        "Rui Tang",
+        "Stefan Leutenegger",
+        "Yannick Hold-Geoffroy",
+        "Kalyan Sunkavalli",
+        "Vladlen Koltun"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.06701",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.06701",
+        "fulltext_url": "https://arxiv.org/html/2607.06701",
+        "fulltext_accessed": true,
+        "sections_read": [
+          "Method/Approach",
+          "Experiments/Evaluation",
+          "Conclusion/Limitations"
+        ],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "通过模块化UE插件让Python控制任意UE应用，暴露14K+函数、确定性单帧工作图和多种额外ground-truth通道。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.06701"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "通过模块化UE插件让Python控制任意UE应用，暴露14K+函数、确定性单帧工作图和多种额外ground-truth通道。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "第3–4节给出programming model/system architecture；第5节测1080p 73FPS并展示多agent、城市、PCG、多视图人脸、MuJoCo co-sim和自然语言编辑；第6节总结。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已阅读全文相关章节：第3–4节给出programming model/system architecture；第5节测1080p 73FPS并展示多agent、城市、PCG、多视图人脸、MuJoCo co-sim和自然语言编辑；第6节总结。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "第3–4节给出programming model/system architecture；第5节测1080p 73FPS并展示多agent、城市、PCG、多视图人脸、MuJoCo co-sim和自然语言编辑；第6节总结。",
+        "asset_checks": [
+          {
+            "url": "https://github.com/spear-sim/spear",
+            "kind": "code",
+            "accessible": false,
+            "http_status": null,
+            "note": "本次探测失败或未验证，不作为正向复现证据"
+          }
+        ]
+      },
+      "scores": {
+        "relevance": 18,
+        "novelty": 16,
+        "evidence_quality": 16,
+        "potential_impact": 12,
+        "board_information_gain": 9,
+        "reproducibility": 3,
+        "timeliness": 4,
+        "total": 78
+      },
+      "score_evidence": {
+        "relevance": {
+          "score": 18,
+          "evidence": "通过模块化UE插件让Python控制任意UE应用，暴露14K+函数、确定性单帧工作图和多种额外ground-truth通道。"
+        },
+        "novelty": {
+          "score": 16,
+          "evidence": "通过模块化UE插件让Python控制任意UE应用，暴露14K+函数、确定性单帧工作图和多种额外ground-truth通道。"
+        },
+        "evidence_quality": {
+          "score": 16,
+          "evidence": "第3–4节给出programming model/system architecture；第5节测1080p 73FPS并展示多agent、城市、PCG、多视图人脸、MuJoCo co-sim和自然语言编辑；第6节总结。"
+        },
+        "potential_impact": {
+          "score": 12,
+          "evidence": "通过模块化UE插件让Python控制任意UE应用，暴露14K+函数、确定性单帧工作图和多种额外ground-truth通道。"
+        },
+        "board_information_gain": {
+          "score": 9,
+          "evidence": "相对 Isaac Lab 的机器人学习/物理仿真，SPEAR主要补充任意UE应用的可编程photorealistic感知与co-simulation。"
+        },
+        "reproducibility": {
+          "score": 3,
+          "evidence": "无已确认可访问核心资产，仅按正文细节计分。"
+        },
+        "timeliness": {
+          "score": 4,
+          "evidence": "2026年7月首次公开。"
+        }
+      },
+      "decision": "include",
+      "selection_reason": "通过模块化UE插件让Python控制任意UE应用，暴露14K+函数、确定性单帧工作图和多种额外ground-truth通道。 第3–4节给出programming model/system architecture；第5节测1080p 73FPS并展示多agent、城市、PCG、多视图人脸、MuJoCo co-sim和自然语言编辑；第6节总结。 相对 Isaac Lab 的机器人学习/物理仿真，SPEAR主要补充任意UE应用的可编程photorealistic感知与co-simulation。",
+      "risks_or_uncertainties": [
+        "GitHub仓库本次探测失败，未计开放资产",
+        "示例广但缺统一下游policy benchmark",
+        "UE许可/版本兼容性需人工复核"
+      ],
+      "suggested_sections": [
+        "simulators",
+        "infrastructure"
+      ],
+      "suggested_topics": [
+        "representation-learning",
+        "control"
+      ],
+      "nearest_board_comparison": "相对 Isaac Lab 的机器人学习/物理仿真，SPEAR主要补充任意UE应用的可编程photorealistic感知与co-simulation。",
+      "sources": [
+        "https://arxiv.org/abs/2607.06701",
+        "https://arxiv.org/html/2607.06701",
+        "https://github.com/spear-sim/spear"
+      ]
+    },
+    {
+      "batch_index": 41,
+      "id": "arxiv-2607.08182",
+      "title": "LEEVLA: Seeing What Matters in Latent Environment Evolution for Vision-Language-Action",
+      "paper_url": "https://arxiv.org/abs/2607.08182",
+      "first_publication": "2026-07-09",
+      "last_revision": null,
+      "authors": [
+        "Qi Lyu",
+        "Baicheng Liu",
+        "Xudong Wang",
+        "Jiahua Dong",
+        "Lianqing Liu",
+        "Zhi Han"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "abstract-and-metadata",
+      "fulltext_url": "https://arxiv.org/html/2607.08182",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.08182",
+        "fulltext_url": "https://arxiv.org/html/2607.08182",
+        "fulltext_accessed": false,
+        "sections_read": [],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "用动态显著区域和结构化latent evolution训练VLA关注任务证据。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.08182"
+        },
+        "incremental_contribution": {
+          "pass": false,
+          "evidence": "用动态显著区域和结构化latent evolution训练VLA关注任务证据。"
+        },
+        "claim_support": {
+          "pass": false,
+          "evidence": "官方HTML返回404，ar5iv仅返回摘要页；无法读取方法、实验和结论全文。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": false,
+          "evidence": "官方HTML返回404，ar5iv仅返回摘要页；无法读取方法、实验和结论全文。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "官方HTML返回404，ar5iv仅返回摘要页；无法读取方法、实验和结论全文。",
+        "asset_checks": [
+          {
+            "url": "https://github.com/LyuQi127/LEEVLA",
+            "kind": "code",
+            "accessible": false,
+            "http_status": null,
+            "note": "本次探测失败或未验证，不作为正向复现证据"
+          }
+        ]
+      },
+      "scores": {
+        "relevance": 0,
+        "novelty": 0,
+        "evidence_quality": 0,
+        "potential_impact": 0,
+        "board_information_gain": 0,
+        "reproducibility": 0,
+        "timeliness": 0,
+        "total": 0
+      },
+      "score_evidence": {},
+      "decision": "defer",
+      "selection_reason": "暂缓：官方HTML返回404，ar5iv仅返回摘要页；无法读取方法、实验和结论全文。",
+      "risks_or_uncertainties": [
+        "全文HTML当前不可访问",
+        "代码URL本次探测失败，无法核验实现"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "vla",
+        "representation-learning",
+        "world-model"
+      ],
+      "nearest_board_comparison": "相对VLAFlow的future latent alignment，LEEVLA声称增加显著区域与拓扑约束，但未全文核验。",
+      "sources": [
+        "https://arxiv.org/abs/2607.08182",
+        "https://arxiv.org/html/2607.08182",
+        "https://github.com/LyuQi127/LEEVLA"
+      ]
+    },
+    {
+      "batch_index": 42,
+      "id": "arxiv-2607.11481",
+      "title": "Towards Human-level Dexterous Teleoperation",
+      "paper_url": "https://arxiv.org/abs/2607.11481",
+      "first_publication": "2026-07-13",
+      "last_revision": null,
+      "authors": [
+        "Puhao Li",
+        "Zeyuan Chen",
+        "Yingying Wu",
+        "Pengkun Wei",
+        "Yuyang Li",
+        "Tianyu Wang",
+        "Jiaxiao Shi",
+        "Mingrui Yu",
+        "Baoxiong Jia",
+        "Song-chun Zhu",
+        "Tengyu Liu",
+        "Siyuan Huang"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.11481",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.11481",
+        "fulltext_url": "https://arxiv.org/html/2607.11481",
+        "fulltext_accessed": true,
+        "sections_read": [
+          "Method/Approach",
+          "Experiments/Evaluation",
+          "Conclusion/Limitations"
+        ],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "用hand-object co-tracking subgoals与混合稀疏/稠密reward学习动态接触执行，实现跨平移、重定向和finger gaiting的遥操作。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.11481"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "用hand-object co-tracking subgoals与混合稀疏/稠密reward学习动态接触执行，实现跨平移、重定向和finger gaiting的遥操作。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "第3节给出controller/reference/部署；第4节在两种灵巧手、7个重定向与长程工具任务上平均75%，所有baseline持续失败，并用示范训练BC autonomous policy；第5–6节含局限。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已阅读全文相关章节：第3节给出controller/reference/部署；第4节在两种灵巧手、7个重定向与长程工具任务上平均75%，所有baseline持续失败，并用示范训练BC autonomous policy；第5–6节含局限。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "第3节给出controller/reference/部署；第4节在两种灵巧手、7个重定向与长程工具任务上平均75%，所有baseline持续失败，并用示范训练BC autonomous policy；第5–6节含局限。",
+        "asset_checks": []
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 17,
+        "evidence_quality": 16,
+        "potential_impact": 13,
+        "board_information_gain": 9,
+        "reproducibility": 3,
+        "timeliness": 5,
+        "total": 83
+      },
+      "score_evidence": {
+        "relevance": {
+          "score": 20,
+          "evidence": "用hand-object co-tracking subgoals与混合稀疏/稠密reward学习动态接触执行，实现跨平移、重定向和finger gaiting的遥操作。"
+        },
+        "novelty": {
+          "score": 17,
+          "evidence": "用hand-object co-tracking subgoals与混合稀疏/稠密reward学习动态接触执行，实现跨平移、重定向和finger gaiting的遥操作。"
+        },
+        "evidence_quality": {
+          "score": 16,
+          "evidence": "第3节给出controller/reference/部署；第4节在两种灵巧手、7个重定向与长程工具任务上平均75%，所有baseline持续失败，并用示范训练BC autonomous policy；第5–6节含局限。"
+        },
+        "potential_impact": {
+          "score": 13,
+          "evidence": "用hand-object co-tracking subgoals与混合稀疏/稠密reward学习动态接触执行，实现跨平移、重定向和finger gaiting的遥操作。"
+        },
+        "board_information_gain": {
+          "score": 9,
+          "evidence": "相对ACT/EgoScale，TeleDexter新增动态hand-object接触遥操作和从遥操作到自主BC的闭环验证。"
+        },
+        "reproducibility": {
+          "score": 3,
+          "evidence": "无已确认可访问核心资产，仅按正文细节计分。"
+        },
+        "timeliness": {
+          "score": 5,
+          "evidence": "2026年7月首次公开。"
+        }
+      },
+      "decision": "featured",
+      "selection_reason": "用hand-object co-tracking subgoals与混合稀疏/稠密reward学习动态接触执行，实现跨平移、重定向和finger gaiting的遥操作。 第3节给出controller/reference/部署；第4节在两种灵巧手、7个重定向与长程工具任务上平均75%，所有baseline持续失败，并用示范训练BC autonomous policy；第5–6节含局限。 相对ACT/EgoScale，TeleDexter新增动态hand-object接触遥操作和从遥操作到自主BC的闭环验证。",
+      "risks_or_uncertainties": [
+        "项目页本次不可访问，未计代码/数据",
+        "七任务仍不足以支持“human-level”泛化命名",
+        "mocap/系统成本需核查"
+      ],
+      "suggested_sections": [
+        "algorithms",
+        "data"
+      ],
+      "suggested_topics": [
+        "reinforcement-learning",
+        "imitation-learning",
+        "control"
+      ],
+      "nearest_board_comparison": "相对ACT/EgoScale，TeleDexter新增动态hand-object接触遥操作和从遥操作到自主BC的闭环验证。",
+      "sources": [
+        "https://arxiv.org/abs/2607.11481",
+        "https://arxiv.org/html/2607.11481"
+      ]
+    },
+    {
+      "batch_index": 43,
+      "id": "arxiv-2607.11498",
+      "title": "See like a Robot: Robot-Centric Pointmaps for Vision-Language-Action Models",
+      "paper_url": "https://arxiv.org/abs/2607.11498",
+      "first_publication": "2026-07-13",
+      "last_revision": null,
+      "authors": [
+        "Byungkun Lee",
+        "Dongyoon Hwang",
+        "Dongjin Kim",
+        "Hojoon Lee",
+        "Minho Park",
+        "Jaegul Choo"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.11498",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.11498",
+        "fulltext_url": "https://arxiv.org/html/2607.11498",
+        "fulltext_accessed": true,
+        "sections_read": [
+          "Method/Approach",
+          "Experiments/Evaluation",
+          "Conclusion/Limitations"
+        ],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "把每像素3D坐标变换到robot frame，同时保持H×W图像结构，直接解决相机观测帧与动作帧错配。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.11498"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "把每像素3D坐标变换到robot frame，同时保持H×W图像结构，直接解决相机观测帧与动作帧错配。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "第4节受控比较camera info、pointcloud、centering和viewpoint variation；第5节在RoboCasa上改善π0.5/SmolVLA并优于3D/viewpoint baseline，实机相机移到未见位置时优势扩大；第6节列局限。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已阅读全文相关章节：第4节受控比较camera info、pointcloud、centering和viewpoint variation；第5节在RoboCasa上改善π0.5/SmolVLA并优于3D/viewpoint baseline，实机相机移到未见位置时优势扩大；第6节列局限。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "第4节受控比较camera info、pointcloud、centering和viewpoint variation；第5节在RoboCasa上改善π0.5/SmolVLA并优于3D/viewpoint baseline，实机相机移到未见位置时优势扩大；第6节列局限。",
+        "asset_checks": []
+      },
+      "scores": {
+        "relevance": 19,
+        "novelty": 16,
+        "evidence_quality": 17,
+        "potential_impact": 12,
+        "board_information_gain": 8,
+        "reproducibility": 3,
+        "timeliness": 5,
+        "total": 80
+      },
+      "score_evidence": {
+        "relevance": {
+          "score": 19,
+          "evidence": "把每像素3D坐标变换到robot frame，同时保持H×W图像结构，直接解决相机观测帧与动作帧错配。"
+        },
+        "novelty": {
+          "score": 16,
+          "evidence": "把每像素3D坐标变换到robot frame，同时保持H×W图像结构，直接解决相机观测帧与动作帧错配。"
+        },
+        "evidence_quality": {
+          "score": 17,
+          "evidence": "第4节受控比较camera info、pointcloud、centering和viewpoint variation；第5节在RoboCasa上改善π0.5/SmolVLA并优于3D/viewpoint baseline，实机相机移到未见位置时优势扩大；第6节列局限。"
+        },
+        "potential_impact": {
+          "score": 12,
+          "evidence": "把每像素3D坐标变换到robot frame，同时保持H×W图像结构，直接解决相机观测帧与动作帧错配。"
+        },
+        "board_information_gain": {
+          "score": 8,
+          "evidence": "相对3D Diffusion Policy，pointmap以robot-frame图像形式复用2D VLA backbone，特别针对跨视角动作对齐。"
+        },
+        "reproducibility": {
+          "score": 3,
+          "evidence": "无已确认可访问核心资产，仅按正文细节计分。"
+        },
+        "timeliness": {
+          "score": 5,
+          "evidence": "2026年7月首次公开。"
+        }
+      },
+      "decision": "featured",
+      "selection_reason": "把每像素3D坐标变换到robot frame，同时保持H×W图像结构，直接解决相机观测帧与动作帧错配。 第4节受控比较camera info、pointcloud、centering和viewpoint variation；第5节在RoboCasa上改善π0.5/SmolVLA并优于3D/viewpoint baseline，实机相机移到未见位置时优势扩大；第6节列局限。 相对3D Diffusion Policy，pointmap以robot-frame图像形式复用2D VLA backbone，特别针对跨视角动作对齐。",
+      "risks_or_uncertainties": [
+        "项目页本次不可访问",
+        "依赖深度/标定质量",
+        "真实任务数量需人工复核"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "vla",
+        "representation-learning"
+      ],
+      "nearest_board_comparison": "相对3D Diffusion Policy，pointmap以robot-frame图像形式复用2D VLA backbone，特别针对跨视角动作对齐。",
+      "sources": [
+        "https://arxiv.org/abs/2607.11498",
+        "https://arxiv.org/html/2607.11498"
+      ]
+    },
+    {
+      "batch_index": 44,
+      "id": "arxiv-2607.13621",
+      "title": "UESF-Bench: Benchmarking and Probing for Unified Embodied Seeking and Following",
+      "paper_url": "https://arxiv.org/abs/2607.13621",
+      "first_publication": "2026-07-15",
+      "last_revision": null,
+      "authors": [
+        "Kun Yu",
+        "Jianhua Yang",
+        "Yixiang Chen",
+        "Changwei Wang",
+        "Hongyuan Yu",
+        "Yan Huang",
+        "Fushuo Huo",
+        "Ya Jing",
+        "Zhumin Chen",
+        "Keji He"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.13621",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.13621",
+        "fulltext_url": "https://arxiv.org/html/2607.13621",
+        "fulltext_accessed": true,
+        "sections_read": [
+          "Method/Approach",
+          "Experiments/Evaluation",
+          "Conclusion/Limitations"
+        ],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "首次统一“先寻找语言描述的人、再持续跟随”，并以latent phase routing处理切换、恢复和延迟身份grounding。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.13621"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "首次统一“先寻找语言描述的人、再持续跟随”，并以latent phase routing处理切换、恢复和延迟身份grounding。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "第3节构建单/多人模拟benchmark；第4节给出single/dual/task-driven router；第5节比较两类环境、消融和routing dynamics；第6节总结。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已阅读全文相关章节：第3节构建单/多人模拟benchmark；第4节给出single/dual/task-driven router；第5节比较两类环境、消融和routing dynamics；第6节总结。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "第3节构建单/多人模拟benchmark；第4节给出single/dual/task-driven router；第5节比较两类环境、消融和routing dynamics；第6节总结。",
+        "asset_checks": []
+      },
+      "scores": {
+        "relevance": 18,
+        "novelty": 15,
+        "evidence_quality": 14,
+        "potential_impact": 11,
+        "board_information_gain": 9,
+        "reproducibility": 2,
+        "timeliness": 5,
+        "total": 74
+      },
+      "score_evidence": {
+        "relevance": {
+          "score": 18,
+          "evidence": "首次统一“先寻找语言描述的人、再持续跟随”，并以latent phase routing处理切换、恢复和延迟身份grounding。"
+        },
+        "novelty": {
+          "score": 15,
+          "evidence": "首次统一“先寻找语言描述的人、再持续跟随”，并以latent phase routing处理切换、恢复和延迟身份grounding。"
+        },
+        "evidence_quality": {
+          "score": 14,
+          "evidence": "第3节构建单/多人模拟benchmark；第4节给出single/dual/task-driven router；第5节比较两类环境、消融和routing dynamics；第6节总结。"
+        },
+        "potential_impact": {
+          "score": 11,
+          "evidence": "首次统一“先寻找语言描述的人、再持续跟随”，并以latent phase routing处理切换、恢复和延迟身份grounding。"
+        },
+        "board_information_gain": {
+          "score": 9,
+          "evidence": "当前看板导航覆盖薄弱；UESF-Bench填补统一seek-follow任务，但暂无实机证据。"
+        },
+        "reproducibility": {
+          "score": 2,
+          "evidence": "无已确认可访问核心资产，仅按正文细节计分。"
+        },
+        "timeliness": {
+          "score": 5,
+          "evidence": "2026年7月首次公开。"
+        }
+      },
+      "decision": "include",
+      "selection_reason": "首次统一“先寻找语言描述的人、再持续跟随”，并以latent phase routing处理切换、恢复和延迟身份grounding。 第3节构建单/多人模拟benchmark；第4节给出single/dual/task-driven router；第5节比较两类环境、消融和routing dynamics；第6节总结。 当前看板导航覆盖薄弱；UESF-Bench填补统一seek-follow任务，但暂无实机证据。",
+      "risks_or_uncertainties": [
+        "仿真为主",
+        "未发现benchmark/code公开入口",
+        "与通用操控主线关联较弱"
+      ],
+      "suggested_sections": [
+        "data",
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "vla",
+        "navigation",
+        "planning"
+      ],
+      "nearest_board_comparison": "当前看板导航覆盖薄弱；UESF-Bench填补统一seek-follow任务，但暂无实机证据。",
+      "sources": [
+        "https://arxiv.org/abs/2607.13621",
+        "https://arxiv.org/html/2607.13621"
+      ]
+    },
+    {
+      "batch_index": 45,
+      "id": "arxiv-2607.15620",
+      "title": "AEGIS: Assay-Aware Protocol Validation and Runtime Monitoring for Open-Source Liquid Handling Robots",
+      "paper_url": "https://arxiv.org/abs/2607.15620",
+      "first_publication": "2026-07-17",
+      "last_revision": null,
+      "authors": [
+        "Priyanka V. Setty",
+        "Arvind Ramanathan",
+        "Ian Foster",
+        "Rick Stevens"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.15620",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.15620",
+        "fulltext_url": "https://arxiv.org/html/2607.15620",
+        "fulltext_accessed": true,
+        "sections_read": [
+          "Method/Approach",
+          "Experiments/Evaluation",
+          "Conclusion/Limitations"
+        ],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "把assay规则+LLM的pre-flight语义验证与视觉trajectory world model的runtime failure monitoring统一到低成本OT-2。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.15620"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "把assay规则+LLM的pre-flight语义验证与视觉trajectory world model的runtime failure monitoring统一到低成本OT-2。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "第2节定义24协议/5 assay、PCA world model和部署cascade；第3节报告Layer1 adjusted F1 .97、Layer2 AP .89/F1 .71/AUROC .80、p20 F1 .47、实机5次/条件及成本$1.63 vs $10.33；第4节透明水等局限明确。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已阅读全文相关章节：第2节定义24协议/5 assay、PCA world model和部署cascade；第3节报告Layer1 adjusted F1 .97、Layer2 AP .89/F1 .71/AUROC .80、p20 F1 .47、实机5次/条件及成本$1.63 vs $10.33；第4节透明水等局限明确。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "第2节定义24协议/5 assay、PCA world model和部署cascade；第3节报告Layer1 adjusted F1 .97、Layer2 AP .89/F1 .71/AUROC .80、p20 F1 .47、实机5次/条件及成本$1.63 vs $10.33；第4节透明水等局限明确。",
+        "asset_checks": []
+      },
+      "scores": {
+        "relevance": 17,
+        "novelty": 16,
+        "evidence_quality": 17,
+        "potential_impact": 12,
+        "board_information_gain": 10,
+        "reproducibility": 8,
+        "timeliness": 5,
+        "total": 85
+      },
+      "score_evidence": {
+        "relevance": {
+          "score": 17,
+          "evidence": "把assay规则+LLM的pre-flight语义验证与视觉trajectory world model的runtime failure monitoring统一到低成本OT-2。"
+        },
+        "novelty": {
+          "score": 16,
+          "evidence": "把assay规则+LLM的pre-flight语义验证与视觉trajectory world model的runtime failure monitoring统一到低成本OT-2。"
+        },
+        "evidence_quality": {
+          "score": 17,
+          "evidence": "第2节定义24协议/5 assay、PCA world model和部署cascade；第3节报告Layer1 adjusted F1 .97、Layer2 AP .89/F1 .71/AUROC .80、p20 F1 .47、实机5次/条件及成本$1.63 vs $10.33；第4节透明水等局限明确。"
+        },
+        "potential_impact": {
+          "score": 12,
+          "evidence": "把assay规则+LLM的pre-flight语义验证与视觉trajectory world model的runtime failure monitoring统一到低成本OT-2。"
+        },
+        "board_information_gain": {
+          "score": 10,
+          "evidence": "看板缺少机器人运行时语义+物理双层安全监控；虽领域窄，提供罕见的泄漏隔离评测和负结果。"
+        },
+        "reproducibility": {
+          "score": 8,
+          "evidence": "无已确认可访问核心资产，仅按正文细节计分。"
+        },
+        "timeliness": {
+          "score": 5,
+          "evidence": "2026年7月首次公开。"
+        }
+      },
+      "decision": "featured",
+      "selection_reason": "把assay规则+LLM的pre-flight语义验证与视觉trajectory world model的runtime failure monitoring统一到低成本OT-2。 第2节定义24协议/5 assay、PCA world model和部署cascade；第3节报告Layer1 adjusted F1 .97、Layer2 AP .89/F1 .71/AUROC .80、p20 F1 .47、实机5次/条件及成本$1.63 vs $10.33；第4节透明水等局限明确。 看板缺少机器人运行时语义+物理双层安全监控；虽领域窄，提供罕见的泄漏隔离评测和负结果。",
+      "risks_or_uncertainties": [
+        "应用领域窄且偏实验室自动化",
+        "透明液体和小量程是明确盲点",
+        "需人工核验开源仓库URL"
+      ],
+      "suggested_sections": [
+        "infrastructure",
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "world-model",
+        "planning",
+        "control"
+      ],
+      "nearest_board_comparison": "看板缺少机器人运行时语义+物理双层安全监控；虽领域窄，提供罕见的泄漏隔离评测和负结果。",
+      "sources": [
+        "https://arxiv.org/abs/2607.15620",
+        "https://arxiv.org/html/2607.15620"
+      ]
+    },
+    {
+      "batch_index": 46,
+      "id": "arxiv-2607.16401",
+      "title": "Apple-$π$: Benchmarking Thinking with Video Towards Law-Grounded Physical Intelligence",
+      "paper_url": "https://arxiv.org/abs/2607.16401",
+      "first_publication": "2026-07-17",
+      "last_revision": null,
+      "authors": [
+        "Runmao Yao",
+        "Kairui Hu",
+        "Yukang Cao",
+        "Ruisi Wang",
+        "Shulin Tian",
+        "Ziang Cao",
+        "Weichen Fan",
+        "Ziqi Huang",
+        "Yuhao Dong",
+        "Hao Li",
+        "Zhaoxi Chen",
+        "Zhongang Cai",
+        "Lei Yang",
+        "Ziwei Liu"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.16401",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.16401",
+        "fulltext_url": "https://arxiv.org/html/2607.16401",
+        "fulltext_accessed": true,
+        "sections_read": [
+          "Method/Approach",
+          "Experiments/Evaluation",
+          "Conclusion/Limitations"
+        ],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "把视频模型物理评测拆为Perception/Formulation/Deduction，并用400视频、10类经典力学和主客观混合指标定位推理阶段。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.16401"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "把视频模型物理评测拆为Perception/Formulation/Deduction，并用400视频、10类经典力学和主客观混合指标定位推理阶段。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "第3节给出Orchard/protocol/evaluation；第4节评11模型，最佳仅0.473，并有stage/pillar/source、Sim2Real、失败与protocol ablation；附录详述QA和judge reliability。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已阅读全文相关章节：第3节给出Orchard/protocol/evaluation；第4节评11模型，最佳仅0.473，并有stage/pillar/source、Sim2Real、失败与protocol ablation；附录详述QA和judge reliability。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "第3节给出Orchard/protocol/evaluation；第4节评11模型，最佳仅0.473，并有stage/pillar/source、Sim2Real、失败与protocol ablation；附录详述QA和judge reliability。",
+        "asset_checks": []
+      },
+      "scores": {
+        "relevance": 12,
+        "novelty": 17,
+        "evidence_quality": 18,
+        "potential_impact": 12,
+        "board_information_gain": 8,
+        "reproducibility": 3,
+        "timeliness": 5,
+        "total": 75
+      },
+      "score_evidence": {
+        "relevance": {
+          "score": 12,
+          "evidence": "把视频模型物理评测拆为Perception/Formulation/Deduction，并用400视频、10类经典力学和主客观混合指标定位推理阶段。"
+        },
+        "novelty": {
+          "score": 17,
+          "evidence": "把视频模型物理评测拆为Perception/Formulation/Deduction，并用400视频、10类经典力学和主客观混合指标定位推理阶段。"
+        },
+        "evidence_quality": {
+          "score": 18,
+          "evidence": "第3节给出Orchard/protocol/evaluation；第4节评11模型，最佳仅0.473，并有stage/pillar/source、Sim2Real、失败与protocol ablation；附录详述QA和judge reliability。"
+        },
+        "potential_impact": {
+          "score": 12,
+          "evidence": "把视频模型物理评测拆为Perception/Formulation/Deduction，并用400视频、10类经典力学和主客观混合指标定位推理阶段。"
+        },
+        "board_information_gain": {
+          "score": 8,
+          "evidence": "相对KinDER的机器人物理推理，Apple-π更偏视频世界模型的法则推理过程诊断，具身相关性较低。"
+        },
+        "reproducibility": {
+          "score": 3,
+          "evidence": "无已确认可访问核心资产，仅按正文细节计分。"
+        },
+        "timeliness": {
+          "score": 5,
+          "evidence": "2026年7月首次公开。"
+        }
+      },
+      "decision": "include",
+      "selection_reason": "把视频模型物理评测拆为Perception/Formulation/Deduction，并用400视频、10类经典力学和主客观混合指标定位推理阶段。 第3节给出Orchard/protocol/evaluation；第4节评11模型，最佳仅0.473，并有stage/pillar/source、Sim2Real、失败与protocol ablation；附录详述QA和judge reliability。 相对KinDER的机器人物理推理，Apple-π更偏视频世界模型的法则推理过程诊断，具身相关性较低。",
+      "risks_or_uncertainties": [
+        "核心对象是视频生成模型而非机器人控制",
+        "项目页本次不可访问",
+        "MLLM judge仍可能带偏差"
+      ],
+      "suggested_sections": [
+        "data",
+        "infrastructure"
+      ],
+      "suggested_topics": [
+        "world-model",
+        "foundation-model"
+      ],
+      "nearest_board_comparison": "相对KinDER的机器人物理推理，Apple-π更偏视频世界模型的法则推理过程诊断，具身相关性较低。",
+      "sources": [
+        "https://arxiv.org/abs/2607.16401",
+        "https://arxiv.org/html/2607.16401"
+      ]
+    },
+    {
+      "batch_index": 47,
+      "id": "arxiv-2607.17454",
+      "title": "Test-Time Scaling for World Action Models via Zero-Shot Geometric Evaluation",
+      "paper_url": "https://arxiv.org/abs/2607.17454",
+      "first_publication": "2026-07-20",
+      "last_revision": null,
+      "authors": [
+        "Zesen Zhao",
+        "Minkyoung Cho",
+        "Hui shen",
+        "Boyuan Zheng",
+        "Kunxiao Gao",
+        "Yulong Cao",
+        "Z. Morley Mao"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.17454",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.17454",
+        "fulltext_url": "https://arxiv.org/html/2607.17454",
+        "fulltext_accessed": true,
+        "sections_read": [
+          "Method/Approach",
+          "Experiments/Evaluation",
+          "Conclusion/Limitations"
+        ],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "用冻结几何模型的跨视角深度重投影做WAM rollout selector，并以action-future一致性gate只在必要时增加采样。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.17454"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "用冻结几何模型的跨视角深度重投影做WAM rollout selector，并以action-future一致性gate只在必要时增加采样。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "第3节给出GeoBoN/gate；第4节在RoboCasa、LIBERO Long、RoboTwin 2.0的5个benchmark-backbone设置均提高N=8成功，gate仅26.2%决策点触发且保留74.8%增益，并分析N增大退化。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已阅读全文相关章节：第3节给出GeoBoN/gate；第4节在RoboCasa、LIBERO Long、RoboTwin 2.0的5个benchmark-backbone设置均提高N=8成功，gate仅26.2%决策点触发且保留74.8%增益，并分析N增大退化。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "第3节给出GeoBoN/gate；第4节在RoboCasa、LIBERO Long、RoboTwin 2.0的5个benchmark-backbone设置均提高N=8成功，gate仅26.2%决策点触发且保留74.8%增益，并分析N增大退化。",
+        "asset_checks": []
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 17,
+        "evidence_quality": 17,
+        "potential_impact": 12,
+        "board_information_gain": 7,
+        "reproducibility": 3,
+        "timeliness": 5,
+        "total": 81
+      },
+      "score_evidence": {
+        "relevance": {
+          "score": 20,
+          "evidence": "用冻结几何模型的跨视角深度重投影做WAM rollout selector，并以action-future一致性gate只在必要时增加采样。"
+        },
+        "novelty": {
+          "score": 17,
+          "evidence": "用冻结几何模型的跨视角深度重投影做WAM rollout selector，并以action-future一致性gate只在必要时增加采样。"
+        },
+        "evidence_quality": {
+          "score": 17,
+          "evidence": "第3节给出GeoBoN/gate；第4节在RoboCasa、LIBERO Long、RoboTwin 2.0的5个benchmark-backbone设置均提高N=8成功，gate仅26.2%决策点触发且保留74.8%增益，并分析N增大退化。"
+        },
+        "potential_impact": {
+          "score": 12,
+          "evidence": "用冻结几何模型的跨视角深度重投影做WAM rollout selector，并以action-future一致性gate只在必要时增加采样。"
+        },
+        "board_information_gain": {
+          "score": 7,
+          "evidence": "相对EgoWAM/FlowWAM的训练贡献，该工作提供training-free selective test-time scaling和失败分析。"
+        },
+        "reproducibility": {
+          "score": 3,
+          "evidence": "无已确认可访问核心资产，仅按正文细节计分。"
+        },
+        "timeliness": {
+          "score": 5,
+          "evidence": "2026年7月首次公开。"
+        }
+      },
+      "decision": "featured",
+      "selection_reason": "用冻结几何模型的跨视角深度重投影做WAM rollout selector，并以action-future一致性gate只在必要时增加采样。 第3节给出GeoBoN/gate；第4节在RoboCasa、LIBERO Long、RoboTwin 2.0的5个benchmark-backbone设置均提高N=8成功，gate仅26.2%决策点触发且保留74.8%增益，并分析N增大退化。 相对EgoWAM/FlowWAM的训练贡献，该工作提供training-free selective test-time scaling和失败分析。",
+      "risks_or_uncertainties": [
+        "绝对成功增益约1.7–2.1点，计算成本仍高",
+        "依赖多视角深度与冻结几何模型",
+        "无核验代码"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "world-model",
+        "planning"
+      ],
+      "nearest_board_comparison": "相对EgoWAM/FlowWAM的训练贡献，该工作提供training-free selective test-time scaling和失败分析。",
+      "sources": [
+        "https://arxiv.org/abs/2607.17454",
+        "https://arxiv.org/html/2607.17454"
+      ]
+    },
+    {
+      "batch_index": 48,
+      "id": "arxiv-2607.02604",
+      "title": "DynaWM: A Base-VLA-Guided World Foundation Model for Moving-Object Manipulation",
+      "paper_url": "https://arxiv.org/abs/2607.02604",
+      "first_publication": "2026-07-01",
+      "last_revision": null,
+      "authors": [
+        "Chongkei Chang",
+        "Zhidong Deng"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.02604",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.02604",
+        "fulltext_url": "https://arxiv.org/html/2607.02604",
+        "fulltext_accessed": true,
+        "sections_read": [
+          "Method/Approach",
+          "Experiments/Evaluation",
+          "Conclusion/Limitations"
+        ],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "不重训基础VLA，而把其action chunk作为条件，用多视图短历史和flow-DiT重生成移动物体拦截轨迹。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.02604"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "不重训基础VLA，而把其action chunk作为条件，用多视图短历史和flow-DiT重生成移动物体拦截轨迹。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "第3节给出Mamba-3 action encoder、V-JEPA视觉和conditional flow；第4节构建DynaGrasp-32/1600，覆盖4种VLA，并做视觉/动作条件消融：去action condition下降45.44%。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已阅读全文相关章节：第3节给出Mamba-3 action encoder、V-JEPA视觉和conditional flow；第4节构建DynaGrasp-32/1600，覆盖4种VLA，并做视觉/动作条件消融：去action condition下降45.44%。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "第3节给出Mamba-3 action encoder、V-JEPA视觉和conditional flow；第4节构建DynaGrasp-32/1600，覆盖4种VLA，并做视觉/动作条件消融：去action condition下降45.44%。",
+        "asset_checks": []
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 15,
+        "evidence_quality": 15,
+        "potential_impact": 11,
+        "board_information_gain": 7,
+        "reproducibility": 2,
+        "timeliness": 4,
+        "total": 74
+      },
+      "score_evidence": {
+        "relevance": {
+          "score": 20,
+          "evidence": "不重训基础VLA，而把其action chunk作为条件，用多视图短历史和flow-DiT重生成移动物体拦截轨迹。"
+        },
+        "novelty": {
+          "score": 15,
+          "evidence": "不重训基础VLA，而把其action chunk作为条件，用多视图短历史和flow-DiT重生成移动物体拦截轨迹。"
+        },
+        "evidence_quality": {
+          "score": 15,
+          "evidence": "第3节给出Mamba-3 action encoder、V-JEPA视觉和conditional flow；第4节构建DynaGrasp-32/1600，覆盖4种VLA，并做视觉/动作条件消融：去action condition下降45.44%。"
+        },
+        "potential_impact": {
+          "score": 11,
+          "evidence": "不重训基础VLA，而把其action chunk作为条件，用多视图短历史和flow-DiT重生成移动物体拦截轨迹。"
+        },
+        "board_information_gain": {
+          "score": 7,
+          "evidence": "相对EgoWAM/ABot，本工作专门把base-VLA action作为动态拦截world model的条件。"
+        },
+        "reproducibility": {
+          "score": 2,
+          "evidence": "无已确认可访问核心资产，仅按正文细节计分。"
+        },
+        "timeliness": {
+          "score": 4,
+          "evidence": "2026年7月首次公开。"
+        }
+      },
+      "decision": "include",
+      "selection_reason": "不重训基础VLA，而把其action chunk作为条件，用多视图短历史和flow-DiT重生成移动物体拦截轨迹。 第3节给出Mamba-3 action encoder、V-JEPA视觉和conditional flow；第4节构建DynaGrasp-32/1600，覆盖4种VLA，并做视觉/动作条件消融：去action condition下降45.44%。 相对EgoWAM/ABot，本工作专门把base-VLA action作为动态拦截world model的条件。",
+      "risks_or_uncertainties": [
+        "数据集仅1,600 demonstrations/32场景",
+        "无代码或资产核验",
+        "百分比改善需区分相对/绝对"
+      ],
+      "suggested_sections": [
+        "algorithms",
+        "data"
+      ],
+      "suggested_topics": [
+        "vla",
+        "world-model",
+        "control"
+      ],
+      "nearest_board_comparison": "相对EgoWAM/ABot，本工作专门把base-VLA action作为动态拦截world model的条件。",
+      "sources": [
+        "https://arxiv.org/abs/2607.02604",
+        "https://arxiv.org/html/2607.02604"
+      ]
+    },
+    {
+      "batch_index": 49,
+      "id": "arxiv-2607.01658",
+      "title": "Teaching Vision-Language-Action Models What to See and Where to Look",
+      "paper_url": "https://arxiv.org/abs/2607.01658",
+      "first_publication": "2026-07-02",
+      "last_revision": null,
+      "authors": [
+        "Yuguang Yang",
+        "Canyu Chen",
+        "Zhewen Tan",
+        "Yizhi Wang",
+        "Zichao Feng",
+        "Chunyang Liu",
+        "Kehua Sheng",
+        "Juan Zhang",
+        "Linlin Yang",
+        "Baochang Zhang",
+        "Yan Wang",
+        "Bo Zhang",
+        "Xianbin Cao"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "abstract-and-metadata",
+      "fulltext_url": "https://arxiv.org/html/2607.01658",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.01658",
+        "fulltext_url": "https://arxiv.org/html/2607.01658",
+        "fulltext_accessed": false,
+        "sections_read": [],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": false,
+          "evidence": "按规范纯自动驾驶默认排除"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.01658"
+        },
+        "incremental_contribution": {
+          "pass": false,
+          "evidence": "为自动驾驶VLA加入driving-aware vision distillation和2D trajectory prompts。"
+        },
+        "claim_support": {
+          "pass": false,
+          "evidence": "官方HTML返回404、ar5iv只返回摘要；且摘要/任务均为NAVSIM、nuScenes自动驾驶。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": false,
+          "evidence": "官方HTML返回404、ar5iv只返回摘要；且摘要/任务均为NAVSIM、nuScenes自动驾驶。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "官方HTML返回404、ar5iv只返回摘要；且摘要/任务均为NAVSIM、nuScenes自动驾驶。",
+        "asset_checks": [
+          {
+            "url": "https://github.com/ShivaTeam/DriveTeach-VLA",
+            "kind": "code",
+            "accessible": false,
+            "http_status": null,
+            "note": "本次探测失败或未验证，不作为正向复现证据"
+          }
+        ]
+      },
+      "scores": {
+        "relevance": 0,
+        "novelty": 0,
+        "evidence_quality": 0,
+        "potential_impact": 0,
+        "board_information_gain": 0,
+        "reproducibility": 0,
+        "timeliness": 0,
+        "total": 0
+      },
+      "score_evidence": {},
+      "decision": "reject",
+      "selection_reason": "拒绝：官方HTML返回404、ar5iv只返回摘要；且摘要/任务均为NAVSIM、nuScenes自动驾驶。",
+      "risks_or_uncertainties": [
+        "按规范纯自动驾驶默认排除",
+        "无全文HTML可核验"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "vla",
+        "planning"
+      ],
+      "nearest_board_comparison": "不属于当前通用具身/机器人学习收录范围。",
+      "sources": [
+        "https://arxiv.org/abs/2607.01658",
+        "https://arxiv.org/html/2607.01658",
+        "https://github.com/ShivaTeam/DriveTeach-VLA"
+      ]
+    },
+    {
+      "batch_index": 50,
+      "id": "arxiv-2607.02092",
+      "title": "Guided Action Flow: Q-Guided Inference for Flow-Matching Vision-Language-Action Policies",
+      "paper_url": "https://arxiv.org/abs/2607.02092",
+      "first_publication": "2026-07-02",
+      "last_revision": null,
+      "authors": [
+        "Liuhaichen Yang",
+        "Zhuang Jiang",
+        "Chenchao Sheng",
+        "Zezhi Tang"
+      ],
+      "organizations": [],
+      "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
+      "discovered_via": [
+        "candidate-pool-2026-07-backfill",
+        "arxiv-abstract-html"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.02092",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2607.02092",
+        "fulltext_url": "https://arxiv.org/html/2607.02092",
+        "fulltext_accessed": true,
+        "sections_read": [
+          "Method/Approach",
+          "Experiments/Evaluation",
+          "Conclusion/Limitations"
+        ],
+        "accessed_at": "2026-07-23"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "冻结SmolVLA，仅训练action-chunk critic并在reverse-time flow采样中用动作梯度做test-time Q-guidance。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv摘要页已读取：https://arxiv.org/abs/2607.02092"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "冻结SmolVLA，仅训练action-chunk critic并在reverse-time flow采样中用动作梯度做test-time Q-guidance。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "第III节给出critic数据/任务条件与guidance；第IV节LIBERO单任务68→82、82→86，多family validation 46→56，但locked held-out只65→67.5；第V–VIII节坦率讨论泛化和不确定性。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已阅读全文相关章节：第III节给出critic数据/任务条件与guidance；第IV节LIBERO单任务68→82、82→86，多family validation 46→56，但locked held-out只65→67.5；第V–VIII节坦率讨论泛化和不确定性。"
+        }
+      },
+      "evidence": {
+        "sections_and_results": "第III节给出critic数据/任务条件与guidance；第IV节LIBERO单任务68→82、82→86，多family validation 46→56，但locked held-out只65→67.5；第V–VIII节坦率讨论泛化和不确定性。",
+        "asset_checks": []
+      },
+      "scores": {
+        "relevance": 18,
+        "novelty": 13,
+        "evidence_quality": 14,
+        "potential_impact": 8,
+        "board_information_gain": 6,
+        "reproducibility": 2,
+        "timeliness": 4,
+        "total": 65
+      },
+      "score_evidence": {
+        "relevance": {
+          "score": 18,
+          "evidence": "冻结SmolVLA，仅训练action-chunk critic并在reverse-time flow采样中用动作梯度做test-time Q-guidance。"
+        },
+        "novelty": {
+          "score": 13,
+          "evidence": "冻结SmolVLA，仅训练action-chunk critic并在reverse-time flow采样中用动作梯度做test-time Q-guidance。"
+        },
+        "evidence_quality": {
+          "score": 14,
+          "evidence": "第III节给出critic数据/任务条件与guidance；第IV节LIBERO单任务68→82、82→86，多family validation 46→56，但locked held-out只65→67.5；第V–VIII节坦率讨论泛化和不确定性。"
+        },
+        "potential_impact": {
+          "score": 8,
+          "evidence": "冻结SmolVLA，仅训练action-chunk critic并在reverse-time flow采样中用动作梯度做test-time Q-guidance。"
+        },
+        "board_information_gain": {
+          "score": 6,
+          "evidence": "相对π0.6的策略后训练，本工作是冻结flow policy的inference-time critic guidance，证据仍初步。"
+        },
+        "reproducibility": {
+          "score": 2,
+          "evidence": "无已确认可访问核心资产，仅按正文细节计分。"
+        },
+        "timeliness": {
+          "score": 4,
+          "evidence": "2026年7月首次公开。"
+        }
+      },
+      "decision": "include",
+      "selection_reason": "冻结SmolVLA，仅训练action-chunk critic并在reverse-time flow采样中用动作梯度做test-time Q-guidance。 第III节给出critic数据/任务条件与guidance；第IV节LIBERO单任务68→82、82→86，多family validation 46→56，但locked held-out只65→67.5；第V–VIII节坦率讨论泛化和不确定性。 相对π0.6的策略后训练，本工作是冻结flow policy的inference-time critic guidance，证据仍初步。",
+      "risks_or_uncertainties": [
+        "仅LIBERO仿真",
+        "held-out增益很小",
+        "critic需真实成败rollout且可能分布外误导"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "vla",
+        "reinforcement-learning"
+      ],
+      "nearest_board_comparison": "相对π0.6的策略后训练，本工作是冻结flow policy的inference-time critic guidance，证据仍初步。",
+      "sources": [
+        "https://arxiv.org/abs/2607.02092",
+        "https://arxiv.org/html/2607.02092"
+      ]
+    }
+  ]
+}

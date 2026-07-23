@@ -1,0 +1,172 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-1710.01813",
+  "title": "Neural Task Programming: Learning to Generalize Across Hierarchical Tasks",
+  "title_zh": "Neural Task Programming：学习跨层次任务的泛化",
+  "abstract": "In this work, we propose a novel robot learning framework called Neural Task Programming (NTP), which bridges the idea of few-shot learning from demonstration and neural program induction. NTP takes as input a task specification (e.g., video demonstration of a task) and recursively decomposes it into finer sub-task specifications. These specifications are fed to a hierarchical neural program, where bottom-level programs are callable subroutines that interact with the environment. We validate our method in three robot manipulation tasks. NTP achieves strong generalization across sequential tasks that exhibit hierarchal and compositional structures. The experimental results show that NTP learns to generalize well towards unseen tasks with increasing lengths, variable topologies, and changing objectives.",
+  "paper_url": "https://arxiv.org/abs/1710.01813",
+  "pdf_url": "https://arxiv.org/pdf/1710.01813",
+  "project_url": "https://stanfordvl.github.io/ntp/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Danfei Xu",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Suraj Nair",
+      "affiliations": [
+        "stanford",
+        "caltech"
+      ]
+    },
+    {
+      "name": "Yuke Zhu",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Julian Gao",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Animesh Garg",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Li Fei-Fei",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Silvio Savarese",
+      "affiliations": [
+        "stanford"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "stanford",
+      "name": "Stanford University",
+      "role": "primary"
+    },
+    {
+      "id": "caltech",
+      "name": "California Institute of Technology",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2017-10-04",
+    "last_revision": "2018-03-14"
+  },
+  "venue": {
+    "name": "IEEE International Conference on Robotics and Automation (ICRA)",
+    "year": 2018,
+    "status": "published"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "imitation-learning",
+      "behavior-cloning",
+      "planning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "proprioception",
+      "vision"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation",
+      "few-shot"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "high",
+    "selection_reason": "NTP 是早期将 meta-learning 和神经程序归纳引入机器人操作的代表性工作。它从单次演示中学习可复用的层次化程序，在任务长度、拓扑结构和语义目标三个维度上实现了泛化，并在真实 Sawyer 机器人上验证了 sim-to-real 迁移能力。其「信息隐藏」的作用域约束和层次化程序分解的思想对后续的 TAMP 和组合式策略学习有重要启发。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-21",
+    "confidence": "high",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文未提供公开代码仓库或数据集链接，项目主页仅展示概述和视频",
+      "Table Clean-up 任务的真实机器人结果论文仅提及展示在补充视频中（Section VIII），未给出具体成功率数字"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/1710.01813"
+    },
+    {
+      "type": "html-fulltext",
+      "url": "https://ar5iv.labs.arxiv.org/html/1710.01813"
+    },
+    {
+      "type": "arxiv-api",
+      "url": "https://export.arxiv.org/api/query?id_list=1710.01813"
+    },
+    {
+      "type": "project-page",
+      "url": "https://stanfordvl.github.io/ntp/"
+    }
+  ],
+  "suggested_new_tags": [
+    "meta-learning",
+    "program-induction",
+    "hierarchical-rl"
+  ],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "ar5iv-html",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/1710.01813",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "I Introduction",
+      "II Background & Related work",
+      "III Problem Formulation",
+      "IV Neural Task Programming",
+      "V Experimental Setup",
+      "VI Experiment 1: Object Sorting",
+      "VII Experiment 2: Block Stacking",
+      "VII-A Adversarial Dynamics",
+      "VII-B NTP with Visual State",
+      "VIII Experiment 3: Table Clean-up",
+      "IX Discussion & Future Work"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-22"
+  }
+}

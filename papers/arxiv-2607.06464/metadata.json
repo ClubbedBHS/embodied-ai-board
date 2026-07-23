@@ -1,0 +1,148 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.06464",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Hilti-Trimble-Oxford Dataset: 360 Visual-Inertial Benchmark with Floor Plan Priors for SLAM and Localization",
+  "title_zh": null,
+  "abstract": "Automated progress monitoring on construction sites is an active area of research and development. Robot and human-carried mapping systems have been developed to build 3D maps of building and infrastructure projects. While LiDAR-based mapping systems achieve high accuracy, the cost of LiDAR can be prohibitive. Consumer-grade cameras with wide field of view (\"360 cameras\") combined with embedded inertial measurement units (IMUs) provide a cost-effective alternative. To support change detection and progress monitoring, highly accurate visual Simultaneous Localization and Mapping (SLAM) and floor plan-referenced localization systems are required. In this paper we present a high-quality dataset collected at an active construction site, which captures realistic challenges such as variable lighting conditions, moving workers, fast motions, and repetitive structures. The dataset offers thirty visual-inertial sequences recorded across seven floors over an eight-month period of the construction project. Ground truth trajectories were collected using a high quality LiDAR-inertial SLAM system rigidly attached to the 360 camera. Additionally, we report the results of an open research challenge evaluating the best visual SLAM and localization systems from around the world. The Challenge attracted substantially higher participation in SLAM, with 62 teams compared to 22 in floor-plan-referenced localization, reflecting the broader maturity of SLAM methods. The higher errors in localization further highlight the difficulty of this task in construction and point to the need for continued research, which this dataset is intended to support. The dataset and the benchmark are publicly available at: https://hilti-trimble-challenge.com/dataset-2026.",
+  "paper_url": "https://arxiv.org/abs/2607.06464",
+  "pdf_url": "https://arxiv.org/pdf/2607.06464",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": "https://hilti-trimble-challenge.com/dataset-2026",
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Samuele Centanni",
+      "affiliations": []
+    },
+    {
+      "name": "Yuhao Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Yifu Tao",
+      "affiliations": []
+    },
+    {
+      "name": "Julien Kindle",
+      "affiliations": []
+    },
+    {
+      "name": "Frank Neuhaus",
+      "affiliations": []
+    },
+    {
+      "name": "Tilman Koß",
+      "affiliations": []
+    },
+    {
+      "name": "Aryaman Patel",
+      "affiliations": []
+    },
+    {
+      "name": "Michael Helmberger",
+      "affiliations": []
+    },
+    {
+      "name": "Emilia Szymańska",
+      "affiliations": []
+    },
+    {
+      "name": "Torben Gräber",
+      "affiliations": []
+    },
+    {
+      "name": "Maurice Fallon",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-07",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data",
+      "infrastructure"
+    ],
+    "topics": [
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [
+      "vision",
+      "point-cloud"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [
+      "dataset"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "dataset",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 77,
+    "selection_reason": "提供跨8个月、7层施工现场的30条360 visual-inertial序列、LiDAR-inertial真值和 floor-plan localization challenge。 第III–V节详述标定、同步、真值优化与平面图对齐；第VI节报告62个SLAM队伍、22个定位队伍的公开 challenge 结果、指标与已知问题。 当前看板缺少长期真实施工场景定位数据；与机器人学习主线关联较间接。",
+    "candidate_run": "2026-07-backfill/batch-02",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "偏 SLAM/施工监测，不是策略学习",
+      "场地数量有限"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.06464",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.06464"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.06464"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://hilti-trimble-challenge.com/dataset-2026"
+    }
+  ],
+  "suggested_new_tags": []
+}

@@ -1,0 +1,180 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.04234",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "SoftVTBench: A Safety-Aware Visuo-Tactile Benchmark for Physically Constrained Robotic Manipulation of Deformable Objects",
+  "title_zh": null,
+  "abstract": "Deformable object manipulation poses challenges beyond task completion: successful execution must also maintain safe physical interaction, holding the object stably without slip or drop while avoiding excessive deformation. However, existing manipulation benchmarks are predominantly success-oriented and rarely evaluate whether a policy remains physically safe throughout execution. We present SoftVTBench, a safety-aware visuo-tactile benchmark for physically constrained deformable object manipulation. Built in Isaac Sim with finite-element-simulated deformable objects, SoftVTBench provides multi-view RGB observations, RGB tactile sensing with marker motion, proprioception, and language instructions, and defines four matched task suites over object type (deformable vs. rigid) and variation axis (object vs. spatial). It separately reports Goal Success and Safety Success; the latter additionally requires no drop and peak deformation below a calibrated object-specific threshold, measured from policy-hidden privileged Finite Element Method (FEM) states. We implement pi0.5-based baselines under this protocol. Experiments show that success-only evaluation substantially overstates policy performance, as a large fraction of goal-completing rollouts still violate physical safety. Furthermore, incorporating tactile sensing improves Safety Success (e.g., from 21.4% to 35.6% on object-centric deformable tasks) and reduces object deformation during execution, while maintaining comparable Goal Success. SoftVTBench provides a reproducible benchmark for studying visuo-tactile deformable manipulation under physical interaction constraints.",
+  "paper_url": "https://arxiv.org/abs/2607.04234",
+  "pdf_url": "https://arxiv.org/pdf/2607.04234",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Bowen Jing",
+      "affiliations": []
+    },
+    {
+      "name": "Mingxin Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Ruiyang Hao",
+      "affiliations": []
+    },
+    {
+      "name": "Chenchen Ge",
+      "affiliations": []
+    },
+    {
+      "name": "Hanwen Shen",
+      "affiliations": []
+    },
+    {
+      "name": "Junjie He",
+      "affiliations": []
+    },
+    {
+      "name": "Yang Cui",
+      "affiliations": []
+    },
+    {
+      "name": "Yiming Hou",
+      "affiliations": []
+    },
+    {
+      "name": "Weitao Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Jiawei Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Minglei Li",
+      "affiliations": []
+    },
+    {
+      "name": "Dandan Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Ding Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Houde Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaofan Li",
+      "affiliations": []
+    },
+    {
+      "name": "Si Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Ping Luo",
+      "affiliations": []
+    },
+    {
+      "name": "Haibao Yu",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-05",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "simulators",
+      "infrastructure",
+      "data"
+    ],
+    "topics": [
+      "control",
+      "imitation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "language",
+      "action",
+      "tactile",
+      "proprioception"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [
+      "benchmark"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "dataset",
+    "simulator",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 87,
+    "selection_reason": "把目标成功与物理安全分开，用隐藏 FEM 状态定义 drop 与对象特定峰值形变门槛。 第3节定义四个 deformable/rigid×object/spatial 套件与 Goal/Safety Success；第4节显示触觉令 object-centric deformable Safety Success 从21.4%升至35.6%，并分析形变。 相对 KinDER 的物理推理评测，SoftVTBench补充持续接触安全、软体 FEM 和 visuo-tactile policy 评测。",
+    "candidate_run": "2026-07-backfill/batch-02",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "FEM 仿真安全阈值向真实软体物体迁移仍未验证"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.04234",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.04234"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.04234"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://github.com/TuojingAI/SoftVTBench"
+    }
+  ],
+  "suggested_new_tags": []
+}

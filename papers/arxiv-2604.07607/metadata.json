@@ -1,0 +1,394 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2604.07607",
+  "title": "EgoVerse: An Egocentric Human Dataset for Robot Learning from Around the World",
+  "title_zh": "EgoVerse：面向机器人学习的全球大规模第一人称人类数据集",
+  "abstract": "Robot learning increasingly depends on large and diverse data, yet robot data collection remains expensive and difficult to scale. Egocentric human data offer a promising alternative by capturing rich manipulation behavior across everyday environments. However, existing human datasets are often limited in scope, difficult to extend, and fragmented across institutions. We introduce EgoVerse, a collaborative platform for human data-driven robot learning that unifies data collection, processing, and access under a shared framework, enabling contributions from individual researchers, academic labs, and industry partners. The current release includes 1,362 hours (80k episodes) of human demonstrations spanning 1,965 tasks, 240 scenes, and 2,087 unique demonstrators, with standardized formats, manipulation-relevant annotations, and tooling for downstream learning. Beyond the dataset, we conduct a large-scale study of human-to-robot transfer with experiments replicated across multiple labs, tasks, and robot embodiments under shared protocols. We find that policy performance generally improves with increased human data, but that effective scaling depends on alignment between human data and robot learning objectives. Together, the dataset, platform, and study establish a foundation for reproducible progress in human data-driven robot learning.",
+  "paper_url": "https://arxiv.org/abs/2604.07607",
+  "pdf_url": "https://arxiv.org/pdf/2604.07607",
+  "project_url": "https://partners.mecka.ai/egoverse",
+  "code_url": "https://github.com/GaTech-RL2/EgoVerse",
+  "dataset_url": "https://partners.mecka.ai/egoverse",
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Ryan Punamiya",
+      "affiliations": [
+        "gatech"
+      ]
+    },
+    {
+      "name": "Simar Kareer",
+      "affiliations": [
+        "gatech"
+      ]
+    },
+    {
+      "name": "Zeyi Liu",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Josh Citron",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Ri-Zhao Qiu",
+      "affiliations": [
+        "ucsd"
+      ]
+    },
+    {
+      "name": "Xiongyi Cai",
+      "affiliations": [
+        "ucsd"
+      ]
+    },
+    {
+      "name": "Alexey Gavryushin",
+      "affiliations": [
+        "ethz"
+      ]
+    },
+    {
+      "name": "Jiaqi Chen",
+      "affiliations": [
+        "ethz"
+      ]
+    },
+    {
+      "name": "Davide Liconti",
+      "affiliations": [
+        "ethz"
+      ]
+    },
+    {
+      "name": "Lawrence Y. Zhu",
+      "affiliations": [
+        "gatech"
+      ]
+    },
+    {
+      "name": "Patcharapong Aphiwetsa",
+      "affiliations": [
+        "gatech"
+      ]
+    },
+    {
+      "name": "Baoyu Li",
+      "affiliations": [
+        "gatech"
+      ]
+    },
+    {
+      "name": "Aniketh Cheluva",
+      "affiliations": [
+        "gatech"
+      ]
+    },
+    {
+      "name": "Pranav Kuppili",
+      "affiliations": [
+        "gatech"
+      ]
+    },
+    {
+      "name": "Yangcen Liu",
+      "affiliations": [
+        "gatech"
+      ]
+    },
+    {
+      "name": "Dhruv Patel",
+      "affiliations": [
+        "gatech"
+      ]
+    },
+    {
+      "name": "Aidan Gao",
+      "affiliations": [
+        "gatech"
+      ]
+    },
+    {
+      "name": "Hye-Young Chung",
+      "affiliations": [
+        "gatech"
+      ]
+    },
+    {
+      "name": "Ryan Co",
+      "affiliations": [
+        "gatech"
+      ]
+    },
+    {
+      "name": "Renee Zbizika",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Jeff Liu",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Xiaomeng Xu",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Haoyu Xiong",
+      "affiliations": [
+        "mit"
+      ]
+    },
+    {
+      "name": "Geng Chen",
+      "affiliations": [
+        "ucsd"
+      ]
+    },
+    {
+      "name": "Sebastiano Oliani",
+      "affiliations": [
+        "ethz"
+      ]
+    },
+    {
+      "name": "Wenkai Xuan",
+      "affiliations": [
+        "ethz"
+      ]
+    },
+    {
+      "name": "Chenyu Yang",
+      "affiliations": [
+        "ethz"
+      ]
+    },
+    {
+      "name": "Xi Wang",
+      "affiliations": [
+        "ethz"
+      ]
+    },
+    {
+      "name": "James Fort",
+      "affiliations": [
+        "meta"
+      ]
+    },
+    {
+      "name": "Richard Newcombe",
+      "affiliations": [
+        "meta"
+      ]
+    },
+    {
+      "name": "Josh Gao",
+      "affiliations": [
+        "mecka-ai"
+      ]
+    },
+    {
+      "name": "Jason Chong",
+      "affiliations": [
+        "mecka-ai"
+      ]
+    },
+    {
+      "name": "Garrett Matsuda",
+      "affiliations": [
+        "scale-ai"
+      ]
+    },
+    {
+      "name": "Aseem Doriwala",
+      "affiliations": [
+        "scale-ai"
+      ]
+    },
+    {
+      "name": "Marc Pollefeys",
+      "affiliations": [
+        "ethz"
+      ]
+    },
+    {
+      "name": "Robert Katzschmann",
+      "affiliations": [
+        "ethz"
+      ]
+    },
+    {
+      "name": "Xiaolong Wang",
+      "affiliations": [
+        "ucsd"
+      ]
+    },
+    {
+      "name": "Shuran Song",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Judy Hoffman",
+      "affiliations": [
+        "gatech"
+      ]
+    },
+    {
+      "name": "Danfei Xu",
+      "affiliations": [
+        "gatech"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "gatech",
+      "name": "Georgia Institute of Technology",
+      "role": "primary"
+    },
+    {
+      "id": "stanford",
+      "name": "Stanford University",
+      "role": "collaborator"
+    },
+    {
+      "id": "ucsd",
+      "name": "University of California San Diego",
+      "role": "collaborator"
+    },
+    {
+      "id": "ethz",
+      "name": "ETH Zürich",
+      "role": "collaborator"
+    },
+    {
+      "id": "mit",
+      "name": "MIT CSAIL",
+      "role": "collaborator"
+    },
+    {
+      "id": "meta",
+      "name": "Meta Reality Labs Research",
+      "role": "collaborator"
+    },
+    {
+      "id": "mecka-ai",
+      "name": "Mecka AI",
+      "role": "collaborator"
+    },
+    {
+      "id": "scale-ai",
+      "name": "Scale AI",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-04-08",
+    "last_revision": "2026-07-07"
+  },
+  "venue": {
+    "name": "arXiv",
+    "year": 2026,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data"
+    ],
+    "topics": [
+      "imitation-learning",
+      "behavior-cloning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm",
+      "humanoid"
+    ],
+    "modalities": [
+      "vision",
+      "proprioception",
+      "action"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [
+      "code",
+      "dataset"
+    ],
+    "properties": [
+      "open-source",
+      "real-robot-evaluation",
+      "large-scale-data"
+    ]
+  },
+  "paper_type": [
+    "dataset"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "迄今为止最大规模的以机器人学习为导向的第一人称人类操作数据集（1,362 小时、80k 条轨迹），由全球多所高校和工业伙伴联合贡献，并配套跨实验室、跨机器人形态的标准化人机迁移研究，是推动 human-to-robot transfer 方向可复现进展的基础设施级工作。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-21",
+    "confidence": "high",
+    "needs_human_review": true,
+    "uncertainties": [
+      "数据集目前通过 partners.mecka.ai/egoverse 申请访问，未确认是否存在直接公开下载链接",
+      "部分作者（如 Danfei Xu、Judy Hoffman）可能在多机构有双重 affiliation，PDF 中仅列出其主要机构"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2604.07607"
+    },
+    {
+      "type": "project-page",
+      "url": "https://partners.mecka.ai/egoverse"
+    },
+    {
+      "type": "code-repository",
+      "url": "https://github.com/GaTech-RL2/EgoVerse"
+    }
+  ],
+  "suggested_new_tags": [],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "ar5iv-html",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2604.07607",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "I Introduction",
+      "II Related Work",
+      "III The EgoVerse Dataset (III-A Human Data Collection Setup, III-B Human Data Annotation, III-C EgoDB, III-D EgoVerse-A, III-E EgoVerse-I)",
+      "IV The EgoVerse Study (IV-A Robot Platforms, IV-B Data Alignment, IV-C Architecture, IV-D Evaluation Setup, IV-E Scaling, IV-F Diversity)",
+      "V Limitations",
+      "VI Conclusion",
+      "VII Contributions",
+      "VIII Appendix"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-22",
+    "verified_sections": ["method (IV)", "experiments (IV-E, IV-F)", "conclusion (VI)", "limitations (V)", "dataset (III)"]
+  }
+}

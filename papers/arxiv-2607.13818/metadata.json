@@ -1,0 +1,132 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.13818",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Learning Robust Execution in Robotic Manipulation with Agentic Reinforcement Learning",
+  "title_zh": null,
+  "abstract": "Robotic manipulation poses fundamental challenges due to uncertainty, long-horizon execution, and compounding errors, which can easily destabilize execution and lead to task failure. Although recent vision-language-action (VLA) models exhibit strong generalization, they typically lack explicit mechanisms to assess execution stability and to recover when execution deviates from its nominal behavior. In this paper, we propose: (1) two complementary metrics to assess execution quality at runtime, and (2) an agentic reinforcement learning framework that learns to restore effective execution through high-level decision-making rather than directly learning low-level actions. In this framework, an agentic policy reasons over recent execution history and selects among a small set of execution modes to regulate the execution process. Under execution degradation, it triggers appropriate recovery mechanisms to restore the robot to previously visited nominal states, enabling the task to continue. We evaluate the proposed method on the LIBERO benchmark, achieving up to a 13.7% improvement in success rate under standard settings and up to a 39.2% improvement under disturbance settings, demonstrating substantially enhanced execution robustness.",
+  "paper_url": "https://arxiv.org/abs/2607.13818",
+  "pdf_url": "https://arxiv.org/pdf/2607.13818",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Xiaopeng Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Yueyang Weng",
+      "affiliations": []
+    },
+    {
+      "name": "Qi Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Yongjin Mu",
+      "affiliations": []
+    },
+    {
+      "name": "Yanjie Li",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-15",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "reinforcement-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action",
+      "tactile"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [],
+    "properties": [
+      "simulation-only"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 71,
+    "selection_reason": "该工作在机器人操控执行鲁棒性上提出明确增量：将执行管理建模为agentic RL问题，高层agentic策略通过选择执行模式调控冻结的底层策略，而非修改或重训策略本身。LIBERO四子集×三种底层策略(OpenVLA/π0/Diffusion Policy)的实验证据坚实，标准设置+13.7%、扰动设置+39.2%的增益一致且有消融支持。相较看板中已有的执行恢复/监控工作(如batch-01的Foresight Residual RL)，新增信息是模式化的agentic执行管理框架与双重执行质量指标的联合设计，且模型不可知(适配多种底层策略)。主要风险：仅仿真评估(LIBERO)，严重退化场景恢复能力有限(SVI明确讨论)；资产未公开验证。",
+    "candidate_run": "2026-07-backfill/batch-03",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "hermes-agent",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "代码/权重仓库未探测到HTTP 200可访问资产",
+      "仅LIBERO仿真评估，无真实机器人实验(SVI明确列为未来工作)",
+      "执行模式为预定义集合，无法处理模式外的新故障类型",
+      "严重执行退化和OOD场景恢复能力有限(SVI自报)",
+      "执行质量指标依赖专家演示参考轨迹，实际部署中可能不可得"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.13818v1",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.13818"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.13818v1"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "manipulation",
+      "name": "manipulation",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "该工作在机器人操控执行鲁棒性上提出明确增量：将执行管理建模为agentic RL问题，高层agentic策略通过选择执行模式调控冻结的底层策略，而非修改或重训策略本身。LIBERO四子集×三种底层策略(OpenVLA/π0/Diffusion Policy)的实验证据坚实，标准设置+13.7%、扰动设置+39.2%的增益一致且有消融支持。相较看板中已有的执行恢复/监控工作(如batch-01的Foresight Residual RL)，新增信息是模式化的agentic执行管理框架与双重执行质量指标的联合设计，且模型不可知(适配多种底层策略)。主要风险：仅仿真评估(LIBERO)，严重退化场景恢复能力有限(SVI明确讨论)；资产未公开验证。"
+    }
+  ]
+}

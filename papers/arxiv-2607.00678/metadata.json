@@ -1,0 +1,196 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.00678",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "ABot-M0.5: Unified Mobility-and-Manipulation World Action Model",
+  "title_zh": null,
+  "abstract": "Mobile manipulation is a key capability for general-purpose robots, yet remains challenging for current embodied learning methods. VLA policies are typically reactive and lack explicit world modeling, while existing World Action Models (WAMs) are still poorly aligned with the structure of mobile manipulation: they operate on coarse video chunks, model entangled navigation-manipulation actions, and train inverse dynamics under supervision that does not match autoregressive inference. As a result, they often miss fine-grained contact dynamics, suffer from action-distribution conflicts, and accumulate errors over long-horizon rollouts. We propose ABot-M0.5, a new WAM built on the insight that mobile manipulation requires alignment at three levels: temporal granularity, action space, and train-test consistency. To align temporal granularity, we introduce intermediate latent actions that capture local visual state transitions and serve as an bridging action space between video latents and embodiment-specific controls. To align action space, we design a dual-level Mixture-of-Transformers architecture that disentangles both modality representations and heterogeneous action subspaces such as base movement and arm manipulation. To align inference conditions, we propose the dream-forcing training strategy that progressively trains inverse dynamics on model-predicted videos, improving train-test alignment and robustness during autoregressive prediction. Experiments on challenging mobile and fine-grained manipulation benchmarks demonstrate that ABot-M0.5 achieves state-of-the-art performance in both long-horizon task success and finegrained control accuracy. These results highlight the critical importance of granularity-aligned, action-disentangled, and inference-consistent world-action modeling.",
+  "paper_url": "https://arxiv.org/abs/2607.00678",
+  "pdf_url": "https://arxiv.org/pdf/2607.00678",
+  "project_url": null,
+  "code_url": "https://github.com/amap-cvlab/ABot-Manipulation",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Ronghan Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Yandan Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Zuojin Tang",
+      "affiliations": []
+    },
+    {
+      "name": "Dongjie Huo",
+      "affiliations": []
+    },
+    {
+      "name": "Tong Lin",
+      "affiliations": []
+    },
+    {
+      "name": "Haoning Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Haoyun Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Yuzhi Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Lulu Zheng",
+      "affiliations": []
+    },
+    {
+      "name": "Botai Yuan",
+      "affiliations": []
+    },
+    {
+      "name": "Tianlun Li",
+      "affiliations": []
+    },
+    {
+      "name": "Mingxin Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Dekang Qi",
+      "affiliations": []
+    },
+    {
+      "name": "Bin Hu",
+      "affiliations": []
+    },
+    {
+      "name": "Wei Mei",
+      "affiliations": []
+    },
+    {
+      "name": "Yuze Xuan",
+      "affiliations": []
+    },
+    {
+      "name": "Haolong Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Yanqing Zhu",
+      "affiliations": []
+    },
+    {
+      "name": "Mu Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Zhiheng Ma",
+      "affiliations": []
+    },
+    {
+      "name": "Xinyuan Chang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-01",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model",
+      "vla",
+      "planning",
+      "control"
+    ],
+    "tasks": [
+      "mobile-manipulation",
+      "navigation",
+      "manipulation",
+      "generalist-control"
+    ],
+    "platforms": [
+      "mobile-robot",
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [
+      "code"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 83,
+    "selection_reason": "这项工作在其问题上提出明确增量：首次把视频时间粒度、异构动作空间和 autoregressive train-test gap 三个结构问题同时纳入移动操控 WAM。 多基准、消融和真实机器人共同支持主张；Dream Forcing 从 67.55% 升到 70.56%，action-decoupled MoT 从 0.34 升到 0.48。 最近邻为 arxiv-2607.08436 EgoWAM；EgoWAM聚焦人类视频迁移的世界目标，ABot-M0.5新增移动底盘—机械臂动作解耦和 rollout 对齐。",
+    "candidate_run": "2026-07-backfill/batch-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "真实实验仍是受控实验室任务",
+      "开放环境和跨 embodiment 泛化尚未验证"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.00678",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.00678"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.00678"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://github.com/amap-cvlab/ABot-Manipulation"
+    }
+  ],
+  "suggested_new_tags": []
+}

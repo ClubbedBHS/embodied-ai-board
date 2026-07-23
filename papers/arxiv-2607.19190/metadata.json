@@ -1,0 +1,198 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.19190",
+  "title": "Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents",
+  "title_zh": "Agentic Real2Sim：基于视觉语言智能体的物理世界建模",
+  "abstract": "Real-to-sim conversion for robotic interaction with objects remains labor-intensive because it requires more than visual reconstruction: a streamlined real2sim process must recover scene geometries and object states, infer physical parameters, and assemble actors, objects, cameras, poses, and trajectories into a runnable physical simulation. Today this process still depends on manual tuning of visual foundation models, mesh cleanup, coordinate-frame alignment, and brittle workflow glue across visual perception tools and simulators. We introduce \\textit{Agentic Real2Sim}, a framework for generalized physical world modeling with vision-language agents, converting a real-world recording of object-robot interaction into a simulatable episodic twin which preserves observations, geometries, robot interactions, and object states. We evaluate Agentic Real2Sim on rigid-object manipulation, deformable-object interaction, and humanoid motion scenes, spanning domains that are usually handled by separate Real2Sim pipelines, marking a first step toward scalable conversion. The framework's agentic decisions can be driven by an open-weight VLM backend at a small fraction of the cost of frontier models, while attaining comparable conversion success rate. We aim to use the resulting real-world-aligned twins for downstream robotics tasks, specifically policy learning and evaluation. The project site is available at https://ericchen321.github.io/agentic_real2sim.github.io/.",
+  "paper_url": "https://arxiv.org/abs/2607.19190",
+  "pdf_url": "https://arxiv.org/pdf/2607.19190",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Guanxiong Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Qianjun Xia",
+      "affiliations": []
+    },
+    {
+      "name": "Jiawei Peng",
+      "affiliations": []
+    },
+    {
+      "name": "Heng Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Bole Ma",
+      "affiliations": []
+    },
+    {
+      "name": "Justin Qian",
+      "affiliations": []
+    },
+    {
+      "name": "Ziyi Jiao",
+      "affiliations": []
+    },
+    {
+      "name": "Bingyang Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Luoxin Ye",
+      "affiliations": []
+    },
+    {
+      "name": "Kaifeng Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Kunyi Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Weijia Zeng",
+      "affiliations": []
+    },
+    {
+      "name": "Yunuo Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Pengzhi Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Ziqiu Zeng",
+      "affiliations": []
+    },
+    {
+      "name": "Huamin Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Chao Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Alan Yuille",
+      "affiliations": []
+    },
+    {
+      "name": "Fan Shi",
+      "affiliations": []
+    },
+    {
+      "name": "Changxi Zheng",
+      "affiliations": []
+    },
+    {
+      "name": "Yunzhu Li",
+      "affiliations": []
+    },
+    {
+      "name": "Chenfanfu Jiang",
+      "affiliations": []
+    },
+    {
+      "name": "Peter Yichen Chen",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-21",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "simulators",
+      "infrastructure"
+    ],
+    "topics": [
+      "world-model",
+      "sim-to-real"
+    ],
+    "tasks": [
+      "manipulation",
+      "humanoid-control"
+    ],
+    "platforms": [
+      "robot-arm",
+      "humanoid",
+      "platform-agnostic"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "simulator",
+    "infrastructure",
+    "system"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 81,
+    "selection_reason": "补足看板 Real2Sim 基础设施空白，若真实交互能够自动转换为可重放 episode twin，将同时影响数据生成、仿真评测和策略训练；当前定量证据仍主要集中在刚体 DROID。",
+    "candidate_run": "2026-07-22",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "未确认代码和完整流水线是否已经公开",
+      "可变形与 humanoid 域缺少与刚体域同等强度的定量评估"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.19190"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.19190"
+    }
+  ],
+  "suggested_new_tags": [],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.19190",
+    "fulltext_accessed": true,
+    "fulltext_note": "Used official arXiv HTML and checked method, experiments, conclusion/limitations sections.",
+    "sections_detected": [
+      "Introduction",
+      "System Overview",
+      "Adapters",
+      "Experiments",
+      "Conclusions, Limitations and Future Work"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  }
+}

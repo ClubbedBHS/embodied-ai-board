@@ -1,0 +1,158 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.16401",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Apple-$π$: Benchmarking Thinking with Video Towards Law-Grounded Physical Intelligence",
+  "title_zh": null,
+  "abstract": "Modern video generation models are increasingly hailed as emerging world models with an internalized grasp of physical law. Yet existing benchmarks largely evaluate physical plausibility only at the output level, without verifying whether the model arrives there through a faithful, law-grounded reasoning process. We introduce Apple-PI, the first benchmark that anchors video-model evaluation explicitly in physical laws. Apple-PI comprises three components. 1) Orchard: a dataset of 400 videos covering ten canonical tasks in classical mechanics. It separates single-law tasks for confounder-free diagnosis from multi-law tasks for probing generalization. 2) Benchmark Protocol: a three-stage protocol based on scientific reasoning, including Perception, Formulation, and Deduction. It uses chain-of-frames prompting on infographic-annotated first frames, treating the generated video as the model's visible reasoning trace. 3) Evaluation Suite: a hybrid evaluation suite that combines MLLM-based subjective scoring with physics-law-grounded objective measures. This enables stage-resolved diagnosis of not only whether a model fails, but where it fails. Benchmarking 11 models shows that current video models remain far from reliable law-grounded world simulators, with the best video model scoring only 0.473. Our stage-, pillar-, and source-resolved analyses further expose a Perception-to-Formulation-to-Deduction bottleneck, weak multi-law state transfer, and a persistent Sim-to-Real gap. These findings position Apple-PI as a diagnostic foundation for guiding future video models toward world models with law-grounded physical intelligence.",
+  "paper_url": "https://arxiv.org/abs/2607.16401",
+  "pdf_url": "https://arxiv.org/pdf/2607.16401",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Runmao Yao",
+      "affiliations": []
+    },
+    {
+      "name": "Kairui Hu",
+      "affiliations": []
+    },
+    {
+      "name": "Yukang Cao",
+      "affiliations": []
+    },
+    {
+      "name": "Ruisi Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Shulin Tian",
+      "affiliations": []
+    },
+    {
+      "name": "Ziang Cao",
+      "affiliations": []
+    },
+    {
+      "name": "Weichen Fan",
+      "affiliations": []
+    },
+    {
+      "name": "Ziqi Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Yuhao Dong",
+      "affiliations": []
+    },
+    {
+      "name": "Hao Li",
+      "affiliations": []
+    },
+    {
+      "name": "Zhaoxi Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Zhongang Cai",
+      "affiliations": []
+    },
+    {
+      "name": "Lei Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Ziwei Liu",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-17",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data",
+      "infrastructure"
+    ],
+    "topics": [
+      "world-model",
+      "foundation-model"
+    ],
+    "tasks": [
+      "manipulation",
+      "generalist-control"
+    ],
+    "platforms": [
+      "dexterous-hand"
+    ],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [],
+    "properties": [
+      "simulation-only"
+    ]
+  },
+  "paper_type": [
+    "dataset",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 75,
+    "selection_reason": "把视频模型物理评测拆为Perception/Formulation/Deduction，并用400视频、10类经典力学和主客观混合指标定位推理阶段。 第3节给出Orchard/protocol/evaluation；第4节评11模型，最佳仅0.473，并有stage/pillar/source、Sim2Real、失败与protocol ablation；附录详述QA和judge reliability。 相对KinDER的机器人物理推理，Apple-π更偏视频世界模型的法则推理过程诊断，具身相关性较低。",
+    "candidate_run": "2026-07-backfill/batch-02",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "核心对象是视频生成模型而非机器人控制",
+      "项目页本次不可访问",
+      "MLLM judge仍可能带偏差"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.16401",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.16401"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.16401"
+    }
+  ],
+  "suggested_new_tags": []
+}

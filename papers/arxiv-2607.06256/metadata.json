@@ -1,0 +1,130 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.06256",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Diagnosing Semantic Handoff Failures in Agent-Orchestrated Vision-Language-Action Skill Composition",
+  "title_zh": null,
+  "abstract": "Long-horizon household tasks require robots to compose many language-conditioned skills, yet the boundary between consecutive skills is rarely explicit. A skill may satisfy its own postcondition while leaving the robot, objects, or camera views in a state from which the next skill cannot reliably start. We study this semantic handoff problem in BEHAVIOR-1K through an agent-orchestrated vision-language-action execution harness. The harness invokes $π_{0.5}$-based skill checkpoints trained from cleaned BEHAVIOR-1K demonstrations, assigns each skill typed arguments and a step budget, and uses multi-view vision-language model verification to decide whether execution should advance, retry, or replan. To separate isolated skill competence from long-horizon compositional robustness, we evaluate the same checkpoints under two initial-state distributions: clean skill-boundary snapshots and chained terminal states produced by previous skills. Selected navigation, grasping, placement, and door-opening skills achieve 77--100% success from clean snapshots under human-reviewed verification, yet composed rollouts still frequently stall from chained states. The resulting traces attribute failures to next-skill readiness, target grounding, and control execution, turning nearzero task success into actionable diagnostics for what VLA skill libraries must learn next: robustness to the messy chained-state distribution that clean demonstrations underrepresent.",
+  "paper_url": "https://arxiv.org/abs/2607.06256",
+  "pdf_url": "https://arxiv.org/pdf/2607.06256",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Ke Rui",
+      "affiliations": []
+    },
+    {
+      "name": "Yushen Zuo",
+      "affiliations": []
+    },
+    {
+      "name": "Jiawei Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Haoran Jia",
+      "affiliations": []
+    },
+    {
+      "name": "Jinming Ma",
+      "affiliations": []
+    },
+    {
+      "name": "Weitao Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Minglei Li",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-07-07",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "topics": [
+      "vla",
+      "planning"
+    ],
+    "tasks": [
+      "navigation",
+      "manipulation"
+    ],
+    "platforms": [
+      "dexterous-hand",
+      "mobile-robot"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 78,
+    "selection_reason": "提出 semantic handoff 诊断，把单技能 competence 与 chained-state readiness 分离，并用 typed contracts/verify-replan traces 归因。 第III节给出技能契约与 plan-act-verify-replan harness；第IV节在 BEHAVIOR-1K 比较干净边界快照与链式终态：单技能77–100%，组合仍频繁停滞；第V节列局限。 相对 LEAGUE 的技能组合学习，该工作聚焦现成 VLA 技能库在真实 chained-state distribution 的语义交接失效。",
+    "candidate_run": "2026-07-backfill/batch-02",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-23",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "完整长程成功接近零，当前贡献主要是诊断而非解决方案",
+      "依赖 VLM verifier 与人工复核"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2607.06256",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-23"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.06256"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2607.06256"
+    }
+  ],
+  "suggested_new_tags": []
+}
