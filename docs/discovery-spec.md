@@ -1,4 +1,4 @@
-# Embodied AI Board 论文发现规范 v0.1
+# Embodied AI Board 论文发现规范 v0.2
 
 ## 1. 目标与边界
 
@@ -59,7 +59,16 @@
 - 只有摘要和元数据时，候选可保留，但 `source_scope` 必须是 `abstract-and-metadata`，不得进入“正式推荐”或生成完整长摘要。
 - 关键实验数字必须能追溯到正文章节、表格、图或附录。
 
-### 4.5 硬门槛
+### 4.5 团队、项目页与资产核验
+
+- 严格执行 `docs/metadata-verification.md`。
+- 读取论文全文后，必须继续检查 arXiv 外部链接、论文 HTML 的 `href` 与锚文本，以及官方项目主页中的全部资产按钮。
+- GitHub 仓库使用 GitHub API 优先验证；Hugging Face 资产使用平台 API 或可跟随重定向的 GET 验证。不得只依赖 HEAD 或单次 HTTP 200 检测。
+- 超时、连接重置、DNS、TLS、403 和反爬属于 `verification-error`，不等于 `not-found`。
+- 团队优先从论文 affiliation 和官方项目页作者机构映射提取。无法确认实验室时仍应保存已确认的大学或公司，不能把整条团队信息留空。
+- 机构、代码、数据和模型必须保存证据来源；只有当前验证可访问的资产才计入可复现性分数。
+
+### 4.6 硬门槛
 
 任一项不满足即停止评分，并给出拒绝或暂缓原因：
 
@@ -69,7 +78,7 @@
 4. 核心主张有实验、数据、系统结果或严谨分析支持；
 5. 正式推荐必须能读取全文；摘要级来源只能进入待观察队列。
 
-### 4.6 评分与分流
+### 4.7 评分与分流
 
 通过硬门槛后，严格按 `selection-rubric.md` 打分：
 
@@ -117,6 +126,9 @@ candidates/YYYY-MM-DD/
   "last_revision": "YYYY-MM-DD or null",
   "authors": ["..."],
   "organizations": ["..."],
+  "organization_evidence": [],
+  "project_url": "https://... or null",
+  "asset_checks": [],
   "discovered_via": ["..."],
   "watchlist_matches": ["..."],
   "already_on_board": false,

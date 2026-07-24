@@ -35,6 +35,20 @@ function concise(value, max = 220) {
   return sentence?.trim() || `${text.slice(0, max - 1).trim()}…`;
 }
 
+function normalizeUrl(value) {
+  const text = String(value || "")
+    .replace(/&amp;/g, "&")
+    .replace(/\\_/g, "_")
+    .trim()
+    .replace(/[),.;]+$/g, "");
+  if (!text) return null;
+  if (/^https?:\/\//i.test(text)) return text.replace(/^http:\/\//i, "https://");
+  const knownDomain = text.match(
+    /(?:^|\/)((?:github\.com|huggingface\.co|[\w.-]+\.github\.io)\/[^\s"'<>]+)/i,
+  );
+  return knownDomain ? `https://${knownDomain[1]}` : null;
+}
+
 function inferLabels(candidate, poolEntry) {
   const text = `${candidate.title} ${poolEntry?.abstract || ""} ${candidate.selection_reason || ""}`.toLowerCase();
   const tasks = [];
@@ -89,22 +103,42 @@ function inferLabels(candidate, poolEntry) {
 function assetLinks(candidate) {
   const checks =
     candidate.evidence?.asset_checks ||
+    candidate.asset_checks ||
     candidate.evidence?.assets ||
     [];
-  const accessible = checks.filter((item) => item?.accessible === true && item?.url);
-  const find = (...kinds) => accessible.find((item) => kinds.includes(String(item.kind || "").toLowerCase()))?.url || null;
+  const normalizedChecks = checks
+    .map((item) => ({
+      ...item,
+      url: normalizeUrl(item?.url),
+      status:
+        item?.status ||
+        (item?.accessible === true
+          ? "verified"
+          : item?.accessible === false
+            ? "verification-error"
+            : "not-found"),
+    }))
+    .filter((item) => item.url);
+  const verified = normalizedChecks.filter(
+    (item) => item.status === "verified" || item.accessible === true,
+  );
+  const findVerified = (...kinds) =>
+    verified.find((item) => kinds.includes(String(item.kind || "").toLowerCase()))?.url || null;
+  const findDiscovered = (...kinds) =>
+    normalizedChecks.find((item) => kinds.includes(String(item.kind || "").toLowerCase()))?.url || null;
   const assets = [];
-  if (find("code", "github", "repository")) assets.push("code");
-  if (find("dataset", "data")) assets.push("dataset");
-  if (find("model", "weights", "model-weights")) assets.push("model-weights");
-  if (find("simulator")) assets.push("simulator");
-  if (find("benchmark")) assets.push("benchmark");
+  if (findVerified("code", "github", "repository")) assets.push("code");
+  if (findVerified("dataset", "data")) assets.push("dataset");
+  if (findVerified("model", "weights", "model-weights")) assets.push("model-weights");
+  if (findVerified("simulator")) assets.push("simulator");
+  if (findVerified("benchmark")) assets.push("benchmark");
   return {
-    projectUrl: find("project", "project-page"),
-    codeUrl: find("code", "github", "repository"),
-    datasetUrl: find("dataset", "data"),
-    modelUrl: find("model", "weights", "model-weights"),
+    projectUrl: normalizeUrl(candidate.project_url) || findDiscovered("project", "project-page"),
+    codeUrl: normalizeUrl(candidate.code_url) || findVerified("code", "github", "repository"),
+    datasetUrl: normalizeUrl(candidate.dataset_url) || findVerified("dataset", "data"),
+    modelUrl: normalizeUrl(candidate.model_url) || findVerified("model", "weights", "model-weights"),
     assets,
+    checks: normalizedChecks,
   };
 }
 
@@ -211,11 +245,20 @@ for (const batchName of batchNames) {
       dataset_url: links.datasetUrl,
       model_url: links.modelUrl,
       video_url: null,
-      authors: (candidate.authors || poolEntry?.authors || []).map((name) => ({ name, affiliations: [] })),
+      authors: (candidate.authors || poolEntry?.authors || []).map((author) =>
+        typeof author === "string"
+          ? { name: author, affiliations: [] }
+          : { name: author.name, affiliations: author.affiliations || [] },
+      ),
       organizations: (candidate.organizations || []).map((name) => ({
-        id: slug(typeof name === "string" ? name : name.name),
+        id: typeof name === "string" ? slug(name) : name.id || slug(name.name),
         name: typeof name === "string" ? name : name.name,
-        role: "unknown",
+        role:
+          typeof name === "string"
+            ? "unknown"
+            : ["primary", "collaborator", "unknown"].includes(name.role)
+              ? name.role
+              : "unknown",
       })),
       dates: {
         first_publication: candidate.first_publication,
@@ -255,6 +298,7 @@ for (const batchName of batchNames) {
         fulltext_note: "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
         sections_detected: ["Method/Approach", "Experiments/Evaluation", "Conclusion/Limitations"],
         figure_images_accessed: false,
+        asset_checks: links.checks,
         accessed_at: "2026-07-23",
       },
       sources: (candidate.sources || [candidate.paper_url, candidate.fulltext_url])

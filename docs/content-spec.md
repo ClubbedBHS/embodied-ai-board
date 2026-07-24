@@ -5,6 +5,7 @@
 - 结构化事实放入 `metadata.json`，阅读型内容放入 `summary.zh.md`。
 - 对 arXiv 论文，默认以 ar5iv HTML 全文为主要内容源，以 arXiv 摘要页获取标题、作者、摘要和日期等元数据。
 - ar5iv 不可用或正文缺失时才尝试下载 PDF；项目主页和官方仓库用于补充资源链接。
+- 团队和资产核验必须遵循 `docs/metadata-verification.md`；项目主页是团队 affiliation 和资源按钮的一手来源。
 - 无法核实的信息使用 `null`、空数组或 `unknown`，禁止猜测。
 - AI 可以推荐标签，但只能使用受控词表；新概念进入 `suggested_new_tags`。
 - 所有 AI 结果必须经过人工审核后才能发布。
@@ -173,6 +174,8 @@ workbench/
 
 `primary` 必须有作者 affiliation、论文或项目主页等明确依据，不能根据作者知名度推断。
 
+无法确认具体实验室时，可以保存论文或项目主页明确列出的大学、公司；不得因为实验室名称未知而把 `organizations` 整体留空。团队证据应加入 `sources`，并在 `ai_generation.uncertainties` 中记录仍未确认的细粒度归属。
+
 ### paper_type
 
 允许多选：
@@ -232,6 +235,8 @@ Agent 不得把词表以外的值直接写入 `labels`，而应使用：
 5. 作者或机构的项目主页
 6. 官方代码仓库、数据集或模型页面
 7. 第三方论文整理平台仅用于发现线索，不作为关键事实的唯一依据
+
+团队与资产字段不得止步于 arXiv 摘要页。对于存在官方项目主页的论文，必须扫描项目页中的 Code、GitHub、Dataset、Model、Weights 和 Documentation 链接。链接提取、规范化和验证状态的具体要求见 `docs/metadata-verification.md`。
 
 ## 7. HTML 全文读取规则
 

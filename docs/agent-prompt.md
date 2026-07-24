@@ -13,6 +13,7 @@
 - docs/summary-template.md
 - docs/pilot-plan.md
 - docs/workspace-layout.md
+- docs/metadata-verification.md
 
 严格遵守以下要求：
 
@@ -32,19 +33,21 @@
 12. 无法核实的字段填写 null、空数组或 unknown，不允许猜测。
 13. 区分首次公开日期、修订日期和会议发表状态。
 14. 区分真实机器人实验、仿真实验和混合实验。
-15. 只有实际公开且可访问的代码、数据和权重才能加入 assets 标签。
-16. 关键实验数字在 Markdown 中注明 HTML 章节、表格或图编号；通过 PDF 核验时可补充页码。
-17. 机构的 primary 角色必须有明确来源，不得根据作者知名度推断。
-18. 每篇论文输出：
+15. 严格执行 docs/metadata-verification.md：读取论文后继续扫描 arXiv 外部链接、HTML 的 href 与锚文本，以及官方项目主页中的 Code、GitHub、Dataset、Model、Weights 和 Documentation 按钮。
+16. 对裸域名和 ar5iv 错误相对链接进行规范化；GitHub 优先使用 API 验证。HTTP 超时、连接重置、403 或 HEAD 失败标为 verification-error，不得表述成“未开源”。
+17. 只有实际公开且验证可访问的代码、数据和权重才能加入 assets 标签；但发现的未验证 URL 和错误原因必须保存在 asset_checks，不能直接丢弃。
+18. 关键实验数字在 Markdown 中注明 HTML 章节、表格或图编号；通过 PDF 核验时可补充页码。
+19. 团队优先从论文 affiliation 和官方项目页的作者机构映射提取。机构的 primary 角色必须有明确来源，不得根据作者知名度推断；无法确认实验室时仍要保存已确认的大学或公司。
+20. 每篇论文输出：
     papers/<paper-id>/metadata.json
     papers/<paper-id>/summary.zh.md
     只有候选已被人工批准进入内容生产时，才允许写入 papers/。
     原始 HTML、PDF、TXT、LaTeX source 和图片必须写入 workbench/downloads/<paper-id>/，不得放进 papers/。
     临时提取结果、失败日志和推理笔记写入 workbench/notes/<run-id>/。
     发现与筛选结果写入 candidates/<run-date>/，不得直接进入网页数据。
-19. 所有论文的 editorial.status 和摘要 status 均保持 ai-draft。
-20. 不修改现有 Schema 或正式词表；改进建议统一写入最终报告。
-21. 最后输出 reports/taxonomy-report.md，汇总：
+21. 所有论文的 editorial.status 和摘要 status 均保持 ai-draft。
+22. 不修改现有 Schema 或正式词表；改进建议统一写入最终报告。
+23. 最后输出 reports/taxonomy-report.md，汇总：
     - 每个正式标签的使用次数；
     - 所有 suggested_new_tags 及出现次数；
     - 难以分类的论文；
