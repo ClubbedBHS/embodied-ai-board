@@ -35,7 +35,18 @@
       "affiliations": []
     }
   ],
-  "organizations": [],
+  "organizations": [
+    {
+      "id": "harbininstituteoftechnologyshenzhen",
+      "name": "Harbin Institute of Technology, Shenzhen",
+      "role": "primary"
+    },
+    {
+      "id": "northeasternuniversity",
+      "name": "Northeastern University",
+      "role": "collaborator"
+    }
+  ],
   "dates": {
     "first_publication": "2026-07-15",
     "last_revision": null
@@ -127,6 +138,52 @@
       "name": "manipulation",
       "reason": "候选筛选中出现，但尚未进入受控标签词表。",
       "evidence": "该工作在机器人操控执行鲁棒性上提出明确增量：将执行管理建模为agentic RL问题，高层agentic策略通过选择执行模式调控冻结的底层策略，而非修改或重训策略本身。LIBERO四子集×三种底层策略(OpenVLA/π0/Diffusion Policy)的实验证据坚实，标准设置+13.7%、扰动设置+39.2%的增益一致且有消融支持。相较看板中已有的执行恢复/监控工作(如batch-01的Foresight Residual RL)，新增信息是模式化的agentic执行管理框架与双重执行质量指标的联合设计，且模型不可知(适配多种底层策略)。主要风险：仅仿真评估(LIBERO)，严重退化场景恢复能力有限(SVI明确讨论)；资产未公开验证。"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "Harbin Institute of Technology, Shenzhen",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.13818",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Northeastern University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.13818",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
     }
   ]
 }

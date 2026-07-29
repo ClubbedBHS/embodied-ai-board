@@ -1,0 +1,275 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.17046",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Geometric Action Model for Robot Policy Learning",
+  "title_zh": null,
+  "abstract": "Generalist robot policies must follow user instructions while reasoning about how objects, cameras, and robot actions interact in the 3D physical world. Recent vision-language-action models (VLAs) and video world-action models (WAMs) inherit strong semantic or temporal priors from large-scale foundation models, but they still operate primarily on 2D image frames or 2D-derived latent spaces, leaving implicit the 3D geometry required for contact-rich manipulation. We propose the Geometric Action Model (GAM), a language-conditioned manipulation policy that directly repurposes a pretrained geometric foundation model (GFM) as a shared substrate for perception, temporal prediction, and action decoding. GAM splits the GFM at an intermediate layer: the shallow layers serve as an observation encoder, and a causal future predictor inserted at the split layer forecasts future latent tokens conditioned on language, proprioception, and action history. The predicted future tokens are then routed through the remaining GFM blocks for feature propagation and decoding, allowing a single backbone to produce both future geometry and actions. This design equips the GFM with language-conditioned temporal world modeling through minimal architectural modification while preserving its rich geometric priors. Across a broad suite of simulation and real-robot manipulation benchmarks, GAM is more accurate, more robust, faster, and lighter than current foundation-model-scale baselines.",
+  "paper_url": "https://arxiv.org/abs/2606.17046",
+  "pdf_url": "https://arxiv.org/pdf/2606.17046",
+  "project_url": "https://cvlab-kaist.github.io/Geometric-Action-Model/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Jisang Han",
+      "affiliations": [
+        "kaist"
+      ]
+    },
+    {
+      "name": "Seonghu Jeon",
+      "affiliations": [
+        "kaist"
+      ]
+    },
+    {
+      "name": "Jaewoo Jung",
+      "affiliations": [
+        "eth-zurich"
+      ]
+    },
+    {
+      "name": "René Zurbrügg",
+      "affiliations": [
+        "eth-zurich",
+        "eth-ai-center"
+      ]
+    },
+    {
+      "name": "Honggyu An",
+      "affiliations": [
+        "eth-zurich"
+      ]
+    },
+    {
+      "name": "Tifanny Portela",
+      "affiliations": [
+        "eth-zurich"
+      ]
+    },
+    {
+      "name": "Marco Hutter",
+      "affiliations": [
+        "eth-zurich",
+        "eth-ai-center"
+      ]
+    },
+    {
+      "name": "Marc Pollefeys",
+      "affiliations": [
+        "eth-zurich",
+        "eth-ai-center"
+      ]
+    },
+    {
+      "name": "Seungryong Kim",
+      "affiliations": [
+        "kaist"
+      ]
+    },
+    {
+      "name": "Sunghwan Hong",
+      "affiliations": [
+        "kaist"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "ethzurich",
+      "name": "ETH Zürich",
+      "role": "primary"
+    },
+    {
+      "id": "kaist",
+      "name": "KAIST",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-19",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "foundation-model",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm",
+      "platform-agnostic"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "proprioception",
+      "action",
+      "depth"
+    ],
+    "environments": [
+      "simulation",
+      "real-world"
+    ],
+    "assets": [
+      "project-page"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 80,
+    "selection_reason": "将几何基础模型（GFM）直接复用为操作策略的共享主干，通过中间层插入因果未来预测器将GFM改造为语言条件下的时序世界模型。在相机位姿扰动场景+9.7%p的改进直接证明了显式3D几何先验的价值。比当前基础模型规模基线快55×，同更少参数。为融合几何理解和机器人操控提供了优雅的架构设计。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "hermes-agent",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "GFM选择会影响下游性能，不同GFM的差异未充分消融"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.17046",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 Preliminaries: Geometric Foundation Models",
+      "4 GAM: Geometric Action Model",
+      "4.1 Observation Encoder",
+      "4.2 Causal Future Predictor",
+      "4.3 Feature Propagation and Action Decoding",
+      "4.4 Training and Inference",
+      "5 Experiments",
+      "5.1 Implementation Details",
+      "5.2 Experimental Setup",
+      "5.3 Main Results",
+      "5.4 Ablation Study",
+      "5.5 Analysis",
+      "6 Conclusion and Limitation",
+      "Acknowledgments",
+      "Appendix",
+      "Appendix A Experimental Settings and Reproducibility Details",
+      "A.1 Pre-training Details",
+      "A.2 Simulation Experiments Details",
+      "A.3 Real-World Experiments Details",
+      "A.4 Real-World Experiments Baseline Training Details",
+      "A.5 Inference Latency Comparison Details",
+      "A.6 Model Size Breakdown",
+      "Appendix B Additional Benchmark Results",
+      "B.1 Additional Results on RoboCasa-kitchen",
+      "B.2 Additional LIBERO and LIBERO-Plus Results",
+      "B.3 Generated Future Depth Maps",
+      "Appendix C Ablation and Diagnostic Analyses",
+      "C.1 When to Predict Actions?",
+      "C.2 Attention Analysis",
+      "References",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.17046"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.17046"
+    },
+    {
+      "type": "model",
+      "url": "https://cvlab-kaist.github.io/Geometric-Action-Model/"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "geometric-foundation-model",
+      "name": "Geometric Foundation Model",
+      "reason": "GAM的核心是将几何基础模型（GFM）作为策略骨架，这与VLA和WAM有本质区别。现有foundation-model标签过于宽泛。",
+      "evidence": "论文标题和Section 1明确将方法定位为基于geometric foundation model的操作策略。"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "ETH Zürich",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.17046",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "KAIST",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.17046",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://cvlab-kaist.github.io/Geometric-Action-Model/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://cvlab-kaist.github.io/Geometric-Action-Model/"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.30645",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "VLK: Learning Humanoid Loco-Manipulation from Synthetic Interactions in Reconstructed Scenes",
+  "title_zh": "VLK：从重建场景中的合成交互学习人形机器人移动操作",
+  "abstract": "Perception-based humanoid loco-manipulation requires connecting egocentric observations and task instructions to whole-body motion. Learning this mapping requires synchronized egocentric images, language commands, and robot-compatible kinematic trajectories, yet no existing data source provides this complete tuple at scale. We address this bottleneck by generating vision-language-kinematics (VLK) supervision synthetically in reconstructed scenes. Our pipeline leverages 3D Gaussian Splatting to reconstruct metric-scale indoor environments, synthesizes navigation and object-interaction trajectories using privileged scene information, and renders paired egocentric observations after the fact. We produce 48,000 paired trajectories with no human intervention and train a VLK policy that predicts short-horizon whole-body kinematic trajectories. A whole-body tracker converts these predictions into actions on the physical humanoid. We evaluate on the physical Unitree G1 performing navigation and single-object transport, demonstrating that synthesized interactions in reconstructed scenes provide effective supervision for sim-to-real perception-based humanoid loco-manipulation.",
+  "paper_url": "https://arxiv.org/abs/2606.30645",
+  "pdf_url": "https://arxiv.org/pdf/2606.30645",
+  "project_url": "https://vision-language-kinematics.github.io",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yen-Jen Wang",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Jiaman Li",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Sirui Chen",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Takara E. Truong",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Pei Xu",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Pieter Abbeel",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Rocky Duan",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Koushil Sreenath",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Angjoo Kanazawa",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Carmelo Sferrazza",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Yunzhu Li",
+      "affiliations": [
+        "amazon-far"
+      ]
+    },
+    {
+      "name": "Danfei Xu",
+      "affiliations": [
+        "nvidia"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "carnegiemellonuniversity",
+      "name": "Carnegie Mellon University",
+      "role": "primary"
+    },
+    {
+      "id": "stanforduniversity",
+      "name": "Stanford University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-29",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data"
+    ],
+    "topics": [
+      "sim-to-real",
+      "control"
+    ],
+    "tasks": [
+      "humanoid-control",
+      "locomotion"
+    ],
+    "platforms": [
+      "humanoid"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "proprioception"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [
+      "project-page"
+    ],
+    "properties": [
+      "real-robot-evaluation",
+      "zero-shot"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 75,
+    "selection_reason": "创新性解决人形机器人移动操作数据瓶颈：利用3DGS重建场景+合成交互轨迹，自动生成48,000对自视角图像-语言-运动学轨迹。VLK策略预测全身运动学轨迹→全身跟踪器执行。在宇树G1上验证了导航和物体搬运任务。由合成数据驱动sim-to-real的perception-based人形机器人移动操作。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前仅支持大物体搬运，不支持小物体（如杯子、工具）抓取",
+      "导航+搬运的具体成功率未在摘要中给出",
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.30645",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 Method",
+      "3.1 Synthetic Data Generation in Reconstructed Scenes",
+      "3.2 Vision-Language-Kinematics Policy",
+      "3.3 Whole-Body Motion Tracking",
+      "3.4 Deployment",
+      "4 Experiments",
+      "4.1 Experimental Setup",
+      "4.2 Synthetic Data Generation",
+      "4.3 Evaluation of Complete System",
+      "4.4 Effect of Synthesized Data Volume",
+      "4.5 Effect of Visual Domain Randomization",
+      "5 Conclusion",
+      "Acknowledgments",
+      "References",
+      "Appendix Contents",
+      "Appendix A Synthetic Data Generation Details",
+      "A.1 Scene Annotation",
+      "A.2 Waypoint, Language Generation in 3D Scenes",
+      "A.3 Interaction Synthesis Module",
+      "A.4 Post-Processing for Generated Motion",
+      "A.5 Domain Randomization in Rendering",
+      "A.6 Dataset Examples",
+      "Appendix B Experiment Details",
+      "B.1 VLK Training Loss Details",
+      "B.2 Metric for Evaluation in Simulation",
+      "B.3 Motion Blur Handling During Deployment",
+      "B.4 System Overview and Profiling",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.30645"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.30645"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "humanoid-control",
+      "name": "Humanoid Control",
+      "reason": "现有 control 标签无法区分人形机器人特有的全身协调控制问题",
+      "evidence": "论文聚焦人形机器人VLK的3DGS场景重建与移动操作"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "Carnegie Mellon University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.30645",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Stanford University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.30645",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://vision-language-kinematics.github.io",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-or-project-page",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.08530",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "GEAR-VLA: Learning Geometry-Aware Action Representations for Generalizable Robotic Manipulation",
+  "title_zh": "GEAR-VLA：学习几何感知动作表征以泛化机器人操作",
+  "abstract": "Vision-Language-Action (VLA) models achieve strong benchmark performance but still struggle in real-world deployment with unseen objects, background shifts, and different robot embodiments. We argue that this stems from the lack of a unified geometry-aware manipulation representation, leaving existing VLAs vulnerable to low-level trajectory supervision, misaligned 3D features, and embodiment differences. To address this, we propose GEAR-VLA, a VLA framework for learning unified geometry-aware ac",
+  "paper_url": "https://arxiv.org/abs/2606.08530",
+  "pdf_url": "https://arxiv.org/pdf/2606.08530",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yuan Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Shiqi Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Yedong Shen",
+      "affiliations": []
+    },
+    {
+      "name": "Shuai Dong",
+      "affiliations": []
+    },
+    {
+      "name": "Jiajun Deng",
+      "affiliations": []
+    },
+    {
+      "name": "Xin Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Yuxuan Gao",
+      "affiliations": []
+    },
+    {
+      "name": "Jiajia Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Xin Nie",
+      "affiliations": []
+    },
+    {
+      "name": "Zhiyuan Cheng",
+      "affiliations": []
+    },
+    {
+      "name": "Jianmin Ji",
+      "affiliations": []
+    },
+    {
+      "name": "Yanyong Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Xingyi Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Jia Pan",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "universityofscienceandtechnologyofchina",
+      "name": "University of Science and Technology of China",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-07",
+    "last_revision": "2026-06-10"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "topics": [
+      "vla"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "针对VLA模型在实际部署中的泛化瓶颈，提出GEAR-VLA——通过几何感知动作表征实现跨物体、跨背景、跨具身的泛化操作。核心贡献：(1)粗到细动作学习——多源具身预训练+梯度解耦DiT专家；(2)语义对齐3D集成——3D空间骨干与VLM表征对齐；(3)具身规范化——跨机器人共享表征。在LIBERO、RoboTwin 2.0、真实AgileX和未见LDT-01上均达SOTA或强性能，6360次通用抓取基准90.1%成功率。相较于看板中其他VLA工作（如OpenVLA、π0.5），GEAR-VLA在几何感知和跨具身泛化方面提供明确增量。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.08530",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 Method",
+      "Overview.",
+      "3.1 Coarse-to-Fine Policy Learning",
+      "3.2 Semantic-Aligned 3D Geometry Integration",
+      "3.3 Embodiment Canonicalization",
+      "4 Experimental Results",
+      "4.1 Standard Simulation Benchmarks",
+      "4.2 Real-World Manipulation",
+      "4.3 Large-Scale Universal Grasping",
+      "4.4 Ablation Studies",
+      "5 Conclusion",
+      "References",
+      "AppendixÂ AâTraining Data and Implementation Details",
+      "Training data.",
+      "Discrete action supervision.",
+      "Training configuration.",
+      "AppendixÂ BâEmbodied Reasoning Capability Analysis",
+      "Embodied and spatial capability evaluation.",
+      "AppendixÂ CâSimulation Benchmark Results",
+      "Simulation benchmarks.",
+      "AppendixÂ DâAblation Experiments",
+      "Attention-level modality dropping.",
+      "Embodiment Canonicalization.",
+      "Latent action modeling.",
+      "Geometry-aware visual encoding.",
+      "AppendixÂ EâDual-Arm Data Efficiency",
+      "Data-efficiency evaluation.",
+      "AppendixÂ FâUniversal Object Grasping Evaluation",
+      "Mask-guided universal grasping.",
+      "Object split.",
+      "Evaluation protocol.",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.08530"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.08530"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "University of Science and Technology of China",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.08530",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

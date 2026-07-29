@@ -8,7 +8,7 @@
   "pdf_url": "https://arxiv.org/pdf/2604.07607",
   "project_url": "https://partners.mecka.ai/egoverse",
   "code_url": "https://github.com/GaTech-RL2/EgoVerse",
-  "dataset_url": "https://partners.mecka.ai/egoverse",
+  "dataset_url": null,
   "model_url": null,
   "video_url": null,
   "authors": [
@@ -255,43 +255,28 @@
   ],
   "organizations": [
     {
-      "id": "gatech",
+      "id": "georgiainstituteoftechnology",
       "name": "Georgia Institute of Technology",
       "role": "primary"
     },
     {
-      "id": "stanford",
-      "name": "Stanford University",
-      "role": "collaborator"
-    },
-    {
-      "id": "ucsd",
-      "name": "University of California San Diego",
-      "role": "collaborator"
-    },
-    {
-      "id": "ethz",
-      "name": "ETH Zürich",
-      "role": "collaborator"
-    },
-    {
       "id": "mit",
-      "name": "MIT CSAIL",
+      "name": "MIT",
       "role": "collaborator"
     },
     {
-      "id": "meta",
+      "id": "metarealitylabsresearch",
       "name": "Meta Reality Labs Research",
       "role": "collaborator"
     },
     {
-      "id": "mecka-ai",
-      "name": "Mecka AI",
+      "id": "stanforduniversity",
+      "name": "Stanford University",
       "role": "collaborator"
     },
     {
-      "id": "scale-ai",
-      "name": "Scale AI",
+      "id": "universityofcaliforniasandiego",
+      "name": "University of California San Diego",
       "role": "collaborator"
     }
   ],
@@ -328,8 +313,9 @@
       "real-world"
     ],
     "assets": [
+      "data",
       "code",
-      "dataset"
+      "project-page"
     ],
     "properties": [
       "open-source",
@@ -389,6 +375,86 @@
     ],
     "figure_images_accessed": false,
     "accessed_at": "2026-07-22",
-    "verified_sections": ["method (IV)", "experiments (IV-E, IV-F)", "conclusion (VI)", "limitations (V)", "dataset (III)"]
-  }
+    "verified_sections": [
+      "method (IV)",
+      "experiments (IV-E, IV-F)",
+      "conclusion (VI)",
+      "limitations (V)",
+      "dataset (III)"
+    ]
+  },
+  "organization_evidence": [
+    {
+      "organization": "Georgia Institute of Technology",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2604.07607",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "MIT",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2604.07607",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Meta Reality Labs Research",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2604.07607",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Stanford University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2604.07607",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University of California San Diego",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2604.07607",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/GaTech-RL2/EgoVerse",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "ar5iv-html-link",
+      "checked_at": "2026-07-28",
+      "http_status": 200,
+      "resolved_url": "https://api.github.com/repos/GaTech-RL2/EgoVerse"
+    },
+    {
+      "kind": "project",
+      "url": "https://partners.mecka.ai/egoverse",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-or-project-page",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
 }

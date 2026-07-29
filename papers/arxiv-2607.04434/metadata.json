@@ -9,7 +9,7 @@
   "paper_url": "https://arxiv.org/abs/2607.04434",
   "pdf_url": "https://arxiv.org/pdf/2607.04434",
   "project_url": null,
-  "code_url": null,
+  "code_url": "https://github.com/RoboDojo-Benchmark/RoboDojo",
   "dataset_url": null,
   "model_url": null,
   "video_url": null,
@@ -191,7 +191,23 @@
       "affiliations": []
     }
   ],
-  "organizations": [],
+  "organizations": [
+    {
+      "id": "carnegiemellonuniversity",
+      "name": "Carnegie Mellon University",
+      "role": "primary"
+    },
+    {
+      "id": "mit",
+      "name": "MIT",
+      "role": "collaborator"
+    },
+    {
+      "id": "universityofcaliforniaberkeley",
+      "name": "University of California, Berkeley",
+      "role": "collaborator"
+    }
+  ],
   "dates": {
     "first_publication": "2026-07-05",
     "last_revision": null
@@ -227,7 +243,7 @@
       "mixed"
     ],
     "assets": [
-      "benchmark"
+      "code"
     ],
     "properties": [
       "real-robot-evaluation"
@@ -287,5 +303,57 @@
       "url": "https://github.com/XPolicyLab/XPolicyLab"
     }
   ],
-  "suggested_new_tags": []
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Carnegie Mellon University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.04434",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "MIT",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.04434",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University of California, Berkeley",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.04434",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/RoboDojo-Benchmark/RoboDojo",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "ar5iv-html-link",
+      "checked_at": "2026-07-28",
+      "http_status": 200
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
 }

@@ -1,0 +1,195 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.12403",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "World Pilot: Steering Vision-Language-Action Models with World-Action Priors",
+  "title_zh": "World Pilot：用世界—动作先验引导 VLA",
+  "abstract": "Vision-Language-Action (VLA) models inherit semantic grounding from large-scale pretraining and perform competently across in-distribution manipulation tasks. This grounding, however, is built on static image-text pairs, whereas manipulation is a continuous, contact-rich process whose dynamics this pretraining cannot capture. We present World Pilot, a VLA framework that augments the policy with priors from a World-Action Model (WAM), routed into the decision chain through two complementary pathw",
+  "paper_url": "https://arxiv.org/abs/2606.12403",
+  "pdf_url": "https://arxiv.org/pdf/2606.12403",
+  "project_url": "https://world-pilot.github.io/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Zefu Lin",
+      "affiliations": []
+    },
+    {
+      "name": "Rongxu Cui",
+      "affiliations": []
+    },
+    {
+      "name": "Junjia Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaojuan Jin",
+      "affiliations": []
+    },
+    {
+      "name": "Wenling Li",
+      "affiliations": []
+    },
+    {
+      "name": "Lue Fan",
+      "affiliations": []
+    },
+    {
+      "name": "Zhaoxiang Zhang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "beihanguniversity",
+      "name": "Beihang University",
+      "role": "primary"
+    },
+    {
+      "id": "chineseacademyofsciences",
+      "name": "Chinese Academy of Sciences",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-10",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "创新的双通路WAM增强VLA框架。核心贡献：(1)Latent Steering将WAM的场景演化预测注入VLA感知层，Action Steering将预期轨迹注入动作层，两条通路互补；(2)即使使用未action-post-trained的纯视频预训练WAM，Latent Steering仍然有效——大幅降低了WAM部署门槛；(3)84.7% LIBERO-Plus SOTA，真实机器人所有任务最高成功率。相较于看板中已有的VLA增强方法(PhysVLA推理时修正、Object-Centric Residual RL)，World Pilot从WAM先验注入角度提供了全新维度。中科院自动化所+北航+南大合作。主要风险：代码未明确开源；WAM训练需要额外计算资源。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": []
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.12403",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 Method",
+      "3.1 Problem Formulation",
+      "3.2 Latent Steering",
+      "3.3 Action Steering",
+      "3.4 Policy Training",
+      "4 Experimental Results",
+      "4.1 Main Experiments",
+      "4.2 Real-World Experiments",
+      "4.3 Ablations",
+      "5 Conclusion and Limitations",
+      "Acknowledgments",
+      "References",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.12403"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.12403"
+    },
+    {
+      "type": "project",
+      "url": "https://world-pilot.github.io/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Beihang University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.12403",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Chinese Academy of Sciences",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.12403",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://world-pilot.github.io/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://world-pilot.github.io/"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

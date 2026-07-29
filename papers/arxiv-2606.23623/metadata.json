@@ -1,0 +1,233 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.23623",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "dVLA-RL: Reinforcement Learning over Denoising Trajectories for Discrete Diffusion Vision-Language-Action Models",
+  "title_zh": "dVLA-RL：在离散扩散去噪轨迹上进行 VLA 强化学习",
+  "abstract": "Vision-Language-Action (VLA) models have established a powerful paradigm for generalist robotic manipulation by grounding control into the semantic reasoning of VLMs. Prevailing architectures typically model actions continuously via diffusion or flow processes, or discretely through either autoregressive generation or parallel decoding. Recently, Discrete Diffusion VLAs (dVLAs) have emerged as a distinct alternative, unifying vision, language, and action into a single discrete token space via ma",
+  "paper_url": "https://arxiv.org/abs/2606.23623",
+  "pdf_url": "https://arxiv.org/pdf/2606.23623",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yuhao Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Yitian Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Weijie Shen",
+      "affiliations": []
+    },
+    {
+      "name": "Mishuo Han",
+      "affiliations": []
+    },
+    {
+      "name": "Wenjie Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Haotian Liang",
+      "affiliations": []
+    },
+    {
+      "name": "Zhongshan Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Yinan Mao",
+      "affiliations": []
+    },
+    {
+      "name": "Lei Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Xinping Guan",
+      "affiliations": []
+    },
+    {
+      "name": "Ru Ying",
+      "affiliations": []
+    },
+    {
+      "name": "Ran Zheng",
+      "affiliations": []
+    },
+    {
+      "name": "Wei Sui",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaokang Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Wenbo Ding",
+      "affiliations": []
+    },
+    {
+      "name": "Yao Mu",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "tsinghuauniversity",
+      "name": "Tsinghua University",
+      "role": "primary"
+    },
+    {
+      "id": "shanghaijiaotonguniversity",
+      "name": "Shanghai Jiao Tong University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-22",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "reinforcement-learning"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "首次探索离散扩散VLA模型的RL后训练——解决离散扩散中间步骤奖励分配的关键挑战。技术创新：(1)在去噪轨迹上而非最终动作上计算RL奖励；(2)适配dVLAs边际概率特性的奖励设计。填补了VLA RL后训练的一个细分空白（之前工作主要在连续扩散VLA上）。实验证明可行性。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.23623",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "2.1 Diffusion Language, Vision-Language, and Vision-Language-Action Models",
+      "2.2 Reinforcement Learning for Discrete Diffusion Policies",
+      "2.3 Reinforcement Learning for Vision-Language-Action Policies",
+      "3 Preliminaries",
+      "3.1 Discrete Diffusion Models",
+      "3.2 Standard MDP and PPO Objective",
+      "4 Method",
+      "4.1 Modeling the Joint Probability of Markovian Denoising Trajectories",
+      "4.2 Implicit optimization of the unmasking process",
+      "5 Experiments",
+      "5.1 Experimental Setup",
+      "5.2 Does dVLA-RL Improve Discrete Diffusion VLA Policies?",
+      "5.3 Is Trajectory-Level Probability Modeling Necessary for Discrete Diffusion VLA RL?",
+      "5.4 How Do Denoising Steps Affect RL Optimization?",
+      "5.5 Does Hybrid Denoising Steps Improve Training and Inference Efficiency?",
+      "6 Conclusion",
+      "Acknowledgments",
+      "References",
+      "Appendix A Pseudocode of UDVLA-RL",
+      "Appendix B SFT Backbone and Evaluation Details",
+      "B.1 SFT data and training setup.",
+      "B.2 MM-ACT* implementation.",
+      "B.3 Checkpoint selection.",
+      "B.4 SFT checkpoint evaluation.",
+      "Appendix C LIBERO RL Training Details",
+      "Appendix D RoboTwin RL Training Details",
+      "D.1 RoboTwin Training-Curve Visualizations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.23623"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.23623"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Tsinghua University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.23623",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Shanghai Jiao Tong University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.23623",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.32009",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Human-as-Humanoid: Enabling Zero-Shot Humanoid Learning from Ego-Exo Human Videos with Human-Aligned Embodiments",
+  "title_zh": "Human-as-Humanoid：用内外视角人类视频实现零样本人形学习",
+  "abstract": "Vision-language-action (VLA) models across robot embodiments require high-quality observation--action supervision to learn deployable action distributions, yet scaling such robot data remains difficult, especially for high-DoF humanoids. Teleoperation provides controller-aligned supervision, while human egocentric videos capture diverse bimanual manipulation but do not directly provide executable robot actions. We introduce Human-as-Humanoid, a human-to-humanoid supervision framework that enable",
+  "paper_url": "https://arxiv.org/abs/2606.32009",
+  "pdf_url": "https://arxiv.org/pdf/2606.32009",
+  "project_url": "https://zgc-embodyai.github.io/Human-as-Humanoid/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Xiaopeng Lin",
+      "affiliations": []
+    },
+    {
+      "name": "Ruoqi Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Shijie Lian",
+      "affiliations": []
+    },
+    {
+      "name": "Zhaolong Shen",
+      "affiliations": []
+    },
+    {
+      "name": "Bin Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Changti Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Haibao Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Yuxiang Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Hong Li",
+      "affiliations": []
+    },
+    {
+      "name": "Qiyuan Su",
+      "affiliations": []
+    },
+    {
+      "name": "Haochen Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Xuguo He",
+      "affiliations": []
+    },
+    {
+      "name": "Yukun Shi",
+      "affiliations": []
+    },
+    {
+      "name": "Cong Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Zhirui Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Bojun Cheng",
+      "affiliations": []
+    },
+    {
+      "name": "Kai Chen",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "hongkonguniversityofscienceandtechnology",
+      "name": "Hong Kong University of Science and Technology",
+      "role": "primary"
+    },
+    {
+      "id": "beihanguniversity",
+      "name": "Beihang University",
+      "role": "collaborator"
+    },
+    {
+      "id": "harbininstituteoftechnology",
+      "name": "Harbin Institute of Technology",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-30",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data",
+      "algorithms",
+      "infrastructure"
+    ],
+    "topics": [
+      "vla"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "解决人形机器人VLA训练数据稀缺的关键瓶颈——将大规模人类egocentric视频转化为可执行的人形机器人监督。核心贡献：(1)人类对齐的PrimeU 60-DoF人形平台；(2)Ego-exo同步视频配对+分阶段IK运动重定向管线；(3)FK感知监督保留手腕和指尖任务空间几何。将人类数据规模化利用于人形机器人训练，具有重要基础设施价值。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": []
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.32009",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "Egocentric and ego-exo human data.",
+      "Robot learning from human videos.",
+      "3 Human-Aligned Humanoid Embodiment",
+      "Kinematic alignment.",
+      "Sensing alignment.",
+      "Action-interface alignment.",
+      "4 Near-Real-Time Human-Centric Action Generation",
+      "5 PhysDex: VLA Learning from Human-Derived High-DoF Actions",
+      "5.1 Formulation",
+      "5.2 Action Backbone",
+      "5.3 Dual-Space Hierarchical Kinematic Constraint",
+      "5.4 Training Objective",
+      "6 Experiments",
+      "6.1 Experimental Setup and Data Protocol",
+      "6.2 Ego-Exo Motion Recovery",
+      "6.3 Action-Interface Compatibility",
+      "6.4 FK-Aware VLA Training",
+      "6.5 Data Efficiency and Target-Task Deployment",
+      "Pretraining corpus and adaptation protocol.",
+      "7 Discussion and Limitations",
+      "8 Conclusion",
+      "Acknowledgments",
+      "References",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.32009"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.32009"
+    },
+    {
+      "type": "project",
+      "url": "https://zgc-embodyai.github.io/Human-as-Humanoid/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Hong Kong University of Science and Technology",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.32009",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Beihang University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.32009",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Harbin Institute of Technology",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.32009",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://zgc-embodyai.github.io/Human-as-Humanoid/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://zgc-embodyai.github.io/Human-as-Humanoid/"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

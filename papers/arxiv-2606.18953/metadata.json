@@ -1,0 +1,201 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.18953",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Object-Centric Residual RL for Zero-Shot Sim-to-Real VLA Enhancement",
+  "title_zh": "用物体中心残差强化学习零样本增强真实 VLA",
+  "abstract": "Vision-Language-Action (VLA) models can generalize across diverse manipulation tasks, but their imitation-learning-based policies remain brittle in precise physical interactions due to compounding execution errors; Can a reinforcement learning policy trained purely in simulation improve the robustness of real-world VLAs zero-shot? Residual RL, which learns a corrective policy on top of a frozen VLA, offers a natural framework, but existing approaches face a fundamental sim-to-real dilemma: privi",
+  "paper_url": "https://arxiv.org/abs/2606.18953",
+  "pdf_url": "https://arxiv.org/pdf/2606.18953",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Kinam Kim",
+      "affiliations": []
+    },
+    {
+      "name": "Namiko Saito",
+      "affiliations": []
+    },
+    {
+      "name": "Heecheol Kim",
+      "affiliations": []
+    },
+    {
+      "name": "Katsushi Ikeuchi",
+      "affiliations": []
+    },
+    {
+      "name": "Jaegul Choo",
+      "affiliations": []
+    },
+    {
+      "name": "Yasuyuki Matsushita",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "kaist",
+      "name": "KAIST",
+      "role": "primary"
+    },
+    {
+      "id": "microsoftresearch",
+      "name": "Microsoft Research",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-17",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "sim-to-real"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "巧妙解决residual RL的sim-to-real迁移困境。核心创新：(1)用物体位姿作为紧凑观测空间，在仿真和现实中天然一致，无需域适应；(2)sim-replay对齐策略：在仿真中重放真实遥操作演示训练sim-VLA副本，消除VLA本身的sim-real策略差异；(3)位姿噪声注入+dropout实现鲁棒的零样本迁移。42%→76%提升，并可自我改进(self-improvement)。相较于PhysVLA(推理时修正)和一般的VLA微调方法，本工作从residual RL角度提供了互补的方案。来自Microsoft Research和KAIST合作。主要风险：依赖物体位姿估计精度，遮挡场景下可能退化；代码未明确开源。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.18953",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "Residual Reinforcement Learning.",
+      "Sim-to-Real Transfer.",
+      "3 Method",
+      "3.1 Stage 1: Paired Sim/Real VLA via Teleoperation Replay",
+      "3.2 Stage 2: Object-Centric Residual RL",
+      "Observation space.",
+      "Zero-shot transfer condition.",
+      "Robust object pose training.",
+      "Reinforcement learning.",
+      "3.3 Stage 3: Zero-Shot Deployment",
+      "3.4 VLA Self-Improvement",
+      "4 Experimental Setup",
+      "5 Results",
+      "5.1 Main Results",
+      "Generalization across VLA architectures.",
+      "5.2 Ablations",
+      "Robustness training.",
+      "5.3 Analysis",
+      "5.4 VLA Self-Improvement",
+      "6 Conclusion",
+      "7 Limitations and Future Work",
+      "References",
+      "Appendix A Appendix",
+      "A.1 Reward Design",
+      "A.2 Simulation Environment Construction",
+      "A.3 Realistic Simulation Rendering",
+      "A.4 Algorithm Pseudocode",
+      "A.5 Training Hyperparameters",
+      "A.6 Pose Noise and Dropout Parameters",
+      "Additional fixed constants.",
+      "A.7 Sim-to-Real Behavioral Consistency",
+      "A.8 Strong Base VLA + Residual RL",
+      "A.9 Emergent Behaviors from Residual RL",
+      "A.10 Object Tracking Visualization",
+      "A.11 Failure Case Analysis",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.18953"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.18953"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "KAIST",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.18953",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Microsoft Research",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.18953",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

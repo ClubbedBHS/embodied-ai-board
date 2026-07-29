@@ -8,7 +8,7 @@
   "abstract": "Vision-language-action (VLA) models predict robot actions from visual observations and language instructions. These actions are defined in the robot's own 3D coordinate frame, yet most VLAs observe the scene in the camera frame, creating a frame mismatch between where the scene is observed and where actions are defined. The mismatch is benign under a fixed viewpoint, where the policy can memorize a single observation-to-action mapping, but grows harder as large-scale datasets aggregate demonstrations across diverse camera setups and the policy must generalize this mapping across viewpoints. We address this mismatch with robot-centric pointmaps, images whose pixels store the 3D coordinates of scene points in the robot frame. Pointmaps provide robot-frame 3D geometry while preserving the dense H x W grid expected by pretrained 2D VLAs, so they integrate into existing VLAs with minimal architectural change. On RoboCasa, pointmaps improve both pi0.5 and SmolVLA and outperform representative camera-viewpoint and 3D-aware baselines. In real-robot experiments, their advantage over an RGB-only policy widens when the camera is moved to a placement unseen during training.",
   "paper_url": "https://arxiv.org/abs/2607.11498",
   "pdf_url": "https://arxiv.org/pdf/2607.11498",
-  "project_url": null,
+  "project_url": "https://davian-robotics.github.io/pointmap/",
   "code_url": null,
   "dataset_url": null,
   "model_url": null,
@@ -39,7 +39,13 @@
       "affiliations": []
     }
   ],
-  "organizations": [],
+  "organizations": [
+    {
+      "id": "kaist",
+      "name": "KAIST",
+      "role": "primary"
+    }
+  ],
   "dates": {
     "first_publication": "2026-07-13",
     "last_revision": null
@@ -72,7 +78,9 @@
     "environments": [
       "real-world"
     ],
-    "assets": [],
+    "assets": [
+      "project-page"
+    ],
     "properties": [
       "real-robot-evaluation",
       "large-scale-data"
@@ -123,5 +131,54 @@
       "url": "https://arxiv.org/html/2607.11498"
     }
   ],
-  "suggested_new_tags": []
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "KAIST",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.11498",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://davian-robotics.github.io/pointmap/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-or-project-page",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
 }

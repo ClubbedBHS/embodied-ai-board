@@ -39,7 +39,13 @@
       "affiliations": []
     }
   ],
-  "organizations": [],
+  "organizations": [
+    {
+      "id": "universityoftexasatdallas",
+      "name": "University of Texas at Dallas",
+      "role": "primary"
+    }
+  ],
   "dates": {
     "first_publication": "2026-07-03",
     "last_revision": null
@@ -134,6 +140,46 @@
       "name": "dexterous-manipulation",
       "reason": "候选筛选中出现，但尚未进入受控标签词表。",
       "evidence": "这项工作在跨具身灵巧操作（cross-embodiment dexterous manipulation）问题上提出了一种基于球面几何的统一手部动作空间 UHAS，通过球面变形参数化和级联逆运动学（CIK）算法，将共享的动作表示映射到不同机器人手的关节配置。在 Allegro、LEAP、Shadow 和 MANO 四种手上通过强化学习训练灵巧的立方体重新定向策略，实验覆盖多手训练、零样本迁移、微调和真机部署（LEAP Hand）四个维度，证明了提出的统一表示能够实现跨具身的策略迁移。"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "University of Texas at Dallas",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.03570",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
     }
   ]
 }

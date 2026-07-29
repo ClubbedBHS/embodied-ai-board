@@ -1,0 +1,223 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.04206",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "DLO-Lab: Benchmarking Deformable Linear Object Manipulations with Differentiable Physics",
+  "title_zh": "DLO-Lab：用可微物理评测柔性线状物体操作",
+  "abstract": "We address the challenge of enabling robots to manipulate deformable linear objects (DLOs), such as ropes, cables, and rubber bands. Prior work has primarily focused on narrow, task-specific problems, often relying on real-world demonstrations or handcrafted heuristics. Such approaches, however, struggle to scale to the wide variety of materials and tasks encountered in practice, and collecting sufficiently diverse real-world data is often impractical. Additionally, existing simulation environme",
+  "paper_url": "https://arxiv.org/abs/2606.04206",
+  "pdf_url": "https://arxiv.org/pdf/2606.04206",
+  "project_url": "https://dlo-lab-26.github.io/",
+  "code_url": "https://github.com/UMass-Embodied-AGI/DLO-Lab",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Junyi Cao",
+      "affiliations": []
+    },
+    {
+      "name": "Yian Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Ziyan Xiong",
+      "affiliations": []
+    },
+    {
+      "name": "Chunru Lin",
+      "affiliations": []
+    },
+    {
+      "name": "Zhehuan Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Chuang Gan",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "universityofmassachusettsamherst",
+      "name": "University of Massachusetts Amherst",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-02",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "code",
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "Important benchmark for under-studied DLO manipulation with differentiable physics; covers critical gap between rigid-body and soft-body manipulation; builds on open-source Genesis platform.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文 HTML 作者区未能自动解析出明确机构，需人工核验",
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.04206",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "Differentiable Simulation",
+      "Deformable Linear Object Simulation",
+      "Deformable Linear Object Manipulation",
+      "3 Simulation Environment",
+      "3.1 DLO Modeling",
+      "3.2 Coupling Implementation",
+      "Rigid Body",
+      "Soft Body",
+      "3.3 Gradient Back-propagation",
+      "4 DLO-Lab Benchmark",
+      "4.1 Benchmark Representation",
+      "4.2 Manipulation Tasks",
+      "4.3 DLO Agent",
+      "5 Experiment",
+      "5.1 Benchmarked Methods",
+      "5.2 Results and Analysis",
+      "5.3 Real-world Experiments",
+      "6 Conclusion",
+      "Acknowledgements",
+      "Impact Statement",
+      "References",
+      "Appendix A Implementation Details",
+      "A.1 DLO Representation",
+      "Inextensibility Constraint",
+      "Bending Plasticity",
+      "Loop Topology",
+      "Self-collision and Friction",
+      "A.2 Rendering",
+      "Appendix B Environmental Setup",
+      "B.1 Task Setup",
+      "B.2 Reward Design",
+      "B.3 Model-free Reinforcement Learning Setup",
+      "B.4 First-order Model-based Reinforcement Learning Setup",
+      "B.5 Trajectory Optimization Setup",
+      "Appendix C Additional Results",
+      "C.1 Training Curves based on Wall-Clock Time",
+      "C.2 Success Rates",
+      "C.3 Comparison on Grasp Proposal",
+      "C.4 Analysis of Task Decomposition",
+      "C.5 Data Generation and VLA Fine-tuning",
+      "Data Collection",
+      "Model and Training",
+      "Results",
+      "Appendix D Simulation Performance",
+      "Appendix E Real-World Relevance of Benchmark Tasks",
+      "Appendix F Detailed Prompts of the DLO Agent",
+      "F.1 Grasp Proposal",
+      "Candidate Mode",
+      "Coefficient Mode",
+      "Marker Mode",
+      "F.2 Task Decomposition",
+      "Initial Decomposition Plan",
+      "Plan Update",
+      "Appendix G Future Directions",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.04206"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.04206"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "University of Massachusetts Amherst",
+      "source": "project-page",
+      "url": "https://dlo-lab-26.github.io/",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://dlo-lab-26.github.io/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-or-project-page",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/UMass-Embodied-AGI/DLO-Lab",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-28",
+      "http_status": 200
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

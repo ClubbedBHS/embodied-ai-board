@@ -47,7 +47,18 @@
       "affiliations": []
     }
   ],
-  "organizations": [],
+  "organizations": [
+    {
+      "id": "tongjiuniversity",
+      "name": "Tongji University",
+      "role": "primary"
+    },
+    {
+      "id": "zhejianguniversity",
+      "name": "Zhejiang University",
+      "role": "collaborator"
+    }
+  ],
   "dates": {
     "first_publication": "2026-07-10",
     "last_revision": null
@@ -129,5 +140,51 @@
       "url": "https://arxiv.org/html/2607.09818"
     }
   ],
-  "suggested_new_tags": []
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Tongji University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.09818",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Zhejiang University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.09818",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
 }

@@ -1,0 +1,180 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.15568",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "SAPS: Shared Autonomy for Policy Steering by Blending Teleoperation with a Pretrained VLA",
+  "title_zh": "SAPS：混合遥操作与预训练 VLA 的共享自主策略引导",
+  "abstract": "Recent advancements in Vision-Language-Action (VLA) models have demonstrated impressive generalist capabilities in robot manipulation, yet these policies can be brittle under out-of-distribution spatial and semantic perturbations. While human teleoperation offers reliable recovery, it can demand high cognitive load and precise manual control, and existing policy steering methods often require auxiliary models or sampler modifications. In this work, we introduce Shared Autonomy for Policy Steerin",
+  "paper_url": "https://arxiv.org/abs/2606.15568",
+  "pdf_url": "https://arxiv.org/pdf/2606.15568",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Crystal Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Jehan Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Douglas J. Weber",
+      "affiliations": []
+    },
+    {
+      "name": "Zackory Erickson",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "carnegiemellonuniversity",
+      "name": "Carnegie Mellon University",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-14",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "topics": [
+      "vla"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "实用且优雅的免训练共享自主框架。核心贡献：(1)动作级别混合(VLA action + human teleop action)，无需任何模型修改或重训练；(2)创新的动态Cosine-similarity仲裁策略，利用人类和策略动作的几何一致性自动调节混合权重；(3)模型无关——验证了3种VLA+Diffusion Policy；(4)在LIBERO-PRO(OOD)和真实机器人上成功率最高提升82%，同时减少人工干预并加快任务完成。相较于看板中已有的训练时增强方法，SAPS从人机共享自主的角度提供了完全正交且立即可用的解决方案。来自CMU。主要风险：依赖人类操作员在场，不适用于完全自主场景；Cosine-similarity仲裁在策略和人类动作高度不一致时可能产生抖动。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.15568",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Works",
+      "2.1 Robot Foundation Models",
+      "2.2 Policy Steering",
+      "2.3 Shared Autonomy",
+      "3 Methodology",
+      "3.1 Policies",
+      "3.2 Shared Autonomy Arbitration",
+      "3.2.1 Takeover Arbitration",
+      "3.2.2 Equal Blending Between Policy and Teleoperation",
+      "3.2.3 Cosine Similarity Confidence-Based Blending",
+      "3.3 Task Setups",
+      "3.3.1 LIBERO",
+      "3.3.2 LIBERO-PRO",
+      "3.3.3 CALVIN",
+      "3.3.4 Real-World",
+      "4 Experiments",
+      "4.1 LIBERO",
+      "4.1.1 LIBERO-PRO",
+      "4.2 CALVIN",
+      "4.3 Real World",
+      "5 Limitations",
+      "6 Conclusion",
+      "Acknowledgments",
+      "References",
+      "Appendix",
+      "Appendix A1 Evaluation Environment",
+      "Appendix A2 Discussion on Baseline Task Completion",
+      "Appendix A3 Additional Details on Human-in-the-Loop",
+      "Appendix A4 Distance-Based Perturbation Task Setup for LIBERO",
+      "Appendix A5 Perturbation Task Setup for LIBERO-PRO",
+      "Appendix A6 Additional Metrics for LIBERO-PRO",
+      "Appendix A7 Additional Details and Metrics for CALVIN",
+      "Appendix A8 Additional Metrics for Real World",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.15568"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.15568"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Carnegie Mellon University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.15568",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

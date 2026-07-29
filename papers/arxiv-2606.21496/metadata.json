@@ -1,0 +1,185 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.21496",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Decoupling the Declarative from the Procedural in Vision-Language-Action Models",
+  "title_zh": "在视觉—语言—动作模型中解耦声明性与程序性知识",
+  "abstract": "Deploying generalist robotic agents in the real world requires transferable skills. Specifically, a policy trained to clone a behavior from object-specific demonstrations must generalize beyond that object, otherwise data collection requirements become intractable. Recently, fine-tuning of pre-trained billion-parameter Vision-Language Models (VLMs), initially on large-scale robot datasets and then on fewer scenario-specific demonstrations, has emerged as the predominant paradigm for designing Vi",
+  "paper_url": "https://arxiv.org/abs/2606.21496",
+  "pdf_url": "https://arxiv.org/pdf/2606.21496",
+  "project_url": "https://tsagkas.github.io/w2vla",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Nikolaos Tsagkas",
+      "affiliations": []
+    },
+    {
+      "name": "Andreas Sochopoulos",
+      "affiliations": []
+    },
+    {
+      "name": "Chris Xiaoxuan Lu",
+      "affiliations": []
+    },
+    {
+      "name": "Oisin Mac Aodha",
+      "affiliations": []
+    },
+    {
+      "name": "Alexandros Kouris",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "samsungaicenter",
+      "name": "Samsung AI Center",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-19",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "representation-learning"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "深刻洞察当前VLA模型泛化瓶颈——声明性知识与程序性知识的纠缠——并提出w2VLA通过重构信息流实现解耦。核心贡献：(1)识别VLA中知识纠缠的理论问题；(2)模块化设计——用视觉/空间/技能信息可组合调制而非全token送入大Transformer；(3)展示零样本技能迁移到不相似物体的能力。理论洞见深刻，设计思路清晰，对VLA架构设计有启发意义。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.21496",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Motivation",
+      "3 The w2VLA Model",
+      "3.1 Problem Formulation",
+      "3.2 Model Architecture",
+      "3.3 Model Training",
+      "4 Experiments",
+      "4.1 Skill Transfer Evaluation",
+      "4.2 Skill Transfer via Compositional Generalization",
+      "4.3 w2VLA Robustness",
+      "5 Conclusion",
+      "Acknowledgments",
+      "References",
+      "Appendix",
+      "Appendix A.1 Related Work",
+      "Appendix A.2 Skill Transfer Scenarios",
+      "Appendix A.3 w2VLA Robustness Evaluation",
+      "A.3.1 Scenario 1 with Distractor Objects",
+      "A.3.2 Scenario 2 with Unseen Objects",
+      "Appendix A.4 w2VLA Ablation",
+      "Appendix A.5 Implementation Details",
+      "A.5.1 w2VLA and Baselines",
+      "A.5.2 Training Details",
+      "A.5.3 Hardware Information",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.21496"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.21496"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Samsung AI Center",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.21496",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://tsagkas.github.io/w2vla",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-or-project-page",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

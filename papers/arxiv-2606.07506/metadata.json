@@ -1,0 +1,171 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.07506",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Affordance-Based Hierarchical Reinforcement Learning for Quadruped Pedipulation",
+  "title_zh": "基于可供性的四足机器人分层强化学习腿部操作",
+  "abstract": "The object manipulation capabilities of quadruped robots is an open research challenge. While previous studies have focused on low-level policy learning, task execution still relies on expert-designed high-level trajectories. Autonomous selection of both an affordable interaction point on the target object and an affordable robot base pose removes the need for pre-designed trajectories. This study proposes a three-level hierarchical reinforcement learning (RL) framework that utilizes pose afford",
+  "paper_url": "https://arxiv.org/abs/2606.07506",
+  "pdf_url": "https://arxiv.org/pdf/2606.07506",
+  "project_url": null,
+  "code_url": "https://github.com/eppl-erau-db/go2_rl_ws",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Tuba Girgin",
+      "affiliations": []
+    },
+    {
+      "name": "Jose Castelblanco",
+      "affiliations": []
+    },
+    {
+      "name": "Gabriel Rodriguez",
+      "affiliations": []
+    },
+    {
+      "name": "Emre Girgin",
+      "affiliations": []
+    },
+    {
+      "name": "Cagri Kilic",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "carnegiemellonuniversity",
+      "name": "Carnegie Mellon University",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-05",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "code"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "Interesting hierarchical RL approach for quadruped pedipulation using affordances. Three-level hierarchy (navigation, locomotion, pedipulation) is well-structured. Real-world validation. Code available at github.com/eppl-erau-db/go2_rl_ws. Fills quadruped manipulation gap on the board.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.07506",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "I INTRODUCTION",
+      "II RELATED WORK",
+      "III METHODOLOGY",
+      "III-A Problem Formulation for Reinforcement Learning",
+      "III-A1 Pedipulation Policy",
+      "III-A2 Locomotion Policy",
+      "III-A3 Navigation Policy",
+      "III-B Problem Formulation for Pose Affordance",
+      "IV Experiments",
+      "IV-A Simulation Experiments",
+      "IV-A1 Training",
+      "IV-A2 Testing",
+      "IV-B Real-World Experiments",
+      "IV-B1 State Estimation",
+      "IV-B2 Vision",
+      "IV-B3 Sim-to-Real",
+      "IV-B4 Testing",
+      "V CONCLUSIONS",
+      "References",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.07506"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.07506"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Carnegie Mellon University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.07506",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/eppl-erau-db/go2_rl_ws",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "ar5iv-html-link",
+      "checked_at": "2026-07-28",
+      "http_status": 200
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

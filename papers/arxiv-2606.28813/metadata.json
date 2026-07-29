@@ -51,13 +51,13 @@
   ],
   "organizations": [
     {
-      "id": "georgia-tech",
+      "id": "georgiainstituteoftechnology",
       "name": "Georgia Institute of Technology",
       "role": "primary"
     },
     {
       "id": "nvidia",
-      "name": "NVIDIA Corporation",
+      "name": "NVIDIA",
       "role": "collaborator"
     }
   ],
@@ -96,7 +96,9 @@
     "environments": [
       "mixed"
     ],
-    "assets": [],
+    "assets": [
+      "project-page"
+    ],
     "properties": [
       "real-robot-evaluation",
       "zero-shot"
@@ -159,5 +161,60 @@
     "figure_images_accessed": false,
     "accessed_at": "2026-07-22"
   },
-  "summary_version": "0.2"
+  "summary_version": "0.2",
+  "organization_evidence": [
+    {
+      "organization": "Georgia Institute of Technology",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.28813",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "NVIDIA",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.28813",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://human2any.github.io/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-or-project-page",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
 }

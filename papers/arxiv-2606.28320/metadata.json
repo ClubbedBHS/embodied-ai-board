@@ -1,0 +1,223 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.28320",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "WARP-RM: A Warp-Augmented Relative Progress Reward Model for Data Curation",
+  "title_zh": "WARP-RM：用于数据筛选的时间扭曲增强相对进度奖励模型",
+  "abstract": "Scaling imitation learning requires large datasets, yet human teleoperation inevitably produces mixed-quality demonstrations containing hesitations and recoveries. Prior frame-level progress reward models supervise on absolute temporal progress proxies that suffer from label noise, or require costly human annotations to define subtask boundaries. We present WARP (Warp-Augmented Relative Progress), a novel fully self-supervised algorithm for learning dense, signed relative progress magnitudes dir",
+  "paper_url": "https://arxiv.org/abs/2606.28320",
+  "pdf_url": "https://arxiv.org/pdf/2606.28320",
+  "project_url": "https://uynitsuj.github.io/warp-rm/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Justin Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Andrew Goldberg",
+      "affiliations": []
+    },
+    {
+      "name": "Kavish Kondap",
+      "affiliations": []
+    },
+    {
+      "name": "Karim El-Refai",
+      "affiliations": []
+    },
+    {
+      "name": "Ethan Ransing",
+      "affiliations": []
+    },
+    {
+      "name": "Qianzhong Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Mac Schwager",
+      "affiliations": []
+    },
+    {
+      "name": "Fred Shentu",
+      "affiliations": []
+    },
+    {
+      "name": "Philipp Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Ken Goldberg",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "stanforduniversity",
+      "name": "Stanford University",
+      "role": "primary"
+    },
+    {
+      "id": "universityofcaliforniaberkeley",
+      "name": "University of California, Berkeley",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-26",
+    "last_revision": "2026-07-10"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data"
+    ],
+    "topics": [
+      "imitation-learning"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "提出WARP——全自监督的进度奖励模型，通过时间扭曲增强从成功演示中学习密集的相对进度信号。WARP-BC在混合质量数据上维持高性能（19/20 vs BC的2/20），吞吐量提升约18倍。在真实双臂机器人T恤折叠任务验证。解决模仿学习中数据质量过滤的关键实用问题。方法优雅且自监督，无需人工标注子任务边界。主要风险：仅在单任务（T恤折叠）上验证，泛化性待确认。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.28320",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 Method",
+      "3.1 Overview and Notation",
+      "3.2 Time-Warp Sampler",
+      "3.3 Progress Model Training",
+      "3.4 Model Architecture",
+      "3.5 Warp-Augmented Relative Progress Behavior Cloning",
+      "4 Experiments",
+      "4.1 Implementation Details",
+      "4.2 Policy Training Datasets and Tiers",
+      "4.3 Cross-tier Results",
+      "4.4 Baseline Comparisons",
+      "4.5 Ablations",
+      "4.6 Bottle-in-Bin Placement Task in the Real World",
+      "4.7 Bottle-in-Bin Placement Task in Simulation",
+      "5 Limitations and Future Work",
+      "Acknowledgments",
+      "References",
+      "Appendix A Dataset Statistics",
+      "Appendix B Bottle-in-Bin Dataset Statistics",
+      "Appendix C Simulation Bottle-in-Bin Dataset Statistics",
+      "Appendix D Implementation Details",
+      "D.1 WARP Hyperparameters (Real Experiments)",
+      "D.2 WARP-RM Hyperparameters",
+      "D.3 WARP-BC Policy Training",
+      "D.4 Dense Inference for Reweighting",
+      "Appendix E Evaluation Protocol Details",
+      "Appendix F Additional Experimental Result Statistics",
+      "Appendix G WARP-RM Qualitative Results",
+      "Appendix H Training Dataset Visual Diversity",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.28320"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.28320"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Stanford University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.28320",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University of California, Berkeley",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.28320",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://uynitsuj.github.io/warp-rm/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-or-project-page",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

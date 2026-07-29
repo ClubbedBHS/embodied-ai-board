@@ -1,0 +1,212 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.25295",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "DynaMOMA: Instantaneous Prediction of Grasp Poses for Mobile Manipulation of Dynamic Objects",
+  "title_zh": "DynaMOMA：动态物体移动操作的即时抓取姿态预测",
+  "abstract": "Mobile manipulation is a fundamental robotics task and has advanced rapidly in recent years, enabling robots to navigate, reach, and interact with objects in complex environments. However, mobile manipulation of dynamic objects remains highly challenging, as robots must coordinate the mobile base and arm while adapting to continuously evolving target poses. A key challenge lies in predicting temporally consistent short-horizon grasp trajectories from dynamic observations. In this work, we propos",
+  "paper_url": "https://arxiv.org/abs/2606.25295",
+  "pdf_url": "https://arxiv.org/pdf/2606.25295",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Zhinan Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Junyan Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Jiazhao Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Zheng Qin",
+      "affiliations": []
+    },
+    {
+      "name": "Yijie Tang",
+      "affiliations": []
+    },
+    {
+      "name": "Yuhang Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Yihan Cao",
+      "affiliations": []
+    },
+    {
+      "name": "Zhiyuan Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Yongjun Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Renjiao Yi",
+      "affiliations": []
+    },
+    {
+      "name": "Chenyang Zhu",
+      "affiliations": []
+    },
+    {
+      "name": "Kai Xu",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "pekinguniversity",
+      "name": "Peking University",
+      "role": "primary"
+    },
+    {
+      "id": "wuhanuniversity",
+      "name": "Wuhan University",
+      "role": "collaborator"
+    },
+    {
+      "id": "chineseacademyofsciences",
+      "name": "Chinese Academy of Sciences",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-24",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "reinforcement-learning"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "针对移动操作中动态物体抓取这一挑战性问题，提出DynaMOMA——锚点扩散模型预测时序一致抓取轨迹+全身RL控制。预测-控制耦合设计合理，预期引导奖励赋予策略预测性抓取视野。仿真结果验证有效。方法对动态移动操作有实用价值。在include下边界附近，主要因为仅仿真验证和无真实机器人实验。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.25295",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 Method",
+      "3.1 Preliminary",
+      "3.2 Anchor-based Grasp Trajectory Predictor",
+      "3.3 Whole-Body Control Policy",
+      "4 Experiments",
+      "4.1 Experimental Setup",
+      "4.2 Results",
+      "4.3 Ablation Studies",
+      "4.4 Real-World Experiments",
+      "5 Conclusion",
+      "References",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.25295"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.25295"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Peking University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.25295",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Wuhan University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.25295",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Chinese Academy of Sciences",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.25295",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

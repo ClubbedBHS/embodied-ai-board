@@ -1,0 +1,236 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.18097",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "WireCraft: A Simulation Benchmark for Industrial DLO Manipulation",
+  "title_zh": "WireCraft：工业柔性线状物体操作仿真基准",
+  "abstract": "Deformable Linear Objects (DLOs), such as wires and cables, are central to industrial assembly. Unlike rigid objects, whose state is captured by a 6-DoF pose, DLOs have an infinite-dimensional configuration space and deform continuously under contact with grippers, fixtures, and the workspace, making them a demanding benchmark for general dexterous manipulation. Despite their importance, policy development and comparison remain difficult: existing benchmarks are often tied to specific hardware s",
+  "paper_url": "https://arxiv.org/abs/2606.18097",
+  "pdf_url": "https://arxiv.org/pdf/2606.18097",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Chongyu Zhu",
+      "affiliations": []
+    },
+    {
+      "name": "Ramy ElMallah",
+      "affiliations": []
+    },
+    {
+      "name": "Hyegang Kim",
+      "affiliations": []
+    },
+    {
+      "name": "Zachary Tang",
+      "affiliations": []
+    },
+    {
+      "name": "Jiachen Rao",
+      "affiliations": []
+    },
+    {
+      "name": "Artem Arutyunov",
+      "affiliations": []
+    },
+    {
+      "name": "Seungyeon Ha",
+      "affiliations": []
+    },
+    {
+      "name": "Chi-Guhn Lee",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "universityoftoronto",
+      "name": "University of Toronto",
+      "role": "primary"
+    },
+    {
+      "id": "crefleinc",
+      "name": "CREFLE Inc.",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-16",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "topics": [
+      "sim-to-real"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "Important benchmark for a neglected problem: industrial DLO manipulation. Well-designed with configurable difficulty, two physics models, and shared interfaces. Clear gap demonstrated between privileged state and vision-based policies. Code promised upon acceptance. Fills DLO/deformable manipulation gap on board.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.18097",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 WireCraft Infrastructure",
+      "3.1 WireCraft Engine",
+      "3.2 WireCraft Assets",
+      "4 WireCraft Benchmark",
+      "4.1 WireCraft Tasks",
+      "4.2 WireCraft Demonstrations",
+      "5 Experiments",
+      "5.1 Baselines on Connector Insertion",
+      "5.2 RL Baselines on Diverse Connector Insertion",
+      "5.3 State PPO on Clip Routing and Channel Seating",
+      "6 Real-World Validation",
+      "7 Limitations",
+      "8 Conclusion",
+      "References",
+      "Appendix A Related Work",
+      "Appendix B DLO Physics and Simulation Details",
+      "B.1 Simulation Backend",
+      "B.2 DLO Models",
+      "B.3 DLOâConnector Interaction",
+      "B.4 Computational Scaling and Throughput",
+      "Appendix C Task Design",
+      "C.1 Connector Insertion",
+      "C.2 Clip Routing",
+      "C.3 Channel Seating",
+      "C.4 Randomization",
+      "C.5 Control Modes",
+      "Appendix D Scripted Policy",
+      "D.1 Insertion",
+      "D.2 Clip Routing",
+      "D.3 Channel Seating",
+      "D.4 Scripted Demonstrations",
+      "Appendix E RL Experiment Detail",
+      "E.1 State-based RL",
+      "Observation.",
+      "Action and control.",
+      "Reward.",
+      "Networks.",
+      "E.2 Vision PPO",
+      "Design rationale.",
+      "Architecture.",
+      "Hyperparameters.",
+      "E.3 RL Rollout Demonstrations",
+      "Appendix F Connector-Insertion IL/VLA Experimental Details",
+      "F.1 Dataset",
+      "F.2 Policy Training Configurations",
+      "F.3 Checkpoint Selection",
+      "F.4 Evaluation Protocol",
+      "Appendix G Real-World Validation",
+      "G.1 Setup",
+      "Physical setup.",
+      "Bridging the sim-to-real visual gap.",
+      "G.2 Protocol",
+      "Data sources.",
+      "Training and evaluation.",
+      "G.3 Results and Analysis",
+      "Behavior across data sources.",
+      "Why each source behaves this way.",
+      "Limitations.",
+      "Appendix H Teleoperation Data Collection",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.18097"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.18097"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "University of Toronto",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.18097",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "CREFLE Inc.",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.18097",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

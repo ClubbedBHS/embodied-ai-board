@@ -1,0 +1,173 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.22471",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Scalable Multi-Task Data Generation via Reinforcement Learning for Language-Conditioned Bimanual Dexterous Manipulation",
+  "title_zh": "面向语言条件双臂灵巧操作的可扩展多任务数据生成",
+  "abstract": "A key bottleneck in training generalist policies for bimanual dexterous manipulation is the lack of large-scale, high-quality datasets. Synthetic data generation in simulation provides a scalable alternative to human video demonstrations by overcoming challenges such as morphology mismatch, missing physical interactions, and the generation of robot actions. However, existing approaches based on human teleoperation offer limited task diversity, as object-centric trajectory matching often neglects",
+  "paper_url": "https://arxiv.org/abs/2606.22471",
+  "pdf_url": "https://arxiv.org/pdf/2606.22471",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Zechu Li",
+      "affiliations": []
+    },
+    {
+      "name": "Yufeng Jin",
+      "affiliations": []
+    },
+    {
+      "name": "Puze Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Jan Peters",
+      "affiliations": []
+    },
+    {
+      "name": "Georgia Chalvatzaki",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "hondaresearchinstitute",
+      "name": "Honda Research Institute",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-21",
+    "last_revision": "2026-06-29"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "Useful data generation pipeline for bimanual dexterous manipulation using RL. Addresses key scaling bottleneck. However, evaluation limited to 3 tasks, no real-robot results apparent, and no code or project page available. Solid concept but thin on evidence compared to other papers in batch.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.22471",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "I INTRODUCTION",
+      "II RELATED WORK",
+      "II-A Data Generation for Robot Manipulation",
+      "II-B Generalizable Reward Design",
+      "II-C Sim-to-real Transfer for Dexterous Manipulation",
+      "III METHOD",
+      "III-A Tasks",
+      "III-B Generalizable Reward Design",
+      "Initial manipulation hand pose",
+      "Object contact",
+      "Object goal poses with lifting gate",
+      "Robot reset",
+      "III-C Policy Training and Multimodal Data Collection",
+      "III-D Automated Language Labeling",
+      "III-E Multi-task Policy Distillation",
+      "Network architecture (Fig.3).",
+      "Auxiliary loss for state prediction.",
+      "IV EXPERIMENTS",
+      "IV-A Real-World and Simulation Setup",
+      "IV-B Evaluation of Generalizable Reward Design",
+      "IV-C Evaluation of Policy Distillation",
+      "V CONCLUSIONS",
+      "References",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.22471"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.22471"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Honda Research Institute",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.22471",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

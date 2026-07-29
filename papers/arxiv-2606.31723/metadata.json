@@ -1,0 +1,217 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.31723",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "UniTacVLA: Unified Tactile Understanding and Prediction in Vision Language Action Models",
+  "title_zh": "UniTacVLA：在视觉—语言—动作模型中统一触觉理解与预测",
+  "abstract": "Vision-language-action (VLA) models have achieved strong performance in many robotic manipulation tasks, yet remain limited in contact-rich dexterous manipulation. To overcome this limitation, recent vision-tactile-language-action (VTLA) methods incorporate tactile sensing into VLA models to provide direct contact information. However, they typically treat tactile signals as passive auxiliary inputs, making it difficult to model tactile semantics and future physical interactions. To this end, we",
+  "paper_url": "https://arxiv.org/abs/2606.31723",
+  "pdf_url": "https://arxiv.org/pdf/2606.31723",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Xidong Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Yichi Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Jiaxin Shi",
+      "affiliations": []
+    },
+    {
+      "name": "Fucai Zhu",
+      "affiliations": []
+    },
+    {
+      "name": "Siyu Zhu",
+      "affiliations": []
+    },
+    {
+      "name": "Michael Yu Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaojun Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Weihao Yuan",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "shanghaijiaotonguniversity",
+      "name": "Shanghai Jiao Tong University",
+      "role": "primary"
+    },
+    {
+      "id": "harbininstituteoftechnology",
+      "name": "Harbin Institute of Technology",
+      "role": "collaborator"
+    },
+    {
+      "id": "fudanuniversity",
+      "name": "Fudan University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-30",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "Interesting tactile VLA framework that moves beyond passive tactile inputs to active tactile understanding and prediction. Tactile chain-of-thought and mixed controller are novel. Real-world experiments across 4 task categories. However, no code and the approach builds heavily on existing VLA architectures.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.31723",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 Method",
+      "3.1 Preliminaries",
+      "3.2 Unified Tactile Understanding and Prediction",
+      "3.3 Action-Tactile Mixed Controller",
+      "3.4 Training",
+      "4 Experiments",
+      "4.1 Experimental Setup",
+      "4.2 Comparative Experiments",
+      "4.3 Ablation Studies",
+      "5 Conclusion",
+      "References",
+      "Appendix A Dataset and Task Details",
+      "A.1 Hardware Details",
+      "A.2 Task Details",
+      "A.3 Collection Details",
+      "Appendix B Implementation Details",
+      "B.1 System Overview",
+      "B.2 Model Architecture Details",
+      "Unified tactile queries.",
+      "Tactile encoder.",
+      "Tactile chain-of-thought decoder.",
+      "Coarse tactile predictor.",
+      "Fine tactile predictor.",
+      "B.3 Training Details",
+      "Stage1 training.",
+      "Stage2 training.",
+      "Optimization.",
+      "Training schedule.",
+      "B.4 Tactile Chain-of-Thought Generation Details",
+      "Appendix C Additional Experimental Results",
+      "C.1 Tactile Prediction",
+      "C.2 T-CoT State Awareness",
+      "C.3 Action-Tactile Mixed Controller",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.31723"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.31723"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Shanghai Jiao Tong University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.31723",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Harbin Institute of Technology",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.31723",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Fudan University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.31723",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

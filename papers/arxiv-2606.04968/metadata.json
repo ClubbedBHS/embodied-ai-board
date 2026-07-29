@@ -1,0 +1,266 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.04968",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Potential-Guided Flow Matching for Vision-Language-Action Policy Improvement",
+  "title_zh": "ForesightFlow：用势函数引导流匹配改进 VLA 策略",
+  "abstract": "Large vision-language-action (VLA) policies are increasingly trained as conditional generative models over action chunks. Yet deployment produces mixed-quality experience-successful demonstrations, partial completions, recoverable mistakes, and failures-that is difficult to use with standard imitation. Full behavior cloning (BC) imitates failures, filtered BC discards useful sub-trajectories, and offline reinforcement learning adds a large critic. We introduce ForesightFlow, a self-guided flow-m",
+  "paper_url": "https://arxiv.org/abs/2606.04968",
+  "pdf_url": "https://arxiv.org/pdf/2606.04968",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yunpeng Mei",
+      "affiliations": []
+    },
+    {
+      "name": "Jiakai He",
+      "affiliations": []
+    },
+    {
+      "name": "Hongjie Cao",
+      "affiliations": []
+    },
+    {
+      "name": "Chenyu Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaowen Zhu",
+      "affiliations": []
+    },
+    {
+      "name": "Yihan Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Jiamin Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Chenbo Xin",
+      "affiliations": []
+    },
+    {
+      "name": "Peng Cheng",
+      "affiliations": []
+    },
+    {
+      "name": "Yuxuan Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Yijie Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Xinhu Zheng",
+      "affiliations": []
+    },
+    {
+      "name": "Gao Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Jie Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Gang Wang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-06-03",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "巧妙地将流匹配(flow matching)引入VLA策略自改进，解决了混合质量部署数据的利用难题。核心贡献：(1)解耦优势加权流匹配——关键洞察是policy improvement和value calibration需要不同监督：动作速度用指数化优势权重强化高质量动作，潜在坐标均匀训练避免过度自信；(2)一步边界估计器从条件流边界恒等式推导，实现无额外critic的best-of-K推理；(3)训练计算减少38%。10个任务(5仿真+5真实双臂)验证。相较于看板中已有的RL-based改进方法，ForesightFlow从flow matching和自引导角度提供了全新的策略改进范式。代码已公开。主要风险：方法相对复杂(flow matching + advantage weighting + boundary estimation)，复现有一定门槛。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文 HTML 作者区未能自动解析出明确机构，需人工核验",
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.04968",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "Contributions.",
+      "2 Preliminaries",
+      "2.1 Sparse-Outcome Episodic Control",
+      "2.2 Conditional Flow Matching",
+      "2.3 KL-Regularized Policy Improvement",
+      "3 Method: ForesightFlow",
+      "3.1 Action-Potential Flow State",
+      "3.2 Stage-Level Potential Targets",
+      "3.3 One-Step Foresight for Advantage Estimation",
+      "3.4 Decoupled Advantage-Weighted Flow Matching",
+      "3.5 Self-Guided Inference",
+      "4 Experiments",
+      "Simulation tasks.",
+      "Real-world robot tasks.",
+      "Datasets.",
+      "4.1 Baselines",
+      "4.2 Main Results",
+      "Simulation.",
+      "Real-world deployment.",
+      "Compute and parameter efficiency.",
+      "4.3 Ablation Studies",
+      "Decoupled weighting prevents value hallucination.",
+      "One-step foresight preserves useful rankings.",
+      "Self-guided sampling improves long-horizon performance.",
+      "5 Related Work",
+      "VLA models and generative robot policies.",
+      "Offline RL and advantage-weighted policy improvement.",
+      "Self-guided generation.",
+      "6 Conclusion",
+      "References",
+      "Appendix A Theoretical Analysis",
+      "A.1 Setup and Assumptions",
+      "A.2 Consistency of Success Potential Learning",
+      "A.3 Policy Improvement via Weighted Flow Matching",
+      "A.4 Resolving Hallucination in Unified Architectures",
+      "Case 1: Coupled AWR.",
+      "Case 2: Decoupled AWR (Ours).",
+      "A.5 MC Ranking Protocol",
+      "A.6 Cross-Task Within-Observation Validation",
+      "Score scatter.",
+      "Per-task and outcome stratification.",
+      "Trajectory geometry and value calibration.",
+      "Appendix B Implementation Details",
+      "B.1 ForesightFlowÂ Algorithm Pipeline",
+      "Training.",
+      "Inference.",
+      "B.2 Model Configuration and Hyperparameters",
+      "Simulation (BEHAVIOR-1K).",
+      "Real-World Robot.",
+      "B.3 Imitation Learning Baselines",
+      "BC on Simulation (BEHAVIOR-1K).",
+      "BC on Real-World Robot.",
+      "B.4 IDQL Implementation",
+      "Critic Architecture.",
+      "Policy and Training.",
+      "B.5 Flow Q-learning Implementation",
+      "Model Architecture.",
+      "Appendix C Hardware Components",
+      "Appendix D Task Definition",
+      "D.1 Simulation Tasks",
+      "Turning on radio",
+      "Task Description",
+      "Picking up trash",
+      "Spraying fruit trees",
+      "Cook hot dogs",
+      "Wash a baseball cap",
+      "D.2 Real-World Robot Tasks",
+      "Set-Paper-Roll",
+      "Stage 1: Grasp paper roll",
+      "Stage 2: Transport paper roll",
+      "Stage 3: Place paper roll onto holder",
+      "Pick-Trash",
+      "Stage 1: Open trash bin lid",
+      "Stage 2: Place paper balls in trash bin",
+      "Stage 3: Close trash bin lid",
+      "Cube-Stack",
+      "Stage 1: Place red cube on plate",
+      "Stage 2: Stack orange cube on red cube",
+      "Stage 3: Stack purple cube on orange cube",
+      "Transfer-Food",
+      "Stage 1: Peanut Pick-and-Place",
+      "Stage 2: Peanut Pouring",
+      "Stage 3: Bread Transfer",
+      "Wipe-Whiteboard",
+      "Stage 1: Grasp the plate",
+      "Stage 2: Grasp the eraser",
+      "Stage 3: Wipe markings",
+      "Stage 4: Return the plate",
+      "D.3 Dataset description",
+      "Appendix E Qualitative Visualization",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.04968"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.04968"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.07386",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Spline Policy: A Structured Representation for Robot Policies",
+  "title_zh": "Spline Policy：机器人策略的结构化样条表示",
+  "abstract": "Modern imitation-learning policies for robot manipulation often represent actions as fixed-resolution action chunks, which are simple and effective but expose limited geometric and temporal structure before execution. This paper studies Spline Policy (SP), a structured representation that replaces action chunks with spline parameters while keeping the policy backbone unchanged. The predicted spline can be decoded as a compact continuous trajectory, queried at different temporal resolutions, cons",
+  "paper_url": "https://arxiv.org/abs/2606.07386",
+  "pdf_url": "https://arxiv.org/pdf/2606.07386",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Mengze Tian",
+      "affiliations": []
+    },
+    {
+      "name": "Yiming Li",
+      "affiliations": []
+    },
+    {
+      "name": "Sichao Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Auke Ijspeert",
+      "affiliations": []
+    },
+    {
+      "name": "Sylvain Calinon",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "epfl",
+      "name": "EPFL",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-05",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "imitation-learning"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "Clean theoretical contribution bridging movement primitives and modern policy learning; spline-based output is a drop-in improvement across multiple backbones; flow-field realization provides principled local correction.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.07386",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "I Introduction",
+      "II Related Work",
+      "II-A Movement primitives",
+      "II-B Dynamical systems",
+      "II-C Imitation learning",
+      "III Spline Policy as a Structured Representation",
+      "III-A Problem Formulation",
+      "III-B Structured Decoding and Operations",
+      "III-C Policy Integration",
+      "IV Flow-Field Realization of Spline Policy",
+      "IV-A From Spline to Flow Field",
+      "IV-B Local Correction and Perturbation Recovery",
+      "IV-C Uncertainty Propagation in Flow Fields",
+      "IV-D Integration with Robot Control",
+      "V Results",
+      "V-A Flow Field of Spline Policy",
+      "V-B Representation of Spline Policy",
+      "V-C Real-World Compatibility Case Studies",
+      "V-D Real-World Deployment with Different Backbones",
+      "VI Conclusion",
+      "References",
+      "Acknowledgment",
+      "VII Appendix",
+      "VII-A From Spline to Distance Field",
+      "VII-B Flow Field Corrective Analysis",
+      "VII-C Real-World Setup and Backbone Deployment Details",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.07386"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.07386"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "EPFL",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.07386",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

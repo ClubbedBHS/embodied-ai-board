@@ -1,0 +1,258 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.30552",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Training Vision-Language-Action Models with Dense Embodied Chain-of-Thought Supervision",
+  "title_zh": null,
+  "abstract": "Cross-embodiment transfer in vision-language-action (VLA) models remains challenging because low-level state and action spaces differ fundamentally across robot platforms. We observe that the high-level cognitive process underlying manipulation, including scene perception, object identification, task planning, and sub-task decomposition, is largely shared across embodiments. Based on this observation, we present ZR-0, a 2.6 billion parameter end-to-end VLA model that uses dense Embodied Chain-of-Thought (ECoT) supervision to align cross-embodiment representations within the vision-language model (VLM). ZR-0 adopts a dual-stream architecture: a pre-trained VLM (System 2) generates structured ECoT reasoning during training, while a Diffusion Transformer-based action expert (System 1) produces continuous action chunks via flow matching. The two components are coupled through cross-attention, with an attention mask that restricts the action expert to input prompt features only, enabling ECoT generation to be entirely skipped at inference without any performance loss. ZR-0 is pre-trained on ProcCorpus-60M, a large-scale dataset comprising approximately 60 million frames (approximately 1,000 hours) from over 400K trajectories, with dense ECoT annotations covering 96.8% of all frames. We evaluate ZR-0 on three simulation benchmarks spanning single-arm (LIBERO), bimanual (RoboTwin 2.0), and humanoid (RoboCasa GR-1 Tabletop) embodiments, as well as real-world experiments on the xArm platform, demonstrating strong performance across all settings. Code and model checkpoints are available at https://github.com/RUCKBReasoning/ZR-0.",
+  "paper_url": "https://arxiv.org/abs/2606.30552",
+  "pdf_url": "https://arxiv.org/pdf/2606.30552",
+  "project_url": null,
+  "code_url": "https://github.com/RUCKBReasoning/ZR-0",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Haoyang Li",
+      "affiliations": [
+        "ruc"
+      ]
+    },
+    {
+      "name": "Guanlin Li",
+      "affiliations": [
+        "ruc"
+      ]
+    },
+    {
+      "name": "Youhe Feng",
+      "affiliations": [
+        "ruc"
+      ]
+    },
+    {
+      "name": "Chen Zhao",
+      "affiliations": [
+        "ruc"
+      ]
+    },
+    {
+      "name": "Zhuoran Wang",
+      "affiliations": [
+        "ruc"
+      ]
+    },
+    {
+      "name": "Yang Li",
+      "affiliations": [
+        "ruc"
+      ]
+    },
+    {
+      "name": "Qizhe Wei",
+      "affiliations": [
+        "ruc"
+      ]
+    },
+    {
+      "name": "Shifeng Bao",
+      "affiliations": [
+        "ruc"
+      ]
+    },
+    {
+      "name": "Haitao Shen",
+      "affiliations": [
+        "zhipu-ai"
+      ]
+    },
+    {
+      "name": "Yihan Zhao",
+      "affiliations": [
+        "zhipu-ai"
+      ]
+    },
+    {
+      "name": "Tong Yang",
+      "affiliations": [
+        "zhipu-ai"
+      ]
+    },
+    {
+      "name": "Jing Zhang",
+      "affiliations": [
+        "zhipu-ai"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "renminuniversityofchina",
+      "name": "Renmin University of China",
+      "role": "primary"
+    },
+    {
+      "id": "zhipuai",
+      "name": "Zhipu AI",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-27",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "behavior-cloning"
+    ],
+    "tasks": [
+      "manipulation",
+      "humanoid-control",
+      "generalist-control"
+    ],
+    "platforms": [
+      "robot-arm",
+      "humanoid",
+      "multi-robot"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "proprioception",
+      "action"
+    ],
+    "environments": [
+      "simulation",
+      "real-world"
+    ],
+    "assets": [
+      "code"
+    ],
+    "properties": [
+      "open-source",
+      "real-robot-evaluation",
+      "large-scale-data"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 83,
+    "selection_reason": "提出Embodied Chain-of-Thought (ECoT)密集监督实现跨embodiment VLA表示对齐。ECoT覆盖率96.8%，训练时强制VLM学习共享认知推理，推理时零成本跳过。LIBERO平均97.8%，三个仿真benchmark+真实xArm实验覆盖单臂/双臂/人形。ProcCorpus-60M含60M帧/1000小时/400K+轨迹。代码和模型权重已开源于GitHub。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "hermes-agent",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "ProcCorpus-60M数据集本身未确认公开可访问",
+      "ECoT标注由VLM自动生成，标注质量依赖VLM能力",
+      "真实机器人xArm实验仅4任务，规模有限",
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.30552",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 ZR-0",
+      "3.1 Model Architecture",
+      "3.2 Pre-Training Data",
+      "3.3 Training Objective",
+      "3.4 Inference",
+      "4 Experiments",
+      "4.1 Experimental Setup",
+      "4.1.1 Evaluation Benchmarks",
+      "4.1.2 Evaluation metric.",
+      "4.1.3 Implementation Details",
+      "4.1.4 Post-training and inference setting.",
+      "4.2 Experimental Results",
+      "4.2.1 Simulation Experiments",
+      "4.2.2 Real-World Experiments",
+      "4.3 Ablation study.",
+      "5 Discussion",
+      "6 Conclusion",
+      "References",
+      "Appendix A Full RoboTwin 2.0 Results",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.30552"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.30552"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Renmin University of China",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.30552",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Zhipu AI",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.30552",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/RUCKBReasoning/ZR-0",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "ar5iv-html-link",
+      "checked_at": "2026-07-28",
+      "http_status": 200
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

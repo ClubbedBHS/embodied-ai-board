@@ -1,0 +1,181 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.31993",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "OopsieVerse: A Safety Benchmark with Damage-Aware Simulation for Robot Manipulation",
+  "title_zh": "OopsieVerse：面向机器人操作安全的损伤感知仿真基准",
+  "abstract": "While robotic manipulation capabilities have advanced rapidly, physical safety remains a major barrier to deploying household robots: task success is insufficient if the robot damages itself or its surroundings. Simulation offers a harm-free alternative to costly and dangerous real-world training and evaluation, yet existing simulators lack general mechanisms to detect, quantify, and represent damage. To address this gap, we introduce OOPSIEVERSE, a unified simulation framework and benchmark for",
+  "paper_url": "https://arxiv.org/abs/2606.31993",
+  "pdf_url": "https://arxiv.org/pdf/2606.31993",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Arnav Balaji",
+      "affiliations": []
+    },
+    {
+      "name": "Arpit Bahety",
+      "affiliations": []
+    },
+    {
+      "name": "Sriniket Ambatipudi",
+      "affiliations": []
+    },
+    {
+      "name": "Daniel Lam",
+      "affiliations": []
+    },
+    {
+      "name": "Junhong Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Roberto Martín-Martín",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "universityoftexasataustin",
+      "name": "University of Texas at Austin",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-30",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "simulators",
+      "infrastructure",
+      "algorithms"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_reason": "首个系统性地将物理安全（损伤检测、量化、表征）引入机器人操作仿真基准的工作。核心贡献：(1)DamageSim——仿真器无关框架，将接触力/温度/液体交互转化为机械/热/流体损伤信号；(2)MDP增强——损伤作为观测/奖励/终止条件的显式信号；(3)完整家庭任务套件评估常见损伤模式；(4)跨两个仿真器（OmniGibson+RoboCasa）实例化及多用例验证。填补了看板上机器人安全评估这一关键空白。相较于现有基准（SIMPLE、LIBERO等），OopsieVerse首次将安全从二元的成功/失败拓展到损伤感知的连续评估。主要风险：损伤模型简化（基于物理量阈值），未考虑长期累积损伤。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "中文标题待翻译",
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.31993",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "I Introduction",
+      "II Related Work",
+      "III DamageSim",
+      "III-A Damage-Aware POMDP Formulation",
+      "III-B Damage-Aware POMDP Implementation: DamageSim",
+      "IV OopsieBench",
+      "V Experiments",
+      "V-A OopsieVerse for Imitation Learning",
+      "V-B OopsieVerse for Reinforcement Learning",
+      "V-C Benchmarking VLAs on OopsieVerse",
+      "V-D Sim-to-real Transfer from OopsieVerse",
+      "VI Limitations and Conclusion",
+      "Acknowledgments",
+      "References",
+      "Appendix",
+      "A Constrained MDP Formulation",
+      "B Tasks in OopsieBench",
+      "C OopsieVerse for Imitation Learning",
+      "C.1 Demonstration Data Collection",
+      "C.2 Model Architecture",
+      "C.3 Training and Evaluation",
+      "D OopsieVerse for Reinforcement Learning",
+      "D.1 Diffusion Steering (DSRL) for Shelve Item",
+      "D.2 Finetuning a BC-Gaussian Policy for Move Glass of Water",
+      "D.3 RL from Scratch for Place Plate",
+      "E Additional VLA experiments",
+      "F Setting Object Parameters",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.31993"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.31993"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "University of Texas at Austin",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.31993",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

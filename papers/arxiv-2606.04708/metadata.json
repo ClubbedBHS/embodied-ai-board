@@ -1,0 +1,226 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.04708",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "VISTA: Vision-Grounded and Physics-Validated Adaptation of UMI data for VLA Training",
+  "title_zh": "VISTA：面向 VLA 训练的 UMI 数据视觉锚定与物理验证适配",
+  "abstract": "Universal Manipulation Interface (UMI) enables scalable real-world robot data collection without hardware-specific teleoperation, yet leveraging UMI data to train large-scale Vision-Language-Action (VLA) models remains fundamentally challenging. We identify two critical mismatches: wrist-mounted fisheye views, with severe radial distortion and local gripper-centric perspectives, are out-of-distribution for pretrained VLMs; and human-collected trajectories frequently violate kinematic limits, inc",
+  "paper_url": "https://arxiv.org/abs/2606.04708",
+  "pdf_url": "https://arxiv.org/pdf/2606.04708",
+  "project_url": "https://tele-umi-vista.github.io",
+  "code_url": "https://github.com/TeleHuman/umi-vista",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Siyuan Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Linzheng Guo",
+      "affiliations": []
+    },
+    {
+      "name": "Ouyang Lu",
+      "affiliations": []
+    },
+    {
+      "name": " Zhaxizhuoma",
+      "affiliations": []
+    },
+    {
+      "name": "Daoran Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Xinmiao Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Ting Xiao",
+      "affiliations": []
+    },
+    {
+      "name": "Fangzheng Yan",
+      "affiliations": []
+    },
+    {
+      "name": "Zhijun Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Yan Ding",
+      "affiliations": []
+    },
+    {
+      "name": "Chao Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Chenjia Bai",
+      "affiliations": []
+    },
+    {
+      "name": "Xuelong Li",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-06-03",
+    "last_revision": "2026-06-04"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "topics": [
+      "vla",
+      "sim-to-real"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "code",
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_reason": "Critical infrastructure for the widely-used UMI data collection paradigm; releases 8M fisheye VQA dataset, validation pipeline, and pre-trained model; strong empirical results across 20 real-world tasks.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "中文标题待翻译",
+      "论文 HTML 作者区未能自动解析出明确机构，需人工核验"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.04708",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 Method",
+      "3.1 UMI Hardware for Cross-embodiment Data Collection",
+      "3.2 UMI-VQA for Perception Alignment",
+      "3.3 A Trajectory Scoring Framework for Physical Validation",
+      "3.4 Model Training and Deployment",
+      "Stage 1: VQA-Action Autoregressive Co-training.",
+      "Stage 2: Knowledge-Isolated Flow Matching Action Expert.",
+      "4 Experiments",
+      "4.1 Diagnostic Validation Experiments",
+      "Fisheye observations degrade policy learning.",
+      "Fisheye observations degrade robot-relevant visual reasoning.",
+      "Raw UMI trajectories are not always executable.",
+      "4.2 Data-Level Validation Experiments",
+      "Effect of perception-aligned VQA.",
+      "Effects of physical score validation.",
+      "4.3 Model Evaluation Experiments",
+      "Simulation benchmark.",
+      "Real-robot evaluation.",
+      "4.4 Ablations and Analysis",
+      "Component ablation.",
+      "Attention-based analysis of visual grounding.",
+      "5 Conclusion",
+      "References",
+      "Appendix A The details of Multi-robot deployment System",
+      "Appendix B Details of poses in the replay and deployment",
+      "Appendix C UMI-VQA Construction Pipeline and Prompt Templates",
+      "C.1 Real-world UMI VQA Construction",
+      "C.2 RefSpatial-based Fisheye VQA Construction",
+      "Appendix D Implementation Details and Experimental Results",
+      "RoboTwin and LIBERO wrist-view fisheye data generation.",
+      "Additional Experimental Details.",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.04708"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.04708"
+    },
+    {
+      "type": "project",
+      "url": "https://tele-umi-vista.github.io"
+    },
+    {
+      "type": "code",
+      "url": "https://github.com/TeleHuman/umi-vista"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://tele-umi-vista.github.io",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://tele-umi-vista.github.io/"
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/TeleHuman/umi-vista",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://api.github.com/repos/TeleHuman/umi-vista"
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

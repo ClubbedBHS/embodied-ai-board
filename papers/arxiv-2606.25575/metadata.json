@@ -1,0 +1,198 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.25575",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "One Body, Two Minds: Variable Autonomy Approach for a Co-embodied Robotic Hand",
+  "title_zh": "一个身体、两个心智：共具身机器人手的可变自主方法",
+  "abstract": "Assistive robotic systems face a fundamental trade-off: fully autonomous systems lack user agency, while fully user-controlled systems demand continuous cognitive effort. Existing shared autonomy approaches blend human and robot commands but are mostly deployed in separate physical bodies. We introduce co-embodiment with variable autonomy, where human and robot share a single physical body and operate at different autonomy levels across task phases, from mutual autonomy during object search and ",
+  "paper_url": "https://arxiv.org/abs/2606.25575",
+  "pdf_url": "https://arxiv.org/pdf/2606.25575",
+  "project_url": "https://co-embodiment.github.io/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Piotr Koczy",
+      "affiliations": []
+    },
+    {
+      "name": "Yuchong Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Danica Kragic",
+      "affiliations": []
+    },
+    {
+      "name": "Michael C. Welle",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "kthroyalinstituteoftechnology",
+      "name": "KTH Royal Institute of Technology",
+      "role": "primary"
+    },
+    {
+      "id": "incarrobotics",
+      "name": "INCAR Robotics",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-24",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "提出人机'共具身+可变自主'新范式——区别于传统共享自主中的连续协商，人与机器人共享同一物理身体并按任务阶段切换自主级别。核心贡献：(1)共具身可穿戴机器人手设计；(2)从互自主（搜索/抓取）到人主导（操作）的自主级别切换；(3)头手势控制+释放手势否决权。44人用户研究统计充分，接受度高。为人机协作提供了新颖的具身交互视角。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.25575",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "I INTRODUCTION",
+      "Results",
+      "Rapid user adaptation demonstrates learning effect dominance",
+      "High task success with task-specific challenges",
+      "Model comparison suggests a possible reliability-efficiency trade-off",
+      "User experience evaluation",
+      "Extended practice demonstrates continued learning potential",
+      "Discussion",
+      "Limitations",
+      "Materials and Methods",
+      "Co-embodied robotic hand system",
+      "Hardware configuration",
+      "Training the Robotic Hands âmindâ",
+      "Co-embodiment with variable autonomy level paradigm",
+      "Task battery and experimental environment",
+      "Experimental workspace",
+      "Task descriptions",
+      "User study",
+      "Study design and conditions",
+      "Task success criteria",
+      "Extended practice protocol",
+      "Statistical analysis",
+      "Learning effects",
+      "Model comparison",
+      "Task-specific analysis",
+      "Questionnaire analysis",
+      "APPENDIX",
+      "Additional questionnaire analysis S1",
+      "Project website content S2",
+      "Robustness of learning effects S3",
+      "Hardware tool modifications S4",
+      "References",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.25575"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.25575"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "KTH Royal Institute of Technology",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.25575",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "INCAR Robotics",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.25575",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://co-embodiment.github.io/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-or-project-page",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

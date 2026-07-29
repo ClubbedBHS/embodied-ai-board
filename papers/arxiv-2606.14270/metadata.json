@@ -1,0 +1,192 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.14270",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Robust Fall Recovery for Armless Bipedal-Wheeled Robots Via Force-Guided Learning",
+  "title_zh": "通过力引导学习实现无臂双足轮式机器人的鲁棒跌倒恢复",
+  "abstract": "Fall recovery is critical for autonomous legged locomotion. Existing methods have demonstrated that some legged robots, such as humanoids and quadrupeds, are capable of fall recovery from diverse postures by utilizing arms or coordinating multi-legs to generate support forces. Without arms or other legs to provide supportive assistance, a bipedal-wheeled robot must rely solely on the actuation of its legs, making recovery particularly difficult. To address this, we introduce FTSR (Force-guided T",
+  "paper_url": "https://arxiv.org/abs/2606.14270",
+  "pdf_url": "https://arxiv.org/pdf/2606.14270",
+  "project_url": "https://2350575870.github.io/force-guided.github.io/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Haidong Hou",
+      "affiliations": []
+    },
+    {
+      "name": "Zhangguo Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Tao Han",
+      "affiliations": []
+    },
+    {
+      "name": "Hengbo Qi",
+      "affiliations": []
+    },
+    {
+      "name": "Khaleel Ghazal",
+      "affiliations": []
+    },
+    {
+      "name": "Yu Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Yidong Du",
+      "affiliations": []
+    },
+    {
+      "name": "Xuechao Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Fei Meng",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "beijinginstituteoftechnology",
+      "name": "Beijing Institute of Technology",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-12",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "simulators",
+      "infrastructure"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "Interesting fall recovery for armless bipedal-wheeled robots — a niche but important locomotion safety problem. Force-guided teacher-student framework is clever. Real robot deployment and humanoid generalization strengthen claims. However, limited direct relevance to board's core manipulation/VLA focus.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": []
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.14270",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "I Introduction",
+      "II Method",
+      "II-A Constrained Markov Decision Process",
+      "II-B Force-Guided Reinforcement Learning Framework",
+      "II-C Force-Guided Fall Recovery Training",
+      "II-D Height-progressive Stage-wise Rewards",
+      "III Experiments and Results",
+      "III-A Training Details",
+      "III-B Simulation Results",
+      "III-C Real-World Experiments",
+      "IV Conclusion",
+      "Acknowledgment",
+      "References",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.14270"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.14270"
+    },
+    {
+      "type": "project",
+      "url": "https://2350575870.github.io/force-guided.github.io/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Beijing Institute of Technology",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.14270",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://2350575870.github.io/force-guided.github.io/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://2350575870.github.io/force-guided.github.io/"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

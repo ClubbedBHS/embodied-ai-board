@@ -1,0 +1,257 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.12604",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "EgoEngine: From Egocentric Human Videos to High-Fidelity Dexterous Robot Demonstrations",
+  "title_zh": "EgoEngine：从自我中心人类视频到高保真灵巧机器人演示",
+  "abstract": "Dexterous manipulation is limited by the cost of collecting large-scale robot demonstrations. Egocentric human videos offer a scalable source of diverse manipulation behaviors, but directly using them for robot learning requires bridging two gaps: the visual gap between human and robot observations, and the action gap between human motion and robot-executable action. We propose EgoEngine, a scalable framework for transforming egocentric human manipulation videos into high-fidelity robot data. Given an egocentric RGB video, EgoEngine produces: (i) a high-fidelity robot observation video replacing human with robot while preserving scene context and temporal alignment, and (ii) a task-aligned, executable robot action trajectory under feasibility constraints. Experiments in simulation and on real robots show that EgoEngine enables scalable conversion of human videos into robot data and, to our knowledge, demonstrates the first zero-shot visuomotor dexterous policy learning from egocentric human videos without real-robot demonstrations.",
+  "paper_url": "https://arxiv.org/abs/2606.12604",
+  "pdf_url": "https://arxiv.org/pdf/2606.12604",
+  "project_url": "https://egoengine.github.io",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yangcen Liu",
+      "affiliations": [
+        "unknown"
+      ]
+    },
+    {
+      "name": "Shuo Cheng",
+      "affiliations": [
+        "unknown"
+      ]
+    },
+    {
+      "name": "Xinchen Yin",
+      "affiliations": [
+        "unknown"
+      ]
+    },
+    {
+      "name": "Woo Chul Shin",
+      "affiliations": [
+        "unknown"
+      ]
+    },
+    {
+      "name": "Alfred Cueva",
+      "affiliations": [
+        "unknown"
+      ]
+    },
+    {
+      "name": "Yiran Yang",
+      "affiliations": [
+        "unknown"
+      ]
+    },
+    {
+      "name": "Zhenyang Chen",
+      "affiliations": [
+        "unknown"
+      ]
+    },
+    {
+      "name": "Chuye Zhang",
+      "affiliations": [
+        "unknown"
+      ]
+    },
+    {
+      "name": "Danfei Xu",
+      "affiliations": [
+        "nvidia"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "georgiainstituteoftechnology",
+      "name": "Georgia Institute of Technology",
+      "role": "primary"
+    },
+    {
+      "id": "tsinghuauniversity",
+      "name": "Tsinghua University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-10",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data"
+    ],
+    "topics": [
+      "imitation-learning",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "dexterous-hand"
+    ],
+    "modalities": [
+      "vision",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [
+      "project-page"
+    ],
+    "properties": [
+      "real-robot-evaluation",
+      "zero-shot"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 82,
+    "selection_reason": "首个从自我中心人类视频到灵巧机器人演示的zero-shot视觉运动策略学习框架。同时解决视觉差异（digital twin视频生成）和动作差异（可执行轨迹生成）两大鸿沟。在人形机器人上实现zero-shot灵巧操作，无需任何真实机器人演示。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "具体的zero-shot任务数量和成功率未在摘要中给出"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.12604",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 EgoEngine Framework",
+      "3.1 Human Video to Simulation",
+      "3.2 Action Generation",
+      "3.2.1 Human-Centric Retargeting",
+      "3.2.2 Object-Centric Trajectory Optimization",
+      "3.3 Visual Generation",
+      "3.4 Policy Distillation",
+      "4 Experiments",
+      "4.1 Experiment Setup",
+      "4.2 Visual Fidelity of Generated Robot Observations",
+      "4.3 Action Fidelity of Generated Robot Trajectories",
+      "4.4 Downstream Policy Distillation",
+      "5 Conclusion",
+      "6 Limitations",
+      "References",
+      "Appendix",
+      "Appendix A Hardware and Data Preprocess",
+      "A.1 Camera Calibration",
+      "A.2 Robot Teleoperation",
+      "A.3 Digital Twin Process",
+      "A.4 Scalability of Digital Twin Reconstruction",
+      "Appendix B Qualitative Results for Visual Branch",
+      "Appendix C Trajectory Optimization",
+      "C.1 Mode Switching",
+      "C.2 Reward (Objective) Design",
+      "C.3 Evaluation",
+      "Appendix D Policy Architecture and Training Details",
+      "D.1 Observation Encoder",
+      "D.2 Flow-Matching Action Decoder",
+      "D.3 Real Robot Experiments Setup",
+      "Appendix E Dataset Quality Analysis",
+      "E.1 Scalability and Sample Efficiency",
+      "E.2 Motion Pattern Analysis"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.12604"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.12604"
+    },
+    {
+      "type": "project",
+      "url": "https://egoengine.github.io"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Georgia Institute of Technology",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.12604",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Tsinghua University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.12604",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://egoengine.github.io",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://egoengine.github.io/"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.02745",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "SeeTraceAct: Visibility-Aware Latent Planning from Cross-Embodiment Demonstration Videos",
+  "title_zh": "SeeTraceAct：从跨具身示范视频进行可见性感知潜规划",
+  "abstract": "Vision-language-action models (VLAs) are promising general-purpose robot policies, but adapting them to new tasks typically requires costly task-specific teleoperation data. As an alternative, we study one-shot demo-conditioned VLAs, where a robot policy is conditioned on a single demonstration video of an unseen task. We find that existing end-to-end approaches often struggle when successful execution requires precisely localizing small target regions. To address this limitation, we propose See",
+  "paper_url": "https://arxiv.org/abs/2606.02745",
+  "pdf_url": "https://arxiv.org/pdf/2606.02745",
+  "project_url": null,
+  "code_url": "https://github.com/jaehyeon-son/SeeTraceAct",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Jaehyeon Son",
+      "affiliations": []
+    },
+    {
+      "name": "Junhyun Kim",
+      "affiliations": []
+    },
+    {
+      "name": "Kyle Kam",
+      "affiliations": []
+    },
+    {
+      "name": "Jeremiah Coholich",
+      "affiliations": []
+    },
+    {
+      "name": "Seok Joon Kim",
+      "affiliations": []
+    },
+    {
+      "name": "Jinhoo Kim",
+      "affiliations": []
+    },
+    {
+      "name": "Chris Dongjoo Kim",
+      "affiliations": []
+    },
+    {
+      "name": "Jaemin Cho",
+      "affiliations": []
+    },
+    {
+      "name": "Dieter Fox",
+      "affiliations": []
+    },
+    {
+      "name": "Zsolt Kira",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "georgiainstituteoftechnology",
+      "name": "Georgia Institute of Technology",
+      "role": "primary"
+    },
+    {
+      "id": "universityofwashington",
+      "name": "University of Washington",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-01",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "topics": [
+      "vla",
+      "imitation-learning"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "code"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "Well-executed demo-conditioned VLA with visibility-aware trace prediction, released benchmark and code on GitHub, strong results on both simulation and real-world Franka Panda tasks.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": []
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.02745",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 Method",
+      "3.1 Problem setting",
+      "3.2 Architecture",
+      "3.3 Training and inference",
+      "4 RoboCasa-DC",
+      "5 Experiments",
+      "5.1 Experimental setup",
+      "5.2 Results",
+      "5.3 Larger gains on precision-sensitive tasks",
+      "5.4 Ablation study",
+      "6 Limitations",
+      "7 Conclusion",
+      "Acknowledgments",
+      "References",
+      "Appendix A Benchmark Details",
+      "A.1 RoboCasa-DC",
+      "A.2 Real-world benchmark",
+      "Appendix B Model Details",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.02745"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.02745"
+    },
+    {
+      "type": "code",
+      "url": "https://github.com/jaehyeon-son/SeeTraceAct"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Georgia Institute of Technology",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.02745",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University of Washington",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.02745",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/jaehyeon-son/SeeTraceAct",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://api.github.com/repos/jaehyeon-son/SeeTraceAct"
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

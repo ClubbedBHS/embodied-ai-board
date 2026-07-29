@@ -1,0 +1,222 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.04046",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Dive into the Scene: Breaking the Perceptual Bottleneck in Vision-Language Decision Making via Focus Plan Generation",
+  "title_zh": "SceneDiver：用聚焦计划生成突破视觉—语言决策的感知瓶颈",
+  "abstract": "In embodied vision-language decision making tasks such as robotic manipulation and navigation, Vision-Language and Vision-Language-Action Models (VLMs &amp; VLAs) are powerful tools with different benefits: VLMs are better at long-term planning, while VLAs are better at reactive control. However, their performance is limited by the same perceptual bottleneck: visual hallucinations arise due to the models' inability to distinguish task-relevant objects from distractors. In principle, accurate ide",
+  "paper_url": "https://arxiv.org/abs/2606.04046",
+  "pdf_url": "https://arxiv.org/pdf/2606.04046",
+  "project_url": "https://future-item.github.io/SceneDiver",
+  "code_url": "https://github.com/future-item/SceneDiver-code",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Boyuan Xiao",
+      "affiliations": []
+    },
+    {
+      "name": "Bohong Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Yumeng Li",
+      "affiliations": []
+    },
+    {
+      "name": "Ji Feng",
+      "affiliations": []
+    },
+    {
+      "name": "Yao-Xiang Ding",
+      "affiliations": []
+    },
+    {
+      "name": "Kun Zhou",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "zhejianguniversity",
+      "name": "Zhejiang University",
+      "role": "primary"
+    },
+    {
+      "id": "baiontquant",
+      "name": "Baiont Quant",
+      "role": "collaborator"
+    },
+    {
+      "id": "zhejiangkeylaboratoryofintelligentmedicaldecisionsupport",
+      "name": "Zhejiang Key Laboratory of Intelligent Medical Decision Support",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-02",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "code",
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "从感知角度解决VLM/VLA幻觉问题的新方法。核心贡献：(1)由粗到精的场景聚焦：先构建场景图获得整体理解，再通过迭代的识别→理解→分析循环逐步聚焦关键对象；(2)轻量级蒸馏适配器将VLM的深度聚焦能力迁移到VLA实现实时反应控制；(3)在操作和导航两个领域验证。相较于看板中已有的VLA改进方法(主要集中在策略/动作层面)，SceneDiver从感知层面的视觉聚焦角度提供了互补方案。浙大。代码已公开。主要风险：依赖场景图构建质量；聚焦策略在高度动态场景中的实时性未充分验证。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文 HTML 作者区未能自动解析出明确机构，需人工核验"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.04046",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "2.1 Vision-Language Decision Making",
+      "2.2 Object Hallucination",
+      "2.3 Scene Graphs",
+      "3 Method",
+      "3.1 Overview",
+      "3.2 Coarse Stage: Graph Reasoning",
+      "3.3 Fine Stage: Verification and Exploration",
+      "3.4 Guiding Decision through Focus Modulation",
+      "3.5 SceneDiver Adapter",
+      "4 Experiments",
+      "4.1 Robotic Manipulation",
+      "4.2 Room Navigation",
+      "4.3 End-to-End Control: Robustness on LIBERO-plus",
+      "4.4 Ablation and Stress testing",
+      "5 Conclusion",
+      "Acknowledgement",
+      "Impact Statement",
+      "References",
+      "Appendix A Appendix",
+      "A.1 Extended Ablation Studies",
+      "A.2 Qualitative Analysis of Fine-grained Verification",
+      "A.3 Perceptual Error Analysis",
+      "A.4 Experimental Results on the Vanilla Benchmark",
+      "A.5 Inference Latency Breakdown of SceneDiver Components",
+      "A.6 Implementation Details",
+      "A.6.1 SceneGraphGeneration",
+      "A.6.2 SceneDiver Adapter",
+      "A.6.3 Experiment Details",
+      "A.6.4 Additional Qualitative Results",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.04046"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.04046"
+    },
+    {
+      "type": "project",
+      "url": "https://future-item.github.io/SceneDiver"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Zhejiang University",
+      "source": "project-page",
+      "url": "https://future-item.github.io/SceneDiver",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Baiont Quant",
+      "source": "project-page",
+      "url": "https://future-item.github.io/SceneDiver",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Zhejiang Key Laboratory of Intelligent Medical Decision Support",
+      "source": "project-page",
+      "url": "https://future-item.github.io/SceneDiver",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://future-item.github.io/SceneDiver",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://future-item.github.io/SceneDiver/"
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/future-item/SceneDiver-code",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-28",
+      "http_status": 200
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

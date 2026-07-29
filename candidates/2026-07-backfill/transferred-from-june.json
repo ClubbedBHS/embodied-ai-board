@@ -1,0 +1,377 @@
+{
+  "run": {
+    "generated_at": "2026-07-28",
+    "reason": "First publication month is 2026-07; excluded from June statistics without deleting raw records.",
+    "source_file": "candidates/2026-06-backfill/scored-candidates-unified.json"
+  },
+  "candidates": [
+    {
+      "id": "arxiv-2607.09701",
+      "arxiv_id": "2607.09701",
+      "title": "EgoSteer: A Full-Stack System Towards Steerable Dexterous Manipulation from Egocentric Videos",
+      "paper_url": "https://arxiv.org/abs/2607.09701",
+      "first_publication": "2026-06-21",
+      "last_revision": null,
+      "authors": [
+        "Yifan Zhong",
+        "Zhang Chen",
+        "Tianrui Guan",
+        "Fanlian Zeng",
+        "Yuyao Ye",
+        "Tianjia He",
+        "Ka Nam Lui",
+        "Jiayi Li"
+      ],
+      "organizations": [
+        "Peking University",
+        "PKU-PsiBot Joint Lab",
+        "University of Pennsylvania"
+      ],
+      "discovered_via": [
+        "arxiv-api-cs.RO"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.09701",
+      "keyword_score": 8,
+      "keyword_hits": [
+        "robot",
+        "VLA",
+        "generalist",
+        "dexterous manipulation",
+        "manipulation",
+        "teleoperation",
+        "dexterous",
+        "IL"
+      ],
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "直接针对灵巧手VLA的可操控性——从自我中心视频预训练到真实机器人后训练的全栈系统。40+任务，两种具身，真实机器人验证。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv实验性HTML全文可访问：https://arxiv.org/html/2607.09701 (498KB)。ar5iv为摘要页但arXiv HTML提供完整内容。已读取 Introduction, Method, Experiments 章节。"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "全栈系统：EgoSmith数据管线将野外自我中心视频整理为9.6K小时高质量预训练数据（吞吐量提升9倍，精度优于SOTA）；统一机器人栈支持遥操作和人在回路修正；世界模型增强的VLA（EgoSteer）在优化基础设施上训练。预训练+微调+DAgger优化。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "40+多样化任务中鲁棒执行自由形式指令，展示故障恢复、灵巧性和泛化。预训练模型few-shot适应复杂长时域任务（含盒子折叠），两种具身75+%成功率。开源系统、数据和模型。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "arXiv实验性HTML全文已读取。Introduction, Method, Experiments主要章节均已覆盖。代码/数据/模型确认开源。"
+        }
+      },
+      "scores": {
+        "relevance": 19,
+        "novelty": 17,
+        "evidence_quality": 16,
+        "potential_impact": 14,
+        "board_information_gain": 8,
+        "reproducibility": 9,
+        "timeliness": 3,
+        "total": 86
+      },
+      "decision": "featured",
+      "selection_reason": "全栈系统解决灵巧手VLA可操控性瓶颈——从野外自我中心视频规模化预训练到真实机器人部署的完整管线。核心贡献：(1)EgoSmith数据管线——9.6K小时高质量预训练数据，9倍吞吐量且精度优于SOTA；(2)统一机器人栈（遥操作+人在回路修正）；(3)世界模型增强VLA架构；(4)开源系统、数据和模型。40+任务、两种具身、75+%长时域成功率。将人类数据利用、灵巧操作和VLA三个方向有机整合。相较看板中其他VLA工作，EgoSteer的端到端数据-训练-部署管线完整性突出。",
+      "risks_or_uncertainties": [
+        "世界模型增强的具体增益需进一步消融验证",
+        "自我中心视频预训练质量依赖视频筛选管线"
+      ],
+      "suggested_sections": [
+        "algorithms",
+        "data",
+        "infrastructure"
+      ],
+      "suggested_topics": [
+        "vla",
+        "dexterous-manipulation",
+        "egocentric-data",
+        "world-model",
+        "steerability"
+      ],
+      "review_status": "scored",
+      "organization_evidence": [
+        {
+          "organization": "Peking University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.09701",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "PKU-PsiBot Joint Lab",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.09701",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "University of Pennsylvania",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.09701",
+          "location": "author affiliation block"
+        }
+      ],
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://egosteer.github.io/",
+          "status": "project-page-only",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "paper-or-project-page",
+          "checked_at": "2026-07-28"
+        },
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "dataset",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "model",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        }
+      ],
+      "fulltext_sections": [
+        "1 Introduction",
+        "2 Related Work",
+        "3 EgoSmith: Curating Egocentric Videos into Grounded Dexterous Priors",
+        "4 A Unified Robot Stack for Teleoperation and DAgger Post-Training",
+        "5 EgoSteer: A World-Model-Enhanced VLA for Steerable Dexterity",
+        "6 Experiments",
+        "6.1 Steerable Multi-Task Manipulation and Generalization",
+        "6.2 Efficacy of DAgger Post-Training",
+        "6.3 Scaling of Pre-Training and Baseline Comparisons",
+        "6.4 Ablation Studies",
+        "6.5 Few-Shot Adaptation to Complex Long-Horizon Tasks",
+        "7 Limitations & Conclusion",
+        "Acknowledgments",
+        "References",
+        "Appendix A Details of EgoSmith",
+        "A.1 Implementation Details",
+        "A.1.1 Pre-Filtering Heuristics",
+        "A.1.2 4D Motion Estimation",
+        "A.1.3 Language Labeling Prompt",
+        "A.1.4 Post-Filtering Criteria",
+        "A.2 Curated Dataset Statistics",
+        "Appendix B Details of the Robot Stack",
+        "B.1 Implementation Details",
+        "B.1.1 Hardware Setup",
+        "B.1.2 Aligning Robot Data with Egocentric Human Data",
+        "B.1.3 Hand-Eye Verification and Re-Calibration",
+        "B.1.4 Language Labeling Prompt",
+        "B.2 Teleoperation Data Collection",
+        "Appendix C Details of EgoSteer",
+        "C.1 VLM Co-Training Data",
+        "C.2 Implementation Details",
+        "Appendix D Experimental Details",
+        "Instructions for reporting errors"
+      ],
+      "project_url": "https://egosteer.github.io/",
+      "code_url": null,
+      "dataset_url": null,
+      "model_url": null
+    },
+    {
+      "id": "arxiv-2607.00272",
+      "title": "ASPIRE: Agentic Skills Discovery for Robotics",
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2607.00272",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "Robot manipulation system with sim-to-real transfer across embodiments, real robot programming on LIBERO-Pro, Robosuite, BEHAVIOR-1K benchmarks"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "arXiv abstract page loads successfully at https://arxiv.org/abs/2607.00272"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "Novel closed-loop autonomous skill programming with failure diagnosis, repair synthesis, and evolutionary search over task sequences — goes beyond single-trajectory refinement in prior work"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Reports 77% on LIBERO-Pro under perturbation, 72% on Robosuite bimanual handover, 32% on BEHAVIOR-1K, and sim-to-real transfer results"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "ar5iv HTML at https://ar5iv.labs.arxiv.org/html/2607.00272 fully loads with Intro, Method, Experiments, Conclusion sections"
+        }
+      },
+      "scores": {
+        "relevance": 18,
+        "novelty": 17,
+        "evidence_quality": 16,
+        "potential_impact": 13,
+        "board_information_gain": 8,
+        "reproducibility": 5,
+        "timeliness": 4,
+        "total": 81
+      },
+      "decision": "featured",
+      "selection_reason": "Autonomous skill programming system from top labs (Yuke Zhu, Ajay Mandlekar, Ken Goldberg, Jim Fan, Guanya Shi) that compounds experience into reusable skill libraries with strong sim-to-real results across multiple benchmarks.",
+      "risks_or_uncertainties": [
+        "No public code repository found despite strong lab affiliations",
+        "Sim-to-real transfer evidence is described as 'initial' — may need more extensive real-world validation",
+        "Reliance on closed-loop execution engine may limit scalability to very long-horizon tasks"
+      ],
+      "suggested_sections": [
+        "algorithms",
+        "simulators",
+        "data"
+      ],
+      "suggested_topics": [
+        "skill-learning",
+        "code-as-policy",
+        "sim-to-real",
+        "manipulation",
+        "foundation-models"
+      ],
+      "paper_url": "https://arxiv.org/abs/2607.00272",
+      "authors": [
+        "Runyu Lu",
+        "Yubo Wu",
+        "Ethan Kou",
+        "Letian Fu",
+        "Wenli Xiao",
+        "Ajay Mandlekar",
+        "Yinzhen Xu",
+        "Guanya Shi",
+        "Ken Goldberg",
+        "Ang Chen",
+        "Mosharaf Chowdhury",
+        "Yuke Zhu",
+        "Linxi \"Jim\" Fan",
+        "Guanzhi Wang"
+      ],
+      "organizations": [
+        "Carnegie Mellon University",
+        "NVIDIA",
+        "University of California, Berkeley"
+      ],
+      "organization_evidence": [
+        {
+          "organization": "Carnegie Mellon University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.00272",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "NVIDIA",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.00272",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "University of California, Berkeley",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.00272",
+          "location": "author affiliation block"
+        }
+      ],
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "dataset",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "model",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        }
+      ],
+      "fulltext_sections": [
+        "1 Introduction",
+        "2 Method",
+        "2.1 Robot Execution Engine",
+        "2.2 Skill Library",
+        "2.3 Evolutionary Search",
+        "3 Experiments",
+        "3.1 Experimental Setup",
+        "3.2 Benchmarks and Baselines",
+        "3.3 Evaluation Protocol",
+        "3.4 Main Evaluation Results",
+        "3.5 Zero-Shot Transfer to Unseen Tasks",
+        "3.6 Real-Robot Skill Transfer Across Embodiments",
+        "3.7 Ablation Studies",
+        "Robot execution engine and evolutionary search.",
+        "Evolutionary search iterations.",
+        "4 Related Work",
+        "Agentic robot control.",
+        "Self-improving agents and skill libraries.",
+        "5 Limitations",
+        "6 Conclusion",
+        "Acknowledgments",
+        "References",
+        "Appendix A Skill Library Details",
+        "Appendix B Main Benchmark Result Tables",
+        "B.1 Macro-Averaged Main Results",
+        "Appendix C LIBERO-Pro Long Zero-Shot Transfer",
+        "C.1 Macro-Averaged Main Results",
+        "C.2 Per-Task Breakdown",
+        "Appendix D Ablation Details",
+        "D.1 LIBERO-Pro Position Perturbation (Swap) Per-Task Breakdown",
+        "D.2 LIBERO-Pro Task Perturbation (Goal) Per-Task Breakdown",
+        "D.3 Evolutionary Search Progress Per-Task Breakdown",
+        "Appendix E Agent Pipeline Skills",
+        "E.1 Skill Library Prompts",
+        "E.2 Agent System Prompt and Persistent Memory",
+        "E.3 ASPIRE Fix Loop Skills",
+        "E.4 ASPIRE Evolutionary Search Skills",
+        "E.5 Initial Skill Library Templates",
+        "Instructions for reporting errors"
+      ],
+      "project_url": null,
+      "code_url": null,
+      "dataset_url": null,
+      "model_url": null
+    }
+  ]
+}

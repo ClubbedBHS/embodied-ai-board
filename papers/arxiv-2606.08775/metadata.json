@@ -1,0 +1,170 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.08775",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Unifying Object-Centric World Models and Diffusion Policy: A Hierarchical Framework for Multi-Stage Robotic Tasks",
+  "title_zh": "WorldDP：统一物体中心世界模型与扩散策略的多阶段操作框架",
+  "abstract": "Visual world models have shown great potential in learning complex system dynamics. Recent advancements leverage these models as transition functions within Model Predictive Control (MPC) frameworks to solve various control tasks. When applied to robotics, however, they are limited to single-stage tasks such as reaching or grasping, and struggle with multi-stage ones that demand complex sequential planning. In this work, we introduce WorldDP, a world model framework designed for multi-stage robo",
+  "paper_url": "https://arxiv.org/abs/2606.08775",
+  "pdf_url": "https://arxiv.org/pdf/2606.08775",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Raktim Gautam Goswami",
+      "affiliations": []
+    },
+    {
+      "name": "Prashanth Krishnamurthy",
+      "affiliations": []
+    },
+    {
+      "name": "Yann LeCun",
+      "affiliations": []
+    },
+    {
+      "name": "Farshad Khorrami",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "newyorkuniversity",
+      "name": "New York University",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-07",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model",
+      "diffusion-policy"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "将物体中心世界模型与扩散策略统一到层次化框架中处理多阶段机器人操作。核心贡献：(1)高层物体中心世界模型在粒子滤波内优化子目标；(2)低层目标条件扩散策略执行；(3)物体中心表示实现序列规划。在OGBench多阶段任务上超越基线。方法设计巧妙，但实验规模有限（4个任务变体，单机器人平台），且仅仿真验证。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.08775",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Works",
+      "3 Methodology",
+      "3.1 Object-Centric Encoder (OCE)",
+      "3.2 Conditional Diffusion Transformer Dynamics Prediction Model",
+      "3.3 Task Execution",
+      "3.4 Goal-Conditioned Diffusion Policy",
+      "4 Experiments",
+      "4.1 Implementation Details",
+      "4.2 Quantitative Results",
+      "4.3 Qualitative Visualizations",
+      "5 Research Impact and Limitations",
+      "6 Conclusion",
+      "References",
+      "Appendix A Model Hyperparameter",
+      "A.1 Object-Centric Encoder",
+      "A.2 Conditional Diffusion Transformer Dynamics Prediction Model.",
+      "A.3 Diffusion Policy.",
+      "A.4 Contact Predictor",
+      "Appendix B Tversky Loss",
+      "Appendix C Planning Parameters",
+      "Appendix D Success Rate Calculation",
+      "Appendix E Baseline Implementation Additional Details",
+      "Appendix F Additional Visualizations",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.08775"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.08775"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "New York University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.08775",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

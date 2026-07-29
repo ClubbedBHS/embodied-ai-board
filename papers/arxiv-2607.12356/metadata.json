@@ -47,7 +47,18 @@
       "affiliations": []
     }
   ],
-  "organizations": [],
+  "organizations": [
+    {
+      "id": "instituteforinfocommresearch",
+      "name": "Institute for Infocomm Research",
+      "role": "primary"
+    },
+    {
+      "id": "nanyangtechnologicaluniversity",
+      "name": "Nanyang Technological University",
+      "role": "collaborator"
+    }
+  ],
   "dates": {
     "first_publication": "2026-07-14",
     "last_revision": "2026-07-16"
@@ -146,6 +157,52 @@
       "name": "3d-representation",
       "reason": "候选筛选中出现，但尚未进入受控标签词表。",
       "evidence": "VistaVLA在VLA空间认知上提出明确增量：将3D语义高斯场作为VLA策略的空间认知接口，并通过MtQ实现99% token压缩以高效注入策略。7个真实任务+空间扰动测试+仿真实验提供多维度证据，显著超越VLA-Adapter基线(22.8%)和通用VLA(π0.5)。相较看板中已有的3D增强VLA(如batch-02的See like a Robot/Robot-Centric Pointmaps和GeoVLA相关方向)，新增信息是语义高斯原语+MtQ压缩的多视图一致3D语义-几何表示，而非仅点云/深度注入。主要风险：资产未公开验证；表1结果依赖标定多视图相机；7个任务均为桌面操控。"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "Institute for Infocomm Research",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.12356",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Nanyang Technological University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.12356",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
     }
   ]
 }

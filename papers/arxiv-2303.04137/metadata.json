@@ -64,18 +64,23 @@
   ],
   "organizations": [
     {
-      "id": "columbia-university",
+      "id": "columbiauniversity",
       "name": "Columbia University",
       "role": "primary"
     },
     {
-      "id": "toyota-research-institute",
-      "name": "Toyota Research Institute",
-      "role": "primary"
+      "id": "mit",
+      "name": "MIT",
+      "role": "collaborator"
     },
     {
-      "id": "mit",
-      "name": "Massachusetts Institute of Technology",
+      "id": "stanforduniversity",
+      "name": "Stanford University",
+      "role": "collaborator"
+    },
+    {
+      "id": "toyotaresearchinstitute",
+      "name": "Toyota Research Institute",
       "role": "collaborator"
     }
   ],
@@ -112,7 +117,8 @@
       "mixed"
     ],
     "assets": [
-      "code"
+      "code",
+      "project-page"
     ],
     "properties": [
       "real-robot-evaluation",
@@ -183,5 +189,73 @@
     "from_schema_version": "0.2",
     "migrated_at": "2026-07-22",
     "note": "从 v0.2 迁移；source_access 可证明已读取完整论文来源。"
-  }
+  },
+  "organization_evidence": [
+    {
+      "organization": "Columbia University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2303.04137",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "MIT",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2303.04137",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Stanford University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2303.04137",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Toyota Research Institute",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2303.04137",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/real-stanford/diffusion_policy",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "ar5iv-html-link",
+      "checked_at": "2026-07-28",
+      "http_status": 200,
+      "resolved_url": "https://api.github.com/repos/real-stanford/diffusion_policy"
+    },
+    {
+      "kind": "project",
+      "url": "https://diffusion-policy.cs.columbia.edu",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-or-project-page",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
 }

@@ -1,0 +1,191 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.30290",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "X-Morph: Human Motion Priors for Scalable Robot Learning Across Morphologies",
+  "title_zh": "X-Morph：利用人类运动先验扩展跨形态机器人学习",
+  "abstract": "Recent progress in humanoid behavior models has been driven in large part by abundant human motion data, but comparable motion data is scarce for non-humanoid legged robots such as quadrupeds, hexapods, and quadruped manipulators. A promising alternative is to repurpose human motion across embodiments; however, direct retargeting often produces motions that are visually plausible yet physically inconsistent or difficult to track under robot dynamics. We present X-Morph, a human-motion-to-robot-b",
+  "paper_url": "https://arxiv.org/abs/2606.30290",
+  "pdf_url": "https://arxiv.org/pdf/2606.30290",
+  "project_url": "https://maker-rat.github.io/morph/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Ritwik Sharma",
+      "affiliations": []
+    },
+    {
+      "name": "Shivam Sood",
+      "affiliations": []
+    },
+    {
+      "name": "Arhaan Jain",
+      "affiliations": []
+    },
+    {
+      "name": "Shyam Charan Kesavamoorthi",
+      "affiliations": []
+    },
+    {
+      "name": "Chengyang He",
+      "affiliations": []
+    },
+    {
+      "name": "Guillaume Sartoretti",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "nationaluniversityofsingapore",
+      "name": "National University of Singapore",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-29",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "首次将人类运动数据规模化迁移到非人形足式机器人（四足/六足/四足+臂），突破了人类运动数据仅服务于人形机器人的限制。核心贡献：(1)跨形态运动重定向——保持意图和运动学可行性；(2)特权RL→因果学生蒸馏管线；(3)支持视频遥操作、行为先验和文本条件生成。三种平台验证。从数据扩展角度具有重要价值。主要风险：仅仿真验证（未见真实机器人结果），代码未确认开源。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": []
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.30290",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 X-Morph Framework",
+      "3.1 Problem Formulation",
+      "3.2 Morphology-Aware Reference Generation",
+      "3.3 Physics-Aware Reference Correction",
+      "3.4 Reference-Conditioned Policy Tracking",
+      "3.5 Causal Retargeting for Interactive Deployment",
+      "4 Experimental Results",
+      "4.1 Cross-Morphology Motion Execution",
+      "Video-Driven Teleoperation",
+      "Text-Conditioned Motion Execution",
+      "Retargeted Motions as Downstream Behavior Priors:",
+      "4.2 Reference Quality and Generalization to Unseen Human Clips",
+      "5 Conclusion",
+      "6 Limitations",
+      "7 Acknowledgments",
+      "References",
+      "Appendix A Retargeting Specifications",
+      "Appendix B Offline Retargeting Network",
+      "Appendix C Retargeting and Corrector Hyperparameters",
+      "Appendix D Tracker Rewards and Domain Randomization",
+      "Appendix E Baseline and Related Work Discussion",
+      "Appendix F Generalization to Unseen Motions",
+      "Appendix G Video Teleoperation",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.30290"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.30290"
+    },
+    {
+      "type": "project",
+      "url": "https://maker-rat.github.io/morph/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "National University of Singapore",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.30290",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://maker-rat.github.io/morph/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://maker-rat.github.io/morph/"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

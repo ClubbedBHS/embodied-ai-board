@@ -8,7 +8,7 @@
   "abstract": "Current work on robot furniture assembly mostly focuses on toy-scale settings or single-arm manipulation. We introduce FurnitureVLA, the first systematic study of real-scale bimanual furniture assembly using Vision-Language-Action models (VLAs). We formalize the task, develop a scalable simulation pipeline for expert data generation and evaluation, and build a VR teleoperation system for single-operator bimanual control to collect high-quality real-world demonstrations. To address extreme long-horizon assembly with up to 7 subtasks and 1550 control steps, we propose a progress-enhanced VLA, finetuned on semantically grounded subtasks, that jointly predicts actions and a continuous progress signal, enabling automatic subtask transitions and reducing compounding errors during inference. We further study perception and control design factors that critically affect precision in real-scale assembly. FurnitureVLA improves average simulation success from 48% to 80% compared to baselines across three furniture types, with an additional 21% gain from our design factor study. We validate on a real Kinova Gen3 platform with only 16% drop on the hardest task.",
   "paper_url": "https://arxiv.org/abs/2607.01212",
   "pdf_url": "https://arxiv.org/pdf/2607.01212",
-  "project_url": null,
+  "project_url": "https://dannymcy.github.io/furniturevla/",
   "code_url": null,
   "dataset_url": null,
   "model_url": null,
@@ -43,7 +43,23 @@
       "affiliations": []
     }
   ],
-  "organizations": [],
+  "organizations": [
+    {
+      "id": "mitsubishielectricresearch",
+      "name": "Mitsubishi Electric Research",
+      "role": "primary"
+    },
+    {
+      "id": "universityofnorthcarolinaatchapelhill",
+      "name": "University of North Carolina at Chapel Hill",
+      "role": "collaborator"
+    },
+    {
+      "id": "universityofoxford",
+      "name": "University of Oxford",
+      "role": "collaborator"
+    }
+  ],
   "dates": {
     "first_publication": "2026-07-01",
     "last_revision": null
@@ -77,7 +93,9 @@
     "environments": [
       "mixed"
     ],
-    "assets": [],
+    "assets": [
+      "project-page"
+    ],
     "properties": [
       "real-robot-evaluation"
     ]
@@ -128,5 +146,66 @@
       "url": "https://arxiv.org/html/2607.01212"
     }
   ],
-  "suggested_new_tags": []
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Mitsubishi Electric Research",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.01212",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University of North Carolina at Chapel Hill",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.01212",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University of Oxford",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.01212",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://dannymcy.github.io/furniturevla/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-or-project-page",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
 }

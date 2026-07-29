@@ -1,0 +1,209 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.04829",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "M3imic: Learning a Versatile Whole-Body Controller for Multimodal Motion Mimicking",
+  "title_zh": "M3imic：面向多模态运动模仿的通用全身人形控制器",
+  "abstract": "Building a general-purpose whole-body controller is essential for enabling diverse motion capabilities in humanoid robots across a wide range of downstream tasks, including locomotion and loco-manipulation. Different tasks rely on distinct motion reference modalities: locomotion primarily depends on coordinated robot joint trajectories, whereas manipulation requires precise end-effector trajectory tracking. Existing methods often overlook the representational mismatch between dense robot joint a",
+  "paper_url": "https://arxiv.org/abs/2606.04829",
+  "pdf_url": "https://arxiv.org/pdf/2606.04829",
+  "project_url": null,
+  "code_url": "https://github.com/Renforce-Dynamics/MultiModalWBC",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Zuxing Lu",
+      "affiliations": []
+    },
+    {
+      "name": "Ziang Zheng",
+      "affiliations": []
+    },
+    {
+      "name": "Yao Lyu",
+      "affiliations": []
+    },
+    {
+      "name": "Jingyu Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Feihong Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Song Lu",
+      "affiliations": []
+    },
+    {
+      "name": "Xin Yuan",
+      "affiliations": []
+    },
+    {
+      "name": "Changyin Sun",
+      "affiliations": []
+    },
+    {
+      "name": "Xingxing Zuo",
+      "affiliations": []
+    },
+    {
+      "name": "Shengbo Eben Li",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "tsinghuauniversity",
+      "name": "Tsinghua University",
+      "role": "primary"
+    },
+    {
+      "id": "southeastuniversity",
+      "name": "Southeast University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-03",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "topics": [
+      "sim-to-real"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "code"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_reason": "Strong humanoid whole-body controller with multimodal motion mimicking. Unifies joint angles, human poses, and end-effector poses in one policy. 98.42% simulation success with sim-to-real on Unitree G1. Public code on GitHub is a significant plus. Fills humanoid whole-body control gap on the board.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "中文标题待翻译",
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.04829",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "I Introduction",
+      "II Related Work",
+      "II-A Whole-Body Control for Humanoid Robots",
+      "II-B General Whole-Body Controller",
+      "III Method",
+      "III-A Problem Definition",
+      "III-A1 Multi-Modal Reference Encoding",
+      "III-A2 Asymmetric Actor-Critic",
+      "III-A3 Policy Training",
+      "III-B Curriculum Learning Strategy",
+      "III-C Sim-to-Real Transfer",
+      "IV Experiments",
+      "IV-A Experiments Setup",
+      "IV-B Main Results",
+      "IV-C Ablation Study",
+      "IV-C1 Ablation on Curriculum Learning Strategy",
+      "IV-C2 Ablation on Dataset Size",
+      "IV-C3 Ablation on Network Size",
+      "IV-D Real-World Deployment",
+      "IV-D1 In-domain Tracking",
+      "IV-D2 Out-of-domain Teleoperation",
+      "V Conclusion and Future Work",
+      "References",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.04829"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.04829"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Tsinghua University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.04829",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Southeast University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.04829",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/Renforce-Dynamics/MultiModalWBC",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "ar5iv-html-link",
+      "checked_at": "2026-07-28",
+      "http_status": 200
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

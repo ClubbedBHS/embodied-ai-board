@@ -1,0 +1,203 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.05407",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "MoDex: A Diffusion Policy for Sequential Multi-Object Dexterous Grasping",
+  "title_zh": "MoDex：用于连续多物体灵巧抓取的扩散策略",
+  "abstract": "This work addresses sequentially grasping multiple objects with a single dexterous hand without releasing those already held. Most dexterous grasping methods commit all of the hand's degrees of freedom to a single object, underutilizing its dexterity and leaving no redundancy for subsequent grasps. The proposed solution, MoDex, is a diffusion policy that predicts the next gripper pose directly from observations, conditioned on an opposition space and point cloud. The opposition space condition s",
+  "paper_url": "https://arxiv.org/abs/2606.05407",
+  "pdf_url": "https://arxiv.org/pdf/2606.05407",
+  "project_url": "https://modex2026.github.io/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Haofei Lu",
+      "affiliations": []
+    },
+    {
+      "name": "Hongjia Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Yifei Dong",
+      "affiliations": []
+    },
+    {
+      "name": "Florian T. Pokorny",
+      "affiliations": []
+    },
+    {
+      "name": "Jens Lundell",
+      "affiliations": []
+    },
+    {
+      "name": "Danica Kragic",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "kthroyalinstituteoftechnology",
+      "name": "KTH Royal Institute of Technology",
+      "role": "primary"
+    },
+    {
+      "id": "universityofturku",
+      "name": "University of Turku",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-03",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "diffusion-policy"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "首次解决单只灵巧手顺序抓取多个物体而不释放已持物体的问题。核心贡献：(1)Opposition space条件——指定参与当前抓取的手指；(2)两阶段训练（BC→RL微调）实现sim-to-real。仿真和真实Franka+Allegro Hand平台验证，较基线提升显著。为灵巧操作的多物体场景提供了新颖视角。主要风险：仅3个物体的顺序抓取展示，任务规模有限。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": []
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.05407",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "Dexterous Grasping.",
+      "Multi-Object Grasping.",
+      "Diffusion Policies.",
+      "3 Problem Formulation",
+      "4 Preliminaries",
+      "4.1 Diffusion Policies",
+      "4.2 Diffusion Policy Policy Optimization",
+      "5 MoDex",
+      "5.1 OS and Grasp History Context",
+      "Opposition Space.",
+      "Grasp History Context.",
+      "5.2 Policy Architecture",
+      "5.3 Reward for RL Fine-tuning",
+      "6 Dataset Curation",
+      "7 Experiments",
+      "7.1 Simulation Experiments",
+      "Baselines.",
+      "Evaluation protocol.",
+      "Results.",
+      "Ablation Study.",
+      "7.2 Real-World Experiments",
+      "8 Conclusion and Limitations",
+      "References",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.05407"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.05407"
+    },
+    {
+      "type": "project",
+      "url": "https://modex2026.github.io/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "KTH Royal Institute of Technology",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.05407",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University of Turku",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.05407",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://modex2026.github.io/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://modex2026.github.io/"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

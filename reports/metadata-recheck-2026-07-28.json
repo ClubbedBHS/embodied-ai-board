@@ -1,0 +1,591 @@
+{
+  "generated_at": "2026-07-28",
+  "schema_version": "0.3",
+  "baseline": {
+    "total": 184,
+    "organization_evidence": 71,
+    "asset_checks": 87,
+    "p1_total": 52,
+    "p1_organization_evidence": 43,
+    "p1_verified_assets": 5
+  },
+  "after": {
+    "total": 184,
+    "team_confirmed": 143,
+    "team_missing": 41,
+    "verified_code": 40,
+    "verified_dataset": 2,
+    "verified_model": 1,
+    "announced": 0,
+    "project_page_only": 83,
+    "verification_error": 12,
+    "not_found": 500
+  },
+  "by_priority": {
+    "P0": {
+      "total": 95,
+      "team_confirmed": 63,
+      "team_missing": 32,
+      "verified_code": 21,
+      "verified_dataset": 0,
+      "verified_model": 0,
+      "announced": 0,
+      "project_page_only": 40,
+      "verification_error": 12,
+      "not_found": 254
+    },
+    "P1": {
+      "total": 52,
+      "team_confirmed": 49,
+      "team_missing": 3,
+      "verified_code": 10,
+      "verified_dataset": 2,
+      "verified_model": 1,
+      "announced": 0,
+      "project_page_only": 22,
+      "verification_error": 0,
+      "not_found": 143
+    },
+    "P2": {
+      "total": 37,
+      "team_confirmed": 31,
+      "team_missing": 6,
+      "verified_code": 9,
+      "verified_dataset": 0,
+      "verified_model": 0,
+      "announced": 0,
+      "project_page_only": 21,
+      "verification_error": 0,
+      "not_found": 103
+    }
+  },
+  "modifications": {
+    "papers_scanned": 184,
+    "papers_metadata_normalized": 184,
+    "candidate_files_touched": 24,
+    "candidate_records_synced": 782
+  },
+  "qa_corrections": {
+    "removed_unscoped_ar5iv_affiliation_mentions": true,
+    "reason": "Hermes broad full-document matching captured references/footer institutions; only author-block/project-page evidence retained.",
+    "removed_known_dependency_or_reference_assets": [
+      "github.com/NVIDIA/warp",
+      "github.com/Genesis-Embodied-AI/Genesis",
+      "github.com/stephane-caron/pink",
+      "huggingface.co/black-forest-labs/FLUX.2-dev",
+      "github.com/YanjieZe/GMR",
+      "github.com/isaac-sim/IsaacSim",
+      "github.com/Improbable-AI/VisionProTeleop",
+      "github.com/openclaw/openclaw",
+      "github.com/kevinzakka/mink",
+      "github.com/hiyouga/EasyR1",
+      "github.com/nvidia-cosmos/cosmos-predict2",
+      "github.com/huggingface/gym-pusht",
+      "github.com/karpathy/autoresearch",
+      "github.com/InternRobotics/InternNav",
+      "github.com/Unitree-Go2-Robot/go2_description",
+      "github.com/haosulab/MPlib"
+    ]
+  },
+  "focus_ids": [
+    "arxiv-2606.26341",
+    "arxiv-2606.10244",
+    "arxiv-2606.03682",
+    "arxiv-2606.04968",
+    "arxiv-2607.07459"
+  ],
+  "manual_review": [
+    "arxiv-2302.12422",
+    "arxiv-2511.04831",
+    "arxiv-2606.04708",
+    "arxiv-2606.04968",
+    "arxiv-2606.05979",
+    "arxiv-2606.10244",
+    "arxiv-2606.11324",
+    "arxiv-2606.12109",
+    "arxiv-2606.16178",
+    "arxiv-2606.20905",
+    "arxiv-2606.27375",
+    "arxiv-2607.01378",
+    "arxiv-2607.01586",
+    "arxiv-2607.02092",
+    "arxiv-2607.02332",
+    "arxiv-2607.02604",
+    "arxiv-2607.02642",
+    "arxiv-2607.03461",
+    "arxiv-2607.04234",
+    "arxiv-2607.04927",
+    "arxiv-2607.05390",
+    "arxiv-2607.06256",
+    "arxiv-2607.06370",
+    "arxiv-2607.06558",
+    "arxiv-2607.06701",
+    "arxiv-2607.07287",
+    "arxiv-2607.10172",
+    "arxiv-2607.12287",
+    "arxiv-2607.13059",
+    "arxiv-2607.14021",
+    "arxiv-2607.14739",
+    "arxiv-2607.14852",
+    "arxiv-2607.15620",
+    "arxiv-2607.18016",
+    "arxiv-2607.18709",
+    "arxiv-2607.18840",
+    "arxiv-2607.19190",
+    "phd-danfei-xu-2021",
+    "pi0-2024",
+    "pi05-2025",
+    "pi06-2025"
+  ],
+  "spot_checks": [
+    {
+      "id": "arxiv-2606.26341",
+      "organizations": [
+        "University of California, Berkeley",
+        "ETH Zürich"
+      ],
+      "organization_evidence": [
+        {
+          "organization": "University of California, Berkeley",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2606.26341",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "ETH Zürich",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2606.26341",
+          "location": "author affiliation block"
+        }
+      ],
+      "project_url": null,
+      "code_url": "https://github.com/johnviljoen/jaxipm",
+      "dataset_url": null,
+      "model_url": null,
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": "https://github.com/johnviljoen/jaxipm",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "github-api",
+          "evidence_source": "ar5iv-html-link",
+          "checked_at": "2026-07-28",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2606.10244",
+      "organizations": [],
+      "organization_evidence": [],
+      "project_url": null,
+      "code_url": null,
+      "dataset_url": null,
+      "model_url": null,
+      "asset_checks": []
+    },
+    {
+      "id": "arxiv-2606.03682",
+      "organizations": [
+        "Institute of Artificial Intelligence (TeleAI), China Telecom",
+        "Shanghai Jiao Tong University",
+        "Zhejiang University",
+        "Tongji University",
+        "Fudan University",
+        "Jiangsu University"
+      ],
+      "organization_evidence": [
+        {
+          "organization": "Institute of Artificial Intelligence (TeleAI), China Telecom",
+          "source": "project-page",
+          "url": "https://telehuman-gn0.github.io",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Shanghai Jiao Tong University",
+          "source": "project-page",
+          "url": "https://telehuman-gn0.github.io",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Zhejiang University",
+          "source": "project-page",
+          "url": "https://telehuman-gn0.github.io",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Tongji University",
+          "source": "project-page",
+          "url": "https://telehuman-gn0.github.io",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Fudan University",
+          "source": "project-page",
+          "url": "https://telehuman-gn0.github.io",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Jiangsu University",
+          "source": "project-page",
+          "url": "https://telehuman-gn0.github.io",
+          "location": "author affiliation block"
+        }
+      ],
+      "project_url": "https://telehuman-gn0.github.io",
+      "code_url": "https://github.com/TeleHuman/GN0",
+      "dataset_url": "https://huggingface.co/datasets/TeleEmbodied/GN-Matrix",
+      "model_url": "https://huggingface.co/TeleEmbodied/GN-BAE",
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://telehuman-gn0.github.io",
+          "status": "project-page-only",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "paper-or-project-page",
+          "checked_at": "2026-07-28"
+        },
+        {
+          "kind": "code",
+          "url": "https://github.com/TeleHuman/GN0",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "github-api",
+          "evidence_source": "project-page",
+          "checked_at": "2026-07-28",
+          "http_status": 200
+        },
+        {
+          "kind": "dataset",
+          "url": "https://huggingface.co/datasets/TeleEmbodied/GN-Matrix",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "project-page",
+          "checked_at": "2026-07-28",
+          "http_status": 200
+        },
+        {
+          "kind": "model",
+          "url": "https://huggingface.co/TeleEmbodied/GN-BAE",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "huggingface-api",
+          "evidence_source": "project-page",
+          "checked_at": "2026-07-28",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2606.04968",
+      "organizations": [],
+      "organization_evidence": [],
+      "project_url": null,
+      "code_url": null,
+      "dataset_url": null,
+      "model_url": null,
+      "asset_checks": []
+    },
+    {
+      "id": "arxiv-2607.07459",
+      "organizations": [
+        "Horizon Robotics",
+        "WuwenAI"
+      ],
+      "organization_evidence": [
+        {
+          "organization": "Horizon Robotics",
+          "source": "project-page",
+          "url": "https://horizonrobotics.github.io/EmbodiedGen",
+          "location": "official project page"
+        },
+        {
+          "organization": "WuwenAI",
+          "source": "project-page",
+          "url": "https://horizonrobotics.github.io/EmbodiedGen",
+          "location": "official project page"
+        }
+      ],
+      "project_url": "https://horizonrobotics.github.io/EmbodiedGen",
+      "code_url": "https://github.com/HorizonRobotics/EmbodiedGen",
+      "dataset_url": null,
+      "model_url": null,
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": "https://github.com/HorizonRobotics/EmbodiedGen",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "github-api",
+          "evidence_source": "project-page-anchor-text",
+          "checked_at": "2026-07-28"
+        },
+        {
+          "kind": "project",
+          "url": "https://horizonrobotics.github.io/EmbodiedGen",
+          "status": "project-page-only",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "paper-or-project-page",
+          "checked_at": "2026-07-28"
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2108.03298",
+      "organizations": [
+        "Stanford University",
+        "University of Texas at Austin"
+      ],
+      "organization_evidence": [
+        {
+          "organization": "Stanford University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2108.03298",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "University of Texas at Austin",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2108.03298",
+          "location": "author affiliation block"
+        }
+      ],
+      "project_url": "https://robomimic.github.io/",
+      "code_url": "https://github.com/ARISE-Initiative/robomimic",
+      "dataset_url": null,
+      "model_url": null,
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": "https://github.com/ARISE-Initiative/robomimic",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "github-api",
+          "evidence_source": "ar5iv-html-link",
+          "checked_at": "2026-07-28",
+          "http_status": 200,
+          "resolved_url": "https://api.github.com/repos/ARISE-Initiative/robomimic"
+        },
+        {
+          "kind": "project",
+          "url": "https://robomimic.github.io/",
+          "status": "project-page-only",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "paper-or-project-page",
+          "checked_at": "2026-07-28"
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2302.12422",
+      "organizations": [],
+      "organization_evidence": [],
+      "project_url": "https://mimic-play.github.io",
+      "code_url": "https://github.com/j96w/MimicPlay",
+      "dataset_url": null,
+      "model_url": null,
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": "https://github.com/j96w/MimicPlay",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "github-api",
+          "evidence_source": "ar5iv-html-link",
+          "checked_at": "2026-07-28",
+          "http_status": 200,
+          "resolved_url": "https://api.github.com/repos/j96w/MimicPlay"
+        },
+        {
+          "kind": "project",
+          "url": "https://mimic-play.github.io",
+          "status": "project-page-only",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "paper-or-project-page",
+          "checked_at": "2026-07-28"
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2303.04137",
+      "organizations": [
+        "Columbia University",
+        "MIT",
+        "Stanford University",
+        "Toyota Research Institute"
+      ],
+      "organization_evidence": [
+        {
+          "organization": "Columbia University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2303.04137",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "MIT",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2303.04137",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Stanford University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2303.04137",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Toyota Research Institute",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2303.04137",
+          "location": "author affiliation block"
+        }
+      ],
+      "project_url": "https://diffusion-policy.cs.columbia.edu",
+      "code_url": "https://github.com/real-stanford/diffusion_policy",
+      "dataset_url": null,
+      "model_url": null,
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": "https://github.com/real-stanford/diffusion_policy",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "github-api",
+          "evidence_source": "ar5iv-html-link",
+          "checked_at": "2026-07-28",
+          "http_status": 200,
+          "resolved_url": "https://api.github.com/repos/real-stanford/diffusion_policy"
+        },
+        {
+          "kind": "project",
+          "url": "https://diffusion-policy.cs.columbia.edu",
+          "status": "project-page-only",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "paper-or-project-page",
+          "checked_at": "2026-07-28"
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2304.13705",
+      "organizations": [
+        "Meta",
+        "Stanford University",
+        "University of California, Berkeley"
+      ],
+      "organization_evidence": [
+        {
+          "organization": "Meta",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2304.13705",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Stanford University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2304.13705",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "University of California, Berkeley",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2304.13705",
+          "location": "author affiliation block"
+        }
+      ],
+      "project_url": "https://tonyzhaozh.github.io/aloha/",
+      "code_url": "https://github.com/tonyzhaozh/aloha",
+      "dataset_url": null,
+      "model_url": null,
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": "https://github.com/tonyzhaozh/aloha",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "github-api",
+          "evidence_source": "ar5iv-html-link",
+          "checked_at": "2026-07-28",
+          "http_status": 200,
+          "resolved_url": "https://api.github.com/repos/tonyzhaozh/aloha"
+        },
+        {
+          "kind": "project",
+          "url": "https://tonyzhaozh.github.io/aloha/",
+          "status": "project-page-only",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "paper-or-project-page",
+          "checked_at": "2026-07-28"
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2403.03954",
+      "organizations": [
+        "IIIS, Tsinghua University",
+        "Shanghai AI Lab",
+        "Shanghai Jiao Tong University"
+      ],
+      "organization_evidence": [
+        {
+          "organization": "IIIS, Tsinghua University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2403.03954",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Shanghai AI Lab",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2403.03954",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Shanghai Jiao Tong University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2403.03954",
+          "location": "author affiliation block"
+        }
+      ],
+      "project_url": "https://3d-diffusion-policy.github.io",
+      "code_url": "https://github.com/YanjieZe/3D-Diffusion-Policy",
+      "dataset_url": null,
+      "model_url": null,
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": "https://github.com/YanjieZe/3D-Diffusion-Policy",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "github-api",
+          "evidence_source": "ar5iv-html-link",
+          "checked_at": "2026-07-28",
+          "http_status": 200,
+          "resolved_url": "https://api.github.com/repos/YanjieZe/3D-Diffusion-Policy"
+        },
+        {
+          "kind": "project",
+          "url": "https://3d-diffusion-policy.github.io",
+          "status": "project-page-only",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "paper-or-project-page",
+          "checked_at": "2026-07-28"
+        }
+      ]
+    }
+  ],
+  "manual_review_notes": [
+    "41 papers still lack reliable author-block or official-project organization evidence.",
+    "YUBI and ForesightFlow have no confirmed official code/project asset after required scans.",
+    "One GitHub API request for F-Fer/openpi-ur5e timed out and remains verification-error, not not-found.",
+    "Non-arXiv content cannot be checked through arXiv/ar5iv and retains verification-error where no equivalent source was available."
+  ]
+}

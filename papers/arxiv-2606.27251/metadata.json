@@ -1,0 +1,238 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.27251",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Advancing Omnimodal Embodied Agents from Isolated Skills to Everyday Physical Autonomy",
+  "title_zh": "OmniAct：从孤立技能到日常物理自主的全模态具身智能体",
+  "abstract": "Building persistent embodied agents in unstructured environments demands unified orchestration of heterogeneous tools spanning both cyber (APIs, IoT) and physical (manipulation, navigation) domains, coupled with autonomous recovery from physical failures that inevitably arise over extended operation. Existing systems treat these as separate problems: VLM-based planners lack a unified cyber-physical action space, agent frameworks accumulate unbounded context that degrades temporal coherence, and ",
+  "paper_url": "https://arxiv.org/abs/2606.27251",
+  "pdf_url": "https://arxiv.org/pdf/2606.27251",
+  "project_url": "https://huaizz-shawen.github.io/OmniAct",
+  "code_url": "https://github.com/EmbodiedForge/RAS_interactivate_planner",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Junhao Shi",
+      "affiliations": []
+    },
+    {
+      "name": "Zezheng Huai",
+      "affiliations": []
+    },
+    {
+      "name": "Siyin Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Jia Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Yubang Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Zhaoye Fei",
+      "affiliations": []
+    },
+    {
+      "name": "Hechang Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Jingjing Gong",
+      "affiliations": []
+    },
+    {
+      "name": "Xipeng Qiu",
+      "affiliations": []
+    },
+    {
+      "name": "Yu-Gang Jiang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "fudanuniversity",
+      "name": "Fudan University",
+      "role": "primary"
+    },
+    {
+      "id": "shanghaiinnovationinstitute",
+      "name": "Shanghai Innovation Institute",
+      "role": "collaborator"
+    },
+    {
+      "id": "jilinuniversity",
+      "name": "Jilin University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-25",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "topics": [
+      "vla"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "code",
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_reason": "构建了面向持久具身自主的OmniAct框架——将网络和物理行动空间统一的层次化异步架构。核心贡献：(1)统一行动空间的多模态语义规划器；(2)事件边界驱动的自适应层次记忆实现次线性上下文增长（关键创新）；(3)异步视觉抢占引擎在物理执行中闭合语义回路；(4)已开源代码。40个真实世界长时域任务上一致提升，中等开源模型达闭源水平，100k+token下内存近常数。将具身智能从孤立技能推进到日常物理自主。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "中文标题待翻译"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.27251",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "2.1 Embodied Agents with Foundation Models",
+      "2.2 Vision-Language-Action Models",
+      "3 Methodology: The OmniAcr Framework",
+      "3.1 Problem Formulation",
+      "3.2 Multimodal Semantic Planner",
+      "3.3 Closed-Loop Execution with Asynchronous Visual Preemption",
+      "3.4 Adaptive Hierarchical Memory",
+      "4 Experiments",
+      "4.1 Experimental Setup",
+      "Platforms and Tools.",
+      "Task Suite.",
+      "Baselines.",
+      "4.2 Long-Horizon Cyber-Physical Orchestration",
+      "4.3 Adaptive Hierarchical Memory",
+      "Temporal Conflict Resolution.",
+      "Long-Horizon Scalability.",
+      "4.4 Cross-Model Generalizability",
+      "5 Conclusions",
+      "References",
+      "Appendix Contents",
+      "6 Limitations",
+      "7 Real-World Experimental Setup",
+      "8 Action Interface and Skill Implementations",
+      "9 Task Suite Construction",
+      "10 Long-Horizon Context Construction",
+      "11 Visual Monitor: Design and Empirical Evaluation",
+      "12 Planner Prompts",
+      "13 Memory Compression Prompts",
+      "14 Visual Differencing Prompt"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.27251"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.27251"
+    },
+    {
+      "type": "code",
+      "url": "https://github.com/EmbodiedForge/RAS_interactivate_planner"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Fudan University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.27251",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Shanghai Innovation Institute",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.27251",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Jilin University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.27251",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/EmbodiedForge/RAS_interactivate_planner",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://api.github.com/repos/EmbodiedForge/RAS_interactivate_planner"
+    },
+    {
+      "kind": "project",
+      "url": "https://huaizz-shawen.github.io/OmniAct",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-or-project-page",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

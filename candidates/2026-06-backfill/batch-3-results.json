@@ -1,0 +1,2385 @@
+[
+  {
+    "id": "arxiv-2606.13672",
+    "arxiv_id": "2606.13672",
+    "title": "WEAVER, Better, Faster, Longer: An Effective World Model for Robotic Manipulation",
+    "paper_url": "https://arxiv.org/abs/2606.13672",
+    "first_publication": "2026-06-11",
+    "last_revision": "2026-06-16",
+    "authors": [
+      "Arnav Kumar Jain",
+      "Yilin Wu",
+      "Jesse Farebrother",
+      "Gokul Swamy",
+      "Andrea Bajcsy"
+    ],
+    "organizations": [
+      "Carnegie Mellon University"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.13672",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "embodied",
+      "robot",
+      "foundation model",
+      "simulator",
+      "manipulation",
+      "planning",
+      "world model",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对机器人操作的世界模型。在Franka Panda真实硬件上验证policy evaluation/improvement/test-time planning三个下游应用。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv HTML full text accessible at https://ar5iv.labs.arxiv.org/html/2606.13672. Full paper read including Introduction (Sec1), Related Work (Sec2), Method (Sec3.1-3.4), Experiments (Sec4-5)."
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "首个同时满足fidelity/consistency/efficiency三个要求的机器人操作世界模型。融合flow matching+扩散强制+稀疏记忆/短时历史+潜在奖励模型+critic的创新架构设计。相较Ctrl-World实现5-10×加速。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "Policy evaluation: ρ=0.870与真实成功率相关。Policy improvement: 在π0.5基础上+38%真实成功率(零真实交互)。Test-time planning: +14%成功率。5个任务×25场景。OOD场景优于prior WMs。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已阅读，包括Section 1-5及appendix。代码/模型/视频已公开: https://arnavkj1995.github.io/WEAVER/"
+      }
+    },
+    "scores": {
+      "relevance": 19,
+      "novelty": 17,
+      "evidence_quality": 18,
+      "potential_impact": 14,
+      "board_information_gain": 8,
+      "reproducibility": 7,
+      "timeliness": 4,
+      "total": 87
+    },
+    "decision": "featured",
+    "selection_reason": "首个同时在fidelity、consistency、efficiency三个维度超越现有方法的机器人操作世界模型。核心贡献：(1)融合flow matching+扩散强制+KV缓存+rectified flow蒸馏实现5-10×速度提升；(2)内置潜在奖励模型和critic消除对外部VLM评判器的依赖；(3)统一支持policy evaluation(ρ=0.870相关性)、improvement(+38%成功率)、planning(+14%成功率)三个下游应用；(4)代码/模型全面开源。相较于看板中已有的WorldGym等世界模型，WEAVER首次实现了真实机器人上的端到端evaluation-improvement-planning闭环。主要风险：依赖π0.5作为基策略，新基策略需要重新训练WM；仅验证Franka单臂任务。",
+    "risks_or_uncertainties": [
+      "依赖π0.5作为基策略，换用其他VLA基策略需重新训练WM",
+      "仅在Franka Panda单臂上验证，未扩展到双臂或移动操作",
+      "Rectified flow蒸馏的few-step生成质量与完整去噪过程的gap未全面量化",
+      "记忆/历史窗口的超参数(k, m)对不同任务长度可能需要调整"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "simulators"
+    ],
+    "suggested_topics": [
+      "world-model",
+      "policy-evaluation",
+      "policy-improvement",
+      "test-time-planning",
+      "flow-matching"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "Carnegie Mellon University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.13672",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://arnavkj1995.github.io/WEAVER/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://arnavkj1995.github.io/WEAVER/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://arnavkj1995.github.io/WEAVER/"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.05979",
+    "arxiv_id": "2606.05979",
+    "title": "World-Language-Action Model for Unified World Modeling, Language Reasoning, and Action Synthesis",
+    "paper_url": "https://arxiv.org/abs/2606.05979",
+    "first_publication": "2026-06-04",
+    "last_revision": null,
+    "authors": [
+      "Yi Yang",
+      "Zhihong Liu",
+      "Siqi Kou",
+      "Yiyang Chen",
+      "Yanzhe Hu",
+      "Jianbo Zhou",
+      "Boyuan Zhao",
+      "Zhijie Wei"
+    ],
+    "organizations": [],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.05979",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "embodied",
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "foundation model",
+      "world model",
+      "WAM",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "提出World-Language-Action (WLA)新模型类别，联合世界建模、语言推理和动作合成。在仿真和真实机器人环境中验证。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv HTML full text accessible at https://ar5iv.labs.arxiv.org/html/2606.05979. Full paper read: Introduction, Method (AR Transformer backbone, World Expert, Action Expert, meta-queries), Experiments."
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "首个将WAM和VLA统一为单一AR Transformer架构的模型。创新点：(1)自回归而非双向扩散Transformer作为WAM；(2)meta-queries实现世界预测对动作生成的隐式影响，推理时可禁用零开销；(3)测试时可激活世界预测实现test-time scaling；(4)可直接从无动作标注的跨形态视频学习新任务。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "WLA-0 (2B active params): 92.94% RoboTwin2.0 Clean, 56.5% RMBench (SOTA), 98.9% RoboTwin2.0 Easy. 40ms/推理(RTX 5090)。真实世界4个长时序任务验证。消融实验证实各组件贡献。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已阅读。代码已开源: https://github.com/SJTU-DENG-Lab/WLA"
+      }
+    },
+    "scores": {
+      "relevance": 19,
+      "novelty": 18,
+      "evidence_quality": 18,
+      "potential_impact": 14,
+      "board_information_gain": 8,
+      "reproducibility": 7,
+      "timeliness": 4,
+      "total": 88
+    },
+    "decision": "featured",
+    "selection_reason": "开创性地提出World-Language-Action (WLA)模型类别，首次将世界建模、语言推理和动作合成统一为单一AR Transformer。核心贡献：(1)用AR Transformer替代WAM中传统的双向扩散Transformer，实现更自然的序列建模；(2)世界预测通过meta-queries隐式影响动作生成，推理时可完全禁用(零开销)或激活用于test-time scaling；(3)World Expert提供物理动态监督，Action Expert利用世界预测简化状态-动作关联学习；(4)WLA-0原型在RoboTwin2.0达到92.94%、RMBench 56.5%的SOTA性能，40ms推理延迟。相较于看板中已有的VLA(π0, OpenVLA)和WAM(MotionWAM)，WLA提供了全新的统一范式。代码完全开源。主要风险：2B参数量在RTX 5090上运行，部署门槛较高；RMBench 56.5%的绝对分仍有提升空间。",
+    "risks_or_uncertainties": [
+      "2B active参数，需要RTX 5090级别GPU，部署门槛较高",
+      "RMBench 56.5%虽有提升但绝对成功率仍中等",
+      "跨形态视频学习新任务的能力仅在初步验证阶段",
+      "WLA模型类别仍较新，生态和工具链需时间建立"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "data"
+    ],
+    "suggested_topics": [
+      "world-language-action",
+      "unified-foundation-model",
+      "autoregressive-transformer",
+      "test-time-scaling"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.17200",
+    "arxiv_id": "2606.17200",
+    "title": "ACE-Ego-0: Unifying Egocentric Human and Robotic Data for VLA Pretraining",
+    "paper_url": "https://arxiv.org/abs/2606.17200",
+    "first_publication": "2026-06-15",
+    "last_revision": null,
+    "authors": [
+      "Hao Li",
+      "Ganlong Zhao",
+      "Yufei Liu",
+      "Haotian Hou",
+      "Guoquan Ye",
+      "Tongyan Fang",
+      "Chunxiao Liu",
+      "Siyuan Huang"
+    ],
+    "organizations": [
+      "ACE Robotics",
+      "Chinese University of Hong Kong MMLab"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.17200",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "embodied",
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "manipulation",
+      "trajectory",
+      "bimanual",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对VLA预训练的数据问题。将以自我为中心的人类视频和机器人数据统一用于VLA预训练，在RoboCasa GR1 TableTop和RoboTwin 2.0上验证。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv HTML full text accessible at https://ar5iv.labs.arxiv.org/html/2606.17200. Full paper read: Introduction, Method (ego video-to-action pipeline, unified action representation, reliability-aware training), Experiments."
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "首个系统性地解决人类自我中心视频和机器人数据联合训练的四个挑战：动作空间分歧、形态结构分歧、时序动态分歧和监督质量分歧。提出：(1)可扩展的自我中心视频到动作转换管线；(2)基于相机空间动作+形态条件+时间对齐的统一动作表示；(3)可靠性感知训练目标(human auxiliary loss)。4.53K小时机器人数据+1.48K小时伪标注人类数据。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "SOTA on RoboCasa GR1 TableTop和RoboTwin 2.0。真实世界双臂操作迁移验证。消融实验：可靠性加权训练持续提升性能。与仅使用机器人数据的基线对比显著提升。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已阅读，包括Section 1-5。代码已公开。"
+      }
+    },
+    "scores": {
+      "relevance": 19,
+      "novelty": 17,
+      "evidence_quality": 17,
+      "potential_impact": 13,
+      "board_information_gain": 8,
+      "reproducibility": 7,
+      "timeliness": 4,
+      "total": 85
+    },
+    "decision": "featured",
+    "selection_reason": "系统性解决人类自我中心视频与机器人数据联合训练四大挑战的VLA预训练框架。核心贡献：(1)首次明确识别并逐一解决动作空间分歧、形态结构分歧、时序动态分歧和监督质量分歧四个障碍；(2)可扩展的ego video-to-action管线将1.48K小时人类视频转为伪动作轨迹；(3)可靠性感知训练目标(human auxiliary loss)通过加权策略自动聚焦可靠信号，避免噪声标签损害训练；(4)在RoboCasa GR1 TableTop和RoboTwin 2.0上达到SOTA，并验证了真实世界双臂迁移。6K+小时总训练数据。相较于看板中已有的纯机器人数据VLA，ACE-Ego-0从异构数据融合角度提供了重要的规模化路径。代码已公开。主要风险：依赖伪动作标注管线的质量，人类视频选择偏向性可能引入偏差。",
+    "risks_or_uncertainties": [
+      "伪动作标注管线(Video-to-Action)的质量直接影响模型性能，管线本身的误差可能级联",
+      "1.48K小时人类视频的具体来源和多样性未详细列出",
+      "可靠性感知加权的阈值/超参可能需要针对不同数据源重新校准",
+      "来自ACE Robotics(商业公司)，长期维护和生态建设不确定"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "data"
+    ],
+    "suggested_topics": [
+      "egocentric-data",
+      "vla-pretraining",
+      "human-robot-data-fusion",
+      "cross-embodiment",
+      "bimanual-manipulation"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "ACE Robotics",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.17200",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Chinese University of Hong Kong MMLab",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.17200",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.18953",
+    "arxiv_id": "2606.18953",
+    "title": "Object-Centric Residual RL for Zero-Shot Sim-to-Real VLA Enhancement",
+    "paper_url": "https://arxiv.org/abs/2606.18953",
+    "first_publication": "2026-06-17",
+    "last_revision": null,
+    "authors": [
+      "Kinam Kim",
+      "Namiko Saito",
+      "Heecheol Kim",
+      "Katsushi Ikeuchi",
+      "Jaegul Choo",
+      "Yasuyuki Matsushita"
+    ],
+    "organizations": [
+      "KAIST",
+      "Microsoft Research"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.18953",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "sim-to-real",
+      "manipulation",
+      "reinforcement learning",
+      "teleoperation",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对VLA策略在真实机器人操作中的鲁棒性提升。在Franka FR3真实机器人上5个操作任务验证，42%→76%零样本sim-to-real提升。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv HTML full text accessible at https://ar5iv.labs.arxiv.org/html/2606.18953. Full paper read: Introduction, Method (object-centric residual RL, sim-replay), Experiments (5 tasks, Franka FR3)."
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "创新性地解决residual RL的sim-to-real困境：privileged-state方法需要损失性蒸馏，image-based方法受视觉域差距影响。提出：(1)基于物体位姿的紧凑观测空间，仿真和现实间一致；(2)在仿真中重放遥操作演示训练sim-VLA副本以对齐；(3)位姿噪声注入+dropout实现零样本sim-to-real迁移。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "5个Franka FR3任务：42%→76%零样本提升。改进的rollouts可进一步用于self-improvement(无需额外遥操作)。与privileged-state teacher和image-based baseline的消融对比。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已阅读。Microsoft Research项目页面: https://www.microsoft.com/en-us/research/articles/object-centric-residual-rl/"
+      }
+    },
+    "scores": {
+      "relevance": 18,
+      "novelty": 16,
+      "evidence_quality": 16,
+      "potential_impact": 11,
+      "board_information_gain": 7,
+      "reproducibility": 6,
+      "timeliness": 4,
+      "total": 78
+    },
+    "decision": "include",
+    "selection_reason": "巧妙解决residual RL的sim-to-real迁移困境。核心创新：(1)用物体位姿作为紧凑观测空间，在仿真和现实中天然一致，无需域适应；(2)sim-replay对齐策略：在仿真中重放真实遥操作演示训练sim-VLA副本，消除VLA本身的sim-real策略差异；(3)位姿噪声注入+dropout实现鲁棒的零样本迁移。42%→76%提升，并可自我改进(self-improvement)。相较于PhysVLA(推理时修正)和一般的VLA微调方法，本工作从residual RL角度提供了互补的方案。来自Microsoft Research和KAIST合作。主要风险：依赖物体位姿估计精度，遮挡场景下可能退化；代码未明确开源。",
+    "risks_or_uncertainties": [
+      "依赖精确的物体位姿估计，遮挡或对称物体可能影响性能",
+      "代码未明确承诺开源",
+      "sim-replay对齐需要为每个VLA基策略训练sim副本，扩展性有限",
+      "5个任务均为桌面上单臂操作，任务多样性有限"
+    ],
+    "suggested_sections": [
+      "algorithms"
+    ],
+    "suggested_topics": [
+      "residual-rl",
+      "sim-to-real",
+      "vla-enhancement",
+      "object-centric",
+      "self-improvement"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "KAIST",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.18953",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Microsoft Research",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.18953",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.12403",
+    "arxiv_id": "2606.12403",
+    "title": "World Pilot: Steering Vision-Language-Action Models with World-Action Priors",
+    "paper_url": "https://arxiv.org/abs/2606.12403",
+    "first_publication": "2026-06-10",
+    "last_revision": null,
+    "authors": [
+      "Zefu Lin",
+      "Rongxu Cui",
+      "Junjia Xu",
+      "Xiaojuan Jin",
+      "Wenling Li",
+      "Lue Fan",
+      "Zhaoxiang Zhang"
+    ],
+    "organizations": [
+      "Beihang University",
+      "Chinese Academy of Sciences"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.12403",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "manipulation",
+      "trajectory",
+      "world model",
+      "WAM",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对VLA策略的world model增强。在LIBERO-Plus零样本OOD基准和真实机器人4个操作任务上验证。SOTA Total success rate 84.7%。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv HTML full text accessible at https://ar5iv.labs.arxiv.org/html/2606.12403. Full paper read: Introduction, Method (Latent Steering + Action Steering dual pathways), Experiments (LIBERO-Plus, real-robot)."
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "首个通过双通路将WAM先验路由到VLA决策链的框架：(1)Latent Steering: 场景演化潜在表示条件化感知层；(2)Action Steering: 预期的运动轨迹作为运动先验供给动作生成器。场景演化先验即使使用未action-post-trained的视频预训练WAM也仍然有效。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "LIBERO-Plus零样本OOD: 84.7% Total SOTA，12个任务。真实机器人4个操作任务上全部最高成功率，尤其在视角、几何、可变形物体的OOD条件下提升最大。消融实验验证两条通路的互补性。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已阅读。Project website: https://world-pilot.github.io/"
+      }
+    },
+    "scores": {
+      "relevance": 18,
+      "novelty": 16,
+      "evidence_quality": 17,
+      "potential_impact": 12,
+      "board_information_gain": 7,
+      "reproducibility": 5,
+      "timeliness": 4,
+      "total": 79
+    },
+    "decision": "include",
+    "selection_reason": "创新的双通路WAM增强VLA框架。核心贡献：(1)Latent Steering将WAM的场景演化预测注入VLA感知层，Action Steering将预期轨迹注入动作层，两条通路互补；(2)即使使用未action-post-trained的纯视频预训练WAM，Latent Steering仍然有效——大幅降低了WAM部署门槛；(3)84.7% LIBERO-Plus SOTA，真实机器人所有任务最高成功率。相较于看板中已有的VLA增强方法(PhysVLA推理时修正、Object-Centric Residual RL)，World Pilot从WAM先验注入角度提供了全新维度。中科院自动化所+北航+南大合作。主要风险：代码未明确开源；WAM训练需要额外计算资源。",
+    "risks_or_uncertainties": [
+      "代码未明确开源",
+      "WAM训练增加系统复杂度，需要额外GPU资源和训练数据",
+      "双通路设计的超参数(融合权重)可能需要针对任务调整",
+      "视频预训练WAM的有效性可能依赖于预训练数据的质量"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "vla-enhancement",
+      "world-action-model",
+      "dual-pathway",
+      "ood-robustness",
+      "test-time-priors"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "Beihang University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.12403",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Chinese Academy of Sciences",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.12403",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://world-pilot.github.io/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://world-pilot.github.io/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://world-pilot.github.io/"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.04968",
+    "arxiv_id": "2606.04968",
+    "title": "Potential-Guided Flow Matching for Vision-Language-Action Policy Improvement",
+    "paper_url": "https://arxiv.org/abs/2606.04968",
+    "first_publication": "2026-06-03",
+    "last_revision": null,
+    "authors": [
+      "Yunpeng Mei",
+      "Jiakai He",
+      "Hongjie Cao",
+      "Chenyu Wang",
+      "Xiaowen Zhu",
+      "Yihan Zhou",
+      "Jiamin Wang",
+      "Chenbo Xin"
+    ],
+    "organizations": [],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.04968",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "VLA",
+      "vision-language-action",
+      "reinforcement learning",
+      "behavior cloning",
+      "trajectory",
+      "bimanual",
+      "IL",
+      "BC"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对VLA策略的自改进(self-improvement)。在5个BEHAVIOR-1K仿真任务和5个真实世界双臂操作任务上验证。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv HTML full text accessible at https://ar5iv.labs.arxiv.org/html/2606.04968. Full paper read: Introduction, Method (ForesightFlow, decoupled advantage-weighted flow matching, one-step boundary estimator), Experiments."
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "首个将流匹配(flow matching)用于VLA策略自改进的框架。创新点：(1)解耦优势加权流匹配——动作速度使用指数化优势权重，潜在坐标均匀训练——防止价值幻觉；(2)一步边界估计器实现无额外critic的best-of-K推理；(3)自引导采样提升长时序执行。训练计算减少38%。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "5个BEHAVIOR-1K仿真任务和5个真实双臂任务验证。匹配最强separate-critic基线，真实世界成功率提升。消融实验：解耦防止价值幻觉、一步估计器保持候选排序保真度、自引导采样改善长时序。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已阅读。代码公开。"
+      }
+    },
+    "scores": {
+      "relevance": 17,
+      "novelty": 16,
+      "evidence_quality": 16,
+      "potential_impact": 11,
+      "board_information_gain": 6,
+      "reproducibility": 6,
+      "timeliness": 4,
+      "total": 76
+    },
+    "decision": "include",
+    "selection_reason": "巧妙地将流匹配(flow matching)引入VLA策略自改进，解决了混合质量部署数据的利用难题。核心贡献：(1)解耦优势加权流匹配——关键洞察是policy improvement和value calibration需要不同监督：动作速度用指数化优势权重强化高质量动作，潜在坐标均匀训练避免过度自信；(2)一步边界估计器从条件流边界恒等式推导，实现无额外critic的best-of-K推理；(3)训练计算减少38%。10个任务(5仿真+5真实双臂)验证。相较于看板中已有的RL-based改进方法，ForesightFlow从flow matching和自引导角度提供了全新的策略改进范式。代码已公开。主要风险：方法相对复杂(flow matching + advantage weighting + boundary estimation)，复现有一定门槛。",
+    "risks_or_uncertainties": [
+      "flow matching框架相对复杂，复现和理解门槛较高",
+      "一步边界估计器依赖独立端点采样假设，该假设在某些任务上可能不成立",
+      "BEHAVIOR-1K仿真任务和真实双臂任务之间的性能gap未充分讨论",
+      "解耦训练的两个损失项的权重平衡可能对超参数敏感"
+    ],
+    "suggested_sections": [
+      "algorithms"
+    ],
+    "suggested_topics": [
+      "flow-matching",
+      "policy-improvement",
+      "self-improvement",
+      "best-of-k",
+      "advantage-weighting"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.15568",
+    "arxiv_id": "2606.15568",
+    "title": "SAPS: Shared Autonomy for Policy Steering by Blending Teleoperation with a Pretrained VLA",
+    "paper_url": "https://arxiv.org/abs/2606.15568",
+    "first_publication": "2026-06-14",
+    "last_revision": null,
+    "authors": [
+      "Crystal Zhou",
+      "Jehan Yang",
+      "Douglas J. Weber",
+      "Zackory Erickson"
+    ],
+    "organizations": [
+      "Carnegie Mellon University"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.15568",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "generalist",
+      "manipulation",
+      "teleoperation",
+      "autonomous",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对VLA策略在实际部署中的共享自主(shared autonomy)问题。在LIBERO(仿真)、LIBERO-PRO(OOD)、CALVIN和真实机器人硬件上验证。成功率提升最高82%。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv HTML full text accessible at https://ar5iv.labs.arxiv.org/html/2606.15568. Full paper read: Introduction, Method (3 arbitration strategies including Cosine-similarity), Experiments (LIBERO, LIBERO-PRO, CALVIN, real-world)."
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "首个在动作级别混合遥操作和预训练VLA的免训练共享自主框架。提出3种仲裁策略(静态、动态线性、动态Cosine-similarity)，无需策略重训练、辅助动力学模型或架构修改。动态Cosine-similarity仲裁利用人类和策略动作间的几何一致性。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "仿真+真实机器人：成功率最高提升82%。大幅减少纯遥操作所需的人工干预。任务完成速度快于自主执行和纯遥操作。模型无关验证(3种不同VLA+Diffusion Policy)。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已阅读。Carnegie Mellon University, NSF Grant No. 2341352支持。"
+      }
+    },
+    "scores": {
+      "relevance": 17,
+      "novelty": 14,
+      "evidence_quality": 16,
+      "potential_impact": 10,
+      "board_information_gain": 6,
+      "reproducibility": 7,
+      "timeliness": 4,
+      "total": 74
+    },
+    "decision": "include",
+    "selection_reason": "实用且优雅的免训练共享自主框架。核心贡献：(1)动作级别混合(VLA action + human teleop action)，无需任何模型修改或重训练；(2)创新的动态Cosine-similarity仲裁策略，利用人类和策略动作的几何一致性自动调节混合权重；(3)模型无关——验证了3种VLA+Diffusion Policy；(4)在LIBERO-PRO(OOD)和真实机器人上成功率最高提升82%，同时减少人工干预并加快任务完成。相较于看板中已有的训练时增强方法，SAPS从人机共享自主的角度提供了完全正交且立即可用的解决方案。来自CMU。主要风险：依赖人类操作员在场，不适用于完全自主场景；Cosine-similarity仲裁在策略和人类动作高度不一致时可能产生抖动。",
+    "risks_or_uncertainties": [
+      "依赖人类操作员实时在场，不适用于完全自主部署场景",
+      "Cosine-similarity仲裁在策略和人类意图严重冲突时可能产生不稳定的混合动作",
+      "3种仲裁策略的性能排序可能因任务而异，缺乏统一的选择准则",
+      "代码未明确开源"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "shared-autonomy",
+      "teleoperation",
+      "vla",
+      "human-robot-interaction",
+      "model-agnostic"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "Carnegie Mellon University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.15568",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.12109",
+    "arxiv_id": "2606.12109",
+    "title": "Bridging the Morphology Gap: Adapting VLA Models to Dexterous Manipulation via Intent-Conditioned Fine-Tuning",
+    "paper_url": "https://arxiv.org/abs/2606.12109",
+    "first_publication": "2026-06-10",
+    "last_revision": null,
+    "authors": [
+      "Chuanke Pang",
+      "Junyi Huang",
+      "Zhijun Zhao",
+      "Yaobing Wang",
+      "Kun Xu",
+      "Xilun Ding"
+    ],
+    "organizations": [],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.12109",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "dexterous manipulation",
+      "manipulation",
+      "grasp",
+      "dexterous",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对VLA从平行夹爪到多指灵巧手的形态迁移问题。在仿真灵巧操作基准上验证，85.8%成功率。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv HTML full text accessible at https://ar5iv.labs.arxiv.org/html/2606.12109. Full paper read: Introduction, Method (InDex: intent-conditioned nested denoising diffusion), Experiments."
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "首次提出将预训练VLA的1-DoF抓取输出重新定义为连续的宏观虚拟抓取意图代理(virtual grasp intent proxy)。两阶段解耦架构：(1)参数高效微调VLA预测臂轨迹+标量抓取意图；(2)冻结空间骨干，意图条件扩散头解码手指关节运动。解决灾难性遗忘和动作流形崩塌。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "85.8%成功率在接触丰富的多阶段灵巧操作基准上，大幅超越单体基线。消融实验验证两阶段解耦的必要性和抓取意图代理的有效性。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已阅读。"
+      }
+    },
+    "scores": {
+      "relevance": 17,
+      "novelty": 15,
+      "evidence_quality": 15,
+      "potential_impact": 11,
+      "board_information_gain": 6,
+      "reproducibility": 5,
+      "timeliness": 4,
+      "total": 73
+    },
+    "decision": "include",
+    "selection_reason": "巧妙解决VLA从低DoF平行夹爪到高DoF灵巧手迁移的形态鸿沟。核心创新：(1)将预训练VLA的1-DoF抓取输出重新定义为连续的宏观虚拟抓取意图代理，实现跨形态语义继承；(2)两阶段解耦学习：第一阶段参数高效对齐VLA预测臂轨迹+标量抓取意图，第二阶段冻结空间骨干用意图条件扩散头解码手指关节；(3)无需大量灵巧手数据，用最少演示数据掌握复杂技能。85.8%成功率。相较于看板中已有的灵巧操作工作(RealDexUMI、ConTrack)，InDex从VLA形态适配角度提供了独特贡献。北航+中国空间技术研究院。主要风险：仅在仿真中验证，未展示真实灵巧手硬件结果；意图代理的定义可能对手型敏感。",
+    "risks_or_uncertainties": [
+      "仅在仿真环境中验证，缺少真实灵巧手(Fourier FDH-6等)硬件实验",
+      "虚拟抓取意图代理(标量)的信息容量可能不足以表达所有抓取模式",
+      "两阶段训练流程增加了工程复杂度",
+      "代码未明确开源"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "data"
+    ],
+    "suggested_topics": [
+      "vla-adaptation",
+      "dexterous-manipulation",
+      "morphology-transfer",
+      "intent-conditioned",
+      "diffusion-policy"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.14218",
+    "arxiv_id": "2606.14218",
+    "title": "Universal Manipulation Exoskeleton: Learning Compliant Whole-body Policies with Real-time Torque Feedback",
+    "paper_url": "https://arxiv.org/abs/2606.14218",
+    "first_publication": "2026-06-12",
+    "last_revision": null,
+    "authors": [
+      "Litian Liang",
+      "Jingxi Xu",
+      "Xinda Qi",
+      "Yujun Cai",
+      "Houzhu Ding",
+      "Luqi Wang",
+      "Zhixin Sun",
+      "Jyh-Herng Chow"
+    ],
+    "organizations": [
+      "Stanford University"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.14218",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "robot",
+      "mobile manipulation",
+      "manipulation",
+      "teleoperation",
+      "bimanual",
+      "haptic",
+      "autonomous",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对柔顺(compliant)全身策略学习的数据采集问题。在双臂、全身、移动操作等真实机器人任务上验证。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv HTML full text accessible at https://ar5iv.labs.arxiv.org/html/2606.14218. Full paper read: Introduction, Method (UME design, universal retargeting, torque feedback), Experiments (bimanual, whole-body, compliant tasks)."
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "首个提供实时触觉扭矩反馈的上肢外骨骼遥操作界面。创新点：(1)透明扭矩反馈使操作员可蒙眼完成运动学约束任务；(2)通用重定向算法支持3种不同机器人(OpenArm/Franka/X-ARM)；(3)嵌入式IMU支持移动操作遥操作；(4)低成本、轻量级、便携。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "4个真实世界任务验证：长时序移动操作、力介导盒子翻转、视觉遮挡盒子推动、空间受限桌面操作。消融实验对比有无扭矩反馈的政策性能。20 trials per task。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已阅读。https://ume-exo.github.io/"
+      }
+    },
+    "scores": {
+      "relevance": 16,
+      "novelty": 15,
+      "evidence_quality": 15,
+      "potential_impact": 10,
+      "board_information_gain": 6,
+      "reproducibility": 5,
+      "timeliness": 4,
+      "total": 71
+    },
+    "decision": "include",
+    "selection_reason": "首个集成实时扭矩反馈的上肢外骨骼遥操作系统。核心贡献：(1)透明扭矩反馈使操作员可凭触觉感知接触力/力矩，实现蒙眼操作和柔顺策略学习；(2)通用重定向算法支持OpenArm(7DoF)、Franka(7DoF)、X-ARM(6DoF)三种机器人无缝切换；(3)嵌入式IMU支持移动操作遥操作；(4)验证了力介导盒子翻转、视觉遮挡盒子推动等独特能力。相较于看板中已有的数据采集接口(UMI, RealDexUMI)，UME从力/扭矩反馈角度提供了独特维度，使学习的策略天然具有柔顺性。Ant Group + Stanford合作。主要风险：商业公司(Ant Group)参与，硬件可获取性不确定；扭矩反馈仅在特定末端执行器上验证。",
+    "risks_or_uncertainties": [
+      "硬件来自Ant Group(蚂蚁集团)，商业可用性和可获取性不确定",
+      "扭矩反馈的精度和带宽未详细量化",
+      "重定向算法在更多机器人类型上的泛化性未验证",
+      "学习策略的泛化性仅在同一场景内验证"
+    ],
+    "suggested_sections": [
+      "data",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "teleoperation",
+      "torque-feedback",
+      "compliant-manipulation",
+      "exoskeleton",
+      "bimanual"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "Stanford University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.14218",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.06033",
+    "arxiv_id": "2606.06033",
+    "title": "RealDexUMI: A Wearable Universal Manipulation Interface for Dexterous Robot Learning",
+    "paper_url": "https://arxiv.org/abs/2606.06033",
+    "first_publication": "2026-06-04",
+    "last_revision": "2026-06-06",
+    "authors": [
+      "Chaoyi Xu",
+      "Yixuan Jiang",
+      "Jiahui Huan",
+      "Yuhui Fu",
+      "Haoyu Zhou",
+      "Weitian Yuan",
+      "Jiayi Yu",
+      "Wanpeng Zhang"
+    ],
+    "organizations": [
+      "Tsinghua University",
+      "Peking University",
+      "Beihang University"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.06033",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "robot",
+      "dexterous manipulation",
+      "manipulation",
+      "teleoperation",
+      "bimanual",
+      "dexterous",
+      "tactile",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对灵巧机器人学习的数据采集和部署。将灵巧手作为共享接口实现可穿戴演示和机器人部署零间隙转换。88.75%成功率。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv HTML full text accessible at https://ar5iv.labs.arxiv.org/html/2606.06033. Full paper read: Introduction, Method (shared dexterous end-effector module, wearable+deployment), Experiments (88.75% across tasks)."
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "首个将灵巧手作为共享接口的创新设计：(1)同一灵巧手作为可穿戴采集设备和机器人末端执行器，消除实施例转换；(2)零间隙(zero-gap)采集-部署管线保留细粒度手-物体交互；(3)跨实施例部署(可直接在不同机器人上使用同一接口)；(4)内置触觉传感。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "88.75%平均成功率(细粒度、接触丰富、长时序、双臂任务)。采集时接口对比验证RealDexUMI设计优势。跨实施例部署验证。消融实验(触觉/无触觉)。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已阅读。https://research.beingbeyond.com/realdexumi"
+      }
+    },
+    "scores": {
+      "relevance": 16,
+      "novelty": 15,
+      "evidence_quality": 14,
+      "potential_impact": 10,
+      "board_information_gain": 6,
+      "reproducibility": 6,
+      "timeliness": 4,
+      "total": 71
+    },
+    "decision": "include",
+    "selection_reason": "创新的共享灵巧手接口设计。核心贡献：(1)同一灵巧手模块作为可穿戴采集设备和机器人末端执行器，彻底消除实施例转换和重定向误差；(2)零间隙采集-部署管线，直接从人类手指运动映射到机器人手指运动；(3)内置触觉传感丰富数据模态；(4)天然支持跨实施例部署。88.75%成功率，多种难度任务验证。相较于看板中已有的数据采集方案(UMI手枪式、YUBI手指对齐式)，RealDexUMI从共享末端执行器角度提供了独特的零间隙范式。北大+BeingBeyond合作。主要风险：灵巧手硬件来自BeingBeyond(商业公司)；目前仅展示了特定灵巧手。",
+    "risks_or_uncertainties": [
+      "灵巧手硬件来自BeingBeyond，商业可用性和open-source硬件计划不明确",
+      "目前只用一种灵巧手验证，不同手型需要重新设计共享模块",
+      "共享模块穿戴部分的舒适性和长时间使用的人体工学未评估",
+      "大规模数据采集的实际效率未与现有方法(如UMI)系统对比"
+    ],
+    "suggested_sections": [
+      "data",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "dexterous-manipulation",
+      "teleoperation",
+      "wearable-interface",
+      "zero-gap",
+      "cross-embodiment"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "Tsinghua University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.06033",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Peking University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.06033",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Beihang University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.06033",
+        "location": "author affiliation block"
+      }
+    ],
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.04046",
+    "arxiv_id": "2606.04046",
+    "title": "Dive into the Scene: Breaking the Perceptual Bottleneck in Vision-Language Decision Making via Focus Plan Generation",
+    "paper_url": "https://arxiv.org/abs/2606.04046",
+    "first_publication": "2026-06-02",
+    "last_revision": null,
+    "authors": [
+      "Boyuan Xiao",
+      "Bohong Chen",
+      "Yumeng Li",
+      "Ji Feng",
+      "Yao-Xiang Ding",
+      "Kun Zhou"
+    ],
+    "organizations": [
+      "Zhejiang University",
+      "Baiont Quant",
+      "Zhejiang Key Laboratory of Intelligent Medical Decision Support"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.04046",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "embodied",
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "manipulation",
+      "navigation",
+      "planning",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对视觉语言决策(VLM/VLA)在机器人操作和导航中的感知瓶颈问题。在LIBERO-plus操作基准和房间导航基准上验证。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv HTML full text accessible at https://ar5iv.labs.arxiv.org/html/2606.04046. Full paper read: Introduction, Method (SceneDiver: coarse-to-fine scene graph → iterative focus decomposition), Experiments."
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "创新性的由粗到精聚焦计划生成方法：(1)先构建整体场景图建立初步理解；(2)通过识别→理解→分析的迭代循环逐步将任务分解为更简单的子问题；(3)设计轻量级适配器将VLM的深度聚焦能力蒸馏到VLA中以实现反应式控制。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "在LIBERO-plus操作基准和房间导航基准上显著超越现有视觉聚焦方法。消融实验验证由粗到精过程的必要性和蒸馏适配器的有效性。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已阅读。代码已公开。"
+      }
+    },
+    "scores": {
+      "relevance": 16,
+      "novelty": 14,
+      "evidence_quality": 14,
+      "potential_impact": 9,
+      "board_information_gain": 6,
+      "reproducibility": 6,
+      "timeliness": 4,
+      "total": 69
+    },
+    "decision": "include",
+    "selection_reason": "从感知角度解决VLM/VLA幻觉问题的新方法。核心贡献：(1)由粗到精的场景聚焦：先构建场景图获得整体理解，再通过迭代的识别→理解→分析循环逐步聚焦关键对象；(2)轻量级蒸馏适配器将VLM的深度聚焦能力迁移到VLA实现实时反应控制；(3)在操作和导航两个领域验证。相较于看板中已有的VLA改进方法(主要集中在策略/动作层面)，SceneDiver从感知层面的视觉聚焦角度提供了互补方案。浙大。代码已公开。主要风险：依赖场景图构建质量；聚焦策略在高度动态场景中的实时性未充分验证。",
+    "risks_or_uncertainties": [
+      "场景图构建的准确性直接影响聚焦质量，复杂场景下可能引入误差",
+      "来自cs.CV领域(非cs.RO)，机器人操作验证相对有限",
+      "迭代聚焦过程的时间开销可能影响实时控制需求",
+      "蒸馏适配器在不同VLA架构上的通用性未验证"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "visual-focus",
+      "scene-graph",
+      "vla-perception",
+      "coarse-to-fine",
+      "distillation"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "Zhejiang University",
+        "source": "project-page",
+        "url": "https://future-item.github.io/SceneDiver",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Baiont Quant",
+        "source": "project-page",
+        "url": "https://future-item.github.io/SceneDiver",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Zhejiang Key Laboratory of Intelligent Medical Decision Support",
+        "source": "project-page",
+        "url": "https://future-item.github.io/SceneDiver",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://future-item.github.io/SceneDiver",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://future-item.github.io/SceneDiver",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://future-item.github.io/SceneDiver/"
+      },
+      {
+        "kind": "code",
+        "url": "https://github.com/future-item/SceneDiver-code",
+        "status": "verified",
+        "accessible": true,
+        "verification_method": "github-api",
+        "evidence_source": "project-page",
+        "checked_at": "2026-07-28",
+        "http_status": 200
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": "https://github.com/future-item/SceneDiver-code",
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.03177",
+    "arxiv_id": "2606.03177",
+    "title": "ConTrack: Constrained Hand Motion Tracking with Adaptive Trade-off Control",
+    "paper_url": "https://arxiv.org/abs/2606.03177",
+    "first_publication": "2026-06-02",
+    "last_revision": "2026-06-15",
+    "authors": [
+      "Yutong Liang",
+      "Quanquan Peng",
+      "Ri-Zhao Qiu",
+      "Xiaolong Wang"
+    ],
+    "organizations": [
+      "University of California, San Diego"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.03177",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "robot",
+      "dexterous manipulation",
+      "simulator",
+      "manipulation",
+      "reinforcement learning",
+      "trajectory",
+      "dexterous",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对灵巧操作中的人类演示轨迹跟踪。在仿真和真实灵巧手上验证，涵盖功能工具使用、关节物体交互和手中旋转任务。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv HTML full text accessible at https://ar5iv.labs.arxiv.org/html/2606.03177. Full paper read: Introduction, Method (constrained tracking with dual-variable update, adaptive mid-trajectory reset), Experiments."
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "首个人类演示跟踪的约束RL框架。创新点：(1)将物体跟踪建模为硬约束，剩余控制能力分配给运动保真度——通过双变量更新在线自适应任务-风格权衡；(2)自适应中轨迹重置库：利用策略可达的仿真状态稳定长时序学习。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "仿真和真实灵巧手实验：成功率和物体位姿精度显著超越prior arts，同时保持关节和接触保真度。多任务验证(功能工具、关节物体、手中旋转)。Website: https://www.lyt0112.com/projects/ConTrack"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已阅读。UC San Diego, Xiaolong Wang组。"
+      }
+    },
+    "scores": {
+      "relevance": 15,
+      "novelty": 14,
+      "evidence_quality": 14,
+      "potential_impact": 9,
+      "board_information_gain": 5,
+      "reproducibility": 5,
+      "timeliness": 4,
+      "total": 66
+    },
+    "decision": "include",
+    "selection_reason": "第一个将约束RL应用于人类演示轨迹跟踪的框架。核心贡献：(1)创新的约束公式——物体跟踪作为硬约束+运动保真度作为优化目标，通过拉格朗日双变量在线调整权衡；(2)自适应中轨迹重置库从策略可达状态采样，稳定长时序(1000+步)学习；(3)在各种接触丰富的灵巧操作任务上超越现有方法。相较于看板中已有的灵巧操作工作，ConTrack从人类演示到机器人执行的轨迹跟踪角度提供了独特贡献。UC San Diego Xiaolong Wang组。主要风险：方法相对小众(轨迹跟踪)；双变量更新在不同任务上可能需要手动调参。",
+    "risks_or_uncertainties": [
+      "双变量更新的收敛性和超参数在不同任务上的鲁棒性未充分验证",
+      "仅覆盖灵巧手轨迹跟踪，通用性有限",
+      "依赖精确的物体位姿估计作为约束条件",
+      "真实机器人实验规模有限(定性+定量但任务数不多)"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "simulators"
+    ],
+    "suggested_topics": [
+      "constrained-rl",
+      "trajectory-tracking",
+      "dexterous-manipulation",
+      "human-demonstration",
+      "dual-variable"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "University of California, San Diego",
+        "source": "project-page",
+        "url": "https://www.lyt0112.com/projects/ConTrack",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://www.lyt0112.com/projects/ConTrack",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://www.lyt0112.com/projects/ConTrack",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://www.lyt0112.com/projects/ConTrack"
+      },
+      {
+        "kind": "code",
+        "url": "https://github.com/EmptyBlueBox/ConTrack",
+        "status": "verified",
+        "accessible": true,
+        "verification_method": "github-api",
+        "evidence_source": "project-page",
+        "checked_at": "2026-07-28",
+        "http_status": 200
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": "https://github.com/EmptyBlueBox/ConTrack",
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.10244",
+    "arxiv_id": "2606.10244",
+    "title": "YUBI: Yielding Universal Bidigital Interface for Bimanual Dexterous Manipulation at Scale",
+    "paper_url": "https://arxiv.org/abs/2606.10244",
+    "first_publication": "2026-06-08",
+    "last_revision": null,
+    "authors": [
+      "Takehiko Ohkawa",
+      "Jumpei Arima",
+      "Yuki Noguchi",
+      "Masatoshi Tateno",
+      "Makoto Sugiura",
+      "Takuya Okubo",
+      "Kengo Ikeuchi",
+      "Yuma Shin"
+    ],
+    "organizations": [],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.10244",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "robot",
+      "foundation model",
+      "dexterous manipulation",
+      "manipulation",
+      "trajectory",
+      "bimanual",
+      "dexterous",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对双臂灵巧操作的大规模数据采集。手指对齐式夹爪设计+大规模数据集(119 tasks, 985 trajectories)。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv HTML full text accessible at https://ar5iv.labs.arxiv.org/html/2606.10244. Full paper read: Introduction, Method (YUBI gripper design, data collection system), Experiments (119 tasks, policy learning)."
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "提出手指对齐(yielding bidigital)的夹爪设计理念，替代UMI的手枪式握把。提升人体工学、精细操作可及性。大规模数据集(YUBI-Bench: 119 tasks, 985 trajectories)和硬件/软件全部开源。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "119个任务、985条轨迹的大规模数据集。YUBI与UMI接口的直接对比。在多种策略(Diffusion Policy, ACT, π0)上训练验证。硬件设计细节和性能指标详实。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已阅读。硬件、软件、数据集承诺开源。"
+      }
+    },
+    "scores": {
+      "relevance": 14,
+      "novelty": 14,
+      "evidence_quality": 13,
+      "potential_impact": 8,
+      "board_information_gain": 5,
+      "reproducibility": 7,
+      "timeliness": 4,
+      "total": 65
+    },
+    "decision": "include",
+    "selection_reason": "通过创新的手指对齐式夹爪设计改进UMI范式。核心贡献：(1)手指对齐(yielding bidigital)握持方式替代UMI手枪式握把，显著提升人体工学和精细操作可及性；(2)YUBI-Bench: 119个任务、985条轨迹的大规模双臂灵巧数据集；(3)硬件、软件、数据集全面开源。相较于看板中已有的UMI和RealDexUMI，YUBI从人体工学改进角度提供了一个有价值的替代方案。主要局限：YUBI仍然是平行夹爪范式(非多指灵巧手)，任务复杂度和数据规模(985条轨迹)相对有限。",
+    "risks_or_uncertainties": [
+      "985条轨迹的数据集规模仍较小，与大语言/视觉模型预训练需求有差距",
+      "手指对齐设计在非抓取类任务(如推动、擦拭)上的优势不明确",
+      "YUBI仍是平行夹爪，未涉及多指灵巧手",
+      "与UMI的直接对比仅在有限任务上进行"
+    ],
+    "suggested_sections": [
+      "data",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "data-collection",
+      "gripper-design",
+      "bimanual",
+      "dexterous-manipulation",
+      "open-source-hardware"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [],
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "project_url": null,
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.21387",
+    "arxiv_id": "2606.21387",
+    "title": "Long-Distance Real-World Navigation of the Legged-Wheeled Robot Go2-W Using Deep Reinforcement Learning",
+    "paper_url": "https://arxiv.org/abs/2606.21387",
+    "first_publication": "2026-06-19",
+    "last_revision": null,
+    "authors": [
+      "Takaaki Matsuzawa",
+      "Kiyoshi Irie",
+      "Tomoaki Yoshida",
+      "Taro Suzuki",
+      "Yoshitaka Hara",
+      "Masahiro Tomono"
+    ],
+    "organizations": [
+      "Future Robotics Technology Center (fuRo), Chiba Institute of Technology"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.21387",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "robot",
+      "locomotion",
+      "navigation",
+      "reinforcement learning",
+      "quadruped",
+      "legged",
+      "autonomous",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对腿-轮复合机器人Go2-W的长距离自主导航。2.8km真实环境Tsukuba Challenge 2025验证。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv HTML full text accessible at https://ar5iv.labs.arxiv.org/html/2606.21387. Full paper read: Introduction, Method (DRL locomotion controller, navigation system), Experiments (Tsukuba Challenge 2025)."
+      },
+      "incremental_contribution": {
+        "pass": false,
+        "evidence": "工程性系统集成工作。将已有的proprioception-only四足策略扩展到16-DoF腿-轮机器人，并发现/解决髋关节热集中问题。贡献主要体现在实际部署验证而非算法创新。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "2.8km Tsukuba Challenge真实环境自主导航(含人行道、公园、楼梯)，无过热停机。系统架构和实验结果详实。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已阅读。"
+      }
+    },
+    "scores": {
+      "relevance": 14,
+      "novelty": 9,
+      "evidence_quality": 13,
+      "potential_impact": 7,
+      "board_information_gain": 4,
+      "reproducibility": 4,
+      "timeliness": 4,
+      "total": 55
+    },
+    "decision": "skip",
+    "selection_reason": "扎实的工程部署工作但在算法贡献上较弱。主要工作是将已有的DRL运动控制策略扩展到Go2-W的16-DoF腿-轮构型，并集成自主导航系统完成2.8km Tsukuba Challenge。贡献集中在系统集成和实际部署验证(发现髋关节热集中问题并解决)，而非新的算法或方法论。不适合作为独立featured/include条目。",
+    "risks_or_uncertainties": [],
+    "suggested_sections": [],
+    "suggested_topics": [],
+    "review_status": "scored"
+  },
+  {
+    "id": "arxiv-2606.17418",
+    "arxiv_id": "2606.17418",
+    "title": "DexLink Hand: A Compact, Affordable, 16-DOF Linkage-Driven Hand with Human-Like Dexterity",
+    "paper_url": "https://arxiv.org/abs/2606.17418",
+    "first_publication": "2026-06-16",
+    "last_revision": null,
+    "authors": [
+      "Hao Wu",
+      "Yanzhe Wang",
+      "Yu Feng",
+      "Jian Liu",
+      "Jihao Li",
+      "Jianshu Zhou",
+      "Huixu Dong"
+    ],
+    "organizations": [
+      "Zhejiang University",
+      "National University of Singapore"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.17418",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "robot",
+      "dexterous manipulation",
+      "manipulation",
+      "grasping",
+      "grasp",
+      "teleoperation",
+      "dexterous",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接设计灵巧机器人手。16-DOF、20关节、320g、<$400。可达最大Kapandji评分和全部33种Feix抓取类型。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv HTML full text accessible at https://ar5iv.labs.arxiv.org/html/2606.17418. Full paper read: Introduction, Mechanical Design, Experimental Evaluation."
+      },
+      "incremental_contribution": {
+        "pass": false,
+        "evidence": "纯机械硬件设计论文。贡献在于连杆传动机构的创新(平面+空间连杆混合架构)实现了紧凑性和低成本，但无算法、学习或策略相关贡献。不符合Embodied AI Board对算法/系统/数据创新的核心要求。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "Kapandji评分、33种Feix抓取、多种日常物体抓取和灵巧操作验证。详细的机械分析和性能指标。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已阅读。"
+      }
+    },
+    "scores": {
+      "relevance": 12,
+      "novelty": 14,
+      "evidence_quality": 12,
+      "potential_impact": 6,
+      "board_information_gain": 3,
+      "reproducibility": 3,
+      "timeliness": 4,
+      "total": 54
+    },
+    "decision": "skip",
+    "selection_reason": "优秀的灵巧手硬件设计(320g, <$400, 16-DOF, 33种Feix抓取)但属于纯机械工程范畴。无算法、学习、数据或系统层面的贡献，不适合Embodied AI Board的核心关注点。可作为基础设施参考但不作为独立条目收录。",
+    "risks_or_uncertainties": [],
+    "suggested_sections": [],
+    "suggested_topics": [],
+    "review_status": "scored"
+  },
+  {
+    "id": "arxiv-2606.14433",
+    "arxiv_id": "2606.14433",
+    "title": "Kine2Go: Kinematic dataset for the Unitree Go2 robot with diverse gaits and motions",
+    "paper_url": "https://arxiv.org/abs/2606.14433",
+    "first_publication": "2026-06-12",
+    "last_revision": null,
+    "authors": [
+      "Władysław Pałucki",
+      "Paweł Siwak",
+      "Krzysztof Ciebiera",
+      "Marek Cygan"
+    ],
+    "organizations": [
+      "University of Warsaw"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.14433",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "robot",
+      "imitation learning",
+      "locomotion",
+      "navigation",
+      "reinforcement learning",
+      "trajectory",
+      "quadruped",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "Unitree Go2四足机器人的运动学数据集。800条轨迹、40种步态策略。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv HTML full text accessible at https://ar5iv.labs.arxiv.org/html/2606.14433. Full paper read: Introduction, Dataset Pipeline, Dataset Description."
+      },
+      "incremental_contribution": {
+        "pass": false,
+        "evidence": "纯数据集论文，规模较小(800条轨迹、40种策略、仅Go2平台)。无新的数据采集方法、无新策略学习方法、无基准测试。贡献限于数据发布本身，远小于DROID(76K)、Open X-Embodiment等数据集。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "800条轨迹数据可用，支持不同步态和运动。来自多个四足形态的RL策略迁移管道。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已阅读。"
+      }
+    },
+    "scores": {
+      "relevance": 11,
+      "novelty": 8,
+      "evidence_quality": 9,
+      "potential_impact": 4,
+      "board_information_gain": 4,
+      "reproducibility": 8,
+      "timeliness": 4,
+      "total": 48
+    },
+    "decision": "skip",
+    "selection_reason": "小规模的数据集发布(800条轨迹、40种策略、仅Go2单一平台)。相较于看板中已有的数据集条目(DROID 76K, Open X-Embodiment 1M+, RoboSet等)，Kine2Go在规模、多样性、方法论创新上均差距显著。不适合独立收录。",
+    "risks_or_uncertainties": [],
+    "suggested_sections": [],
+    "suggested_topics": [],
+    "review_status": "scored"
+  },
+  {
+    "id": "arxiv-2606.06556",
+    "arxiv_id": "2606.06556",
+    "title": "Robots Need More than VLA and World Models",
+    "paper_url": "https://arxiv.org/abs/2606.06556",
+    "first_publication": "2026-06-04",
+    "last_revision": null,
+    "authors": [
+      "Elis Karcini",
+      "Faisal Mehrban",
+      "Quang Nguyen",
+      "Mac Schwager",
+      "Arash Ajoudani",
+      "Cesar Cadena",
+      "Jan Peters",
+      "Marco Hutter"
+    ],
+    "organizations": [
+      "ETH Zurich",
+      "TU Darmstadt",
+      "IIT",
+      "Stanford"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.06556",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "foundation model",
+      "generalist",
+      "policy learning",
+      "world model",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接讨论机器人通用智能的发展方向。作者来自ETH Zurich, TU Darmstadt, IIT, Stanford等顶级机构。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv HTML full text accessible at https://ar5iv.labs.arxiv.org/html/2606.06556."
+      },
+      "incremental_contribution": {
+        "pass": false,
+        "evidence": "立场论文(position paper)。核心论点是现有VLA+WM路线图不完整，需要grounding-centric pipeline将非结构化行为数据转化为机器人监督。但无新方法、无实验验证、无系统实现。仅提供概念框架和论证。"
+      },
+      "claim_support": {
+        "pass": false,
+        "evidence": "立场论文性质决定其无法通过实证验证。引用已有工作作为论据支撑，但未提出可验证的声明或进行对照实验。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已阅读(长篇位置论文)。"
+      }
+    },
+    "scores": {
+      "relevance": 13,
+      "novelty": 7,
+      "evidence_quality": 5,
+      "potential_impact": 7,
+      "board_information_gain": 5,
+      "reproducibility": 1,
+      "timeliness": 4,
+      "total": 42
+    },
+    "decision": "skip",
+    "selection_reason": "立场论文(position paper)，无新方法、实验验证或系统实现。虽然来自顶级机构(ETH, Stanford, IIT)且论述方向有价值，但不适合作为Embodied AI Board的独立条目——Board聚焦于有实质方法/数据/系统贡献的工作。",
+    "risks_or_uncertainties": [],
+    "suggested_sections": [],
+    "suggested_topics": [],
+    "review_status": "scored"
+  },
+  {
+    "id": "arxiv-2606.05960",
+    "arxiv_id": "2606.05960",
+    "title": "Towards a Data Flywheel for Embodied Intelligence in Logistics",
+    "paper_url": "https://arxiv.org/abs/2606.05960",
+    "first_publication": "2026-06-04",
+    "last_revision": null,
+    "authors": [
+      "Anlan Yu",
+      "Zaishu Chen",
+      "Zhiqing Hong",
+      "Daqing Zhang"
+    ],
+    "organizations": [
+      "Peking University",
+      "JD Logistics",
+      "HKUST (Guangzhou)"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.05960",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "embodied",
+      "robot",
+      "imitation learning",
+      "manipulation",
+      "planning",
+      "policy learning",
+      "world model",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "针对物流行业的具身智能。提出WM-DAgger: 基于世界模型的数据聚合框架。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv HTML full text accessible at https://ar5iv.labs.arxiv.org/html/2606.05960. KDD 2026会议论文(短论文/workshop)。"
+      },
+      "incremental_contribution": {
+        "pass": false,
+        "evidence": "贡献有限。WM-DAgger本质上是DAgger+World Model的组合，创新性较低。论文为KDD 2026短论文格式，篇幅有限，实验规模小。更重要的是大量内容标记为'ongoing work'，表明研究尚处于早期阶段。"
+      },
+      "claim_support": {
+        "pass": false,
+        "evidence": "仅报告了WM-DAgger在有限包裹操作任务上的初步结果(Table 1, 93.3%)，但实验规模小、缺少与SOTA的系统对比。大部分声称的能力(大规模多模态数据对齐、持续系统改进)仅为'ongoing work'方向。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已阅读(KDD短论文)。"
+      }
+    },
+    "scores": {
+      "relevance": 12,
+      "novelty": 10,
+      "evidence_quality": 10,
+      "potential_impact": 6,
+      "board_information_gain": 4,
+      "reproducibility": 3,
+      "timeliness": 4,
+      "total": 49
+    },
+    "decision": "skip",
+    "selection_reason": "早期研究阶段的短论文。WM-DAgger = DAgger + World Model，组合创新性有限。大量声称能力标记为'ongoing work'，实验证据不足。KDD短论文格式限制了深度。不适合独立收录。",
+    "risks_or_uncertainties": [],
+    "suggested_sections": [],
+    "suggested_topics": [],
+    "review_status": "scored"
+  },
+  {
+    "id": "arxiv-2606.11525",
+    "arxiv_id": "2606.11525",
+    "title": "Learning Object Manipulation from Scratch via Contrastive Interaction",
+    "paper_url": "https://arxiv.org/abs/2606.11525",
+    "first_publication": "2026-06-10",
+    "last_revision": null,
+    "authors": [
+      "Tongle Shen",
+      "Caleb Chuck",
+      "Fan Feng",
+      "Biwei Huang"
+    ],
+    "organizations": [],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.11525",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "robot",
+      "sim-to-real",
+      "manipulation",
+      "locomotion",
+      "grasping",
+      "reinforcement learning",
+      "grasp",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对机器人操作从零开始的对比强化学习(CRL)。在仿真操作任务和真实空气曲棍球机器人上验证。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv HTML full text accessible at https://ar5iv.labs.arxiv.org/html/2606.11525. Full paper read: Introduction, Method (IWR: Interaction-Weighted Representation), Experiments."
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "提出Interaction-Weighted Representation (IWR)解决CRL在交互丰富操作中的困难。核心洞察：物体中心的交互(接触/抓取)诱发底层动态模式的显著变化，应赋予更高表示权重。将操作建模为交互分割的切换动态系统。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "多个仿真操作基准上显著优于prior GCRL和CRL方法。真实空气曲棍球机器人：25%→60%零样本sim-to-real。与SGCRL、CRTR等强基线的系统对比。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已阅读。"
+      }
+    },
+    "scores": {
+      "relevance": 15,
+      "novelty": 13,
+      "evidence_quality": 13,
+      "potential_impact": 8,
+      "board_information_gain": 5,
+      "reproducibility": 5,
+      "timeliness": 4,
+      "total": 63
+    },
+    "decision": "skip",
+    "selection_reason": "在对比强化学习(CRL)子领域的有意义贡献(IWR方法)，但整体impact和novelty有限。核心贡献(交互加权表示)是对现有CRL框架的增量改进，而非范式变化。真实机器人实验仅为空气曲棍球单一任务(25%→60%)。相较于看板中已有的RL和世界模型工作(WEAVER, World Pilot等)，impact和scale均有明显差距。",
+    "risks_or_uncertainties": [],
+    "suggested_sections": [],
+    "suggested_topics": [],
+    "review_status": "scored"
+  },
+  {
+    "id": "arxiv-2606.09451",
+    "arxiv_id": "2606.09451",
+    "title": "Dense Force Estimation with an Event-based Optical Tactile Sensor",
+    "paper_url": "https://arxiv.org/abs/2606.09451",
+    "first_publication": "2026-06-08",
+    "last_revision": null,
+    "authors": [
+      "Agis Politis",
+      "René Zurbrügg",
+      "Valentina Cavinato"
+    ],
+    "organizations": [
+      "ETH Zurich"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.09451",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "robot",
+      "dexterous manipulation",
+      "manipulation",
+      "grasping",
+      "grasp",
+      "dexterous",
+      "tactile",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "针对灵巧操作的触觉感知。提出首个基于事件相机的光学触觉传感器密集力估计框架。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv HTML full text accessible at https://ar5iv.labs.arxiv.org/html/2606.09451. Full paper read: Introduction, Method (event-based dense force estimation), Hardware, Experiments."
+      },
+      "incremental_contribution": {
+        "pass": false,
+        "evidence": "纯感知/传感器论文。贡献在触觉传感器技术本身——首个从事件相机实现密集力估计的框架。但无策略学习、无操作任务闭环验证、无数据/系统贡献。属于感知硬件范畴，非Embodied AI Board核心关注点。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "接触感知损失函数设计在接触区域提升精度。与均匀L1损失的系统对比。硬件原型和标定验证。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已阅读。"
+      }
+    },
+    "scores": {
+      "relevance": 9,
+      "novelty": 13,
+      "evidence_quality": 10,
+      "potential_impact": 4,
+      "board_information_gain": 3,
+      "reproducibility": 4,
+      "timeliness": 4,
+      "total": 47
+    },
+    "decision": "skip",
+    "selection_reason": "纯触觉传感器论文，无策略学习、操作任务闭环或具身AI系统贡献。贡献集中在传感器硬件层面(事件相机→密集力估计)。不适合作为独立的Embodied AI条目——虽是灵巧操作的重要赋能技术，但未展示与学习/策略的集成。",
+    "risks_or_uncertainties": [],
+    "suggested_sections": [],
+    "suggested_topics": [],
+    "review_status": "scored"
+  },
+  {
+    "id": "arxiv-2606.01951",
+    "arxiv_id": "2606.01951",
+    "title": "Co-training with Ego-centric Video and Demonstration for Robot Navigation Task",
+    "paper_url": "https://arxiv.org/abs/2606.01951",
+    "first_publication": "2026-06-01",
+    "last_revision": null,
+    "authors": [
+      "Shoya Kuno",
+      "Yumo Ouchi",
+      "Kanata Suzuki"
+    ],
+    "organizations": [
+      "Kyoto University",
+      "Fujitsu Limited"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.01951",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "imitation learning",
+      "manipulation",
+      "locomotion",
+      "navigation",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对移动机器人导航的VLA训练。将人类自我中心行走视频转化为机器人导航训练数据。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv HTML full text accessible at https://ar5iv.labs.arxiv.org/html/2606.01951. Full paper read: Introduction, Method (camera motion estimation + action conversion + co-training), Experiments (fruit-search navigation)."
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "将ego-centric视频用于导航VLA的co-training，与已有的将ego视频用于操作的方法形成互补。提出相机运动估计→动作转换管道，解决了导航中视角变化的特殊挑战。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "水果搜索导航任务验证：联合训练优于单独数据源训练。但实验规模极小(单一任务、单一场景)。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已阅读。"
+      }
+    },
+    "scores": {
+      "relevance": 14,
+      "novelty": 12,
+      "evidence_quality": 11,
+      "potential_impact": 7,
+      "board_information_gain": 5,
+      "reproducibility": 5,
+      "timeliness": 4,
+      "total": 58
+    },
+    "decision": "skip",
+    "selection_reason": "小规模的导航VLA co-training研究。核心想法(用ego-centric视频增强导航VLA)有价值但实现和验证过于有限(单一水果搜索任务、单一场景)。相较于看板中已有的数据增强工作(ACE-Ego-0: 6K+小时、SOTA结果)，scale和impact差距显著。来自Fujitsu+京都大学的小团队工作。",
+    "risks_or_uncertainties": [],
+    "suggested_sections": [],
+    "suggested_topics": [],
+    "review_status": "scored"
+  }
+]

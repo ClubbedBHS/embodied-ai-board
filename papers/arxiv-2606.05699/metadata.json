@@ -1,0 +1,212 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.05699",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "DexFuture: Hierarchical Future-State Visuomotor Targeting for Bimanual Dexterous Tool Use",
+  "title_zh": "DexFuture：面向双臂灵巧工具使用的分层未来状态视觉运动定位",
+  "abstract": "Bimanual dexterous tool use remains challenging for robots due to high-dimensional hand configurations and complex hand-tool-object dynamics and contact. Most existing control policies depend on future configuration references provided from demonstrations, while future action-conditioned world models require slow online planning over high-dimensional action sequences. A significant challenge is generating a dynamically consistent future reference trajectory without relying on privileged states f",
+  "paper_url": "https://arxiv.org/abs/2606.05699",
+  "pdf_url": "https://arxiv.org/pdf/2606.05699",
+  "project_url": "https://blarklee.github.io/DexFuture_official_website/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Runfa Blark Li",
+      "affiliations": []
+    },
+    {
+      "name": "Kuang-Ting Tu",
+      "affiliations": []
+    },
+    {
+      "name": "Nikola Raicevic",
+      "affiliations": []
+    },
+    {
+      "name": "Dwait Bhatt",
+      "affiliations": []
+    },
+    {
+      "name": "Xinshuang Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Keito Suzuki",
+      "affiliations": []
+    },
+    {
+      "name": "Ki Myung Brian Lee",
+      "affiliations": []
+    },
+    {
+      "name": "Nikolay Atanasov",
+      "affiliations": []
+    },
+    {
+      "name": "Truong Nguyen",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "universityofcaliforniasandiego",
+      "name": "University of California, San Diego",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-04",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "topics": [
+      "imitation-learning"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_reason": "Elegant hierarchical approach to dexterous tool use that removes privileged demonstration dependency; 250x faster than planning baselines while maintaining near-oracle performance — addresses a key bottleneck in dexterous manipulation.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "中文标题待翻译"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.05699",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 Method",
+      "3.1 Hierarchical Problem Formulation",
+      "3.2 Future-State Visuomotor Target Predictor",
+      "3.3 Target-Conditioned Structured Dexterous Policy",
+      "3.4 Hierarchical Receding-Horizon Execution",
+      "4 Experimental Results",
+      "4.1 Experimental Setup",
+      "4.2 Policy Evaluation with Predicted Future Targets",
+      "4.3 Future-State Visuomotor Target Prediction",
+      "4.4 Qualitative Results",
+      "4.5 Comparison with Action-Conditioned Planning",
+      "5 Conclusion",
+      "6 Limitations and Future Work",
+      "References",
+      "7 Appendix",
+      "7.1 Comparison with Action-Conditioned Planning",
+      "7.2 Relation to Action Chunking and Direct Action Prediction",
+      "7.3 Method and Implementation Details",
+      "7.3.1 Observation and Target Notation",
+      "7.3.2 Structured Visuomotor Tokenization",
+      "7.3.3 Horizon-Conditioned Target Transformer",
+      "7.3.4 Target Representation",
+      "7.3.5 Predictor Training Objective",
+      "7.3.6 Target-Conditioned Structured Dexterous Policy",
+      "7.3.7 PPO Reward",
+      "7.3.8 Receding-Horizon Target Execution",
+      "7.4 Pseudocode",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.05699"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.05699"
+    },
+    {
+      "type": "project",
+      "url": "https://blarklee.github.io/DexFuture_official_website/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "University of California, San Diego",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.05699",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://blarklee.github.io/DexFuture_official_website/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://blarklee.github.io/DexFuture_official_website/"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

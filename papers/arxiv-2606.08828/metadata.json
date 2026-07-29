@@ -1,0 +1,332 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.08828",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Video2Sim2Real: Full-Stack Autonomous Dexterous Skill Acquisition from a Single Human Video",
+  "title_zh": "Video2Sim2Real：从单个人类视频中全栈自主获取灵巧技能",
+  "abstract": "Human manipulation videos are a convenient and intuitive source for robot learning. However, directly transferring human dexterity to robots remains challenging due to perception errors and the embodiment gap. To address this, we introduce Video2Sim2Real, a full-stack framework for autonomous skill acquisition from a single human manipulation video. Our framework first uses off-the-shelf foundation models to reconstruct a simulator-ready digital twin and extract robot and object motion priors. Rather than treating the extracted robot motion as a reliable reference throughout execution, our key idea is to recover and leverage the most fundamental sources of supervision from the demonstrated skill: We identify object-centric keyframes to optimize the corresponding robot configurations using object information from the simulator, and use these configurations as anchors that refine the robot motion such that it ultimately has the desired impact on the environment. To bridge the remaining sim-to-real gap, we introduce a sim-to-real strategy that decouples robustness to noisy and incomplete perception from variations in hand-object interaction dynamics. Specifically, we learn to recalibrate robot configurations from noisy real-world point clouds via IL, and leverage residual RL to perform local finger-level adaptations to ensure robust and effective interactions. Finally, a collision-aware motion planning module enables spatial generalization to novel object configurations.",
+  "paper_url": "https://arxiv.org/abs/2606.08828",
+  "pdf_url": "https://arxiv.org/pdf/2606.08828",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yunhai Han",
+      "affiliations": [
+        "unknown"
+      ]
+    },
+    {
+      "name": "Jianuo Qiu",
+      "affiliations": [
+        "unknown"
+      ]
+    },
+    {
+      "name": "Linhao Bai",
+      "affiliations": [
+        "unknown"
+      ]
+    },
+    {
+      "name": "Ziyu Xiao",
+      "affiliations": [
+        "unknown"
+      ]
+    },
+    {
+      "name": "Zihang Zeng",
+      "affiliations": [
+        "unknown"
+      ]
+    },
+    {
+      "name": "Yangcen Liu",
+      "affiliations": [
+        "unknown"
+      ]
+    },
+    {
+      "name": "Zhaodong Yang",
+      "affiliations": [
+        "unknown"
+      ]
+    },
+    {
+      "name": "Shalin Jain",
+      "affiliations": [
+        "unknown"
+      ]
+    },
+    {
+      "name": "Wenrui Ma",
+      "affiliations": [
+        "unknown"
+      ]
+    },
+    {
+      "name": "Jiaqi Fu",
+      "affiliations": [
+        "unknown"
+      ]
+    },
+    {
+      "name": "Yun Chen",
+      "affiliations": [
+        "unknown"
+      ]
+    },
+    {
+      "name": "Yuting Zhou",
+      "affiliations": [
+        "unknown"
+      ]
+    },
+    {
+      "name": "Ziyu Chen",
+      "affiliations": [
+        "unknown"
+      ]
+    },
+    {
+      "name": "Haotian Zhu",
+      "affiliations": [
+        "unknown"
+      ]
+    },
+    {
+      "name": "Yiran Yang",
+      "affiliations": [
+        "unknown"
+      ]
+    },
+    {
+      "name": "Danfei Xu",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "C. Karen Liu",
+      "affiliations": [
+        "stanford"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "georgiainstituteoftechnology",
+      "name": "Georgia Institute of Technology",
+      "role": "primary"
+    },
+    {
+      "id": "universityofpennsylvania",
+      "name": "University of Pennsylvania",
+      "role": "collaborator"
+    },
+    {
+      "id": "toyotaresearchinstitute",
+      "name": "Toyota Research Institute",
+      "role": "collaborator"
+    },
+    {
+      "id": "carnegiemellonuniversity",
+      "name": "Carnegie Mellon University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-07",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "sim-to-real",
+      "imitation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "dexterous-hand"
+    ],
+    "modalities": [
+      "vision",
+      "depth",
+      "point-cloud",
+      "proprioception"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "system"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 82,
+    "selection_reason": "单个人类视频→全栈自主灵巧技能获取的完整pipeline：object-centric keyframe refinement + decoupled IL/RL sim-to-real策略，7项日常操作任务仿真91.4%/真实95.7%成功率。首次实现从单个人类视频无需真实机器人演示即可获得灵巧操作技能。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "91.4%/95.7%具体指哪些任务需人工核验",
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.08828",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 Problem Setup",
+      "4 Framework",
+      "4.1 Off-the-shelf Estimation Modules",
+      "4.2 Refinement Modules",
+      "4.3 Sim-to-Real Transfer Modules",
+      "4.3.1 Decoupled Policy Learning",
+      "4.4 Spatial Generalization Modules",
+      "5 Experimental Evaluation",
+      "5.1 Experiment Design",
+      "5.2 Evaluation of Refinement Strategy",
+      "5.3 Evaluation of Sim-to-Real Transfer",
+      "5.4 Spatial Generalization beyond the Single Video",
+      "6 Conclusion, Limitations, and Future Work",
+      "References",
+      "Appendix A Module details",
+      "A.1 Off-the-shelf Estimation Modules",
+      "A.1.1 Digital-Twin Reconstruction",
+      "A.1.2 Motion Estimation.",
+      "A.2 Refinement Modules",
+      "A.2.1 Keyframe Identification",
+      "A.2.2 Keyframe Refinement",
+      "A.3 Sim-to-Real Module",
+      "A.3.1 Details of Distillation Learning",
+      "A.3.2 Details of Residual RL Learning",
+      "A.4 Spatial Generalization Module",
+      "Appendix B Geometry Gap & Physics Gap",
+      "B.1 Geometry Gap",
+      "B.2 Physics Gap",
+      "Appendix C Refinement Baseline Details",
+      "C.1 Baseline Descriptions",
+      "C.2 Baseline Design",
+      "Appendix D Refinement Experiment Details",
+      "D.1 Keyfrema Refinement",
+      "D.2 Evaluation Metrics",
+      "D.2.1 Success Rate",
+      "D.2.2 Safe Rate",
+      "D.2.3 Trajectory Smoothness (Jerk)",
+      "D.2.4 Finish Frame",
+      "D.3 Complete Per-task Evaluation Results",
+      "D.4 Qualitative Results of Baseline Rollouts",
+      "Appendix E Sim-to-Real Experiment Details",
+      "E.1 Baseline Details",
+      "E.2 Test-set Randomization in Simulation",
+      "E.3 Multi-stage Per-task Task Success Rate",
+      "E.4 Real-World Evaluation Range",
+      "E.5 Complete Real-World Evaluation Results",
+      "E.6 Ablation of Sim-to-Real Policies",
+      "Appendix F Time-Cost Breakdown",
+      "Appendix G Spatial Generalization Results",
+      "G.1 Cluttered Environment and Scene Reconstruction",
+      "G.2 Generated Trajectories and Simulation Evaluation",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.08828"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.08828"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Georgia Institute of Technology",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.08828",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University of Pennsylvania",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.08828",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Toyota Research Institute",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.08828",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Carnegie Mellon University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.08828",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

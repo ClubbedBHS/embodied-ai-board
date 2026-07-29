@@ -1,0 +1,194 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.27344",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "VibeAct: Vibration to Actions for Contact-Rich Reactive Robot Dexterity",
+  "title_zh": "VibeAct：从振动到动作的接触丰富反应式机器人灵巧操作",
+  "abstract": "Dexterous manipulation depends on contact events that are fast, local, and often visually occluded. Piezoelectric microphones offer a compact and high-bandwidth way to sense these interactions, but the resulting vibro-acoustic signals are difficult to simulate faithfully enough for end-to-end sim-to-real policy learning on dexterous robot hands. We propose VibeAct, a framework that bridges real vibrotactile sensing and simulation-based reinforcement learning through a shared physical representat",
+  "paper_url": "https://arxiv.org/abs/2606.27344",
+  "pdf_url": "https://arxiv.org/pdf/2606.27344",
+  "project_url": "https://vibeact.github.io/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yuemin Mao",
+      "affiliations": []
+    },
+    {
+      "name": "Uksang Yoo",
+      "affiliations": []
+    },
+    {
+      "name": "Jean Oh",
+      "affiliations": []
+    },
+    {
+      "name": "Jonathan Francis",
+      "affiliations": []
+    },
+    {
+      "name": "Jeffrey Ichnowski",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "carnegiemellonuniversity",
+      "name": "Carnegie Mellon University",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-25",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "topics": [
+      "sim-to-real"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_reason": "Strong vibrotactile sensing framework for dexterous manipulation. Novel contact+slip representation decouples sensing from control, enabling sim-to-real transfer without audio simulation. Evaluated across 5 diverse contact-rich tasks with real-robot deployment on LEAP Hand+xArm7. Slip magnitude channel identified as key driver. Fills a gap in tactile sensing for dexterous manipulation on the board.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "中文标题待翻译"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.27344",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 Problem Formulation",
+      "4 Method",
+      "4.1 Real-World Vibrotactile Data Collection and Digital-Clone Labeling",
+      "4.2 Tactile Representation",
+      "4.3 Tactile Estimator",
+      "4.4 Policy Learning",
+      "5 Experiments",
+      "5.1 Tactile Estimator Evaluation",
+      "5.2 Tasks",
+      "5.3 Task Performance",
+      "6 Conclusion",
+      "7 Limitations",
+      "Acknowledgments",
+      "References",
+      "Appendix A Tactile Estimator Training",
+      "A.1 Network Architecture",
+      "A.2 Training Parameters",
+      "Appendix B Reactive Policy Training",
+      "B.1 Network Architecture",
+      "B.2 PPO Hyperparameters",
+      "B.3 Tactile Encoding",
+      "B.4 Domain Randomization",
+      "B.5 Reward Functions",
+      "Appendix C Sim-to-Real Perspective Alignment",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.27344"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.27344"
+    },
+    {
+      "type": "project",
+      "url": "https://vibeact.github.io/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Carnegie Mellon University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.27344",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://vibeact.github.io/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://vibeact.github.io/"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

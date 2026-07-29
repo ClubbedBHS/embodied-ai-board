@@ -1,0 +1,166 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.26341",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Scaling Nonlinear Optimization: Many Problems One GPU",
+  "title_zh": "扩展非线性优化：在一张 GPU 上求解多个问题",
+  "abstract": "Many robotics problems, including trajectory optimization, inverse kinematics, and contact-rich motion planning, reduce to nonlinear programs (NLPs). Mature NLP solvers such as IPOPT can solve these problems, offering hard constraint satisfaction, optimality guarantees, and favorable scaling with problem dimension. These solvers underpin gradient-based methods in robotics, yet remain CPU-bound and solve only one problem at a time, preventing their integration into GPU-batched learning pipelines.",
+  "paper_url": "https://arxiv.org/abs/2606.26341",
+  "pdf_url": "https://arxiv.org/pdf/2606.26341",
+  "project_url": null,
+  "code_url": "https://github.com/johnviljoen/jaxipm",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "John Viljoen",
+      "affiliations": []
+    },
+    {
+      "name": "Johanna Haffner",
+      "affiliations": []
+    },
+    {
+      "name": "Masayoshi Tomizuka",
+      "affiliations": []
+    },
+    {
+      "name": "Negar Mehr",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "universityofcaliforniaberkeley",
+      "name": "University of California, Berkeley",
+      "role": "primary"
+    },
+    {
+      "id": "ethzurich",
+      "name": "ETH Zürich",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-24",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "simulators",
+      "infrastructure"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "code"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "Important infrastructure contribution: first GPU-batched NLP solver in JAX. 32.85x speedup over IPOPT enables integration into GPU-batched robotics learning pipelines. Open-source code at github.com/johnviljoen/jaxipm. While not directly an embodied policy paper, this is a critical enabler for gradient-based robotics methods at scale. Fills infrastructure gap on board.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.26341",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "I Introduction",
+      "II Related Works",
+      "III Problem Statement",
+      "IV IPOPT Background",
+      "V Batched Interior Point Method",
+      "VI Results",
+      "VII Conclusion",
+      "References",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.26341"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.26341"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "University of California, Berkeley",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.26341",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "ETH Zürich",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.26341",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/johnviljoen/jaxipm",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "ar5iv-html-link",
+      "checked_at": "2026-07-28",
+      "http_status": 200
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

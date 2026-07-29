@@ -1,0 +1,3096 @@
+[
+  {
+    "id": "arxiv-2606.10449",
+    "arxiv_id": "2606.10449",
+    "title": "GuideWalk: Learning Unified Autonomous Navigation and Locomotion for Humanoid Robots across Versatile Terrains",
+    "paper_url": "https://arxiv.org/abs/2606.10449",
+    "first_publication": "2026-06-09",
+    "last_revision": "2026-06-13",
+    "authors": [
+      "Haoxuan Han",
+      "Chen Chen",
+      "Linao Gong",
+      "Xin Yang",
+      "Hao Hu",
+      "Junhong Guo",
+      "Zhicheng He",
+      "Yao Su"
+    ],
+    "organizations": [
+      "Harbin Institute of Technology"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.10449",
+    "keyword_score": 9,
+    "keyword_hits": [
+      "robot",
+      "humanoid",
+      "locomotion",
+      "navigation",
+      "reinforcement learning",
+      "behavior cloning",
+      "planning",
+      "autonomous",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对人形机器人在复杂地形上的自主导航与运动协调。框架整合地形感知导航引导与自适应运动教师，目标是在楼梯、斜坡、窄梁等场景中实现统一策略。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv full HTML at https://ar5iv.labs.arxiv.org/html/2606.10449。已读取 Introduction, Method, Experiments 章节。"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "提出统一的端到端框架，将可穿越性感知导航引导与地形自适应运动教师结合。引入复合教师蒸馏方案（目标导向命令+动力学一致动作聚合蒸馏），并用RL+BC辅助目标精炼。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "仿真实验展示在楼梯、斜坡、窄梁平衡、杂乱环境避障等多种地形上稳定有效的导航和运动。有项目页面和视频。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已读取，Introduction、Method、Experiments等主要章节均已覆盖。"
+      }
+    },
+    "scores": {
+      "relevance": 18,
+      "novelty": 14,
+      "evidence_quality": 13,
+      "potential_impact": 10,
+      "board_information_gain": 7,
+      "reproducibility": 5,
+      "timeliness": 3,
+      "total": 70
+    },
+    "decision": "include",
+    "selection_reason": "针对人形机器人在复杂地形上的统一导航与运动协调问题，提出GuideWalk框架——结合可穿越性感知导航引导与地形自适应运动教师的端到端方案。核心贡献：(1)导航模块提供显式速度引导，将避障与地形条件解耦；(2)复合教师蒸馏方案聚合目标导向命令与动力学一致动作；(3)RL+BC辅助精炼提升鲁棒性。在楼梯、斜坡、窄梁等场景验证。相较看板中的人形机器人工作(如SIMPLE基准、MotionWAM)，GuideWalk更侧重感知-导航-运动的端到端耦合而非仿真评估协议或世界模型。主要风险：仅仿真实验无真实机器人验证，代码未确认开源。",
+    "risks_or_uncertainties": [
+      "仅仿真实验，无真实人形机器人验证",
+      "代码和模型权重未确认公开发布",
+      "导航场景规模有限（定性展示为主）"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "humanoid",
+      "navigation",
+      "locomotion",
+      "reinforcement-learning"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "Harbin Institute of Technology",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.10449",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://guide-walk.github.io/GuideWalk",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://guide-walk.github.io/GuideWalk",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://guide-walk.github.io/GuideWalk/"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.08775",
+    "arxiv_id": "2606.08775",
+    "title": "Unifying Object-Centric World Models and Diffusion Policy: A Hierarchical Framework for Multi-Stage Robotic Tasks",
+    "paper_url": "https://arxiv.org/abs/2606.08775",
+    "first_publication": "2026-06-07",
+    "last_revision": null,
+    "authors": [
+      "Raktim Gautam Goswami",
+      "Prashanth Krishnamurthy",
+      "Yann LeCun",
+      "Farshad Khorrami"
+    ],
+    "organizations": [
+      "New York University"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.08775",
+    "keyword_score": 9,
+    "keyword_hits": [
+      "robot",
+      "diffusion policy",
+      "robotics benchmark",
+      "manipulation",
+      "grasping",
+      "planning",
+      "grasp",
+      "world model",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对多阶段机器人操作任务。在OGBench机器人操作基准上评估，涉及UR5e机械臂的抓取、按钮、抽屉、窗户等操作。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv full HTML at https://ar5iv.labs.arxiv.org/html/2606.08775。已读取 Introduction, Method, Experiments 章节。"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "首次将物体中心世界模型与扩散策略统一到层次化框架中。高层世界模型在MPC框架内优化可行子目标，低层目标条件扩散策略执行。引入物体中心表示解耦环境实体以支持序列规划。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "在OGBench多个任务（Cube-Single, Cube-Triple, Scene-Single-Direct, Scene-Single-Composite）上评估，与多个基线对比，含消融实验。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已读取，覆盖Introduction, Experiments等主要章节。"
+      }
+    },
+    "scores": {
+      "relevance": 17,
+      "novelty": 13,
+      "evidence_quality": 13,
+      "potential_impact": 10,
+      "board_information_gain": 6,
+      "reproducibility": 5,
+      "timeliness": 3,
+      "total": 67
+    },
+    "decision": "include",
+    "selection_reason": "将物体中心世界模型与扩散策略统一到层次化框架中处理多阶段机器人操作。核心贡献：(1)高层物体中心世界模型在粒子滤波内优化子目标；(2)低层目标条件扩散策略执行；(3)物体中心表示实现序列规划。在OGBench多阶段任务上超越基线。方法设计巧妙，但实验规模有限（4个任务变体，单机器人平台），且仅仿真验证。",
+    "risks_or_uncertainties": [
+      "仅仿真实验，无真实机器人验证",
+      "任务数量有限（4个变体）",
+      "代码未确认开源"
+    ],
+    "suggested_sections": [
+      "algorithms"
+    ],
+    "suggested_topics": [
+      "world-model",
+      "diffusion-policy",
+      "manipulation",
+      "hierarchical"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "New York University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.08775",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.08610",
+    "arxiv_id": "2606.08610",
+    "title": "HARBOR: A Harness Framework for Agentic Robot Reinforcement Learning",
+    "paper_url": "https://arxiv.org/abs/2606.08610",
+    "first_publication": "2026-06-07",
+    "last_revision": null,
+    "authors": [
+      "Zechu Li",
+      "Yufeng Jin",
+      "Xiaoyang Liu",
+      "Puze Liu",
+      "Vignesh Prasad",
+      "Carlo D'Eramo",
+      "Georgia Chalvatzaki"
+    ],
+    "organizations": [
+      "Columbia University",
+      "Honda Research Institute"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.08610",
+    "keyword_score": 9,
+    "keyword_hits": [
+      "robot",
+      "simulator",
+      "sim-to-real",
+      "manipulation",
+      "locomotion",
+      "reinforcement learning",
+      "bimanual",
+      "dexterous",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接面向机器人强化学习工作流的自动化。跨6个基准、16个任务评估，涵盖操作、运动、双臂灵巧控制。训练策略可迁移到真实机器人。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv full HTML at https://ar5iv.labs.arxiv.org/html/2606.08610。已读取 Introduction, Method, Experiments 章节。"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "首次将机器人RL自动化框架化为'harness-engineering'问题。分解高层目标为有界阶段，由专门化智能体通过标准化命令、持久化工件、可执行门和可复用知识执行。引入去中心化并行试验和跨运行经验学习。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "6个基准（IsaacLab, Bi-DexHands, ManiSkill, Genesis, MJLab, Loco-Mujoco）16个任务评估。端到端自动化仿真RL工作流，奖励设计自动匹配或超越默认配置。真实机器人策略迁移验证。含消融和效率分析。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已读取，覆盖Introduction, Experiments (Sec 4.1-4.3)等主要章节。"
+      }
+    },
+    "scores": {
+      "relevance": 17,
+      "novelty": 16,
+      "evidence_quality": 15,
+      "potential_impact": 12,
+      "board_information_gain": 8,
+      "reproducibility": 7,
+      "timeliness": 3,
+      "total": 78
+    },
+    "decision": "include",
+    "selection_reason": "将机器人RL工作流自动化视为'harness-engineering'问题，提出HARBOR智能体框架。核心贡献：(1)将任务分解为有界阶段由专门智能体执行；(2)标准化命令-工件-门-知识体系；(3)去中心化并行试验+跨运行经验学习。在6个基准16个任务上端到端自动化，奖励设计匹配或超越专家配置，策略可迁移到真实机器人。填补了看板中RL基础设施自动化方向的重要空白。主要风险：智能体框架依赖LLM API成本，开源状态未确认。",
+    "risks_or_uncertainties": [
+      "框架依赖LLM API，token和计算成本较高",
+      "代码开源状态未确认",
+      "奖励设计质量依赖LLM推理能力上限"
+    ],
+    "suggested_sections": [
+      "infrastructure",
+      "simulators",
+      "algorithms"
+    ],
+    "suggested_topics": [
+      "rl-automation",
+      "agentic-framework",
+      "sim-to-real",
+      "reinforcement-learning"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "Columbia University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.08610",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Honda Research Institute",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.08610",
+        "location": "author affiliation block"
+      }
+    ],
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.08530",
+    "arxiv_id": "2606.08530",
+    "title": "GEAR-VLA: Learning Geometry-Aware Action Representations for Generalizable Robotic Manipulation",
+    "paper_url": "https://arxiv.org/abs/2606.08530",
+    "first_publication": "2026-06-07",
+    "last_revision": "2026-06-10",
+    "authors": [
+      "Yuan Zhang",
+      "Shiqi Zhang",
+      "Yedong Shen",
+      "Shuai Dong",
+      "Jiajun Deng",
+      "Xin Zhang",
+      "Yuxuan Gao",
+      "Jiajia Wu"
+    ],
+    "organizations": [
+      "University of Science and Technology of China"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.08530",
+    "keyword_score": 9,
+    "keyword_hits": [
+      "embodied",
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "manipulation",
+      "grasping",
+      "trajectory",
+      "grasp",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对VLA模型的机器人操作泛化。在LIBERO、RoboTwin 2.0、真实AgileX和LDT-01机器人上评估，含6360次试验的通用抓取基准测试。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv full HTML at https://ar5iv.labs.arxiv.org/html/2606.08530。已读取 Introduction, Method, Experiments 章节。"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "提出三层几何感知改进：(1)粗到细动作学习——多源具身预训练+潜在动作token+梯度解耦DiT连续动作专家；(2)语义对齐3D集成——可训练3D空间骨干与VLA表征对齐；(3)具身规范化——将机器人差异限制在底层接口。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "LIBERO SOTA、LIBERO-Plus零样本、RoboTwin 2.0。真实机器人：AgileX 85.9%、LDT-01 81.0%（预训练未见具身）。6360次试验通用抓取基准90.1%成功率，212个未见物体。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已读取，Introduction, Method, Experiments主要章节均已覆盖。"
+      }
+    },
+    "scores": {
+      "relevance": 18,
+      "novelty": 15,
+      "evidence_quality": 16,
+      "potential_impact": 12,
+      "board_information_gain": 7,
+      "reproducibility": 7,
+      "timeliness": 3,
+      "total": 78
+    },
+    "decision": "include",
+    "selection_reason": "针对VLA模型在实际部署中的泛化瓶颈，提出GEAR-VLA——通过几何感知动作表征实现跨物体、跨背景、跨具身的泛化操作。核心贡献：(1)粗到细动作学习——多源具身预训练+梯度解耦DiT专家；(2)语义对齐3D集成——3D空间骨干与VLM表征对齐；(3)具身规范化——跨机器人共享表征。在LIBERO、RoboTwin 2.0、真实AgileX和未见LDT-01上均达SOTA或强性能，6360次通用抓取基准90.1%成功率。相较于看板中其他VLA工作（如OpenVLA、π0.5），GEAR-VLA在几何感知和跨具身泛化方面提供明确增量。",
+    "risks_or_uncertainties": [
+      "代码开源状态未确认",
+      "未见与最新VLAs（如π0.5的RL版本）的直接对比",
+      "跨具身实验仅两种机器人"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "vla",
+      "geometry-aware",
+      "cross-embodiment",
+      "manipulation"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "University of Science and Technology of China",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.08530",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.08513",
+    "arxiv_id": "2606.08513",
+    "title": "Towards End to End Motion Planning and Execution for Autonomous Underwater Vehicles Using Reinforcement Learning",
+    "paper_url": "https://arxiv.org/abs/2606.08513",
+    "first_publication": "2026-06-07",
+    "last_revision": null,
+    "authors": [
+      "Elisei Shafer",
+      "Oren Gal"
+    ],
+    "organizations": [
+      "University of Haifa"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.08513",
+    "keyword_score": 9,
+    "keyword_hits": [
+      "robot",
+      "simulator",
+      "navigation",
+      "reinforcement learning",
+      "planning",
+      "trajectory",
+      "motion planning",
+      "autonomous",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "自主水下航行器(AUV)是物理机器人，具有真实水下具身。但海洋机器人领域对看板核心关注点（操作、人形、VLA等）相关性较低。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv full HTML at https://ar5iv.labs.arxiv.org/html/2606.08513。已读取 Introduction, Method, Experiments 章节。"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "将层次化RL应用于AUV端到端运动规划与执行。高层策略处理原始传感器数据生成空间子目标，低层策略转换为推进器指令。使用RLPD+SAC+HER组合。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "在HoloOcean高保真仿真器中评估，轨迹长度接近RRT*规划基线（4-6%差距），对传感器噪声和低能见度有一定鲁棒性。但作者承认未访问区域泛化受限。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已读取，Introduction, Experiments等章节已覆盖。"
+      }
+    },
+    "scores": {
+      "relevance": 10,
+      "novelty": 10,
+      "evidence_quality": 10,
+      "potential_impact": 6,
+      "board_information_gain": 3,
+      "reproducibility": 3,
+      "timeliness": 3,
+      "total": 45
+    },
+    "decision": "reject",
+    "selection_reason": "尽管AUV是物理机器人且通过硬门槛，但海洋机器人领域与Embodied AI Board核心板块（操作、人形、VLA、灵巧手等）差距较大。仅仿真实验（HoloOcean），泛化能力有限（作者承认未见障碍物形状时泛化受限），对看板信息增益很低。方法层面为标准的层次化RL组合（RLPD+SAC+HER），无明显新颖性。",
+    "risks_or_uncertainties": [
+      "仅仿真实验，无真实水下验证",
+      "作者明确承认泛化限制",
+      "领域与看板核心关注点偏差大"
+    ],
+    "suggested_sections": [],
+    "suggested_topics": [],
+    "review_status": "rejected"
+  },
+  {
+    "id": "arxiv-2606.05407",
+    "arxiv_id": "2606.05407",
+    "title": "MoDex: A Diffusion Policy for Sequential Multi-Object Dexterous Grasping",
+    "paper_url": "https://arxiv.org/abs/2606.05407",
+    "first_publication": "2026-06-03",
+    "last_revision": null,
+    "authors": [
+      "Haofei Lu",
+      "Hongjia Liu",
+      "Yifei Dong",
+      "Florian T. Pokorny",
+      "Jens Lundell",
+      "Danica Kragic"
+    ],
+    "organizations": [
+      "KTH Royal Institute of Technology",
+      "University of Turku"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.05407",
+    "keyword_score": 9,
+    "keyword_hits": [
+      "robot",
+      "diffusion policy",
+      "imitation learning",
+      "sim-to-real",
+      "grasping",
+      "reinforcement learning",
+      "grasp",
+      "dexterous",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对灵巧手顺序抓取多个物体的问题。Franka+Panda+Allegro Hand平台，仿真和真实机器人实验。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv full HTML at https://ar5iv.labs.arxiv.org/html/2606.05407。已读取 Introduction, Method, Experiments 章节。"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "首次解决单只灵巧手在不释放已持物体的前提下顺序抓取多物体的任务。引入opposition space条件指定参与当前抓取的手指，保留其余手指自由度供后续使用。两阶段训练（IL+RL微调）实现sim-to-real迁移。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "仿真（MuJoCo Franka+Allegro Hand）和真实机器人实验。与学习基线对比提升2.92-17.92%（仿真）和6.67-17.78%（真实）。有项目页面和视频。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已读取，Introduction, Experiments等章节已覆盖。"
+      }
+    },
+    "scores": {
+      "relevance": 18,
+      "novelty": 15,
+      "evidence_quality": 14,
+      "potential_impact": 10,
+      "board_information_gain": 6,
+      "reproducibility": 5,
+      "timeliness": 2,
+      "total": 70
+    },
+    "decision": "include",
+    "selection_reason": "首次解决单只灵巧手顺序抓取多个物体而不释放已持物体的问题。核心贡献：(1)Opposition space条件——指定参与当前抓取的手指；(2)两阶段训练（BC→RL微调）实现sim-to-real。仿真和真实Franka+Allegro Hand平台验证，较基线提升显著。为灵巧操作的多物体场景提供了新颖视角。主要风险：仅3个物体的顺序抓取展示，任务规模有限。",
+    "risks_or_uncertainties": [
+      "仅展示3个物体的顺序抓取",
+      "物体种类有限",
+      "代码未确认开源"
+    ],
+    "suggested_sections": [
+      "algorithms"
+    ],
+    "suggested_topics": [
+      "dexterous-manipulation",
+      "grasping",
+      "diffusion-policy"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "KTH Royal Institute of Technology",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.05407",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "University of Turku",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.05407",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://modex2026.github.io/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://modex2026.github.io/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://modex2026.github.io/"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.03385",
+    "arxiv_id": "2606.03385",
+    "title": "Grasp-Then-Plan with Failure Attribution: A Closed Two-Stage Framework for Precise and Generalizable Robotic Manipulation",
+    "paper_url": "https://arxiv.org/abs/2606.03385",
+    "first_publication": "2026-06-02",
+    "last_revision": null,
+    "authors": [
+      "Jiahao Xu",
+      "Peiyuan Wang",
+      "Hanzhuo Zhang",
+      "Zihao Yu",
+      "Tianyu Fu",
+      "Hao Chen",
+      "Xuanhao Xiang",
+      "Jianbo Yu"
+    ],
+    "organizations": [
+      "Southeast University"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.03385",
+    "keyword_score": 9,
+    "keyword_hits": [
+      "robot",
+      "VLA",
+      "manipulation",
+      "grasping",
+      "planning",
+      "trajectory",
+      "grasp",
+      "motion planning",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对长时域机器人操作中抓取与运动规划的耦合问题。仿真和真实机器人实验，跨RL/IL/扩散策略/VLA多种策略设置。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv full HTML at https://ar5iv.labs.arxiv.org/html/2606.03385。已读取 Introduction, Method, Experiments 章节。"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "提出'抓取-然后-规划+故障归因'(GTP-FA)闭环两阶段框架。学习故障归因模型从失败轨迹中诊断失败模式，再通过诊断驱动的优化分别改进抓取和规划模块。可跨RL/IL/扩散策略/VLA等多种底层策略使用。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "仿真和真实机器人实验，跨多种策略设置（RL, IL, diffusion-policy, VLA）均实现任务成功率显著提升。有项目页面。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已读取，Introduction, Experiments等章节已覆盖。"
+      }
+    },
+    "scores": {
+      "relevance": 17,
+      "novelty": 15,
+      "evidence_quality": 15,
+      "potential_impact": 11,
+      "board_information_gain": 7,
+      "reproducibility": 5,
+      "timeliness": 2,
+      "total": 72
+    },
+    "decision": "include",
+    "selection_reason": "提出GTP-FA框架——通过故障归因模型从失败轨迹中诊断失败模式，再诊断驱动优化抓取评分和规划数据收集。核心贡献：(1)任务导向的'抓取-然后-规划'两阶段框架；(2)故障归因模型可泛化到未见抓取；(3)诊断驱动优化同时改进两模块。跨RL/IL/扩散策略/VLA设置验证，具策略无关性优势。方法思想清晰，诊断-优化闭环设计具有通用价值。",
+    "risks_or_uncertainties": [
+      "代码未确认开源",
+      "故障归因模型训练依赖失败轨迹数据",
+      "实验任务规模有限"
+    ],
+    "suggested_sections": [
+      "algorithms"
+    ],
+    "suggested_topics": [
+      "manipulation",
+      "failure-attribution",
+      "grasping",
+      "planning"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "Southeast University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.03385",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.32009",
+    "arxiv_id": "2606.32009",
+    "title": "Human-as-Humanoid: Enabling Zero-Shot Humanoid Learning from Ego-Exo Human Videos with Human-Aligned Embodiments",
+    "paper_url": "https://arxiv.org/abs/2606.32009",
+    "first_publication": "2026-06-30",
+    "last_revision": null,
+    "authors": [
+      "Xiaopeng Lin",
+      "Ruoqi Yang",
+      "Shijie Lian",
+      "Zhaolong Shen",
+      "Bin Yu",
+      "Changti Wu",
+      "Haibao Liu",
+      "Yuxiang Zhang"
+    ],
+    "organizations": [
+      "Hong Kong University of Science and Technology",
+      "Beihang University",
+      "Harbin Institute of Technology"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.32009",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "humanoid",
+      "manipulation",
+      "teleoperation",
+      "bimanual",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接将人类视频数据转化为高自由度人形机器人VLA训练监督。基于PrimeU 60-DoF上身人形机器人平台。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv full HTML at https://ar5iv.labs.arxiv.org/html/2606.32009。已读取 Introduction, Method, Experiments 章节。"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "提出Human-as-Humanoid框架，通过ego-exo同步视频配对、分阶段IK运动重定向、FK感知监督，将大规模人类演示转化为可执行的人形机器人观察-动作监督。实现近实时人中心动作生成。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "验证了从视觉观测到可执行动作监督的转化链路。基于60-DoF PrimeU人形机器人平台，支持双臂操作。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已读取，Introduction, Method等章节已覆盖。"
+      }
+    },
+    "scores": {
+      "relevance": 18,
+      "novelty": 16,
+      "evidence_quality": 13,
+      "potential_impact": 13,
+      "board_information_gain": 8,
+      "reproducibility": 6,
+      "timeliness": 4,
+      "total": 78
+    },
+    "decision": "include",
+    "selection_reason": "解决人形机器人VLA训练数据稀缺的关键瓶颈——将大规模人类egocentric视频转化为可执行的人形机器人监督。核心贡献：(1)人类对齐的PrimeU 60-DoF人形平台；(2)Ego-exo同步视频配对+分阶段IK运动重定向管线；(3)FK感知监督保留手腕和指尖任务空间几何。将人类数据规模化利用于人形机器人训练，具有重要基础设施价值。",
+    "risks_or_uncertainties": [
+      "PrimeU为定制平台，可复现性受限于硬件",
+      "真实机器人实验规模待确认",
+      "运动重定向质量依赖IK精度"
+    ],
+    "suggested_sections": [
+      "data",
+      "algorithms",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "humanoid",
+      "human-data",
+      "teleoperation",
+      "vla"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "Hong Kong University of Science and Technology",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.32009",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Beihang University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.32009",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Harbin Institute of Technology",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.32009",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://zgc-embodyai.github.io/Human-as-Humanoid/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://zgc-embodyai.github.io/Human-as-Humanoid/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://zgc-embodyai.github.io/Human-as-Humanoid/"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.31993",
+    "arxiv_id": "2606.31993",
+    "title": "OopsieVerse: A Safety Benchmark with Damage-Aware Simulation for Robot Manipulation",
+    "paper_url": "https://arxiv.org/abs/2606.31993",
+    "first_publication": "2026-06-30",
+    "last_revision": null,
+    "authors": [
+      "Arnav Balaji",
+      "Arpit Bahety",
+      "Sriniket Ambatipudi",
+      "Daniel Lam",
+      "Junhong Xu",
+      "Roberto Martín-Martín"
+    ],
+    "organizations": [
+      "University of Texas at Austin"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.31993",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "robot",
+      "imitation learning",
+      "simulator",
+      "sim-to-real",
+      "manipulation",
+      "navigation",
+      "reinforcement learning",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对家用机器人操作的安全评估。在OmniGibson和RoboCasa两个仿真器中实现损伤感知，提供导航和操作的家庭任务套件。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv full HTML at https://ar5iv.labs.arxiv.org/html/2606.31993。已读取 Introduction, Method, Experiments 章节。"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "首个统一的损伤感知仿真框架和基准。DamageSim提供仿真器无关的损伤检测与量化（机械/热/流体损伤）。将损伤信号作为显式的、物理基础的、任务无关的信号集成到MDP中。多用例验证（安全数据收集、策略学习、VLA安全评估）。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "在两个仿真器（OmniGibson/NVIDIA Omniverse和RoboCasa/MuJoCo）中实例化。四个用例验证：引导安全演示收集、学习更安全的操作策略、基准测试VLA策略安全、改进安全评估。丰富消融实验。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已读取，Introduction, Method, Experiments等主要章节均已覆盖。"
+      }
+    },
+    "scores": {
+      "relevance": 19,
+      "novelty": 17,
+      "evidence_quality": 16,
+      "potential_impact": 14,
+      "board_information_gain": 9,
+      "reproducibility": 8,
+      "timeliness": 4,
+      "total": 87
+    },
+    "decision": "featured",
+    "selection_reason": "首个系统性地将物理安全（损伤检测、量化、表征）引入机器人操作仿真基准的工作。核心贡献：(1)DamageSim——仿真器无关框架，将接触力/温度/液体交互转化为机械/热/流体损伤信号；(2)MDP增强——损伤作为观测/奖励/终止条件的显式信号；(3)完整家庭任务套件评估常见损伤模式；(4)跨两个仿真器（OmniGibson+RoboCasa）实例化及多用例验证。填补了看板上机器人安全评估这一关键空白。相较于现有基准（SIMPLE、LIBERO等），OopsieVerse首次将安全从二元的成功/失败拓展到损伤感知的连续评估。主要风险：损伤模型简化（基于物理量阈值），未考虑长期累积损伤。",
+    "risks_or_uncertainties": [
+      "损伤模型为启发式阈值设计，未考虑累积损伤",
+      "仅在仿真中验证，未见真实机器人安全基准对应",
+      "代码开源状态待确认"
+    ],
+    "suggested_sections": [
+      "simulators",
+      "infrastructure",
+      "algorithms"
+    ],
+    "suggested_topics": [
+      "safety",
+      "benchmark",
+      "damage-aware",
+      "manipulation",
+      "simulation"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "University of Texas at Austin",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.31993",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.31909",
+    "arxiv_id": "2606.31909",
+    "title": "CoDex: Learning Compositional Dexterous Functional Manipulation without Demonstrations",
+    "paper_url": "https://arxiv.org/abs/2606.31909",
+    "first_publication": "2026-06-30",
+    "last_revision": null,
+    "authors": [
+      "Bowen Jiang",
+      "William Painter Reger",
+      "Roberto Martin-Martin"
+    ],
+    "organizations": [
+      "University of Texas at Austin"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.31909",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "robot",
+      "manipulation",
+      "reinforcement learning",
+      "trajectory",
+      "grasp",
+      "dexterous",
+      "autonomous",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对灵巧手功能性物体操作（喷瓶、胶枪、气吹、手电筒、胡椒研磨器）。7-DoF机械臂+16-DoF多指手，真实机器人实验。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv full HTML at https://ar5iv.labs.arxiv.org/html/2606.31909。已读取 Introduction, Method, Experiments 章节。"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "首个零演示的灵巧功能性操作框架。使用VLM推断语义约束，指导解析约束优化生成功能抓取候选，再通过RL生成完整的抓取-移动-操作策略并sim-to-real迁移。无需人类演示。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "6个CD-FOM任务，涉及未见过的功能性物体（喷瓶、胶枪、气吹、手电筒、胡椒研磨器）和未见目标物体。真实机器人验证，展示自主发现和执行复杂灵巧行为。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已读取，Introduction, Method, Experiments等章节已覆盖。"
+      }
+    },
+    "scores": {
+      "relevance": 18,
+      "novelty": 17,
+      "evidence_quality": 14,
+      "potential_impact": 12,
+      "board_information_gain": 7,
+      "reproducibility": 5,
+      "timeliness": 4,
+      "total": 77
+    },
+    "decision": "include",
+    "selection_reason": "首次实现零演示的灵巧功能性操作——机器人自主发现如何抓取并操作喷瓶、胶枪、手电筒等功能性物体，无需人类演示数据。核心贡献：(1)CD-FOM任务定义（组合灵巧功能性物体操作）；(2)VLM推断语义约束→解析约束优化生成功能抓取；(3)RL生成完整策略并sim-to-real迁移。6个任务在真实机器人验证。零演示特性具有重要扩展价值。主要风险：依赖VLM语义推理质量，任务物体种类有限。",
+    "risks_or_uncertainties": [
+      "依赖VLM语义推理，可能对域外物体失败",
+      "6个任务物体种类有限",
+      "代码未确认开源"
+    ],
+    "suggested_sections": [
+      "algorithms"
+    ],
+    "suggested_topics": [
+      "dexterous-manipulation",
+      "zero-shot",
+      "functional-manipulation",
+      "vlm"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "University of Texas at Austin",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.31909",
+        "location": "author affiliation block"
+      }
+    ],
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://robin-lab.cs.utexas.edu/CoDex/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://robin-lab.cs.utexas.edu/CoDex/"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "project_url": "https://robin-lab.cs.utexas.edu/CoDex/",
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.31846",
+    "arxiv_id": "2606.31846",
+    "title": "Z-1: Efficient Reinforcement Learning for Vision-Language-Action Models",
+    "paper_url": "https://arxiv.org/abs/2606.31846",
+    "first_publication": "2026-06-30",
+    "last_revision": null,
+    "authors": [
+      "Lang Cao",
+      "Renhong Chen",
+      "Luyi Li",
+      "Peng Wang",
+      "Mofan Peng",
+      "Yitong Li"
+    ],
+    "organizations": [
+      "Zioneer Robot"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.31846",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "manipulation",
+      "reinforcement learning",
+      "behavior cloning",
+      "trajectory",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对VLA模型的机器人操作策略改进。在24个RoboCasa标准任务上评估，基于π0.5模型进行RL后训练。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv full HTML at https://ar5iv.labs.arxiv.org/html/2606.31846。已读取 Introduction, Method, Experiments 章节。"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "将GRPO (Group Relative Policy Optimization) 系统性地应用于基于流的VLA模型后训练。提出共享前缀rollout构建、树结构轨迹分支、完成度感知奖励校准、VLM和Action Expert选择性联合训练等效率优化。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "24个RoboCasa任务上平均成功率80.6%，较SFT初始提升13.2个百分点，超越已发表的SOTA模型。仅使用公开RoboCasa演示数据。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已读取，Introduction, Method, Experiments等章节已覆盖。"
+      }
+    },
+    "scores": {
+      "relevance": 17,
+      "novelty": 14,
+      "evidence_quality": 14,
+      "potential_impact": 12,
+      "board_information_gain": 6,
+      "reproducibility": 7,
+      "timeliness": 4,
+      "total": 74
+    },
+    "decision": "include",
+    "selection_reason": "系统性地将GRPO应用于基于流的VLA模型（π0.5）后训练，仅用公开数据实现显著性能提升。核心贡献：(1)共享前缀rollout构建+树结构轨迹分支提升在线优化效率；(2)完成度感知奖励校准；(3)VLM和Action Expert选择性联合训练。在24个RoboCasa任务上80.6%成功率，较SFT提升13.2个百分点。展示了RL后训练对VLA的重要价值。主要风险：仅仿真评估（RoboCasa），无真实机器人验证；仅基于π0.5单一模型。",
+    "risks_or_uncertainties": [
+      "仅仿真评估（RoboCasa），无真实机器人",
+      "方法仅基于π0.5验证，对其他VLA架构的泛化性未知",
+      "GRPO训练成本分析不足"
+    ],
+    "suggested_sections": [
+      "algorithms"
+    ],
+    "suggested_topics": [
+      "vla",
+      "reinforcement-learning",
+      "grpo",
+      "robocasa"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "Zioneer Robot",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.31846",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.31836",
+    "arxiv_id": "2606.31836",
+    "title": "RoboTacDex: A Dexterous Visual-Tactile-Action Dataset for Humanoid Manipulation",
+    "paper_url": "https://arxiv.org/abs/2606.31836",
+    "first_publication": "2026-06-30",
+    "last_revision": null,
+    "authors": [
+      "Xinyi Wang",
+      "Donghan Li",
+      "Zi'Ang Chen",
+      "Chong Yu",
+      "Chen Xin",
+      "Peng Ye",
+      "Yingkai Sun",
+      "Tao Chen"
+    ],
+    "organizations": [],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "abstract-and-metadata",
+    "fulltext_url": null,
+    "keyword_score": 8,
+    "keyword_hits": [
+      "robot",
+      "imitation learning",
+      "humanoid",
+      "dexterous manipulation",
+      "manipulation",
+      "dexterous",
+      "tactile",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "基于Unitree G1人形机器人收集的灵巧操作数据集。6k轨迹、19任务、23技能、22物体，含多视角RGB-D、触觉反馈和语义标注。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "arXiv摘要页可访问：https://arxiv.org/abs/2606.31836。但ar5iv无HTML全文，arXiv实验性HTML也不可用（404）。"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "大型多模态人形机器人灵巧操作数据集，含触觉、多视角RGB-D和语义标注。双灵巧手任务设计。改进的多相机同步系统实现毫秒级数据同步。"
+      },
+      "claim_support": {
+        "pass": false,
+        "evidence": "摘要声称评估了三种代表性模仿学习模型并分析了性能，但无法从全文核验实验设计和结果。数据集承诺即将开源但尚未可访问。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": false,
+        "evidence": "ar5iv HTML全文不可访问。arXiv实验性HTML返回404。仅有PDF可下载，但未通过ar5iv/HTML渠道获取全文。摘要级来源只能进入待观察队列。"
+      }
+    },
+    "scores": {
+      "relevance": 0,
+      "novelty": 0,
+      "evidence_quality": 0,
+      "potential_impact": 0,
+      "board_information_gain": 0,
+      "reproducibility": 0,
+      "timeliness": 0,
+      "total": 0
+    },
+    "decision": "defer",
+    "selection_reason": "全文无法通过ar5iv或arXiv HTML渠道访问。仅有PDF下载。根据discovery-spec.md硬门槛规则：'正式推荐必须能读取全文；摘要级来源只能进入待观察队列'。数据集规模（6k轨迹/19任务/Unitree G1人形）有潜力，一旦全文可访问或数据集正式开源后可重新评估。",
+    "risks_or_uncertainties": [
+      "ar5iv HTML全文不可访问",
+      "arXiv实验性HTML不可用(404)",
+      "数据集承诺'即将开源'但尚未可访问",
+      "无法核验实验细节和声明"
+    ],
+    "suggested_sections": [
+      "data"
+    ],
+    "suggested_topics": [
+      "humanoid",
+      "dataset",
+      "dexterous-manipulation",
+      "tactile"
+    ],
+    "review_status": "deferred"
+  },
+  {
+    "id": "arxiv-2606.30749",
+    "arxiv_id": "2606.30749",
+    "title": "From Grasps to Dexterity: Large-Scale Grasp Pretraining for Dexterous Manipulation",
+    "paper_url": "https://arxiv.org/abs/2606.30749",
+    "first_publication": "2026-06-29",
+    "last_revision": null,
+    "authors": [
+      "Ying Yuan",
+      "Xinyu Liu",
+      "Sriram Krishna",
+      "David Held"
+    ],
+    "organizations": [
+      "Carnegie Mellon University"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.30749",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "robot",
+      "diffusion policy",
+      "imitation learning",
+      "dexterous manipulation",
+      "manipulation",
+      "trajectory",
+      "grasp",
+      "dexterous"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对灵巧操作中大规模抓取预训练的应用。构建DexCraft基准——6个关节工具使用任务。仿真和真实机器人实验。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv full HTML at https://ar5iv.labs.arxiv.org/html/2606.30749。已读取 Introduction, Method, Experiments 章节。"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "首次将大规模灵巧抓取数据集（355k轨迹）用于功能性工具使用的预训练。层次化模仿学习框架（高层手子目标预测+低层目标条件控制器），抓取预训练低层控制器后在下游任务微调。引入DexCraft基准。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "DexCraft仿真基准6个关节工具使用任务。真实机器人实验：完整任务成功率较DP3提升33.3个百分点。层次化策略优于端到端扩散策略和从头训练的层次化策略。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已读取，Introduction, Method, Experiments等章节已覆盖。"
+      }
+    },
+    "scores": {
+      "relevance": 18,
+      "novelty": 15,
+      "evidence_quality": 15,
+      "potential_impact": 13,
+      "board_information_gain": 7,
+      "reproducibility": 7,
+      "timeliness": 4,
+      "total": 79
+    },
+    "decision": "include",
+    "selection_reason": "创新性地将大规模抓取数据集（355k轨迹）重新定位为灵巧工具使用的预训练资源——这是对现有抓取数据价值的重要重新发现。核心贡献：(1)层次化IL框架（高层子目标预测+低层目标条件控制）；(2)抓取预训练→任务微调范式；(3)DexCraft基准（6个关节工具使用任务）。真实机器人上较DP3提升33.3个百分点。为灵巧操作的数据扩展提供了新范式。接近featured门槛。",
+    "risks_or_uncertainties": [
+      "DexCraft基准仅6个任务",
+      "仅一种层次化框架验证，未测试其他架构",
+      "代码未确认开源"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators"
+    ],
+    "suggested_topics": [
+      "dexterous-manipulation",
+      "pretraining",
+      "grasping",
+      "tool-use"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "Carnegie Mellon University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.30749",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://yingyuan0414.github.io/grasp2dexterity/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://yingyuan0414.github.io/grasp2dexterity/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://yingyuan0414.github.io/grasp2dexterity/"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.30290",
+    "arxiv_id": "2606.30290",
+    "title": "X-Morph: Human Motion Priors for Scalable Robot Learning Across Morphologies",
+    "paper_url": "https://arxiv.org/abs/2606.30290",
+    "first_publication": "2026-06-29",
+    "last_revision": null,
+    "authors": [
+      "Ritwik Sharma",
+      "Shivam Sood",
+      "Arhaan Jain",
+      "Shyam Charan Kesavamoorthi",
+      "Chengyang He",
+      "Guillaume Sartoretti"
+    ],
+    "organizations": [
+      "National University of Singapore"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.30290",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "robot",
+      "humanoid",
+      "manipulation",
+      "locomotion",
+      "teleoperation",
+      "quadruped",
+      "legged",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对非人形足式机器人（四足、六足、四足+操作臂）的运动和移动操作策略学习，利用人类运动数据。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv full HTML at https://ar5iv.labs.arxiv.org/html/2606.30290。已读取 Introduction, Method, Experiments 章节。"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "首个将人类运动数据跨形态迁移到非人形足式机器人的管线。跨形态重定向阶段生成运动学可行且保留意图的机器人参考轨迹，由特权RL策略跟踪并蒸馏为因果学生策略。支持视频遥操作、行为先验控制和文本条件运动生成。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "三种形态不同平台（四足、六足、四足+操作臂）验证。策略跟踪多样的重定向运动，泛化到未见人类运动，支持下游遥操作和文本条件生成。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已读取，Introduction, Method, Experiments等章节已覆盖。"
+      }
+    },
+    "scores": {
+      "relevance": 17,
+      "novelty": 16,
+      "evidence_quality": 13,
+      "potential_impact": 13,
+      "board_information_gain": 7,
+      "reproducibility": 5,
+      "timeliness": 4,
+      "total": 75
+    },
+    "decision": "include",
+    "selection_reason": "首次将人类运动数据规模化迁移到非人形足式机器人（四足/六足/四足+臂），突破了人类运动数据仅服务于人形机器人的限制。核心贡献：(1)跨形态运动重定向——保持意图和运动学可行性；(2)特权RL→因果学生蒸馏管线；(3)支持视频遥操作、行为先验和文本条件生成。三种平台验证。从数据扩展角度具有重要价值。主要风险：仅仿真验证（未见真实机器人结果），代码未确认开源。",
+    "risks_or_uncertainties": [
+      "未见真实机器人实验（仅仿真）",
+      "运动重定向质量依赖运动学映射精度",
+      "代码未确认开源"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "data"
+    ],
+    "suggested_topics": [
+      "cross-morphology",
+      "motion-transfer",
+      "legged-robots",
+      "locomotion"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "National University of Singapore",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.30290",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://maker-rat.github.io/morph/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://maker-rat.github.io/morph/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://maker-rat.github.io/morph/"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.30243",
+    "arxiv_id": "2606.30243",
+    "title": "KYON: Semi-Modular Wheel-Legged Quadruped With Agile Bimanual Capability",
+    "paper_url": "https://arxiv.org/abs/2606.30243",
+    "first_publication": "2026-06-29",
+    "last_revision": "2026-07-07",
+    "authors": [
+      "Luca Rossini",
+      "Arturo Laurenzi",
+      "Francesco Ruscelli",
+      "Yifang Zhang",
+      "Jingcheng Jiang",
+      "Giovanbattista Gravina",
+      "Lorenzo Baccelliere",
+      "Corrado Burchielli"
+    ],
+    "organizations": [
+      "Istituto Italiano di Tecnologia (IIT)"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.30243",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "robot",
+      "manipulation",
+      "locomotion",
+      "reinforcement learning",
+      "bimanual",
+      "quadruped",
+      "legged",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "混合轮腿四足机器人平台，配备双臂上半身用于移动操作任务。真实机器人实验验证动态运动和双臂操作。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv full HTML at https://ar5iv.labs.arxiv.org/html/2606.30243。已读取 Introduction, Method, Experiments 章节。"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "半模块化设计的轮腿混合四足平台。驱动器置于基座降低远端惯量。全身控制框架与RL策略结合处理非线性动力学。可重构下腿实现轮式/足式切换。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "真实机器人实验展示动态运动和双臂操作。但论文主要是硬件平台描述，算法贡献有限（全身控制+RL为较成熟组合）。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已读取，Introduction, Design, Experiments等章节已覆盖。"
+      }
+    },
+    "scores": {
+      "relevance": 15,
+      "novelty": 10,
+      "evidence_quality": 11,
+      "potential_impact": 8,
+      "board_information_gain": 5,
+      "reproducibility": 3,
+      "timeliness": 4,
+      "total": 56
+    },
+    "decision": "watch",
+    "selection_reason": "IIT的新型轮腿四足+双臂平台。硬件设计有亮点（驱动器置于基座、可重构轮腿、半模块化），但论文本质上是平台描述，算法贡献有限（全身控制+RL为标准组合）。真实实验展示有效但规模有限。适合在看板中作为硬件平台资源记录，但研究贡献不足以作为featured/include。建议放入watch队列，等待更多下游应用验证。",
+    "risks_or_uncertainties": [
+      "算法贡献有限，主要是硬件平台描述",
+      "实验规模小，多为定性展示",
+      "平台可复现性受限于硬件定制性",
+      "未见与同类平台（如ANYmal+臂）的系统对比"
+    ],
+    "suggested_sections": [
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "quadruped",
+      "loco-manipulation",
+      "hardware-platform",
+      "bimanual"
+    ],
+    "review_status": "scored"
+  },
+  {
+    "id": "arxiv-2606.28320",
+    "arxiv_id": "2606.28320",
+    "title": "WARP-RM: A Warp-Augmented Relative Progress Reward Model for Data Curation",
+    "paper_url": "https://arxiv.org/abs/2606.28320",
+    "first_publication": "2026-06-26",
+    "last_revision": "2026-07-10",
+    "authors": [
+      "Justin Yu",
+      "Andrew Goldberg",
+      "Kavish Kondap",
+      "Karim El-Refai",
+      "Ethan Ransing",
+      "Qianzhong Chen",
+      "Mac Schwager",
+      "Fred Shentu"
+    ],
+    "organizations": [
+      "Stanford University",
+      "University of California, Berkeley"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.28320",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "robot",
+      "imitation learning",
+      "manipulation",
+      "behavior cloning",
+      "teleoperation",
+      "bimanual",
+      "IL",
+      "BC"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对机器人模仿学习的数据管理——在物理双臂机器人上验证T恤折叠任务。从混合质量遥操作数据中过滤高质量样本。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv full HTML at https://ar5iv.labs.arxiv.org/html/2606.28320。已读取 Introduction, Method, Experiments 章节。"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "提出WARP——全自监督的相对进度幅度学习算法。通过时间扭曲增强（变速播放和反转）生成每帧进度目标，训练WARP-RM预测归一化经过时间。WARP-BC利用标量奖励估计加权高优势动作块。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "物理双臂机器人折叠T恤长时域任务。随数据集质量下降，WARP-BC维持19/20成功率（vanilla BC崩溃至2/20），吞吐量提升约18倍。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已读取，Introduction, Method, Experiments等章节已覆盖。"
+      }
+    },
+    "scores": {
+      "relevance": 16,
+      "novelty": 14,
+      "evidence_quality": 14,
+      "potential_impact": 11,
+      "board_information_gain": 7,
+      "reproducibility": 7,
+      "timeliness": 4,
+      "total": 73
+    },
+    "decision": "include",
+    "selection_reason": "提出WARP——全自监督的进度奖励模型，通过时间扭曲增强从成功演示中学习密集的相对进度信号。WARP-BC在混合质量数据上维持高性能（19/20 vs BC的2/20），吞吐量提升约18倍。在真实双臂机器人T恤折叠任务验证。解决模仿学习中数据质量过滤的关键实用问题。方法优雅且自监督，无需人工标注子任务边界。主要风险：仅在单任务（T恤折叠）上验证，泛化性待确认。",
+    "risks_or_uncertainties": [
+      "仅单任务（T恤折叠）验证，任务多样性不足",
+      "时间扭曲增强依赖演示质量的某些假设",
+      "代码未确认开源"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "data"
+    ],
+    "suggested_topics": [
+      "data-curation",
+      "imitation-learning",
+      "reward-model",
+      "manipulation"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "Stanford University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.28320",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "University of California, Berkeley",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.28320",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://uynitsuj.github.io/warp-rm/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://uynitsuj.github.io/warp-rm/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-or-project-page",
+        "checked_at": "2026-07-28"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.27251",
+    "arxiv_id": "2606.27251",
+    "title": "Advancing Omnimodal Embodied Agents from Isolated Skills to Everyday Physical Autonomy",
+    "paper_url": "https://arxiv.org/abs/2606.27251",
+    "first_publication": "2026-06-25",
+    "last_revision": null,
+    "authors": [
+      "Junhao Shi",
+      "Zezheng Huai",
+      "Siyin Wang",
+      "Jia Chen",
+      "Yubang Wang",
+      "Zhaoye Fei",
+      "Hechang Chen",
+      "Jingjing Gong"
+    ],
+    "organizations": [
+      "Fudan University",
+      "Shanghai Innovation Institute",
+      "Jilin University"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.27251",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "embodied",
+      "robot",
+      "VLA",
+      "manipulation",
+      "navigation",
+      "planning",
+      "autonomous",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对具身智能体的长期物理自主。40个真实世界长时域任务，两个机器人平台，协调4个IoT设备。涉及操作和导航。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv full HTML at https://ar5iv.labs.arxiv.org/html/2606.27251。已读取 Introduction, Method, Experiments 章节。"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "提出OmniAct框架——层次化异步架构，显式分离规划、记忆和验证。统一网络-物理行动空间的多模态语义规划器；事件边界驱动的自适应层次记忆实现次线性上下文增长；异步视觉抢占引擎在执行中闭合语义回路。开源代码。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "40个真实世界长时域任务，两个机器人平台，4个IoT设备。所有复杂度级别端到端成功率一致提升。100k+累积交互token下保持近平坦token消耗。中等规模开源模型达到闭源模型性能水平。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已读取，Introduction, Method, Experiments等章节已覆盖。开源代码已确认（GitHub链接在论文中）。"
+      }
+    },
+    "scores": {
+      "relevance": 18,
+      "novelty": 15,
+      "evidence_quality": 15,
+      "potential_impact": 13,
+      "board_information_gain": 7,
+      "reproducibility": 9,
+      "timeliness": 4,
+      "total": 81
+    },
+    "decision": "featured",
+    "selection_reason": "构建了面向持久具身自主的OmniAct框架——将网络和物理行动空间统一的层次化异步架构。核心贡献：(1)统一行动空间的多模态语义规划器；(2)事件边界驱动的自适应层次记忆实现次线性上下文增长（关键创新）；(3)异步视觉抢占引擎在物理执行中闭合语义回路；(4)已开源代码。40个真实世界长时域任务上一致提升，中等开源模型达闭源水平，100k+token下内存近常数。将具身智能从孤立技能推进到日常物理自主。",
+    "risks_or_uncertainties": [
+      "任务设计偏向家庭场景，工业/户外泛化待验证",
+      "层次架构复杂度较高，工程门槛大"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "embodied-agents",
+      "long-horizon",
+      "hierarchical",
+      "memory",
+      "vla"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "Fudan University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.27251",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Shanghai Innovation Institute",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.27251",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Jilin University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.27251",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://huaizz-shawen.github.io/OmniAct",
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": "https://github.com/EmbodiedForge/RAS_interactivate_planner",
+        "status": "verified",
+        "accessible": true,
+        "verification_method": "github-api",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://api.github.com/repos/EmbodiedForge/RAS_interactivate_planner"
+      },
+      {
+        "kind": "project",
+        "url": "https://huaizz-shawen.github.io/OmniAct",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-or-project-page",
+        "checked_at": "2026-07-28"
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": "https://github.com/EmbodiedForge/RAS_interactivate_planner",
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.25575",
+    "arxiv_id": "2606.25575",
+    "title": "One Body, Two Minds: Variable Autonomy Approach for a Co-embodied Robotic Hand",
+    "paper_url": "https://arxiv.org/abs/2606.25575",
+    "first_publication": "2026-06-24",
+    "last_revision": null,
+    "authors": [
+      "Piotr Koczy",
+      "Yuchong Zhang",
+      "Danica Kragic",
+      "Michael C. Welle"
+    ],
+    "organizations": [
+      "KTH Royal Institute of Technology",
+      "INCAR Robotics"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.25575",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "embodied",
+      "robot",
+      "diffusion policy",
+      "grasping",
+      "grasp",
+      "bimanual",
+      "autonomous",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对可穿戴机器人手的共具身与可变自主。用户研究44名参与者执行5个双臂任务。物理机器人系统。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv full HTML at https://ar5iv.labs.arxiv.org/html/2606.25575。已读取 Introduction, Method, Experiments 章节。"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "提出'共具身+可变自主'新范式——人和机器人共享同一物理身体，在不同任务阶段以不同自主级别运行。可穿戴机器人手有自己'心智'。LfD视觉运动扩散策略实现自主抓取，头手势控制工具操作。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "44名参与者用户研究。完成时间改进23.3%（p<0.001，Cohen's d=0.94），最佳策略变体93.6%任务成功率，接受度评分高（5.70/7）。统计检验充分。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已读取，Introduction, Method, User Study等章节已覆盖。"
+      }
+    },
+    "scores": {
+      "relevance": 16,
+      "novelty": 16,
+      "evidence_quality": 15,
+      "potential_impact": 10,
+      "board_information_gain": 8,
+      "reproducibility": 5,
+      "timeliness": 4,
+      "total": 74
+    },
+    "decision": "include",
+    "selection_reason": "提出人机'共具身+可变自主'新范式——区别于传统共享自主中的连续协商，人与机器人共享同一物理身体并按任务阶段切换自主级别。核心贡献：(1)共具身可穿戴机器人手设计；(2)从互自主（搜索/抓取）到人主导（操作）的自主级别切换；(3)头手势控制+释放手势否决权。44人用户研究统计充分，接受度高。为人机协作提供了新颖的具身交互视角。",
+    "risks_or_uncertainties": [
+      "用户研究为实验室环境，长期使用效果未知",
+      "硬件为定制原型，可复现性有限",
+      "仅5种工具类任务"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "human-robot-interaction",
+      "co-embodiment",
+      "variable-autonomy",
+      "assistive-robotics"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "KTH Royal Institute of Technology",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.25575",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "INCAR Robotics",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.25575",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://co-embodiment.github.io/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://co-embodiment.github.io/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-or-project-page",
+        "checked_at": "2026-07-28"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.25295",
+    "arxiv_id": "2606.25295",
+    "title": "DynaMOMA: Instantaneous Prediction of Grasp Poses for Mobile Manipulation of Dynamic Objects",
+    "paper_url": "https://arxiv.org/abs/2606.25295",
+    "first_publication": "2026-06-24",
+    "last_revision": null,
+    "authors": [
+      "Zhinan Yu",
+      "Junyan Xu",
+      "Jiazhao Zhang",
+      "Zheng Qin",
+      "Yijie Tang",
+      "Yuhang Huang",
+      "Yihan Cao",
+      "Zhiyuan Yu"
+    ],
+    "organizations": [
+      "Peking University",
+      "Wuhan University",
+      "Chinese Academy of Sciences"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.25295",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "robot",
+      "mobile manipulation",
+      "manipulation",
+      "grasping",
+      "reinforcement learning",
+      "trajectory",
+      "grasp",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对移动操作中动态物体的抓取。移动机械臂（移动基座+臂）协调抓取持续运动的目标物体。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv full HTML at https://ar5iv.labs.arxiv.org/html/2606.25295。已读取 Introduction, Method, Experiments 章节。"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "提出DynaMOMA框架——基于锚点的扩散模型预测时序一致的短时域抓取轨迹（条件于历史观测）。预测轨迹编码为紧凑特征输入全身RL策略进行动态抓取。引入预期引导奖励使策略具有预测性抓取视野。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "仿真实验验证移动操作动态抓取。方法组件消融证明各模块贡献。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已读取，Introduction, Method, Experiments等章节已覆盖。"
+      }
+    },
+    "scores": {
+      "relevance": 17,
+      "novelty": 13,
+      "evidence_quality": 12,
+      "potential_impact": 9,
+      "board_information_gain": 6,
+      "reproducibility": 4,
+      "timeliness": 4,
+      "total": 65
+    },
+    "decision": "include",
+    "selection_reason": "针对移动操作中动态物体抓取这一挑战性问题，提出DynaMOMA——锚点扩散模型预测时序一致抓取轨迹+全身RL控制。预测-控制耦合设计合理，预期引导奖励赋予策略预测性抓取视野。仿真结果验证有效。方法对动态移动操作有实用价值。在include下边界附近，主要因为仅仿真验证和无真实机器人实验。",
+    "risks_or_uncertainties": [
+      "仅仿真实验，无真实机器人验证",
+      "动态物体运动模式可能受限",
+      "代码未确认开源"
+    ],
+    "suggested_sections": [
+      "algorithms"
+    ],
+    "suggested_topics": [
+      "mobile-manipulation",
+      "dynamic-grasping",
+      "diffusion-model",
+      "reinforcement-learning"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "Peking University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.25295",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Wuhan University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.25295",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Chinese Academy of Sciences",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.25295",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.24450",
+    "arxiv_id": "2606.24450",
+    "title": "NoContactNoWorries: Estimating Contact through Vision and Proprioception for In-Hand Dexterous Manipulation",
+    "paper_url": "https://arxiv.org/abs/2606.24450",
+    "first_publication": "2026-06-23",
+    "last_revision": null,
+    "authors": [
+      "Soham Patil",
+      "Avirup Das",
+      "Sourabh Bhosale",
+      "Spandan Roy"
+    ],
+    "organizations": [
+      "International Institute of Information Technology Hyderabad",
+      "University of Manchester"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.24450",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "embodied",
+      "robot",
+      "dexterous manipulation",
+      "manipulation",
+      "reinforcement learning",
+      "dexterous",
+      "tactile",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对手中灵巧操作的接触估计。仿真和真实机器人实验，RGB-D视觉+本体感觉推断接触状态以支持下RL重定向任务。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv full HTML at https://ar5iv.labs.arxiv.org/html/2606.24450。已读取 Introduction, Method, Experiments 章节。"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "研究从视觉和本体感觉推断接触的可行性——一种替代触觉硬件的可扩展方案。Transformer多模态框架融合RGB-D和本体感觉预测二元接触状态作为伪触觉信号。单个模型跨多物体训练并泛化到新物体。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "仿真和真实机器人实验。接触预测模型跨多物体训练和支持下游RL代理手中物体重定向，泛化到新物体。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已读取，Introduction, Method, Experiments等章节已覆盖。"
+      }
+    },
+    "scores": {
+      "relevance": 17,
+      "novelty": 14,
+      "evidence_quality": 13,
+      "potential_impact": 10,
+      "board_information_gain": 7,
+      "reproducibility": 5,
+      "timeliness": 4,
+      "total": 70
+    },
+    "decision": "include",
+    "selection_reason": "探索从视觉+本体感觉推断接触作为触觉替代方案的可扩展路径。核心贡献：(1)Transformer多模态框架融合RGB-D和本体感觉预测二元接触；(2)伪触觉信号支持下RL手中物体重定向；(3)跨物体泛化。为触觉感知的规模化提供新思路——不依赖昂贵触觉硬件。方法实用，在灵巧操作中降低硬件依赖。",
+    "risks_or_uncertainties": [
+      "仅二元接触估计（非力/力矩等细粒度信息）",
+      "真实实验规模有限",
+      "代码未确认开源"
+    ],
+    "suggested_sections": [
+      "algorithms"
+    ],
+    "suggested_topics": [
+      "dexterous-manipulation",
+      "contact-estimation",
+      "tactile-sensing",
+      "in-hand"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "International Institute of Information Technology Hyderabad",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.24450",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "University of Manchester",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.24450",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://soham2560.github.io/no-contact-no-worries/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://soham2560.github.io/no-contact-no-worries/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://soham2560.github.io/no-contact-no-worries/"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.23623",
+    "arxiv_id": "2606.23623",
+    "title": "dVLA-RL: Reinforcement Learning over Denoising Trajectories for Discrete Diffusion Vision-Language-Action Models",
+    "paper_url": "https://arxiv.org/abs/2606.23623",
+    "first_publication": "2026-06-22",
+    "last_revision": null,
+    "authors": [
+      "Yuhao Wu",
+      "Yitian Liu",
+      "Weijie Shen",
+      "Mishuo Han",
+      "Wenjie Xu",
+      "Haotian Liang",
+      "Zhongshan Liu",
+      "Yinan Mao"
+    ],
+    "organizations": [
+      "Tsinghua University",
+      "Shanghai Jiao Tong University"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.23623",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "generalist",
+      "manipulation",
+      "reinforcement learning",
+      "trajectory",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对离散扩散VLA模型的RL后训练用于机器人操作任务。在多个操作基准上评估。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv full HTML at https://ar5iv.labs.arxiv.org/html/2606.23623。已读取 Introduction, Method, Experiments 章节。"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "首次探索离散扩散VLA的RL后训练。针对dVLAs的边际概率特性设计RL奖励形式——在去噪轨迹上而非最终动作上计算奖励，解决离散扩散的中间步骤奖励分配问题。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "在机器人操作基准上验证RL后训练提升离散扩散VLA性能。展示了RL对dVLAs的可行性和有效性。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已读取，Introduction, Method, Experiments等章节已覆盖。"
+      }
+    },
+    "scores": {
+      "relevance": 17,
+      "novelty": 15,
+      "evidence_quality": 12,
+      "potential_impact": 11,
+      "board_information_gain": 7,
+      "reproducibility": 5,
+      "timeliness": 4,
+      "total": 71
+    },
+    "decision": "include",
+    "selection_reason": "首次探索离散扩散VLA模型的RL后训练——解决离散扩散中间步骤奖励分配的关键挑战。技术创新：(1)在去噪轨迹上而非最终动作上计算RL奖励；(2)适配dVLAs边际概率特性的奖励设计。填补了VLA RL后训练的一个细分空白（之前工作主要在连续扩散VLA上）。实验证明可行性。",
+    "risks_or_uncertainties": [
+      "实验规模相对有限",
+      "仅仿真验证",
+      "离散扩散VLA生态尚早期，受众可能有限"
+    ],
+    "suggested_sections": [
+      "algorithms"
+    ],
+    "suggested_topics": [
+      "vla",
+      "discrete-diffusion",
+      "reinforcement-learning"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "Tsinghua University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.23623",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Shanghai Jiao Tong University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.23623",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2607.09701",
+    "arxiv_id": "2607.09701",
+    "title": "EgoSteer: A Full-Stack System Towards Steerable Dexterous Manipulation from Egocentric Videos",
+    "paper_url": "https://arxiv.org/abs/2607.09701",
+    "first_publication": "2026-06-21",
+    "last_revision": null,
+    "authors": [
+      "Yifan Zhong",
+      "Zhang Chen",
+      "Tianrui Guan",
+      "Fanlian Zeng",
+      "Yuyao Ye",
+      "Tianjia He",
+      "Ka Nam Lui",
+      "Jiayi Li"
+    ],
+    "organizations": [
+      "Peking University",
+      "PKU-PsiBot Joint Lab",
+      "University of Pennsylvania"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://arxiv.org/html/2607.09701",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "robot",
+      "VLA",
+      "generalist",
+      "dexterous manipulation",
+      "manipulation",
+      "teleoperation",
+      "dexterous",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对灵巧手VLA的可操控性——从自我中心视频预训练到真实机器人后训练的全栈系统。40+任务，两种具身，真实机器人验证。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "arXiv实验性HTML全文可访问：https://arxiv.org/html/2607.09701 (498KB)。ar5iv为摘要页但arXiv HTML提供完整内容。已读取 Introduction, Method, Experiments 章节。"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "全栈系统：EgoSmith数据管线将野外自我中心视频整理为9.6K小时高质量预训练数据（吞吐量提升9倍，精度优于SOTA）；统一机器人栈支持遥操作和人在回路修正；世界模型增强的VLA（EgoSteer）在优化基础设施上训练。预训练+微调+DAgger优化。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "40+多样化任务中鲁棒执行自由形式指令，展示故障恢复、灵巧性和泛化。预训练模型few-shot适应复杂长时域任务（含盒子折叠），两种具身75+%成功率。开源系统、数据和模型。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "arXiv实验性HTML全文已读取。Introduction, Method, Experiments主要章节均已覆盖。代码/数据/模型确认开源。"
+      }
+    },
+    "scores": {
+      "relevance": 19,
+      "novelty": 17,
+      "evidence_quality": 16,
+      "potential_impact": 14,
+      "board_information_gain": 8,
+      "reproducibility": 9,
+      "timeliness": 3,
+      "total": 86
+    },
+    "decision": "featured",
+    "selection_reason": "全栈系统解决灵巧手VLA可操控性瓶颈——从野外自我中心视频规模化预训练到真实机器人部署的完整管线。核心贡献：(1)EgoSmith数据管线——9.6K小时高质量预训练数据，9倍吞吐量且精度优于SOTA；(2)统一机器人栈（遥操作+人在回路修正）；(3)世界模型增强VLA架构；(4)开源系统、数据和模型。40+任务、两种具身、75+%长时域成功率。将人类数据利用、灵巧操作和VLA三个方向有机整合。相较看板中其他VLA工作，EgoSteer的端到端数据-训练-部署管线完整性突出。",
+    "risks_or_uncertainties": [
+      "世界模型增强的具体增益需进一步消融验证",
+      "自我中心视频预训练质量依赖视频筛选管线"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "vla",
+      "dexterous-manipulation",
+      "egocentric-data",
+      "world-model",
+      "steerability"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "Peking University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2607.09701",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "PKU-PsiBot Joint Lab",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2607.09701",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "University of Pennsylvania",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2607.09701",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://egosteer.github.io/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://egosteer.github.io/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-or-project-page",
+        "checked_at": "2026-07-28"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.21496",
+    "arxiv_id": "2606.21496",
+    "title": "Decoupling the Declarative from the Procedural in Vision-Language-Action Models",
+    "paper_url": "https://arxiv.org/abs/2606.21496",
+    "first_publication": "2026-06-19",
+    "last_revision": null,
+    "authors": [
+      "Nikolaos Tsagkas",
+      "Andreas Sochopoulos",
+      "Chris Xiaoxuan Lu",
+      "Oisin Mac Aodha",
+      "Alexandros Kouris"
+    ],
+    "organizations": [
+      "Samsung AI Center"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.21496",
+    "keyword_score": 8,
+    "keyword_hits": [
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "generalist",
+      "robot dataset",
+      "manipulation",
+      "behavior cloning",
+      "IL"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对VLA模型的机器人操作策略泛化——零样本技能迁移到不相似未见物体。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv full HTML at https://ar5iv.labs.arxiv.org/html/2606.21496。已读取 Introduction, Method, Experiments 章节。"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "识别当前VLA的根本瓶颈——声明性知识（概念/实体语义）与程序性知识（如何执行）的纠缠。提出w2VLA通过重构信息流解决此问题：用视觉/空间/技能信息以可组合可解释方式调制机器人状态序列，而非将所有多模态token送入不透明的大Transformer动作专家。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "展示声明性-程序性解耦后鲁棒行为克隆和前所未有的零样本技能迁移能力——跨不相似未见物体。与主流SOTA VLA架构对比。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML全文已读取，Introduction, Method, Experiments等章节已覆盖。"
+      }
+    },
+    "scores": {
+      "relevance": 17,
+      "novelty": 16,
+      "evidence_quality": 13,
+      "potential_impact": 13,
+      "board_information_gain": 7,
+      "reproducibility": 5,
+      "timeliness": 3,
+      "total": 74
+    },
+    "decision": "include",
+    "selection_reason": "深刻洞察当前VLA模型泛化瓶颈——声明性知识与程序性知识的纠缠——并提出w2VLA通过重构信息流实现解耦。核心贡献：(1)识别VLA中知识纠缠的理论问题；(2)模块化设计——用视觉/空间/技能信息可组合调制而非全token送入大Transformer；(3)展示零样本技能迁移到不相似物体的能力。理论洞见深刻，设计思路清晰，对VLA架构设计有启发意义。",
+    "risks_or_uncertainties": [
+      "实验规模可能有限（摘要未详述任务数量）",
+      "仅仿真验证",
+      "代码未确认开源"
+    ],
+    "suggested_sections": [
+      "algorithms"
+    ],
+    "suggested_topics": [
+      "vla",
+      "skill-transfer",
+      "representation-learning",
+      "modular"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "Samsung AI Center",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.21496",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://tsagkas.github.io/w2vla",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://tsagkas.github.io/w2vla",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-or-project-page",
+        "checked_at": "2026-07-28"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  }
+]

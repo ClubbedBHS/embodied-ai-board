@@ -1,0 +1,197 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.14218",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Universal Manipulation Exoskeleton: Learning Compliant Whole-body Policies with Real-time Torque Feedback",
+  "title_zh": "UME：用实时扭矩反馈学习柔顺全身策略的通用操作外骨骼",
+  "abstract": "For robots to work safely in household environments, they need to be compliant and react to torque and force feedback during contact. However, the majority of existing data collection pipelines still lack the ability to capture force and torque data for learning active compliant policies. In this paper, we present Universal Manipulation Exoskeleton (UME), an upper-limb exoskeleton that provides real-time haptic torque feedback while recording whole-arm configurations and joint torque signals for",
+  "paper_url": "https://arxiv.org/abs/2606.14218",
+  "pdf_url": "https://arxiv.org/pdf/2606.14218",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Litian Liang",
+      "affiliations": []
+    },
+    {
+      "name": "Jingxi Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Xinda Qi",
+      "affiliations": []
+    },
+    {
+      "name": "Yujun Cai",
+      "affiliations": []
+    },
+    {
+      "name": "Houzhu Ding",
+      "affiliations": []
+    },
+    {
+      "name": "Luqi Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Zhixin Sun",
+      "affiliations": []
+    },
+    {
+      "name": "Jyh-Herng Chow",
+      "affiliations": []
+    },
+    {
+      "name": "Ming Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Mark Cutkosky",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "stanforduniversity",
+      "name": "Stanford University",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-12",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data",
+      "infrastructure"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "首个集成实时扭矩反馈的上肢外骨骼遥操作系统。核心贡献：(1)透明扭矩反馈使操作员可凭触觉感知接触力/力矩，实现蒙眼操作和柔顺策略学习；(2)通用重定向算法支持OpenArm(7DoF)、Franka(7DoF)、X-ARM(6DoF)三种机器人无缝切换；(3)嵌入式IMU支持移动操作遥操作；(4)验证了力介导盒子翻转、视觉遮挡盒子推动等独特能力。相较于看板中已有的数据采集接口(UMI, RealDexUMI)，UME从力/扭矩反馈角度提供了独特维度，使学习的策略天然具有柔顺性。Ant Group + Stanford合作。主要风险：商业公司(Ant Group)参与，硬件可获取性不确定；扭矩反馈仅在特定末端执行器上验证。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.14218",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction and Related Work",
+      "2 Method",
+      "2.1 Coaxial Actuator Configuration",
+      "2.2 Universal Retargeting",
+      "2.3 Portable Mobile Manipulation Teleoperation",
+      "2.4 Learning Autonomous Whole-body Active Compliant Policies",
+      "3 Experiments",
+      "3.1 Autonomous Policy: Box Pushing",
+      "3.2 Autonomous Policy: Box Flipping",
+      "3.3 Autonomous Policy: GPU Picking",
+      "3.4 Autonomous Policy: Fridge Drink Retrieval",
+      "3.5 Data Collection Throughput and Universal Teleoperation",
+      "4 Conclusion",
+      "5 Limitations and Future Work",
+      "Acknowledgments",
+      "References",
+      "Appendix A Extended Related Work",
+      "Appendix B Extended Analysis on Fridge Drink Retrieval",
+      "Appendix C Extended Details on Universal Retargeting",
+      "C.1 Exoskeleton Commanded Torque",
+      "C.2 Teleoperating X-ARM and Franka",
+      "Appendix D Extended Details on the Learning Algorithm",
+      "Appendix E Hardware Details",
+      "E.1 UME Motors, Materials and Weight",
+      "E.2 UME Bill of Materials",
+      "E.3 UME Range of Motion",
+      "E.4 In-House Mobile Manipulator Platform",
+      "E.5 In-House Mobile Manipulator Bill of Materials",
+      "Appendix F User Study",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.14218"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.14218"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Stanford University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.14218",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

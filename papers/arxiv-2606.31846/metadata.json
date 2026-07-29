@@ -1,0 +1,192 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.31846",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Z-1: Efficient Reinforcement Learning for Vision-Language-Action Models",
+  "title_zh": "Z-1：面向视觉—语言—动作模型的高效强化学习",
+  "abstract": "Vision-Language-Action (VLA) models offer a promising framework for robotic manipulation by connecting language instructions, visual observations, and continuous control. However, most existing policies remain limited by behavior cloning or supervised fine-tuning (SFT) from fixed demonstrations, which provides limited opportunity to improve from the policy's own failures. In this paper, we present Z-1, a reinforcement learning (RL) post-training framework for flow-based VLA models. Built on top ",
+  "paper_url": "https://arxiv.org/abs/2606.31846",
+  "pdf_url": "https://arxiv.org/pdf/2606.31846",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Lang Cao",
+      "affiliations": []
+    },
+    {
+      "name": "Renhong Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Luyi Li",
+      "affiliations": []
+    },
+    {
+      "name": "Peng Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Mofan Peng",
+      "affiliations": []
+    },
+    {
+      "name": "Yitong Li",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "zioneerrobot",
+      "name": "Zioneer Robot",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-30",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "reinforcement-learning"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "系统性地将GRPO应用于基于流的VLA模型（π0.5）后训练，仅用公开数据实现显著性能提升。核心贡献：(1)共享前缀rollout构建+树结构轨迹分支提升在线优化效率；(2)完成度感知奖励校准；(3)VLM和Action Expert选择性联合训练。在24个RoboCasa任务上80.6%成功率，较SFT提升13.2个百分点。展示了RL后训练对VLA的重要价值。主要风险：仅仿真评估（RoboCasa），无真实机器人验证；仅基于π0.5单一模型。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.31846",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "2.1 Sota Models over RoboCasa",
+      "2.2 RL Post-Training for VLA Models",
+      "3 Methodology",
+      "3.1 Two-Stage Training",
+      "3.1.1 Stage 1: Per-scene SFT",
+      "3.1.2 Stage 2: Per-task GRPO post-training",
+      "3.2 Shared-Prefix GRPO",
+      "3.3 Tree-Structured Prefix Branching",
+      "3.4 Success-Aware Reward Decay",
+      "4 Experiments",
+      "4.1 Experimental Setup",
+      "4.1.1 Base model and training pipeline",
+      "4.1.2 RL implementation",
+      "4.1.3 Evaluation protocol",
+      "4.1.4 Baselines and Comparisons",
+      "4.2 Main Results",
+      "4.2.1 RL Improvements over Different Tasks",
+      "4.3 Ablation and Analysis",
+      "4.3.1 Effect of Shared Prefix and Prefix Tree",
+      "4.3.2 Effect of Selective VLMâAction Expert Joint Training",
+      "4.3.3 Effect of Success-Aware Reward Decay",
+      "5 Conclusion",
+      "References",
+      "Appendix A Full Author List and Contributions",
+      "Appendix B Full Task-wise Results",
+      "Appendix C Training and Evaluation Details",
+      "C.1 SFT Training",
+      "C.2 Checkpoint Selection",
+      "C.3 GRPO Post-training",
+      "C.4 Ablation-specific Settings",
+      "C.5 Evaluation Protocol Details",
+      "Appendix D Additional Method Details",
+      "D.1 Tree-Structured Prefix Branching Details",
+      "D.2 Success-Aware Reward Decay Details",
+      "D.3 Flow-SDE Likelihood Ratio for GRPO",
+      "D.4 Implementation of Selective VLMâAction Expert Joint Training",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.31846"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.31846"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Zioneer Robot",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.31846",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

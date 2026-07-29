@@ -1,0 +1,229 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.09701",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "EgoSteer: A Full-Stack System Towards Steerable Dexterous Manipulation from Egocentric Videos",
+  "title_zh": "EgoSteer：面向可操控灵巧操作的自我中心视频全栈系统",
+  "abstract": "Steerability is a defining capability of generalist robot policies, yet remains largely absent in dexterous-hand systems for lack of large-scale, language-aligned, and action-accurate demonstration data. To address this bottleneck, we present a full-stack system that scales dexterous VLA pre-training from egocentric human videos and enables data-efficient real-robot post-training. It integrates EgoSmith, a data pipeline that curates in-the-wild egocentric videos into 9.6K hours of high-quality p",
+  "paper_url": "https://arxiv.org/abs/2607.09701",
+  "pdf_url": "https://arxiv.org/pdf/2607.09701",
+  "project_url": "https://egosteer.github.io/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yifan Zhong",
+      "affiliations": []
+    },
+    {
+      "name": "Zhang Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Tianrui Guan",
+      "affiliations": []
+    },
+    {
+      "name": "Fanlian Zeng",
+      "affiliations": []
+    },
+    {
+      "name": "Yuyao Ye",
+      "affiliations": []
+    },
+    {
+      "name": "Tianjia He",
+      "affiliations": []
+    },
+    {
+      "name": "Ka Nam Lui",
+      "affiliations": []
+    },
+    {
+      "name": "Jiayi Li",
+      "affiliations": []
+    },
+    {
+      "name": "Tingrui Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Ruilin Yan",
+      "affiliations": []
+    },
+    {
+      "name": "Xinhao Ji",
+      "affiliations": []
+    },
+    {
+      "name": "Guangyu Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Wenjie Lou",
+      "affiliations": []
+    },
+    {
+      "name": "Jiayuan Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Yuanpei Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Yaodong Yang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "pekinguniversity",
+      "name": "Peking University",
+      "role": "primary"
+    },
+    {
+      "id": "pkupsibotjointlab",
+      "name": "PKU-PsiBot Joint Lab",
+      "role": "collaborator"
+    },
+    {
+      "id": "universityofpennsylvania",
+      "name": "University of Pennsylvania",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-21",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "topics": [
+      "vla",
+      "world-model"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_reason": "全栈系统解决灵巧手VLA可操控性瓶颈——从野外自我中心视频规模化预训练到真实机器人部署的完整管线。核心贡献：(1)EgoSmith数据管线——9.6K小时高质量预训练数据，9倍吞吐量且精度优于SOTA；(2)统一机器人栈（遥操作+人在回路修正）；(3)世界模型增强VLA架构；(4)开源系统、数据和模型。40+任务、两种具身、75+%长时域成功率。将人类数据利用、灵巧操作和VLA三个方向有机整合。相较看板中其他VLA工作，EgoSteer的端到端数据-训练-部署管线完整性突出。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "代码/资产链接未独立验证",
+      "中文标题待翻译"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "ar5iv-html",
+    "fulltext_url": "https://arxiv.org/html/2607.09701",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Introduction",
+      "Method",
+      "Experiments",
+      "Conclusion"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-24"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.09701"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Peking University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.09701",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "PKU-PsiBot Joint Lab",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.09701",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University of Pennsylvania",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.09701",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://egosteer.github.io/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-or-project-page",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

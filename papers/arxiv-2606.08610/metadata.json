@@ -1,0 +1,198 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.08610",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "HARBOR: A Harness Framework for Agentic Robot Reinforcement Learning",
+  "title_zh": "HARBOR：面向智能体机器人强化学习的 Harness 框架",
+  "abstract": "Reinforcement learning (RL) has become a powerful paradigm for robot learning, particularly in sim-to-real settings, but its broader adoption remains limited by the engineering pipeline surrounding the algorithms. Building tasks, shaping rewards, and tuning hyperparameters require substantial expert effort, making RL workflows costly and difficult to scale. We introduce HARBOR, an agentic framework that frames robot RL automation as a harness-engineering problem: given a simulator codebase and a",
+  "paper_url": "https://arxiv.org/abs/2606.08610",
+  "pdf_url": "https://arxiv.org/pdf/2606.08610",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Zechu Li",
+      "affiliations": []
+    },
+    {
+      "name": "Yufeng Jin",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaoyang Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Puze Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Vignesh Prasad",
+      "affiliations": []
+    },
+    {
+      "name": "Carlo D'Eramo",
+      "affiliations": []
+    },
+    {
+      "name": "Georgia Chalvatzaki",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "columbiauniversity",
+      "name": "Columbia University",
+      "role": "primary"
+    },
+    {
+      "id": "hondaresearchinstitute",
+      "name": "Honda Research Institute",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-07",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "infrastructure",
+      "simulators",
+      "algorithms"
+    ],
+    "topics": [
+      "sim-to-real",
+      "reinforcement-learning"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "将机器人RL工作流自动化视为'harness-engineering'问题，提出HARBOR智能体框架。核心贡献：(1)将任务分解为有界阶段由专门智能体执行；(2)标准化命令-工件-门-知识体系；(3)去中心化并行试验+跨运行经验学习。在6个基准16个任务上端到端自动化，奖励设计匹配或超越专家配置，策略可迁移到真实机器人。填补了看板中RL基础设施自动化方向的重要空白。主要风险：智能体框架依赖LLM API成本，开源状态未确认。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.08610",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Robot RL Automation as a Harness Engineering Problem",
+      "3 HARBOR: An Agentic RL Harness Framework for Robot Learning",
+      "4 Experiments",
+      "4.1 Automated End-to-End Simulation Pipeline and Real-world Validation",
+      "4.2 RL Algorithm Tuning",
+      "4.3 Ablations and Efficiency Analysis",
+      "5 Conclusion, Limitations, and Future Work",
+      "Acknowledgments",
+      "References",
+      "Appendix A Related Work",
+      "Appendix B Background: Harness Engineering",
+      "Appendix C List of Agents and Commands",
+      "C.1 Dependency-generator (Stage: Dependency generation/package installation)",
+      "C.2 Benchmark-generator (Stage: Benchmark scaffolding)",
+      "C.3 Task-generator (Stage: Task generation)",
+      "C.4 Reward-generator (Stage: Reward generation)",
+      "C.5 DR-generator (Stage: Domain randomization generation)",
+      "C.6 RL-integration-generator (Stage: RL algorithm integration)",
+      "C.7 RL-tuning-agent (Stage: Hyper-parameter tuning)",
+      "Appendix D Experiments Details",
+      "D.1 Real-world Experiment Setup",
+      "D.2 Task Prompts for End-to-End Task Generation",
+      "D.3 Performance for End-to-end Simulation Experiments",
+      "D.4 Detailed Results for RL-Tuning Experiments",
+      "D.5 Ablation Setup and Profiling Details",
+      "D.6 Sonnet Ablation",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.08610"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.08610"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Columbia University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.08610",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Honda Research Institute",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.08610",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

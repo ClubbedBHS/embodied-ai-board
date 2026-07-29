@@ -1,0 +1,209 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.13672",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "WEAVER, Better, Faster, Longer: An Effective World Model for Robotic Manipulation",
+  "title_zh": "WEAVER：更好、更快、更长的机器人操作世界模型",
+  "abstract": "The potential impacts of world models (WMs, i.e., learned simulators) on robotics are far-reaching -- policy evaluation, policy improvement, and test-time planning -- all with limited real-world interaction. To unlock these downstream capabilities, a WM needs to jointly satisfy three desiderata: $\\textit{(i)}$ fidelity (i.e., producing simulated trajectories that correlate with reality), $\\textit{(ii)}$ consistency (i.e., producing simulated trajectories that are coherent over long horizons), an",
+  "paper_url": "https://arxiv.org/abs/2606.13672",
+  "pdf_url": "https://arxiv.org/pdf/2606.13672",
+  "project_url": "https://arnavkj1995.github.io/WEAVER/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Arnav Kumar Jain",
+      "affiliations": []
+    },
+    {
+      "name": "Yilin Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Jesse Farebrother",
+      "affiliations": []
+    },
+    {
+      "name": "Gokul Swamy",
+      "affiliations": []
+    },
+    {
+      "name": "Andrea Bajcsy",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "carnegiemellonuniversity",
+      "name": "Carnegie Mellon University",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-11",
+    "last_revision": "2026-06-16"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "simulators"
+    ],
+    "topics": [
+      "world-model"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_reason": "首个同时在fidelity、consistency、efficiency三个维度超越现有方法的机器人操作世界模型。核心贡献：(1)融合flow matching+扩散强制+KV缓存+rectified flow蒸馏实现5-10×速度提升；(2)内置潜在奖励模型和critic消除对外部VLM评判器的依赖；(3)统一支持policy evaluation(ρ=0.870相关性)、improvement(+38%成功率)、planning(+14%成功率)三个下游应用；(4)代码/模型全面开源。相较于看板中已有的WorldGym等世界模型，WEAVER首次实现了真实机器人上的端到端evaluation-improvement-planning闭环。主要风险：依赖π0.5作为基策略，新基策略需要重新训练WM；仅验证Franka单臂任务。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "中文标题待翻译"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.13672",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 WEAVER: World Estimation Across Views for Embodied Reasoning",
+      "3.1 Key Design Decisions for High Fidelity, Temporally Consistent World Model Generation",
+      "3.2 Accelerating World Model Inference Speed",
+      "3.3 Accurate and Efficient Value Estimation from the World Model",
+      "3.4 Downstream WM Applications: Evaluation, Improvement, Planning",
+      "4 Experimental Setup",
+      "5 Results",
+      "5.1 WEAVER Pareto-Dominates leading Manipulation World Models",
+      "5.2 WEAVER Enables Effective Evaluation, Improvement and Planning",
+      "5.2.1 WEAVER Enables Effective Policy Evaluation that Tightly Correlates with Reality",
+      "5.2.2 WEAVER Enables Effective Policy Improvement Without Real Interactions",
+      "5.2.3 WEAVER Enables Test-Time Planning by Balancing Inference Speed and Quality",
+      "6 Conclusion",
+      "Acknowledgments",
+      "References",
+      "Contents",
+      "Appendix A1 Robot Setup & Tasks",
+      "A1.1 Tasks Details",
+      "A1.2 Action Space",
+      "A1.2.1 Action Adapter",
+      "Appendix A2 Implementation Details",
+      "A2.1 Architecture Details",
+      "A2.2 Training Details",
+      "A2.3 Inference",
+      "Appendix A3 Additional World Model Evaluation Results",
+      "A3.1 World Model Evaluation",
+      "A3.2 Quantitative Results",
+      "A3.3 Reducing inference time with KV Cache",
+      "A3.4 Noise schedules during inference",
+      "A3.5 Finetuning",
+      "A3.6 Posttraining with Rectified Flow",
+      "Appendix A4 Additional Downstream Application Results",
+      "A4.1 Policy Evaluation Results",
+      "A4.2 Policy Improvement Results",
+      "A4.3 Test-Time Planning Results",
+      "Appendix A5 Limitations",
+      "A5.1 Partial Observability",
+      "A5.2 Complex Deformable and Dynamic Interactions",
+      "A5.3 Limited Planning Horizon at Test Time",
+      "A5.4 Data Coverage and Embodiment Diversity",
+      "A5.5 Noisy Reward Supervision",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.13672"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.13672"
+    },
+    {
+      "type": "project",
+      "url": "https://arnavkj1995.github.io/WEAVER/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Carnegie Mellon University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.13672",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://arnavkj1995.github.io/WEAVER/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://arnavkj1995.github.io/WEAVER/"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

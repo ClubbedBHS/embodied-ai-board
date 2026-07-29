@@ -1,0 +1,216 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.13677",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Mana: Dexterous Manipulation of Articulated Tools",
+  "title_zh": "Mana：铰接工具的灵巧操作",
+  "abstract": "Articulated tool manipulation remains a major challenge in dexterous robotics due to the need to coordinate internal degrees of freedom and contact-rich interactions. While prior work has largely focused on rigid objects, articulated tool use remains underexplored because of its physical complexity and the difficulty of learning functional manipulation strategies. We present Mana (Manipulation Animator), a general sim-to-real framework that reinterprets dexterous manipulation as an animation problem. Inspired by computer animation, Mana employs a coarse-to-fine pipeline that transforms procedurally-generated grasp keyframes into manipulation trajectories through motion planning and reinforcement learning. The data generation process is largely automatic, requiring only a few mouse clicks to specify functional affordances (<1 minute per tool). Across four articulated tools spanning different scales and joint types, Mana achieves zero-shot sim-to-real transfer for both grasping and in-hand manipulation, demonstrating a scalable approach to dexterous articulated tool use.",
+  "paper_url": "https://arxiv.org/abs/2606.13677",
+  "pdf_url": "https://arxiv.org/pdf/2606.13677",
+  "project_url": "https://zhaohengyin.github.io/mana",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Zhao-Heng Yin",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Guanya Shi",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Pieter Abbeel",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "C. Karen Liu",
+      "affiliations": [
+        "stanford"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "stanforduniversity",
+      "name": "Stanford University",
+      "role": "primary"
+    },
+    {
+      "id": "amazon",
+      "name": "Amazon",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-11",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "control",
+      "sim-to-real"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm",
+      "dexterous-hand"
+    ],
+    "modalities": [
+      "vision",
+      "depth",
+      "point-cloud",
+      "proprioception"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [
+      "project-page"
+    ],
+    "properties": [
+      "real-robot-evaluation",
+      "zero-shot"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 81,
+    "selection_reason": "首个将灵巧操作重新定义为动画问题的通用框架。粗到细pipeline：程序化抓取关键帧→运动规划→强化学习。4种铰接工具上实现zero-shot sim-to-real迁移。数据生成高度自动化，每个工具仅需数秒鼠标点击标注功能性affordance。为铰接工具灵巧使用提供了可扩展的scalable方案。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "4种工具的zero-shot sim-to-real具体成功率未在摘要中给出",
+      "当前仅支持非铰接物体重建（局限性中明确提到）",
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.13677",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Works",
+      "3 Mana Data System",
+      "3.1 Grasp Generator",
+      "3.2 Trajectory Generator",
+      "4 Robot System",
+      "4.1 Dexterous Manipulator Platform",
+      "4.2 Visuomotor Policy for Articulated Tool Use",
+      "5 Experiments",
+      "5.1 Setups",
+      "5.2 Main Results",
+      "5.3 Ablation Studies",
+      "5.4 Demonstrating Articulated Tool Use",
+      "6 Limitations",
+      "Acknowledgments",
+      "References",
+      "Appendix A Implementation",
+      "A.1 Enhanced Lightning Grasp",
+      "A.2 RL: Task Reward Design",
+      "A.3 RL: Domain Randomizations",
+      "A.4 RL: Training",
+      "A.5 Visuomotor Policy: Architecture",
+      "A.6 Force Simulation",
+      "A.7 Fingertip Shape Design and Fabrication",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.13677"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.13677"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Stanford University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.13677",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Amazon",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.13677",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://zhaohengyin.github.io/mana",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-or-project-page",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.11396",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "PLUME: Probabilistic Latent Unified World Modeling and Parameter Estimation for Multi-Finger Manipulation",
+  "title_zh": "PLUME：多指操作的概率潜在统一世界建模与参数估计",
+  "abstract": "Dexterous manipulation with multi-finger hands can be sensitive to physical parameters such as object shape, pose, and friction coefficients. While simulation enables large-scale data collection with known parameter values, simulation-trained policies must still handle uncertainty at deployment, where the true parameters and therefore the true dynamics are unknown. Standard domain randomization strategies may be insufficient for precise tasks like screwdriver turning, as manipulation strategies ",
+  "paper_url": "https://arxiv.org/abs/2606.11396",
+  "pdf_url": "https://arxiv.org/pdf/2606.11396",
+  "project_url": "https://plume-world-model.github.io",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Abhinav Kumar",
+      "affiliations": []
+    },
+    {
+      "name": "Soshi Iba",
+      "affiliations": []
+    },
+    {
+      "name": "Rana Soltani Zarrin",
+      "affiliations": []
+    },
+    {
+      "name": "Dmitry Berenson",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "universityofmichigan",
+      "name": "University of Michigan",
+      "role": "primary"
+    },
+    {
+      "id": "hondaresearchinstitute",
+      "name": "Honda Research Institute",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-09",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "topics": [
+      "sim-to-real"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "Novel world model approach for dexterous manipulation under parameter uncertainty. Joint belief+dynamic modeling with online inference is elegant. Hardware screwdriver turning validates sim-to-real. Outperforms offline RL and BC baselines. Fills world model gap on board.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": []
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.11396",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 Problem Statement",
+      "4 Methods",
+      "4.1 Learning Parameter Representations",
+      "4.2 History Modeling",
+      "4.3 Joint Flow Matching",
+      "4.4 Training Loop",
+      "4.5 Planning",
+      "5 Experimental Results",
+      "5.1 Baselines and Ablations",
+      "5.2 Tasks",
+      "5.3 Results",
+      "6 Limitations",
+      "7 Conclusion",
+      "References",
+      "Appendix A Attention Masking",
+      "Appendix B Training Loop",
+      "Appendix C Out-of-Distribution Detection",
+      "Appendix D Task Setup",
+      "D.1 Screwdriver Turning",
+      "D.2 Disk Flicking",
+      "D.3 Valve Turning",
+      "D.4 DexArt Bucket",
+      "Appendix E Ablations",
+      "Appendix F Further Hardware Analysis",
+      "Appendix G Timings",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.11396"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.11396"
+    },
+    {
+      "type": "model",
+      "url": "https://plume-world-model.github.io"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "University of Michigan",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.11396",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Honda Research Institute",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.11396",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://plume-world-model.github.io",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://plume-world-model.github.io/"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

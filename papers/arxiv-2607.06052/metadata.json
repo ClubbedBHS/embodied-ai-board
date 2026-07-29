@@ -47,7 +47,13 @@
       "affiliations": []
     }
   ],
-  "organizations": [],
+  "organizations": [
+    {
+      "id": "technicaluniversityofmunich",
+      "name": "Technical University of Munich",
+      "role": "primary"
+    }
+  ],
   "dates": {
     "first_publication": "2026-07-07",
     "last_revision": null
@@ -132,5 +138,45 @@
       "url": "https://arxiv.org/html/2607.06052"
     }
   ],
-  "suggested_new_tags": []
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Technical University of Munich",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.06052",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
 }

@@ -47,7 +47,13 @@
       "affiliations": []
     }
   ],
-  "organizations": [],
+  "organizations": [
+    {
+      "id": "universityofscienceandtechnologyofchina",
+      "name": "University of Science and Technology of China",
+      "role": "primary"
+    }
+  ],
   "dates": {
     "first_publication": "2026-07-06",
     "last_revision": null
@@ -137,6 +143,46 @@
       "name": "foundation-models",
       "reason": "候选筛选中出现，但尚未进入受控标签词表。",
       "evidence": "这项工作在 VLA 模型的动作条件化问题上提出 CAC-VLA 框架，通过在 VLM 内部引入潜在动作查询令牌（latent query tokens）预测粗到细的潜在动作，并使用上下文门控（context gate）自适应地将潜在动作信息注入到动作专家中。在 LIBERO（98.3%）和 LIBERO-Plus（89.5%）上取得强结果，真机 UR7e 实验（Full SR 64% vs π0.5 的 16%）验证了实际部署可行性。消融实验证实了潜在动作视野和上下文门控的重要性。"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "University of Science and Technology of China",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.04816",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
     }
   ]
 }

@@ -1,0 +1,241 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.05873",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "LadderMan: Learning Humanoid Perceptive Ladder Climbing",
+  "title_zh": "LadderMan：学习人形机器人感知爬梯",
+  "abstract": "Humanoid robots hold great promise for operating in human-centered environments, yet ladder climbing remains one of the most challenging tasks due to sparse footholds and handholds, complex whole-body coordination, and sensitivity to perception and control errors. We present LadderMan, a unified system that enables humanoid robots to robustly climb diverse ladders and perform manipulation under such constrained conditions. Our climbing policy is built on a scalable two-stage learning pipeline, where we use hybrid motion tracking to learn multiple climbing experts from a single reference motion, and distill these experts into a unified depth-based visuomotor climbing policy via hybrid imitation and reinforcement learning. To enable real-world deployment, we leverage vision foundation models to bridge the sim-to-real gap in depth perception. Building on the learned climbing policy, we further train a separate manipulation policy using a dual-agent formulation, allowing stable on-ladder manipulation via teleoperation. Experiments demonstrate that LadderMan achieves robust ladder climbing across a wide range of geometries, successfully transfers to real-world hardware in a zero-shot manner, and supports various manipulation tasks under challenging ladder constraints.",
+  "paper_url": "https://arxiv.org/abs/2606.05873",
+  "pdf_url": "https://arxiv.org/pdf/2606.05873",
+  "project_url": "https://ladderman-robot.github.io/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Siheng Zhao",
+      "affiliations": [
+        "cmu"
+      ]
+    },
+    {
+      "name": "Yuanhang Zhang",
+      "affiliations": [
+        "cmu"
+      ]
+    },
+    {
+      "name": "Ziqi Lu",
+      "affiliations": [
+        "cmu"
+      ]
+    },
+    {
+      "name": "Pieter Abbeel",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Rocky Duan",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Koushil Sreenath",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Yue Wang",
+      "affiliations": [
+        "usc"
+      ]
+    },
+    {
+      "name": "C. Karen Liu",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Guanya Shi",
+      "affiliations": [
+        "caltech"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "stanforduniversity",
+      "name": "Stanford University",
+      "role": "primary"
+    },
+    {
+      "id": "amazon",
+      "name": "Amazon",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-04",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "imitation-learning"
+    ],
+    "tasks": [
+      "humanoid-control"
+    ],
+    "platforms": [
+      "humanoid"
+    ],
+    "modalities": [
+      "vision",
+      "depth",
+      "proprioception"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [
+      "project-page"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 79,
+    "selection_reason": "首个将视觉感知驱动的强化学习应用于人形机器人爬梯任务的工作。提出混合运动追踪+混合模仿/RL两阶段训练框架，从单条参考运动学习多专家策略并蒸馏为统一深度视觉运动策略。利用视觉基础模型弥合深度感知的sim-to-real鸿沟，实现零样本迁移至真实H1人形机器人，并支持梯上遥操作。爬梯速度与人类相当（~3.4 s/rung）。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "hermes-agent",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": []
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.05873",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Works",
+      "3 Method",
+      "3.1 Learning Multiple Expert Policies from Single Reference Motion",
+      "3.2 Unified Climbing Policy via Hybrid Imitation and Reinforcement Learning",
+      "3.3 Bridging Sim-to-Real Perception Gap with Vision Foundation Model",
+      "3.4 On-Ladder Manipulation via Dual-Agent Learning",
+      "4 Experimental Results",
+      "4.1 Real-World Evaluation",
+      "4.2 Simulation Evaluation",
+      "4.3 Ablation Studies",
+      "5 Conclusion and Limitation",
+      "References",
+      "Appendix A Method",
+      "A.1 Learning Multiple Expert Policies from a Single Reference Motion",
+      "A.2 Unified Climbing Policy via Hybrid Imitation and Reinforcement Learning",
+      "A.3 Bridging the Sim-to-Real Gap",
+      "A.4 On-Ladder Manipulation via Dual-Agent Learning",
+      "Appendix B Experimental Results",
+      "B.1 Experiment Setup",
+      "B.2 Additional Results",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.05873"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.05873"
+    },
+    {
+      "type": "project",
+      "url": "https://ladderman-robot.github.io/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Stanford University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.05873",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Amazon",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.05873",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://ladderman-robot.github.io/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://ladderman-robot.github.io/"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

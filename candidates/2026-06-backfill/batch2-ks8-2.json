@@ -1,0 +1,1994 @@
+[
+  {
+    "id": "arxiv-2606.10449",
+    "title": "GuideWalk: Learning Unified Autonomous Navigation and Locomotion for Humanoid Robots across Versatile Terrains",
+    "abstract": "Humanoid robots have achieved strong locomotion capabilities, but reliable navigation on versatile terrains remains challenging because obstacle avoidance must be coordinated with dynamically feasible motion. In this work, we present GuideWalk, a unified end-to-end framework that integrates traversability-aware navigation guidance with terrain-adaptive locomotion teacher for humanoid navigation. Specifically, we introduce a navigation module that provides explicit velocity guidance, decoupling o",
+    "paper_url": "https://arxiv.org/abs/2606.10449",
+    "ks": 9,
+    "authors": [
+      "Haoxuan Han",
+      "Chen Chen",
+      "Linao Gong",
+      "Xin Yang",
+      "Hao Hu",
+      "Junhong Guo",
+      "Zhicheng He",
+      "Yao Su"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "humanoid",
+      "locomotion",
+      "navigation",
+      "reinforcement learning",
+      "behavior cloning",
+      "planning",
+      "autonomous",
+      "IL"
+    ],
+    "first_publication": "2026-06-09",
+    "last_revision": "2026-06-13",
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "organizations": [
+      "Harbin Institute of Technology"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Harbin Institute of Technology",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.10449",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://guide-walk.github.io/GuideWalk",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://guide-walk.github.io/GuideWalk",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://guide-walk.github.io/GuideWalk/"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.08775",
+    "title": "Unifying Object-Centric World Models and Diffusion Policy: A Hierarchical Framework for Multi-Stage Robotic Tasks",
+    "abstract": "Visual world models have shown great potential in learning complex system dynamics. Recent advancements leverage these models as transition functions within Model Predictive Control (MPC) frameworks to solve various control tasks. When applied to robotics, however, they are limited to single-stage tasks such as reaching or grasping, and struggle with multi-stage ones that demand complex sequential planning. In this work, we introduce WorldDP, a world model framework designed for multi-stage robo",
+    "paper_url": "https://arxiv.org/abs/2606.08775",
+    "ks": 9,
+    "authors": [
+      "Raktim Gautam Goswami",
+      "Prashanth Krishnamurthy",
+      "Yann LeCun",
+      "Farshad Khorrami"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "diffusion policy",
+      "robotics benchmark",
+      "manipulation",
+      "grasping",
+      "planning",
+      "grasp",
+      "world model",
+      "IL"
+    ],
+    "first_publication": "2026-06-07",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "organizations": [
+      "New York University"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "New York University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.08775",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.08610",
+    "title": "HARBOR: A Harness Framework for Agentic Robot Reinforcement Learning",
+    "abstract": "Reinforcement learning (RL) has become a powerful paradigm for robot learning, particularly in sim-to-real settings, but its broader adoption remains limited by the engineering pipeline surrounding the algorithms. Building tasks, shaping rewards, and tuning hyperparameters require substantial expert effort, making RL workflows costly and difficult to scale. We introduce HARBOR, an agentic framework that frames robot RL automation as a harness-engineering problem: given a simulator codebase and a",
+    "paper_url": "https://arxiv.org/abs/2606.08610",
+    "ks": 9,
+    "authors": [
+      "Zechu Li",
+      "Yufeng Jin",
+      "Xiaoyang Liu",
+      "Puze Liu",
+      "Vignesh Prasad",
+      "Carlo D'Eramo",
+      "Georgia Chalvatzaki"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "simulator",
+      "sim-to-real",
+      "manipulation",
+      "locomotion",
+      "reinforcement learning",
+      "bimanual",
+      "dexterous",
+      "IL"
+    ],
+    "first_publication": "2026-06-07",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "simulators",
+      "infrastructure"
+    ],
+    "organizations": [
+      "Columbia University",
+      "Honda Research Institute"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Columbia University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.08610",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Honda Research Institute",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.08610",
+        "location": "author affiliation block"
+      }
+    ],
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.08530",
+    "title": "GEAR-VLA: Learning Geometry-Aware Action Representations for Generalizable Robotic Manipulation",
+    "abstract": "Vision-Language-Action (VLA) models achieve strong benchmark performance but still struggle in real-world deployment with unseen objects, background shifts, and different robot embodiments. We argue that this stems from the lack of a unified geometry-aware manipulation representation, leaving existing VLAs vulnerable to low-level trajectory supervision, misaligned 3D features, and embodiment differences. To address this, we propose GEAR-VLA, a VLA framework for learning unified geometry-aware ac",
+    "paper_url": "https://arxiv.org/abs/2606.08530",
+    "ks": 9,
+    "authors": [
+      "Yuan Zhang",
+      "Shiqi Zhang",
+      "Yedong Shen",
+      "Shuai Dong",
+      "Jiajun Deng",
+      "Xin Zhang",
+      "Yuxuan Gao",
+      "Jiajia Wu"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "embodied",
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "manipulation",
+      "grasping",
+      "trajectory",
+      "grasp",
+      "IL"
+    ],
+    "first_publication": "2026-06-07",
+    "last_revision": "2026-06-10",
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "simulators",
+      "infrastructure"
+    ],
+    "organizations": [
+      "University of Science and Technology of China"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "University of Science and Technology of China",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.08530",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.08513",
+    "title": "Towards End to End Motion Planning and Execution for Autonomous Underwater Vehicles Using Reinforcement Learning",
+    "abstract": "Autonomous Underwater Vehicles (AUVs) traditionally rely on complex, heavily engineered pipelines for perception, path planning, and motion control. This paper explores the feasibility of an end-to-end Deep Reinforcement Learning (DRL) approach that maps raw sensor data directly to thruster commands, reducing manual engineering. We propose a hierarchical reinforcement learning (HRL) architecture splitting the problem into two Markov Decision Processes. A High-Level (HL) policy operating at 2Hz p",
+    "paper_url": "https://arxiv.org/abs/2606.08513",
+    "ks": 9,
+    "authors": [
+      "Elisei Shafer",
+      "Oren Gal"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "simulator",
+      "navigation",
+      "reinforcement learning",
+      "planning",
+      "trajectory",
+      "motion planning",
+      "autonomous",
+      "IL"
+    ],
+    "first_publication": "2026-06-07",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ]
+  },
+  {
+    "id": "arxiv-2606.05407",
+    "title": "MoDex: A Diffusion Policy for Sequential Multi-Object Dexterous Grasping",
+    "abstract": "This work addresses sequentially grasping multiple objects with a single dexterous hand without releasing those already held. Most dexterous grasping methods commit all of the hand's degrees of freedom to a single object, underutilizing its dexterity and leaving no redundancy for subsequent grasps. The proposed solution, MoDex, is a diffusion policy that predicts the next gripper pose directly from observations, conditioned on an opposition space and point cloud. The opposition space condition s",
+    "paper_url": "https://arxiv.org/abs/2606.05407",
+    "ks": 9,
+    "authors": [
+      "Haofei Lu",
+      "Hongjia Liu",
+      "Yifei Dong",
+      "Florian T. Pokorny",
+      "Jens Lundell",
+      "Danica Kragic"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "diffusion policy",
+      "imitation learning",
+      "sim-to-real",
+      "grasping",
+      "reinforcement learning",
+      "grasp",
+      "dexterous",
+      "IL"
+    ],
+    "first_publication": "2026-06-03",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators"
+    ],
+    "organizations": [
+      "KTH Royal Institute of Technology",
+      "University of Turku"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "KTH Royal Institute of Technology",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.05407",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "University of Turku",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.05407",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://modex2026.github.io/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://modex2026.github.io/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://modex2026.github.io/"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.03385",
+    "title": "Grasp-Then-Plan with Failure Attribution: A Closed Two-Stage Framework for Precise and Generalizable Robotic Manipulation",
+    "abstract": "In robotic manipulation, the tight coupling between grasping and motion planning often obscures the true source of failure, leading to inefficient trial-and-error. To enable efficient long-horizon manipulation, we propose GTP-FA (Grasp-Then-Plan with Failure Attribution), a task-oriented two-stage grasp-then-plan framework that generates grasp candidates and performs downstream motion planning conditioned on the selected grasp. Given a failed manipulation trajectory, we learn a failure attributi",
+    "paper_url": "https://arxiv.org/abs/2606.03385",
+    "ks": 9,
+    "authors": [
+      "Jiahao Xu",
+      "Peiyuan Wang",
+      "Hanzhuo Zhang",
+      "Zihao Yu",
+      "Tianyu Fu",
+      "Hao Chen",
+      "Xuanhao Xiang",
+      "Jianbo Yu"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "VLA",
+      "manipulation",
+      "grasping",
+      "planning",
+      "trajectory",
+      "grasp",
+      "motion planning",
+      "IL"
+    ],
+    "first_publication": "2026-06-02",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "organizations": [
+      "Southeast University"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Southeast University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.03385",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.32009",
+    "title": "Human-as-Humanoid: Enabling Zero-Shot Humanoid Learning from Ego-Exo Human Videos with Human-Aligned Embodiments",
+    "abstract": "Vision-language-action (VLA) models across robot embodiments require high-quality observation--action supervision to learn deployable action distributions, yet scaling such robot data remains difficult, especially for high-DoF humanoids. Teleoperation provides controller-aligned supervision, while human egocentric videos capture diverse bimanual manipulation but do not directly provide executable robot actions. We introduce Human-as-Humanoid, a human-to-humanoid supervision framework that enable",
+    "paper_url": "https://arxiv.org/abs/2606.32009",
+    "ks": 8,
+    "authors": [
+      "Xiaopeng Lin",
+      "Ruoqi Yang",
+      "Shijie Lian",
+      "Zhaolong Shen",
+      "Bin Yu",
+      "Changti Wu",
+      "Haibao Liu",
+      "Yuxiang Zhang"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "humanoid",
+      "manipulation",
+      "teleoperation",
+      "bimanual",
+      "IL"
+    ],
+    "first_publication": "2026-06-30",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "organizations": [
+      "Hong Kong University of Science and Technology",
+      "Beihang University",
+      "Harbin Institute of Technology"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Hong Kong University of Science and Technology",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.32009",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Beihang University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.32009",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Harbin Institute of Technology",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.32009",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://zgc-embodyai.github.io/Human-as-Humanoid/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://zgc-embodyai.github.io/Human-as-Humanoid/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://zgc-embodyai.github.io/Human-as-Humanoid/"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.31993",
+    "title": "OopsieVerse: A Safety Benchmark with Damage-Aware Simulation for Robot Manipulation",
+    "abstract": "While robotic manipulation capabilities have advanced rapidly, physical safety remains a major barrier to deploying household robots: task success is insufficient if the robot damages itself or its surroundings. Simulation offers a harm-free alternative to costly and dangerous real-world training and evaluation, yet existing simulators lack general mechanisms to detect, quantify, and represent damage. To address this gap, we introduce OOPSIEVERSE, a unified simulation framework and benchmark for",
+    "paper_url": "https://arxiv.org/abs/2606.31993",
+    "ks": 8,
+    "authors": [
+      "Arnav Balaji",
+      "Arpit Bahety",
+      "Sriniket Ambatipudi",
+      "Daniel Lam",
+      "Junhong Xu",
+      "Roberto Martín-Martín"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "imitation learning",
+      "simulator",
+      "sim-to-real",
+      "manipulation",
+      "navigation",
+      "reinforcement learning",
+      "IL"
+    ],
+    "first_publication": "2026-06-30",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "organizations": [
+      "University of Texas at Austin"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "University of Texas at Austin",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.31993",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.31909",
+    "title": "CoDex: Learning Compositional Dexterous Functional Manipulation without Demonstrations",
+    "abstract": "In this work, we study Compositional Dexterous Functional Object Manipulation (CD-FOM): tasks such as aiming and actuating a spray bottle on a plant or a glue gun on wood, which require both actuating an object's internal mechanism and controlling its pose to apply the object's function to the environment. These tasks pose significant challenges for robots due to the demanding integration of semantic understanding of the object's function, actuation mode, and application area with intricate phys",
+    "paper_url": "https://arxiv.org/abs/2606.31909",
+    "ks": 8,
+    "authors": [
+      "Bowen Jiang",
+      "William Painter Reger",
+      "Roberto Martin-Martin"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "manipulation",
+      "reinforcement learning",
+      "trajectory",
+      "grasp",
+      "dexterous",
+      "autonomous",
+      "IL"
+    ],
+    "first_publication": "2026-06-30",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "organizations": [
+      "University of Texas at Austin"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "University of Texas at Austin",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.31909",
+        "location": "author affiliation block"
+      }
+    ],
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://robin-lab.cs.utexas.edu/CoDex/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://robin-lab.cs.utexas.edu/CoDex/"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "project_url": "https://robin-lab.cs.utexas.edu/CoDex/",
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.31846",
+    "title": "Z-1: Efficient Reinforcement Learning for Vision-Language-Action Models",
+    "abstract": "Vision-Language-Action (VLA) models offer a promising framework for robotic manipulation by connecting language instructions, visual observations, and continuous control. However, most existing policies remain limited by behavior cloning or supervised fine-tuning (SFT) from fixed demonstrations, which provides limited opportunity to improve from the policy's own failures. In this paper, we present Z-1, a reinforcement learning (RL) post-training framework for flow-based VLA models. Built on top ",
+    "paper_url": "https://arxiv.org/abs/2606.31846",
+    "ks": 8,
+    "authors": [
+      "Lang Cao",
+      "Renhong Chen",
+      "Luyi Li",
+      "Peng Wang",
+      "Mofan Peng",
+      "Yitong Li"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "manipulation",
+      "reinforcement learning",
+      "behavior cloning",
+      "trajectory",
+      "IL"
+    ],
+    "first_publication": "2026-06-30",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "organizations": [
+      "Zioneer Robot"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Zioneer Robot",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.31846",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.31836",
+    "title": "RoboTacDex: A Dexterous Visual-Tactile-Action Dataset for Humanoid Manipulation",
+    "abstract": "In the field of robot learning, large-scale and diverse demonstration trajectories provide the fundamental basis for enhancing robotic manipulation ability. We introduce RoboTacDex, a large, multi-modal, and diverse dataset of dexterous manipulation behaviors performed with a humanoid robot. Built on the publicly accessible humanoid robot Unitree G1, RoboTacDex consists of 6k trajectories covering 19 tasks, 23 skills, and interactions with 22 objects. RoboTacDex provides comprehensive records in",
+    "paper_url": "https://arxiv.org/abs/2606.31836",
+    "ks": 8,
+    "authors": [
+      "Xinyi Wang",
+      "Donghan Li",
+      "Zi'Ang Chen",
+      "Chong Yu",
+      "Chen Xin",
+      "Peng Ye",
+      "Yingkai Sun",
+      "Tao Chen"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "imitation learning",
+      "humanoid",
+      "dexterous manipulation",
+      "manipulation",
+      "dexterous",
+      "tactile",
+      "IL"
+    ],
+    "first_publication": "2026-06-30",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data"
+    ]
+  },
+  {
+    "id": "arxiv-2606.30749",
+    "title": "From Grasps to Dexterity: Large-Scale Grasp Pretraining for Dexterous Manipulation",
+    "abstract": "Large-scale dexterous grasp datasets encode rich priors over hand-object interaction, but their use has largely been confined to grasp generation and pick-and-place manipulation. We study whether such data can instead support functional dexterity in articulated tool use, where a robot must acquire a tool, maintain contact, and operate its functional moving parts. We adapt a hierarchical imitation learning framework that combines high-level hand sub-goal prediction with a low-level goal-condition",
+    "paper_url": "https://arxiv.org/abs/2606.30749",
+    "ks": 8,
+    "authors": [
+      "Ying Yuan",
+      "Xinyu Liu",
+      "Sriram Krishna",
+      "David Held"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "diffusion policy",
+      "imitation learning",
+      "dexterous manipulation",
+      "manipulation",
+      "trajectory",
+      "grasp",
+      "dexterous"
+    ],
+    "first_publication": "2026-06-29",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "organizations": [
+      "Carnegie Mellon University"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Carnegie Mellon University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.30749",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://yingyuan0414.github.io/grasp2dexterity/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://yingyuan0414.github.io/grasp2dexterity/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://yingyuan0414.github.io/grasp2dexterity/"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.30290",
+    "title": "X-Morph: Human Motion Priors for Scalable Robot Learning Across Morphologies",
+    "abstract": "Recent progress in humanoid behavior models has been driven in large part by abundant human motion data, but comparable motion data is scarce for non-humanoid legged robots such as quadrupeds, hexapods, and quadruped manipulators. A promising alternative is to repurpose human motion across embodiments; however, direct retargeting often produces motions that are visually plausible yet physically inconsistent or difficult to track under robot dynamics. We present X-Morph, a human-motion-to-robot-b",
+    "paper_url": "https://arxiv.org/abs/2606.30290",
+    "ks": 8,
+    "authors": [
+      "Ritwik Sharma",
+      "Shivam Sood",
+      "Arhaan Jain",
+      "Shyam Charan Kesavamoorthi",
+      "Chengyang He",
+      "Guillaume Sartoretti"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "humanoid",
+      "manipulation",
+      "locomotion",
+      "teleoperation",
+      "quadruped",
+      "legged",
+      "IL"
+    ],
+    "first_publication": "2026-06-29",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "organizations": [
+      "National University of Singapore"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "National University of Singapore",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.30290",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://maker-rat.github.io/morph/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://maker-rat.github.io/morph/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://maker-rat.github.io/morph/"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.30243",
+    "title": "KYON: Semi-Modular Wheel-Legged Quadruped With Agile Bimanual Capability",
+    "abstract": "This paper presents KYON, a hybrid wheel-legged quadruped robot equipped with a bimanual upper body for loco-manipulation tasks. The platform features a semi-modular design with a reconfigurable lower legs, enabling both wheeled and legged locomotion depending on the environment. A design approach that places actuators in the base and uses transmission mechanisms reduces distal inertia, improving agility and dynamic performance. The robot integrates a whole-body control framework together with a",
+    "paper_url": "https://arxiv.org/abs/2606.30243",
+    "ks": 8,
+    "authors": [
+      "Luca Rossini",
+      "Arturo Laurenzi",
+      "Francesco Ruscelli",
+      "Yifang Zhang",
+      "Jingcheng Jiang",
+      "Giovanbattista Gravina",
+      "Lorenzo Baccelliere",
+      "Corrado Burchielli"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "manipulation",
+      "locomotion",
+      "reinforcement learning",
+      "bimanual",
+      "quadruped",
+      "legged",
+      "IL"
+    ],
+    "first_publication": "2026-06-29",
+    "last_revision": "2026-07-07",
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "infrastructure"
+    ]
+  },
+  {
+    "id": "arxiv-2606.28320",
+    "title": "WARP-RM: A Warp-Augmented Relative Progress Reward Model for Data Curation",
+    "abstract": "Scaling imitation learning requires large datasets, yet human teleoperation inevitably produces mixed-quality demonstrations containing hesitations and recoveries. Prior frame-level progress reward models supervise on absolute temporal progress proxies that suffer from label noise, or require costly human annotations to define subtask boundaries. We present WARP (Warp-Augmented Relative Progress), a novel fully self-supervised algorithm for learning dense, signed relative progress magnitudes dir",
+    "paper_url": "https://arxiv.org/abs/2606.28320",
+    "ks": 8,
+    "authors": [
+      "Justin Yu",
+      "Andrew Goldberg",
+      "Kavish Kondap",
+      "Karim El-Refai",
+      "Ethan Ransing",
+      "Qianzhong Chen",
+      "Mac Schwager",
+      "Fred Shentu"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "imitation learning",
+      "manipulation",
+      "behavior cloning",
+      "teleoperation",
+      "bimanual",
+      "IL",
+      "BC"
+    ],
+    "first_publication": "2026-06-26",
+    "last_revision": "2026-07-10",
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators"
+    ],
+    "organizations": [
+      "Stanford University",
+      "University of California, Berkeley"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Stanford University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.28320",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "University of California, Berkeley",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.28320",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://uynitsuj.github.io/warp-rm/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://uynitsuj.github.io/warp-rm/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-or-project-page",
+        "checked_at": "2026-07-28"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.27251",
+    "title": "Advancing Omnimodal Embodied Agents from Isolated Skills to Everyday Physical Autonomy",
+    "abstract": "Building persistent embodied agents in unstructured environments demands unified orchestration of heterogeneous tools spanning both cyber (APIs, IoT) and physical (manipulation, navigation) domains, coupled with autonomous recovery from physical failures that inevitably arise over extended operation. Existing systems treat these as separate problems: VLM-based planners lack a unified cyber-physical action space, agent frameworks accumulate unbounded context that degrades temporal coherence, and ",
+    "paper_url": "https://arxiv.org/abs/2606.27251",
+    "ks": 8,
+    "authors": [
+      "Junhao Shi",
+      "Zezheng Huai",
+      "Siyin Wang",
+      "Jia Chen",
+      "Yubang Wang",
+      "Zhaoye Fei",
+      "Hechang Chen",
+      "Jingjing Gong"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "embodied",
+      "robot",
+      "VLA",
+      "manipulation",
+      "navigation",
+      "planning",
+      "autonomous",
+      "IL"
+    ],
+    "first_publication": "2026-06-25",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "organizations": [
+      "Fudan University",
+      "Shanghai Innovation Institute",
+      "Jilin University"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Fudan University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.27251",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Shanghai Innovation Institute",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.27251",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Jilin University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.27251",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://huaizz-shawen.github.io/OmniAct",
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": "https://github.com/EmbodiedForge/RAS_interactivate_planner",
+        "status": "verified",
+        "accessible": true,
+        "verification_method": "github-api",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://api.github.com/repos/EmbodiedForge/RAS_interactivate_planner"
+      },
+      {
+        "kind": "project",
+        "url": "https://huaizz-shawen.github.io/OmniAct",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-or-project-page",
+        "checked_at": "2026-07-28"
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": "https://github.com/EmbodiedForge/RAS_interactivate_planner",
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.25575",
+    "title": "One Body, Two Minds: Variable Autonomy Approach for a Co-embodied Robotic Hand",
+    "abstract": "Assistive robotic systems face a fundamental trade-off: fully autonomous systems lack user agency, while fully user-controlled systems demand continuous cognitive effort. Existing shared autonomy approaches blend human and robot commands but are mostly deployed in separate physical bodies. We introduce co-embodiment with variable autonomy, where human and robot share a single physical body and operate at different autonomy levels across task phases, from mutual autonomy during object search and ",
+    "paper_url": "https://arxiv.org/abs/2606.25575",
+    "ks": 8,
+    "authors": [
+      "Piotr Koczy",
+      "Yuchong Zhang",
+      "Danica Kragic",
+      "Michael C. Welle"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "embodied",
+      "robot",
+      "diffusion policy",
+      "grasping",
+      "grasp",
+      "bimanual",
+      "autonomous",
+      "IL"
+    ],
+    "first_publication": "2026-06-24",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "organizations": [
+      "KTH Royal Institute of Technology",
+      "INCAR Robotics"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "KTH Royal Institute of Technology",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.25575",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "INCAR Robotics",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.25575",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://co-embodiment.github.io/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://co-embodiment.github.io/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-or-project-page",
+        "checked_at": "2026-07-28"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.25295",
+    "title": "DynaMOMA: Instantaneous Prediction of Grasp Poses for Mobile Manipulation of Dynamic Objects",
+    "abstract": "Mobile manipulation is a fundamental robotics task and has advanced rapidly in recent years, enabling robots to navigate, reach, and interact with objects in complex environments. However, mobile manipulation of dynamic objects remains highly challenging, as robots must coordinate the mobile base and arm while adapting to continuously evolving target poses. A key challenge lies in predicting temporally consistent short-horizon grasp trajectories from dynamic observations. In this work, we propos",
+    "paper_url": "https://arxiv.org/abs/2606.25295",
+    "ks": 8,
+    "authors": [
+      "Zhinan Yu",
+      "Junyan Xu",
+      "Jiazhao Zhang",
+      "Zheng Qin",
+      "Yijie Tang",
+      "Yuhang Huang",
+      "Yihan Cao",
+      "Zhiyuan Yu"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "mobile manipulation",
+      "manipulation",
+      "grasping",
+      "reinforcement learning",
+      "trajectory",
+      "grasp",
+      "IL"
+    ],
+    "first_publication": "2026-06-24",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "simulators",
+      "infrastructure"
+    ],
+    "organizations": [
+      "Peking University",
+      "Wuhan University",
+      "Chinese Academy of Sciences"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Peking University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.25295",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Wuhan University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.25295",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Chinese Academy of Sciences",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.25295",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.24450",
+    "title": "NoContactNoWorries: Estimating Contact through Vision and Proprioception for In-Hand Dexterous Manipulation",
+    "abstract": "Perceiving physical contact is fundamental to dexterous manipulation. While robots often rely on dedicated hardware tactile sensors, humans exhibit a remarkable ability to infer contact by integrating visual information with an innate sense of their body's pose and movement. Inspired by this embodied perceptual skill, we investigate whether a robot can learn to infer contact from vision, an approach that also offers a scalable alternative to tactile hardware specifically for binary contact estim",
+    "paper_url": "https://arxiv.org/abs/2606.24450",
+    "ks": 8,
+    "authors": [
+      "Soham Patil",
+      "Avirup Das",
+      "Sourabh Bhosale",
+      "Spandan Roy"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "embodied",
+      "robot",
+      "dexterous manipulation",
+      "manipulation",
+      "reinforcement learning",
+      "dexterous",
+      "tactile",
+      "IL"
+    ],
+    "first_publication": "2026-06-23",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "simulators",
+      "infrastructure"
+    ],
+    "organizations": [
+      "International Institute of Information Technology Hyderabad",
+      "University of Manchester"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "International Institute of Information Technology Hyderabad",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.24450",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "University of Manchester",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.24450",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://soham2560.github.io/no-contact-no-worries/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://soham2560.github.io/no-contact-no-worries/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://soham2560.github.io/no-contact-no-worries/"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.23623",
+    "title": "dVLA-RL: Reinforcement Learning over Denoising Trajectories for Discrete Diffusion Vision-Language-Action Models",
+    "abstract": "Vision-Language-Action (VLA) models have established a powerful paradigm for generalist robotic manipulation by grounding control into the semantic reasoning of VLMs. Prevailing architectures typically model actions continuously via diffusion or flow processes, or discretely through either autoregressive generation or parallel decoding. Recently, Discrete Diffusion VLAs (dVLAs) have emerged as a distinct alternative, unifying vision, language, and action into a single discrete token space via ma",
+    "paper_url": "https://arxiv.org/abs/2606.23623",
+    "ks": 8,
+    "authors": [
+      "Yuhao Wu",
+      "Yitian Liu",
+      "Weijie Shen",
+      "Mishuo Han",
+      "Wenjie Xu",
+      "Haotian Liang",
+      "Zhongshan Liu",
+      "Yinan Mao"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "generalist",
+      "manipulation",
+      "reinforcement learning",
+      "trajectory",
+      "IL"
+    ],
+    "first_publication": "2026-06-22",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms"
+    ],
+    "organizations": [
+      "Tsinghua University",
+      "Shanghai Jiao Tong University"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Tsinghua University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.23623",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Shanghai Jiao Tong University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.23623",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2607.09701",
+    "title": "EgoSteer: A Full-Stack System Towards Steerable Dexterous Manipulation from Egocentric Videos",
+    "abstract": "Steerability is a defining capability of generalist robot policies, yet remains largely absent in dexterous-hand systems for lack of large-scale, language-aligned, and action-accurate demonstration data. To address this bottleneck, we present a full-stack system that scales dexterous VLA pre-training from egocentric human videos and enables data-efficient real-robot post-training. It integrates EgoSmith, a data pipeline that curates in-the-wild egocentric videos into 9.6K hours of high-quality p",
+    "paper_url": "https://arxiv.org/abs/2607.09701",
+    "ks": 8,
+    "authors": [
+      "Yifan Zhong",
+      "Zhang Chen",
+      "Tianrui Guan",
+      "Fanlian Zeng",
+      "Yuyao Ye",
+      "Tianjia He",
+      "Ka Nam Lui",
+      "Jiayi Li"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "VLA",
+      "generalist",
+      "dexterous manipulation",
+      "manipulation",
+      "teleoperation",
+      "dexterous",
+      "IL"
+    ],
+    "first_publication": "2026-06-21",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "organizations": [
+      "Peking University",
+      "PKU-PsiBot Joint Lab",
+      "University of Pennsylvania"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Peking University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2607.09701",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "PKU-PsiBot Joint Lab",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2607.09701",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "University of Pennsylvania",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2607.09701",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://egosteer.github.io/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://egosteer.github.io/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-or-project-page",
+        "checked_at": "2026-07-28"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.21496",
+    "title": "Decoupling the Declarative from the Procedural in Vision-Language-Action Models",
+    "abstract": "Deploying generalist robotic agents in the real world requires transferable skills. Specifically, a policy trained to clone a behavior from object-specific demonstrations must generalize beyond that object, otherwise data collection requirements become intractable. Recently, fine-tuning of pre-trained billion-parameter Vision-Language Models (VLMs), initially on large-scale robot datasets and then on fewer scenario-specific demonstrations, has emerged as the predominant paradigm for designing Vi",
+    "paper_url": "https://arxiv.org/abs/2606.21496",
+    "ks": 8,
+    "authors": [
+      "Nikolaos Tsagkas",
+      "Andreas Sochopoulos",
+      "Chris Xiaoxuan Lu",
+      "Oisin Mac Aodha",
+      "Alexandros Kouris"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "generalist",
+      "robot dataset",
+      "manipulation",
+      "behavior cloning",
+      "IL"
+    ],
+    "first_publication": "2026-06-19",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data"
+    ],
+    "organizations": [
+      "Samsung AI Center"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Samsung AI Center",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.21496",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://tsagkas.github.io/w2vla",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://tsagkas.github.io/w2vla",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-or-project-page",
+        "checked_at": "2026-07-28"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  }
+]

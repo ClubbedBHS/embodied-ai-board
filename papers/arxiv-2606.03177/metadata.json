@@ -1,0 +1,191 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.03177",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "ConTrack: Constrained Hand Motion Tracking with Adaptive Trade-off Control",
+  "title_zh": "ConTrack：具有自适应权衡控制的约束手部运动跟踪",
+  "abstract": "Human demonstrations provide strong priors for robot manipulation, yet it is non-trivial to transfer them to execute on real robots due to the kinematic gap. In dexterous manipulation, it remains challenging to track long-horizon, contact-rich sequences even in simulators: a reference-tracking policy must keep objects on their target trajectories while preserving demonstrated joint motion and contact timing. Existing approaches often rely on hand-crafted reward tuning that require per-sequence t",
+  "paper_url": "https://arxiv.org/abs/2606.03177",
+  "pdf_url": "https://arxiv.org/pdf/2606.03177",
+  "project_url": "https://www.lyt0112.com/projects/ConTrack",
+  "code_url": "https://github.com/EmptyBlueBox/ConTrack",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yutong Liang",
+      "affiliations": []
+    },
+    {
+      "name": "Quanquan Peng",
+      "affiliations": []
+    },
+    {
+      "name": "Ri-Zhao Qiu",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaolong Wang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "universityofcaliforniasandiego",
+      "name": "University of California, San Diego",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-02",
+    "last_revision": "2026-06-15"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "simulators"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "code",
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "第一个将约束RL应用于人类演示轨迹跟踪的框架。核心贡献：(1)创新的约束公式——物体跟踪作为硬约束+运动保真度作为优化目标，通过拉格朗日双变量在线调整权衡；(2)自适应中轨迹重置库从策略可达状态采样，稳定长时序(1000+步)学习；(3)在各种接触丰富的灵巧操作任务上超越现有方法。相较于看板中已有的灵巧操作工作，ConTrack从人类演示到机器人执行的轨迹跟踪角度提供了独特贡献。UC San Diego Xiaolong Wang组。主要风险：方法相对小众(轨迹跟踪)；双变量更新在不同任务上可能需要手动调参。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文 HTML 作者区未能自动解析出明确机构，需人工核验"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.03177",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "2.0.1 Dexterous manipulation from human demonstrations",
+      "2.0.2 Reference tracking in physics simulation",
+      "2.0.3 Constrained and multi-objective reinforcement learning",
+      "3 Method",
+      "3.1 Preliminaries",
+      "3.2 Adaptive TaskâStyle Mixing",
+      "3.3 Adaptive Mid-Trajectory Reset Library",
+      "3.4 Contact Priors",
+      "4 Experiments",
+      "4.1 Benchmarks",
+      "4.2 Training and Evaluation Protocol",
+      "4.3 Metrics",
+      "4.4 Baselines and Ablations",
+      "4.5 Main Results",
+      "4.6 Ablations",
+      "4.6.1 Adaptive vs. Fixed TaskâStyle Mixing",
+      "4.6.2 Reset Library Ablation",
+      "4.6.3 Contact Prior Reward Ablation",
+      "4.7 Real-world Feasibility",
+      "5 Conclusion",
+      "References",
+      "Appendix 0.A Additional Clip Snapshots",
+      "Appendix 0.B Reward Specification",
+      "Appendix 0.C Observation Specification",
+      "Appendix 0.D Controller and Reset Hyperparameters",
+      "Appendix 0.E Contact Annotation Processing",
+      "Appendix 0.F Interaction Budget and Compute",
+      "Appendix 0.G DexterHand Ring Failure Analysis",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.03177"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.03177"
+    },
+    {
+      "type": "project",
+      "url": "https://www.lyt0112.com/projects/ConTrack"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "University of California, San Diego",
+      "source": "project-page",
+      "url": "https://www.lyt0112.com/projects/ConTrack",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://www.lyt0112.com/projects/ConTrack",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://www.lyt0112.com/projects/ConTrack"
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/EmptyBlueBox/ConTrack",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-28",
+      "http_status": 200
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

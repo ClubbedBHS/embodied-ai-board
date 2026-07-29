@@ -12,13 +12,7 @@
   "model_url": null,
   "video_url": null,
   "authors": [],
-  "organizations": [
-    {
-      "id": "physical-intelligence",
-      "name": "Physical Intelligence",
-      "role": "primary"
-    }
-  ],
+  "organizations": [],
   "dates": {
     "first_publication": "2024-10-31",
     "last_revision": "2024-10-31"
@@ -127,5 +121,39 @@
     "from_schema_version": "0.2",
     "migrated_at": "2026-07-22",
     "note": "从 v0.2 迁移；source_access 可证明已读取完整官方博客来源。"
-  }
+  },
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "ar5iv-html-link",
+      "checked_at": "2026-07-28",
+      "http_status": 200,
+      "resolved_url": "https://api.github.com/repos/Physical-Intelligence/openpi"
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "verification-error",
+      "accessible": null,
+      "verification_method": "source-fetch",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "error": "ar5iv:HTTP 404"
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "verification-error",
+      "accessible": null,
+      "verification_method": "source-fetch",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "error": "ar5iv:HTTP 404"
+    }
+  ],
+  "organization_evidence": []
 }

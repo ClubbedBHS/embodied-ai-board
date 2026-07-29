@@ -1,0 +1,161 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.12109",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Bridging the Morphology Gap: Adapting VLA Models to Dexterous Manipulation via Intent-Conditioned Fine-Tuning",
+  "title_zh": "InDex：通过意图条件微调将 VLA 适配到灵巧操作",
+  "abstract": "Vision-Language-Action (VLA) models have demonstrated remarkable zero-shot generalization in robotic manipulation, yet the vast majority of pre-trained pipelines remain strictly confined to low-DoF parallel grippers. Adapting these rich semantic priors to high-DoF dexterous hands introduces a severe morphology gap, direct end-to-end joint fine-tuning inherently causes catastrophic forgetting of spatial reasoning and acute action manifold collapse due to data scarcity. In this paper, we present I",
+  "paper_url": "https://arxiv.org/abs/2606.12109",
+  "pdf_url": "https://arxiv.org/pdf/2606.12109",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Chuanke Pang",
+      "affiliations": []
+    },
+    {
+      "name": "Junyi Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Zhijun Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Yaobing Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Kun Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Xilun Ding",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-06-10",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data"
+    ],
+    "topics": [
+      "diffusion-policy"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "巧妙解决VLA从低DoF平行夹爪到高DoF灵巧手迁移的形态鸿沟。核心创新：(1)将预训练VLA的1-DoF抓取输出重新定义为连续的宏观虚拟抓取意图代理，实现跨形态语义继承；(2)两阶段解耦学习：第一阶段参数高效对齐VLA预测臂轨迹+标量抓取意图，第二阶段冻结空间骨干用意图条件扩散头解码手指关节；(3)无需大量灵巧手数据，用最少演示数据掌握复杂技能。85.8%成功率。相较于看板中已有的灵巧操作工作(RealDexUMI、ConTrack)，InDex从VLA形态适配角度提供了独特贡献。北航+中国空间技术研究院。主要风险：仅在仿真中验证，未展示真实灵巧手硬件结果；意图代理的定义可能对手型敏感。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文 HTML 作者区未能自动解析出明确机构，需人工核验",
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.12109",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "2.1 Dexterous Manipulation",
+      "2.2 Imitation Learning",
+      "2.3 VLA Fine-tuning",
+      "3 Method",
+      "3.1 Problem Formulation",
+      "3.2 Task-Space Intent Realization",
+      "3.3 Macro-Reaching Alignment and Intent Prediction",
+      "3.4 Intent-Conditioned Dexterous Adaptation",
+      "4 Experiments",
+      "4.1 Teleoperation and Data Collection",
+      "4.2 Experimental Setup",
+      "4.3 Effectiveness in Multi-Task Scenarios",
+      "4.4 Ablation Studies",
+      "4.5 Transferability Analysis",
+      "4.6 Failure Case Analysis",
+      "5 Conclusion",
+      "References",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.12109"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.12109"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

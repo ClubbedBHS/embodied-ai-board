@@ -25,7 +25,13 @@
       "affiliations": []
     }
   ],
-  "organizations": [],
+  "organizations": [
+    {
+      "id": "universityofmelbourne",
+      "name": "University of Melbourne",
+      "role": "primary"
+    }
+  ],
   "dates": {
     "first_publication": "2026-07-20",
     "last_revision": null
@@ -112,5 +118,45 @@
     ],
     "figure_images_accessed": false,
     "accessed_at": "2026-07-23"
-  }
+  },
+  "organization_evidence": [
+    {
+      "organization": "University of Melbourne",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.17786",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
 }

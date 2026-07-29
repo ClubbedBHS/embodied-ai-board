@@ -41,14 +41,24 @@
   ],
   "organizations": [
     {
-      "id": "uc-berkeley",
-      "name": "UC Berkeley",
-      "role": "unknown"
+      "id": "hongkongembodiedailab",
+      "name": "Hong Kong Embodied AI Lab",
+      "role": "primary"
     },
     {
-      "id": "tsinghua-university",
+      "id": "chineseuniversityofhongkong",
+      "name": "Chinese University of Hong Kong",
+      "role": "collaborator"
+    },
+    {
+      "id": "tsinghuauniversity",
       "name": "Tsinghua University",
-      "role": "unknown"
+      "role": "collaborator"
+    },
+    {
+      "id": "universityofcaliforniaberkeley",
+      "name": "University of California, Berkeley",
+      "role": "collaborator"
     }
   ],
   "dates": {
@@ -135,5 +145,63 @@
       "url": "https://arxiv.org/html/2607.14635"
     }
   ],
-  "suggested_new_tags": []
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Hong Kong Embodied AI Lab",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.14635",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Chinese University of Hong Kong",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.14635",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Tsinghua University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.14635",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University of California, Berkeley",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.14635",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
 }

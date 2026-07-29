@@ -1,0 +1,245 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.30613",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Sequential Planning via Anchored Robotic Keypoints (SPARK)",
+  "title_zh": null,
+  "abstract": "We present Sequential Planning via Anchored Robotic Keypoints (SPARK), a training-free neurosymbolic manipulation system that reaches 43.7% on six Libero-Pro position-and-task cells, more than doubling CaP-Agent0 and existing Vision-Language-Action (VLA) baselines. Libero-Pro extends the traditional Libero benchmark by perturbing object positions and task descriptions, dropping VLA models from the top of simulated leaderboards to near-zero and revealing their inherent brittleness to unseen circumstances. CaP-Agent0, a multi-turn code-generation agent, recovers part of that loss by re-querying an LLM at every turn (18.2% on Libero-Pro), but its costly, restart-from-scratch solution proves bulky against minor policy failures. Both these approaches spend their test-time compute on reformulating the plan, when, really, perception is the layer that fails most under position and task changes. Thus, SPARK spends its computation there. A single Gemini call composes the plan as a typed behavior tree (BT) built from composable primitives, where each primitive already contains the low-level control (motion, grasping, depth geometry) a code-generation agent would otherwise regenerate on every trial. That leaves the rest of the test-time budget for perception: a second Gemini call proposes three alternative text prompts per object, SAM3 evaluates each prompt, and we keep the prompt→label pair that yields the most confident detection. Then, a recovery loop retries a failed primitive against freshly detected objects, with no new LLM call. Against CaP-Agent0's S2 evaluation protocol, these alternative prompts add +27.7 points on the spatial suite and +10.0 on the object suite; the recovery loop adds +5.0 overall. SPARK runs the same primitives on three robot families (UR10e, Franka FR3, bimanual Franka) across nine unique tasks at twenty trials each, averaging 68% overall across the physical setups. Because each of the detector, planner, and controller modules sit behind the typed plan, they swap independently without training. Furthermore, each primitive's checkable post-condition traces a failure to the corresponding module or a kinematic limit.",
+  "paper_url": "https://arxiv.org/abs/2606.30613",
+  "pdf_url": "https://arxiv.org/pdf/2606.30613",
+  "project_url": "https://cwru-aism.github.io/spark-page/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Bryce Grant",
+      "affiliations": [
+        "cwru"
+      ]
+    },
+    {
+      "name": "Aryeh Rothenberg",
+      "affiliations": [
+        "cwru"
+      ]
+    },
+    {
+      "name": "Logan Senning",
+      "affiliations": [
+        "cwru"
+      ]
+    },
+    {
+      "name": "Zonghe Chua",
+      "affiliations": [
+        "cwru"
+      ]
+    },
+    {
+      "name": "Zach Patterson",
+      "affiliations": [
+        "cwru"
+      ]
+    },
+    {
+      "name": "Peng Wang",
+      "affiliations": [
+        "cwru"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "casewesternreserveuniversity",
+      "name": "Case Western Reserve University",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-27",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "planning",
+      "vla"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm",
+      "multi-robot"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "depth",
+      "action"
+    ],
+    "environments": [
+      "simulation",
+      "real-world"
+    ],
+    "assets": [
+      "project-page"
+    ],
+    "properties": [
+      "real-robot-evaluation",
+      "zero-shot"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "system"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 82,
+    "selection_reason": "提出训练无关的神经符号操作系统，将测试时计算从规划重新分配到感知层面。43.7% Libero-Pro（VLA接近0%），超CaP-Agent0 25.5个百分点。单一Gemini规划调用+自适应感知自一致性+无LLM调用的恢复循环。跨3种机器人家族验证，平均68%真实成功率。为VLA的分布外鲁棒性挑战提供了有洞察力的替代路径。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "hermes-agent",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "真实机器人评测每任务仅20次试验，统计显著性有限",
+      "依赖Gemini API（商用LLM），不可自托管",
+      "自适应感知自一致性在目标-任务扰动（goal-task perturbations）场景下效果下降（Section 4讨论）"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.30613",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 Method",
+      "3.1 Multi-Camera Perception",
+      "3.2 Behavior-Tree Planning",
+      "3.3 Tiered Recovery",
+      "3.4 Adaptive Perception Self-Consistency",
+      "4 Experiments",
+      "4.1 Setup",
+      "4.2 LIBERO-PRO Results",
+      "4.3 CaP-Bench Results",
+      "4.4 Ablations",
+      "4.5 Physical Experiments",
+      "5 Discussion",
+      "6 Limitations and Future Work",
+      "Acknowledgments",
+      "References",
+      "Appendix A Implementation Details",
+      "A.1 SAM3 Detection",
+      "A.2 Gemini (BT Generator and Prompt Synthesiser)",
+      "A.3 Depth Sources",
+      "A.4 Pyroki IK Settings",
+      "A.5 OSC Controller",
+      "A.6 BT Executor",
+      "Appendix B LIBERO-PRO Per-Task Results",
+      "Appendix C CaP-Bench Per-Task Details",
+      "Appendix D BT Grammar Reference",
+      "Appendix E Compute Budget",
+      "Appendix F Failure-Mode Analysis",
+      "Appendix G Adversarial Robustness Discussion (Future Work)",
+      "Appendix H Physical Experiments: Per-Trial Logs",
+      "UR10e + Robotiq 2F-85",
+      "Franka FR3",
+      "Bimanual Franka (Panda + FR3)",
+      "Appendix I Example Behavior Trees",
+      "Single-Arm: Scrub a Plate (FR3)",
+      "Bimanual: Sort Silverware (Panda + FR3)",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.30613"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.30613"
+    },
+    {
+      "type": "project",
+      "url": "https://cwru-aism.github.io/spark-page/"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "neuro-symbolic",
+      "name": "Neuro-Symbolic",
+      "reason": "SPARK的核心范式是神经感知+符号规划的神经符号系统，planning标签无法完全捕捉这种分层架构的特点。",
+      "evidence": "论文标题和Section 1明确将方法定位为neurosymbolic manipulation system，将神经感知（SAM3）置于符号计划（typed behavior tree）之下。"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "Case Western Reserve University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.30613",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://cwru-aism.github.io/spark-page/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://cwru-aism.github.io/spark-page/"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

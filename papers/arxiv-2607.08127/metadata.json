@@ -52,13 +52,13 @@
   ],
   "organizations": [
     {
-      "id": "georgia-tech",
-      "name": "Georgia Institute of Technology",
+      "id": "amazon",
+      "name": "Amazon",
       "role": "primary"
     },
     {
-      "id": "amazon-far",
-      "name": "Amazon FAR (Foundational AI Research)",
+      "id": "georgiainstituteoftechnology",
+      "name": "Georgia Institute of Technology",
       "role": "collaborator"
     }
   ],
@@ -95,7 +95,9 @@
     "environments": [
       "mixed"
     ],
-    "assets": [],
+    "assets": [
+      "project-page"
+    ],
     "properties": [
       "real-robot-evaluation"
     ]
@@ -152,5 +154,60 @@
     "figure_images_accessed": false,
     "accessed_at": "2026-07-22",
     "note": "ar5iv HTML not available (307 redirect to arXiv abs page). Full text accessed via PDF + pdftotext extraction. Method (Sec 4), Experiments (Sec 5), Conclusion (Sec 7), and Limitations all read and verified."
-  }
+  },
+  "organization_evidence": [
+    {
+      "organization": "Amazon",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.08127",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Georgia Institute of Technology",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.08127",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://umishra.me/temporal-ratio/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-or-project-page",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
 }

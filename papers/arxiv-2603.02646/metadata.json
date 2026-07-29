@@ -52,12 +52,12 @@
   ],
   "organizations": [
     {
-      "id": "georgia-tech",
+      "id": "georgiainstituteoftechnology",
       "name": "Georgia Institute of Technology",
       "role": "primary"
     },
     {
-      "id": "umich",
+      "id": "universityofmichigan",
       "name": "University of Michigan",
       "role": "collaborator"
     }
@@ -94,7 +94,9 @@
       "simulation",
       "real-world"
     ],
-    "assets": [],
+    "assets": [
+      "project-page"
+    ],
     "properties": [
       "real-robot-evaluation"
     ]
@@ -149,5 +151,60 @@
     ],
     "figure_images_accessed": false,
     "accessed_at": "2026-07-22"
-  }
+  },
+  "organization_evidence": [
+    {
+      "organization": "Georgia Institute of Technology",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2603.02646",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University of Michigan",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2603.02646",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://comp-visual-planning.github.io/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-or-project-page",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
 }

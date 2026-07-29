@@ -1,0 +1,227 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.23153",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Asymmetric physics enables efficient learning in quadrupedal robot swarms",
+  "title_zh": "非对称物理促进四足机器人集群的高效学习",
+  "abstract": "Animal collectives navigate cluttered environments through local coordination, yet robot swarms still struggle to reproduce this capability in the physical world. End-to-end learning offers a route to such coordination, but scaling it to embodied swarms remains difficult: standard sampling-based reinforcement learning becomes inefficient when visual perception, dense robot-robot interaction, and contact-rich locomotion must be learned together. Here we show that asymmetric physics enables effici",
+  "paper_url": "https://arxiv.org/abs/2606.23153",
+  "pdf_url": "https://arxiv.org/pdf/2606.23153",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yuang Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Yunlong Song",
+      "affiliations": []
+    },
+    {
+      "name": "Zhihao He",
+      "affiliations": []
+    },
+    {
+      "name": "Zelin Ni",
+      "affiliations": []
+    },
+    {
+      "name": "Kangyu Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Tianchi Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Yu Hu",
+      "affiliations": []
+    },
+    {
+      "name": "Feng Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Danping Zou",
+      "affiliations": []
+    },
+    {
+      "name": "Weiyao Lin",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "shanghaijiaotonguniversity",
+      "name": "Shanghai Jiao Tong University",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-22",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "simulators",
+      "infrastructure"
+    ],
+    "topics": [
+      "sim-to-real"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "Impressive scaling of quadruped swarm learning via asymmetric physics. 512 agents in simulation, zero-shot transfer to 6 physical robots. Emergent swarm behaviors (predictive avoidance, yielding, wall following) are compelling. Fills multi-robot/swarm gap on the board. However, no code release limits reproducibility.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": []
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.23153",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "INTRODUCTION",
+      "Related work",
+      "RESULTS",
+      "Swarm control of quadrupedal robots in the real world",
+      "Vision-based mutual avoidance in dense swarms",
+      "Scalable vision-based control for large robot swarms",
+      "Learned multi-robot navigation behaviors",
+      "Reactive responses to nearby agents and obstacles",
+      "Yielding to resolve conflicts",
+      "Pausing in open areas for conflict passages",
+      "Wall-following tendencies under limited perception",
+      "Behavior comparisons",
+      "Baseline comparisons",
+      "DISCUSSION",
+      "MATERIALS AND METHODS",
+      "Method Overview",
+      "Problem Formulation",
+      "Policy Optimization via Differentiable Simulation",
+      "Surrogate Model",
+      "Gradient Calculation",
+      "State Gradient",
+      "Action Gradient",
+      "Hierarchical Control Training Procedure",
+      "Navigation Policy Optimization",
+      "Locomotion Policy Optimization",
+      "Data availability",
+      "Code availability",
+      "Acknowledgments",
+      "References",
+      "Supplementary Materials",
+      "Table of Contents",
+      "Supplementary Tables",
+      "Supplementary Sections",
+      "Note 1 Training Hyperparameters",
+      "Note 2 Navigation Policy Loss Function",
+      "2.1 Velocity Loss",
+      "2.2 Obstacle Avoidance Loss",
+      "2.3 Collision Loss",
+      "2.4 Speed Loss",
+      "2.5 Acceleration Loss",
+      "2.6 Direction Loss",
+      "2.7 Target Direction Loss",
+      "2.8 Time Loss",
+      "2.9 Coefficient Values",
+      "Note 3 Locomotion Policy Loss Function",
+      "3.1 Velocity Tracking Loss",
+      "3.2 Orientation Tracking Loss",
+      "3.3 Angular Velocity Tracking Loss",
+      "3.4 Body Height Loss",
+      "3.5 Gravity Projection Loss",
+      "3.6 Action Regularization Loss",
+      "3.7 Torque Regularization Loss",
+      "3.8 Swing Leg Loss",
+      "3.9 Coefficient Values",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.23153"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.23153"
+    },
+    {
+      "type": "code",
+      "url": "https://github.com/Unitree-Go2-Robot/go2_description"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Shanghai Jiao Tong University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.23153",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.18772",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "HALOMI: Learning Humanoid Loco-Manipulation with Active Perception from Human Demonstrations",
+  "title_zh": "HALOMI：从人类示范学习带主动感知的人形移动操作",
+  "abstract": "Human demonstrations, which can be collected at scale and naturally capture active hand-eye coordination, are a promising data source for learning humanoid loco-manipulation. However, directly transferring human demonstrations to humanoids requires a precise world-frame tracking controller, which is often brittle under Out-of-Distribution(OOD) targets, while human-to-humanoid gaps persist in both egocentric observation and action execution. To address these challenges, we present HALOMI, a scala",
+  "paper_url": "https://arxiv.org/abs/2606.18772",
+  "pdf_url": "https://arxiv.org/pdf/2606.18772",
+  "project_url": "https://halomi-humanoid.github.io",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Zehui Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Yuxuan Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Gaojing Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Chenxi Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Maolin Zheng",
+      "affiliations": []
+    },
+    {
+      "name": "Wenzhao Lian",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "shanghaijiaotonguniversity",
+      "name": "Shanghai Jiao Tong University",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-17",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "Solid humanoid loco-manipulation framework extending UMI to egocentric sensing. Manifold-constrained controller is novel. 85% success across 3 tasks on real Unitree G1. Dynamic behaviors (tossing, deep-squat grasping) are impressive. Project page available but no code.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": []
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.18772",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "I INTRODUCTION",
+      "II RELATED WORK",
+      "II-A Robot-Free Human Demonstrations",
+      "II-B Humanoid Whole-Body Controller",
+      "II-C Whole-Body Policy Learning from Human Demonstrations",
+      "III PROPOSED FRAMEWORK",
+      "III-A Data Collection & Robot System",
+      "III-B Manifold-Constrained Whole-Body Control System",
+      "III-C Human Data Processing to Bridge the Embodiment Gap",
+      "III-C1 Ego-view Alignment",
+      "III-C2 Controller-Aware Reference Trajectory Adaptation",
+      "III-D Loco-Manipulation Policy Learning and Deployment",
+      "IV EVALUATION",
+      "IV-A Experimental Setup",
+      "IV-B Can HALOMI Achieve Diverse Loco-Manipulation Tasks Through Sparse Head-Hand Interface?",
+      "IV-C Does Our Human Data Processing Improve Human-to-Humanoid Transfer?",
+      "IV-D What Is the Role of Active Perception in Human-to-Humanoid Transfer?",
+      "IV-E Generalization Ability of HALOMI",
+      "V CONCLUSIONS",
+      "References",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.18772"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.18772"
+    },
+    {
+      "type": "project",
+      "url": "https://halomi-humanoid.github.io"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Shanghai Jiao Tong University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.18772",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://halomi-humanoid.github.io",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://halomi-humanoid.github.io/"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

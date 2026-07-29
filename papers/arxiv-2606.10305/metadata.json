@@ -1,0 +1,262 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.10305",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "SARM2: Multi-Task Stage Aware Reward Modeling for Self Improving Robotic Manipulation",
+  "title_zh": "SARM2：面向自改进机器人操作的多任务阶段感知奖励建模",
+  "abstract": "Fine-tuning vision-language-action (VLA) policies for long-horizon manipulation still relies heavily on behavior cloning, which requires costly high-quality demonstrations and keeps policies near the demonstration distribution. Reward models can reduce this dependence by reweighting demonstrations and providing dense supervision for on-robot reinforcement learning (RL), but they must be dense, accurate, and general. Existing methods fall short: task-specific stage-aware models are accurate but require per-task annotations, while general vision-language-model (VLM) reward models are broadly applicable but too coarse for fine-grained long-horizon progress. We introduce SARM2, a multi-task stage-aware reward model that combines an action-primitive-based stage estimator with a multi-gate Mixture-of-Experts (MMoE) value head to produce dense per-step rewards across manipulation tasks. Building on SARM2, we further propose SPIRAL (Self-Policy Improvement via Reward-Aligned Learning), an on-policy reward-guided framework that improves VLA policies from cheap autonomous rollouts. On a 10-task benchmark, SARM2 reduces value-estimation MSE by 80% over the strongest baselines; when used in SPIRAL, it improves task success from around 50% to near-perfect performance on Folding Shorts (58% to 100%) and Cleaning Whiteboard (50% to 90%), showing that high-quality dense rewards are key to a stable robot data flywheel.",
+  "paper_url": "https://arxiv.org/abs/2606.10305",
+  "pdf_url": "https://arxiv.org/pdf/2606.10305",
+  "project_url": "https://qianzhong-chen.github.io/sarm2.github.io/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Qianzhong Chen",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Hau Zheng",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Justin Yu",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Suning Huang",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Jiankai Sun",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Ken Goldberg",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Chuan Wen",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Pieter Abbeel",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Yide Shentu",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Philipp Wu",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Mac Schwager",
+      "affiliations": [
+        "stanford"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "stanforduniversity",
+      "name": "Stanford University",
+      "role": "primary"
+    },
+    {
+      "id": "shanghaijiaotonguniversity",
+      "name": "Shanghai Jiao Tong University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-09",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "reinforcement-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "proprioception"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [
+      "project-page"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 78,
+    "selection_reason": "提出基于动作基元的多任务阶段感知奖励模型SARM2和自改进框架SPIRAL。SARM2通过动作基元阶段估计器+多门MoE价值头在不需任务特定标注的情况下生成密集逐步奖励，在10任务基准上MSE降低80%。SPIRAL利用密集奖励驱动VLA策略从自主rollout中自我改进，实现Folding Shorts 58%→100%、Cleaning Whiteboard 50%→90%的显著提升。为机器人数据飞轮提供了关键组件。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "hermes-agent",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": []
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.10305",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Works",
+      "3 Method",
+      "3.1 SARM2: Multi-Task Stage-Aware Reward Model",
+      "3.1.1 Action-Primitive Stage Estimator",
+      "3.1.2 MMoE Value Decoder",
+      "3.2 SPIRAL: Dense-Reward-Enabled Robot Self-Improvement Framework",
+      "4 Experimental Results",
+      "4.1 Reward Model Evaluation",
+      "4.2 Policy Learning with Self Improvement",
+      "5 Conclusion",
+      "References",
+      "6 Appendix",
+      "6.1 Hardware Setup",
+      "6.2 Task Description",
+      "ð®1\\mathcal{S}_{1}: Classic Tasks",
+      "ð®2\\mathcal{S}_{2}: Unconventional Tasks",
+      "6.3 Hyperparameter Table",
+      "6.4 Action Primitive Grouping Explaination",
+      "6.5 Algorithm of Reward-Guided Robot Self-Improvement Loop",
+      "6.6 Reward Model Evaluation Protocol",
+      "6.7 Policy Evaluation Protocol",
+      "6.8 MoE Design: Comparison with Dense Model",
+      "6.9 MoE Settings Ablation study",
+      "6.10 MoE Design: MoE-Decoder vs. MoE-FFN",
+      "6.11 Reward Model Estimation Visualization Results",
+      "6.12 Action Primitive Estimation and MoE Experts Selection Visualization Results",
+      "6.13 Auxiliary Formulae",
+      "6.14 Additional Discussion on SPIRAL",
+      "6.15 Policy Rollout Examples",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.10305"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.10305"
+    },
+    {
+      "type": "project",
+      "url": "https://qianzhong-chen.github.io/sarm2.github.io/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Stanford University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.10305",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Shanghai Jiao Tong University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.10305",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://qianzhong-chen.github.io/sarm2.github.io/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://qianzhong-chen.github.io/sarm2.github.io/"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

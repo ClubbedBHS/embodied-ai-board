@@ -1,0 +1,989 @@
+[
+  {
+    "id": "arxiv-2606.08278",
+    "arxiv_id": "2606.08278",
+    "title": "SIMPLE: Simulation-Based Policy Learning and Evaluation for Humanoid Loco-manipulation",
+    "paper_url": "https://arxiv.org/abs/2606.08278",
+    "first_publication": "2026-06-07",
+    "last_revision": null,
+    "authors": [
+      "Songlin Wei",
+      "Zhenhao Ni",
+      "Jie Liu",
+      "Zhenyu Zhao",
+      "Junjie Ye",
+      "Hongyi Jing",
+      "Junkai Xia",
+      "Xiawei Liu",
+      "Michael Leong",
+      "Liang Heng",
+      "Di Huang",
+      "Yue Wang"
+    ],
+    "organizations": [
+      "USC Physical Superintelligence Lab"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.08278",
+    "keyword_score": 14,
+    "keyword_hits": [
+      "robot",
+      "foundation model",
+      "simulator",
+      "sim-to-real",
+      "manipulation",
+      "planning",
+      "trajectory",
+      "motion planning",
+      "humanoid",
+      "autonomous",
+      "locomotion",
+      "VLA",
+      "WAM",
+      "benchmark"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对人形机器人全身移动操作(loco-manipulation)基准测试。60个任务、50个室内场景、1000+物体，真实机器人零样本迁移验证。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv HTML full text accessible at https://ar5iv.labs.arxiv.org/html/2606.08278. Read sections: Introduction, Related Work, Method (3.1-3.5), Experiments (4.1-4.2)."
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "首个全面的全身人形机器人移动操作仿真基准。双仿真器架构(MuJoCo物理+IsaacSim渲染)。内置运动规划和VR遥操作两条数据采集管线。统一评估协议含三级难度。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "Table 1: 9个基线模型×6个任务×3级难度基准测试。Table 2: 三种数据采集范式效率对比。验证了仿真与现实性能的强相关性及零样本迁移。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "Full ar5iv HTML text read. Sections 1-4 and appendices accessed."
+      }
+    },
+    "scores": {
+      "relevance": 19,
+      "novelty": 16,
+      "evidence_quality": 17,
+      "potential_impact": 13,
+      "board_information_gain": 8,
+      "reproducibility": 8,
+      "timeliness": 4,
+      "total": 85
+    },
+    "decision": "featured",
+    "selection_reason": "首个全面的人形机器人全身移动操作仿真基准测试平台。核心贡献为：(1)双仿真器架构(MuJoCo物理+IsaacSim渲染)解决接触动力学与视觉逼真度的矛盾；(2)60个任务、50个室内场景、1000+物体的规模化环境；(3)内置运动规划和VR遥操作两条数据采集管线；(4)大规模基准测试涵盖9种主流策略(VLA/WAM/IL)，验证仿真-现实强相关性及零样本迁移。相较于看板中的SimFoundry(仿真场景生成)，SIMPLE直接提供标准化人形机器人评估协议和基准，填补了人形机器人方向缺失。主要风险：代码承诺开源但尚未确认可访问。",
+    "risks_or_uncertainties": [
+      "代码承诺开源但尚未在公开仓库确认",
+      "真实机器人实验只在相似场景下验证零样本迁移，未见大规模泛化实验",
+      "基准测试使用单任务微调，未评估多任务/泛化策略"
+    ],
+    "suggested_sections": [
+      "simulators",
+      "infrastructure",
+      "algorithms"
+    ],
+    "suggested_topics": [
+      "humanoid",
+      "benchmark",
+      "sim-to-real",
+      "loco-manipulation"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "USC Physical Superintelligence Lab",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.08278",
+        "location": "author affiliation block"
+      }
+    ],
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": "https://github.com/LeCAR-Lab/HumanoidVerse",
+        "status": "verified",
+        "accessible": true,
+        "verification_method": "github-api",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://api.github.com/repos/LeCAR-Lab/HumanoidVerse"
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": "https://github.com/LeCAR-Lab/HumanoidVerse",
+    "project_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.09215",
+    "arxiv_id": "2606.09215",
+    "title": "MotionWAM: Towards Foundation World Action Models for Real-Time Humanoid Loco-Manipulation",
+    "paper_url": "https://arxiv.org/abs/2606.09215",
+    "first_publication": "2026-06-07",
+    "last_revision": null,
+    "authors": [
+      "Jia Zheng",
+      "Teli Ma",
+      "Yudong Fan",
+      "Zifan Wang",
+      "Shuo Yang",
+      "Junwei Liang"
+    ],
+    "organizations": [
+      "Hong Kong University of Science and Technology"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.09215",
+    "keyword_score": 10,
+    "keyword_hits": [
+      "robot",
+      "WAM",
+      "humanoid",
+      "manipulation",
+      "loco-manipulation",
+      "foundation model",
+      "autonomous",
+      "real-time",
+      "VLA"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对人形机器人Unitree G1的真实世界全身移动操作。9个真实世界任务涵盖腰部控制、高度调节、蹲伏移动、足部交互和身体-手协调。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv HTML full text accessible at https://ar5iv.labs.arxiv.org/html/2606.09215. Read sections: Introduction, Related Work, Method (3.1-3.3), Experiments (4.1)."
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "首个实时闭环端到端WAM驱动的全身人形机器人移动操作策略。统一运动潜在表示替代传统上下半身解耦架构。三阶段训练框架(以自我为中心视频预训练→跨形态动作后训练→全身微调)。首次实现任务驱动的足部交互(踢球、踩踏板)。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "Figure 4: 9个真实世界任务×20次试验。与5个基线(DP、ACT、π0.5、GR00T-N1.7、Qwen3DiT)对比，成功率提升超30%。消融研究验证三阶段训练必要性。推理延迟满足实时闭环控制。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "Full ar5iv HTML text read. Sections 1-4 and appendices accessed."
+      }
+    },
+    "scores": {
+      "relevance": 20,
+      "novelty": 18,
+      "evidence_quality": 17,
+      "potential_impact": 13,
+      "board_information_gain": 8,
+      "reproducibility": 6,
+      "timeliness": 4,
+      "total": 86
+    },
+    "decision": "featured",
+    "selection_reason": "首个实时运行的World Action Model驱动的全身人形机器人移动操作系统。核心创新：(1)用统一运动潜在表示替代传统上下半身解耦策略，使下半身参与任务驱动的足部交互而非仅维持平衡；(2)通过Video DiT中间去噪特征条件化策略，实现实时闭环控制；(3)三阶段训练框架(2136小时以自我为中心视频预训练→跨形态动作后训练→全身遥操作微调)。在Unitree G1上9个真实世界任务中显著优于VLA基线(成功率提升超30%)，且是首个实现踢球、踩踏板等任务驱动足部行为的端到端系统。相较于看板中已有的VLA和IL工作，MotionWAM在WAM用于人形机器人方向是全新范式。主要风险：代码和权重未提及开源计划，复现门槛较高。",
+    "risks_or_uncertainties": [
+      "代码和模型权重未承诺开源，复现门槛高",
+      "200 episodes per task的微调数据量较小，泛化性未充分验证",
+      "Mondo Robotics为商业公司，部分组件(Cosmos-Predict2.5)可能需商业许可",
+      "9个任务虽覆盖5种能力但任务总数有限"
+    ],
+    "suggested_sections": [
+      "algorithms"
+    ],
+    "suggested_topics": [
+      "world-action-model",
+      "humanoid",
+      "loco-manipulation",
+      "real-time-control",
+      "whole-body-control"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "Hong Kong University of Science and Technology",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.09215",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.17046",
+    "arxiv_id": "2606.17046",
+    "title": "Geometric Action Model for Robot Policy Learning",
+    "paper_url": "https://arxiv.org/abs/2606.17046",
+    "first_publication": "2026-06-15",
+    "last_revision": null,
+    "authors": [
+      "Jisang Han",
+      "Seonghu Jeon",
+      "Jaewoo Jung",
+      "René Zurbrügg",
+      "Honggyu An",
+      "Tifanny Portela",
+      "Marco Hutter",
+      "Marc Pollefeys",
+      "Seungryong Kim",
+      "Sunghwan Hong"
+    ],
+    "organizations": [
+      "ETH Zürich",
+      "KAIST"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.17046",
+    "keyword_score": 10,
+    "keyword_hits": [
+      "robot",
+      "foundation model",
+      "manipulation",
+      "VLA",
+      "WAM",
+      "trajectory",
+      "autonomous",
+      "geometry",
+      "3D"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对语言条件机器人操作策略。在多仿真基准和真实机器人操作上验证。使用DA3-Giant几何基础模型作为策略骨干。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv HTML full text accessible at https://ar5iv.labs.arxiv.org/html/2606.17046. Read sections: Introduction, Related Work, Preliminaries, Method (4.1-4.4), Experiments (5.1)."
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "首个将几何基础模型(GFM)直接复用作共享感知、未来预测和动作解码基底的策略架构。在GFM中间层插入因果未来预测器，实现动作与未来几何的联合自回归预测。相较VLA(2D)和WAM(2D像素)，GAM在3D几何空间中操作。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "跨多个仿真和真实世界基准测试，与VLA/WAM基线对比，55倍更快推理，更好的相机扰动鲁棒性(+9.7%)。消融实验验证架构设计。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "Full ar5iv HTML text read. Sections 1-5 accessed (experiments section truncated)."
+      }
+    },
+    "scores": {
+      "relevance": 18,
+      "novelty": 17,
+      "evidence_quality": 16,
+      "potential_impact": 12,
+      "board_information_gain": 7,
+      "reproducibility": 6,
+      "timeliness": 4,
+      "total": 80
+    },
+    "decision": "featured",
+    "selection_reason": "创新性地将几何基础模型(GFM)直接改造为机器人操作策略。核心贡献：(1)拆分GFM为编码器+解码器，在中间层插入因果未来预测器；(2)在共享令牌空间中联合预测动作和未来3D几何(深度图)；(3)单次前向传播同时产出动作和未来场景几何。相较于当前主流的2D VLA和2D像素WAM，GAM在3D几何空间中操作，从根本上提升对相机视角和空间变化的鲁棒性。实验显示55倍更快推理和+9.7%相机扰动鲁棒性。相较于看板中已有的2D VLA和WAM，GAM从几何先验角度提供了全新的策略学习范式。主要风险：实验结果部分被截断未能完整阅读；代码开源状态不明确。",
+    "risks_or_uncertainties": [
+      "实验部分因提取截断未能完整阅读Table结果",
+      "代码和权重未提及开源计划",
+      "依赖DA3-Giant的预训练质量和可用性",
+      "真实世界实验规模未从已读取内容明确"
+    ],
+    "suggested_sections": [
+      "algorithms"
+    ],
+    "suggested_topics": [
+      "geometric-foundation-model",
+      "3d-perception",
+      "robot-policy",
+      "world-model"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "ETH Zürich",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.17046",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "KAIST",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.17046",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://cvlab-kaist.github.io/Geometric-Action-Model/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://cvlab-kaist.github.io/Geometric-Action-Model/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://cvlab-kaist.github.io/Geometric-Action-Model/"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "model_url": null,
+    "code_url": null,
+    "dataset_url": null
+  },
+  {
+    "id": "arxiv-2606.13886",
+    "arxiv_id": "2606.13886",
+    "title": "PhysVLA: Towards Physically-Grounded VLA for Embodied Robotic Manipulation",
+    "paper_url": "https://arxiv.org/abs/2606.13886",
+    "first_publication": "2026-06-11",
+    "last_revision": null,
+    "authors": [
+      "Namai Chandra",
+      "Shriram Damodaran",
+      "Lin Wang"
+    ],
+    "organizations": [
+      "Nanyang Technological University"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.13886",
+    "keyword_score": 10,
+    "keyword_hits": [
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "manipulation",
+      "physics",
+      "autonomous"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对VLA策略在机器人操作中的物理可行性问题。在LIBERO-Spatial(Franka Panda)和真实Agilex Piper手臂上验证。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv HTML full text accessible at https://ar5iv.labs.arxiv.org/html/2606.13886. Read sections: Introduction, Related Work, Method (3.1-3.3), Experiments."
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "首个免训练、即插即用的推理时物理修正框架，适用于任何冻结VLA骨干。双分支设计：阶段感知有限状态机(FSM)+选择性欧拉-拉格朗日动力学门。每次控制步骤<1ms开销。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "Table 2: 4种VLA骨干在LIBERO-Spatial上成功率提升最高17%和稳定性提升最高19%。10倍轨迹抖动鲁棒性改善。真实世界Agilex Piper验证成功率从35%到95%。零任务回归。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "Full ar5iv HTML text read. Sections 1-4 and appendices accessed."
+      }
+    },
+    "scores": {
+      "relevance": 18,
+      "novelty": 16,
+      "evidence_quality": 17,
+      "potential_impact": 13,
+      "board_information_gain": 7,
+      "reproducibility": 7,
+      "timeliness": 4,
+      "total": 82
+    },
+    "decision": "featured",
+    "selection_reason": "创新的免训练推理时物理修正框架。核心贡献：(1)首次系统性地识别并量化VLA的'物理鸿沟'(physics gap)——策略产生的动作违反刚体动力学和接触约束；(2)双分支修正器：阶段感知FSM处理任务级物理(接近/抓取/运输/放置各有针对性修正)+选择性欧拉-拉格朗日门处理步骤级动力学一致性；(3)设计为即插即用层，<1ms开销，5%的修正权重，适用于4种不同VLA骨干(OpenVLA/Force-VLA/Generalist-VLA/OpenVLA-OFT)且零任务回归。真实世界验证从35%提升至95%。相较于看板中所有的训练时方法，PhysVLA从推理时物理约束角度提供了全新且低成本的解决方案。主要风险：FSM依赖精确的对象检测和距离阈值，不同场景可能需要调整。",
+    "risks_or_uncertainties": [
+      "FSM的阶段检测依赖几何谓词(距离阈值)，新任务可能需要重新校准",
+      "仅验证了7-DoF单臂操作，未在移动操作或人形机器人上验证",
+      "5%的修正上限可能不足以修正大规模物理不一致",
+      "代码未提及开源计划"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "physics-informed",
+      "inference-time-adaptation",
+      "vla",
+      "safety"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "Nanyang Technological University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.13886",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.04825",
+    "arxiv_id": "2606.04825",
+    "title": "HapTile: A Haptic-Informed Vision-Tactile-Language-Action Dataset for Contact-Rich Imitation Learning",
+    "paper_url": "https://arxiv.org/abs/2606.04825",
+    "first_publication": "2026-06-04",
+    "last_revision": null,
+    "authors": [
+      "Amirhosein Alian",
+      "Yongqiang Zhao",
+      "Shiyi Gu",
+      "Xuyang Zhang",
+      "Zhuo Chen",
+      "Christopher E. Mower",
+      "Haitham Bou-Ammar",
+      "Shan Luo"
+    ],
+    "organizations": [
+      "University College London"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.04825",
+    "keyword_score": 11,
+    "keyword_hits": [
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "tactile",
+      "manipulation",
+      "imitation learning",
+      "dataset",
+      "haptic"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对接触丰富机器人操作的数据集。1726个演示涵盖38个任务和9种操作技能。在UR5e真实机器人上收集和验证。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv HTML full text accessible at https://ar5iv.labs.arxiv.org/html/2606.04825. Read sections: Introduction, Related Work, Dataset (3), Platform (4), Experiments (5), Limitations (6), Conclusion (7)."
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "首个同时提供语言条件、触觉感知、动作轨迹和操作员触觉反馈的数据集。定制低成本视觉触觉传感器。触觉反馈嵌入遥操作管线。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "Table 1对比11个现有数据集。Table 2: Diffusion Policy和π0在4个接触丰富任务上的消融研究(纯视觉/视觉+触觉/视觉+触觉+标记跟踪)。触觉输入在peg insertion上从0%提升至90%(π0+V+T)。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "Full ar5iv HTML text read. Sections 1-7 and appendices accessed."
+      }
+    },
+    "scores": {
+      "relevance": 17,
+      "novelty": 14,
+      "evidence_quality": 14,
+      "potential_impact": 9,
+      "board_information_gain": 7,
+      "reproducibility": 8,
+      "timeliness": 4,
+      "total": 73
+    },
+    "decision": "include",
+    "selection_reason": "首个同时整合语言条件、触觉感知、动作轨迹和操作员触觉反馈的操作数据集。核心贡献：(1)1726个演示覆盖38个任务和9种技能；(2)定制的低成本视觉触觉传感器设计；(3)将触觉反馈嵌入遥操作管线以提升演示质量；(4)在Diffusion Policy和π0上的基准测试验证触觉模态对接触丰富任务的价值(如peg insertion从0%到90%)。相较于看板中已有的纯视觉数据集(如DROID、RoboSet)，HapTile从触觉模态角度提供了重要补充。主要局限：数据规模较小(1726个演示vs DROID的76K)、场景多样性有限(单一实验室场景)、触觉反馈仅为二值信号。",
+    "risks_or_uncertainties": [
+      "数据规模有限(1726个演示)，远小于DROID(76K)等主流数据集",
+      "场景多样性有限，仅在单一实验室环境中收集，作者明确列为limitation",
+      "触觉反馈仅提供二值信号，未能捕捉连续力变化",
+      "π0在有限微调数据下对新触觉模态对齐困难，V+T和V+TM表现不一致"
+    ],
+    "suggested_sections": [
+      "data"
+    ],
+    "suggested_topics": [
+      "tactile-sensing",
+      "dataset",
+      "contact-rich-manipulation",
+      "haptic-feedback"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "University College London",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.04825",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://haptile-dataset.github.io",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://haptile-dataset.github.io",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://haptile-dataset.github.io/"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "dataset_url": null,
+    "code_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.30552",
+    "arxiv_id": "2606.30552",
+    "title": "Training Vision-Language-Action Models with Dense Embodied Chain-of-Thought Supervision",
+    "paper_url": "https://arxiv.org/abs/2606.30552",
+    "first_publication": "2026-06-25",
+    "last_revision": null,
+    "authors": [
+      "Haoyang Li",
+      "Guanlin Li",
+      "Youhe Feng",
+      "Chen Zhao",
+      "Zhuoran Wang",
+      "Yang Li",
+      "Qizhe Wei",
+      "Shifeng Bao",
+      "Haitao Shen",
+      "Yihan Zhao",
+      "Tong Yang",
+      "Jing Zhang"
+    ],
+    "organizations": [
+      "Renmin University of China",
+      "Zhipu AI"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.30552",
+    "keyword_score": 10,
+    "keyword_hits": [
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "foundation model",
+      "manipulation",
+      "chain-of-thought",
+      "cross-embodiment"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对跨形态VLA训练。在LIBERO(单臂)、RoboTwin 2.0(双臂)、RoboCasa GR-1(人形)和真实xArm上验证。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv HTML full text accessible at https://ar5iv.labs.arxiv.org/html/2606.30552. Read sections: Introduction, Related Work, Method (3.1-3.4), Experiments (4.1)."
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "首次在VLA训练中使用密集的具身思维链(ECoT)监督(96.8%帧覆盖率)实现跨形态表示对齐。双流架构(System 2 VLM生成ECoT + System 1 DiT动作专家)。ECoT在推理时完全跳过，零推理开销。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "在3个仿真基准(LIBERO/RoboTwin 2.0/RoboCasa GR-1)和真实xArm上评估。ProcCorpus-60M：6000万帧、40万+轨迹、1000小时。跨形态迁移验证。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "Full ar5iv HTML text read. Sections 1-4 accessed (experiments section truncated at 4.1.1)."
+      }
+    },
+    "scores": {
+      "relevance": 18,
+      "novelty": 17,
+      "evidence_quality": 17,
+      "potential_impact": 12,
+      "board_information_gain": 7,
+      "reproducibility": 8,
+      "timeliness": 4,
+      "total": 83
+    },
+    "decision": "featured",
+    "selection_reason": "创新的跨形态VLA训练方法，通过密集具身思维链(ECoT)监督对齐不同机器人平台的表示。核心贡献：(1)ECoT包含6个组件(场景描述/进度评估/未来计划/待做动作/目标对象/离散动作)，在96.8%帧上提供密集监督；(2)双流架构中的巧妙设计——ECoT仅用于训练时的表示对齐，推理时通过交叉注意力掩码完全跳过，零推理开销；(3)ProcCorpus-60M：6000万帧、40万+轨迹、1000小时的大规模ECoT标注语料库；(4)跨3种形态(单臂/双臂/人形)验证。相较于看板中已有的VLA(π0, OpenVLA等)，ZR-0从跨形态表示对齐角度提供了独特的训练方法创新。代码和权重已开源。主要风险：实验细节不完整(结果部分被截断)，ECoT标注质量依赖自动VLM管线。",
+    "risks_or_uncertainties": [
+      "实验详细结果因提取截断未能完整阅读(LIBERO/RoboTwin 2.0的具体分数)",
+      "ECoT标注由自动化VLM管线生成，标注质量可能存在噪声",
+      "ProcCorpus-60M的数据来源多样性(Section 3.2提及多个数据集但未详细列出)",
+      "推理时跳过ECoT的策略是否在所有任务上都优于保留ECoT未做消融"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "data"
+    ],
+    "suggested_topics": [
+      "chain-of-thought",
+      "cross-embodiment",
+      "vla",
+      "foundation-model",
+      "imitation-learning"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "Renmin University of China",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.30552",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Zhipu AI",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.30552",
+        "location": "author affiliation block"
+      }
+    ],
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": "https://github.com/RUCKBReasoning/ZR-0",
+        "status": "verified",
+        "accessible": true,
+        "verification_method": "github-api",
+        "evidence_source": "ar5iv-html-link",
+        "checked_at": "2026-07-28",
+        "http_status": 200
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": "https://github.com/RUCKBReasoning/ZR-0",
+    "project_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.30613",
+    "arxiv_id": "2606.30613",
+    "title": "Sequential Planning via Anchored Robotic Keypoints",
+    "paper_url": "https://arxiv.org/abs/2606.30613",
+    "first_publication": "2026-06-25",
+    "last_revision": null,
+    "authors": [
+      "Bryce Grant",
+      "Aryeh Rothenberg",
+      "Logan Senning",
+      "Zonghe Chua",
+      "Zach Patterson",
+      "Peng Wang"
+    ],
+    "organizations": [
+      "Case Western Reserve University"
+    ],
+    "discovered_via": [
+      "arxiv-api-cs.RO"
+    ],
+    "watchlist_matches": [],
+    "already_on_board": false,
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.30613",
+    "keyword_score": 11,
+    "keyword_hits": [
+      "robot",
+      "foundation model",
+      "manipulation",
+      "planning",
+      "autonomous",
+      "VLA",
+      "keypoint",
+      "neurosymbolic"
+    ],
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "直接针对机器人操作规划。在Libero-Pro(6个位置-任务单元)、CaP-Bench(7个Robosuite任务)和3种真实机器人(UR10e/Franka FR3/双臂Franka)上验证。"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "ar5iv HTML full text accessible at https://ar5iv.labs.arxiv.org/html/2606.30613. Read sections: Introduction, Related Work, Method (3.1-3.4), Experiments (4.1-4.5)."
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "训练无关的神经符号操作系统，将测试时计算预算从规划转移到感知。自适应感知自一致性(K=3替代文本提示)。类型化行为树语法+分层恢复机制。单个Gemini调用生成计划。"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "Table 1: Libero-Pro 6个单元上43.7%成功率，+25.5超过CaP-Agent0。自适应感知+27.7分(空间)、+10.0分(物体)。3种机器人平台平均68%。20次试验×9个任务。"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "Full ar5iv HTML text read. Sections 1-4 and appendices accessed."
+      }
+    },
+    "scores": {
+      "relevance": 18,
+      "novelty": 17,
+      "evidence_quality": 16,
+      "potential_impact": 12,
+      "board_information_gain": 8,
+      "reproducibility": 7,
+      "timeliness": 4,
+      "total": 82
+    },
+    "decision": "featured",
+    "selection_reason": "范式转换型的训练无关神经符号操作系统。核心洞察：对象位置和任务描述变化主要影响感知层而非规划结构，因此应将测试时计算投入感知。核心贡献：(1)单个Gemini调用生成类型化行为树计划，5个基础原语组合出30+技能；(2)自适应感知自一致性：为每个对象生成3个替代SAM3文本提示，保留最准确检测；(3)分层恢复：原语失败时重新检测对象并重试相同计划，无需新LLM调用；(4)相同原语语法在3种机器人(UR10e/FR3/双臂Franka)上无需修改运行。43.7%超过CaP-Agent0(+25.5分)和前沿VLA(均接近0%)。相较于看板中所有基于训练的方法，SPARK从训练无关、感知优先的范式提供了独特且互补的视角。代码已公开。主要风险：性能绝对分数中等(43.7%)，依赖Gemini API。",
+    "risks_or_uncertainties": [
+      "绝对成功率43.7%仍较低，距离实用还有差距",
+      "依赖商业Gemini API，非完全自包含开源系统",
+      "Libero-Pro以外场景的泛化性未充分验证(仅在CaP-Bench的7个Robosuite任务上验证)",
+      "自适应感知自一致性在目标-任务扰动上反而损失性能(Section 4)"
+    ],
+    "suggested_sections": [
+      "algorithms"
+    ],
+    "suggested_topics": [
+      "neurosymbolic",
+      "planning",
+      "test-time-compute",
+      "open-vocabulary-detection",
+      "behavior-tree"
+    ],
+    "review_status": "scored",
+    "organization_evidence": [
+      {
+        "organization": "Case Western Reserve University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.30613",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://cwru-aism.github.io/spark-page/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://cwru-aism.github.io/spark-page/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://cwru-aism.github.io/spark-page/"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  }
+]

@@ -1,0 +1,282 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.27375",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Scalable Behavior Cloning with Open Data, Training, and Evaluation",
+  "title_zh": "ABC：可扩展的开源行为克隆—开放数据、训练与评测",
+  "abstract": "We introduce ABC, a fully open-source stack for manipulation with behavior cloning. At its core is ABC-130K: the largest open-source teleoperation dataset to date, featuring 3,500 hours of data spanning over 130K episodes across 195 diverse tasks. Furthermore, we open-source our accessible hardware setup, training infrastructure, and simulation pipeline. We also release 400 hours of sim-teleop data and provide a co-training recipe that produces correlated simulation and real-world evaluation, offering a reliable proxy for ablating model-design and training decisions before costly real-world evaluation. We explore various training recipes and compare common architectural choices for Diffusion Transformers (DiT) and Vision-Language-Action (VLA) models, grounding our findings in real-world evaluations. The resulting policies successfully execute dexterous tasks such as box folding and extracting credit cards from wallets. By providing a reproducible toolkit, we aim to place researchers on an equal footing, establishing the necessary foundation to learn the ABCs of Behavior Cloning together as a community.",
+  "paper_url": "https://arxiv.org/abs/2606.27375",
+  "pdf_url": "https://arxiv.org/pdf/2606.27375",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Arthur Allshire",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Himanshu Gaurav Singh",
+      "affiliations": [
+        "mit"
+      ]
+    },
+    {
+      "name": "Ritvik Singh",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Adam Rashid",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Hongsuk Choi",
+      "affiliations": [
+        "amazon-far"
+      ]
+    },
+    {
+      "name": "David McAllister",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Justin Yu",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Yiyuan Chen",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Huang Huang",
+      "affiliations": [
+        "xdof"
+      ]
+    },
+    {
+      "name": "Pieter Abbeel",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Ion Stoica",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Dmitry Kalashnikov",
+      "affiliations": [
+        "amazon-far"
+      ]
+    },
+    {
+      "name": "Wenhao Yu",
+      "affiliations": [
+        "amazon-far"
+      ]
+    },
+    {
+      "name": "Quan Vuong",
+      "affiliations": [
+        "amazon-far"
+      ]
+    },
+    {
+      "name": "Richard Liaw",
+      "affiliations": [
+        "amazon-far"
+      ]
+    },
+    {
+      "name": "Joseph E. Gonzalez",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Saurabh Gupta",
+      "affiliations": [
+        "cmu"
+      ]
+    },
+    {
+      "name": "Jitendra Malik",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-06-25",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data",
+      "algorithms"
+    ],
+    "topics": [
+      "behavior-cloning",
+      "foundation-model"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm",
+      "multi-robot"
+    ],
+    "modalities": [
+      "vision",
+      "proprioception",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "open-source",
+      "real-robot-evaluation",
+      "large-scale-data"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "dataset",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 82,
+    "selection_reason": "目前最大开源双臂遥操作数据集ABC-130K（3500小时/130K episodes/195任务），完全开源硬件+训练+仿真全线。系统性的DiT和VLA架构对比研究，仿真-真实协同训练方案。开箱折叠、抽取信用卡等高难度灵巧任务，社区完整可复现工具包。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "DiT/VLA对比的具体数值结果未在摘要中体现",
+      "论文 HTML 作者区未能自动解析出明确机构，需人工核验",
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.27375",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 ABC-130K Dataset",
+      "3 ABC-Models",
+      "3.1 ABC-DiT",
+      "3.2 ABC-VLA",
+      "3.3 Scaling compute across batch size and training steps",
+      "3.4 Offline Metrics for Policy Evaluation",
+      "4 ABC-Sim",
+      "5 Real-World Capabilities",
+      "5.1 Pretraining Capabilities",
+      "5.2 Downstream single-task Finetuning",
+      "5.3 DAgger",
+      "6 Related Work",
+      "6.1 Large-scale open datasets for robotics",
+      "6.2 Large-scale Behavior Cloning",
+      "7 Infrastructure",
+      "8 Requests for Research",
+      "References",
+      "Appendices",
+      "Appendix A ABC-130K Task Taxonomy",
+      "Appendix B Training & Model Details",
+      "B.1 Data Loading",
+      "B.2 Architecture Details",
+      "B.3 Training Details",
+      "B.4 Architecture Sizes and FLOPS",
+      "Appendix C Real Robot Setup",
+      "C.1 Hardware",
+      "C.2 Real Robot Code",
+      "Appendix D Inference Optimization",
+      "Appendix E Single-task Finetuning",
+      "E.1 Task description and evaluation",
+      "E.2 Finetuning recipe",
+      "Appendix F DAgger Infrastructure",
+      "Appendix G Evaluation Details",
+      "Appendix H Policy Conditioning",
+      "H.1 Operator-ID conditioning",
+      "H.2 Action prefix conditioning",
+      "H.3 Subtask conditioning",
+      "H.4 Conditioning during pretraining"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.27375"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.27375"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

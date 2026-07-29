@@ -1,0 +1,197 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.22860",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "HiL-ResRL: A Model-Agnostic Finetuning Adapter via Human-in-the-loop Residual Reinforcement Learning",
+  "title_zh": "HiL-ResRL：基于人在环残差强化学习的模型无关微调适配器",
+  "abstract": "Recent advancements in generative imitation learning have significantly propelled the field of robotic manipulation. However, the majority of existing models rely heavily on Behavior Cloning (BC), a paradigm that suffers from compounding errors and distributional shift. Consequently, the efficacy of these models in practical industrial deployments remains limited. To address these challenges, we introduce a novel, plug-and-play fine-tuning pipeline designed to facilitate the robust deployment of",
+  "paper_url": "https://arxiv.org/abs/2606.22860",
+  "pdf_url": "https://arxiv.org/pdf/2606.22860",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Jingyi Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Zhaohong Mai",
+      "affiliations": []
+    },
+    {
+      "name": "ShunSen He",
+      "affiliations": []
+    },
+    {
+      "name": "Hang Ren",
+      "affiliations": []
+    },
+    {
+      "name": "Chao Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Shunbo Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "XiaoDong Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Heng Zhang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "huaweicloud",
+      "name": "Huawei Cloud",
+      "role": "primary"
+    },
+    {
+      "id": "southchinauniversityoftechnology",
+      "name": "South China University of Technology",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-22",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "Practical fine-tuning pipeline for VLA deployment. Model-agnostic approach is valuable for industrial adoption. 95% success after only 1.5 hours of real-world training is impressive. However, no code available and results are from a narrow set of industrial tasks.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.22860",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "I INTRODUCTION",
+      "II Related Work",
+      "II-A Residual Policy",
+      "II-B Real-world RL",
+      "III METHODS",
+      "III-A Problem Formulation",
+      "III-B Human-in-the-Loop Interventions",
+      "III-B1 Phase-Switching Intervention",
+      "III-B2 Safety Assurance and Success Judgment",
+      "III-B3 Failure-aware Training",
+      "III-C Residual Learning with Off-Policy RL",
+      "III-C1 Data Collection and Initialization",
+      "III-C2 Human-in-the-Loop Training Process",
+      "III-C3 Parameter Optimization",
+      "IV Experiments and Results",
+      "IV-A Experimental Setup",
+      "IV-A1 Real-World Experiment Setup",
+      "IV-A2 Baselines",
+      "IV-B Results and Analysis",
+      "IV-B1 Improving Task Success Rates (Q1)",
+      "IV-B2 Human-in-the-loop (Q2)",
+      "IV-B3 Effect of contact-rich task (Q3)",
+      "IV-C Discussion",
+      "V CONCLUSIONS AND FUTURE WORK",
+      "ACKNOWLEDGMENT",
+      "References",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.22860"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.22860"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Huawei Cloud",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.22860",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "South China University of Technology",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.22860",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

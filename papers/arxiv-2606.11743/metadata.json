@@ -1,0 +1,226 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.11743",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "TacCoRL: Integrating Tactile Feedback into VLA via Simulation",
+  "title_zh": "TacCoRL：通过仿真将触觉反馈融入 VLA",
+  "abstract": "Vision-language-action (VLA) models provide strong visual, language, and action priors for robot manipulation, but visual observations alone often miss the local contact state required for contact-rich tasks. We present TacCoRL, a scalable framework that injects Tactile feedback into VLA policies and improves them through sim-real Co-training and simulation-based reinforcement learning (RL), without requiring large-scale tactile pretraining or extensive real-world contact exploration. The key id",
+  "paper_url": "https://arxiv.org/abs/2606.11743",
+  "pdf_url": "https://arxiv.org/pdf/2606.11743",
+  "project_url": "https://tac-corl.github.io/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Siyu Ma",
+      "affiliations": []
+    },
+    {
+      "name": "Yuqi Liang",
+      "affiliations": []
+    },
+    {
+      "name": "Chang Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Yunuo Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Hao Su",
+      "affiliations": []
+    },
+    {
+      "name": "Yixin Zhu",
+      "affiliations": []
+    },
+    {
+      "name": "Yin Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Chenfanfu Jiang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "universityofcaliforniasandiego",
+      "name": "University of California, San Diego",
+      "role": "primary"
+    },
+    {
+      "id": "universityofcalifornialosangeles",
+      "name": "University of California, Los Angeles",
+      "role": "collaborator"
+    },
+    {
+      "id": "pekinguniversity",
+      "name": "Peking University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-10",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "topics": [
+      "sim-to-real"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "Strong tactile VLA framework from prominent labs (Hao Su, Yixin Zhu, Chenfanfu Jiang). Sim-real co-training + RL approach is practical and scalable. 22.5% absolute improvement over vision-only baseline on real bimanual tasks. Project page available. Fills tactile VLA gap on board.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": []
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.11743",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "Tactile-Augmented VLA Policies.",
+      "Sim-Real Post-Training for Contact-Rich Policies.",
+      "3 Method",
+      "3.1 Simulation Environment Alignment",
+      "3.2 Tactile-Augmented VLA Policy",
+      "3.3 Sim-Real Co-Training",
+      "3.4 Post-Training with a Real-Data Anchor",
+      "4 Experimental Results",
+      "4.1 Controller and Tactile Alignment",
+      "4.2 Task Settings",
+      "4.3 Sim-Real Co-Training and Simulator RL Post-Training",
+      "4.4 Real-World Evaluation",
+      "4.5 Ablation of Co-Training and Real-Data Anchoring Weights",
+      "5 Conclusion",
+      "6 Limitations",
+      "References",
+      "Appendix A Robot Setup",
+      "Appendix B Real-to-Sim-to-Real",
+      "B.1 Controller SysID Details",
+      "B.2 Tactile Signal Alignment Details",
+      "B.3 Camera Calibration Details",
+      "Appendix C Baseline Failure Analysis",
+      "Appendix D Training Parameters",
+      "Appendix E Domain Randomization Parameters",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.11743"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.11743"
+    },
+    {
+      "type": "project",
+      "url": "https://tac-corl.github.io/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "University of California, San Diego",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.11743",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University of California, Los Angeles",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.11743",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Peking University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.11743",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://tac-corl.github.io/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://tac-corl.github.io/"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

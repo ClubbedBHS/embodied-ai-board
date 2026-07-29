@@ -1,0 +1,166 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.31909",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "CoDex: Learning Compositional Dexterous Functional Manipulation without Demonstrations",
+  "title_zh": "CoDex：无示范学习组合式灵巧功能操作",
+  "abstract": "In this work, we study Compositional Dexterous Functional Object Manipulation (CD-FOM): tasks such as aiming and actuating a spray bottle on a plant or a glue gun on wood, which require both actuating an object's internal mechanism and controlling its pose to apply the object's function to the environment. These tasks pose significant challenges for robots due to the demanding integration of semantic understanding of the object's function, actuation mode, and application area with intricate phys",
+  "paper_url": "https://arxiv.org/abs/2606.31909",
+  "pdf_url": "https://arxiv.org/pdf/2606.31909",
+  "project_url": "https://robin-lab.cs.utexas.edu/CoDex/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Bowen Jiang",
+      "affiliations": []
+    },
+    {
+      "name": "William Painter Reger",
+      "affiliations": []
+    },
+    {
+      "name": "Roberto Martin-Martin",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "universityoftexasataustin",
+      "name": "University of Texas at Austin",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-30",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "首次实现零演示的灵巧功能性操作——机器人自主发现如何抓取并操作喷瓶、胶枪、手电筒等功能性物体，无需人类演示数据。核心贡献：(1)CD-FOM任务定义（组合灵巧功能性物体操作）；(2)VLM推断语义约束→解析约束优化生成功能抓取；(3)RL生成完整策略并sim-to-real迁移。6个任务在真实机器人验证。零演示特性具有重要扩展价值。主要风险：依赖VLM语义推理质量，任务物体种类有限。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": []
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.31909",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "I Introduction",
+      "II Related Work",
+      "III CoDex: Compositional Dexterous Functional Object Manipulation",
+      "III-A VLM-Generated Semantic Constraints",
+      "III-A1 Local Semantic Constraints",
+      "III-A2 Global Semantic Constraints",
+      "III-B Constraint-Guided Policy Training",
+      "III-B1 Analytic Constrained Optimization",
+      "III-B2 Constraint-Guided RL",
+      "IV Experimental Evaluation",
+      "V Limitations",
+      "VI Conclusion",
+      "References",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.31909"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.31909"
+    },
+    {
+      "type": "code",
+      "url": "https://robin-lab.cs.utexas.edu/CoDex/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "University of Texas at Austin",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.31909",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://robin-lab.cs.utexas.edu/CoDex/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://robin-lab.cs.utexas.edu/CoDex/"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

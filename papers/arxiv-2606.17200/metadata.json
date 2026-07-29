@@ -1,0 +1,225 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.17200",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "ACE-Ego-0: Unifying Egocentric Human and Robotic Data for VLA Pretraining",
+  "title_zh": "ACE-Ego-0：统一自我中心人类与机器人数据的 VLA 预训练",
+  "abstract": "Vision-Language-Action (VLA) models benefit from large-scale and diverse embodied data, yet scaling robot trajectory collection is costly and labor-intensive. Recent advances show that large-scale egocentric human videos provide complementary real-world supervision in pretraining. However, joint training on human and robot data remains challenging due to divergences in action spaces, embodiment structures, temporal dynamics, and supervision quality. We introduce ACE-EGO-0, a unified VLA pretrain",
+  "paper_url": "https://arxiv.org/abs/2606.17200",
+  "pdf_url": "https://arxiv.org/pdf/2606.17200",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Hao Li",
+      "affiliations": []
+    },
+    {
+      "name": "Ganlong Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Yufei Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Haotian Hou",
+      "affiliations": []
+    },
+    {
+      "name": "Guoquan Ye",
+      "affiliations": []
+    },
+    {
+      "name": "Tongyan Fang",
+      "affiliations": []
+    },
+    {
+      "name": "Chunxiao Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Siyuan Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Jianbo Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaogang Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Hongsheng Li",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "acerobotics",
+      "name": "ACE Robotics",
+      "role": "primary"
+    },
+    {
+      "id": "chineseuniversityofhongkongmmlab",
+      "name": "Chinese University of Hong Kong MMLab",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-15",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_reason": "系统性解决人类自我中心视频与机器人数据联合训练四大挑战的VLA预训练框架。核心贡献：(1)首次明确识别并逐一解决动作空间分歧、形态结构分歧、时序动态分歧和监督质量分歧四个障碍；(2)可扩展的ego video-to-action管线将1.48K小时人类视频转为伪动作轨迹；(3)可靠性感知训练目标(human auxiliary loss)通过加权策略自动聚焦可靠信号，避免噪声标签损害训练；(4)在RoboCasa GR1 TableTop和RoboTwin 2.0上达到SOTA，并验证了真实世界双臂迁移。6K+小时总训练数据。相较于看板中已有的纯机器人数据VLA，ACE-Ego-0从异构数据融合角度提供了重要的规模化路径。代码已公开。主要风险：依赖伪动作标注管线的质量，人类视频选择偏向性可能引入偏差。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "中文标题待翻译",
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.17200",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Introduction",
+      "Related Work",
+      "Scalable Vision-Language-Action Model Pretraining",
+      "Learning from Egocentric Human Video",
+      "Method",
+      "Unified Action Representation",
+      "Canonical Action Space",
+      "Cross-Embodiment Morphology Conditioning",
+      "Time-Aligned Action Chunking",
+      "Reliability-Aware Training Objective",
+      "Heterogeneous Pretraining Data",
+      "Heterogeneous Data Sources",
+      "Egocentric Video-to-Action Conversion",
+      "Experiments",
+      "Experimental Setup",
+      "Simulation Results",
+      "RoboCasa GR1 TableTop",
+      "RoboTwin 2.0",
+      "Real-Robot Evaluation",
+      "Ablation Studies",
+      "Human Data for Augmented Fine-Tuning",
+      "Conclusion",
+      "Limitations",
+      "Acknowledgments",
+      "References",
+      "Appendix A Additional Method Details",
+      "Camera-Space Action Standardization and Layout",
+      "Robot Kinematic Graph Construction",
+      "Morphology Encoder",
+      "Human Surrogate Morphology Embeddings",
+      "Reliability-Aware Human Auxiliary Loss Details",
+      "Appendix B Training Details",
+      "Architecture, Training, and Evaluation Protocol",
+      "Hyperparameters",
+      "Dataset Mixtures and Sampling",
+      "Appendix C Additional Experiments",
+      "Real-Robot Task Descriptions",
+      "Real-Robot Success Criteria",
+      "Qualitative Results",
+      "Full RoboCasa GR1 TableTop Results",
+      "Full RoboTwin 2.0 Results",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.17200"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.17200"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "ACE Robotics",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.17200",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Chinese University of Hong Kong MMLab",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.17200",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

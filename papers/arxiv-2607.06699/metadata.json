@@ -8,7 +8,7 @@
   "abstract": "Recovering real-world scenes as interactive simulation environments can enable generalizable robot learning and reproducible policy evaluation. However, constructing scenes that are both physically stable and visually faithful remains slow and expensive. In this work, we present RoboSnap, a real-to-sim framework that turns a single RGB image into a simulation-ready scene. The key idea is a layered design that separates the physics-critical interaction area from the surrounding visual context: collision-aware foreground assets are refined for stable robot interaction, while a 3D Gaussian splatting visual layer preserves faithful background appearance under novel views. Experiments on DROID scenes and real-robot tasks show that RoboSnap achieves reliable trajectory replay in the recovered scenes, supports task-specific synthetic data generation for policy training, and yields meaningful sim-real correlation for policy evaluation. To further support real-to-sim research, we introduce DROID-Sim, a real-to-sim companion dataset constructed from 564 real-world scenes in DROID. Extensive experiments suggest that the value of real-to-sim methods lies not only in high-fidelity visual reconstruction, but in turning real environments into reusable infrastructure for robot learning and evaluation.",
   "paper_url": "https://arxiv.org/abs/2607.06699",
   "pdf_url": "https://arxiv.org/pdf/2607.06699",
-  "project_url": null,
+  "project_url": "https://robosnap.github.io",
   "code_url": null,
   "dataset_url": null,
   "model_url": null,
@@ -51,7 +51,28 @@
       "affiliations": []
     }
   ],
-  "organizations": [],
+  "organizations": [
+    {
+      "id": "shanghaiailaboratory",
+      "name": "Shanghai AI Laboratory",
+      "role": "primary"
+    },
+    {
+      "id": "shanghaijiaotonguniversity",
+      "name": "Shanghai Jiao Tong University",
+      "role": "collaborator"
+    },
+    {
+      "id": "tsinghuauniversity",
+      "name": "Tsinghua University",
+      "role": "collaborator"
+    },
+    {
+      "id": "zhejianguniversity",
+      "name": "Zhejiang University",
+      "role": "collaborator"
+    }
+  ],
   "dates": {
     "first_publication": "2026-07-07",
     "last_revision": null
@@ -86,7 +107,9 @@
     "environments": [
       "mixed"
     ],
-    "assets": [],
+    "assets": [
+      "project-page"
+    ],
     "properties": [
       "real-robot-evaluation"
     ]
@@ -142,5 +165,72 @@
       "url": "https://robosnap.github.io/"
     }
   ],
-  "suggested_new_tags": []
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Shanghai AI Laboratory",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.06699",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Shanghai Jiao Tong University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.06699",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Tsinghua University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.06699",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Zhejiang University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.06699",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://robosnap.github.io",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-or-project-page",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
 }

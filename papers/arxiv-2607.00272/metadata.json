@@ -1,0 +1,209 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2607.00272",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "ASPIRE: Agentic /Skills Discovery for Robotics",
+  "title_zh": "ASPIRE：机器人自主技能编程与发现",
+  "abstract": "Traditional robot programming is challenging: it requires orchestrating multimodal perception, managing physical contact dynamics, and handling diverse configurations and execution failures. We introduce ASPIRE (Agentic Skill Programming through Iterative Robot Exploration), a continual learning system that autonomously writes and refines robot control programs in a code-as-policy paradigm while compounding experience into a reusable skill library. ASPIRE discovers skills that persist across tas",
+  "paper_url": "https://arxiv.org/abs/2607.00272",
+  "pdf_url": "https://arxiv.org/pdf/2607.00272",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Runyu Lu",
+      "affiliations": []
+    },
+    {
+      "name": "Yubo Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Ethan Kou",
+      "affiliations": []
+    },
+    {
+      "name": "Letian Fu",
+      "affiliations": []
+    },
+    {
+      "name": "Wenli Xiao",
+      "affiliations": []
+    },
+    {
+      "name": "Ajay Mandlekar",
+      "affiliations": []
+    },
+    {
+      "name": "Yinzhen Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Guanya Shi",
+      "affiliations": []
+    },
+    {
+      "name": "Ken Goldberg",
+      "affiliations": []
+    },
+    {
+      "name": "Ang Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Mosharaf Chowdhury",
+      "affiliations": []
+    },
+    {
+      "name": "Yuke Zhu",
+      "affiliations": []
+    },
+    {
+      "name": "Linxi \"Jim\" Fan",
+      "affiliations": []
+    },
+    {
+      "name": "Guanzhi Wang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "carnegiemellonuniversity",
+      "name": "Carnegie Mellon University",
+      "role": "primary"
+    },
+    {
+      "id": "nvidia",
+      "name": "NVIDIA",
+      "role": "collaborator"
+    },
+    {
+      "id": "universityofcaliforniaberkeley",
+      "name": "University of California, Berkeley",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-30",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "simulators",
+      "data"
+    ],
+    "topics": [
+      "sim-to-real"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_reason": "Autonomous skill programming system from top labs (Yuke Zhu, Ajay Mandlekar, Ken Goldberg, Jim Fan, Guanya Shi) that compounds experience into reusable skill libraries with strong sim-to-real results across multiple benchmarks.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "代码/资产链接未独立验证",
+      "中文标题待翻译"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "ar5iv-html",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2607.00272",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Introduction",
+      "Method",
+      "Experiments",
+      "Conclusion"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-24"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2607.00272"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Carnegie Mellon University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.00272",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "NVIDIA",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.00272",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University of California, Berkeley",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.00272",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.18375",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "PAIWorld: A 3D-Consistent World Foundation Model for Robotic Manipulation",
+  "title_zh": "PAIWorld：面向机器人操作的三维一致世界基础模型",
+  "abstract": "World foundation models (WFMs) are powerful simulators, yet they predominantly operate in a single-view setting and lack the multi-view 3D consistency required for robotic manipulation. While robotic systems rely on multiple cameras (egocentric, eye-to-hand, and wrist-mounted) for policy learning, current multi-view world models simply concatenate view tokens without explicit geometric reasoning. This causes cross-view object drift, depth inconsistency, and texture misalignment. We trace these f",
+  "paper_url": "https://arxiv.org/abs/2606.18375",
+  "pdf_url": "https://arxiv.org/pdf/2606.18375",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yuhang Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Xuan Lv",
+      "affiliations": []
+    },
+    {
+      "name": "Junyan Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Zhiyuan Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Jiazhao Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Ruizhen Hu",
+      "affiliations": []
+    },
+    {
+      "name": "Wancheng Feng",
+      "affiliations": []
+    },
+    {
+      "name": "Shilong Zou",
+      "affiliations": []
+    },
+    {
+      "name": "Hewen Xiao",
+      "affiliations": []
+    },
+    {
+      "name": "Ziqiao Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Kaiyun Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Zhiyu Peng",
+      "affiliations": []
+    },
+    {
+      "name": "Juzhan Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Hang Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Chenyang Zhu",
+      "affiliations": []
+    },
+    {
+      "name": "Renjiao Yi",
+      "affiliations": []
+    },
+    {
+      "name": "Yifei Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Douhui Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Yan Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Kexu Cheng",
+      "affiliations": []
+    },
+    {
+      "name": "Chunhe Song",
+      "affiliations": []
+    },
+    {
+      "name": "Yunzhi Xue",
+      "affiliations": []
+    },
+    {
+      "name": "Xiuhong Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Leitao Guo",
+      "affiliations": []
+    },
+    {
+      "name": "Yunji Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Bin Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Haibin Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Kai Xu",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "chineseacademyofsciences",
+      "name": "Chinese Academy of Sciences",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-16",
+    "last_revision": "2026-06-23"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "simulators",
+      "infrastructure"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "State-of-the-art multi-view world foundation model for manipulation. Leaderboard-topping results on WorldArena and AgiBot-Challenge. 14B parameters, 2.5M video clips. Geometric innovations (Geo-RoPE, 3D-REPA) are well-motivated. However, no code or model weights available, limiting reproducibility. Important infrastructure for model-based planning.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.18375",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "2.1 World Foundation Models for Physical AI",
+      "2.2 Multi-View and 3D-Aware Visual Generation",
+      "2.3 3D Representations and Geometric Reconstruction",
+      "3 Method",
+      "3.1 Problem Formulation",
+      "3.2 Flow Matching DiT for Video Generation",
+      "3.3 Geometric Rotary Position Embedding",
+      "3.4 Geometry-Aware Cross-View Attention",
+      "3.5 Latent 3D-REPA (3D Geometric Prior)",
+      "3.6 Joint Mechanism",
+      "3.7 Training Objective",
+      "4 Experiments",
+      "4.1 Implementation Details",
+      "4.2 Action-Conditioned Video Generation",
+      "4.2.1 WorldArena Benchmark",
+      "4.2.2 AgiBot-Challenge2026 Benchmark",
+      "4.3 Text-Conditioned Multi-View Generation",
+      "4.4 Ablation Study",
+      "5 Conclusion",
+      "Contributions",
+      "References",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.18375"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.18375"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Chinese Academy of Sciences",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.18375",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.10449",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "GuideWalk: Learning Unified Autonomous Navigation and Locomotion for Humanoid Robots across Versatile Terrains",
+  "title_zh": "GuideWalk：面向多样地形的人形机器人统一导航与运动学习",
+  "abstract": "Humanoid robots have achieved strong locomotion capabilities, but reliable navigation on versatile terrains remains challenging because obstacle avoidance must be coordinated with dynamically feasible motion. In this work, we present GuideWalk, a unified end-to-end framework that integrates traversability-aware navigation guidance with terrain-adaptive locomotion teacher for humanoid navigation. Specifically, we introduce a navigation module that provides explicit velocity guidance, decoupling o",
+  "paper_url": "https://arxiv.org/abs/2606.10449",
+  "pdf_url": "https://arxiv.org/pdf/2606.10449",
+  "project_url": "https://guide-walk.github.io/GuideWalk",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Haoxuan Han",
+      "affiliations": []
+    },
+    {
+      "name": "Chen Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Linao Gong",
+      "affiliations": []
+    },
+    {
+      "name": "Xin Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Hao Hu",
+      "affiliations": []
+    },
+    {
+      "name": "Junhong Guo",
+      "affiliations": []
+    },
+    {
+      "name": "Zhicheng He",
+      "affiliations": []
+    },
+    {
+      "name": "Yao Su",
+      "affiliations": []
+    },
+    {
+      "name": "Fenghua He",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "harbininstituteoftechnology",
+      "name": "Harbin Institute of Technology",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-09",
+    "last_revision": "2026-06-13"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "topics": [
+      "reinforcement-learning"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "针对人形机器人在复杂地形上的统一导航与运动协调问题，提出GuideWalk框架——结合可穿越性感知导航引导与地形自适应运动教师的端到端方案。核心贡献：(1)导航模块提供显式速度引导，将避障与地形条件解耦；(2)复合教师蒸馏方案聚合目标导向命令与动力学一致动作；(3)RL+BC辅助精炼提升鲁棒性。在楼梯、斜坡、窄梁等场景验证。相较看板中的人形机器人工作(如SIMPLE基准、MotionWAM)，GuideWalk更侧重感知-导航-运动的端到端耦合而非仿真评估协议或世界模型。主要风险：仅仿真实验无真实机器人验证，代码未确认开源。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": []
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.10449",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Works",
+      "3 Methodology",
+      "3.1 System Overview",
+      "3.2 Navigation Guidance",
+      "3.3 Locomotion Teacher",
+      "3.4 DAgger Distillation",
+      "3.5 RL Finetune",
+      "4 Experiments",
+      "4.1 Experimental Setup",
+      "4.2 Simulation Experiments",
+      "4.3 Real World Experiments",
+      "5 Conclusion",
+      "6 Limitations and Future Work",
+      "References",
+      "Appendix A Details of Policy Training",
+      "A.1 Observations",
+      "A.2 Reward Design",
+      "A.3 Depth Image Processing",
+      "A.4 Policy Network Architecture",
+      "A.4.1 Locomotion Teacher Policy",
+      "A.4.2 Student Policy",
+      "A.5 Training Hyperparameters",
+      "Appendix B Details of Deployment",
+      "B.1 Hardware Platform and Actuation",
+      "B.2 Perception and Local Mapping",
+      "B.3 Onboard Compute and Data Flow",
+      "Appendix C Performance Comparison",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.10449"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.10449"
+    },
+    {
+      "type": "project",
+      "url": "https://guide-walk.github.io/GuideWalk"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Harbin Institute of Technology",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.10449",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://guide-walk.github.io/GuideWalk",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://guide-walk.github.io/GuideWalk/"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

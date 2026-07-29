@@ -1,0 +1,246 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.30988",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Multisensory Continual Learning: Adapting Pretrained Visuomotor Policies to Force",
+  "title_zh": "MuSe：多传感器持续学习——将预训练视觉运动策略适配至力觉",
+  "abstract": "Robot manipulation often relies on sensory feedback beyond vision, particularly in contact-rich settings where force, tactile, or audio signals reveal interaction states that are not directly observable from images. However, these modalities are often hardware- and task-specific, and large-scale multisensory robot datasets remain scarce. As a result, it is impractical to pretrain policies with every sensor they may encounter. We study multisensory continual learning: adapting a pretrained robot policy to new tasks with newly introduced modalities while preserving performance under the original sensor suite. We propose MultiSensory World Model (MuSe), which incorporates limited multisensory data into pretrained vision-only policies through multi-stage fusion, multisensory future prediction, and experience replay over pretraining data. We instantiate MuSe by augmenting a pretrained vision-only policy with force-torque sensing and evaluate it on real-world manipulation tasks. Our experiments show that MuSe performs strongly on contact-rich finetuning tasks while preserving, and in some cases improving, performance on the original pretraining tasks. These results suggest that a modest multisensory dataset can improve general robot capabilities beyond the finetuning distribution.",
+  "paper_url": "https://arxiv.org/abs/2606.30988",
+  "pdf_url": "https://arxiv.org/pdf/2606.30988",
+  "project_url": "https://jadenvc.github.io/multisensory-continual-learning/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Jaden Clark",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Changhao Wang",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Yihuai Gao",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Seongheon Hong",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Hojung Choi",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Mark Cutkosky",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Yifan Hou",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Shuran Song",
+      "affiliations": [
+        "stanford"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "stanforduniversity",
+      "name": "Stanford University",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-29",
+    "last_revision": "2026-07-05"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "imitation-learning",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "proprioception",
+      "tactile"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [
+      "project-page"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 74,
+    "selection_reason": "提出多传感器持续学习新问题：如何将预训练视觉策略适配至新传感器模态而不遗忘原有能力。MuSe通过多阶段融合（早期+晚期）、多传感器未来预测和经验回放三组件，仅用少量力/扭矩演示数据即实现接触密集型任务的显著提升（花瓶擦拭5/15→11.5/15），同时保持甚至改善原有纯视觉任务的性能。为机器人策略的后预训练传感器扩展提供了新范式。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "hermes-agent",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": []
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.30988",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Works",
+      "3 Method",
+      "3.1 Problem Statement",
+      "3.2 Multi-stage Fusion",
+      "3.3 Multisensory Future Prediction",
+      "3.4 Experience Replay",
+      "3.5 Implementation",
+      "4 MuSe with Force-Torque Sensing: A Case Study",
+      "4.1 Cross-Modal Generalization",
+      "4.2 Forward Transfer",
+      "4.3 Backward Transfer",
+      "5 Conclusion",
+      "Acknowledgments",
+      "References",
+      "6 Appendix",
+      "6.1 Performance with Fixed Compliance",
+      "6.2 Diffusion Policy Baseline",
+      "6.3 Training Details",
+      "6.4 Deployment Details",
+      "6.5 Evaluation Details",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.30988"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.30988"
+    },
+    {
+      "type": "project",
+      "url": "https://jadenvc.github.io/multisensory-continual-learning/"
+    },
+    {
+      "type": "project",
+      "url": "https://multisensorylearning.github.io/multisensory-world-model/"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "continual-learning",
+      "name": "Continual Learning",
+      "reason": "MuSe研究预训练策略在新传感器上的持续学习（避免灾难性遗忘），现有标签无覆盖。",
+      "evidence": "论文Section 3.4详细讨论了经验回放防止灾难性遗忘的机制。"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "Stanford University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.30988",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://jadenvc.github.io/multisensory-continual-learning/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://jadenvc.github.io/multisensory-continual-learning/"
+    },
+    {
+      "kind": "project",
+      "url": "https://multisensorylearning.github.io/multisensory-world-model/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://multisensorylearning.github.io/multisensory-world-model/"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

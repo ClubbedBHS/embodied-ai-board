@@ -19,7 +19,18 @@
       "affiliations": []
     }
   ],
-  "organizations": [],
+  "organizations": [
+    {
+      "id": "instituteofautomationchineseacademyofsciences",
+      "name": "Institute of Automation, Chinese Academy of Sciences",
+      "role": "primary"
+    },
+    {
+      "id": "wuhanuniversity",
+      "name": "Wuhan University",
+      "role": "collaborator"
+    }
+  ],
   "dates": {
     "first_publication": "2026-07-14",
     "last_revision": null
@@ -106,6 +117,52 @@
       "name": "safety",
       "reason": "候选筛选中出现，但尚未进入受控标签词表。",
       "evidence": "工作在 VLA 模型后门攻击防御这一新兴安全问题上提出 TrustVLA，首次系统性地揭示了被攻击 VLA 中的紧凑因果足迹（compact causal footprint）机制，并基于 Dirichlet 证据框架设计了推理时防御：通过逐令牌逐层不确定性监测检测异常、反事实机制分数下降定位视觉触发器、局部修复恢复观察。在两个独立提出的攻击（BadVLA 和 INFUSE）上跨 OpenVLA/LIBERO 和 π0.5 验证，降低攻击成功率同时保持干净任务性能，提供免重训练的机制引导防御方案。"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "Institute of Automation, Chinese Academy of Sciences",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.12571",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Wuhan University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.12571",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
     }
   ]
 }

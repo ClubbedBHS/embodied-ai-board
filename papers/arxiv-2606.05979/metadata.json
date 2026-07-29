@@ -1,0 +1,187 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.05979",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "World-Language-Action Model for Unified World Modeling, Language Reasoning, and Action Synthesis",
+  "title_zh": "世界-语言-动作模型：统一世界建模、语言推理与动作合成",
+  "abstract": "We propose world-language-action (WLA) models as a new class of embodied foundation models. WLA takes textual instructions, images, and robot states as inputs to jointly predict textual subtasks, subgoal images, and robot actions, conjoining the \\emph{world modeling interface} to learn from extensive egocentric videos as in the world-action model (WAM) and the \\emph{language reasoning} capacities to solve complex long-horizon tasks as in vision-language-action (VLA) models. At the core of WLA li",
+  "paper_url": "https://arxiv.org/abs/2606.05979",
+  "pdf_url": "https://arxiv.org/pdf/2606.05979",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yi Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Zhihong Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Siqi Kou",
+      "affiliations": []
+    },
+    {
+      "name": "Yiyang Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Yanzhe Hu",
+      "affiliations": []
+    },
+    {
+      "name": "Jianbo Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Boyuan Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Zhijie Wei",
+      "affiliations": []
+    },
+    {
+      "name": "Xiao Xia",
+      "affiliations": []
+    },
+    {
+      "name": "Xueqi Li",
+      "affiliations": []
+    },
+    {
+      "name": "Pengfei Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Zhijie Deng",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-06-04",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_reason": "开创性地提出World-Language-Action (WLA)模型类别，首次将世界建模、语言推理和动作合成统一为单一AR Transformer。核心贡献：(1)用AR Transformer替代WAM中传统的双向扩散Transformer，实现更自然的序列建模；(2)世界预测通过meta-queries隐式影响动作生成，推理时可完全禁用(零开销)或激活用于test-time scaling；(3)World Expert提供物理动态监督，Action Expert利用世界预测简化状态-动作关联学习；(4)WLA-0原型在RoboTwin2.0达到92.94%、RMBench 56.5%的SOTA性能，40ms推理延迟。相较于看板中已有的VLA(π0, OpenVLA)和WAM(MotionWAM)，WLA提供了全新的统一范式。代码完全开源。主要风险：2B参数量在RTX 5090上运行，部署门槛较高；RMBench 56.5%的绝对分仍有提升空间。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "中文标题待翻译",
+      "论文 HTML 作者区未能自动解析出明确机构，需人工核验",
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.05979",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "2.1 World Modeling for Policy Learning",
+      "2.2 Language-Guided Embodied Control",
+      "3 Methodology",
+      "3.1 World-Language-Action Models",
+      "3.2 Inference Optimization",
+      "4 Experiments",
+      "4.1 Implementation Details",
+      "4.2 Evaluation in Simulation Environment",
+      "4.3 Real-World Experiments",
+      "4.4 Learning New Tasks from Videos",
+      "5 Conclusion",
+      "6 Limitations",
+      "References",
+      "Appendix A Acceleration Techniques",
+      "Appendix B Simulation Benchmarks",
+      "B.1 RoboTwin 2.0",
+      "B.2 LIBERO",
+      "B.3 RMBench",
+      "Appendix C Real-World Experiments",
+      "Appendix D Learning New Tasks from Videos",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.05979"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.05979"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

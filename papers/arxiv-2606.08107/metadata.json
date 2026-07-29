@@ -1,0 +1,214 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.08107",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Ego-Pi: VLA Fine-Tuning for Ego-Centric Human and Robot Data",
+  "title_zh": "Ego-Pi：面向自我中心人类与机器人数据的VLA微调",
+  "abstract": "Robotics faces a fundamental challenge of data scarcity. Unlike language or vision research, there is no internet-scale dataset for robotic manipulation. A promising path forward is to leverage egocentric human data, which can be collected more easily, with greater breadth, and at a larger scale. Towards this end, we investigate key design choices for learning across human and humanoid embodiments equipped with dexterous five-finger hands, using the π0.5 model as a foundation. Our results show that human data enables robots to learn new task semantics and compose existing skills into novel behaviors without corresponding robot data.",
+  "paper_url": "https://arxiv.org/abs/2606.08107",
+  "pdf_url": "https://arxiv.org/pdf/2606.08107",
+  "project_url": "https://egopipaper.github.io/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Ji Woong Kim",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Ke Wang",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Zipeng Fu",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Sirui Chen",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Cong Zhao",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Jeff Lai",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Chelsea Finn",
+      "affiliations": [
+        "stanford"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "stanforduniversity",
+      "name": "Stanford University",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-06",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "behavior-cloning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "humanoid"
+    ],
+    "modalities": [
+      "vision",
+      "proprioception"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [
+      "project-page"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 70,
+    "selection_reason": "探索利用自我中心人类数据微调VLA模型以赋能灵巧手人形机器人。基于π0.5模型，研究跨人-机器人具身学习的关键设计选择：动作空间对齐（交错式双手动作序列解决灵巧手58维超限问题）、视觉对齐（彩色骨架线叠加）和数据混合策略。在番茄分拣（颜色规则）、包装（技能组合）和装箱（顺序规则）三个任务上验证人类数据可传授机器人数据中不存在的高级任务语义。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "hermes-agent",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.08107",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 Ego-Pi",
+      "3.1 Preliminaries",
+      "3.2 Aligning human and robot actions",
+      "3.3 Adapting gripper-based VLAs for hand control",
+      "3.4 Visual alignment of human and robot actions",
+      "4 Implementation Details",
+      "5 Experiments",
+      "Tomato sorting by color",
+      "Boxing task",
+      "Packaging",
+      "6 Results",
+      "Q1: How well can simple co-training with human data teach high-level semantics?",
+      "Q2: How do additional design choices, such as subtask generation or visual augmentation for cross-embodiment alignment, help?",
+      "Q3: How does the choice of the robot hand make a difference on effectively transferring task semantics?",
+      "Q4: How critical is the role of wrist cameras in policy performance?",
+      "7 Conclusion and Limitations",
+      "References",
+      "8 Joint Mapping between Human and Robot Hands",
+      "9 Model Details",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.08107"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.08107"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Stanford University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.08107",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://egopipaper.github.io/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-or-project-page",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

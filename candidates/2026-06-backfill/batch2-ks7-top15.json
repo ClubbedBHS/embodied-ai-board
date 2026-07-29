@@ -1,0 +1,1291 @@
+[
+  {
+    "id": "arxiv-2607.00272",
+    "title": "ASPIRE: Agentic /Skills Discovery for Robotics",
+    "abstract": "Traditional robot programming is challenging: it requires orchestrating multimodal perception, managing physical contact dynamics, and handling diverse configurations and execution failures. We introduce ASPIRE (Agentic Skill Programming through Iterative Robot Exploration), a continual learning system that autonomously writes and refines robot control programs in a code-as-policy paradigm while compounding experience into a reusable skill library. ASPIRE discovers skills that persist across tas",
+    "paper_url": "https://arxiv.org/abs/2607.00272",
+    "ks": 7,
+    "authors": [
+      "Runyu Lu",
+      "Yubo Wu",
+      "Ethan Kou",
+      "Letian Fu",
+      "Wenli Xiao"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "sim-to-real",
+      "manipulation",
+      "trajectory",
+      "bimanual",
+      "autonomous",
+      "IL"
+    ],
+    "first_publication": "2026-06-30",
+    "last_revision": null,
+    "watchlist_matches": [
+      "author:yuke zhu",
+      "author:ajay mandlekar",
+      "author:guanya shi"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "simulators"
+    ],
+    "organizations": [
+      "Carnegie Mellon University",
+      "NVIDIA",
+      "University of California, Berkeley"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Carnegie Mellon University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2607.00272",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "NVIDIA",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2607.00272",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "University of California, Berkeley",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2607.00272",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.02745",
+    "title": "SeeTraceAct: Visibility-Aware Latent Planning from Cross-Embodiment Demonstration Videos",
+    "abstract": "Vision-language-action models (VLAs) are promising general-purpose robot policies, but adapting them to new tasks typically requires costly task-specific teleoperation data. As an alternative, we study one-shot demo-conditioned VLAs, where a robot policy is conditioned on a single demonstration video of an unseen task. We find that existing end-to-end approaches often struggle when successful execution requires precisely localizing small target regions. To address this limitation, we propose See",
+    "paper_url": "https://arxiv.org/abs/2606.02745",
+    "ks": 7,
+    "authors": [
+      "Jaehyeon Son",
+      "Junhyun Kim",
+      "Kyle Kam",
+      "Jeremiah Coholich",
+      "Seok Joon Kim"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "humanoid",
+      "planning",
+      "teleoperation",
+      "IL"
+    ],
+    "first_publication": "2026-06-01",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "organizations": [
+      "Georgia Institute of Technology",
+      "University of Washington"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Georgia Institute of Technology",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.02745",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "University of Washington",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.02745",
+        "location": "author affiliation block"
+      }
+    ],
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": "https://github.com/jaehyeon-son/SeeTraceAct",
+        "status": "verified",
+        "accessible": true,
+        "verification_method": "github-api",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://api.github.com/repos/jaehyeon-son/SeeTraceAct"
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": "https://github.com/jaehyeon-son/SeeTraceAct",
+    "project_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.03682",
+    "title": "GN0: Toward a Unified Paradigm for Generation, Evaluation, and Policy Learning in Visual-Language Navigation",
+    "abstract": "Embodied navigation connects intelligent agents with the physical world and is fundamental for general robotic intelligence. Limited availability and quality of navigation data have constrained Vision-and-Language Navigation (VLN) systems' generalization and long-horizon capabilities. To address this, we curate diverse 3D scenes and develop an automated pipeline for large-scale navigation data, resulting in the GN-Matrix dataset. Building on a 3D Gaussian Splatting (3DGS) engine, we introduce a ",
+    "paper_url": "https://arxiv.org/abs/2606.03682",
+    "ks": 7,
+    "authors": [
+      "Xinhai Li",
+      "Xiaotao Zhang",
+      "Yuehao Huang",
+      "Jiankun Dong",
+      "Tianhang Wang"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "embodied",
+      "robot",
+      "foundation model",
+      "simulator",
+      "navigation",
+      "policy learning",
+      "IL"
+    ],
+    "first_publication": "2026-06-02",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "organizations": [
+      "Institute of Artificial Intelligence (TeleAI), China Telecom",
+      "Shanghai Jiao Tong University",
+      "Zhejiang University",
+      "Tongji University",
+      "Fudan University",
+      "Jiangsu University"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Institute of Artificial Intelligence (TeleAI), China Telecom",
+        "source": "project-page",
+        "url": "https://telehuman-gn0.github.io",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Shanghai Jiao Tong University",
+        "source": "project-page",
+        "url": "https://telehuman-gn0.github.io",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Zhejiang University",
+        "source": "project-page",
+        "url": "https://telehuman-gn0.github.io",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Tongji University",
+        "source": "project-page",
+        "url": "https://telehuman-gn0.github.io",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Fudan University",
+        "source": "project-page",
+        "url": "https://telehuman-gn0.github.io",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Jiangsu University",
+        "source": "project-page",
+        "url": "https://telehuman-gn0.github.io",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://telehuman-gn0.github.io",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://telehuman-gn0.github.io",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-or-project-page",
+        "checked_at": "2026-07-28"
+      },
+      {
+        "kind": "code",
+        "url": "https://github.com/TeleHuman/GN0",
+        "status": "verified",
+        "accessible": true,
+        "verification_method": "github-api",
+        "evidence_source": "project-page",
+        "checked_at": "2026-07-28",
+        "http_status": 200
+      },
+      {
+        "kind": "dataset",
+        "url": "https://huggingface.co/datasets/TeleEmbodied/GN-Matrix",
+        "status": "verified",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "project-page",
+        "checked_at": "2026-07-28",
+        "http_status": 200
+      },
+      {
+        "kind": "model",
+        "url": "https://huggingface.co/TeleEmbodied/GN-BAE",
+        "status": "verified",
+        "accessible": true,
+        "verification_method": "huggingface-api",
+        "evidence_source": "project-page",
+        "checked_at": "2026-07-28",
+        "http_status": 200
+      }
+    ],
+    "code_url": "https://github.com/TeleHuman/GN0",
+    "model_url": "https://huggingface.co/TeleEmbodied/GN-BAE",
+    "dataset_url": "https://huggingface.co/datasets/TeleEmbodied/GN-Matrix"
+  },
+  {
+    "id": "arxiv-2606.03963",
+    "title": "AgenticRL: Self-Refining Agentic Reinforcement Learning for Vision-Conditioned UAV Navigation",
+    "abstract": "Deep reinforcement learning has shown strong potential for enabling autonomous robots to learn complex navigational tasks. However, its practical use still depends heavily on human designed reward functions and repeated manual fine tuning, which is time consuming and does not guarantee high success in the desired task. This paper presents AgenticRL, agent guided reinforcement learning framework that increases autonomy in reward design, policy refinement, and real world deployment for unmanned ae",
+    "paper_url": "https://arxiv.org/abs/2606.03963",
+    "ks": 7,
+    "authors": [
+      "Roohan Ahmed Khan",
+      "Yasheerah Yaqoot",
+      "Amir Atef Habel",
+      "Muhammad Ahsan Mustafa",
+      "Dzmitry Tsetserukou"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "sim-to-real",
+      "navigation",
+      "reinforcement learning",
+      "trajectory",
+      "autonomous",
+      "IL"
+    ],
+    "first_publication": "2026-06-02",
+    "last_revision": "2026-06-09",
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "simulators",
+      "infrastructure"
+    ]
+  },
+  {
+    "id": "arxiv-2606.04206",
+    "title": "DLO-Lab: Benchmarking Deformable Linear Object Manipulations with Differentiable Physics",
+    "abstract": "We address the challenge of enabling robots to manipulate deformable linear objects (DLOs), such as ropes, cables, and rubber bands. Prior work has primarily focused on narrow, task-specific problems, often relying on real-world demonstrations or handcrafted heuristics. Such approaches, however, struggle to scale to the wide variety of materials and tasks encountered in practice, and collecting sufficiently diverse real-world data is often impractical. Additionally, existing simulation environme",
+    "paper_url": "https://arxiv.org/abs/2606.04206",
+    "ks": 7,
+    "authors": [
+      "Junyi Cao",
+      "Yian Wang",
+      "Ziyan Xiong",
+      "Chunru Lin",
+      "Zhehuan Chen"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "simulator",
+      "sim-to-real",
+      "manipulation",
+      "grasping",
+      "grasp",
+      "IL"
+    ],
+    "first_publication": "2026-06-02",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "organizations": [
+      "University of Massachusetts Amherst"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "University of Massachusetts Amherst",
+        "source": "project-page",
+        "url": "https://dlo-lab-26.github.io/",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://dlo-lab-26.github.io/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://dlo-lab-26.github.io/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-or-project-page",
+        "checked_at": "2026-07-28"
+      },
+      {
+        "kind": "code",
+        "url": "https://github.com/UMass-Embodied-AGI/DLO-Lab",
+        "status": "verified",
+        "accessible": true,
+        "verification_method": "github-api",
+        "evidence_source": "project-page",
+        "checked_at": "2026-07-28",
+        "http_status": 200
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": "https://github.com/UMass-Embodied-AGI/DLO-Lab",
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.04708",
+    "title": "VISTA: Vision-Grounded and Physics-Validated Adaptation of UMI data for VLA Training",
+    "abstract": "Universal Manipulation Interface (UMI) enables scalable real-world robot data collection without hardware-specific teleoperation, yet leveraging UMI data to train large-scale Vision-Language-Action (VLA) models remains fundamentally challenging. We identify two critical mismatches: wrist-mounted fisheye views, with severe radial distortion and local gripper-centric perspectives, are out-of-distribution for pretrained VLMs; and human-collected trajectories frequently violate kinematic limits, inc",
+    "paper_url": "https://arxiv.org/abs/2606.04708",
+    "ks": 7,
+    "authors": [
+      "Siyuan Yang",
+      "Linzheng Guo",
+      "Ouyang Lu",
+      " Zhaxizhuoma",
+      "Daoran Zhang"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "manipulation",
+      "trajectory",
+      "teleoperation",
+      "IL"
+    ],
+    "first_publication": "2026-06-03",
+    "last_revision": "2026-06-04",
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "organizations": [],
+    "organization_evidence": [],
+    "project_url": "https://tele-umi-vista.github.io",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://tele-umi-vista.github.io",
+        "status": "verified",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://tele-umi-vista.github.io/"
+      },
+      {
+        "kind": "code",
+        "url": "https://github.com/TeleHuman/umi-vista",
+        "status": "verified",
+        "accessible": true,
+        "verification_method": "github-api",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://api.github.com/repos/TeleHuman/umi-vista"
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": "https://github.com/TeleHuman/umi-vista",
+    "model_url": null,
+    "dataset_url": null
+  },
+  {
+    "id": "arxiv-2606.04907",
+    "title": "WAM-Nav: Asymmetric Latent World-Action Modeling for Unified Visual Navigation",
+    "abstract": "Visual navigation requires generating smooth and collision-free trajectories under complex geometric and physical constraints. Existing reactive policies that directly map observations to actions lack anticipatory reasoning, limiting their ability to proactively avoid obstacles. While visual imagination offers predictive foresight, conventional modular approaches separate scene prediction from policy learning, often leading to error accumulation and inefficient inference. To address these limita",
+    "paper_url": "https://arxiv.org/abs/2606.04907",
+    "ks": 7,
+    "authors": [
+      "Ning Yang",
+      "Yan Huang",
+      "Kaiwen Peng",
+      "Ziheng He",
+      "Kai Wang"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "embodied",
+      "sim-to-real",
+      "navigation",
+      "trajectory",
+      "policy learning",
+      "WAM",
+      "IL"
+    ],
+    "first_publication": "2026-06-03",
+    "last_revision": "2026-06-13",
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "simulators",
+      "infrastructure"
+    ],
+    "organizations": [
+      "Tsinghua University",
+      "Chinese Academy of Sciences"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Tsinghua University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.04907",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Chinese Academy of Sciences",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.04907",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.05699",
+    "title": "DexFuture: Hierarchical Future-State Visuomotor Targeting for Bimanual Dexterous Tool Use",
+    "abstract": "Bimanual dexterous tool use remains challenging for robots due to high-dimensional hand configurations and complex hand-tool-object dynamics and contact. Most existing control policies depend on future configuration references provided from demonstrations, while future action-conditioned world models require slow online planning over high-dimensional action sequences. A significant challenge is generating a dynamically consistent future reference trajectory without relying on privileged states f",
+    "paper_url": "https://arxiv.org/abs/2606.05699",
+    "ks": 7,
+    "authors": [
+      "Runfa Blark Li",
+      "Kuang-Ting Tu",
+      "Nikola Raicevic",
+      "Dwait Bhatt",
+      "Xinshuang Liu"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "planning",
+      "trajectory",
+      "bimanual",
+      "dexterous",
+      "world model",
+      "IL"
+    ],
+    "first_publication": "2026-06-04",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "organizations": [
+      "University of California, San Diego"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "University of California, San Diego",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.05699",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://blarklee.github.io/DexFuture_official_website/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://blarklee.github.io/DexFuture_official_website/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://blarklee.github.io/DexFuture_official_website/"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.06139",
+    "title": "MotionDisco: Motion Discovery for Extreme Humanoid Loco-Manipulation",
+    "abstract": "We present MotionDisco, a framework that discovers contact-rich, long-horizon humanoid loco-manipulation motions from scratch, without relying on teleoperation or motion retargeting from human demonstrations. This is challenging because the space of possible contact interactions grows combinatorially with the task horizon and the number of objects in the scene. MotionDisco enables rapid discovery of novel motions by coupling a large language model (LLM) guided evolutionary search over sequences ",
+    "paper_url": "https://arxiv.org/abs/2606.06139",
+    "ks": 7,
+    "authors": [
+      "Ilyass Taouil",
+      "Michal Ciebelski",
+      "Shafeef Omar",
+      "Haizhou Zhao",
+      "Angela Dai"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "humanoid",
+      "manipulation",
+      "reinforcement learning",
+      "trajectory",
+      "teleoperation",
+      "IL"
+    ],
+    "first_publication": "2026-06-04",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "organizations": [
+      "Carnegie Mellon University",
+      "New York University",
+      "Technical University of Munich"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Carnegie Mellon University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.06139",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "New York University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.06139",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Technical University of Munich",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.06139",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.06491",
+    "title": "TempoVLA: Learning Speed-Controllable Vision-Language-Action Policies",
+    "abstract": "Robot manipulation alternates between low-risk transit phases that call for fast execution and high-risk contact stages that demand slow, precise motion. Yet existing Vision-Language-Action models (VLAs) only inherit a single fixed speed from training demonstrations. Prior efforts to accelerate VLAs through model compression, KV-cache reuse, or reinforcement learning only shift the policy from one fixed speed to another, and leave deceleration almost unexplored. We observe that the magnitude of ",
+    "paper_url": "https://arxiv.org/abs/2606.06491",
+    "ks": 7,
+    "authors": [
+      "Dong Jing",
+      "Jingchen Nie",
+      "Tianqi Zhang",
+      "Jiaqi Liu",
+      "Huaxiu Yao"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "manipulation",
+      "reinforcement learning",
+      "trajectory",
+      "IL"
+    ],
+    "first_publication": "2026-06-04",
+    "last_revision": "2026-07-19",
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators"
+    ],
+    "organizations": [
+      "Renmin University of China",
+      "University of North Carolina at Chapel Hill"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Renmin University of China",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.06491",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "University of North Carolina at Chapel Hill",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.06491",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.06493",
+    "title": "HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers",
+    "abstract": "For a humanoid robot to be deployed in the real world, the choice of command space (i.e., the interface between task planning and whole-body control) is crucial. Existing whole-body controllers typically demand dense kinematic or spatial references that planners struggle to synthesize from task semantics. We instead propose a compact, explicit interface that is intuitive, general, modular, and expressive enough for diverse loco-manipulation skills. To this end, we introduce HANDOFF, a single hum",
+    "paper_url": "https://arxiv.org/abs/2606.06493",
+    "ks": 7,
+    "authors": [
+      "Lizhi Yang",
+      "Junheng Li",
+      "Nehar Poddar",
+      "Yiling Hou",
+      "Gio Huh"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "humanoid",
+      "manipulation",
+      "locomotion",
+      "planning",
+      "task planning",
+      "IL"
+    ],
+    "first_publication": "2026-06-04",
+    "last_revision": "2026-06-09",
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "data"
+    ],
+    "organizations": [
+      "California Institute of Technology",
+      "Institute for Human & Machine Cognition"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "California Institute of Technology",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.06493",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Institute for Human & Machine Cognition",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.06493",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.07386",
+    "title": "Spline Policy: A Structured Representation for Robot Policies",
+    "abstract": "Modern imitation-learning policies for robot manipulation often represent actions as fixed-resolution action chunks, which are simple and effective but expose limited geometric and temporal structure before execution. This paper studies Spline Policy (SP), a structured representation that replaces action chunks with spline parameters while keeping the policy backbone unchanged. The predicted spline can be decoded as a compact continuous trajectory, queried at different temporal resolutions, cons",
+    "paper_url": "https://arxiv.org/abs/2606.07386",
+    "ks": 7,
+    "authors": [
+      "Mengze Tian",
+      "Yiming Li",
+      "Sichao Liu",
+      "Auke Ijspeert",
+      "Sylvain Calinon"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "vision-language-action",
+      "dexterous manipulation",
+      "manipulation",
+      "trajectory",
+      "dexterous",
+      "IL"
+    ],
+    "first_publication": "2026-06-05",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms"
+    ],
+    "organizations": [
+      "EPFL"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "EPFL",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.07386",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.07389",
+    "title": "Simulation-Driven Imitation Learning for Biosignals-Free Shared-Autonomy Prosthetic Grasping",
+    "abstract": "Biosignals-free shared-autonomy control of upper-limb prosthetic hands aims to enable natural and low-effort manipulation without relying on EMG or other physiological signals. Recent imitation-learning-based approaches have shown promising results, but their scalability is limited by the cost and variability of collecting large amounts of real-world human demonstration data. In this work, we present a scalable simulation framework that automatically generates diverse reach-to-grasp demonstratio",
+    "paper_url": "https://arxiv.org/abs/2606.07389",
+    "ks": 7,
+    "authors": [
+      "Kaijie Shi",
+      "Wanglong Lu",
+      "Huiling Chen",
+      "Vinicius Prado da Fonseca",
+      "Ting Zou"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "imitation learning",
+      "sim-to-real",
+      "manipulation",
+      "grasping",
+      "grasp",
+      "policy learning",
+      "IL"
+    ],
+    "first_publication": "2026-06-05",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ]
+  },
+  {
+    "id": "arxiv-2606.07934",
+    "title": "X-OP: Cross-Morphology Whole-Body Teleoperation via MPC Retargeting",
+    "abstract": "Whole-body teleoperation is essential for scalable robot data collection in loco-manipulation tasks, yet existing approaches relying on exoskeleton suits or multi-camera setups impose prohibitive cost, complexity, and environmental constraints. Recent methods using a single extended reality (XR) device with end-to-end reinforcement learning policies partially address these limitations but require robot-specific retraining, suffer from out-of-distribution failures, and rely on motion retargeting ",
+    "paper_url": "https://arxiv.org/abs/2606.07934",
+    "ks": 7,
+    "authors": [
+      "Jen-Wei Wang",
+      "Sarthak Kaingade",
+      "Andrea Tagliabue",
+      "Nicholas Morozovsky"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "humanoid",
+      "simulator",
+      "manipulation",
+      "reinforcement learning",
+      "teleoperation",
+      "IL"
+    ],
+    "first_publication": "2026-06-06",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "organizations": [
+      "University of California, Berkeley"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "University of California, Berkeley",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.07934",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.08253",
+    "title": "Mind Your Steps: A General Learning Framework for Accurate Humanoid Foothold Tracking",
+    "abstract": "Enabling humanoid robots to operate in complex, dynamic environments remains a critical challenge, fundamentally limited by the ability to navigate robustly, safely, and accurately. While reinforcement learning with velocity-commanded policies has achieved remarkable robustness in humanoid locomotion, this approach lacks explicit control of the foothold placement, leading to unsafe behavior, such as stepping onto human feet, or imprecise navigation, hindering the following manipulation task. Con",
+    "paper_url": "https://arxiv.org/abs/2606.08253",
+    "ks": 7,
+    "authors": [
+      "Alessandro Montenegro",
+      "Shihao Li",
+      "Puze Liu",
+      "Alberto Maria Metelli",
+      "Jan Peters"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "humanoid",
+      "manipulation",
+      "locomotion",
+      "navigation",
+      "reinforcement learning",
+      "IL"
+    ],
+    "first_publication": "2026-06-06",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "simulators",
+      "infrastructure"
+    ],
+    "organizations": [
+      "Politecnico di Milano",
+      "Tongji University",
+      "Technical University of Darmstadt",
+      "German Research Center for Artificial Intelligence (DFKI)",
+      "hessian.AI",
+      "Robotics Institute Germany (RIG)"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Politecnico di Milano",
+        "source": "project-page",
+        "url": "https://montenegroalessandro.github.io/mind-your-steps/",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Tongji University",
+        "source": "project-page",
+        "url": "https://montenegroalessandro.github.io/mind-your-steps/",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Technical University of Darmstadt",
+        "source": "project-page",
+        "url": "https://montenegroalessandro.github.io/mind-your-steps/",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "German Research Center for Artificial Intelligence (DFKI)",
+        "source": "project-page",
+        "url": "https://montenegroalessandro.github.io/mind-your-steps/",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "hessian.AI",
+        "source": "project-page",
+        "url": "https://montenegroalessandro.github.io/mind-your-steps/",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Robotics Institute Germany (RIG)",
+        "source": "project-page",
+        "url": "https://montenegroalessandro.github.io/mind-your-steps/",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://montenegroalessandro.github.io/mind-your-steps/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://montenegroalessandro.github.io/mind-your-steps/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://montenegroalessandro.github.io/mind-your-steps/"
+      },
+      {
+        "kind": "code",
+        "url": "https://github.com/MontenegroAlessandro/loco-mujoco",
+        "status": "verified",
+        "accessible": true,
+        "verification_method": "github-api",
+        "evidence_source": "project-page",
+        "checked_at": "2026-07-28",
+        "http_status": 200
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": "https://github.com/MontenegroAlessandro/loco-mujoco",
+    "dataset_url": null,
+    "model_url": null
+  }
+]

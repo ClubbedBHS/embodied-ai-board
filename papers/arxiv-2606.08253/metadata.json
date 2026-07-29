@@ -1,0 +1,248 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.08253",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Mind Your Steps: A General Learning Framework for Accurate Humanoid Foothold Tracking",
+  "title_zh": "Mind Your Steps：精确人形机器人落脚点跟踪的通用学习框架",
+  "abstract": "Enabling humanoid robots to operate in complex, dynamic environments remains a critical challenge, fundamentally limited by the ability to navigate robustly, safely, and accurately. While reinforcement learning with velocity-commanded policies has achieved remarkable robustness in humanoid locomotion, this approach lacks explicit control of the foothold placement, leading to unsafe behavior, such as stepping onto human feet, or imprecise navigation, hindering the following manipulation task. Con",
+  "paper_url": "https://arxiv.org/abs/2606.08253",
+  "pdf_url": "https://arxiv.org/pdf/2606.08253",
+  "project_url": "https://montenegroalessandro.github.io/mind-your-steps/",
+  "code_url": "https://github.com/MontenegroAlessandro/loco-mujoco",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Alessandro Montenegro",
+      "affiliations": []
+    },
+    {
+      "name": "Shihao Li",
+      "affiliations": []
+    },
+    {
+      "name": "Puze Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Alberto Maria Metelli",
+      "affiliations": []
+    },
+    {
+      "name": "Jan Peters",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "politecnicodimilano",
+      "name": "Politecnico di Milano",
+      "role": "primary"
+    },
+    {
+      "id": "tongjiuniversity",
+      "name": "Tongji University",
+      "role": "collaborator"
+    },
+    {
+      "id": "technicaluniversityofdarmstadt",
+      "name": "Technical University of Darmstadt",
+      "role": "collaborator"
+    },
+    {
+      "id": "germanresearchcenterforartificialintelligencedfki",
+      "name": "German Research Center for Artificial Intelligence (DFKI)",
+      "role": "collaborator"
+    },
+    {
+      "id": "hessianai",
+      "name": "hessian.AI",
+      "role": "collaborator"
+    },
+    {
+      "id": "roboticsinstitutegermanyrig",
+      "name": "Robotics Institute Germany (RIG)",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-06",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "simulators",
+      "infrastructure"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "sim-to-real"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "code",
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "Solid foothold-tracking framework for humanoids with real-world validation; modular design enables pairing with different high-level planners; stance-relative commands are a practical design choice for real deployment.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文 HTML 作者区未能自动解析出明确机构，需人工核验"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.08253",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "I Introduction",
+      "II Related Work",
+      "III Problem Formulation",
+      "IV Methodology",
+      "IV-A Goal and Observation Formulation",
+      "IV-B Training Architecture and Goal Sampling",
+      "IV-C Reward Design",
+      "V Experiments",
+      "V-A Goal Reaching Task",
+      "V-B Narrow Bridge Traversal",
+      "V-C Traversing Complex Environments",
+      "VI Real-World Results",
+      "VII Conclusion",
+      "Acknowledgments",
+      "References",
+      "-A Observations for Actor and Critic Networks",
+      "-B Domain Randomization",
+      "-C PPO Common Training Hyperparameters",
+      "-D Additional Reward Terms",
+      "-E Details on the Employed Velocity-based Policy",
+      "-F Training Parameters for the Policy Used for Flat Terrains",
+      "-G Training Parameters for the Policy Used for Stairs",
+      "-H High-Level Planners",
+      "-I SectionÂ Vâs Extended Tables",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.08253"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.08253"
+    },
+    {
+      "type": "project",
+      "url": "https://montenegroalessandro.github.io/mind-your-steps/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Politecnico di Milano",
+      "source": "project-page",
+      "url": "https://montenegroalessandro.github.io/mind-your-steps/",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Tongji University",
+      "source": "project-page",
+      "url": "https://montenegroalessandro.github.io/mind-your-steps/",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Technical University of Darmstadt",
+      "source": "project-page",
+      "url": "https://montenegroalessandro.github.io/mind-your-steps/",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "German Research Center for Artificial Intelligence (DFKI)",
+      "source": "project-page",
+      "url": "https://montenegroalessandro.github.io/mind-your-steps/",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "hessian.AI",
+      "source": "project-page",
+      "url": "https://montenegroalessandro.github.io/mind-your-steps/",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Robotics Institute Germany (RIG)",
+      "source": "project-page",
+      "url": "https://montenegroalessandro.github.io/mind-your-steps/",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://montenegroalessandro.github.io/mind-your-steps/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://montenegroalessandro.github.io/mind-your-steps/"
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/MontenegroAlessandro/loco-mujoco",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-28",
+      "http_status": 200
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

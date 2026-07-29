@@ -1,0 +1,197 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.26428",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Play2Perfect: What Matters in Dexterous Play Pretraining for Precise Assembly?",
+  "title_zh": "Play2Perfect：灵巧操作中游戏预训练对精密装配的关键因素研究",
+  "abstract": "Multi-fingered robots promise the speed and dexterity of human hands, yet challenging problems such as precise assembly have remained out of reach. These tasks are contact-rich, making data collection for imitation learning difficult, and sparse-reward, making direct exploration with reinforcement learning (RL) intractable. Consequently, prior work has made progress by structuring the problem with specialized grippers, tool attachments, and environment fixtures. In this work, we argue that befor",
+  "paper_url": "https://arxiv.org/abs/2606.26428",
+  "pdf_url": "https://arxiv.org/pdf/2606.26428",
+  "project_url": "https://play2perfect.github.io",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Tyler Ga Wei Lum",
+      "affiliations": []
+    },
+    {
+      "name": "Kushal Kedia",
+      "affiliations": []
+    },
+    {
+      "name": "C. Karen Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Jeannette Bohg",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "stanforduniversity",
+      "name": "Stanford University",
+      "role": "primary"
+    },
+    {
+      "id": "cornelluniversity",
+      "name": "Cornell University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-24",
+    "last_revision": "2026-07-09"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "topics": [
+      "sim-to-real"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_reason": "Exceptional paper on dexterous assembly. Play pretraining for precise manipulation is a compelling paradigm shift. 33x sample efficiency, 0.5mm clearance insertion, zero-shot sim-to-real transfer, and systematic ablation of design choices make this a standout. Published June 24 by Stanford (Bohg, Liu labs). Fills a critical gap in dexterous assembly on the board, which currently has limited coverage of high-precision contact-rich tasks.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "中文标题待翻译"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.26428",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 Play2Perfect",
+      "3.1 Dexterous Play Pretraining",
+      "3.2 RL Finetuning on Assembly Tasks",
+      "3.3 Training Details and Sim-to-Real Transfer",
+      "4 Experiments",
+      "4.1 Can Dense Rewards Overcome the Need for Play?",
+      "4.2 Which Design Choices in Play Pretraining Matter Most for Downstream Assembly?",
+      "4.3 Is RL Finetuning Necessary for Precise, Contact-Rich Assembly?",
+      "4.4 Can Play2Perfect Transfer to the Real World?",
+      "5 Discussion and Limitations",
+      "Acknowledgements",
+      "References",
+      "Appendix A Additional Ablation Results",
+      "Appendix B Simulation and Computational Resources",
+      "Appendix C Policy Architecture and RL Algorithm",
+      "Appendix D Play Pretraining Details",
+      "Appendix E Pretraining Ablation Implementations",
+      "Appendix F Assembly Finetuning Details",
+      "Appendix G Inference Time Pipeline",
+      "Appendix H Real-World Experiment Additional Analysis",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.26428"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.26428"
+    },
+    {
+      "type": "project",
+      "url": "https://play2perfect.github.io"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Stanford University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.26428",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Cornell University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.26428",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://play2perfect.github.io",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://play2perfect.github.io/"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

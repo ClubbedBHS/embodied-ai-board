@@ -1,0 +1,206 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.06493",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers",
+  "title_zh": "HANDOFF：基于互补教师蒸馏的人形智能任务空间全身控制",
+  "abstract": "For a humanoid robot to be deployed in the real world, the choice of command space (i.e., the interface between task planning and whole-body control) is crucial. Existing whole-body controllers typically demand dense kinematic or spatial references that planners struggle to synthesize from task semantics. We instead propose a compact, explicit interface that is intuitive, general, modular, and expressive enough for diverse loco-manipulation skills. To this end, we introduce HANDOFF, a single hum",
+  "paper_url": "https://arxiv.org/abs/2606.06493",
+  "pdf_url": "https://arxiv.org/pdf/2606.06493",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Lizhi Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Junheng Li",
+      "affiliations": []
+    },
+    {
+      "name": "Nehar Poddar",
+      "affiliations": []
+    },
+    {
+      "name": "Yiling Hou",
+      "affiliations": []
+    },
+    {
+      "name": "Gio Huh",
+      "affiliations": []
+    },
+    {
+      "name": "Robert Griffin",
+      "affiliations": []
+    },
+    {
+      "name": "Georgia Gkioxari",
+      "affiliations": []
+    },
+    {
+      "name": "Aaron Ames",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "californiainstituteoftechnology",
+      "name": "California Institute of Technology",
+      "role": "primary"
+    },
+    {
+      "id": "instituteforhumanmachinecognition",
+      "name": "Institute for Human & Machine Cognition",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-04",
+    "last_revision": "2026-06-09"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_reason": "Transformative humanoid controller design with a compact, planner-friendly 10-D interface; multi-teacher distillation is elegant and extensible; promises open-source release; enables VLM-driven task execution without per-task data.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "中文标题待翻译",
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.06493",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 Whole-Body Control",
+      "3.1 Whole-Body Control Teacher",
+      "3.2 Locomotion Teacher",
+      "3.3 Fall-recovery Teacher",
+      "3.4 Planner-Friendly Whole-Body Controller",
+      "3.5 Agentic planner",
+      "4 Experiments",
+      "4.1 Ablation studies",
+      "4.2 Comparison with state-of-the-art whole-body controllers",
+      "4.3 Agentic deployment in sim and real",
+      "5 Conclusion",
+      "6 Limitations",
+      "Acknowledgments",
+      "References",
+      "Appendix A Observations",
+      "A.1 Whole-Body Motion-Tracking Teacher",
+      "A.2 Locomotion Teacher",
+      "A.3 Fall-recovery Teacher",
+      "A.4 Student Policy",
+      "Appendix B Rewards",
+      "B.1 Whole-Body Motion-Tracking Teacher",
+      "B.2 Locomotion Teacher",
+      "B.3 fall-recovery teacher",
+      "B.4 Student",
+      "Appendix C Implementation Details",
+      "C.1 Motion-Data Curation",
+      "C.2 Distillation Internals",
+      "C.3 Mixture-of-Experts Architecture",
+      "C.4 Training Setup",
+      "Appendix D Extended Experimental Results",
+      "Appendix E Hardware Setup",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.06493"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.06493"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "California Institute of Technology",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.06493",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Institute for Human & Machine Cognition",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.06493",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

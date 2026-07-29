@@ -1,0 +1,229 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.06033",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "RealDexUMI: A Wearable Universal Manipulation Interface for Dexterous Robot Learning",
+  "title_zh": "RealDexUMI：面向灵巧机器人学习的可穿戴通用操作接口",
+  "abstract": "Learning dexterous manipulation requires demonstrations that preserve fine hand-object interactions while remaining executable at deployment. Existing pipelines either lose deployable dexterity through retargeting or embodiment conversion, or rely on robot-specific teleoperation that is costly to scale and often lacks intuitive, contact-aware control for dexterous data collection. We present RealDexUMI, a wearable universal manipulation interface built around a shared dexterous end-effector modu",
+  "paper_url": "https://arxiv.org/abs/2606.06033",
+  "pdf_url": "https://arxiv.org/pdf/2606.06033",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Chaoyi Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Yixuan Jiang",
+      "affiliations": []
+    },
+    {
+      "name": "Jiahui Huan",
+      "affiliations": []
+    },
+    {
+      "name": "Yuhui Fu",
+      "affiliations": []
+    },
+    {
+      "name": "Haoyu Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Weitian Yuan",
+      "affiliations": []
+    },
+    {
+      "name": "Jiayi Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Wanpeng Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Haoqi Yuan",
+      "affiliations": []
+    },
+    {
+      "name": "Zongqing Lu",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "tsinghuauniversity",
+      "name": "Tsinghua University",
+      "role": "primary"
+    },
+    {
+      "id": "pekinguniversity",
+      "name": "Peking University",
+      "role": "collaborator"
+    },
+    {
+      "id": "beihanguniversity",
+      "name": "Beihang University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-04",
+    "last_revision": "2026-06-06"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data",
+      "infrastructure"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "创新的共享灵巧手接口设计。核心贡献：(1)同一灵巧手模块作为可穿戴采集设备和机器人末端执行器，彻底消除实施例转换和重定向误差；(2)零间隙采集-部署管线，直接从人类手指运动映射到机器人手指运动；(3)内置触觉传感丰富数据模态；(4)天然支持跨实施例部署。88.75%成功率，多种难度任务验证。相较于看板中已有的数据采集方案(UMI手枪式、YUBI手指对齐式)，RealDexUMI从共享末端执行器角度提供了独特的零间隙范式。北大+BeingBeyond合作。主要风险：灵巧手硬件来自BeingBeyond(商业公司)；目前仅展示了特定灵巧手。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.06033",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "2.1 UMI-Style Demonstration Interfaces",
+      "2.2 Dexterous Demonstration Interfaces",
+      "3 RealDexUMI",
+      "3.1 System Overview",
+      "3.2 Lightweight Dexterous Hand",
+      "3.3 Palm-Side Isomorphic Teleoperation Glove",
+      "3.4 Demonstration Collection",
+      "4 Policy Learning and Deployment",
+      "4.1 Policy Interface",
+      "4.2 Deployment Interface",
+      "5 Experiments",
+      "5.1 Policies Learned from RealDexUMI Demonstrations",
+      "Initial-pose variation.",
+      "Policy performance.",
+      "Ablation analysis.",
+      "5.2 Cross-Embodiment Deployment",
+      "5.3 Collection-Time Dexterity",
+      "6 Limitations",
+      "7 Conclusion",
+      "References",
+      "Appendix",
+      "Appendix A Glove Hardware and Embedded Interface",
+      "A.1 Glove Sensing Interface",
+      "A.2 Embedded Controller",
+      "A.3 Command Calibration and Mapping",
+      "Appendix B Data Collection and Synchronization",
+      "B.1 Recorded Streams",
+      "B.2 Latest-Sample Synchronization",
+      "Appendix C Task Definitions and Evaluation Protocol",
+      "C.1 Evaluation Protocol",
+      "C.2 Representative Task Props",
+      "Appendix D Training Details",
+      "D.1 Diffusion Policy Baseline",
+      "Appendix E Additional Evaluation Results",
+      "E.1 Cumulative Subgoal Completion",
+      "Appendix F Collection-Time Interface Comparison",
+      "Appendix G Survey for Perceived Teleoperation Complexity",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.06033"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.06033"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Tsinghua University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.06033",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Peking University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.06033",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Beihang University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.06033",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

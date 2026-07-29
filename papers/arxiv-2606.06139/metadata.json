@@ -1,0 +1,204 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.06139",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "MotionDisco: Motion Discovery for Extreme Humanoid Loco-Manipulation",
+  "title_zh": "MotionDisco：面向极限人形移动操作的运动发现框架",
+  "abstract": "We present MotionDisco, a framework that discovers contact-rich, long-horizon humanoid loco-manipulation motions from scratch, without relying on teleoperation or motion retargeting from human demonstrations. This is challenging because the space of possible contact interactions grows combinatorially with the task horizon and the number of objects in the scene. MotionDisco enables rapid discovery of novel motions by coupling a large language model (LLM) guided evolutionary search over sequences ",
+  "paper_url": "https://arxiv.org/abs/2606.06139",
+  "pdf_url": "https://arxiv.org/pdf/2606.06139",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Ilyass Taouil",
+      "affiliations": []
+    },
+    {
+      "name": "Michal Ciebelski",
+      "affiliations": []
+    },
+    {
+      "name": "Shafeef Omar",
+      "affiliations": []
+    },
+    {
+      "name": "Haizhou Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Angela Dai",
+      "affiliations": []
+    },
+    {
+      "name": "Aaron M. Johnson",
+      "affiliations": []
+    },
+    {
+      "name": "Majid Khadiv",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "carnegiemellonuniversity",
+      "name": "Carnegie Mellon University",
+      "role": "primary"
+    },
+    {
+      "id": "newyorkuniversity",
+      "name": "New York University",
+      "role": "collaborator"
+    },
+    {
+      "id": "technicaluniversityofmunich",
+      "name": "Technical University of Munich",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-04",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_reason": "Groundbreaking approach to humanoid skill discovery — first to autonomously discover and execute long-horizon loco-manipulation on real hardware without human demonstrations; LLM-guided evolutionary search is a novel paradigm for robot motion synthesis.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "中文标题待翻译",
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.06139",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "2.1 Human to humanoid retargeting",
+      "2.2 LLMs for Motion Synthesis",
+      "3 Method",
+      "3.1 Motion Planning",
+      "3.2 Motion Discovery via LLM-guided Evolutionary Search",
+      "3.2.1 LLM-guided Tree Search",
+      "3.2.2 Tree Expansion",
+      "3.2.3 Contact Plan Mutation",
+      "3.2.4 Contact Plan Scoring and Feedback",
+      "4 Evaluation",
+      "4.1 LLM-guided Search Enables Motion Discovery",
+      "4.2 LLM-guided Search Produces Diverse Motions",
+      "4.3 Real-World Deployment",
+      "5 Conclusion",
+      "6 Limitations & Future Work",
+      "References",
+      "Appendix A LLM-guided Search Implementation",
+      "A.1 Prompt Details",
+      "A.2 Tree Expansion and Sampling Details",
+      "Appendix B Evaluation",
+      "B.1 Task Descriptions",
+      "B.2 Real-World Deployment Snapshots",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.06139"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.06139"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Carnegie Mellon University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.06139",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "New York University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.06139",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Technical University of Munich",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.06139",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

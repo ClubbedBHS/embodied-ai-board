@@ -1,0 +1,219 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.20905",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Vesta: A Generalist Embodied Reasoning Model",
+  "title_zh": "Vesta：通用具身推理模型",
+  "abstract": "Robots operating in open-world environments must seamlessly integrate localization, spatial reasoning, navigation, and long-horizon planning. While specialist models excel at individual tasks, deploying a multi-model stack is computationally expensive and prone to cascading errors. We present Vesta, a unified embodied generalist that consolidates these capabilities into a single foundation model. Our approach combines a diverse and massive curated corpus designed to induce spatial grounding and a simple multimodal memory harness that enables reasoning over extended time horizons. Across diverse benchmarks, Vesta on average beats individual SOTA baselines by >20% and beats an ensemble of per-category-best baselines by >10% – thus demonstrating that a generalist model can match or exceed specialists. On real-world robotic tasks requiring memory and reasoning, Vesta improves task success by >35%. Our work thus demonstrates that a single generalist is a feasible, scalable, and arguably preferable alternative to combining specialists.",
+  "paper_url": "https://arxiv.org/abs/2606.20905",
+  "pdf_url": "https://arxiv.org/pdf/2606.20905",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Johan Bjorck",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Zhiqi Li",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Yunze Man",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Jing Wang",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "An-Chieh Cheng",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Sifei Liu",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Shihao Wang",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Zhiding Yu",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Abhishek Badki",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Stan Birchfield",
+      "affiliations": [
+        "nvidia"
+      ]
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-06-18",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "planning",
+      "foundation-model"
+    ],
+    "tasks": [
+      "navigation",
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm",
+      "mobile-robot"
+    ],
+    "modalities": [
+      "vision",
+      "language"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "system"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 82,
+    "selection_reason": "首个统一定位、导航、具身推理与记忆规划的单一体模型。基于Qwen3-VL-8B微调，在多个基准上平均超越SOTA专家模型>20%，超越各类别最优模型集成>10%。真实机器人记忆推理任务成功提升38.3%。证明了通才模型可匹敌甚至超越专家模型的可行性。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "真实机器人实验仅使用双臂YAM平台，泛化性有待验证",
+      "32位作者仅列举前10位代表性作者",
+      "论文 HTML 作者区未能自动解析出明确机构，需人工核验",
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.20905",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Methods",
+      "2.1 Localization",
+      "2.2 Navigation",
+      "2.3 Embodied Reasoning",
+      "2.4 Action Planning with Memory",
+      "3 Training recipe",
+      "4 Evaluation",
+      "4.1 Embodied Reasoning",
+      "4.2 Action Planning",
+      "4.3 Navigation",
+      "4.4 Real Robot Evaluation",
+      "4.5 Ablations",
+      "5 Related Work",
+      "6 Discussion",
+      "References",
+      "Appendix A Real Robot Evaluation",
+      "Appendix B Real-Robot Inference Loop",
+      "Appendix C More on Training Details",
+      "Appendix D Related Work",
+      "Embodied Foundation Models.",
+      "Benchmarking and Evaluation of Robotics Foundation Models.",
+      "Memory in Robotics.",
+      "Appendix E Limitations",
+      "Appendix F Broader Impacts",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.20905"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.20905"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.16436",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "V2P-Manip: Learning Dexterous Manipulation from Monocular Human Videos",
+  "title_zh": "V2P-Manip：从单目人类视频学习灵巧操作",
+  "abstract": "Achieving autonomous robotic dexterous manipulation requires precise, human-like action sequences at scale. As a scalable supplement to costly teleoperation data, extracting trajectories with both visual fidelity and physical plausibility from monocular videos represents a promising frontier in embodied AI. To this end, we introduce V2P-Manip, an efficient framework designed to learn dexterous manipulation policies directly from human demonstration videos. We establish an efficient, integrated p",
+  "paper_url": "https://arxiv.org/abs/2606.16436",
+  "pdf_url": "https://arxiv.org/pdf/2606.16436",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Kaihan Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Yanming Shao",
+      "affiliations": []
+    },
+    {
+      "name": "Haifeng Ji",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaokang Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Yao Mu",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "shanghaijiaotonguniversity",
+      "name": "Shanghai Jiao Tong University",
+      "role": "primary"
+    },
+    {
+      "id": "zhejianguniversity",
+      "name": "Zhejiang University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-15",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "Interesting video-to-policy pipeline extracting dexterous manipulation from human videos. Good alternative data source to teleoperation. However, evaluation is only on synthetic/simulation tasks — no real-robot deployment. No code or project page available.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.16436",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Works",
+      "3 Method",
+      "3.1 Unified Perception and Object Reconstruction",
+      "3.2 Pose estimation and Optimization",
+      "3.3 Residual Reinforcement Learning",
+      "4 Experiments",
+      "4.1 Object Pose Estimation",
+      "4.2 Policy Learning Evaluation",
+      "4.3 Ablation Study",
+      "4.4 Generalization and Visualization Results",
+      "5 Limitations",
+      "6 Discussion",
+      "References",
+      "Supplementary Material for V2P-Manip",
+      "Appendix A Method Details",
+      "A.1 Depth Estimation and Size Reconstruction",
+      "A.2 Object Pose Estimation",
+      "A.3 VGGT Extrinsic Estimation",
+      "A.4 TACO Evaluation Metrics",
+      "A.5 Geometric & Physical Constraints",
+      "A.6 Reinforcement Learning Training",
+      "Appendix B Visual Results",
+      "B.1 Cross-Embodiment Results",
+      "B.2 Egocentric Results",
+      "B.3 Real-Robot Trajectory Execution",
+      "Appendix C Additional Analysis",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.16436"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.16436"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Shanghai Jiao Tong University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.16436",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Zhejiang University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.16436",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

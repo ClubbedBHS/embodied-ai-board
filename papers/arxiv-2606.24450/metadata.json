@@ -1,0 +1,185 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.24450",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "NoContactNoWorries: Estimating Contact through Vision and Proprioception for In-Hand Dexterous Manipulation",
+  "title_zh": "NoContactNoWorries：用视觉与本体感知估计手内灵巧操作接触",
+  "abstract": "Perceiving physical contact is fundamental to dexterous manipulation. While robots often rely on dedicated hardware tactile sensors, humans exhibit a remarkable ability to infer contact by integrating visual information with an innate sense of their body's pose and movement. Inspired by this embodied perceptual skill, we investigate whether a robot can learn to infer contact from vision, an approach that also offers a scalable alternative to tactile hardware specifically for binary contact estim",
+  "paper_url": "https://arxiv.org/abs/2606.24450",
+  "pdf_url": "https://arxiv.org/pdf/2606.24450",
+  "project_url": "https://soham2560.github.io/no-contact-no-worries/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Soham Patil",
+      "affiliations": []
+    },
+    {
+      "name": "Avirup Das",
+      "affiliations": []
+    },
+    {
+      "name": "Sourabh Bhosale",
+      "affiliations": []
+    },
+    {
+      "name": "Spandan Roy",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "internationalinstituteofinformationtechnologyhyderabad",
+      "name": "International Institute of Information Technology Hyderabad",
+      "role": "primary"
+    },
+    {
+      "id": "universityofmanchester",
+      "name": "University of Manchester",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-23",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "探索从视觉+本体感觉推断接触作为触觉替代方案的可扩展路径。核心贡献：(1)Transformer多模态框架融合RGB-D和本体感觉预测二元接触；(2)伪触觉信号支持下RL手中物体重定向；(3)跨物体泛化。为触觉感知的规模化提供新思路——不依赖昂贵触觉硬件。方法实用，在灵巧操作中降低硬件依赖。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": []
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.24450",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "I Introduction",
+      "II Related Work",
+      "III Methodology",
+      "III-A RGB-D Feature Extraction",
+      "III-B Pose-Conditioned Spatial Fusion",
+      "III-C Temporal Modeling for Contact Estimation",
+      "IV System Setup and Training Protocol",
+      "V Experiments",
+      "V-A Ablations and Baselines",
+      "V-B Contact Prediction Performance",
+      "Visibility and geometric ambiguity",
+      "Why pose-only can compete with vision-only",
+      "Mismatched-command stress test",
+      "V-C Downstream Performance",
+      "VI Conclusion, Limitations, and Future Work",
+      "Acknowledgement",
+      "References",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.24450"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.24450"
+    },
+    {
+      "type": "project",
+      "url": "https://soham2560.github.io/no-contact-no-worries/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "International Institute of Information Technology Hyderabad",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.24450",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University of Manchester",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.24450",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://soham2560.github.io/no-contact-no-worries/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://soham2560.github.io/no-contact-no-worries/"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

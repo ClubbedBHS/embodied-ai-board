@@ -8,7 +8,7 @@
   "abstract": "Reinforcement learning holds great promise for improving robot policies beyond the limits of imitation learning. However, its practical adoption remains bottlenecked by the lack of reliable vision-language reward models that provide dense and informative feedback. Two key challenges remain: acquiring diverse failure data at scale and obtaining fine-grained reward signals beyond sparse trajectory-level success labels. Collecting failure trajectories typically requires laborious human effort, while pseudo-failures constructed by relabeling successful demonstrations fail to capture the diverse physical failure modes that arise during robot execution. Meanwhile, existing reward models often predict sparse binary or trajectory-level rewards, which provide limited guidance for efficient policy optimization. We introduce DenseReward, a dense robotic reward model that addresses both challenges. To train DenseReward, we develop an automated failure data generation pipeline that synthesizes physically realistic failure trajectories in simulation without human labeling, covering diverse failure modes such as collisions, missed grasps, object drops, and recovery behaviors. DenseReward predicts dense frame-level reward scores from visual observations and language instructions, enabling fine-grained estimation of task progress throughout an episode. Experiments show that DenseReward outperforms general-purpose VLMs and existing robotic reward models in dense reward prediction across both simulated and real-world manipulation. We further demonstrate that DenseReward provides effective reward guidance for downstream model predictive control and reinforcement learning. We release the dataset, trained reward models, and evaluation suite to support the development of failure-aware dense reward modeling for robot learning.",
   "paper_url": "https://arxiv.org/abs/2607.13033",
   "pdf_url": "https://arxiv.org/pdf/2607.13033",
-  "project_url": null,
+  "project_url": "https://dense-reward.github.io/",
   "code_url": null,
   "dataset_url": null,
   "model_url": null,
@@ -57,24 +57,24 @@
   ],
   "organizations": [
     {
-      "id": "unc-chapel-hill",
-      "name": "UNC Chapel Hill",
-      "role": "unknown"
+      "id": "amazon",
+      "name": "Amazon",
+      "role": "primary"
     },
     {
-      "id": "carnegie-mellon-university",
+      "id": "carnegiemellonuniversity",
       "name": "Carnegie Mellon University",
-      "role": "unknown"
+      "role": "collaborator"
     },
     {
-      "id": "shanghai-jiao-tong-university",
+      "id": "shanghaijiaotonguniversity",
       "name": "Shanghai Jiao Tong University",
-      "role": "unknown"
+      "role": "collaborator"
     },
     {
-      "id": "amazon-aws-ai",
-      "name": "Amazon AWS AI",
-      "role": "unknown"
+      "id": "universityofnorthcarolinaatchapelhill",
+      "name": "University of North Carolina at Chapel Hill",
+      "role": "collaborator"
     }
   ],
   "dates": {
@@ -111,7 +111,9 @@
     "environments": [
       "mixed"
     ],
-    "assets": [],
+    "assets": [
+      "project-page"
+    ],
     "properties": [
       "real-robot-evaluation"
     ]
@@ -161,5 +163,72 @@
       "url": "https://arxiv.org/html/2607.13033"
     }
   ],
-  "suggested_new_tags": []
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Amazon",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.13033",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Carnegie Mellon University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.13033",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Shanghai Jiao Tong University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.13033",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University of North Carolina at Chapel Hill",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.13033",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://dense-reward.github.io/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-or-project-page",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
 }

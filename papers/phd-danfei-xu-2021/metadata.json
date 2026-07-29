@@ -19,13 +19,7 @@
       ]
     }
   ],
-  "organizations": [
-    {
-      "id": "stanford",
-      "name": "Stanford University",
-      "role": "primary"
-    }
-  ],
+  "organizations": [],
   "dates": {
     "first_publication": "2021-08-27",
     "last_revision": null
@@ -127,5 +121,38 @@
     "mods_metadata_url": "https://purl.stanford.edu/ys432pr6718.mods",
     "defense_video_accessible": false,
     "notes": "MODS metadata confirms title, author, advisors (Fei-Fei Li, Silvio Savarese), committee (Jeannette Bohg, Dorsa Sadigh), date (2021), license (CC BY-NC 3.0), and abstract. Full-text PDF not reachable from agent network."
-  }
+  },
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "verification-error",
+      "accessible": null,
+      "verification_method": "source-fetch",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "error": "ar5iv:HTTP 404"
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "verification-error",
+      "accessible": null,
+      "verification_method": "source-fetch",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "error": "ar5iv:HTTP 404"
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "verification-error",
+      "accessible": null,
+      "verification_method": "source-fetch",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "error": "ar5iv:HTTP 404"
+    }
+  ]
 }

@@ -64,33 +64,7 @@
       ]
     }
   ],
-  "organizations": [
-    {
-      "id": "stanford",
-      "name": "Stanford University",
-      "role": "primary"
-    },
-    {
-      "id": "nvidia",
-      "name": "NVIDIA",
-      "role": "collaborator"
-    },
-    {
-      "id": "georgia-tech",
-      "name": "Georgia Tech",
-      "role": "collaborator"
-    },
-    {
-      "id": "ut-austin",
-      "name": "UT Austin",
-      "role": "collaborator"
-    },
-    {
-      "id": "caltech",
-      "name": "Caltech",
-      "role": "collaborator"
-    }
-  ],
+  "organizations": [],
   "dates": {
     "first_publication": "2023-02-24",
     "last_revision": "2023-10-13"
@@ -125,7 +99,8 @@
       "real-world"
     ],
     "assets": [
-      "code"
+      "code",
+      "project-page"
     ],
     "properties": [
       "open-source",
@@ -193,5 +168,48 @@
     }
   ],
   "content_type": "paper",
-  "source_scope": "full-source"
+  "source_scope": "full-source",
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/j96w/MimicPlay",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "ar5iv-html-link",
+      "checked_at": "2026-07-28",
+      "http_status": 200,
+      "resolved_url": "https://api.github.com/repos/j96w/MimicPlay"
+    },
+    {
+      "kind": "project",
+      "url": "https://mimic-play.github.io",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-or-project-page",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
 }

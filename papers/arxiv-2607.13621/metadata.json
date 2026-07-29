@@ -55,7 +55,28 @@
       "affiliations": []
     }
   ],
-  "organizations": [],
+  "organizations": [
+    {
+      "id": "shandonguniversity",
+      "name": "Shandong University",
+      "role": "primary"
+    },
+    {
+      "id": "qiluuniversityoftechnology",
+      "name": "Qilu University of Technology",
+      "role": "collaborator"
+    },
+    {
+      "id": "beijinguniversityoftechnology",
+      "name": "Beijing University of Technology",
+      "role": "collaborator"
+    },
+    {
+      "id": "xiaomi",
+      "name": "Xiaomi",
+      "role": "collaborator"
+    }
+  ],
   "dates": {
     "first_publication": "2026-07-15",
     "last_revision": null
@@ -146,6 +167,64 @@
       "name": "navigation",
       "reason": "候选筛选中出现，但尚未进入受控标签词表。",
       "evidence": "首次统一“先寻找语言描述的人、再持续跟随”，并以latent phase routing处理切换、恢复和延迟身份grounding。 第3节构建单/多人模拟benchmark；第4节给出single/dual/task-driven router；第5节比较两类环境、消融和routing dynamics；第6节总结。 当前看板导航覆盖薄弱；UESF-Bench填补统一seek-follow任务，但暂无实机证据。"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "Shandong University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.13621",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Qilu University of Technology",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.13621",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Beijing University of Technology",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.13621",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Xiaomi",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.13621",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
     }
   ]
 }

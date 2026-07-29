@@ -1,0 +1,192 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.30749",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "From Grasps to Dexterity: Large-Scale Grasp Pretraining for Dexterous Manipulation",
+  "title_zh": "从抓取到灵巧性：面向灵巧操作的大规模抓取预训练",
+  "abstract": "Large-scale dexterous grasp datasets encode rich priors over hand-object interaction, but their use has largely been confined to grasp generation and pick-and-place manipulation. We study whether such data can instead support functional dexterity in articulated tool use, where a robot must acquire a tool, maintain contact, and operate its functional moving parts. We adapt a hierarchical imitation learning framework that combines high-level hand sub-goal prediction with a low-level goal-condition",
+  "paper_url": "https://arxiv.org/abs/2606.30749",
+  "pdf_url": "https://arxiv.org/pdf/2606.30749",
+  "project_url": "https://yingyuan0414.github.io/grasp2dexterity/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Ying Yuan",
+      "affiliations": []
+    },
+    {
+      "name": "Xinyu Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Sriram Krishna",
+      "affiliations": []
+    },
+    {
+      "name": "David Held",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "carnegiemellonuniversity",
+      "name": "Carnegie Mellon University",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-29",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data",
+      "simulators"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "创新性地将大规模抓取数据集（355k轨迹）重新定位为灵巧工具使用的预训练资源——这是对现有抓取数据价值的重要重新发现。核心贡献：(1)层次化IL框架（高层子目标预测+低层目标条件控制）；(2)抓取预训练→任务微调范式；(3)DexCraft基准（6个关节工具使用任务）。真实机器人上较DP3提升33.3个百分点。为灵巧操作的数据扩展提供了新范式。接近featured门槛。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": []
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.30749",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 Problem Statement and Assumptions",
+      "4 DexCraft Benchmark",
+      "5 From Large-Scale Grasp Data to Dexterity",
+      "5.1 Policy Learning with Hierarchical Policy Representation",
+      "5.2 Augmenting Dexonomy Dataset for Low-Level Policy Pretraining",
+      "6 Experiments",
+      "6.1 Experiment Setup",
+      "6.2 Baselines and Ablations",
+      "6.3 Simulation Results",
+      "6.4 Real World Results",
+      "7 Conclusion",
+      "8 Limitations and Future Work",
+      "References",
+      "Appendix",
+      "Appendix A Benchmark Details",
+      "A.1 Details on Decomposing Tasks into Sub-tasks",
+      "A.2 Task Details",
+      "A.3 Data Generation Details",
+      "Appendix B Method Details",
+      "B.1 Implementation Details of High-level Policy",
+      "B.2 Implementation Details of Low-level Policy",
+      "B.3 Implementation Details of Generating G2D-Pretrain",
+      "B.4 Implementation Details of Grasp Pretraining and Downstream Fine-tuning",
+      "Appendix C Baseline and Ablation Details",
+      "C.1 Diffusion-based Method Details",
+      "C.2 GraspXL Dataset Conversion Details",
+      "C.3 Transfer Protocols for Pretraining and Fine-Tuning",
+      "Appendix D Analysis",
+      "D.1 Ablation on Keypoint Conditioning Schemes",
+      "D.2 Qualitative Analysis of Simulation Tasks",
+      "D.3 High-level Policy Prediction Analysis",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.30749"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.30749"
+    },
+    {
+      "type": "project",
+      "url": "https://yingyuan0414.github.io/grasp2dexterity/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Carnegie Mellon University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.30749",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://yingyuan0414.github.io/grasp2dexterity/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://yingyuan0414.github.io/grasp2dexterity/"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.23680",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "CoorDex: Coordinating Body and Hand Priors for Continuous Dexterous Humanoid Loco-Manipulation",
+  "title_zh": "CoorDex：面向连续灵巧人形移动操作的身体与手部先验协调",
+  "abstract": "Humanoid loco-manipulation is often simplified into a stop-and-go process: walking to an object, stopping to manipulate it, and then resuming locomotion. It also commonly relies on low degree-of-freedom (DoF) end effectors that behave like an open-close grasp primitive. We introduce CoorDex, a learning pipeline that converts high-dimensional body and dexterous hand control into coordinated latent residual control, enabling high-DoF dexterous loco-manipulation on the move. Starting from simulated",
+  "paper_url": "https://arxiv.org/abs/2606.23680",
+  "pdf_url": "https://arxiv.org/pdf/2606.23680",
+  "project_url": "https://skevinci.github.io/coordex/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Sikai Li",
+      "affiliations": []
+    },
+    {
+      "name": "Shuning Li",
+      "affiliations": []
+    },
+    {
+      "name": "Zhenyu Wei",
+      "affiliations": []
+    },
+    {
+      "name": "Yunchao Yao",
+      "affiliations": []
+    },
+    {
+      "name": "Chenran Li",
+      "affiliations": []
+    },
+    {
+      "name": "Mingyu Ding",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "universityofcaliforniaberkeley",
+      "name": "University of California, Berkeley",
+      "role": "primary"
+    },
+    {
+      "id": "universityofnorthcarolinaatchapelhill",
+      "name": "University of North Carolina at Chapel Hill",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-22",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "topics": [
+      "sim-to-real"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_reason": "Breakthrough in humanoid loco-manipulation: continuous dexterous manipulation while walking, moving beyond stop-and-go paradigm. Coordinated latent residual control elegantly handles the high-dimensional action space. Real robot demos on Unitree G1 with 20-DoF WUJI hand. Strong ablations showing baselines fail. Project page at skevinci.github.io/coordex/. Fills a major gap in continuous humanoid loco-manipulation.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "中文标题待翻译"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.23680",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 Method",
+      "3.1 Prior Construction",
+      "3.2 Coordinated Latent Residual Policy",
+      "3.3 Residual RL and Environment Design",
+      "4 Experimental Results",
+      "4.1 Experiment Setup",
+      "4.2 Task Performance Across Skills",
+      "4.3 Action-Space Variants on WalkGrab",
+      "4.4 Coordinated Residual Prediction",
+      "5 Discussion and Limitations",
+      "Appendix",
+      "Appendix A Motion Prior Implementation Details",
+      "A.1 Humanoid Body Tracking Teacher",
+      "A.2 Dexterous Hand Tracking Teacher",
+      "A.3 VAE Distillation",
+      "A.4 Downstream Residual Composition",
+      "Appendix B Training Details",
+      "B.1 Observation Details",
+      "B.2 Reward Details",
+      "WalkGrab and OpenFridge (single-stage).",
+      "WalkPickTurn (multi-stage).",
+      "B.3 Hyperparameter Details",
+      "B.4 Task-specific success conditions and auxiliary metrics.",
+      "B.5 Demonstration-Free Reference State Initialization",
+      "Stage Decomposition for WalkPickTurn",
+      "Self-Populating Snapshot Buffer",
+      "Reset Sampling and Progressive Stage Unlocking",
+      "Appendix C Real-World Demos",
+      "References",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.23680"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.23680"
+    },
+    {
+      "type": "project",
+      "url": "https://skevinci.github.io/coordex/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "University of California, Berkeley",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.23680",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University of North Carolina at Chapel Hill",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.23680",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://skevinci.github.io/coordex/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://skevinci.github.io/coordex/"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

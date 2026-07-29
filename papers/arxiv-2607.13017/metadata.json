@@ -8,7 +8,7 @@
   "abstract": "World Action Models (WAMs) are able to leverage pretrained video generators for both world modeling and action prediction. However, directly leveraging such video generators for control raises a new challenge: how to represent actions in a suitable form that aligns with pretrained video generators while carrying enough motion cues for accurate control. Existing numerical actions fail to satisfy the former, and prior visual action representations overlook the temporal motion structure across frames. We address this issue with FlowWAM, a dual-stream diffusion framework that adopts optical flow as a unified, video-native action representation. Flow videos share the same format as RGB videos and encode rich per-pixel displacement. By jointly modeling them within a shared pretrained video generator, FlowWAM can naturally implement two modes of WAMs. In policy mode, FlowWAM generates flow for action prediction, while in world-model mode, it uses target flow sequences to guide future video generation. Moreover, since flow can be easily extracted from raw videos without action labels, FlowWAM can leverage large-scale action-unlabeled video datasets for pretraining. We empirically find that our flow-based action representation delivers gains across both modes. On RoboTwin manipulation, FlowWAM raises the success rate to 92.94% on the Clean setting and 92.14% on Random, outperforming both VLA and WAM baselines. On WorldArena world modeling, it achieves the best overall EWMScore (63.71) with an 18.4% relative improvement in trajectory accuracy. More results can be found on our project website: https://flow-wam.github.io .",
   "paper_url": "https://arxiv.org/abs/2607.13017",
   "pdf_url": "https://arxiv.org/pdf/2607.13017",
-  "project_url": null,
+  "project_url": "https://flow-wam.github.io",
   "code_url": null,
   "dataset_url": null,
   "model_url": null,
@@ -79,7 +79,23 @@
       "affiliations": []
     }
   ],
-  "organizations": [],
+  "organizations": [
+    {
+      "id": "alibaba",
+      "name": "Alibaba",
+      "role": "primary"
+    },
+    {
+      "id": "instituteofautomationchineseacademyofsciences",
+      "name": "Institute of Automation, Chinese Academy of Sciences",
+      "role": "collaborator"
+    },
+    {
+      "id": "universityofchineseacademyofsciences",
+      "name": "University of Chinese Academy of Sciences",
+      "role": "collaborator"
+    }
+  ],
   "dates": {
     "first_publication": "2026-07-14",
     "last_revision": null
@@ -113,7 +129,9 @@
     "environments": [
       "simulation"
     ],
-    "assets": [],
+    "assets": [
+      "project-page"
+    ],
     "properties": [
       "simulation-only",
       "large-scale-data"
@@ -167,5 +185,66 @@
       "url": "https://flow-wam.github.io"
     }
   ],
-  "suggested_new_tags": []
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Alibaba",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.13017",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Institute of Automation, Chinese Academy of Sciences",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.13017",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University of Chinese Academy of Sciences",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2607.13017",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://flow-wam.github.io",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-or-project-page",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
 }

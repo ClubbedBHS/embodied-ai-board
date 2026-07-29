@@ -134,5 +134,38 @@
       "reason": "候选筛选中出现，但尚未进入受控标签词表。",
       "evidence": "这项工作在 VLA 推理加速问题上提出 ActionCache，一种免训练的即插即用外部缓存机制，通过存储和检索具有紧凑多模态键的中间动作来热启动流匹配去噪过程，在 π0.5 和 GR00T-N1.6 上分别实现 11.75× 和 34.43× 推理加速，同时保持高任务成功率。实验覆盖仿真（LIBERO）和真机，分析跨任务动作复用和检索质量影响，对 VLA 实时部署有明确的工程价值。"
     }
+  ],
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
   ]
 }

@@ -1,0 +1,259 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.08278",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "SIMPLE: Simulation-Based Policy Learning and Evaluation for Humanoid Loco-manipulation",
+  "title_zh": null,
+  "abstract": "Humanoid foundation models are advancing faster than we can evaluate them. While real-world testing is expensive and difficult to reproduce, existing simulation benchmarks focus primarily on table-top or wheeled robots. A scalable and reproducible benchmark for whole-body humanoid loco-manipulation remains an open problem. To this end, we present SIMPLE, a unified simulation testbed for humanoid policy learning and evaluation. SIMPLE couples the accurate contact-rich dynamics of MuJoCo with the photorealistic rendering of IsaacSim. It provides a large-scale environment comprising 60 diverse whole-body tasks, 50 indoor scenes, and over 1,000 object assets. To facilitate scalable data collection, the framework integrates two data generation pipelines: automated trajectory generation via motion planning and a low-latency VR teleoperation interface. We further integrate and benchmark mainstream humanoid policies at scale in SIMPLE, including lightweight imitation networks, large vision-language-action (VLA) models, and recent world action models (WAMs). Our experiments reveal a strong correlation between policy performance in simulation and the real world. Furthermore, we demonstrate that policies trained on data collected in SIMPLE can be transferred zero-shot to physical humanoid robots under similar settings, providing a robust and reproducible foundation for humanoid robotics research. We will open-source our entire codebase to the community.",
+  "paper_url": "https://arxiv.org/abs/2606.08278",
+  "pdf_url": "https://arxiv.org/pdf/2606.08278",
+  "project_url": null,
+  "code_url": "https://github.com/LeCAR-Lab/HumanoidVerse",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Songlin Wei",
+      "affiliations": [
+        "usc-psi-lab"
+      ]
+    },
+    {
+      "name": "Zhenhao Ni",
+      "affiliations": [
+        "usc-psi-lab"
+      ]
+    },
+    {
+      "name": "Jie Liu",
+      "affiliations": [
+        "usc-psi-lab"
+      ]
+    },
+    {
+      "name": "Zhenyu Zhao",
+      "affiliations": [
+        "usc-psi-lab"
+      ]
+    },
+    {
+      "name": "Junjie Ye",
+      "affiliations": [
+        "usc-psi-lab"
+      ]
+    },
+    {
+      "name": "Hongyi Jing",
+      "affiliations": [
+        "usc-psi-lab"
+      ]
+    },
+    {
+      "name": "Junkai Xia",
+      "affiliations": [
+        "usc-psi-lab"
+      ]
+    },
+    {
+      "name": "Xiawei Liu",
+      "affiliations": [
+        "usc-psi-lab"
+      ]
+    },
+    {
+      "name": "Michael Leong",
+      "affiliations": [
+        "usc-psi-lab"
+      ]
+    },
+    {
+      "name": "Liang Heng",
+      "affiliations": [
+        "usc-psi-lab"
+      ]
+    },
+    {
+      "name": "Di Huang",
+      "affiliations": [
+        "usc-psi-lab"
+      ]
+    },
+    {
+      "name": "Yue Wang",
+      "affiliations": [
+        "usc-psi-lab"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "uscphysicalsuperintelligencelab",
+      "name": "USC Physical Superintelligence Lab",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-10",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "simulators",
+      "data"
+    ],
+    "topics": [
+      "foundation-model"
+    ],
+    "tasks": [
+      "humanoid-control"
+    ],
+    "platforms": [
+      "humanoid"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "proprioception",
+      "action"
+    ],
+    "environments": [
+      "simulation",
+      "real-world"
+    ],
+    "assets": [
+      "code"
+    ],
+    "properties": [
+      "real-robot-evaluation",
+      "large-scale-data"
+    ]
+  },
+  "paper_type": [
+    "benchmark",
+    "simulator"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 85,
+    "selection_reason": "首个综合性人形机器人全身操作仿真基准。60任务/50场景/1000+物体、MuJoCo+IsaacSim双仿真器架构、6000+轨迹，并提供自动化运动规划与VR遥操作数据采集管线。实验证明仿真与真实世界策略性能强相关，支持zero-shot迁移。填补了人形全身操作领域标准化评测的空白。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "hermes-agent",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "真实机器人实验详细规模不明确（论文展示sim-to-real相关性和zero-shot迁移但未报告真实机器人样本量）",
+      "仅支持Unitree G1人形平台"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.08278",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "2.1 Robot Policy Evaluation in the Real World",
+      "2.2 Simulation-Based Benchmarks for Manipulation",
+      "2.3 Simulation for Humanoid Loco-Manipulation",
+      "3 Method",
+      "3.1 System Architecture",
+      "3.2 Large-Scale Asset Curation and Task Design",
+      "3.3 Scalable Data Collection Pipelines",
+      "3.4 Offline Rendering and Domain Randomization",
+      "3.5 Policy Integration and Evaluation Protocol",
+      "4 Experiments",
+      "4.1 Large-Scale Benchmarking of Humanoid Policies",
+      "4.2 Data Collection Efficiency in the Simulator",
+      "4.3 Ablation Studies",
+      "4.4 Zero-Shot Sim-to-Real Transfer",
+      "5 Conclusion",
+      "References",
+      "Supplementary Material",
+      "5.1 System Architecture Details",
+      "5.1.1 Main Class Entities",
+      "5.1.2 Sequential Diagram",
+      "5.2 Offline Object Preprocessing Pipeline",
+      "5.3 Baseline Implementation Details",
+      "5.4 Whole-Body Controller Details",
+      "5.5 Extended Benchmark Results",
+      "5.6 Task Suite and Dataset Statistics",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.08278"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.08278"
+    },
+    {
+      "type": "code",
+      "url": "https://github.com/LeCAR-Lab/HumanoidVerse"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "benchmark",
+      "name": "Benchmark",
+      "reason": "SIMPLE不仅提供simulator还提供标准化的humanoid loco-manipulation benchmark，paper_type已用benchmark但sections中缺少单独标签。",
+      "evidence": "论文Section 3-4详细描述了60任务、50场景、1000+物体的benchmark设计和标准化评测协议。"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "USC Physical Superintelligence Lab",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.08278",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/LeCAR-Lab/HumanoidVerse",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://api.github.com/repos/LeCAR-Lab/HumanoidVerse"
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

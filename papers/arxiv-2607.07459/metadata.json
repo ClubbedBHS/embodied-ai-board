@@ -8,8 +8,8 @@
   "abstract": "We present EmbodiedGen V2, a generative 3D world engine for building executable policy-ready environments for embodied intelligence. Sim-ready 3D asset generation has advanced rapidly, yet assembling such assets into policy-ready task environments remains largely manual, limiting scalable closed-loop learning. EmbodiedGen V2 addresses this gap through a unified sim-ready representation that connects cross-simulator assets, interaction affordances, task-driven worlds, large-scale multi-room scenes, and stateful Vibe Coding into a generative, editable, and reusable simulation pipeline. The generated environments support manipulation, navigation, mobile manipulation, cross-simulator deployment, and embodied policy training. In evaluation, the asset pipeline achieves 96.5% human acceptance and 98.6% collision success, and 83.3% of task-driven worlds are directly usable for downstream simulation without manual modification. Online reinforcement learning with generated environments further improves simulation success from 9.7% to 79.8%, and transfers to real robots with task success increasing from 21.7% to 75.0%. These results establish EmbodiedGen V2 as scalable simulation infrastructure for training, evaluating, and deploying embodied policies.",
   "paper_url": "https://arxiv.org/abs/2607.07459",
   "pdf_url": "https://arxiv.org/pdf/2607.07459",
-  "project_url": null,
-  "code_url": null,
+  "project_url": "https://horizonrobotics.github.io/EmbodiedGen",
+  "code_url": "https://github.com/HorizonRobotics/EmbodiedGen",
   "dataset_url": null,
   "model_url": null,
   "video_url": null,
@@ -63,7 +63,18 @@
       "affiliations": []
     }
   ],
-  "organizations": [],
+  "organizations": [
+    {
+      "id": "horizonrobotics",
+      "name": "Horizon Robotics",
+      "role": "primary"
+    },
+    {
+      "id": "wuwenai",
+      "name": "WuwenAI",
+      "role": "collaborator"
+    }
+  ],
   "dates": {
     "first_publication": "2026-07-08",
     "last_revision": "2026-07-12"
@@ -100,7 +111,10 @@
     "environments": [
       "mixed"
     ],
-    "assets": [],
+    "assets": [
+      "code",
+      "project-page"
+    ],
     "properties": [
       "real-robot-evaluation",
       "large-scale-data"
@@ -175,6 +189,60 @@
       "name": "manipulation",
       "reason": "候选筛选中出现，但尚未进入受控标签词表。",
       "evidence": "EmbodiedGen V2在仿真基础设施上提出系统级增量：从生成式3D内容工具升级为完整的sim-ready世界引擎，填补了从3D资产生成到策略训练环境之间的关键空白。实验证据全面：资产质量消融(96.5%/98.6%)、任务世界可用率(83.3%)、闭环RL验证(仿真9.7%→79.8%，sim-to-real 21.7%→75.0%)三项指标构成完整证据链。相较看板中的仿真器/场景生成工作(GPUSimBench batch-01、Image2Sim batch-01、RoboSnap batch-01、SPEAR batch-02)，新增信息是统一的sim-ready表示+affordance语义+可编辑世界状态+跨仿真器+闭环策略验证的端到端管线。主要风险：资产未公开验证(项目页声明但未探测到HTTP 200仓库)；大规模声明(4K+资产、多房间场景)需人工复核。"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "Horizon Robotics",
+      "source": "project-page",
+      "url": "https://horizonrobotics.github.io/EmbodiedGen",
+      "location": "official project page"
+    },
+    {
+      "organization": "WuwenAI",
+      "source": "project-page",
+      "url": "https://horizonrobotics.github.io/EmbodiedGen",
+      "location": "official project page"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/HorizonRobotics/EmbodiedGen",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "project-page-anchor-text",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "kind": "project",
+      "url": "https://horizonrobotics.github.io/EmbodiedGen",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-or-project-page",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
     }
   ]
 }

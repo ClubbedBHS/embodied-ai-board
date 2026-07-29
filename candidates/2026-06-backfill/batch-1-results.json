@@ -1,0 +1,2565 @@
+[
+  {
+    "id": "arxiv-2606.27344",
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.27344",
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "Dexterous robot hand manipulation with piezoelectric microphones, sim-to-real policy learning on physical LEAP hand + xArm7 across 5 contact-rich tasks"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "https://arxiv.org/abs/2606.27344 loads successfully"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "Novel shared physical contact-and-slip representation bridging real vibrotactile sensing and simulation-based RL; decouples sensor problem from control problem"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "5 contact-rich tasks (regrasping, in-hand reorientation, insertion); sim ablations + real-world deployment on physical hand-arm platform; outperforms proprioception+point-cloud baseline"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML accessible at https://ar5iv.labs.arxiv.org/html/2606.27344"
+      }
+    },
+    "scores": {
+      "relevance": 19,
+      "novelty": 17,
+      "evidence_quality": 17,
+      "potential_impact": 12,
+      "board_information_gain": 8,
+      "reproducibility": 4,
+      "timeliness": 4,
+      "total": 81
+    },
+    "decision": "featured",
+    "selection_reason": "Strong vibrotactile sensing framework for dexterous manipulation. Novel contact+slip representation decouples sensing from control, enabling sim-to-real transfer without audio simulation. Evaluated across 5 diverse contact-rich tasks with real-robot deployment on LEAP Hand+xArm7. Slip magnitude channel identified as key driver. Fills a gap in tactile sensing for dexterous manipulation on the board.",
+    "risks_or_uncertainties": [
+      "Tactile estimator tied to fixed hardware configuration; may need recalibration for different setups",
+      "Compact representation discards potentially useful vibration information like contact location and surface texture",
+      "No public code repository found; only project page (vibeact.github.io)"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "tactile sensing",
+      "dexterous manipulation",
+      "sim-to-real",
+      "reinforcement learning"
+    ],
+    "organizations": [
+      "Carnegie Mellon University"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Carnegie Mellon University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.27344",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://vibeact.github.io/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://vibeact.github.io/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://vibeact.github.io/"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.11767",
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.11767",
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "Blind dexterous grasping on physical LEAP Hand with distributed tactile sensing; tactile-only policy without vision"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "https://arxiv.org/abs/2606.11767 loads successfully"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "Real2Sim tactile calibration pipeline + layout-aware tactile encoder with self-supervised pretraining + Diffusion Policy aggregation of RL experts"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "Real-world evaluation on 20 objects (10 seen + 10 unseen) with 27% grasp success without vision; sim ablations on calibration and pretraining"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML accessible at https://ar5iv.labs.arxiv.org/html/2606.11767"
+      }
+    },
+    "scores": {
+      "relevance": 18,
+      "novelty": 16,
+      "evidence_quality": 16,
+      "potential_impact": 11,
+      "board_information_gain": 7,
+      "reproducibility": 3,
+      "timeliness": 4,
+      "total": 75
+    },
+    "decision": "include",
+    "selection_reason": "Solid Real2Sim2Real framework for blind tactile grasping. Three-component approach (calibration, layout-aware encoder, Diffusion Policy) is well-motivated. Real robot deployment on LEAP Hand with 44-channel tactile sensing across 20 objects. 27% real-world success without vision is a meaningful baseline for tactile-only grasping. Fills tactile-only policy learning gap on the board.",
+    "risks_or_uncertainties": [
+      "27% real-world success rate is low for practical deployment",
+      "No public code; only project page (Dex-Blind-Grasp.github.io)",
+      "Tactile calibration may not generalize across different sensor configurations"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "tactile sensing",
+      "dexterous manipulation",
+      "sim-to-real",
+      "grasping"
+    ],
+    "organizations": [
+      "ShanghaiTech University",
+      "Beijing Institute for General Artificial Intelligence"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "ShanghaiTech University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.11767",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Beijing Institute for General Artificial Intelligence",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.11767",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://Dex-Blind-Grasp.github.io/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://Dex-Blind-Grasp.github.io/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://Dex-Blind-Grasp.github.io/"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.22471",
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.22471",
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "Bimanual dexterous manipulation; RL-based data generation for language-conditioned multi-task policies"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "https://arxiv.org/abs/2606.22471 loads successfully"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "Systematic RL-based data generation pipeline integrating generalizable reward design, domain randomization, and language-conditioned task annotations for bimanual dexterous manipulation"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "Experiments show improved generalization across three manipulation tasks; comparison against teleoperation-based approaches"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML accessible at https://ar5iv.labs.arxiv.org/html/2606.22471"
+      }
+    },
+    "scores": {
+      "relevance": 17,
+      "novelty": 14,
+      "evidence_quality": 13,
+      "potential_impact": 10,
+      "board_information_gain": 6,
+      "reproducibility": 2,
+      "timeliness": 4,
+      "total": 66
+    },
+    "decision": "include",
+    "selection_reason": "Useful data generation pipeline for bimanual dexterous manipulation using RL. Addresses key scaling bottleneck. However, evaluation limited to 3 tasks, no real-robot results apparent, and no code or project page available. Solid concept but thin on evidence compared to other papers in batch.",
+    "risks_or_uncertainties": [
+      "Only 3 tasks evaluated; unclear if approach scales to diverse manipulation",
+      "No real-robot deployment demonstrated",
+      "No code, data, or project page accessible",
+      "RL reward design may be task-specific despite claims of generalizability"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "bimanual manipulation",
+      "data generation",
+      "reinforcement learning",
+      "dexterous manipulation"
+    ],
+    "organizations": [
+      "Honda Research Institute"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Honda Research Institute",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.22471",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.26428",
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.26428",
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "Dexterous multi-fingered robot assembly with Sharpa hand + KUKA iiwa; tight insertion, multi-part assembly, screwing"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "https://arxiv.org/abs/2606.26428 loads successfully"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "Play2Perfect framework: task-agnostic play pretraining + systematic study of design choices (object diversity, training objective, trajectory diversity, goal precision) for precise assembly"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "33x sample efficiency over RL from scratch; 60% tight insertion (0.5mm clearance); 50%+ multi-part assembly and screwing; zero-shot sim-to-real transfer"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML accessible at https://ar5iv.labs.arxiv.org/html/2606.26428"
+      }
+    },
+    "scores": {
+      "relevance": 20,
+      "novelty": 18,
+      "evidence_quality": 18,
+      "potential_impact": 13,
+      "board_information_gain": 8,
+      "reproducibility": 3,
+      "timeliness": 4,
+      "total": 84
+    },
+    "decision": "featured",
+    "selection_reason": "Exceptional paper on dexterous assembly. Play pretraining for precise manipulation is a compelling paradigm shift. 33x sample efficiency, 0.5mm clearance insertion, zero-shot sim-to-real transfer, and systematic ablation of design choices make this a standout. Published June 24 by Stanford (Bohg, Liu labs). Fills a critical gap in dexterous assembly on the board, which currently has limited coverage of high-precision contact-rich tasks.",
+    "risks_or_uncertainties": [
+      "No public code or project page found",
+      "Tasks scaled 3x from original Fabrica/FurnitureBench — unclear if approach works at original scale",
+      "Only single Sharpa hand + KUKA hardware configuration evaluated"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "dexterous manipulation",
+      "assembly",
+      "sim-to-real",
+      "reinforcement learning",
+      "pretraining"
+    ],
+    "organizations": [
+      "Stanford University",
+      "Cornell University"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Stanford University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.26428",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Cornell University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.26428",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://play2perfect.github.io",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://play2perfect.github.io",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://play2perfect.github.io/"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.23431",
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.23431",
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "Bimanual dexterous teleoperation with tactile-driven adaptation; real-world hardware evaluation"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "https://arxiv.org/abs/2606.23431 loads successfully"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "Tactile-driven adaptation strategy with real-time optimization loop to bridge embodiment gap in bimanual teleoperation; force-compliant commands via tactile sensing"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "Evaluated across simulated environments and real-world hardware; consistently higher task success rates vs baselines on grasping, disturbance-resilient manipulation, complex dexterous tasks"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML accessible at https://ar5iv.labs.arxiv.org/html/2606.23431"
+      }
+    },
+    "scores": {
+      "relevance": 18,
+      "novelty": 15,
+      "evidence_quality": 15,
+      "potential_impact": 10,
+      "board_information_gain": 6,
+      "reproducibility": 3,
+      "timeliness": 4,
+      "total": 71
+    },
+    "decision": "include",
+    "selection_reason": "Solid bimanual teleoperation system with tactile-driven adaptation. Addresses embodiment gap with real-time optimization. Both simulated and real-world evaluation. However, primarily a teleoperation system rather than autonomous policy learning. Project page available but no code.",
+    "risks_or_uncertainties": [
+      "Primarily teleoperation infrastructure, not autonomous policy learning",
+      "No public code; only project page (henryhcliu.github.io/dexteleop-0)",
+      "Limited quantitative details in abstract about number of tasks/baselines"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "teleoperation",
+      "bimanual manipulation",
+      "tactile sensing",
+      "dexterous manipulation"
+    ],
+    "organizations": [
+      "Nanyang Technological University"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Nanyang Technological University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.23431",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.16436",
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.16436",
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "Learning dexterous manipulation policies for robot hands from monocular human videos"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "https://arxiv.org/abs/2606.16436 loads successfully"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "Two-stage refinement enforcing spatial alignment and physical consistency; integrated pipeline from 3D asset acquisition through trajectory estimation to policy learning"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "75%+ success across synthetic manipulation tasks; outperforms previous methods on TACO and OakInk benchmarks"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML accessible at https://ar5iv.labs.arxiv.org/html/2606.16436"
+      }
+    },
+    "scores": {
+      "relevance": 16,
+      "novelty": 15,
+      "evidence_quality": 13,
+      "potential_impact": 9,
+      "board_information_gain": 6,
+      "reproducibility": 2,
+      "timeliness": 4,
+      "total": 65
+    },
+    "decision": "include",
+    "selection_reason": "Interesting video-to-policy pipeline extracting dexterous manipulation from human videos. Good alternative data source to teleoperation. However, evaluation is only on synthetic/simulation tasks — no real-robot deployment. No code or project page available.",
+    "risks_or_uncertainties": [
+      "No real-robot experiments; only synthetic/simulation evaluation",
+      "No code, data, or project page accessible",
+      "Gap from human video to robot policy may still be substantial despite two-stage refinement"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "dexterous manipulation",
+      "learning from video",
+      "data generation"
+    ],
+    "organizations": [
+      "Shanghai Jiao Tong University",
+      "Zhejiang University"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Shanghai Jiao Tong University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.16436",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Zhejiang University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.16436",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.07506",
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.07506",
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "Quadruped robot object manipulation (pedipulation) with hierarchical RL; real-world validation"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "https://arxiv.org/abs/2606.07506 loads successfully"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "Three-level hierarchical RL using pose affordances for autonomous selection of interaction points and base poses; removes need for pre-designed trajectories"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "Trained in IsaacSim; evaluated in both simulation and real-world settings; forms object-interaction dataset"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML accessible at https://ar5iv.labs.arxiv.org/html/2606.07506"
+      }
+    },
+    "scores": {
+      "relevance": 17,
+      "novelty": 15,
+      "evidence_quality": 14,
+      "potential_impact": 9,
+      "board_information_gain": 6,
+      "reproducibility": 5,
+      "timeliness": 4,
+      "total": 70
+    },
+    "decision": "include",
+    "selection_reason": "Interesting hierarchical RL approach for quadruped pedipulation using affordances. Three-level hierarchy (navigation, locomotion, pedipulation) is well-structured. Real-world validation. Code available at github.com/eppl-erau-db/go2_rl_ws. Fills quadruped manipulation gap on the board.",
+    "risks_or_uncertainties": [
+      "Modest experimental scale (not clear how many objects/scenarios)",
+      "Go2-specific code repository; unclear generalization to other platforms",
+      "Affordance concept may not scale to very diverse object sets"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "quadruped",
+      "manipulation",
+      "reinforcement learning",
+      "hierarchical RL",
+      "affordances"
+    ],
+    "organizations": [
+      "Carnegie Mellon University"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Carnegie Mellon University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.07506",
+        "location": "author affiliation block"
+      }
+    ],
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": "https://github.com/eppl-erau-db/go2_rl_ws",
+        "status": "verified",
+        "accessible": true,
+        "verification_method": "github-api",
+        "evidence_source": "ar5iv-html-link",
+        "checked_at": "2026-07-28",
+        "http_status": 200
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": "https://github.com/eppl-erau-db/go2_rl_ws",
+    "project_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.04829",
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.04829",
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "Humanoid whole-body controller for locomotion and loco-manipulation on Unitree G1 robot"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "https://arxiv.org/abs/2606.04829 loads successfully"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "Multi-modal whole-body control framework unifying heterogeneous motion reference modalities (joint angles, human poses, end-effector poses) via modality-specific encoders into shared latent space"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "98.42% peak success rate on unseen test dataset; sim-to-real transfer on Unitree G1 across multiple modalities without retraining; code available at github.com/Renforce-Dynamics/MultiModalWBC"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML accessible at https://ar5iv.labs.arxiv.org/html/2606.04829"
+      }
+    },
+    "scores": {
+      "relevance": 18,
+      "novelty": 16,
+      "evidence_quality": 16,
+      "potential_impact": 12,
+      "board_information_gain": 7,
+      "reproducibility": 7,
+      "timeliness": 4,
+      "total": 80
+    },
+    "decision": "featured",
+    "selection_reason": "Strong humanoid whole-body controller with multimodal motion mimicking. Unifies joint angles, human poses, and end-effector poses in one policy. 98.42% simulation success with sim-to-real on Unitree G1. Public code on GitHub is a significant plus. Fills humanoid whole-body control gap on the board.",
+    "risks_or_uncertainties": [
+      "Real-world evaluation details limited in accessible sections",
+      "Multimodal approach may face scaling challenges with additional modalities",
+      "Only tested on Unitree G1 hardware"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "humanoid",
+      "whole-body control",
+      "locomotion",
+      "manipulation",
+      "sim-to-real",
+      "reinforcement learning"
+    ],
+    "organizations": [
+      "Tsinghua University",
+      "Southeast University"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Tsinghua University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.04829",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Southeast University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.04829",
+        "location": "author affiliation block"
+      }
+    ],
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": "https://github.com/Renforce-Dynamics/MultiModalWBC",
+        "status": "verified",
+        "accessible": true,
+        "verification_method": "github-api",
+        "evidence_source": "ar5iv-html-link",
+        "checked_at": "2026-07-28",
+        "http_status": 200
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": "https://github.com/Renforce-Dynamics/MultiModalWBC",
+    "project_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.31723",
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.31723",
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "Vision-tactile-language-action model for contact-rich robotic manipulation; real-world experiments on adjustment, insertion, wiping, assembly"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "https://arxiv.org/abs/2606.31723 loads successfully"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "Unified tactile learning with chain-of-thought reasoning and coarse-to-fine future tactile prediction; tactile-action mixed controller for high-frequency corrections"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "Real-world experiments on 4 task categories under clean and perturbed settings; improved success rate, accuracy, and contact robustness over existing methods"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML accessible at https://ar5iv.labs.arxiv.org/html/2606.31723"
+      }
+    },
+    "scores": {
+      "relevance": 18,
+      "novelty": 16,
+      "evidence_quality": 15,
+      "potential_impact": 11,
+      "board_information_gain": 7,
+      "reproducibility": 2,
+      "timeliness": 4,
+      "total": 73
+    },
+    "decision": "include",
+    "selection_reason": "Interesting tactile VLA framework that moves beyond passive tactile inputs to active tactile understanding and prediction. Tactile chain-of-thought and mixed controller are novel. Real-world experiments across 4 task categories. However, no code and the approach builds heavily on existing VLA architectures.",
+    "risks_or_uncertainties": [
+      "No code or project page accessible",
+      "Heavily builds on existing VLA models; architectural novelty may be limited",
+      "Real-world results are qualitative comparisons without quantitative baselines in abstract"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "VLA",
+      "tactile sensing",
+      "dexterous manipulation",
+      "vision-language-action"
+    ],
+    "organizations": [
+      "Shanghai Jiao Tong University",
+      "Harbin Institute of Technology",
+      "Fudan University"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Shanghai Jiao Tong University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.31723",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Harbin Institute of Technology",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.31723",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Fudan University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.31723",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.30900",
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.30900",
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "Quadruped robot with soft tendon-actuated tail for grasping and manipulation in harsh environments"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "https://arxiv.org/abs/2606.30900 loads successfully"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "Novel lightweight soft compliant tendon-actuated robotic tail for quadruped; closed-form kinematic model; singularity-robust task-space controller"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "Experimental validation of gripper actuation, stiffness modulation, preload control, and real-time task-space control"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML accessible at https://ar5iv.labs.arxiv.org/html/2606.30900"
+      }
+    },
+    "scores": {
+      "relevance": 14,
+      "novelty": 14,
+      "evidence_quality": 12,
+      "potential_impact": 7,
+      "board_information_gain": 5,
+      "reproducibility": 2,
+      "timeliness": 4,
+      "total": 58
+    },
+    "decision": "watch",
+    "selection_reason": "Primarily a hardware design paper for a soft robotic tail on a quadruped. Interesting engineering contribution for hazardous environments but limited AI/learning component. The board focuses on embodied AI (policy learning, perception, sim-to-real), and this paper's contributions are mainly mechanical/kinematic. Worth watching for follow-up work integrating learning-based approaches.",
+    "risks_or_uncertainties": [
+      "Primarily mechanical/kinematic contribution, not AI/learning",
+      "Niche application (beryllium contamination at CERN)",
+      "No code or project page",
+      "Limited relevance to board's core focus on policy learning and embodied AI"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "surveys"
+    ],
+    "suggested_topics": [
+      "quadruped",
+      "soft robotics",
+      "hardware design",
+      "manipulation"
+    ]
+  },
+  {
+    "id": "arxiv-2606.26341",
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.26341",
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "GPU-batched NLP solver for robotics problems including trajectory optimization, inverse kinematics, contact-rich motion planning; evaluated on quadrotor MPC benchmarks"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "https://arxiv.org/abs/2606.26341 loads successfully"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "First GPU-batched NLP solver (jaxipm) based on IPOPT with heterogeneous iteration fusion and iteration-level batching; 32.85x throughput increase"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "Evaluated on quadrotor NMPC benchmarks: reference tracking with obstacles, multi-quadrotor navigation, cluttered navigation; 32.85x over IPOPT"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML accessible at https://ar5iv.labs.arxiv.org/html/2606.26341"
+      }
+    },
+    "scores": {
+      "relevance": 13,
+      "novelty": 17,
+      "evidence_quality": 15,
+      "potential_impact": 11,
+      "board_information_gain": 7,
+      "reproducibility": 8,
+      "timeliness": 4,
+      "total": 75
+    },
+    "decision": "include",
+    "selection_reason": "Important infrastructure contribution: first GPU-batched NLP solver in JAX. 32.85x speedup over IPOPT enables integration into GPU-batched robotics learning pipelines. Open-source code at github.com/johnviljoen/jaxipm. While not directly an embodied policy paper, this is a critical enabler for gradient-based robotics methods at scale. Fills infrastructure gap on board.",
+    "risks_or_uncertainties": [
+      "Solver experiments limited to quadrotor MPC; unclear benefits for manipulation/legged locomotion NLPs",
+      "GPU batching may not help all NLP problem types equally",
+      "Adoption depends on community switching to JAX-based pipelines"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "simulators",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "optimization",
+      "GPU acceleration",
+      "trajectory optimization",
+      "infrastructure"
+    ],
+    "organizations": [
+      "University of California, Berkeley",
+      "ETH Zürich"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "University of California, Berkeley",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.26341",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "ETH Zürich",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.26341",
+        "location": "author affiliation block"
+      }
+    ],
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": "https://github.com/johnviljoen/jaxipm",
+        "status": "verified",
+        "accessible": true,
+        "verification_method": "github-api",
+        "evidence_source": "ar5iv-html-link",
+        "checked_at": "2026-07-28",
+        "http_status": 200
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": "https://github.com/johnviljoen/jaxipm",
+    "project_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.23686",
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.23686",
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "Safety benchmark for VLA models in robotic manipulation; 19,664 collision-free demonstrations with domain randomization"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "https://arxiv.org/abs/2606.23686 loads successfully"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "Parametric safety benchmark with UBDDL-powered procedural generation + keypose-driven data pipeline; systematic cross-paradigm evaluation of 8 VLA + 2 foundation models"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "19,664 demonstrations; evaluation of 10 models reveals generalization-safety tension with specific failure-mode insights"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML accessible at https://ar5iv.labs.arxiv.org/html/2606.23686"
+      }
+    },
+    "scores": {
+      "relevance": 16,
+      "novelty": 15,
+      "evidence_quality": 16,
+      "potential_impact": 11,
+      "board_information_gain": 7,
+      "reproducibility": 4,
+      "timeliness": 4,
+      "total": 73
+    },
+    "decision": "include",
+    "selection_reason": "Important safety benchmark for VLA models in manipulation. Large-scale (19,664 demos) with procedural generation. Systematic evaluation across 10 models with actionable failure-mode insights. Project page available (libero-safety.github.io) but no code. Fills critical safety evaluation gap on board.",
+    "risks_or_uncertainties": [
+      "Benchmark paper — no new algorithm or model proposed",
+      "No public code repository; dataset release status unclear",
+      "Safety scenarios are procedurally generated; may not capture all real-world safety concerns"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "VLA",
+      "safety",
+      "benchmark",
+      "manipulation"
+    ],
+    "organizations": [
+      "Institute for AI Industry Research (AIR), Tsinghua University",
+      "Beijing Academy of Artificial Intelligence (BAAI)",
+      "Beihang University",
+      "Eastern Institute of Technology, Ningbo",
+      "Shanghai Jiao Tong University",
+      "Microsoft Research Asia"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Institute for AI Industry Research (AIR), Tsinghua University",
+        "source": "project-page",
+        "url": "https://libero-safety.github.io/",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Beijing Academy of Artificial Intelligence (BAAI)",
+        "source": "project-page",
+        "url": "https://libero-safety.github.io/",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Beihang University",
+        "source": "project-page",
+        "url": "https://libero-safety.github.io/",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Eastern Institute of Technology, Ningbo",
+        "source": "project-page",
+        "url": "https://libero-safety.github.io/",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Shanghai Jiao Tong University",
+        "source": "project-page",
+        "url": "https://libero-safety.github.io/",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Microsoft Research Asia",
+        "source": "project-page",
+        "url": "https://libero-safety.github.io/",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://libero-safety.github.io/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://libero-safety.github.io/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://libero-safety.github.io/"
+      },
+      {
+        "kind": "code",
+        "url": "https://github.com/LIBERO-SAFETY/LIBERO-Safety",
+        "status": "verified",
+        "accessible": true,
+        "verification_method": "github-api",
+        "evidence_source": "project-page",
+        "checked_at": "2026-07-28",
+        "http_status": 200
+      },
+      {
+        "kind": "dataset",
+        "url": "https://huggingface.co/datasets/LIBERO-Safety/libero_safety",
+        "status": "verified",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "project-page",
+        "checked_at": "2026-07-28",
+        "http_status": 200
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": "https://github.com/LIBERO-SAFETY/LIBERO-Safety",
+    "dataset_url": "https://huggingface.co/datasets/LIBERO-Safety/libero_safety",
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.23680",
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.23680",
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "Humanoid loco-manipulation on Unitree G1 with dexterous WUJI hand; continuous manipulation while walking"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "https://arxiv.org/abs/2606.23680 loads successfully"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "Coordinated latent residual control converting high-dimensional body+hand control into coordinated latent residual control; enables continuous dexterous loco-manipulation without stop-and-go"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "Non-stop bottle grasping and carrying, fridge door opening on the move, cube pick-and-turn; ablations show joint-space PPO and monolithic latent prediction fail under same budget"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML accessible at https://ar5iv.labs.arxiv.org/html/2606.23680"
+      }
+    },
+    "scores": {
+      "relevance": 19,
+      "novelty": 18,
+      "evidence_quality": 17,
+      "potential_impact": 13,
+      "board_information_gain": 8,
+      "reproducibility": 3,
+      "timeliness": 4,
+      "total": 82
+    },
+    "decision": "featured",
+    "selection_reason": "Breakthrough in humanoid loco-manipulation: continuous dexterous manipulation while walking, moving beyond stop-and-go paradigm. Coordinated latent residual control elegantly handles the high-dimensional action space. Real robot demos on Unitree G1 with 20-DoF WUJI hand. Strong ablations showing baselines fail. Project page at skevinci.github.io/coordex/. Fills a major gap in continuous humanoid loco-manipulation.",
+    "risks_or_uncertainties": [
+      "No public code; only project page",
+      "WUJI hand is not standard; results may not transfer to other dexterous hands",
+      "Task diversity is limited (bottle grasp, fridge door, cube) compared to full loco-manipulation spectrum"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "humanoid",
+      "loco-manipulation",
+      "dexterous manipulation",
+      "reinforcement learning",
+      "sim-to-real"
+    ],
+    "organizations": [
+      "University of California, Berkeley",
+      "University of North Carolina at Chapel Hill"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "University of California, Berkeley",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.23680",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "University of North Carolina at Chapel Hill",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.23680",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://skevinci.github.io/coordex/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://skevinci.github.io/coordex/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://skevinci.github.io/coordex/"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.23153",
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.23153",
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "Quadruped robot swarms with vision-based decentralized control; zero-shot transfer to 6 physical quadrupeds"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "https://arxiv.org/abs/2606.23153 loads successfully"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "Asymmetric physics (high-fidelity non-differentiable sim + differentiable surrogate models) enables efficient end-to-end learning for up to 512 quadrupeds"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "512 quadrupeds in simulation; zero-shot transfer to 6 physical quadrupeds across 5 real-world scenarios; emergent behaviors (predictive avoidance, yielding, wall following)"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML accessible at https://ar5iv.labs.arxiv.org/html/2606.23153"
+      }
+    },
+    "scores": {
+      "relevance": 18,
+      "novelty": 17,
+      "evidence_quality": 17,
+      "potential_impact": 12,
+      "board_information_gain": 7,
+      "reproducibility": 2,
+      "timeliness": 4,
+      "total": 77
+    },
+    "decision": "include",
+    "selection_reason": "Impressive scaling of quadruped swarm learning via asymmetric physics. 512 agents in simulation, zero-shot transfer to 6 physical robots. Emergent swarm behaviors (predictive avoidance, yielding, wall following) are compelling. Fills multi-robot/swarm gap on the board. However, no code release limits reproducibility.",
+    "risks_or_uncertainties": [
+      "No public code or project page",
+      "Asymmetric physics approach requires careful sim-to-real tuning not detailed in abstract",
+      "Swarm behaviors are emergent and may be hard to characterize/guarantee"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "simulators",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "quadruped",
+      "swarms",
+      "locomotion",
+      "navigation",
+      "reinforcement learning",
+      "sim-to-real"
+    ],
+    "organizations": [
+      "Shanghai Jiao Tong University"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Shanghai Jiao Tong University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.23153",
+        "location": "author affiliation block"
+      }
+    ],
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.22860",
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.22860",
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "Robot manipulation with VLA models; real-world industrial deployment"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "https://arxiv.org/abs/2606.22860 loads successfully"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "Model-agnostic plug-and-play residual RL fine-tuning pipeline for VLA models; human-in-the-loop guidance for safe exploration"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "1.5 hours real-world online RL training achieves >95% success rate on real robots"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML accessible at https://ar5iv.labs.arxiv.org/html/2606.22860"
+      }
+    },
+    "scores": {
+      "relevance": 17,
+      "novelty": 15,
+      "evidence_quality": 15,
+      "potential_impact": 11,
+      "board_information_gain": 7,
+      "reproducibility": 2,
+      "timeliness": 4,
+      "total": 71
+    },
+    "decision": "include",
+    "selection_reason": "Practical fine-tuning pipeline for VLA deployment. Model-agnostic approach is valuable for industrial adoption. 95% success after only 1.5 hours of real-world training is impressive. However, no code available and results are from a narrow set of industrial tasks.",
+    "risks_or_uncertainties": [
+      "No code or project page accessible",
+      "Results may be specific to the industrial tasks/robots used",
+      "HITL guidance overhead may limit scalability",
+      "Model-agnostic claim not systematically validated across diverse VLA architectures"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "VLA",
+      "fine-tuning",
+      "reinforcement learning",
+      "manipulation",
+      "industrial robotics"
+    ],
+    "organizations": [
+      "Huawei Cloud",
+      "South China University of Technology"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Huawei Cloud",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.22860",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "South China University of Technology",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.22860",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.22136",
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.22136",
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "Dexterous manipulation on Unitree G1 humanoid with Inspire hands; 18 real-world tasks"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "https://arxiv.org/abs/2606.22136 loads successfully"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "Generative video world models as scalable sources of egocentric human hand manipulation data to improve dexterous VLA models; WM-H 50k-episode dataset"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "18 real-world tasks on G1+Inspire hands; zero-shot success improves from 8.3% to 38.9%; ablations confirm scalable generation and scene/embodiment alignment as key drivers"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML accessible at https://ar5iv.labs.arxiv.org/html/2606.22136"
+      }
+    },
+    "scores": {
+      "relevance": 18,
+      "novelty": 18,
+      "evidence_quality": 17,
+      "potential_impact": 13,
+      "board_information_gain": 8,
+      "reproducibility": 5,
+      "timeliness": 4,
+      "total": 83
+    },
+    "decision": "featured",
+    "selection_reason": "Highly innovative use of generative video world models as data sources for dexterous manipulation. 50k-episode WM-H dataset bridges the data scaling gap. 4.7x improvement in zero-shot success (8.3%→38.9%) on real G1 humanoid across 18 tasks. Open-source code promised on project page. Fills a creative gap at the intersection of generative models and robot learning.",
+    "risks_or_uncertainties": [
+      "38.9% zero-shot success still leaves room for improvement",
+      "World model generation quality may limit task complexity",
+      "Dependency on pretrained VLA models; benefits may not transfer to other architectures"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "world models",
+      "dexterous manipulation",
+      "VLA",
+      "data generation",
+      "humanoid",
+      "generative AI"
+    ],
+    "organizations": [
+      "Shanghai Jiao Tong University",
+      "Shanghai Innovation Institute"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Shanghai Jiao Tong University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.22136",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Shanghai Innovation Institute",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.22136",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://chenyt31.github.io/wh0.github.io/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://chenyt31.github.io/wh0.github.io/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-or-project-page",
+        "checked_at": "2026-07-28"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.18772",
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.18772",
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "Humanoid loco-manipulation on Unitree G1 with actuated neck; 5 real-world tasks"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "https://arxiv.org/abs/2606.18772 loads successfully"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "UMI extension with egocentric sensing + manifold-constrained controller for head-hand tracking + ego-view alignment + controller-aware trajectory adaptation"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "85% avg success rate on Unitree G1 across 3 quantitatively evaluated tasks; qualitative demos include dynamic tossing and deep-squat grasping"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML accessible at https://ar5iv.labs.arxiv.org/html/2606.18772"
+      }
+    },
+    "scores": {
+      "relevance": 18,
+      "novelty": 16,
+      "evidence_quality": 16,
+      "potential_impact": 12,
+      "board_information_gain": 7,
+      "reproducibility": 3,
+      "timeliness": 4,
+      "total": 76
+    },
+    "decision": "include",
+    "selection_reason": "Solid humanoid loco-manipulation framework extending UMI to egocentric sensing. Manifold-constrained controller is novel. 85% success across 3 tasks on real Unitree G1. Dynamic behaviors (tossing, deep-squat grasping) are impressive. Project page available but no code.",
+    "risks_or_uncertainties": [
+      "No public code; only project page (halomi-humanoid.github.io)",
+      "Manifold-constrained controller may not generalize to out-of-distribution targets",
+      "Only 3 quantitatively evaluated tasks"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "humanoid",
+      "loco-manipulation",
+      "learning from demonstration",
+      "teleoperation"
+    ],
+    "organizations": [
+      "Shanghai Jiao Tong University"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Shanghai Jiao Tong University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.18772",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://halomi-humanoid.github.io",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://halomi-humanoid.github.io",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://halomi-humanoid.github.io/"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.18375",
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.18375",
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "Multi-view world foundation model for robotic manipulation; evaluated on WorldArena and AgiBot-Challenge2026"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "https://arxiv.org/abs/2606.18375 loads successfully"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "Geometry-aware cross-view attention + Geometric RoPE + Latent 3D-REPA to achieve multi-view 3D consistency in world models"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "#1 WorldArena, #2 AgiBot-Challenge2026; 14B parameter model; 2.5M video clips from 5 datasets; enables model-based planning and policy post-training"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML accessible at https://ar5iv.labs.arxiv.org/html/2606.18375"
+      }
+    },
+    "scores": {
+      "relevance": 17,
+      "novelty": 18,
+      "evidence_quality": 17,
+      "potential_impact": 12,
+      "board_information_gain": 7,
+      "reproducibility": 2,
+      "timeliness": 4,
+      "total": 77
+    },
+    "decision": "include",
+    "selection_reason": "State-of-the-art multi-view world foundation model for manipulation. Leaderboard-topping results on WorldArena and AgiBot-Challenge. 14B parameters, 2.5M video clips. Geometric innovations (Geo-RoPE, 3D-REPA) are well-motivated. However, no code or model weights available, limiting reproducibility. Important infrastructure for model-based planning.",
+    "risks_or_uncertainties": [
+      "No code, model weights, or project page accessible",
+      "14B model is computationally heavy for most labs",
+      "World model quality for downstream policy improvement not fully validated"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "simulators",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "world models",
+      "foundation models",
+      "manipulation",
+      "multi-view",
+      "model-based planning"
+    ],
+    "organizations": [
+      "Chinese Academy of Sciences"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Chinese Academy of Sciences",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.18375",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.18097",
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.18097",
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "Industrial deformable linear object (DLO) manipulation benchmark; connector insertion, clip routing, channel seating"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "https://arxiv.org/abs/2606.18097 loads successfully"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "First simulation benchmark for industrial DLO manipulation with configurable difficulty, two physics models, and shared evaluation protocols across RL/IL/VLA"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "Privileged state RL solves each task family with >82% success; vision RL/IL/VLA show clear gap on connector insertion; trajectories from real UR5"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML accessible at https://ar5iv.labs.arxiv.org/html/2606.18097"
+      }
+    },
+    "scores": {
+      "relevance": 18,
+      "novelty": 16,
+      "evidence_quality": 15,
+      "potential_impact": 11,
+      "board_information_gain": 7,
+      "reproducibility": 2,
+      "timeliness": 4,
+      "total": 73
+    },
+    "decision": "include",
+    "selection_reason": "Important benchmark for a neglected problem: industrial DLO manipulation. Well-designed with configurable difficulty, two physics models, and shared interfaces. Clear gap demonstrated between privileged state and vision-based policies. Code promised upon acceptance. Fills DLO/deformable manipulation gap on board.",
+    "risks_or_uncertainties": [
+      "Code/data 'will be open-sourced upon acceptance' — not available now",
+      "Only connector insertion deeply evaluated; clip routing and channel seating are shallow",
+      "Real-world data limited to UR5 trajectories"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "deformable objects",
+      "manipulation",
+      "benchmark",
+      "industrial robotics",
+      "sim-to-real"
+    ],
+    "organizations": [
+      "University of Toronto",
+      "CREFLE Inc."
+    ],
+    "organization_evidence": [
+      {
+        "organization": "University of Toronto",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.18097",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "CREFLE Inc.",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.18097",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.15133",
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.15133",
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "Dexterous hand interaction with articulated objects; household, assistive, humanoid manipulation"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "https://arxiv.org/abs/2606.15133 loads successfully"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "Contact-driven framework for dexterous hand-articulated-object interaction + PICA (physically informed contact-aware training) without tactile/force feedback"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "7 GAPartNet objects; stronger robustness under contact-load variation vs baselines; systematic damping evaluation"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML accessible at https://ar5iv.labs.arxiv.org/html/2606.15133"
+      }
+    },
+    "scores": {
+      "relevance": 17,
+      "novelty": 16,
+      "evidence_quality": 15,
+      "potential_impact": 10,
+      "board_information_gain": 6,
+      "reproducibility": 6,
+      "timeliness": 4,
+      "total": 74
+    },
+    "decision": "include",
+    "selection_reason": "Solid work on a challenging problem: dexterous interaction with articulated objects. PICA is clever — injects physical signals without tactile hardware. Code available at github.com/AIGeeksGroup/DragMesh-2. No real-robot experiments, but the simulation evaluation on contact-load robustness is thorough.",
+    "risks_or_uncertainties": [
+      "No real-robot experiments; all evaluation in simulation",
+      "Success degrades from 0.89 to 0.56 under 4x contact load",
+      "Articulated object set limited to 7 GAPartNet objects"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "dexterous manipulation",
+      "articulated objects",
+      "sim-to-real",
+      "contact-rich manipulation"
+    ],
+    "organizations": [
+      "Peking University"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Peking University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.15133",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://aigeeksgroup.github.io/DragMesh-2",
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": "https://github.com/AIGeeksGroup/DragMesh-2",
+        "status": "verified",
+        "accessible": true,
+        "verification_method": "github-api",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://api.github.com/repos/AIGeeksGroup/DragMesh-2"
+      },
+      {
+        "kind": "project",
+        "url": "https://aigeeksgroup.github.io/DragMesh-2",
+        "status": "verified",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://aigeeksgroup.github.io/DragMesh-2/"
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": "https://github.com/AIGeeksGroup/DragMesh-2",
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.14270",
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.14270",
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "Bipedal-wheeled robot fall recovery; also generalizes to humanoid"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "https://arxiv.org/abs/2606.14270 loads successfully"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "Force-guided teacher-student framework with stage-wise rewards for fall recovery without arms"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "Physical armless bipedal-wheeled robot; robust recovery under diverse conditions; also generalizes to high-DOF humanoid"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML accessible at https://ar5iv.labs.arxiv.org/html/2606.14270"
+      }
+    },
+    "scores": {
+      "relevance": 16,
+      "novelty": 15,
+      "evidence_quality": 15,
+      "potential_impact": 9,
+      "board_information_gain": 5,
+      "reproducibility": 3,
+      "timeliness": 4,
+      "total": 67
+    },
+    "decision": "include",
+    "selection_reason": "Interesting fall recovery for armless bipedal-wheeled robots — a niche but important locomotion safety problem. Force-guided teacher-student framework is clever. Real robot deployment and humanoid generalization strengthen claims. However, limited direct relevance to board's core manipulation/VLA focus.",
+    "risks_or_uncertainties": [
+      "Niche problem (armless bipedal-wheeled); limited to fall recovery only",
+      "No public code; only project page",
+      "Generalization to humanoid is only briefly mentioned"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "simulators",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "locomotion",
+      "fall recovery",
+      "reinforcement learning",
+      "bipedal"
+    ],
+    "organizations": [
+      "Beijing Institute of Technology"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Beijing Institute of Technology",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.14270",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://2350575870.github.io/force-guided.github.io/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://2350575870.github.io/force-guided.github.io/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://2350575870.github.io/force-guided.github.io/"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.11743",
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.11743",
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "Bimanual contact-rich robot manipulation with tactile VLA; real robot deployment"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "https://arxiv.org/abs/2606.11743 loads successfully"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "Tactile feedback injection into VLA via sim-real co-training + RL; learns contact-conditioned corrective actions without large-scale tactile pretraining"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "72.5% vs 50.0% baseline on 4 bimanual contact-rich tasks; real robot transfer without privileged sim state or online real RL"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML accessible at https://ar5iv.labs.arxiv.org/html/2606.11743"
+      }
+    },
+    "scores": {
+      "relevance": 18,
+      "novelty": 17,
+      "evidence_quality": 16,
+      "potential_impact": 12,
+      "board_information_gain": 7,
+      "reproducibility": 3,
+      "timeliness": 4,
+      "total": 77
+    },
+    "decision": "include",
+    "selection_reason": "Strong tactile VLA framework from prominent labs (Hao Su, Yixin Zhu, Chenfanfu Jiang). Sim-real co-training + RL approach is practical and scalable. 22.5% absolute improvement over vision-only baseline on real bimanual tasks. Project page available. Fills tactile VLA gap on board.",
+    "risks_or_uncertainties": [
+      "No public code; only project page (tac-corl.github.io)",
+      "Requires real-aligned simulator which may not be available for all setups",
+      "Only 4 tasks evaluated"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "VLA",
+      "tactile sensing",
+      "bimanual manipulation",
+      "reinforcement learning",
+      "sim-to-real"
+    ],
+    "organizations": [
+      "University of California, San Diego",
+      "University of California, Los Angeles",
+      "Peking University"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "University of California, San Diego",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.11743",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "University of California, Los Angeles",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.11743",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Peking University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.11743",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://tac-corl.github.io/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://tac-corl.github.io/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://tac-corl.github.io/"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.11396",
+    "source_scope": "full-source",
+    "fulltext_url": "https://ar5iv.labs.arxiv.org/html/2606.11396",
+    "hard_gates": {
+      "embodied_relevance": {
+        "pass": true,
+        "evidence": "Dexterous manipulation with multi-finger hands; sim + hardware screwdriver turning"
+      },
+      "primary_source": {
+        "pass": true,
+        "evidence": "https://arxiv.org/abs/2606.11396 loads successfully"
+      },
+      "incremental_contribution": {
+        "pass": true,
+        "evidence": "Probabilistic latent world model jointly learning belief over physical parameters and system dynamics; online parameter inference without retraining"
+      },
+      "claim_support": {
+        "pass": true,
+        "evidence": "4 sim tasks (screwdriver turning, valve turning, bucket lifting, disk flicking) + hardware screwdriver; outperforms offline RL and world-model-augmented BC baselines"
+      },
+      "fulltext_for_recommendation": {
+        "pass": true,
+        "evidence": "ar5iv HTML accessible at https://ar5iv.labs.arxiv.org/html/2606.11396"
+      }
+    },
+    "scores": {
+      "relevance": 18,
+      "novelty": 17,
+      "evidence_quality": 16,
+      "potential_impact": 11,
+      "board_information_gain": 7,
+      "reproducibility": 3,
+      "timeliness": 4,
+      "total": 76
+    },
+    "decision": "include",
+    "selection_reason": "Novel world model approach for dexterous manipulation under parameter uncertainty. Joint belief+dynamic modeling with online inference is elegant. Hardware screwdriver turning validates sim-to-real. Outperforms offline RL and BC baselines. Fills world model gap on board.",
+    "risks_or_uncertainties": [
+      "No public code; only project page (plume-world-model.github.io)",
+      "Only one hardware task (screwdriver turning)",
+      "Parameter set limited to shape, pose, friction — real-world has more complex uncertainties"
+    ],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "suggested_topics": [
+      "world models",
+      "dexterous manipulation",
+      "parameter estimation",
+      "sim-to-real"
+    ],
+    "organizations": [
+      "University of Michigan",
+      "Honda Research Institute"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "University of Michigan",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.11396",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Honda Research Institute",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.11396",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://plume-world-model.github.io",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://plume-world-model.github.io",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://plume-world-model.github.io/"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "model_url": null,
+    "code_url": null,
+    "dataset_url": null
+  }
+]

@@ -1,0 +1,228 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.16178",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Scaling Short-Term Memory of Visuomotor Policies for Long-Horizon Tasks",
+  "title_zh": "PRISM：扩展视觉运动策略的短期记忆以应对长程任务",
+  "abstract": "Many robotic tasks require short-term memory, whether it's retrieving an object that's no longer visible or turning off an appliance after a set period. Yet, most visuomotor policies trained via imitation learning rely only on immediate sensory input without using past experiences to guide decisions. We present PRISM, a transformer-based architecture for visuomotor policies to effectively use short-term memory via two key components: (i) gated attention, which filters retrieved information to suppress irrelevant details, improving performance by reducing the spurious correlations between the history and current action prediction, (ii) a hierarchical architecture that first compresses local information into compact tokens and then integrates them to capture temporally extended dependencies, improving its compute and memory footprint. Together, these mechanisms enable us to scale short-term memory in visuomotor policies for up to two minutes. To systematically evaluate memory in visuomotor control, we introduce ReMemBench -- a benchmark of eight diverse household manipulation tasks spanning four categories of short-term memory. PRISM consistently outperforms prior works, including recurrent architectures, transformers, and their variants -- achieving an absolute improvement of 5%-12% over the strongest baseline. On the RoboCasa and LIBERO benchmarks, it achieves absolute improvements of 11%-15% over its no-memory variant and fine-tuned VLA baselines such as GR00T-N1-3B and OpenVLA, despite not leveraging any large-scale pretraining.",
+  "paper_url": "https://arxiv.org/abs/2606.16178",
+  "pdf_url": "https://arxiv.org/pdf/2606.16178",
+  "project_url": "https://shahrutav.github.io/short-term-memory",
+  "code_url": "https://github.com/Stanford-ILIAD/openvla-mini",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Rutav Shah",
+      "affiliations": [
+        "cmu"
+      ]
+    },
+    {
+      "name": "Rajat Kumar Jenamani",
+      "affiliations": [
+        "cmu"
+      ]
+    },
+    {
+      "name": "Xiaohan Zhang",
+      "affiliations": [
+        "cmu"
+      ]
+    },
+    {
+      "name": "Lingfeng Sun",
+      "affiliations": [
+        "cmu"
+      ]
+    },
+    {
+      "name": "Roberto Martín-Martín",
+      "affiliations": [
+        "ut-austin"
+      ]
+    },
+    {
+      "name": "Yuke Zhu",
+      "affiliations": [
+        "ut-austin"
+      ]
+    },
+    {
+      "name": "Deva Ramanan",
+      "affiliations": [
+        "cmu"
+      ]
+    },
+    {
+      "name": "Karl Schmeckpeper",
+      "affiliations": [
+        "cmu"
+      ]
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-06-15",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "behavior-cloning",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation",
+      "navigation"
+    ],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "proprioception",
+      "action"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [
+      "code",
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method",
+    "benchmark"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 76,
+    "selection_reason": "提出PRISM架构和ReMemBench基准，系统性地解决了视觉运动策略中短期记忆的扩展问题。门控注意力过滤不相关历史信息，层级架构先压缩局部信息再整合长程依赖，使策略记忆可扩展至两分钟。在ReMemBench四个记忆类别（空间/物体集/物体关联/前瞻）的8个任务上超越基线5-12%，在RoboCasa和LIBERO上超越GR00T-N1-3B和OpenVLA达11-15%，且未使用大规模预训练。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "hermes-agent",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文 HTML 作者区未能自动解析出明确机构，需人工核验"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.16178",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "I Introduction",
+      "II Related Work",
+      "Short-Term Memory in Machine Learning",
+      "Short-Term Memory in Visuomotor Policies",
+      "Memory Benchmarks",
+      "III PRISM: A Policy Architecture for Short-Term Memory",
+      "III-A Formulation, Background, and Challenges",
+      "Problem Formulation",
+      "Training Objective",
+      "Evaluation",
+      "Model Architecture",
+      "Challenges",
+      "III-B Selecting Relevant Features",
+      "III-C Reducing Memory and Compute Footprint",
+      "Summary.",
+      "IV ReMemBench: A Benchmark for Short-Term Memory in Visuomotor Policies",
+      "V Experiments",
+      "VI Limitations and Conclusion",
+      "VII Acknowledgements",
+      "References",
+      "VIII Appendix",
+      "IX Effect of Attention Scale Factor (Sharpness)",
+      "X Effect of Attention Dropping",
+      "XI Effect of Gating Module",
+      "XII Evaluation on Mikasa-Robo",
+      "XIII Analysis of the compression factor (mm)",
+      "XIV Memory and Compute Footprint",
+      "Training.",
+      "Evaluation.",
+      "Baselines",
+      "XV Implementation Details",
+      "PRISM Architecture Details",
+      "Data Collection",
+      "Training Details",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.16178"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.16178"
+    },
+    {
+      "type": "project",
+      "url": "https://shahrutav.github.io/short-term-memory"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://shahrutav.github.io/short-term-memory",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://shahrutav.github.io/short-term-memory/"
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/Stanford-ILIAD/openvla-mini",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "ar5iv-html-link",
+      "checked_at": "2026-07-28",
+      "http_status": 200
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

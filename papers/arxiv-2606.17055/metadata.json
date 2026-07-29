@@ -1,0 +1,389 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.17055",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "T-Rex: Tactile-Reactive Dexterous Manipulation",
+  "title_zh": null,
+  "abstract": "The ability to react dynamically to tactile signals has long been considered crucial to agile human-level dexterity. Yet contemporary learning-based VLAs for robotic manipulation generally either overlook the tactile modality or are limited to encoders with static cues, in part due to the scarcity of diverse training data and standardized evaluation, architectural constraints in current Vision-Language-Action (VLA) models, and limitations of static tactile encoders. In this paper, we push the frontier of tactile-reactive manipulation addressing all of these limitations. We propose a large-scale, 100-hour tactile-rich dataset collected via a novel, data-efficient recipe that prioritizes elementary motor primitives. To effectively exploit naturally high-frequency touch signals without sacrificing the existing capabilities of existing VLAs, we introduce a variable-rate Mix-of-Transformer (MoT) architecture equipped with a novel temporal tactile VQ-VAE encoder. We demonstrate the effectiveness of tactile-reactive policies on 12 manipulation tasks requiring delicate force control, deformable object manipulation, achieving over 30% higher average success rate than the strongest baseline.",
+  "paper_url": "https://arxiv.org/abs/2606.17055",
+  "pdf_url": "https://arxiv.org/pdf/2606.17055",
+  "project_url": null,
+  "code_url": "https://github.com/xiaoxiaoxh/reactive_diffusion_policy",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Dantong Niu",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Zhuoyang Liu",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Zekai Wang",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Boning Shao",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Zhao-Heng Yin",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Anirudh Pai",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Yuvan Sharma",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Stefano Saravalle",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Ruijie Zheng",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Jing Wang",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Ryan Punamiya",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Mengda Xu",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Yuqi Xie",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Yunfan Jiang",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Letian Fu",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Konstantinos Kallidromitis",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Matteo Gioia",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Junyi Zhang",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Jiaxin Ge",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Haiwen Feng",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Fabio Galasso",
+      "affiliations": [
+        "la-sapienza"
+      ]
+    },
+    {
+      "name": "Wei Zhan",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "David M. Chan",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Yutong Bai",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Roei Herzig",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Jiahui Lei",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Li Fei-Fei",
+      "affiliations": [
+        "stanford"
+      ]
+    },
+    {
+      "name": "Ken Goldberg",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Jitendra Malik",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Pieter Abbeel",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Yuke Zhu",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Danfei Xu",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Jim(Linxi) Fan",
+      "affiliations": [
+        "nvidia"
+      ]
+    },
+    {
+      "name": "Trevor Darrell",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "sapienzauniversityofrome",
+      "name": "Sapienza University of Rome",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-19",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data"
+    ],
+    "topics": [
+      "diffusion-policy",
+      "imitation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "dexterous-hand"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "proprioception",
+      "action",
+      "tactile"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [
+      "code"
+    ],
+    "properties": [
+      "real-robot-evaluation",
+      "large-scale-data"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "dataset"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 85,
+    "selection_reason": "推动触觉反应性灵巧操作前沿：100小时触觉同步数据集（200+日常物体、22种运动原语），异步MoT架构融合低频视觉运动规划与高频触觉精调，12项接触密集型灵巧操作任务平均超最强基线30%。提出人类自视角预训练→触觉对齐中训练→目标域快速适配的三阶段范式。数据集计划MIT许可证开源。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "hermes-agent",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "触觉传感器依赖特定硬件（Dexmate Vega-1平台）",
+      "中训练阶段仍需大量触觉数据（100小时），对新embodiment需要重新采集",
+      "数据集10周采集周期、7755 episodes，扩展性有待验证"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.17055",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 The T-Rex Dataset",
+      "4 Tactile-Reactive Dexterous Manipulation",
+      "4.1 Model Architecture",
+      "4.2 Asynchronous Tactile-Reactive Cascaded Flow Matching",
+      "4.3 Training Recipe",
+      "5 Experiments",
+      "5.1 Experiment Setup",
+      "5.2 Main Results",
+      "5.3 Ablation Studies",
+      "6 Conclusion",
+      "7 Limitation and Future Work",
+      "Acknowledgments",
+      "References",
+      "Appendix A Model and Training Details",
+      "Appendix B Additional Details for Asynchronous Cascaded Denoising",
+      "Appendix C Implementation Details for Spacial-Temporal Tactile Encoder",
+      "Appendix D Real-World Setup and Teleoperation Stack",
+      "Appendix E Implementation Details of Baselines",
+      "Appendix F Evaluation Tasks",
+      "Appendix G T-Rex Dataset",
+      "Appendix H Failure Case Analysis",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.17055"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.17055"
+    },
+    {
+      "type": "code",
+      "url": "https://github.com/xiaoxiaoxh/reactive_diffusion_policy"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "tasks",
+      "slug": "dexterous-manipulation",
+      "name": "Dexterous Manipulation",
+      "reason": "现有tasks词表中manipulation不足以区分灵巧手操作与标准夹爪操作。T-Rex专注bimanual dexterous hand manipulation，任务涉及插入、形变、力敏感交互和双臂协调。",
+      "evidence": "论文标题和摘要明确使用Dexterous Manipulation，Section 5的12项benchmark任务均需要多指灵巧手的高频触觉反馈。"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "Sapienza University of Rome",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.17055",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/xiaoxiaoxh/reactive_diffusion_policy",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://api.github.com/repos/xiaoxiaoxh/reactive_diffusion_policy"
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

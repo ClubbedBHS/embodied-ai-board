@@ -1,0 +1,172 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.23431",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "DexTeleop-0: Force-Aware Bimanual Dexterous Teleoperation with Ego-Centric Perception towards Shared Autonomy",
+  "title_zh": "DexTeleop-0：面向共享自主的力感知双臂灵巧遥操作",
+  "abstract": "Fine-grained, bimanual dexterous manipulation remains a foundational challenge in robotics. Traditional teleoperation systems often fail in contact-rich tasks because embodiment gaps hinder accurate kinematic mapping, while tactile and force feedback remain absent. Consequently, data collection efficiency for high-precision tasks remains prohibitively low. To address these limitations, we propose a tactile-driven adaptation strategy designed to enable fine-grained manipulation on top of teleoper",
+  "paper_url": "https://arxiv.org/abs/2606.23431",
+  "pdf_url": "https://arxiv.org/pdf/2606.23431",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Haichao Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Yuyao Jiang",
+      "affiliations": []
+    },
+    {
+      "name": "Hyunsun Park",
+      "affiliations": []
+    },
+    {
+      "name": "Yuanjiang Xue",
+      "affiliations": []
+    },
+    {
+      "name": "Ziwei Wang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "nanyangtechnologicaluniversity",
+      "name": "Nanyang Technological University",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-22",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "Solid bimanual teleoperation system with tactile-driven adaptation. Addresses embodiment gap with real-time optimization. Both simulated and real-world evaluation. However, primarily a teleoperation system rather than autonomous policy learning. Project page available but no code.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.23431",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "2.1 Robotic Teleoperation Systems",
+      "2.2 Dexterous Manipulation",
+      "2.3 Tactile-Enhanced Manipulation",
+      "3 Methodology",
+      "3.1 Problem Formulation",
+      "3.2 Dexterous Hand Retargeting",
+      "3.3 Contact-Rich Force-Aware Shared Autonomy",
+      "3.3.1 Tactile Sensing Processing and Contact State Estimation",
+      "3.3.2 Localized Force Feedback Tracking",
+      "3.3.3 Multi-Contact Force-Torque Balance Evaluation",
+      "3.3.4 Unified Force Balance Optimization",
+      "4 Experimental Results and Analysis",
+      "4.1 Experimental Setup and Metrics",
+      "4.1.1 System Architecture and Hardware Configuration",
+      "4.1.2 Algorithmic Baselines",
+      "4.1.3 Task Specifications and Performance Evaluation",
+      "4.2 Comparison Results",
+      "4.2.1 Simulation Performance Analysis",
+      "4.2.2 Real-Robot Experimental Verification",
+      "5 Conclusion",
+      "References",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.23431"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.23431"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Nanyang Technological University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.23431",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

@@ -1,0 +1,312 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.23686",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "LIBERO-Safety: A Comprehensive Benchmark for Physical and Semantic Safety in Vision-Language-Action Models",
+  "title_zh": "LIBERO-Safety：面向视觉—语言—动作模型的物理与语义安全基准",
+  "abstract": "Despite the impressive manipulation capabilities of Vision-Language-Action (VLA) models, their operational safety under strict constraints remains largely unverified. To address this, we introduce a parametric safety benchmark to procedurally generate safety-critical scenarios with comprehensive stochasticity. To overcome the scalability bottlenecks of human teleoperation, we develop a novel keypose-driven data generation pipeline. Leveraging this infrastructure, we curate a large-scale dataset ",
+  "paper_url": "https://arxiv.org/abs/2606.23686",
+  "pdf_url": "https://arxiv.org/pdf/2606.23686",
+  "project_url": "https://libero-safety.github.io/",
+  "code_url": "https://github.com/LIBERO-SAFETY/LIBERO-Safety",
+  "dataset_url": "https://huggingface.co/datasets/LIBERO-Safety/libero_safety",
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Rongxu Cui",
+      "affiliations": []
+    },
+    {
+      "name": "Zongzheng Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Jingrui Pang",
+      "affiliations": []
+    },
+    {
+      "name": "Haohan Chi",
+      "affiliations": []
+    },
+    {
+      "name": "Jinbang Guo",
+      "affiliations": []
+    },
+    {
+      "name": "Saining Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Shaoxuan Xie",
+      "affiliations": []
+    },
+    {
+      "name": "Xin Jin",
+      "affiliations": []
+    },
+    {
+      "name": "Yao Mu",
+      "affiliations": []
+    },
+    {
+      "name": "Jiaolong Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Guocai Yao",
+      "affiliations": []
+    },
+    {
+      "name": "Xianyuan Zhan",
+      "affiliations": []
+    },
+    {
+      "name": "Ya-Qin Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Hao Zhao",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "instituteforaiindustryresearchairtsinghuauniversity",
+      "name": "Institute for AI Industry Research (AIR), Tsinghua University",
+      "role": "primary"
+    },
+    {
+      "id": "beijingacademyofartificialintelligencebaai",
+      "name": "Beijing Academy of Artificial Intelligence (BAAI)",
+      "role": "collaborator"
+    },
+    {
+      "id": "beihanguniversity",
+      "name": "Beihang University",
+      "role": "collaborator"
+    },
+    {
+      "id": "easterninstituteoftechnologyningbo",
+      "name": "Eastern Institute of Technology, Ningbo",
+      "role": "collaborator"
+    },
+    {
+      "id": "shanghaijiaotonguniversity",
+      "name": "Shanghai Jiao Tong University",
+      "role": "collaborator"
+    },
+    {
+      "id": "microsoftresearchasia",
+      "name": "Microsoft Research Asia",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-22",
+    "last_revision": "2026-06-26"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "code",
+      "dataset",
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "Important safety benchmark for VLA models in manipulation. Large-scale (19,664 demos) with procedural generation. Systematic evaluation across 10 models with actionable failure-mode insights. Project page available (libero-safety.github.io) but no code. Fills critical safety evaluation gap on board.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文 HTML 作者区未能自动解析出明确机构，需人工核验"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.23686",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 INTRODUCTION",
+      "2 Related Work",
+      "2.1 Vision-Language-Action Models",
+      "2.2 Safety-Aware Policy Learning",
+      "2.3 Benchmarks for VLA Evaluation",
+      "3 VLA Safety Benchmark",
+      "3.1 Parametric Environment Definition",
+      "3.2 Safety-Centric Task Taxonomy",
+      "3.2.1 Affordance-Aware Grasping (AAG)",
+      "3.2.2 Human-Robot Interaction (HRI)",
+      "3.2.3 Tabletop Spatial Avoidance (TSA)",
+      "3.2.4 Free-Space Hand-Object Avoidance (FSHOA)",
+      "3.2.5 Semantic Safety Reasoning (SSR)",
+      "3.3 Keypose-Driven Data Generation Pipeline",
+      "3.4 Training Dataset",
+      "4 Experiment",
+      "4.1 Experimental Setup",
+      "4.1.1 Embodied Physical Safety Track",
+      "4.1.2 Semantic Safety Reasoning Track",
+      "4.2 Main Results",
+      "4.3 Analysis of Generalization and Safety",
+      "4.4 Failure Case Analysis",
+      "5 Conclusion",
+      "References",
+      "Appendix",
+      "Appendix 0.A Environment Design Details",
+      "0.A.1 Preliminary: The BDDL Framework",
+      "0.A.2 UBDDL Environmental Configurations",
+      "0.A.2.1 Comprehensive Scene Perturbations",
+      "0.A.2.2 Dynamic Object Definition",
+      "0.A.2.3 Safety Constraints",
+      "0.A.3 Additional Data-Generation and Evaluation-Split Details",
+      "Appendix 0.B Safety Centric Task Taxonomy",
+      "0.B.0.1 Affordance Aware Grasping Suite",
+      "0.B.0.2 Human Robot Interaction Suite",
+      "0.B.0.3 Tabletop Spatial Avoidance Suite",
+      "0.B.0.4 Free Space Hand Object Avoidance Suite",
+      "0.B.0.5 Semantic Safety Reasoning Suite",
+      "Appendix 0.C Experiment Implementation",
+      "0.C.1 Model Details",
+      "0.C.1.1 Embodied Physical Safety Track",
+      "0.C.1.2 Semantic Safety Reasoning Track",
+      "0.C.2 Training Configurations",
+      "0.C.2.1 OpenVLA",
+      "0.C.2.2 OpenVLA-OFT",
+      "0.C.2.3 Ï0\\pi_{0}",
+      "0.C.2.4 Ï0.5\\pi_{0.5}",
+      "0.C.2.5 UniVLA",
+      "0.C.2.6 VLA-JEPA",
+      "0.C.2.7 GR00T N1.5",
+      "0.C.2.8 GR00T N1.6",
+      "0.C.3 Additional Experimental Results",
+      "Appendix 0.D Real World Deployment",
+      "Appendix 0.E Limitations and Future Work",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.23686"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.23686"
+    },
+    {
+      "type": "project",
+      "url": "https://libero-safety.github.io/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Institute for AI Industry Research (AIR), Tsinghua University",
+      "source": "project-page",
+      "url": "https://libero-safety.github.io/",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Beijing Academy of Artificial Intelligence (BAAI)",
+      "source": "project-page",
+      "url": "https://libero-safety.github.io/",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Beihang University",
+      "source": "project-page",
+      "url": "https://libero-safety.github.io/",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Eastern Institute of Technology, Ningbo",
+      "source": "project-page",
+      "url": "https://libero-safety.github.io/",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Shanghai Jiao Tong University",
+      "source": "project-page",
+      "url": "https://libero-safety.github.io/",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Microsoft Research Asia",
+      "source": "project-page",
+      "url": "https://libero-safety.github.io/",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://libero-safety.github.io/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://libero-safety.github.io/"
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/LIBERO-SAFETY/LIBERO-Safety",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-28",
+      "http_status": 200
+    },
+    {
+      "kind": "dataset",
+      "url": "https://huggingface.co/datasets/LIBERO-Safety/libero_safety",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-28",
+      "http_status": 200
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

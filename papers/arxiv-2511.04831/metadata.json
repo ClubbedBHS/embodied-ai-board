@@ -7,7 +7,7 @@
   "paper_url": "https://arxiv.org/abs/2511.04831",
   "pdf_url": "https://arxiv.org/pdf/2511.04831",
   "project_url": "https://isaac-sim.github.io/IsaacLab",
-  "code_url": "https://github.com/isaac-sim/IsaacLab",
+  "code_url": "https://github.com/NVlabs/HOVER",
   "dataset_url": null,
   "model_url": null,
   "video_url": null,
@@ -87,23 +87,7 @@
       ]
     }
   ],
-  "organizations": [
-    {
-      "id": "nvidia",
-      "name": "NVIDIA",
-      "role": "primary"
-    },
-    {
-      "id": "eth",
-      "name": "ETH Zürich",
-      "role": "collaborator"
-    },
-    {
-      "id": "rai",
-      "name": "Robotics and AI Institute",
-      "role": "collaborator"
-    }
-  ],
+  "organizations": [],
   "dates": {
     "first_publication": "2025-11-06",
     "last_revision": "2025-11-06"
@@ -151,7 +135,7 @@
     ],
     "assets": [
       "code",
-      "simulator"
+      "project-page"
     ],
     "properties": [
       "open-source",
@@ -209,5 +193,57 @@
     ],
     "figure_images_accessed": false,
     "accessed_at": "2026-07-22"
-  }
+  },
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/NVlabs/HOVER",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "ar5iv-html-link",
+      "checked_at": "2026-07-28",
+      "http_status": 200
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/isaac-sim/IsaacLab",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "ar5iv-html-link",
+      "checked_at": "2026-07-28",
+      "http_status": 200
+    },
+    {
+      "kind": "project",
+      "url": "https://isaac-sim.github.io/IsaacLab",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-or-project-page",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
 }

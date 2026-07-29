@@ -1,0 +1,167 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.07934",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "X-OP: Cross-Morphology Whole-Body Teleoperation via MPC Retargeting",
+  "title_zh": "X-OP：通过 MPC 重定向实现跨形态全身遥操作",
+  "abstract": "Whole-body teleoperation is essential for scalable robot data collection in loco-manipulation tasks, yet existing approaches relying on exoskeleton suits or multi-camera setups impose prohibitive cost, complexity, and environmental constraints. Recent methods using a single extended reality (XR) device with end-to-end reinforcement learning policies partially address these limitations but require robot-specific retraining, suffer from out-of-distribution failures, and rely on motion retargeting ",
+  "paper_url": "https://arxiv.org/abs/2606.07934",
+  "pdf_url": "https://arxiv.org/pdf/2606.07934",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Jen-Wei Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Sarthak Kaingade",
+      "affiliations": []
+    },
+    {
+      "name": "Andrea Tagliabue",
+      "affiliations": []
+    },
+    {
+      "name": "Nicholas Morozovsky",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "universityofcaliforniaberkeley",
+      "name": "University of California, Berkeley",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-06",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "Practical cross-morphology teleoperation framework that works with existing low-level controllers; MPC-based retargeting with dynamic feasibility is a clean engineering contribution; validated on two different robot platforms.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.07934",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "I INTRODUCTION",
+      "II Related Works",
+      "III MPC-based Retargeter",
+      "III-A Problem Formulation",
+      "III-B State Synchronization",
+      "III-C Design of Cost Function",
+      "III-D Input device and input signals",
+      "IV Experiments",
+      "IV-A Experimental Tasks",
+      "IV-B Experimental Metrics",
+      "IV-C Teleoperation on Humanoid",
+      "IV-C1 Setup",
+      "IV-C2 Baseline",
+      "IV-C3 Discussion",
+      "IV-D Teleoperation on Mobile Manipulator",
+      "IV-D1 Setup",
+      "IV-D2 Baseline",
+      "IV-D3 Discussion",
+      "V Conclusion",
+      "ACKNOWLEDGMENT",
+      "References",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.07934"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.07934"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "University of California, Berkeley",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.07934",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

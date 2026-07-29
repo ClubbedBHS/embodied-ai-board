@@ -27,7 +27,9 @@
         "Wanxin Jin",
         "Yu Xiang"
       ],
-      "organizations": [],
+      "organizations": [
+        "University of Texas at Dallas"
+      ],
       "discovered_via": [
         "arXiv API: cs.RO"
       ],
@@ -80,7 +82,51 @@
       "suggested_topics": [
         "cross-embodiment",
         "dexterous-manipulation"
-      ]
+      ],
+      "organization_evidence": [
+        {
+          "organization": "University of Texas at Dallas",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.03570",
+          "location": "author affiliation block"
+        }
+      ],
+      "project_url": null,
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "dataset",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "model",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        }
+      ],
+      "code_url": null,
+      "dataset_url": null,
+      "model_url": null
     },
     {
       "id": "arxiv-2607.04554",
@@ -97,7 +143,9 @@
         "Yi Ren",
         "Xiang Li"
       ],
-      "organizations": [],
+      "organizations": [
+        "Tsinghua University"
+      ],
       "discovered_via": [
         "arXiv API: cs.RO"
       ],
@@ -152,7 +200,60 @@
       "suggested_topics": [
         "dexterous-manipulation",
         "grasping"
-      ]
+      ],
+      "organization_evidence": [
+        {
+          "organization": "Tsinghua University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.04554",
+          "location": "author affiliation block"
+        }
+      ],
+      "project_url": "https://hugs-dex.github.io/",
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://hugs-dex.github.io/",
+          "status": "project-page-only",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "paper-or-project-page",
+          "checked_at": "2026-07-28"
+        },
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "dataset",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "model",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        }
+      ],
+      "code_url": null,
+      "dataset_url": null,
+      "model_url": null
     },
     {
       "id": "arxiv-2607.04816",
@@ -170,7 +271,9 @@
         "Yanyong Zhang",
         "Jianmin Ji"
       ],
-      "organizations": [],
+      "organizations": [
+        "University of Science and Technology of China"
+      ],
       "discovered_via": [
         "arXiv API: cs.RO"
       ],
@@ -224,7 +327,51 @@
       "suggested_topics": [
         "vla",
         "foundation-models"
-      ]
+      ],
+      "organization_evidence": [
+        {
+          "organization": "University of Science and Technology of China",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.04816",
+          "location": "author affiliation block"
+        }
+      ],
+      "project_url": null,
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "dataset",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "model",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        }
+      ],
+      "code_url": null,
+      "dataset_url": null,
+      "model_url": null
     },
     {
       "id": "arxiv-2607.05883",
@@ -364,7 +511,44 @@
       "suggested_topics": [
         "vla",
         "deployment"
-      ]
+      ],
+      "organization_evidence": [],
+      "project_url": null,
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "dataset",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "model",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        }
+      ],
+      "code_url": null,
+      "dataset_url": null,
+      "model_url": null
     },
     {
       "id": "arxiv-2607.08575",
@@ -594,7 +778,10 @@
       "authors": [
         "Xianda Guo"
       ],
-      "organizations": [],
+      "organizations": [
+        "Institute of Automation, Chinese Academy of Sciences",
+        "Wuhan University"
+      ],
       "discovered_via": [
         "arXiv API: cs.RO"
       ],
@@ -648,7 +835,57 @@
       "suggested_topics": [
         "vla",
         "safety"
-      ]
+      ],
+      "organization_evidence": [
+        {
+          "organization": "Institute of Automation, Chinese Academy of Sciences",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.12571",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Wuhan University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.12571",
+          "location": "author affiliation block"
+        }
+      ],
+      "project_url": null,
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "dataset",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "model",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        }
+      ],
+      "code_url": null,
+      "dataset_url": null,
+      "model_url": null
     },
     {
       "id": "arxiv-2607.13033",
@@ -669,10 +906,10 @@
         "Mingyu Ding"
       ],
       "organizations": [
-        "UNC Chapel Hill",
+        "Amazon",
         "Carnegie Mellon University",
         "Shanghai Jiao Tong University",
-        "Amazon AWS AI"
+        "University of North Carolina at Chapel Hill"
       ],
       "discovered_via": [
         "arxiv-batch-03"
@@ -743,7 +980,78 @@
       "assets": [],
       "properties": [
         "real-robot-evaluation"
-      ]
+      ],
+      "organization_evidence": [
+        {
+          "organization": "Amazon",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.13033",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Carnegie Mellon University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.13033",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Shanghai Jiao Tong University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.13033",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "University of North Carolina at Chapel Hill",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.13033",
+          "location": "author affiliation block"
+        }
+      ],
+      "project_url": "https://dense-reward.github.io/",
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://dense-reward.github.io/",
+          "status": "project-page-only",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "paper-or-project-page",
+          "checked_at": "2026-07-28"
+        },
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "dataset",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "model",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        }
+      ],
+      "code_url": null,
+      "dataset_url": null,
+      "model_url": null
     },
     {
       "id": "arxiv-2607.14635",
@@ -760,8 +1068,10 @@
         "Zhongyu Li"
       ],
       "organizations": [
-        "UC Berkeley",
-        "Tsinghua University"
+        "Hong Kong Embodied AI Lab",
+        "Chinese University of Hong Kong",
+        "Tsinghua University",
+        "University of California, Berkeley"
       ],
       "discovered_via": [
         "arxiv-batch-03"
@@ -834,7 +1144,69 @@
       "assets": [],
       "properties": [
         "sim-to-real"
-      ]
+      ],
+      "organization_evidence": [
+        {
+          "organization": "Hong Kong Embodied AI Lab",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.14635",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Chinese University of Hong Kong",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.14635",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Tsinghua University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.14635",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "University of California, Berkeley",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.14635",
+          "location": "author affiliation block"
+        }
+      ],
+      "project_url": null,
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "dataset",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "model",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        }
+      ],
+      "code_url": null,
+      "dataset_url": null,
+      "model_url": null
     },
     {
       "id": "arxiv-2607.14739",
@@ -928,7 +1300,53 @@
       "assets": [],
       "properties": [
         "simulation-only"
-      ]
+      ],
+      "organization_evidence": [],
+      "project_url": "https://liauto-research.github.io/FoMoVLA",
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://liauto-research.github.io/FoMoVLA",
+          "status": "project-page-only",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "paper-or-project-page",
+          "checked_at": "2026-07-28"
+        },
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "dataset",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "model",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        }
+      ],
+      "code_url": null,
+      "dataset_url": null,
+      "model_url": null
     },
     {
       "id": "arxiv-2607.02503",
@@ -949,11 +1367,10 @@
         "Dongbin Zhao"
       ],
       "organizations": [
-        "CASIA",
-        "UCAS",
-        "TARS Robotics",
-        "NUS",
-        "Fudan University"
+        "Fudan University",
+        "Institute of Automation, Chinese Academy of Sciences",
+        "University of Chinese Academy of Sciences",
+        "National University of Singapore"
       ],
       "discovered_via": [
         "arxiv-batch-03"
@@ -1027,7 +1444,78 @@
       "assets": [],
       "properties": [
         "real-robot-evaluation"
-      ]
+      ],
+      "organization_evidence": [
+        {
+          "organization": "Fudan University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.02503",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Institute of Automation, Chinese Academy of Sciences",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.02503",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "University of Chinese Academy of Sciences",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.02503",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "National University of Singapore",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.02503",
+          "location": "author affiliation block"
+        }
+      ],
+      "project_url": "https://vt-wam.github.io/",
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://vt-wam.github.io/",
+          "status": "project-page-only",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "paper-or-project-page",
+          "checked_at": "2026-07-28"
+        },
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "dataset",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "model",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        }
+      ],
+      "code_url": null,
+      "dataset_url": null,
+      "model_url": null
     },
     {
       "id": "arxiv-2607.02642",
@@ -1047,10 +1535,7 @@
         "Hao Li",
         "Hengtao Li"
       ],
-      "organizations": [
-        "GigaAI",
-        "Tsinghua University"
-      ],
+      "organizations": [],
       "discovered_via": [
         "arxiv-batch-03"
       ],
@@ -1125,7 +1610,53 @@
       "properties": [
         "open-source",
         "large-scale-data"
-      ]
+      ],
+      "organization_evidence": [],
+      "project_url": "https://open-gigaai.github.io/giga-world-1/",
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://open-gigaai.github.io/giga-world-1/",
+          "status": "project-page-only",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "paper-or-project-page",
+          "checked_at": "2026-07-28"
+        },
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "dataset",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "model",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        }
+      ],
+      "code_url": null,
+      "dataset_url": null,
+      "model_url": null
     },
     {
       "id": "arxiv-2607.03449",
@@ -1144,9 +1675,9 @@
         "Xipeng Qiu"
       ],
       "organizations": [
+        "East China Normal University",
         "Fudan University",
-        "Shanghai Innovation Institute",
-        "East China Normal University"
+        "Shanghai Innovation Institute"
       ],
       "discovered_via": [
         "arxiv-batch-03"
@@ -1220,7 +1751,63 @@
       "assets": [],
       "properties": [
         "real-robot-evaluation"
-      ]
+      ],
+      "organization_evidence": [
+        {
+          "organization": "East China Normal University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.03449",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Fudan University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.03449",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Shanghai Innovation Institute",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.03449",
+          "location": "author affiliation block"
+        }
+      ],
+      "project_url": null,
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "dataset",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "model",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        }
+      ],
+      "code_url": null,
+      "dataset_url": null,
+      "model_url": null
     },
     {
       "id": "arxiv-2607.04652",
@@ -1236,7 +1823,9 @@
         "Tongtong Cao",
         "Xiu Li"
       ],
-      "organizations": [],
+      "organizations": [
+        "Huawei"
+      ],
       "discovered_via": [
         "arxiv-batch-03"
       ],
@@ -1310,7 +1899,51 @@
       "assets": [],
       "properties": [
         "simulation-only"
-      ]
+      ],
+      "organization_evidence": [
+        {
+          "organization": "Huawei",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.04652",
+          "location": "author affiliation block"
+        }
+      ],
+      "project_url": null,
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "dataset",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "model",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        }
+      ],
+      "code_url": null,
+      "dataset_url": null,
+      "model_url": null
     },
     {
       "id": "arxiv-2607.04880",
@@ -1326,7 +1959,9 @@
         "Taeho Park",
         "Hyoseok Hwang"
       ],
-      "organizations": [],
+      "organizations": [
+        "Kyung Hee University"
+      ],
       "discovered_via": [
         "arxiv-batch-03"
       ],
@@ -1399,7 +2034,51 @@
       "assets": [],
       "properties": [
         "real-robot-evaluation"
-      ]
+      ],
+      "organization_evidence": [
+        {
+          "organization": "Kyung Hee University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.04880",
+          "location": "author affiliation block"
+        }
+      ],
+      "project_url": null,
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "dataset",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "model",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        }
+      ],
+      "code_url": null,
+      "dataset_url": null,
+      "model_url": null
     },
     {
       "batch_index": 68,
@@ -1417,7 +2096,10 @@
         "Gongjie Zhang",
         "Ran Xu"
       ],
-      "organizations": [],
+      "organizations": [
+        "Alibaba",
+        "Nanyang Technological University"
+      ],
       "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
       "discovered_via": [
         "candidate-pool-2026-07-backfill",
@@ -1489,7 +2171,66 @@
       "suggested_topics": [
         "vla",
         "manipulation"
-      ]
+      ],
+      "organization_evidence": [
+        {
+          "organization": "Alibaba",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.05396",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Nanyang Technological University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.05396",
+          "location": "author affiliation block"
+        }
+      ],
+      "project_url": "https://alibaba-damo-academy.github.io/CamVLA/",
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://alibaba-damo-academy.github.io/CamVLA/",
+          "status": "project-page-only",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "paper-or-project-page",
+          "checked_at": "2026-07-28"
+        },
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "dataset",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "model",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        }
+      ],
+      "code_url": null,
+      "dataset_url": null,
+      "model_url": null
     },
     {
       "batch_index": 69,
@@ -1664,7 +2405,44 @@
         "dexterous-manipulation",
         "vla",
         "foundation-model"
-      ]
+      ],
+      "organization_evidence": [],
+      "project_url": null,
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "dataset",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "model",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        }
+      ],
+      "code_url": null,
+      "dataset_url": null,
+      "model_url": null
     },
     {
       "batch_index": 71,
@@ -1774,7 +2552,10 @@
         "Wei Xu",
         "Zhizhong Su"
       ],
-      "organizations": [],
+      "organizations": [
+        "Horizon Robotics",
+        "WuwenAI"
+      ],
       "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。项目页(hubizonrobotics.github.io/EmbodiedGen)和实验提及的Horizon Robotics暗示机构归属。",
       "discovered_via": [
         "candidate-pool-2026-07-backfill",
@@ -1851,7 +2632,65 @@
         "simulation",
         "world-model",
         "manipulation"
-      ]
+      ],
+      "organization_evidence": [
+        {
+          "organization": "Horizon Robotics",
+          "source": "project-page",
+          "url": "https://horizonrobotics.github.io/EmbodiedGen",
+          "location": "official project page"
+        },
+        {
+          "organization": "WuwenAI",
+          "source": "project-page",
+          "url": "https://horizonrobotics.github.io/EmbodiedGen",
+          "location": "official project page"
+        }
+      ],
+      "project_url": "https://horizonrobotics.github.io/EmbodiedGen",
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": "https://github.com/HorizonRobotics/EmbodiedGen",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "github-api",
+          "evidence_source": "project-page-anchor-text",
+          "checked_at": "2026-07-28"
+        },
+        {
+          "kind": "project",
+          "url": "https://horizonrobotics.github.io/EmbodiedGen",
+          "status": "project-page-only",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "paper-or-project-page",
+          "checked_at": "2026-07-28"
+        },
+        {
+          "kind": "dataset",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "model",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        }
+      ],
+      "code_url": "https://github.com/HorizonRobotics/EmbodiedGen",
+      "dataset_url": null,
+      "model_url": null
     },
     {
       "batch_index": 73,
@@ -1956,7 +2795,10 @@
         "Wei-Yun Yau",
         "Lin Wang"
       ],
-      "organizations": [],
+      "organizations": [
+        "Institute for Infocomm Research",
+        "Nanyang Technological University"
+      ],
       "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
       "discovered_via": [
         "candidate-pool-2026-07-backfill",
@@ -2031,7 +2873,57 @@
         "vla",
         "manipulation",
         "3d-representation"
-      ]
+      ],
+      "organization_evidence": [
+        {
+          "organization": "Institute for Infocomm Research",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.12356",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Nanyang Technological University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.12356",
+          "location": "author affiliation block"
+        }
+      ],
+      "project_url": null,
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "dataset",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "model",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        }
+      ],
+      "code_url": null,
+      "dataset_url": null,
+      "model_url": null
     },
     {
       "batch_index": 75,
@@ -2047,7 +2939,10 @@
         "Yongjin Mu",
         "Yanjie Li"
       ],
-      "organizations": [],
+      "organizations": [
+        "Harbin Institute of Technology, Shenzhen",
+        "Northeastern University"
+      ],
       "organization_note": "未从arXiv元数据稳定提取完整affiliation，未按作者身份猜测机构。",
       "discovered_via": [
         "candidate-pool-2026-07-backfill",
@@ -2123,7 +3018,57 @@
         "vla",
         "manipulation",
         "reinforcement-learning"
-      ]
+      ],
+      "organization_evidence": [
+        {
+          "organization": "Harbin Institute of Technology, Shenzhen",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.13818",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Northeastern University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2607.13818",
+          "location": "author affiliation block"
+        }
+      ],
+      "project_url": null,
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "dataset",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        },
+        {
+          "kind": "model",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "required-source-scan",
+          "evidence_source": "arxiv-abstract-fulltext-project-scan",
+          "checked_at": "2026-07-28",
+          "note": "No official address found after required source scan."
+        }
+      ],
+      "code_url": null,
+      "dataset_url": null,
+      "model_url": null
     }
   ]
 }

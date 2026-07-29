@@ -1,0 +1,214 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.22136",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Wh0: Generative World Models as Scalable Sources of Egocentric Human Hand Manipulation Data",
+  "title_zh": "Wh0：生成式世界模型作为自我中心人手操作数据的可扩展来源",
+  "abstract": "Scaling dexterous manipulation requires generalization across objects, scenes, and tasks, yet existing data sources face a trade-off between scale and scene/embodiment alignment: teleoperation data is well aligned with robot deployment but expensive to collect; simulation is scalable but limited by the sim-to-real gap; and real egocentric videos scale effectively but remain misaligned with robot deployment. We propose Wh0, a framework that uses generative video world models as scalable and contr",
+  "paper_url": "https://arxiv.org/abs/2606.22136",
+  "pdf_url": "https://arxiv.org/pdf/2606.22136",
+  "project_url": "https://chenyt31.github.io/wh0.github.io/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yangtao Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Zixuan Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Peiyang Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Yong-Lu Li",
+      "affiliations": []
+    },
+    {
+      "name": "Jing Huo",
+      "affiliations": []
+    },
+    {
+      "name": "Jieqi Shi",
+      "affiliations": []
+    },
+    {
+      "name": "Yang Gao",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "shanghaijiaotonguniversity",
+      "name": "Shanghai Jiao Tong University",
+      "role": "primary"
+    },
+    {
+      "id": "shanghaiinnovationinstitute",
+      "name": "Shanghai Innovation Institute",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-20",
+    "last_revision": "2026-06-23"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_reason": "Highly innovative use of generative video world models as data sources for dexterous manipulation. 50k-episode WM-H dataset bridges the data scaling gap. 4.7x improvement in zero-shot success (8.3%→38.9%) on real G1 humanoid across 18 tasks. Open-source code promised on project page. Fills a creative gap at the intersection of generative models and robot learning.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "中文标题待翻译",
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.22136",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 WM-H Dataset Construction via Controllable Video Synthesis",
+      "4 Wh0: Policy Learning with Human-Robot Alignment",
+      "Policy Architecture",
+      "Training Strategy",
+      "5 Experiments",
+      "5.1 Experimental Setup",
+      "5.2 Q1: Does Wh0 Improve Real-World Zero-Shot Dexterous Manipulation?",
+      "5.3 Q2: Which Properties of WM-H Matter?",
+      "5.4 Q3: Does WM-H Unlock Pretrained Human Manipulation Priors?",
+      "6 Conclusion and Limitations",
+      "References",
+      "Appendix",
+      "Appendix A WM-H Dataset Construction",
+      "A.1 Instruction Generation and Prompt Design",
+      "A.2 Scene-Aligned Image Editing",
+      "A.3 Image-to-Video Generation",
+      "A.4 Embodiment-Aligned Image Editing",
+      "A.5 Quality Evaluation",
+      "A.6 Failure Cases",
+      "Appendix B Policy Training Details",
+      "B.1 Architecture and Conditioning.",
+      "B.2 Human-Robot Action Alignment.",
+      "B.3 Optimization and Inference",
+      "B.4 Data Mixture and Sampling Ratios",
+      "Appendix C Evaluation Details",
+      "C.1 Real-World Experimental Setup",
+      "Task suite.",
+      "Stage-conditioned instruction protocol.",
+      "Deployment-time action prior.",
+      "C.2 Hand-Object Distance Evaluation",
+      "C.3 Robot Execution Results",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.22136"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.22136"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Shanghai Jiao Tong University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.22136",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Shanghai Innovation Institute",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.22136",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://chenyt31.github.io/wh0.github.io/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-or-project-page",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

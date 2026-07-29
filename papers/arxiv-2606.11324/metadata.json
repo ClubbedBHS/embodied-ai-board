@@ -1,0 +1,349 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.11324",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Embodied-R1.5: Evolving Physical Intelligence via Embodied Foundation Models",
+  "title_zh": "Embodied-R1.5：基于具身基础模型的物理智能进化",
+  "abstract": "We introduce Embodied-R1.5, a unified Embodied Foundation Model (EFM) that integrates comprehensive embodied reasoning capabilities, spanning embodied cognition, task planning, correction, and pointing, within a single architecture toward general physical intelligence. Leveraging three automated data construction pipelines to significantly expand the data coverage of critical capabilities, we build a large-scale data system of over 15B tokens, and design a multi-task balanced RL recipe to alleviate heterogeneous task conflicts. We further introduce a Planner-Grounder-Corrector (PGC) closed-loop framework that enables a single model to autonomously execute and self-correct over long-horizon tasks. With only 8B parameters, Embodied-R1.5 achieves SOTA on 16 out of 24 embodied VLM benchmarks, surpassing leading models like Gemini-Robotics-ER-1.5 and GPT-5.4. Benefiting from the internalized embodied capabilities, Embodied-R1.5 can be fine-tuned into a VLA with only a small amount of data, outperforming leading VLA models like π₀.₅ across 4 popular manipulation benchmark suites. We further conduct extensive zero-shot real-robot experiments, validating performance in instruction following, affordance grounding, articulated object manipulation, and long-horizon complex tasks, demonstrating strong generalization to the physical world. We open-source model weights, datasets, training code, and EmbodiedEvalKit, an evaluation framework tailored for embodied tasks, to facilitate future research in EFMs.",
+  "paper_url": "https://arxiv.org/abs/2606.11324",
+  "pdf_url": "https://arxiv.org/pdf/2606.11324",
+  "project_url": "https://embodied-r.github.io/",
+  "code_url": "https://github.com/pickxiguapi/Embodied-R1.5",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yifu Yuan",
+      "affiliations": [
+        "tianjin-university"
+      ]
+    },
+    {
+      "name": "Yaoting Huang",
+      "affiliations": [
+        "tianjin-university"
+      ]
+    },
+    {
+      "name": "Xianze Yao",
+      "affiliations": [
+        "tianjin-university"
+      ]
+    },
+    {
+      "name": "Yutong Li",
+      "affiliations": [
+        "tianjin-university"
+      ]
+    },
+    {
+      "name": "Shuoheng Zhang",
+      "affiliations": [
+        "tianjin-university"
+      ]
+    },
+    {
+      "name": "Linqi Han",
+      "affiliations": [
+        "tianjin-university"
+      ]
+    },
+    {
+      "name": "Pengyi Li",
+      "affiliations": [
+        "tianjin-university"
+      ]
+    },
+    {
+      "name": "Jiangeng Sun",
+      "affiliations": [
+        "tianjin-university"
+      ]
+    },
+    {
+      "name": "Wenting Jia",
+      "affiliations": [
+        "tianjin-university"
+      ]
+    },
+    {
+      "name": "Zhao Zhang",
+      "affiliations": [
+        "tianjin-university"
+      ]
+    },
+    {
+      "name": "Yuhao Liu",
+      "affiliations": [
+        "tianjin-university"
+      ]
+    },
+    {
+      "name": "Ruihao Liao",
+      "affiliations": [
+        "tianjin-university"
+      ]
+    },
+    {
+      "name": "Yucheng Hu",
+      "affiliations": [
+        "tianjin-university"
+      ]
+    },
+    {
+      "name": "Qiyu Wu",
+      "affiliations": [
+        "tianjin-university"
+      ]
+    },
+    {
+      "name": "Yuxiao Li",
+      "affiliations": [
+        "tianjin-university"
+      ]
+    },
+    {
+      "name": "Zibin Dong",
+      "affiliations": [
+        "tianjin-university"
+      ]
+    },
+    {
+      "name": "Fei Ni",
+      "affiliations": [
+        "tianjin-university"
+      ]
+    },
+    {
+      "name": "Yan Zheng",
+      "affiliations": [
+        "tianjin-university"
+      ]
+    },
+    {
+      "name": "Shuyang Gu",
+      "affiliations": [
+        "tencent-hunyuan"
+      ]
+    },
+    {
+      "name": "Yi Ma",
+      "affiliations": [
+        "tianjin-university"
+      ]
+    },
+    {
+      "name": "Hongyao Tang",
+      "affiliations": [
+        "tianjin-university"
+      ]
+    },
+    {
+      "name": "Han Hu",
+      "affiliations": [
+        "tencent-hunyuan"
+      ]
+    },
+    {
+      "name": "Jianye Hao",
+      "affiliations": [
+        "tianjin-university"
+      ]
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-06-09",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "foundation-model",
+      "planning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "proprioception"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [
+      "code",
+      "project-page"
+    ],
+    "properties": [
+      "open-source",
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 91,
+    "selection_reason": "首个统一认知、规划与指向三大维度的具身基础模型(EFM)：8B参数在24个具身VLM基准中16项SOTA，平均70.4%超越Gemini-Robotics-ER-1.5达17%。PGC闭环框架实现单模型自主规划-执行-纠错。小量动作数据微调即可超越π0.5等VLA模型。完全开源（权重、数据、代码、EmbodiedEvalKit评估框架）。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "deepseek-v4-pro",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "VLA微调所需的具体动作数据量论文未明确披露",
+      "长周期任务（如做奶茶）的成功率未给出具体数字",
+      "论文 HTML 作者区未能自动解析出明确机构，需人工核验"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.11324",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Unified Embodied Capabilities & Architecture",
+      "2.1 Unified Embodied Capabilities",
+      "2.2 Architecture",
+      "3 Training Data Construction",
+      "4 Training Strategy",
+      "4.1 Stage 1: Supervised Fine-Tuning",
+      "4.2 Stage 2: Reinforced Fine-Tuning",
+      "4.2.1 Multi-Task Balanced RL Recipe",
+      "4.2.2 Multi-Task Reward Design",
+      "5 Closed-Loop PGC Autonomy Framework",
+      "6 EmbodiedEvalKit",
+      "7 Experiments",
+      "7.1 Embodied VLM Benchmarks",
+      "7.2 Robotic Manipulation in Simulation",
+      "7.3 Zero-Shot Manipulation Transfer",
+      "7.4 Long-Horizon Closed-Loop Demonstrations",
+      "7.5 Analysis",
+      "8 Related Work",
+      "9 Conclusion",
+      "Contributions",
+      "References",
+      "Appendix A Data Composition Details",
+      "A.1 Embodied Cognition & Spatial Reasoning Data",
+      "A.2 Embodied Planning Data",
+      "A.3 Embodied Correction Data",
+      "A.4 Embodied Pointing Data",
+      "A.5 General Knowledge Data",
+      "Appendix B Automatic Data Construction Pipeline",
+      "B.1 Pipeline 1: 3D Scene Annotation for Spatial Reasoning Data",
+      "B.2 Pipeline 2: Failure-Aware Data Construction for Correction Data",
+      "B.3 Pipeline 3: Functional Affordance & Trajectory Data Construction",
+      "B.3.1 Object Functional Affordance Data",
+      "B.3.2 Trajectory Data",
+      "Appendix C Qualitative Visualizations",
+      "C.1 RoboTwin Zero-Shot Manipulation",
+      "C.2 Pointing Examples",
+      "C.3 Spatial Reasoning Examples",
+      "C.4 Chain-of-Thought Reasoning Examples",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.11324"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.11324"
+    },
+    {
+      "type": "project",
+      "url": "https://embodied-r.github.io/"
+    },
+    {
+      "type": "code",
+      "url": "https://github.com/pickxiguapi/Embodied-R1.5"
+    },
+    {
+      "type": "code",
+      "url": "https://github.com/pickxiguapi/EmbodiedEvalKit"
+    },
+    {
+      "type": "model",
+      "url": "https://huggingface.co/collections/IffYuan/embodied-r15"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://embodied-r.github.io/",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://embodied-r.github.io/"
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/pickxiguapi/Embodied-R1.5",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://api.github.com/repos/pickxiguapi/Embodied-R1.5"
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/pickxiguapi/EmbodiedEvalKit",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://api.github.com/repos/pickxiguapi/EmbodiedEvalKit"
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

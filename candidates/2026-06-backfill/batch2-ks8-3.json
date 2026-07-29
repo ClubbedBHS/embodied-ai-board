@@ -1,0 +1,1420 @@
+[
+  {
+    "id": "arxiv-2606.21387",
+    "title": "Long-Distance Real-World Navigation of the Legged-Wheeled Robot Go2-W Using Deep Reinforcement Learning",
+    "abstract": "Legged-wheeled robots have long been studied for their potential to combine the efficient flat-ground mobility of wheels with the rough-terrain capability of legs. However, examples of their application to long-range autonomous navigation in real environments remain limited. This paper reports our effort to build a deep reinforcement learning (DRL) based locomotion controller and an autonomous navigation system for the commercially available legged-wheeled robot Go2-W, and to apply them to long-",
+    "paper_url": "https://arxiv.org/abs/2606.21387",
+    "ks": 8,
+    "authors": [
+      "Takaaki Matsuzawa",
+      "Kiyoshi Irie",
+      "Tomoaki Yoshida",
+      "Taro Suzuki",
+      "Yoshitaka Hara",
+      "Masahiro Tomono"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "locomotion",
+      "navigation",
+      "reinforcement learning",
+      "quadruped",
+      "legged",
+      "autonomous",
+      "IL"
+    ],
+    "first_publication": "2026-06-19",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms"
+    ]
+  },
+  {
+    "id": "arxiv-2606.18953",
+    "title": "Object-Centric Residual RL for Zero-Shot Sim-to-Real VLA Enhancement",
+    "abstract": "Vision-Language-Action (VLA) models can generalize across diverse manipulation tasks, but their imitation-learning-based policies remain brittle in precise physical interactions due to compounding execution errors; Can a reinforcement learning policy trained purely in simulation improve the robustness of real-world VLAs zero-shot? Residual RL, which learns a corrective policy on top of a frozen VLA, offers a natural framework, but existing approaches face a fundamental sim-to-real dilemma: privi",
+    "paper_url": "https://arxiv.org/abs/2606.18953",
+    "ks": 8,
+    "authors": [
+      "Kinam Kim",
+      "Namiko Saito",
+      "Heecheol Kim",
+      "Katsushi Ikeuchi",
+      "Jaegul Choo",
+      "Yasuyuki Matsushita"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "sim-to-real",
+      "manipulation",
+      "reinforcement learning",
+      "teleoperation",
+      "IL"
+    ],
+    "first_publication": "2026-06-17",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "organizations": [
+      "KAIST",
+      "Microsoft Research"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "KAIST",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.18953",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Microsoft Research",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.18953",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.17418",
+    "title": "DexLink Hand: A Compact, Affordable, 16-DOF Linkage-Driven Hand with Human-Like Dexterity",
+    "abstract": "Dexterous robotic hands face a longstanding trade-off among dexterity, compactness, and affordability. Particularly, high-degree-of-freedom designs typically demand complex actuation and transmission, hindering integration into human-scale forms. To address these challenges, this work presents a compact, low-cost linkage-driven anthropomorphic hand that achieves high dexterity, structural integration, and human-hand-like functionality. The hand integrates 20 joints driven by 16 independent actua",
+    "paper_url": "https://arxiv.org/abs/2606.17418",
+    "ks": 8,
+    "authors": [
+      "Hao Wu",
+      "Yanzhe Wang",
+      "Yu Feng",
+      "Jian Liu",
+      "Jihao Li",
+      "Jianshu Zhou",
+      "Huixu Dong"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "dexterous manipulation",
+      "manipulation",
+      "grasping",
+      "grasp",
+      "teleoperation",
+      "dexterous",
+      "IL"
+    ],
+    "first_publication": "2026-06-16",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "infrastructure"
+    ]
+  },
+  {
+    "id": "arxiv-2606.17200",
+    "title": "ACE-Ego-0: Unifying Egocentric Human and Robotic Data for VLA Pretraining",
+    "abstract": "Vision-Language-Action (VLA) models benefit from large-scale and diverse embodied data, yet scaling robot trajectory collection is costly and labor-intensive. Recent advances show that large-scale egocentric human videos provide complementary real-world supervision in pretraining. However, joint training on human and robot data remains challenging due to divergences in action spaces, embodiment structures, temporal dynamics, and supervision quality. We introduce ACE-EGO-0, a unified VLA pretrain",
+    "paper_url": "https://arxiv.org/abs/2606.17200",
+    "ks": 8,
+    "authors": [
+      "Hao Li",
+      "Ganlong Zhao",
+      "Yufei Liu",
+      "Haotian Hou",
+      "Guoquan Ye",
+      "Tongyan Fang",
+      "Chunxiao Liu",
+      "Siyuan Huang"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "embodied",
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "manipulation",
+      "trajectory",
+      "bimanual",
+      "IL"
+    ],
+    "first_publication": "2026-06-15",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "organizations": [
+      "ACE Robotics",
+      "Chinese University of Hong Kong MMLab"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "ACE Robotics",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.17200",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Chinese University of Hong Kong MMLab",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.17200",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.15568",
+    "title": "SAPS: Shared Autonomy for Policy Steering by Blending Teleoperation with a Pretrained VLA",
+    "abstract": "Recent advancements in Vision-Language-Action (VLA) models have demonstrated impressive generalist capabilities in robot manipulation, yet these policies can be brittle under out-of-distribution spatial and semantic perturbations. While human teleoperation offers reliable recovery, it can demand high cognitive load and precise manual control, and existing policy steering methods often require auxiliary models or sampler modifications. In this work, we introduce Shared Autonomy for Policy Steerin",
+    "paper_url": "https://arxiv.org/abs/2606.15568",
+    "ks": 8,
+    "authors": [
+      "Crystal Zhou",
+      "Jehan Yang",
+      "Douglas J. Weber",
+      "Zackory Erickson"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "generalist",
+      "manipulation",
+      "teleoperation",
+      "autonomous",
+      "IL"
+    ],
+    "first_publication": "2026-06-14",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "organizations": [
+      "Carnegie Mellon University"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Carnegie Mellon University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.15568",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.14433",
+    "title": "Kine2Go: Kinematic dataset for the Unitree Go2 robot with diverse gaits and motions",
+    "abstract": "The recent popularity of robotics, combined with the steadily decreasing cost of robotic hardware, has lowered the entry barrier to robotics research and enabled rapid advancements in the field. One of the primary examples is the Unitree Go2 quadruped robot, which is often used by researchers in the areas of locomotion, navigation, control, and others. Many researchers use the Go2 robot in combination with techniques like imitation learning, reinforcement learning, and behavioral cloning to allo",
+    "paper_url": "https://arxiv.org/abs/2606.14433",
+    "ks": 8,
+    "authors": [
+      "Władysław Pałucki",
+      "Paweł Siwak",
+      "Krzysztof Ciebiera",
+      "Marek Cygan"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "imitation learning",
+      "locomotion",
+      "navigation",
+      "reinforcement learning",
+      "trajectory",
+      "quadruped",
+      "IL"
+    ],
+    "first_publication": "2026-06-12",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ]
+  },
+  {
+    "id": "arxiv-2606.14218",
+    "title": "Universal Manipulation Exoskeleton: Learning Compliant Whole-body Policies with Real-time Torque Feedback",
+    "abstract": "For robots to work safely in household environments, they need to be compliant and react to torque and force feedback during contact. However, the majority of existing data collection pipelines still lack the ability to capture force and torque data for learning active compliant policies. In this paper, we present Universal Manipulation Exoskeleton (UME), an upper-limb exoskeleton that provides real-time haptic torque feedback while recording whole-arm configurations and joint torque signals for",
+    "paper_url": "https://arxiv.org/abs/2606.14218",
+    "ks": 8,
+    "authors": [
+      "Litian Liang",
+      "Jingxi Xu",
+      "Xinda Qi",
+      "Yujun Cai",
+      "Houzhu Ding",
+      "Luqi Wang",
+      "Zhixin Sun",
+      "Jyh-Herng Chow"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "mobile manipulation",
+      "manipulation",
+      "teleoperation",
+      "bimanual",
+      "haptic",
+      "autonomous",
+      "IL"
+    ],
+    "first_publication": "2026-06-12",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "organizations": [
+      "Stanford University"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Stanford University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.14218",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.13672",
+    "title": "WEAVER, Better, Faster, Longer: An Effective World Model for Robotic Manipulation",
+    "abstract": "The potential impacts of world models (WMs, i.e., learned simulators) on robotics are far-reaching -- policy evaluation, policy improvement, and test-time planning -- all with limited real-world interaction. To unlock these downstream capabilities, a WM needs to jointly satisfy three desiderata: $\\textit{(i)}$ fidelity (i.e., producing simulated trajectories that correlate with reality), $\\textit{(ii)}$ consistency (i.e., producing simulated trajectories that are coherent over long horizons), an",
+    "paper_url": "https://arxiv.org/abs/2606.13672",
+    "ks": 8,
+    "authors": [
+      "Arnav Kumar Jain",
+      "Yilin Wu",
+      "Jesse Farebrother",
+      "Gokul Swamy",
+      "Andrea Bajcsy"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "embodied",
+      "robot",
+      "foundation model",
+      "simulator",
+      "manipulation",
+      "planning",
+      "world model",
+      "IL"
+    ],
+    "first_publication": "2026-06-11",
+    "last_revision": "2026-06-16",
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "simulators"
+    ],
+    "organizations": [
+      "Carnegie Mellon University"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Carnegie Mellon University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.13672",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://arnavkj1995.github.io/WEAVER/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://arnavkj1995.github.io/WEAVER/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://arnavkj1995.github.io/WEAVER/"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.12403",
+    "title": "World Pilot: Steering Vision-Language-Action Models with World-Action Priors",
+    "abstract": "Vision-Language-Action (VLA) models inherit semantic grounding from large-scale pretraining and perform competently across in-distribution manipulation tasks. This grounding, however, is built on static image-text pairs, whereas manipulation is a continuous, contact-rich process whose dynamics this pretraining cannot capture. We present World Pilot, a VLA framework that augments the policy with priors from a World-Action Model (WAM), routed into the decision chain through two complementary pathw",
+    "paper_url": "https://arxiv.org/abs/2606.12403",
+    "ks": 8,
+    "authors": [
+      "Zefu Lin",
+      "Rongxu Cui",
+      "Junjia Xu",
+      "Xiaojuan Jin",
+      "Wenling Li",
+      "Lue Fan",
+      "Zhaoxiang Zhang"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "manipulation",
+      "trajectory",
+      "world model",
+      "WAM",
+      "IL"
+    ],
+    "first_publication": "2026-06-10",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "organizations": [
+      "Beihang University",
+      "Chinese Academy of Sciences"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Beihang University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.12403",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Chinese Academy of Sciences",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.12403",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://world-pilot.github.io/",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://world-pilot.github.io/",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://world-pilot.github.io/"
+      },
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.12109",
+    "title": "Bridging the Morphology Gap: Adapting VLA Models to Dexterous Manipulation via Intent-Conditioned Fine-Tuning",
+    "abstract": "Vision-Language-Action (VLA) models have demonstrated remarkable zero-shot generalization in robotic manipulation, yet the vast majority of pre-trained pipelines remain strictly confined to low-DoF parallel grippers. Adapting these rich semantic priors to high-DoF dexterous hands introduces a severe morphology gap, direct end-to-end joint fine-tuning inherently causes catastrophic forgetting of spatial reasoning and acute action manifold collapse due to data scarcity. In this paper, we present I",
+    "paper_url": "https://arxiv.org/abs/2606.12109",
+    "ks": 8,
+    "authors": [
+      "Chuanke Pang",
+      "Junyi Huang",
+      "Zhijun Zhao",
+      "Yaobing Wang",
+      "Kun Xu",
+      "Xilun Ding"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "dexterous manipulation",
+      "manipulation",
+      "grasp",
+      "dexterous",
+      "IL"
+    ],
+    "first_publication": "2026-06-10",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "organizations": [],
+    "organization_evidence": [],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.11525",
+    "title": "Learning Object Manipulation from Scratch via Contrastive Interaction",
+    "abstract": "Contrastive Reinforcement Learning (CRL) has seen recent success in a wide variety of goal-conditioned robotics tasks by learning structured representations of the dynamics. However, despite its success in locomotion and simpler control domains, CRL often struggles in interaction-rich manipulation. We argue that a key source of this difficulty is object-centric interaction, such as contact or grasping, that induces distinct changes in the underlying dynamic modes. In this work, we formulate mani",
+    "paper_url": "https://arxiv.org/abs/2606.11525",
+    "ks": 8,
+    "authors": [
+      "Tongle Shen",
+      "Caleb Chuck",
+      "Fan Feng",
+      "Biwei Huang"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "sim-to-real",
+      "manipulation",
+      "locomotion",
+      "grasping",
+      "reinforcement learning",
+      "grasp",
+      "IL"
+    ],
+    "first_publication": "2026-06-10",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "simulators",
+      "infrastructure"
+    ]
+  },
+  {
+    "id": "arxiv-2606.10244",
+    "title": "YUBI: Yielding Universal Bidigital Interface for Bimanual Dexterous Manipulation at Scale",
+    "abstract": "We introduce Yielding Universal Bidigital Interface (YUBI), a finger-aligned gripper designed to enable intuitive, ergonomic, and scalable data collection for bimanual dexterous manipulation. While handheld data collection systems such as Universal Manipulation Interface (UMI) enable affordable data collection, their bulky pistol-grip designs can pose ergonomic and usability challenges for fine-grained, dexterous manipulation tasks. To address this, YUBI presents a distinct design principle: yie",
+    "paper_url": "https://arxiv.org/abs/2606.10244",
+    "ks": 8,
+    "authors": [
+      "Takehiko Ohkawa",
+      "Jumpei Arima",
+      "Yuki Noguchi",
+      "Masatoshi Tateno",
+      "Makoto Sugiura",
+      "Takuya Okubo",
+      "Kengo Ikeuchi",
+      "Yuma Shin"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "foundation model",
+      "dexterous manipulation",
+      "manipulation",
+      "trajectory",
+      "bimanual",
+      "dexterous",
+      "IL"
+    ],
+    "first_publication": "2026-06-08",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data"
+    ],
+    "organizations": [],
+    "organization_evidence": [],
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "project_url": null,
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.09451",
+    "title": "Dense Force Estimation with an Event-based Optical Tactile Sensor",
+    "abstract": "Humans rely on spatially dense, geometry and force-aware tactile feedback at high temporal resolution for dexterous manipulation. While vision-based tactile sensors enable dense force estimation, they are limited by camera frame rates, motion blur, and data bandwidth. Event-based optical tactile sensors offer an attractive alternative with microsecond temporal resolution and low motion blur, but existing methods are restricted to predicting only net forces. We introduce the first framework for d",
+    "paper_url": "https://arxiv.org/abs/2606.09451",
+    "ks": 8,
+    "authors": [
+      "Agis Politis",
+      "René Zurbrügg",
+      "Valentina Cavinato"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "dexterous manipulation",
+      "manipulation",
+      "grasping",
+      "grasp",
+      "dexterous",
+      "tactile",
+      "IL"
+    ],
+    "first_publication": "2026-06-08",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "data",
+      "infrastructure"
+    ]
+  },
+  {
+    "id": "arxiv-2606.06033",
+    "title": "RealDexUMI: A Wearable Universal Manipulation Interface for Dexterous Robot Learning",
+    "abstract": "Learning dexterous manipulation requires demonstrations that preserve fine hand-object interactions while remaining executable at deployment. Existing pipelines either lose deployable dexterity through retargeting or embodiment conversion, or rely on robot-specific teleoperation that is costly to scale and often lacks intuitive, contact-aware control for dexterous data collection. We present RealDexUMI, a wearable universal manipulation interface built around a shared dexterous end-effector modu",
+    "paper_url": "https://arxiv.org/abs/2606.06033",
+    "ks": 8,
+    "authors": [
+      "Chaoyi Xu",
+      "Yixuan Jiang",
+      "Jiahui Huan",
+      "Yuhui Fu",
+      "Haoyu Zhou",
+      "Weitian Yuan",
+      "Jiayi Yu",
+      "Wanpeng Zhang"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "dexterous manipulation",
+      "manipulation",
+      "teleoperation",
+      "bimanual",
+      "dexterous",
+      "tactile",
+      "IL"
+    ],
+    "first_publication": "2026-06-04",
+    "last_revision": "2026-06-06",
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "organizations": [
+      "Tsinghua University",
+      "Peking University",
+      "Beihang University"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Tsinghua University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.06033",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Peking University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.06033",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Beihang University",
+        "source": "paper-html",
+        "url": "https://arxiv.org/html/2606.06033",
+        "location": "author affiliation block"
+      }
+    ],
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.06556",
+    "title": "Robots Need More than VLA and World Models",
+    "abstract": "Generalist robot intelligence is often framed as a policy-scaling problem: collect more robot demonstrations, train larger Vision-Language-Action (VLA) models, and expect broader generalisation. In this position paper, we argue that this framing is incomplete. The central bottleneck is not only policy learning, but the absence of mechanisms that convert the world's abundant unstructured behavioural data into grounded robot supervision. Human motion, internet video, simulation rollouts, and inter",
+    "paper_url": "https://arxiv.org/abs/2606.06556",
+    "ks": 8,
+    "authors": [
+      "Elis Karcini",
+      "Faisal Mehrban",
+      "Quang Nguyen",
+      "Mac Schwager",
+      "Arash Ajoudani",
+      "Cesar Cadena",
+      "Jan Peters",
+      "Marco Hutter"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "foundation model",
+      "generalist",
+      "policy learning",
+      "world model",
+      "IL"
+    ],
+    "first_publication": "2026-06-04",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "surveys"
+    ]
+  },
+  {
+    "id": "arxiv-2606.05979",
+    "title": "World-Language-Action Model for Unified World Modeling, Language Reasoning, and Action Synthesis",
+    "abstract": "We propose world-language-action (WLA) models as a new class of embodied foundation models. WLA takes textual instructions, images, and robot states as inputs to jointly predict textual subtasks, subgoal images, and robot actions, conjoining the \\emph{world modeling interface} to learn from extensive egocentric videos as in the world-action model (WAM) and the \\emph{language reasoning} capacities to solve complex long-horizon tasks as in vision-language-action (VLA) models. At the core of WLA li",
+    "paper_url": "https://arxiv.org/abs/2606.05979",
+    "ks": 8,
+    "authors": [
+      "Yi Yang",
+      "Zhihong Liu",
+      "Siqi Kou",
+      "Yiyang Chen",
+      "Yanzhe Hu",
+      "Jianbo Zhou",
+      "Boyuan Zhao",
+      "Zhijie Wei"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "embodied",
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "foundation model",
+      "world model",
+      "WAM",
+      "IL"
+    ],
+    "first_publication": "2026-06-04",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data"
+    ],
+    "organizations": [],
+    "organization_evidence": [],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.05960",
+    "title": "Towards a Data Flywheel for Embodied Intelligence in Logistics",
+    "abstract": "Embodied intelligence is moving from laboratory demonstrations toward industrial deployment, with the logistics industry serving as a key application scenario. Learning-based policies offer a promising path beyond traditional perception-planning-control pipelines, but their scalability depends on how embodied data can be collected, organized, and reused. This research studies a data-centric framework for industrial embodied intelligence by constructing a logistics data flywheel. Our framework co",
+    "paper_url": "https://arxiv.org/abs/2606.05960",
+    "ks": 8,
+    "authors": [
+      "Anlan Yu",
+      "Zaishu Chen",
+      "Zhiqing Hong",
+      "Daqing Zhang"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "embodied",
+      "robot",
+      "imitation learning",
+      "manipulation",
+      "planning",
+      "policy learning",
+      "world model",
+      "IL"
+    ],
+    "first_publication": "2026-06-04",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ]
+  },
+  {
+    "id": "arxiv-2606.04968",
+    "title": "Potential-Guided Flow Matching for Vision-Language-Action Policy Improvement",
+    "abstract": "Large vision-language-action (VLA) policies are increasingly trained as conditional generative models over action chunks. Yet deployment produces mixed-quality experience-successful demonstrations, partial completions, recoverable mistakes, and failures-that is difficult to use with standard imitation. Full behavior cloning (BC) imitates failures, filtered BC discards useful sub-trajectories, and offline reinforcement learning adds a large critic. We introduce ForesightFlow, a self-guided flow-m",
+    "paper_url": "https://arxiv.org/abs/2606.04968",
+    "ks": 8,
+    "authors": [
+      "Yunpeng Mei",
+      "Jiakai He",
+      "Hongjie Cao",
+      "Chenyu Wang",
+      "Xiaowen Zhu",
+      "Yihan Zhou",
+      "Jiamin Wang",
+      "Chenbo Xin"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "VLA",
+      "vision-language-action",
+      "reinforcement learning",
+      "behavior cloning",
+      "trajectory",
+      "bimanual",
+      "IL",
+      "BC"
+    ],
+    "first_publication": "2026-06-03",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "organizations": [],
+    "organization_evidence": [],
+    "project_url": null,
+    "asset_checks": [
+      {
+        "kind": "code",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": null,
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.04046",
+    "title": "Dive into the Scene: Breaking the Perceptual Bottleneck in Vision-Language Decision Making via Focus Plan Generation",
+    "abstract": "In embodied vision-language decision making tasks such as robotic manipulation and navigation, Vision-Language and Vision-Language-Action Models (VLMs &amp; VLAs) are powerful tools with different benefits: VLMs are better at long-term planning, while VLAs are better at reactive control. However, their performance is limited by the same perceptual bottleneck: visual hallucinations arise due to the models' inability to distinguish task-relevant objects from distractors. In principle, accurate ide",
+    "paper_url": "https://arxiv.org/abs/2606.04046",
+    "ks": 8,
+    "authors": [
+      "Boyuan Xiao",
+      "Bohong Chen",
+      "Yumeng Li",
+      "Ji Feng",
+      "Yao-Xiang Ding",
+      "Kun Zhou"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "keyword_hits": [
+      "embodied",
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "manipulation",
+      "navigation",
+      "planning",
+      "IL"
+    ],
+    "first_publication": "2026-06-02",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "organizations": [
+      "Zhejiang University",
+      "Baiont Quant",
+      "Zhejiang Key Laboratory of Intelligent Medical Decision Support"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "Zhejiang University",
+        "source": "project-page",
+        "url": "https://future-item.github.io/SceneDiver",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Baiont Quant",
+        "source": "project-page",
+        "url": "https://future-item.github.io/SceneDiver",
+        "location": "author affiliation block"
+      },
+      {
+        "organization": "Zhejiang Key Laboratory of Intelligent Medical Decision Support",
+        "source": "project-page",
+        "url": "https://future-item.github.io/SceneDiver",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://future-item.github.io/SceneDiver",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://future-item.github.io/SceneDiver",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://future-item.github.io/SceneDiver/"
+      },
+      {
+        "kind": "code",
+        "url": "https://github.com/future-item/SceneDiver-code",
+        "status": "verified",
+        "accessible": true,
+        "verification_method": "github-api",
+        "evidence_source": "project-page",
+        "checked_at": "2026-07-28",
+        "http_status": 200
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": "https://github.com/future-item/SceneDiver-code",
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.03177",
+    "title": "ConTrack: Constrained Hand Motion Tracking with Adaptive Trade-off Control",
+    "abstract": "Human demonstrations provide strong priors for robot manipulation, yet it is non-trivial to transfer them to execute on real robots due to the kinematic gap. In dexterous manipulation, it remains challenging to track long-horizon, contact-rich sequences even in simulators: a reference-tracking policy must keep objects on their target trajectories while preserving demonstrated joint motion and contact timing. Existing approaches often rely on hand-crafted reward tuning that require per-sequence t",
+    "paper_url": "https://arxiv.org/abs/2606.03177",
+    "ks": 8,
+    "authors": [
+      "Yutong Liang",
+      "Quanquan Peng",
+      "Ri-Zhao Qiu",
+      "Xiaolong Wang"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "dexterous manipulation",
+      "simulator",
+      "manipulation",
+      "reinforcement learning",
+      "trajectory",
+      "dexterous",
+      "IL"
+    ],
+    "first_publication": "2026-06-02",
+    "last_revision": "2026-06-15",
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "organizations": [
+      "University of California, San Diego"
+    ],
+    "organization_evidence": [
+      {
+        "organization": "University of California, San Diego",
+        "source": "project-page",
+        "url": "https://www.lyt0112.com/projects/ConTrack",
+        "location": "author affiliation block"
+      }
+    ],
+    "project_url": "https://www.lyt0112.com/projects/ConTrack",
+    "asset_checks": [
+      {
+        "kind": "project",
+        "url": "https://www.lyt0112.com/projects/ConTrack",
+        "status": "project-page-only",
+        "accessible": true,
+        "verification_method": "http-get",
+        "evidence_source": "paper-html",
+        "checked_at": "2026-07-28",
+        "resolved_url": "https://www.lyt0112.com/projects/ConTrack"
+      },
+      {
+        "kind": "code",
+        "url": "https://github.com/EmptyBlueBox/ConTrack",
+        "status": "verified",
+        "accessible": true,
+        "verification_method": "github-api",
+        "evidence_source": "project-page",
+        "checked_at": "2026-07-28",
+        "http_status": 200
+      },
+      {
+        "kind": "dataset",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      },
+      {
+        "kind": "model",
+        "url": null,
+        "status": "not-found",
+        "accessible": false,
+        "verification_method": "required-source-scan",
+        "evidence_source": "arxiv-abstract-fulltext-project-scan",
+        "checked_at": "2026-07-28",
+        "note": "No official address found after required source scan."
+      }
+    ],
+    "code_url": "https://github.com/EmptyBlueBox/ConTrack",
+    "dataset_url": null,
+    "model_url": null
+  },
+  {
+    "id": "arxiv-2606.01951",
+    "title": "Co-training with Ego-centric Video and Demonstration for Robot Navigation Task",
+    "abstract": "Vision-language-action (VLA) models are promising for diverse robotic tasks, but their performance heavily depends on large-scale high-quality training data, whose collection on real robots is costly and time-consuming. While prior work has explored augmenting manipulation datasets with egocentric human videos, applying such approaches to mobile robot navigation remains challenging due to viewpoint changes during locomotion. In this paper, we propose a framework that converts egocentric walking ",
+    "paper_url": "https://arxiv.org/abs/2606.01951",
+    "ks": 8,
+    "authors": [
+      "Shoya Kuno",
+      "Yumo Ouchi",
+      "Kanata Suzuki"
+    ],
+    "categories": [
+      "cs.RO"
+    ],
+    "keyword_hits": [
+      "robot",
+      "VLA",
+      "vision-language-action",
+      "imitation learning",
+      "manipulation",
+      "locomotion",
+      "navigation",
+      "IL"
+    ],
+    "first_publication": "2026-06-01",
+    "last_revision": null,
+    "watchlist_matches": [],
+    "suggested_sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ]
+  }
+]

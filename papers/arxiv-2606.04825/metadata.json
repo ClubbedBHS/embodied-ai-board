@@ -1,0 +1,224 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.04825",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "HapTile: A Haptic-Informed Vision-Tactile-Language-Action Dataset for Contact-Rich Tasks",
+  "title_zh": "HapTile：面向接触密集型任务的触觉感知视觉-触觉-语言-动作数据集",
+  "abstract": "Despite the importance of tactile sensing for reliable manipulation, most existing Vision-Language-Action (VLA) datasets remain vision-only, and those that do incorporate tactile information typically lack the joint combination of task diversity, language conditioning, and action trajectories. Furthermore, existing teleoperation pipelines rarely provide haptic feedback to the operator, despite its established role in demonstration quality and manipulation stability. In this work, we present HapTile, a contact-grounded visuotactile manipulation dataset that advances beyond vision-only trajectory datasets by embedding physical interaction sensing at two levels: fingertip tactile feedback at the robot end-effector, and haptic-informed demonstrations at the teleoperator side. The data collection platform integrates haptic feedback directly into the teleoperation controller, enabling the operator to perceive contact interactions in real time. It is built around a standard and reproducible robotic system equipped with custom-designed fingertip tactile sensors. The dataset comprises everyday manipulation tasks spanning a broad range of contact-rich skills, including pick-and-place, folding, pressing, stacking, and other routine activities. Each task is paired with language instructions that condition the policy on the manipulation objective, together with synchronized visuotactile observations and action trajectories.",
+  "paper_url": "https://arxiv.org/abs/2606.04825",
+  "pdf_url": "https://arxiv.org/pdf/2606.04825",
+  "project_url": "https://haptile-dataset.github.io",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Amirhosein Alian",
+      "affiliations": [
+        "kcl"
+      ]
+    },
+    {
+      "name": "Yongqiang Zhao",
+      "affiliations": [
+        "kcl"
+      ]
+    },
+    {
+      "name": "Shiyi Gu",
+      "affiliations": [
+        "kcl"
+      ]
+    },
+    {
+      "name": "Xuyang Zhang",
+      "affiliations": [
+        "kcl"
+      ]
+    },
+    {
+      "name": "Zhuo Chen",
+      "affiliations": [
+        "kcl"
+      ]
+    },
+    {
+      "name": "Christopher E. Mower",
+      "affiliations": [
+        "kcl"
+      ]
+    },
+    {
+      "name": "Haitham Bou-Ammar",
+      "affiliations": [
+        "kcl"
+      ]
+    },
+    {
+      "name": "Shan Luo",
+      "affiliations": [
+        "kcl"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "universitycollegelondon",
+      "name": "University College London",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-03",
+    "last_revision": "2026-06-19"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data"
+    ],
+    "topics": [
+      "vla"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "tactile",
+      "action"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [
+      "data",
+      "project-page"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "dataset"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 73,
+    "selection_reason": "首个同时提供语言条件、指尖触觉反馈和触觉遥操作界面的VLA数据集。1726条演示覆盖38个日常操作任务和9种技能（移动、放置、移除、翻转、折叠、插入、擦拭、按压、堆叠），共750分钟交互。数据集在UR5e+Robotiq 2F-85+定制指尖视觉触觉传感器平台上采集，远程操作员可实时感知接触交互。填补了VLA数据集中触觉模态的空白。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "hermes-agent",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": []
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.04825",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 HapTile Dataset",
+      "3.1 Dataset Statistics",
+      "3.2 Synchronization and Data Quality Control",
+      "4 Data Collection Platform",
+      "4.1 System Overview",
+      "4.2 Vision-Based Tactile Sensing and Marker Tracking",
+      "4.3 Haptic Feedback to the Operator",
+      "5 Experiments",
+      "5.1 Evaluation and Ablation Studies",
+      "5.2 Results and Discussion",
+      "6 Limitations",
+      "7 Conclusion",
+      "References",
+      "Appendix A Appendix",
+      "A.1 Data Formatting",
+      "A.2 Tactile Sensor Data Processing",
+      "A.3 Evaluation Tasks",
+      "A.4 Policy Training and Deployment",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.04825"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.04825"
+    },
+    {
+      "type": "dataset",
+      "url": "https://haptile-dataset.github.io"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "University College London",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.04825",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://haptile-dataset.github.io",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://haptile-dataset.github.io/"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

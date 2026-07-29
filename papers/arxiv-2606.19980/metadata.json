@@ -1,0 +1,331 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.19980",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "ENPIRE: Agentic Robot Policy Self-Improvement in the Real World",
+  "title_zh": "ENPIRE：真实世界中智能体驱动的机器人策略自我改进",
+  "abstract": "Achieving dexterous robotic manipulation in the real world heavily relies on human supervision and algorithm engineering, which becomes a central bottleneck in the pursuit of general physical intelligence. Although emerging coding agents can generate code to automate algorithm search, their successes remain largely confined in digital environments. We conjecture that the missing abstraction to automate robotics research is a repeatable feedback loop for real-world policy improvement: reset the scene, execute a policy, verify the outcome, and refine the next iteration. To bridge this gap, we introduce ENPIRE, a harness framework for coding agents that instantiates this physical feedback routine with four core modules: an Environment module (EN) for automatic reset and verification, a Policy Improvement module (PI) that launches policy refinement, a Rollout module (R) to evaluate policies with one or multiple physical robots operating in parallel, and an Evolution module (E) in which coding agents analyze logs, consult literature, improve training infrastructure and algorithm code to address failure modes. This closed-loop system transforms real-world manipulation learning into a controllable optimization procedure, minimizing human effort while allowing fair ablations across training recipe and agent variants. Powered by ENPIRE, frontier coding agents can autonomously train a policy to achieve a 99% success rate on challenging, dexterous manipulation tasks, such as organizing a pin box, fastening a zip tie, and tool use, a process that further accelerates when we dispatch an agent team on a robot fleet.",
+  "paper_url": "https://arxiv.org/abs/2606.19980",
+  "pdf_url": "https://arxiv.org/pdf/2606.19980",
+  "project_url": "https://research.nvidia.com/labs/gear/enpire",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Wenli Xiao",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Jia Xie",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Tonghe Zhang",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Haotian Lin",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Letian Fu",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Haoru Xue",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Jalen Lu",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Yi Yang",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Cunxi Dai",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Zi Wang",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Jimmy Wu",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Guanzhi Wang",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "S. Shankar Sastry",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Ken Goldberg",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    },
+    {
+      "name": "Linxi Fan",
+      "affiliations": [
+        "uc-berkeley"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "carnegiemellonuniversity",
+      "name": "Carnegie Mellon University",
+      "role": "primary"
+    },
+    {
+      "id": "nvidia",
+      "name": "NVIDIA",
+      "role": "collaborator"
+    },
+    {
+      "id": "universityofcaliforniaberkeley",
+      "name": "University of California, Berkeley",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-18",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "vla"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "proprioception"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [
+      "project-page"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "system"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 78,
+    "selection_reason": "创新性地将编程智能体应用于真实机器人策略自主改进。提出ENPIRE四模块框架（环境/策略改进/部署/进化），实现从环境搭建、自动验证、自主复位的物理闭环自改进。前沿编程智能体可自主训练策略在针盒整理、扎带紧固等灵巧操作任务上达到99%成功率。多智能体+机器人集群加速策略搜索，展示了物理自主研究(autoresearch)的可行路径。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "hermes-agent",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文 HTML 作者区未能自动解析出明确机构，需人工核验",
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.19980",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Method",
+      "2.1 Stage One: Environment Construction from Human Feedback",
+      "Hard safety constraints",
+      "Automated verification",
+      "Automated reset",
+      "2.2 Stage Two: Automated Policy Improvement from Real-World Feedback",
+      "A motivating example",
+      "Accelerating autoresearch via multi-agent scaling",
+      "3 Experiment",
+      "3.1 Autoresearch for Heuristic Learning",
+      "The unique challenge of physical autoresearch",
+      "3.2 Autoresearch for Gradient-Based Policy Improvement",
+      "3.3 Scaling Policy Learning on a Robot Fleet",
+      "3.4 Transferring Autoresearch Experience through Agentic Continue Learning",
+      "3.5 ENPIRE Discovers Synergy between Code-Based Policies and VLAs",
+      "3.6 Quantifying Agent Resource Utilization",
+      "4 Limitations",
+      "Robot and compute resources are underutilized",
+      "Token cost grows super-linearly with fleet size.",
+      "5 Related Work",
+      "5.1 Coding Agents & Code as Policies",
+      "5.2 Agentic Self-Improvement",
+      "5.3 Autonomous Research Agents and Scientific Discovery",
+      "6 Acknowledgement",
+      "References",
+      "Appendices",
+      "Appendix Outline",
+      "Appendix A Environment Creation",
+      "A.1 Autonomous Reset",
+      "A.2 Autoresearch-driven Reward Design",
+      "Appendix B Robot System Setup",
+      "B.1 Fleet Architecture",
+      "Control endpoints.",
+      "Agent sandbox and context.",
+      "B.2 Station Hardware",
+      "Manipulators and actuation.",
+      "Compute.",
+      "Perception.",
+      "B.3 Low-Level Control",
+      "B.4 Per-Task Configuration",
+      "B.5 Real-World RL System Integration",
+      "B.6 Idea Tree for Pin Insertion",
+      "Appendix C Physical Autoresearch: Ablation Studies",
+      "C.1 Experimental Setup",
+      "C.2 Token Utilization",
+      "C.3 Native Vision Capability",
+      "C.4 Model and Harness Comparison",
+      "Appendix D Simulation Benchmark Result",
+      "D.1 RoboCasa Simulation Interface and API Surface",
+      "Camera and visualization.",
+      "Motion.",
+      "Planner and collision.",
+      "D.2 RoboCasa Evaluation Protocol",
+      "Fixed seeds and layouts.",
+      "Fair comparison with GR00T.",
+      "Discovered policy demonstration.",
+      "Result Analysis",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.19980"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.19980"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "agentic-autoresearch",
+      "name": "Agentic Autoresearch",
+      "reason": "ENPIRE引入编程智能体驱动真实世界机器人策略自主改进的新范式，现有标签无法覆盖此方向。",
+      "evidence": "论文Section 2详细描述了ENPIRE的四模块框架和自主研究循环。"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "Carnegie Mellon University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.19980",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "NVIDIA",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.19980",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University of California, Berkeley",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.19980",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://research.nvidia.com/labs/gear/enpire",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-or-project-page",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

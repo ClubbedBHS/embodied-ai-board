@@ -1,0 +1,223 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.09215",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "MotionWAM: Towards Foundation World Action Models for Real-Time Humanoid Loco-Manipulation",
+  "title_zh": null,
+  "abstract": "World Action Models (WAMs) couple a video dynamics prior to the policy and have shown encouraging results on tabletop manipulation, but iterative denoising over high-dimensional video-action latents leaves them too slow for real-time humanoid loco-manipulation. The problem is compounded by the dominant hierarchical paradigm, in which a high-level manipulation policy controls only the upper body while a low-level controller tracks coarse base commands—placing upper and lower body in inconsistent action spaces and reducing the legs to balance-preserving locomotion. We present MotionWAM, a real-time WAM that drives autonomous humanoid loco-manipulation from a single egocentric camera by conditioning the policy on the intermediate denoising features of a video world model. MotionWAM replaces the upper–lower split with a unified motion latent and predicts whole-body motion tokens that jointly cover locomotion, torso motion, height regulation, foot interaction, and hand manipulation in a single action space. A three-stage learning framework progressively adapts the video world model to egocentric visual dynamics and to the target humanoid embodiment. On nine real-world Unitree G1 tasks, MotionWAM runs in real time, substantially outperforms Vision-Language-Action (VLA) baselines finetuned on the same demonstrations by over 30% in overall success rate, and executes task-driven foot interaction that decoupled upper-lower policies cannot achieve. Our results suggest that video-pretrained WAMs can be extended from performing tabletop manipulation to coordinated, human-like whole-body humanoid control.",
+  "paper_url": "https://arxiv.org/abs/2606.09215",
+  "pdf_url": "https://arxiv.org/pdf/2606.09215",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Jia Zheng",
+      "affiliations": [
+        "mondo-robotics",
+        "hkust-gz"
+      ]
+    },
+    {
+      "name": "Teli Ma",
+      "affiliations": [
+        "mondo-robotics",
+        "hkust-gz"
+      ]
+    },
+    {
+      "name": "Yudong Fan",
+      "affiliations": [
+        "mondo-robotics"
+      ]
+    },
+    {
+      "name": "Zifan Wang",
+      "affiliations": [
+        "mondo-robotics",
+        "hkust-gz"
+      ]
+    },
+    {
+      "name": "Shuo Yang",
+      "affiliations": [
+        "mondo-robotics"
+      ]
+    },
+    {
+      "name": "Junwei Liang",
+      "affiliations": [
+        "hkust-gz",
+        "hkust"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "hongkonguniversityofscienceandtechnology",
+      "name": "Hong Kong University of Science and Technology",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-11",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model",
+      "vla",
+      "behavior-cloning"
+    ],
+    "tasks": [
+      "humanoid-control"
+    ],
+    "platforms": [
+      "humanoid"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "proprioception",
+      "action"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 86,
+    "selection_reason": "首个实时运行的全身人形机器人WAM策略，统一运动隐空间消除上下半身解耦，在Unitree G1真实机器人上9项任务整体成功率超最强VLA基线32个百分点。提出三阶段渐进训练框架（egocentric视频预训练→跨embodiment动作后训练→全身微调），解锁了分层策略无法实现的任务驱动足部交互（踢球、踩踏板）。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "hermes-agent",
+    "generated_at": "2026-07-24",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "仅Unitree G1单一人形平台评估，未验证跨embodiment泛化",
+      "主要失败模式为目标物体离开自视角相机视野（FOV限制）",
+      "Stage 3仅200 episodes/task，数据规模有限",
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.09215",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 Method",
+      "3.1 Problem Formulation",
+      "3.2 Model Architecture",
+      "3.3 Training Recipe",
+      "4 Experiments",
+      "4.1 Experimental Setup",
+      "4.2 Comparison with the State-of-the-Art",
+      "4.3 Ablation on the Three-Stage Training Framework",
+      "4.4 Real-Time Inference Frequency",
+      "5 Conclusion",
+      "6 Limitations",
+      "References",
+      "Appendix A Real-World Task Suite",
+      "A.1 Per-Task Language Prompts",
+      "Appendix B Whole-Body Teleoperation Setup",
+      "B.1 Hardware",
+      "B.2 VR-Based Teleoperation Pipeline",
+      "Appendix C Model and Training Configuration",
+      "Appendix D Baseline Training Configurations",
+      "Diffusion Policy (DP)Â [23].",
+      "Action Chunking with Transformers (ACT)Â [24].",
+      "Qwen3DiT.",
+      "Appendix E Per-Stage Data Composition",
+      "Stage 1 â egocentric video pretraining.",
+      "Stage 2 â cross-embodiment action post-training.",
+      "Stage 3 â UnitreeÂ G1 whole-body fine-tuning.",
+      "Appendix F Failure Cases",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.09215"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.09215"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "world-action-model",
+      "name": "World Action Model",
+      "reason": "现有world-model标签无法区分直接预测动作的WAM。论文明确将方法定义为World Action Model，且通过视频世界模型的中间去噪特征驱动策略。",
+      "evidence": "论文标题和摘要明确使用World Action Model术语，Section 1详细定义了WAM与VLA的区别。"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "Hong Kong University of Science and Technology",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.09215",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

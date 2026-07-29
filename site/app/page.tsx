@@ -109,7 +109,7 @@ export default function Home() {
         <nav aria-label="主导航">
           <a href="#top">本月关注</a>
           <a href="#latest">论文库</a>
-          <span className="update-pill"><i /> 上次更新：2026.07.23</span>
+          <span className="update-pill"><i /> 上次更新：2026.07.29</span>
         </nav>
       </header>
 

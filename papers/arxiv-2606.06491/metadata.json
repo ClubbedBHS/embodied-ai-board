@@ -1,0 +1,199 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.06491",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "TempoVLA: Learning Speed-Controllable Vision-Language-Action Policies",
+  "title_zh": "TempoVLA：学习速度可控的视觉—语言—动作策略",
+  "abstract": "Robot manipulation alternates between low-risk transit phases that call for fast execution and high-risk contact stages that demand slow, precise motion. Yet existing Vision-Language-Action models (VLAs) only inherit a single fixed speed from training demonstrations. Prior efforts to accelerate VLAs through model compression, KV-cache reuse, or reinforcement learning only shift the policy from one fixed speed to another, and leave deceleration almost unexplored. We observe that the magnitude of ",
+  "paper_url": "https://arxiv.org/abs/2606.06491",
+  "pdf_url": "https://arxiv.org/pdf/2606.06491",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Dong Jing",
+      "affiliations": []
+    },
+    {
+      "name": "Jingchen Nie",
+      "affiliations": []
+    },
+    {
+      "name": "Tianqi Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Jiaqi Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Huaxiu Yao",
+      "affiliations": []
+    },
+    {
+      "name": "Zhiwu Lu",
+      "affiliations": []
+    },
+    {
+      "name": "Mingyu Ding",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "renminuniversityofchina",
+      "name": "Renmin University of China",
+      "role": "primary"
+    },
+    {
+      "id": "universityofnorthcarolinaatchapelhill",
+      "name": "University of North Carolina at Chapel Hill",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-04",
+    "last_revision": "2026-07-19"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data",
+      "simulators"
+    ],
+    "topics": [
+      "vla"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "Clever and practical speed control mechanism for VLAs with minimal architectural changes; VSTA data augmentation is simple yet effective; VLM-driven dynamic scheduling opens new control dimensions.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.06491",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 Methodology",
+      "3.1 Problem Formulation",
+      "3.2 Variable-Speed Trajectory Augmentation",
+      "3.3 Speed Conditioning in TempoVLA",
+      "3.4 Dynamic Speed Control with a VLM Scheduler",
+      "4 Simulation Experiments",
+      "4.1 Feasibility of Variable-Speed Trajectory Augmentation",
+      "4.2 Ablation on the Speed-Integration Scheme",
+      "4.3 Effect of the Training Speed Range",
+      "5 Real-world Experiments",
+      "5.1 Results",
+      "5.2 Dynamic Speed Control with a VLM Scheduler",
+      "6 Conclusion",
+      "References",
+      "Appendix A Hyperparameters",
+      "Appendix B Pseudocode of VSTA",
+      "Appendix C More Ablation Study",
+      "C.1 The Effect of Soft Prompt Length",
+      "Appendix D Stress Test at Extreme Speeds",
+      "Appendix E Qualitative Comparison",
+      "E.1 Failure Mode Analysis",
+      "E.2 Demonstration",
+      "Appendix F Prompt to GPT4o for Dynamic Speed Control",
+      "Appendix G Discussion",
+      "G.1 Relationship with Controller-focused Works",
+      "G.2 The difference between effect of VSTA on EEF and Joint Action Space",
+      "Appendix H Future Directions",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.06491"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.06491"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Renmin University of China",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.06491",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University of North Carolina at Chapel Hill",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.06491",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

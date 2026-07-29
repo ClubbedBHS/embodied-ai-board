@@ -1,0 +1,222 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.10244",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "YUBI: Yielding Universal Bidigital Interface for Bimanual Dexterous Manipulation at Scale",
+  "title_zh": "YUBI：面向规模化双臂灵巧操作的顺应式双指通用接口",
+  "abstract": "We introduce Yielding Universal Bidigital Interface (YUBI), a finger-aligned gripper designed to enable intuitive, ergonomic, and scalable data collection for bimanual dexterous manipulation. While handheld data collection systems such as Universal Manipulation Interface (UMI) enable affordable data collection, their bulky pistol-grip designs can pose ergonomic and usability challenges for fine-grained, dexterous manipulation tasks. To address this, YUBI presents a distinct design principle: yie",
+  "paper_url": "https://arxiv.org/abs/2606.10244",
+  "pdf_url": "https://arxiv.org/pdf/2606.10244",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Takehiko Ohkawa",
+      "affiliations": []
+    },
+    {
+      "name": "Jumpei Arima",
+      "affiliations": []
+    },
+    {
+      "name": "Yuki Noguchi",
+      "affiliations": []
+    },
+    {
+      "name": "Masatoshi Tateno",
+      "affiliations": []
+    },
+    {
+      "name": "Makoto Sugiura",
+      "affiliations": []
+    },
+    {
+      "name": "Takuya Okubo",
+      "affiliations": []
+    },
+    {
+      "name": "Kengo Ikeuchi",
+      "affiliations": []
+    },
+    {
+      "name": "Yuma Shin",
+      "affiliations": []
+    },
+    {
+      "name": "Hiroki Nishizawa",
+      "affiliations": []
+    },
+    {
+      "name": "Naoaki Kanazawa",
+      "affiliations": []
+    },
+    {
+      "name": "Yuki Wakayama",
+      "affiliations": []
+    },
+    {
+      "name": "Daiki Fukunaga",
+      "affiliations": []
+    },
+    {
+      "name": "Koshi Makihara",
+      "affiliations": []
+    },
+    {
+      "name": "Tomohiro Motoda",
+      "affiliations": []
+    },
+    {
+      "name": "Floris Erich",
+      "affiliations": []
+    },
+    {
+      "name": "Yukiyasu Domae",
+      "affiliations": []
+    },
+    {
+      "name": "Tatsuya Matsushima",
+      "affiliations": []
+    },
+    {
+      "name": "Yohishiro Okumatsu",
+      "affiliations": []
+    },
+    {
+      "name": "Kei Ota",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-06-08",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data",
+      "infrastructure"
+    ],
+    "topics": [],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "通过创新的手指对齐式夹爪设计改进UMI范式。核心贡献：(1)手指对齐(yielding bidigital)握持方式替代UMI手枪式握把，显著提升人体工学和精细操作可及性；(2)YUBI-Bench: 119个任务、985条轨迹的大规模双臂灵巧数据集；(3)硬件、软件、数据集全面开源。相较于看板中已有的UMI和RealDexUMI，YUBI从人体工学改进角度提供了一个有价值的替代方案。主要局限：YUBI仍然是平行夹爪范式(非多指灵巧手)，任务复杂度和数据规模(985条轨迹)相对有限。",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文 HTML 作者区未能自动解析出明确机构，需人工核验",
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.10244",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1.âIntroduction",
+      "2.âRelated Work",
+      "2.1.âData Collection Paradigms for Robotic Manipulation",
+      "2.2.âHand-Held Gripper Interface",
+      "3.âMethod",
+      "3.1.âYUBI Design",
+      "3.2.âOperation Setup",
+      "4.âDataset",
+      "5.âYUBI Usability Study",
+      "6.âRobot Policy Deployment",
+      "7.âLimitations and Discussion",
+      "8.âConclusion",
+      "References",
+      "Acknowledgments",
+      "Contributions",
+      "Appendix A Dataset Details",
+      "A.1.âComparison with Prior UMI-based Datasets",
+      "A.2.âData Processing",
+      "A.3.âAction-Segmentation Examples",
+      "Appendix B Operation-Setup Details",
+      "B.1.âStationary Rig and Task UI",
+      "B.2.âPortable Configuration",
+      "Appendix C Experimental Details",
+      "C.1.âUsability Test Protocol",
+      "C.2.âRobot Platforms",
+      "C.3.âPolicy Training and Inference",
+      "C.4.âComparison to Diffusion Policy",
+      "Appendix D Open-Source Release",
+      "D.1.âHardware",
+      "D.2.âSoftware",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.10244"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.10244"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

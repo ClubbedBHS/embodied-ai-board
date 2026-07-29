@@ -1,0 +1,314 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.03682",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "GN0: Toward a Unified Paradigm for Generation, Evaluation, and Policy Learning in Visual-Language Navigation",
+  "title_zh": "GN0：视觉—语言导航的数据生成、评测与策略学习统一范式",
+  "abstract": "Embodied navigation connects intelligent agents with the physical world and is fundamental for general robotic intelligence. Limited availability and quality of navigation data have constrained Vision-and-Language Navigation (VLN) systems' generalization and long-horizon capabilities. To address this, we curate diverse 3D scenes and develop an automated pipeline for large-scale navigation data, resulting in the GN-Matrix dataset. Building on a 3D Gaussian Splatting (3DGS) engine, we introduce a ",
+  "paper_url": "https://arxiv.org/abs/2606.03682",
+  "pdf_url": "https://arxiv.org/pdf/2606.03682",
+  "project_url": "https://telehuman-gn0.github.io",
+  "code_url": "https://github.com/TeleHuman/GN0",
+  "dataset_url": "https://huggingface.co/datasets/TeleEmbodied/GN-Matrix",
+  "model_url": "https://huggingface.co/TeleEmbodied/GN-BAE",
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Xinhai Li",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaotao Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Yuehao Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Jiankun Dong",
+      "affiliations": []
+    },
+    {
+      "name": "Tianhang Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Sunyao Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Yunzi Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Chengnuo Sun",
+      "affiliations": []
+    },
+    {
+      "name": "Yunfei Ge",
+      "affiliations": []
+    },
+    {
+      "name": "Qizhen Weng",
+      "affiliations": []
+    },
+    {
+      "name": "Chi Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Chenjia Bai",
+      "affiliations": []
+    },
+    {
+      "name": "Xuelong Li",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "instituteofartificialintelligenceteleaichinatelecom",
+      "name": "Institute of Artificial Intelligence (TeleAI), China Telecom",
+      "role": "primary"
+    },
+    {
+      "id": "shanghaijiaotonguniversity",
+      "name": "Shanghai Jiao Tong University",
+      "role": "collaborator"
+    },
+    {
+      "id": "zhejianguniversity",
+      "name": "Zhejiang University",
+      "role": "collaborator"
+    },
+    {
+      "id": "tongjiuniversity",
+      "name": "Tongji University",
+      "role": "collaborator"
+    },
+    {
+      "id": "fudanuniversity",
+      "name": "Fudan University",
+      "role": "collaborator"
+    },
+    {
+      "id": "jiangsuuniversity",
+      "name": "Jiangsu University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-02",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "topics": [
+      "sim-to-real",
+      "reinforcement-learning"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "code",
+      "dataset",
+      "model-weights",
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "Comprehensive VLN system with open-source code, model weights, and real robot experiments; covers the full stack from data generation to policy learning, though navigation-centric rather than manipulation-focused.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文 HTML 作者区未能自动解析出明确机构，需人工核验",
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.03682",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Works",
+      "2.1 Vision-Language Navigation",
+      "2.2 Scene Representations for Vision-Language Navigation",
+      "2.3 Language-driven Navigation Benchmarks",
+      "3 Data Generation",
+      "3.1 Overview and Key Characteristics",
+      "3.2 Scene Assets",
+      "3.2.1 InteriorGS",
+      "3.2.2 Handcrafted Large-Scale Scenes",
+      "3.2.3 WorldGrow-Expanded Scenes",
+      "3.3 Dynamic Human Avatars",
+      "3.4 Mission Types and Task Synthesis",
+      "3.4.1 Goal-Based Navigation Tasks",
+      "3.4.2 Instruction-Following Navigation Tasks",
+      "3.4.3 Human-Following Tasks",
+      "3.5 Benchmark Compatibility and Dataset Statistics",
+      "3.6 DAgger Data Collection",
+      "3.7 Post-processing and Dataset Balancing",
+      "4 GN-Bench",
+      "4.1 Core Rendering Engine",
+      "4.2 Simulation Dynamics and Interactivity",
+      "4.2.1 Observation Space",
+      "4.2.2 Action Space and Kinematics",
+      "4.2.3 Collision Handling",
+      "4.2.4 Global Path Planning",
+      "4.3 Dynamic 3DGS Avatars and Human-Robot Interaction",
+      "5 GN-BAE",
+      "5.1 Trajectory tokenization",
+      "5.2 VLM SFT",
+      "5.3 DAgger-based Closed-loop Adaptation",
+      "5.4 DAPO",
+      "5.5 Action Expert",
+      "6 Experiments",
+      "6.1 Experiment Setup",
+      "6.2 Simulated Environment",
+      "6.2.1 Evaluation on GN-Bench",
+      "6.2.2 Evaluation on VLN-CE",
+      "6.3 Experiment in Real-world Environment",
+      "6.4 Ablation Studies",
+      "7 Discussion",
+      "Appendix A Additional Details of Data Generation",
+      "A.1 Detailed Scene Source Breakdown and Category Taxonomy",
+      "A.1.1 WorldGrow Scene Generation Prompts",
+      "A.2 Dynamic Human Avatar Construction Details",
+      "A.2.1 Problem setup",
+      "A.2.2 ICP-style nearest-neighbor fitting",
+      "A.2.3 Robust Mahalanobis fitting",
+      "A.2.4 Optional soft-assignment refinement",
+      "A.2.5 Anchor and regularization terms",
+      "A.2.6 Avatar animation pipeline",
+      "A.3 Detailed Task Generation Algorithms",
+      "A.3.1 Goal-Based Navigation Task Generation",
+      "A.3.2 Human-Following Task Generation",
+      "A.4 Instruction Generation and Benchmark Adaptation Details",
+      "A.5 Expanded Dataset Statistics and Balancing Details",
+      "A.6 Additional Qualitative Examples",
+      "A.7 Model Details",
+      "A.7.1 VLM prompts",
+      "References"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.03682"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.03682"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Institute of Artificial Intelligence (TeleAI), China Telecom",
+      "source": "project-page",
+      "url": "https://telehuman-gn0.github.io",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Shanghai Jiao Tong University",
+      "source": "project-page",
+      "url": "https://telehuman-gn0.github.io",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Zhejiang University",
+      "source": "project-page",
+      "url": "https://telehuman-gn0.github.io",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Tongji University",
+      "source": "project-page",
+      "url": "https://telehuman-gn0.github.io",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Fudan University",
+      "source": "project-page",
+      "url": "https://telehuman-gn0.github.io",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Jiangsu University",
+      "source": "project-page",
+      "url": "https://telehuman-gn0.github.io",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://telehuman-gn0.github.io",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-or-project-page",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/TeleHuman/GN0",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-28",
+      "http_status": 200
+    },
+    {
+      "kind": "dataset",
+      "url": "https://huggingface.co/datasets/TeleEmbodied/GN-Matrix",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-28",
+      "http_status": 200
+    },
+    {
+      "kind": "model",
+      "url": "https://huggingface.co/TeleEmbodied/GN-BAE",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-28",
+      "http_status": 200
+    }
+  ]
+}

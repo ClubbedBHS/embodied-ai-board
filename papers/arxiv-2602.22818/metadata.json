@@ -7,9 +7,9 @@
   "paper_url": "https://arxiv.org/abs/2602.22818",
   "pdf_url": "https://arxiv.org/pdf/2602.22818",
   "project_url": null,
-  "code_url": "https://github.com/huggingface/lerobot",
-  "dataset_url": "https://huggingface.co/lerobot",
-  "model_url": "https://huggingface.co/lerobot",
+  "code_url": "https://github.com/TheRobotStudio/HOPEJr",
+  "dataset_url": null,
+  "model_url": null,
   "video_url": null,
   "authors": [
     {
@@ -123,7 +123,7 @@
       "role": "primary"
     },
     {
-      "id": "oxford",
+      "id": "universityofoxford",
       "name": "University of Oxford",
       "role": "collaborator"
     }
@@ -169,9 +169,8 @@
       "simulation"
     ],
     "assets": [
-      "code",
-      "dataset",
-      "model-weights"
+      "data",
+      "code"
     ],
     "properties": [
       "open-source",
@@ -228,5 +227,61 @@
     ],
     "figure_images_accessed": false,
     "accessed_at": "2026-07-22"
-  }
+  },
+  "organization_evidence": [
+    {
+      "organization": "Hugging Face",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2602.22818",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University of Oxford",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2602.22818",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/TheRobotStudio/HOPEJr",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "ar5iv-html-link",
+      "checked_at": "2026-07-28",
+      "http_status": 200
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/TheRobotStudio/SO-ARM100",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "ar5iv-html-link",
+      "checked_at": "2026-07-28",
+      "http_status": 200
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
 }

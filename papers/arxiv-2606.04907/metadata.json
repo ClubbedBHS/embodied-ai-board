@@ -1,0 +1,220 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.04907",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "WAM-Nav: Asymmetric Latent World-Action Modeling for Unified Visual Navigation",
+  "title_zh": "WAM-Nav：用于统一视觉导航的非对称潜在世界—动作建模",
+  "abstract": "Visual navigation requires generating smooth and collision-free trajectories under complex geometric and physical constraints. Existing reactive policies that directly map observations to actions lack anticipatory reasoning, limiting their ability to proactively avoid obstacles. While visual imagination offers predictive foresight, conventional modular approaches separate scene prediction from policy learning, often leading to error accumulation and inefficient inference. To address these limita",
+  "paper_url": "https://arxiv.org/abs/2606.04907",
+  "pdf_url": "https://arxiv.org/pdf/2606.04907",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Ning Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Yan Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Kaiwen Peng",
+      "affiliations": []
+    },
+    {
+      "name": "Ziheng He",
+      "affiliations": []
+    },
+    {
+      "name": "Kai Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Cui Miao",
+      "affiliations": []
+    },
+    {
+      "name": "Kailin Lyu",
+      "affiliations": []
+    },
+    {
+      "name": "Guo Li",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaofeng Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Zheng Zhu",
+      "affiliations": []
+    },
+    {
+      "name": "Jing Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Nianfeng Liu",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "tsinghuauniversity",
+      "name": "Tsinghua University",
+      "role": "primary"
+    },
+    {
+      "id": "chineseacademyofsciences",
+      "name": "Chinese Academy of Sciences",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-03",
+    "last_revision": "2026-06-13"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "simulators",
+      "infrastructure"
+    ],
+    "topics": [
+      "sim-to-real"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "Solid navigation method with real-world validation; joint world-action modeling is an elegant approach but the navigation-only scope and lack of code release limit broader impact.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "规定来源扫描未发现明确项目或资产链接"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.04907",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "2.1 Learning-based Embodied Visual Navigation",
+      "2.2 World Models and Visual Imagination for Navigation",
+      "3 Methodology",
+      "3.1 Unified Goal Alignment",
+      "3.2 Dual-Stream Contextual Conditioning",
+      "3.3 Asymmetric Action-Foresight Generation",
+      "3.4 Model Training and Inference",
+      "4 Experimental Results",
+      "4.1 Simulation Experiments",
+      "4.2 Deployment on Real World",
+      "5 Conclusion",
+      "References",
+      "Appendix A Overview",
+      "Appendix B Problem Definition",
+      "Appendix C Method Details",
+      "C.1 Trajectory-Aware Motion History",
+      "C.2 Architecture of the Shared DiT Block",
+      "Appendix D Implementation Details of WAM-Nav",
+      "Appendix E Baseline Details",
+      "Appendix F Additional Experimental Results",
+      "F.1 Main Simulation Results",
+      "F.2 Main Component Ablation",
+      "F.3 Additional Ablation Studies",
+      "F.4 Comparison with NavDP",
+      "Appendix G Real-World Deployment Details",
+      "G.1 Hardware setup",
+      "G.2 Deployment Details",
+      "Appendix H Additional Failure Case Analysis",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.04907"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.04907"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Tsinghua University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.04907",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Chinese Academy of Sciences",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.04907",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

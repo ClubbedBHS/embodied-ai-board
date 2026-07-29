@@ -1,0 +1,207 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.15133",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "DragMesh-2: Physically Plausible Dexterous Hand-Object Interaction with Articulated Objects",
+  "title_zh": "DragMesh-2：面向关节物体的物理合理灵巧手交互",
+  "abstract": "Dexterous interaction with articulated objects is important for household, assistive, and humanoid manipulation, where multi-finger hands can provide compliant contact patterns beyond parallel-jaw grasping. However, articulated-object manipulation differs from static-object manipulation: the target part cannot be directly actuated, and its motion must emerge through sustained physical hand--handle contact. This makes the transition from object-centric articulated generation to hand-driven dexter",
+  "paper_url": "https://arxiv.org/abs/2606.15133",
+  "pdf_url": "https://arxiv.org/pdf/2606.15133",
+  "project_url": "https://aigeeksgroup.github.io/DragMesh-2",
+  "code_url": "https://github.com/AIGeeksGroup/DragMesh-2",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Tianshan Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Yijia Duan",
+      "affiliations": []
+    },
+    {
+      "name": "Yanjun Li",
+      "affiliations": []
+    },
+    {
+      "name": "Zeyu Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Hao Tang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "pekinguniversity",
+      "name": "Peking University",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-13",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "topics": [
+      "sim-to-real"
+    ],
+    "tasks": [],
+    "platforms": [],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [],
+    "assets": [
+      "code",
+      "project-page"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_reason": "Solid work on a challenging problem: dexterous interaction with articulated objects. PICA is clever — injects physical signals without tactile hardware. Code available at github.com/AIGeeksGroup/DragMesh-2. No real-robot experiments, but the simulation evaluation on contact-load robustness is thorough.",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": []
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-html",
+    "fulltext_url": "https://arxiv.org/html/2606.15133",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "1 Introduction",
+      "2 Related Work",
+      "3 Method",
+      "3.1 Contact-Driven Task Formulation",
+      "3.2 Physically Informed Contact-Aware Learning",
+      "3.3 Dataset",
+      "4 Experiments",
+      "5 Limitations and Future Work",
+      "6 Conclusion",
+      "Acknowledgments",
+      "References",
+      "Appendix A Additional Method Details",
+      "A.1 Observation and Control Details",
+      "A.2 Evaluation-Protocol Details",
+      "A.3 Reference Policy: Physical Signal Mechanism (PICA)",
+      "A.3.1 Physical-Plausibility Reward",
+      "A.3.2 Damping Randomization",
+      "A.3.3 Contact-History Temporal Encoder",
+      "A.3.4 Causal-Window Contact-Response Auxiliary Supervision",
+      "A.3.5 Policy Optimization",
+      "Appendix B Reference-Trajectory Generation and Dataset Construction",
+      "Appendix C Additional Experimental Results",
+      "C.1 Qualitative Simulation and Hardware Visualizations",
+      "C.2 Rollout-Level Diagnostics",
+      "C.3 OOD Damping Robustness",
+      "C.4 Limits of Extended Fine-Tuning",
+      "C.5 Limits of Damping-Distribution Expansion",
+      "C.6 Ablation Analysis",
+      "C.7 Summary of Diagnostic Findings",
+      "C.8 Relationship Between Physical Diagnostics and Temporal Encoding",
+      "C.9 Limitations",
+      "C.10 Future Work",
+      "Appendix D Implementation Details and Inference Settings",
+      "D.1 Task and Control Parameters",
+      "D.2 Reward and Termination Parameters",
+      "D.3 Auxiliary-Supervision Parameters",
+      "D.4 PPO Training Parameters",
+      "D.5 Damping Randomization and Inference",
+      "Instructions for reporting errors"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.15133"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.15133"
+    },
+    {
+      "type": "code",
+      "url": "https://github.com/AIGeeksGroup/DragMesh-2"
+    },
+    {
+      "type": "project",
+      "url": "https://aigeeksgroup.github.io/DragMesh-2"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Peking University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2606.15133",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/AIGeeksGroup/DragMesh-2",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://api.github.com/repos/AIGeeksGroup/DragMesh-2"
+    },
+    {
+      "kind": "project",
+      "url": "https://aigeeksgroup.github.io/DragMesh-2",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-28",
+      "resolved_url": "https://aigeeksgroup.github.io/DragMesh-2/"
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    },
+    {
+      "kind": "model",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "required-source-scan",
+      "evidence_source": "arxiv-abstract-fulltext-project-scan",
+      "checked_at": "2026-07-28",
+      "note": "No official address found after required source scan."
+    }
+  ]
+}

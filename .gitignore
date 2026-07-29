@@ -12,6 +12,11 @@
 workbench/downloads/
 workbench/notes/
 
+# Legacy root-level extraction artifacts; new runs must use workbench/
+/arxiv-*/
+/fetched_texts/
+/fetch_ar5iv.py
+
 # Website dependencies and build output
 site/node_modules/
 site/.next/
