@@ -1,0 +1,136 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.17522",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "RoboFlow4D: A Lightweight Flow World Model Toward Real-Time Flow-Guided Robotic Manipulation",
+  "title_zh": null,
+  "abstract": "Planning and acting in 3D environments is a fundamental capability for robotic manipulation in the real world. Although prior work has explored predictive flow planners to guide 3D manipulation, existing approaches often rely on modular pipelines stacking multiple submodels, resulting in high computational overhead and limited real-time performance. To address these challenges, we introduce RoboFlow4D, a lightweight flow world model that unifies perception and planning by estimating temporal motion in physical 3D space. As an end-to-end framework, RoboFlow4D directly predicts multi-frame 3D flows from visual observations and textual instructions, providing explicit flow-based planning to guide action generation. This design allows seamless integration with general action policies, forming an efficient observation-planning-execution closed loop. Through slow-fast collaboration between flow prediction and action control, RoboFlow4D enables real-time and resource-efficient manipulation. Extensive experiments in both simulation and real-world settings demonstrate that RoboFlow4D consistently improves manipulation success rates and computational efficiency, advancing flow-guided planning for embodied intelligence.",
+  "paper_url": "https://arxiv.org/abs/2605.17522",
+  "pdf_url": "https://arxiv.org/pdf/2605.17522",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Sixu Lin",
+      "affiliations": []
+    },
+    {
+      "name": "Junliang Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Huaiyuan Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Zhuohao Li",
+      "affiliations": []
+    },
+    {
+      "name": "Guangming Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Yixiong Jing",
+      "affiliations": []
+    },
+    {
+      "name": "Sheng Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Runyi Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Brian Sheil",
+      "affiliations": []
+    },
+    {
+      "name": "Lap-Pui Chau",
+      "affiliations": []
+    },
+    {
+      "name": "Guiliang Liu",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-05-17",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model",
+      "manipulation"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 79,
+    "selection_reason": "RoboFlow4D聚焦具身世界模型与机器人操作，方法、实验和结论已通过 HTML 全文复核；综合评分为 79/100；尚未核验到作者公开的核心复现资产。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产",
+      "论文 HTML 未提供可稳定解析的机构 affiliation，未按作者身份猜测团队"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.17522",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.17522"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.17522"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": []
+}

@@ -1,0 +1,150 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.31314",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "AR Forcing: Towards Long-Horizon Robot Navigation World Model",
+  "title_zh": null,
+  "abstract": "The diffusion based robot navigation world models are typically trained using parallel supervision, while autoregressive inference is employed during path planning. This results in a distribution shift between training and inference, which destabilizes the performance over long-horizon prediction. We propose AR Forcing, an autoregressive training strategy, which integrates the standard diffusion loss into the autoregressive training loop. At each step, the model uses its own predictions to update the context and optimize the single step noise prediction objective, thereby explicitly exposing the model to the inference state distribution during training. Our method does not require additional discriminators or distribution-matching losses, retains the original diffusion framework and sampler, and is easy to integrate. Experiments on multi-domain navigation datasets (RECON, SCAND, HuRoN, TartanDrive) show that compared with strong baselines, AR Forcing improved the consistency of generated images during long-horizon navigation and the accuracy of predicted trajectories, enhancing robustness of the model in complex known and unknown environments. We will release the code soon.",
+  "paper_url": "https://arxiv.org/abs/2605.31314",
+  "pdf_url": "https://arxiv.org/pdf/2605.31314",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yifei Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Zehua Fan",
+      "affiliations": []
+    },
+    {
+      "name": "Huan Li",
+      "affiliations": []
+    },
+    {
+      "name": "Aoqi Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Lida Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Haibao Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Haiyan Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Xuanyao Mao",
+      "affiliations": []
+    },
+    {
+      "name": "Jason Bao",
+      "affiliations": []
+    },
+    {
+      "name": "Liang Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Bingchuan Sun",
+      "affiliations": []
+    },
+    {
+      "name": "Yan Wang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-05-29",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model",
+      "navigation"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 77,
+    "selection_reason": "AR Forcing聚焦具身世界模型与具身导航，方法、实验和结论已通过 HTML 全文复核；综合评分为 77/100；尚未核验到作者公开的核心复现资产。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文声明后续开源，但当前未发现可访问的核心资产",
+      "论文 HTML 未提供可稳定解析的机构 affiliation，未按作者身份猜测团队"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.31314",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.31314"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.31314"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "announced",
+      "accessible": false,
+      "verification_method": "paper-statement",
+      "evidence_source": "paper-abstract",
+      "checked_at": "2026-07-29"
+    }
+  ]
+}

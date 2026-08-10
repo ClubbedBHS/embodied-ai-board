@@ -1,0 +1,138 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.23856",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Point Tracking Improves World Action Models",
+  "title_zh": null,
+  "abstract": "Robot policy learning benefits from world-action models that capture environment dynamics, but pixel-level prediction entangles dynamics with nuisance factors such as lighting and texture, making learned representations vulnerable to task-irrelevant visual variation. We propose JOPAT, a JOint Pixel-And-Track World-Action Model that predicts latent visual observations, 2D point tracks with visibility, and actions in a single denoising diffusion transformer. The key insight is that tracks provide an explicit representation of motion that captures long-horizon dynamics and remains robust under occlusion or partial out-of-frame motion, offering greater utility than modeling pixel appearance alone. On LIBERO and real-world LeRobot tasks, JOPAT improves over pixel-based baselines, with the largest gains on long-horizon tasks involving occlusion, object interaction, and off-screen motion.",
+  "paper_url": "https://arxiv.org/abs/2605.23856",
+  "pdf_url": "https://arxiv.org/pdf/2605.23856",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Jiarui Guan",
+      "affiliations": []
+    },
+    {
+      "name": "Wenshuai Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Yue Pei",
+      "affiliations": []
+    },
+    {
+      "name": "Ziliang Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Arno Solin",
+      "affiliations": []
+    },
+    {
+      "name": "Juho Kannala",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "beihanguniversity",
+      "name": "Beihang University",
+      "role": "primary"
+    },
+    {
+      "id": "sunyatsenuniversity",
+      "name": "Sun Yat-sen University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-22",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 86,
+    "selection_reason": "Point Tracking Improves World Action Models聚焦具身世界模型，方法、实验和结论已通过 HTML 全文复核；综合评分为 86/100；尚未核验到作者公开的核心复现资产。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.23856",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.23856"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.23856"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Beihang University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.23856",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Sun Yat-sen University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.23856",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": []
+}

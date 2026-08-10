@@ -1,0 +1,115 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.12347",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Real-Time Whole-Body Teleoperation of a Humanoid Robot Using IMU-Based Motion Capture with Sim2Sim and Sim2Real Validation",
+  "title_zh": null,
+  "abstract": "Stable, low-latency whole-body teleoperation of humanoid robots is an open research challenge, complicated by kinematic mismatches between human and robot morphologies, accumulated inertial sensor noise, non-trivial control latency, and persistent sim-to-real transfer gaps. This paper presents a complete real-time whole-body teleoperation system that maps human motion, recorded with a Virdyn IMU-based full-body motion capture suit, directly onto a Unitree G1 humanoid robot. We introduce a custom motion-processing, kinematic retargeting, and control pipeline engineered for continuous, low-latency operation without any offline buffering or learning-based components. The system is first validated in simulation using the MuJoCo physics model of the Unitree G1 (sim2sim), and then deployed without modification on the physical platform (sim2real). Experimental results demonstrate stable, synchronized reproduction of a broad motion repertoire, including walking, standing, sitting, turning, bowing, and coordinated expressive full-body gestures. This work establishes a practical, scalable framework for whole-body humanoid teleoperation using commodity wearable motion capture hardware.",
+  "paper_url": "https://arxiv.org/abs/2605.12347",
+  "pdf_url": "https://arxiv.org/pdf/2605.12347",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Hamza Ahmed Durrani",
+      "affiliations": []
+    },
+    {
+      "name": "Suleman Khan",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "wegorobotics",
+      "name": "WeGo Robotics",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-12",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "simulators"
+    ],
+    "topics": [
+      "manipulation",
+      "humanoid",
+      "simulators"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 70,
+    "selection_reason": "Real-Time Whole-Body Teleoperation of a Humanoid Robot Using IMU-Based Motion Capture with Sim2Sim and Sim2Real Validation聚焦机器人操作与人形机器人，方法、实验和结论已通过 HTML 全文复核；综合评分为 70/100；尚未核验到作者公开的核心复现资产。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产",
+      "主要证据来自仿真，真实部署外推仍需验证"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.12347",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.12347"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.12347"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "WeGo Robotics",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.12347",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": []
+}

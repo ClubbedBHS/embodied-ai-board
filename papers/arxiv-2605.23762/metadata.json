@@ -1,0 +1,176 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.23762",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Direct Dynamic Retargeting for Humanoid Imitation Learning from Videos",
+  "title_zh": null,
+  "abstract": "Imitation Learning from monocular video demonstrations provides a scalable approach for teaching complex skills to humanoid robots. However, translating human motion to humanoids requires overcoming significant morphological mismatches. Standard approaches rely on Geometric Retargeting or Indirect Dynamic Retargeting pipelines. We identify that these intermediate kinematic projections introduce a geometric bias, restricting the search space and yielding suboptimal dynamic behaviors. In this paper, we propose Direct Dynamic Retargeting (DDR), a novel single-stage framework that generates high-fidelity, dynamically feasible trajectories directly from expert videos. By formulating the problem in the task space and leveraging a sampling-based Model Predictive Control solver within a physics simulator, DDR natively optimizes over complex contact sequences while mitigating input drift. Our experiments demonstrate that bypassing the geometric bias allows DDR to outperform state-of-the-art baselines in demonstration tracking accuracy. Furthermore, we establish that providing such physically viable references to RL agents accelerates training convergence and enhances the final execution of agile and balancing behaviors. Source code will be made publicly available.",
+  "paper_url": "https://arxiv.org/abs/2605.23762",
+  "pdf_url": "https://arxiv.org/pdf/2605.23762",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Constant Roux",
+      "affiliations": []
+    },
+    {
+      "name": "Ludovic De Matteïs",
+      "affiliations": []
+    },
+    {
+      "name": "Armand Jordana",
+      "affiliations": []
+    },
+    {
+      "name": "Valentin Guillet",
+      "affiliations": []
+    },
+    {
+      "name": "Nicolas Mansard",
+      "affiliations": []
+    },
+    {
+      "name": "Olivier Stasse",
+      "affiliations": []
+    },
+    {
+      "name": "Philippe Souères",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "laascnrs",
+      "name": "LAAS-CNRS",
+      "role": "primary"
+    },
+    {
+      "id": "universitdetoulouse",
+      "name": "Université de Toulouse",
+      "role": "collaborator"
+    },
+    {
+      "id": "irtsaintexupry",
+      "name": "IRT Saint-Exupéry",
+      "role": "collaborator"
+    },
+    {
+      "id": "artificialandnaturalintelligencetoulouseinstitute",
+      "name": "Artificial and Natural Intelligence Toulouse Institute",
+      "role": "collaborator"
+    },
+    {
+      "id": "cnrs",
+      "name": "CNRS",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-22",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "robot-learning",
+      "humanoid"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 81,
+    "selection_reason": "Direct Dynamic Retargeting for Humanoid Imitation Learning from Videos聚焦机器人学习与人形机器人，方法、实验和结论已通过 HTML 全文复核；综合评分为 81/100；尚未核验到作者公开的核心复现资产。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.23762",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.23762"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.23762"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "LAAS-CNRS",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.23762",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Université de Toulouse",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.23762",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "IRT Saint-Exupéry",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.23762",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Artificial and Natural Intelligence Toulouse Institute",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.23762",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "CNRS",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.23762",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": []
+}

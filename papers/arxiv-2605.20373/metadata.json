@@ -1,0 +1,183 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.20373",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "SUGAR: A Scalable Human-Video-Driven Generalizable Humanoid Loco-Manipulation Learning Framework",
+  "title_zh": null,
+  "abstract": "Building humanoid robots capable of generalizable whole-body loco-manipulation in the real world remains a fundamental challenge. Existing methods either rely on laborious task-specific reward engineering, rigidly replay reference motions that fail to generalize, or depend on costly teleoperation that limits scalability. While human videos capture diverse human behaviors, motion priors inferred from them are inherently imperfect, suffering from occlusion, contact artifacts, and retargeting errors that render them unsuitable for direct policy learning. To address this, we present SUGAR, a scalable data-driven framework that converts diverse human videos into deployable humanoid loco-manipulation skills, without any task-specific reward engineering or reference-motion conditioning at inference. SUGAR proceeds in three stages. First, a fully automated pipeline extracts kinematic interaction priors including human-object motion trajectories and contact labels from unstructured human videos. Second, a privileged physics-based refiner uses a unified mimic reward and progressive state pool to transform imperfect priors into physically feasible, high-fidelity skills. Third, refined skills are distilled into a hierarchical autonomous policy consisting of a command generator and a command tracker. We evaluate SUGAR on six representative loco-manipulation tasks in simulation and real-world humanoid hardware. Our method substantially outperforms reference-tracking baselines, and performance scales clearly with the amount of human video data. It also achieves zero-shot real-world transfer with reliable closed-loop execution, autonomous failure recovery, and stable long-horizon performance under external perturbations. Project Page: https://tianshuwu.github.io/sugar-humanoid/",
+  "paper_url": "https://arxiv.org/abs/2605.20373",
+  "pdf_url": "https://arxiv.org/pdf/2605.20373",
+  "project_url": "https://tianshuwu.github.io/sugar-humanoid/",
+  "code_url": "https://github.com/tianshuwu/SUGAR",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Tianshu Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Xiangqi Kong",
+      "affiliations": []
+    },
+    {
+      "name": "Yue Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Qize Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Hang Ye",
+      "affiliations": []
+    },
+    {
+      "name": "Jia Li",
+      "affiliations": []
+    },
+    {
+      "name": "Yizhou Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Hao Dong",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "pekinguniversity",
+      "name": "Peking University",
+      "role": "primary"
+    },
+    {
+      "id": "beihanguniversity",
+      "name": "Beihang University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-19",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "topics": [
+      "manipulation",
+      "humanoid",
+      "infrastructure"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [
+      "project",
+      "code"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 90,
+    "selection_reason": "SUGAR聚焦机器人操作与人形机器人，方法、实验和结论已通过 HTML 全文复核；综合评分为 90/100；已核验项目页、代码链接。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前结论仍需在更多任务、平台或独立复现实验中验证"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.20373",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.20373"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.20373"
+    },
+    {
+      "type": "paper",
+      "url": "https://tianshuwu.github.io/sugar-humanoid/"
+    },
+    {
+      "type": "paper",
+      "url": "https://github.com/tianshuwu/SUGAR"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Peking University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.20373",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Beihang University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.20373",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://tianshuwu.github.io/sugar-humanoid/",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-abstract",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://tianshuwu.github.io/sugar-humanoid/"
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/tianshuwu/SUGAR",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://api.github.com/repos/tianshuwu/SUGAR"
+    }
+  ]
+}

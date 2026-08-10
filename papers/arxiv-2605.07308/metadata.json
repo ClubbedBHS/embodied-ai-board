@@ -1,0 +1,165 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.07308",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "AT-VLA: Adaptive Tactile Injection for Enhanced Feedback Reaction in Vision-Language-Action Models",
+  "title_zh": null,
+  "abstract": "Vision-Language-Action (VLA) models have significantly advanced the capabilities of robotic agents in executing diverse tasks; however, they still face challenges in contact-rich manipulation scenarios that require precise physical interactions. To address this limitation, recent studies have attempted to incorporate tactile signals during downstream tasks, enabling pretrained VLAs to interpret tactile feedback. Nevertheless, introducing new modalities during finetuning, which are rarely present in the pretrain stage, may disrupt the pretrained capabilities of VLAs. In addition, the inherently slow inference speed of VLAs hampers real-time responsiveness and limits the effective utilization of tactile feedback for action adjustment. To overcome these challenges, we propose Adaptive Tactile Vision-Language-Action (AT-VLA), which introduces a novel Adaptive Tactile Injection mechanism. This mechanism dynamically determines the appropriate timing and locations for tactile injection, incorporating only when it significantly contributes to action generation, thereby minimizing interference with pretrained representations. Furthermore, to enable rapid and accurate tactile responses, we propose a Tactile Reaction Dual-Stream mechanism, which decouples sensory processing into a slow visual-language stream for low-frequency perceptual reasoning and a fast tactile control stream for high-frequency physical interaction understanding, achieving real-time close-loop responses within 0.04 s. Real-world experiments thoroughly validate the effectiveness of AT-VLA in contact-rich manipulation tasks. The project page is available at: https://sites.google.com/view/at-vla.",
+  "paper_url": "https://arxiv.org/abs/2605.07308",
+  "pdf_url": "https://arxiv.org/pdf/2605.07308",
+  "project_url": "https://sites.google.com/view/at-vla",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Xiaoqi Li",
+      "affiliations": []
+    },
+    {
+      "name": "Muhe Cai",
+      "affiliations": []
+    },
+    {
+      "name": "Jiadong Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Juan Zhu",
+      "affiliations": []
+    },
+    {
+      "name": "Hongwei Fan",
+      "affiliations": []
+    },
+    {
+      "name": "Yan Shen",
+      "affiliations": []
+    },
+    {
+      "name": "Guangrui Ren",
+      "affiliations": []
+    },
+    {
+      "name": "Hao Dong",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "pekinguniversity",
+      "name": "Peking University",
+      "role": "primary"
+    },
+    {
+      "id": "primebot",
+      "name": "PrimeBot",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-08",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "dexterous"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [
+      "project"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 81,
+    "selection_reason": "AT-VLA聚焦视觉—语言—动作模型与灵巧操作，方法、实验和结论已通过 HTML 全文复核；综合评分为 81/100；已核验项目页链接。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.07308",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.07308"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.07308"
+    },
+    {
+      "type": "paper",
+      "url": "https://sites.google.com/view/at-vla"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Peking University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.07308",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "PrimeBot",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.07308",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://sites.google.com/view/at-vla",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-abstract",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fsites.google.com%2Fview%2Fat-vla&dsh=S354395081%3A1785310530656535&followup=https%3A%2F%2Fsites.google.com%2Fview%2Fat-vla&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=Ac50bxsC0fvvsly9KH2mm8VouXbOp-deADZYPk97-AUE-yNil39G1bh6X1Qco46uNRX14Rb6gv4s-A"
+    }
+  ]
+}

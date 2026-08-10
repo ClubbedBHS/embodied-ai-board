@@ -1,0 +1,143 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.12386",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "SafeManip: A Property-Driven Benchmark for Temporal Safety Evaluation in Robotic Manipulation",
+  "title_zh": null,
+  "abstract": "Robotic manipulation is typically evaluated by task success, but successful completion does not guarantee safe execution. Many safety failures are temporal: a robot may touch a clean surface after contamination or release an object before it is fully inside an enclosure. We introduce SafeManip, a property-driven benchmark to explicitly evaluate temporal safety properties in robotic manipulation, moving beyond prior evaluations that largely focus on task completion or per-state constraint violations. SafeManip defines reusable safety templates over finite executions using Linear Temporal Logic over finite traces (LTLf). It maps observed rollouts to symbolic predicate traces and evaluates them with LTLf-based monitors. Its property suite covers eight manipulation safety categories: collision and contact safety, grasp stability, release stability, cross-contamination, action onset, mechanism recovery, object containment, and enclosure access. Templates can be instantiated with task-specific objects, fixtures, regions, or skills, allowing the same safety specifications to generalize across tasks and environments. We evaluate SafeManip on six vision-language-action policies, including $\\pi_0$, $\\pi_{0.5}$, GR00T, and their training variants, across 50 RoboCasa365 household tasks. Results show that even strong models often behave unsafely. Task-success gains do not reliably translate into safer execution: many successful rollouts remain unsafe, while longer-horizon or more complex tasks expose more violations. SafeManip provides a reusable evaluation layer for diagnosing temporal safety failures and measuring safe success beyond task completion.",
+  "paper_url": "https://arxiv.org/abs/2605.12386",
+  "pdf_url": "https://arxiv.org/pdf/2605.12386",
+  "project_url": null,
+  "code_url": "https://github.com/chengyuehuang511/SafeManip",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Chengyue Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Khang Vo Huynh",
+      "affiliations": []
+    },
+    {
+      "name": "Sebastian Elbaum",
+      "affiliations": []
+    },
+    {
+      "name": "Zsolt Kira",
+      "affiliations": []
+    },
+    {
+      "name": "Lu Feng",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "georgiainstituteoftechnology",
+      "name": "Georgia Institute of Technology",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-12",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data"
+    ],
+    "topics": [
+      "manipulation",
+      "data"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [
+      "code"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "benchmark"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 89,
+    "selection_reason": "SafeManip聚焦机器人操作与数据与评测，方法、实验和结论已通过 HTML 全文复核；综合评分为 89/100；已核验代码链接。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前结论仍需在更多任务、平台或独立复现实验中验证"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.12386",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.12386"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.12386"
+    },
+    {
+      "type": "paper",
+      "url": "https://github.com/chengyuehuang511/SafeManip"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Georgia Institute of Technology",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.12386",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/chengyuehuang511/SafeManip",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "paper-visible-url",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://api.github.com/repos/chengyuehuang511/SafeManip"
+    }
+  ]
+}

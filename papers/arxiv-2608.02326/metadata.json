@@ -1,0 +1,192 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.02326",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "ChainVLA: Chaining Vision-Language-Action Queries through a Unified Execution State for Long-Horizon Manipulation",
+  "title_zh": "ChainVLA：通过统一执行状态串联长时程操作中的 VLA 查询",
+  "abstract": "Humans perform long-horizon manipulation by retaining knowledge of what earlier actions have established while continuously adapting the motion underway. By contrast, action-chunked vision-language-action (VLA) policies repeatedly replan from the current input at each query. Existing methods preserve either long-term task evidence through memory or short-term motion through action reuse and ensembling, leaving the cross-query handoff incomplete. We introduce ChainVLA, a 1.2B-parameter VLA policy that chains successive queries through a joint and revisable execution state. Progress Context combines a recurrent Working State with sparse event memory to carry observation-derived task progress, while Motion Tail feeds the preceding prediction’s unexecuted continuation into state construction and action generation. Together, the two components condition a decoder that regenerates each action horizon under the latest observation, allowing the carried state to guide the next prediction without fixing it. ChainVLA reaches 62.8% average success on RMBench and 98.8% across four LIBERO suites, while removing Motion Tail or Progress Context reduces RMBench success to 11.2% and 3.0%, respectively. These asymmetric ablations are consistent with motion continuity helping preserve the observation stream from which task progress is inferred.",
+  "paper_url": "https://arxiv.org/abs/2608.02326",
+  "pdf_url": "https://arxiv.org/pdf/2608.02326",
+  "project_url": "https://muqy1818.github.io/chainvla-web/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yuzhi Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Weijue Bu",
+      "affiliations": []
+    },
+    {
+      "name": "Ziyi Xiong",
+      "affiliations": []
+    },
+    {
+      "name": "Jie Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Fanding Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Jingyan Jiang",
+      "affiliations": []
+    },
+    {
+      "name": "Zhi Wang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "shenzhen-international-graduate-school-tsinghua-university",
+      "name": "Shenzhen International Graduate School, Tsinghua University",
+      "role": "primary"
+    },
+    {
+      "id": "china-university-of-mining-and-technology",
+      "name": "China University of Mining and Technology",
+      "role": "collaborator"
+    },
+    {
+      "id": "shenzhen-technology-university",
+      "name": "Shenzhen Technology University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-03",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "planning",
+      "control"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [],
+    "properties": [
+      "simulation-only"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 81,
+    "selection_reason": "把跨 action-chunk 查询的任务进度与未执行 motion tail 统一为可修订执行状态；RMBench 消融显示两条状态通路缺一都会大幅退化，并明确披露外部基线不可直接比较。",
+    "candidate_run": "2026-08-10-weekly-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-10",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "未发现可验证的官方代码仓库"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.02326",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, conclusion or limitations were reviewed in the complete arXiv HTML; first-page affiliations were verified from PDF where HTML omitted them.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-10"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.02326"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.02326"
+    },
+    {
+      "type": "affiliation",
+      "url": "https://arxiv.org/pdf/2608.02326"
+    },
+    {
+      "type": "project",
+      "url": "https://muqy1818.github.io/chainvla-web/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Shenzhen International Graduate School, Tsinghua University",
+      "source": "paper-pdf",
+      "url": "https://arxiv.org/pdf/2608.02326",
+      "location": "first-page affiliation block"
+    },
+    {
+      "organization": "China University of Mining and Technology",
+      "source": "paper-pdf",
+      "url": "https://arxiv.org/pdf/2608.02326",
+      "location": "first-page affiliation block"
+    },
+    {
+      "organization": "Shenzhen Technology University",
+      "source": "paper-pdf",
+      "url": "https://arxiv.org/pdf/2608.02326",
+      "location": "first-page affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://muqy1818.github.io/chainvla-web/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-fulltext",
+      "checked_at": "2026-08-10"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "source-scan",
+      "evidence_source": "paper-and-project-page",
+      "checked_at": "2026-08-10"
+    }
+  ]
+}

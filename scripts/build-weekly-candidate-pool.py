@@ -125,7 +125,56 @@ def parse_date(value):
     return datetime.strptime(value.strip(), "%a, %d %b %Y").date().isoformat()
 
 
-def parse_recent_page(source):
+def parse_entry_pairs(body, announced_at=None, announcement_month=None):
+    entries = []
+    for match in re.finditer(r"<dt>(.*?)</dt>\s*<dd>(.*?)</dd>", body, flags=re.S):
+        dt, dd = match.groups()
+        id_match = re.search(r"/abs/(\d{4}\.\d{4,5})", dt)
+        if not id_match:
+            continue
+        arxiv_id = id_match.group(1)
+        title_match = re.search(
+            r"<div class=['\"]list-title mathjax['\"]>(.*?)</div>", dd, flags=re.S
+        )
+        authors_match = re.search(
+            r"<div class=['\"]list-authors['\"]>(.*?)</div>", dd, flags=re.S
+        )
+        comments_match = re.search(
+            r"<div class=['\"]list-comments mathjax['\"]>(.*?)</div>", dd, flags=re.S
+        )
+        subjects_match = re.search(
+            r"<div class=['\"]list-subjects['\"]>(.*?)</div>", dd, flags=re.S
+        )
+        title = text_content(title_match.group(1) if title_match else "")
+        title = re.sub(r"^Title:\s*", "", title)
+        authors_html = authors_match.group(1) if authors_match else ""
+        authors = [
+            text_content(item)
+            for item in re.findall(r"<a [^>]*>(.*?)</a>", authors_html, flags=re.S)
+        ]
+        comments = text_content(comments_match.group(1) if comments_match else "")
+        comments = re.sub(r"^Comments:\s*", "", comments)
+        subjects = text_content(subjects_match.group(1) if subjects_match else "")
+        subjects = re.sub(r"^Subjects:\s*", "", subjects)
+        entries.append(
+            {
+                "id": f"arxiv-{arxiv_id}",
+                "arxiv_id": arxiv_id,
+                "title": title,
+                "paper_url": f"https://arxiv.org/abs/{arxiv_id}",
+                "fulltext_url": f"https://arxiv.org/html/{arxiv_id}",
+                "first_publication": announced_at,
+                "announcement_month": announcement_month,
+                "date_precision": "day" if announced_at else "month",
+                "authors": authors,
+                "comments": comments or None,
+                "subjects": subjects,
+            }
+        )
+    return entries
+
+
+def parse_arxiv_list_page(source, default_month=None):
     entries = []
     date_blocks = re.split(r"<h3>(.*?)</h3>", source, flags=re.S)
     for index in range(1, len(date_blocks), 2):
@@ -134,49 +183,9 @@ def parse_recent_page(source):
         if not date_match:
             continue
         announced_at = parse_date(date_match.group(1))
-        body = date_blocks[index + 1]
-        for match in re.finditer(r"<dt>(.*?)</dt>\s*<dd>(.*?)</dd>", body, flags=re.S):
-            dt, dd = match.groups()
-            id_match = re.search(r"/abs/(\d{4}\.\d{4,5})", dt)
-            if not id_match:
-                continue
-            arxiv_id = id_match.group(1)
-            title_match = re.search(
-                r"<div class=['\"]list-title mathjax['\"]>(.*?)</div>", dd, flags=re.S
-            )
-            authors_match = re.search(
-                r"<div class=['\"]list-authors['\"]>(.*?)</div>", dd, flags=re.S
-            )
-            comments_match = re.search(
-                r"<div class=['\"]list-comments mathjax['\"]>(.*?)</div>", dd, flags=re.S
-            )
-            subjects_match = re.search(
-                r"<div class=['\"]list-subjects['\"]>(.*?)</div>", dd, flags=re.S
-            )
-            title = text_content(title_match.group(1) if title_match else "")
-            title = re.sub(r"^Title:\s*", "", title)
-            authors_html = authors_match.group(1) if authors_match else ""
-            authors = [
-                text_content(item)
-                for item in re.findall(r"<a [^>]*>(.*?)</a>", authors_html, flags=re.S)
-            ]
-            comments = text_content(comments_match.group(1) if comments_match else "")
-            comments = re.sub(r"^Comments:\s*", "", comments)
-            subjects = text_content(subjects_match.group(1) if subjects_match else "")
-            subjects = re.sub(r"^Subjects:\s*", "", subjects)
-            entries.append(
-                {
-                    "id": f"arxiv-{arxiv_id}",
-                    "arxiv_id": arxiv_id,
-                    "title": title,
-                    "paper_url": f"https://arxiv.org/abs/{arxiv_id}",
-                    "fulltext_url": f"https://arxiv.org/html/{arxiv_id}",
-                    "first_publication": announced_at,
-                    "authors": authors,
-                    "comments": comments or None,
-                    "subjects": subjects,
-                }
-            )
+        entries.extend(parse_entry_pairs(date_blocks[index + 1], announced_at=announced_at))
+    if not entries and default_month:
+        entries = parse_entry_pairs(source, announcement_month=default_month)
     return entries
 
 
@@ -218,6 +227,33 @@ def classify(entry):
     return triage_score, topics, sections
 
 
+def normalize_identity(value):
+    return " ".join((value or "").casefold().split())
+
+
+def build_author_watchlist(watchlist):
+    identities = {}
+    for author in watchlist.get("authors", []):
+        author_id = author.get("id") or re.sub(
+            r"[^a-z0-9]+", "-", normalize_identity(author.get("name"))
+        ).strip("-")
+        for name in [author.get("name"), *author.get("aliases", [])]:
+            normalized = normalize_identity(name)
+            if normalized:
+                identities[normalized] = f"author:{author_id}"
+    return identities
+
+
+def watchlist_matches(entry, author_watchlist):
+    return sorted(
+        {
+            author_watchlist[normalize_identity(author)]
+            for author in entry.get("authors", [])
+            if normalize_identity(author) in author_watchlist
+        }
+    )
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--source-html", required=True)
@@ -226,32 +262,60 @@ def main():
     parser.add_argument("--run-date", required=True)
     parser.add_argument("--window-start", required=True)
     parser.add_argument("--window-end", required=True)
+    parser.add_argument("--default-month")
+    parser.add_argument("--run-id")
+    parser.add_argument(
+        "--source-label", default="arXiv official cs.RO pastweek submissions page"
+    )
+    parser.add_argument("--report-title", default="本周最新论文初筛")
     parser.add_argument("--limit", type=int, default=40)
+    parser.add_argument(
+        "--watchlist",
+        help="Watchlist JSON; defaults to <project-root>/config/watchlist.json",
+    )
     args = parser.parse_args()
 
     project = Path(args.project_root)
     output = Path(args.output_dir)
     output.mkdir(parents=True, exist_ok=True)
     existing = {path.parent.name for path in (project / "papers").glob("*/metadata.json")}
+    watchlist_path = Path(args.watchlist) if args.watchlist else project / "config/watchlist.json"
+    watchlist = json.loads(watchlist_path.read_text())
+    author_watchlist = build_author_watchlist(watchlist)
 
-    entries = parse_recent_page(Path(args.source_html).read_text())
+    entries = parse_arxiv_list_page(
+        Path(args.source_html).read_text(), default_month=args.default_month
+    )
     entries = [
         item
         for item in entries
-        if args.window_start <= item["first_publication"] <= args.window_end
+        if (
+            item["first_publication"]
+            and args.window_start <= item["first_publication"] <= args.window_end
+        )
+        or (
+            not item["first_publication"]
+            and item["announcement_month"]
+            and args.window_start[:7] <= item["announcement_month"] <= args.window_end[:7]
+        )
     ]
-    announcement_dates = sorted({item["first_publication"] for item in entries})
+    announcement_dates = sorted(
+        {item["first_publication"] for item in entries if item["first_publication"]}
+    )
 
     pool = []
     for entry in entries:
         triage_score, topics, sections = classify(entry)
+        matches = watchlist_matches(entry, author_watchlist)
         if triage_score < 4 or not sections:
             continue
         entry.update(
             {
                 "already_on_board": entry["id"] in existing,
-                "discovered_via": ["arxiv-cs.RO-recent"],
-                "watchlist_matches": [],
+                "discovered_via": [
+                    "arxiv-cs.RO-monthly" if args.default_month else "arxiv-cs.RO-recent"
+                ],
+                "watchlist_matches": matches,
                 "source_scope": "title-and-metadata",
                 "triage_score": triage_score,
                 "triage_topics": topics,
@@ -267,26 +331,27 @@ def main():
     pool.sort(
         key=lambda item: (
             item["already_on_board"],
+            not bool(item["watchlist_matches"]),
             -item["triage_score"],
-            item["first_publication"],
+            item["first_publication"] or item["announcement_month"] or "",
             item["id"],
         )
     )
     pending = [item for item in pool if not item["already_on_board"]][: args.limit]
     payload = {
         "run": {
-            "run_id": f"{args.run_date}-weekly-01",
+            "run_id": args.run_id or f"{args.run_date}-weekly-01",
             "stage": "discovery-triage",
             "run_at": args.run_date,
             "window_start": args.window_start,
             "window_end": args.window_end,
-            "sources_checked": ["arXiv official cs.RO pastweek submissions page"],
+            "sources_checked": [args.source_label],
             "source_entry_count": len(entries),
             "announcement_dates_observed": announcement_dates,
             "triage_match_count": len(pool),
             "queued_for_abstract_review": len(pending),
             "rubric_version": "0.1",
-            "watchlist_version": "0.1",
+            "watchlist_version": watchlist.get("version", "unknown"),
             "note": (
                 "triage_score 只用于安排摘要和全文阅读顺序，不是论文质量分；"
                 "候选尚未通过硬门槛，不可直接发布。"
@@ -303,14 +368,18 @@ def main():
         for section in item["suggested_sections"]:
             section_counts[section] = section_counts.get(section, 0) + 1
     report = [
-        f"# 本周最新论文初筛（{args.window_start}—{args.window_end}）",
+        f"# {args.report_title}（{args.window_start}—{args.window_end}）",
         "",
         "> 当前只完成官方列表抓取、去重和标题级宽松初筛；尚未读取摘要/全文，也没有产生 selection-rubric 质量分。",
         "",
         "## 发现漏斗",
         "",
-        f"- arXiv cs.RO 官方最近提交：{len(entries)} 条",
-        f'- 页面实际覆盖公告日：{", ".join(announcement_dates)}',
+        f"- arXiv cs.RO 官方列表：{len(entries)} 条",
+        (
+            f'- 页面实际覆盖公告日：{", ".join(announcement_dates)}'
+            if announcement_dates
+            else f"- 月度列表日期精度：{args.default_month}；精确日期将在摘要页复核时补齐"
+        ),
         f"- 标题级相关性命中：{len(pool)} 条",
         f"- 进入摘要复核队列：{len(pending)} 条",
         f"- 与当前 {len(existing)} 篇论文库去重后：{len(pending)} 条待复核",
@@ -319,9 +388,16 @@ def main():
         "",
     ]
     for index, item in enumerate(pending, 1):
+        watchlist_note = (
+            f'；观察名单：{", ".join(item["watchlist_matches"])}'
+            if item["watchlist_matches"]
+            else ""
+        )
         report.append(
             f'{index}. [{item["title"]}]({item["paper_url"]})'
-            f' — {item["first_publication"]}；初筛主题：{", ".join(item["triage_topics"])}'
+            f' — {item["first_publication"] or item["announcement_month"]}'
+            f'；初筛主题：{", ".join(item["triage_topics"])}'
+            f'{watchlist_note}'
         )
     report += [
         "",

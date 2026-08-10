@@ -1,0 +1,372 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.17912",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "WorldArena 2.0: Extending Embodied World Model Benchmarking on Modality, Functionality and Platform",
+  "title_zh": null,
+  "abstract": "World models have emerged as a central paradigm for embodied intelligence, enabling agents to predict action-conditioned future and reason about environmental dynamics. However, existing embodied world model benchmarks are still largely confined to vision-only prediction, offline embodied applications, and simulator-based evaluation, making them insufficient for assessing increasingly comprehensive world models. In this work, we introduce WorldArena 2.0, an expanded benchmark that systematically broadens embodied world model evaluation along three dimensions: modality, functionality, and platform. Along the modality dimension, WorldArena 2.0 extends evaluation from vision-only to visuotactile modalities, enabling assessment of multimodal perception and prediction. Along the functionality dimension, it extends beyond policy evaluation and planning to assess world models as interactive RL environments for policy optimization. Along the platform dimension, it moves beyond simulator-only evaluation to a diverse suite of simulated and real-world robotic settings across multiple embodiments. Under a standardized protocol, WorldArena 2.0 comprehensively evaluates perceptual quality, interactive utility, and cross-platform performance, providing a comprehensive testbed for tracking progress toward embodied world models. The benchmark is available at: https://world-arena.ai.",
+  "paper_url": "https://arxiv.org/abs/2605.17912",
+  "pdf_url": "https://arxiv.org/pdf/2605.17912",
+  "project_url": "https://world-arena.ai",
+  "code_url": "https://github.com/tsinghua-fib-lab/WorldArena",
+  "dataset_url": "https://huggingface.co/datasets/WorldArena/WorldArena_Robotwin2.0",
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yu Shang",
+      "affiliations": []
+    },
+    {
+      "name": "Yinzhou Tang",
+      "affiliations": []
+    },
+    {
+      "name": "Yiding Ma",
+      "affiliations": []
+    },
+    {
+      "name": "Zhuohang Li",
+      "affiliations": []
+    },
+    {
+      "name": "Lei Jin",
+      "affiliations": []
+    },
+    {
+      "name": "Weikang Su",
+      "affiliations": []
+    },
+    {
+      "name": "Xin Jin",
+      "affiliations": []
+    },
+    {
+      "name": "Zhaolu Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Ziyou Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Xin Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Haisheng Su",
+      "affiliations": []
+    },
+    {
+      "name": "Weizhen He",
+      "affiliations": []
+    },
+    {
+      "name": "Wei Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Haoyi Duan",
+      "affiliations": []
+    },
+    {
+      "name": "Gordon Wetzstein",
+      "affiliations": []
+    },
+    {
+      "name": "Xihui Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Dhruv Shah",
+      "affiliations": []
+    },
+    {
+      "name": "Zhaoxiang Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Zhibo Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Jun Zhu",
+      "affiliations": []
+    },
+    {
+      "name": "Yonghong Tian",
+      "affiliations": []
+    },
+    {
+      "name": "Tat-Seng Chua",
+      "affiliations": []
+    },
+    {
+      "name": "Wenwu Zhu",
+      "affiliations": []
+    },
+    {
+      "name": "Chen Gao",
+      "affiliations": []
+    },
+    {
+      "name": "Yong Li",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "tsinghuauniversity",
+      "name": "Tsinghua University",
+      "role": "primary"
+    },
+    {
+      "id": "shanghaijiaotonguniversity",
+      "name": "Shanghai Jiao Tong University",
+      "role": "collaborator"
+    },
+    {
+      "id": "zhejianguniversity",
+      "name": "Zhejiang University",
+      "role": "collaborator"
+    },
+    {
+      "id": "stanforduniversity",
+      "name": "Stanford University",
+      "role": "collaborator"
+    },
+    {
+      "id": "theuniversityofhongkong",
+      "name": "The University of Hong Kong",
+      "role": "collaborator"
+    },
+    {
+      "id": "princetonuniversity",
+      "name": "Princeton University",
+      "role": "collaborator"
+    },
+    {
+      "id": "chineseacademyofsciences",
+      "name": "Chinese Academy of Sciences",
+      "role": "collaborator"
+    },
+    {
+      "id": "universityofscienceandtechnologyofchina",
+      "name": "University of Science and Technology of China",
+      "role": "collaborator"
+    },
+    {
+      "id": "pekinguniversity",
+      "name": "Peking University",
+      "role": "collaborator"
+    },
+    {
+      "id": "nationaluniversityofsingapore",
+      "name": "National University of Singapore",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-18",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "topics": [
+      "world-model",
+      "data",
+      "infrastructure"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [
+      "project",
+      "code",
+      "project",
+      "data"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "benchmark"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 94,
+    "selection_reason": "WorldArena 2.0聚焦具身世界模型与数据与评测，方法、实验和结论已通过 HTML 全文复核；综合评分为 94/100；已核验项目页、代码、数据链接。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前结论仍需在更多任务、平台或独立复现实验中验证"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.17912",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.17912"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.17912"
+    },
+    {
+      "type": "paper",
+      "url": "https://world-arena.ai"
+    },
+    {
+      "type": "paper",
+      "url": "https://github.com/tsinghua-fib-lab/WorldArena"
+    },
+    {
+      "type": "paper",
+      "url": "https://huggingface.co/spaces/WorldArena/WorldArena"
+    },
+    {
+      "type": "paper",
+      "url": "https://huggingface.co/datasets/WorldArena/WorldArena_Robotwin2.0"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Tsinghua University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.17912",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Shanghai Jiao Tong University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.17912",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Zhejiang University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.17912",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Stanford University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.17912",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "The University of Hong Kong",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.17912",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Princeton University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.17912",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Chinese Academy of Sciences",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.17912",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University of Science and Technology of China",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.17912",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Peking University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.17912",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "National University of Singapore",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.17912",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://world-arena.ai",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-abstract",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://world-arena.ai"
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/tsinghua-fib-lab/WorldArena",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://api.github.com/repos/tsinghua-fib-lab/WorldArena"
+    },
+    {
+      "kind": "project",
+      "url": "https://huggingface.co/spaces/WorldArena/WorldArena",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://huggingface.co/api/spaces/WorldArena/WorldArena"
+    },
+    {
+      "kind": "data",
+      "url": "https://huggingface.co/datasets/WorldArena/WorldArena_Robotwin2.0",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://huggingface.co/api/datasets/WorldArena/WorldArena_Robotwin2.0"
+    }
+  ]
+}

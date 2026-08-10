@@ -1,0 +1,200 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.13083",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "TouchAnything: A Dataset and Framework for Bimanual Tactile Estimation from Egocentric Video",
+  "title_zh": null,
+  "abstract": "Egocentric human video data, which captures rich human-environment interactions and can be collected at scale, has become a key driver of embodied intelligence research. However, existing egocentric datasets typically lack tactile sensing, a critical modality that provides direct cues about contact, force, and pressure in human-object interaction. Without such signals, models struggle to learn physically grounded representations of real-world interaction dynamics. While tactile sensors provide these cues, deploying high-quality tactile hardware at scale remains expensive and cumbersome. This raises a central question: can tactile feedback be inferred directly from visual observations, enabling scalable tactile supervision for egocentric video data and supporting physically grounded embodied learning? To enable research in this direction, we introduce EgoTouch, a large-scale multi-view egocentric dataset with dense tactile supervision for bimanual hand-object interaction. EgoTouch comprises 208 manipulation tasks spanning 1,891 episodes in diverse indoor and outdoor environments, with synchronized multi-view RGB (head-mounted egocentric and dual wrist-mounted cameras), bimanual 3D hand pose, and continuous pressure maps from wearable tactile sensors. Building on EgoTouch, we introduce TouchAnything, a baseline multi-view vision-to-touch prediction framework that uses the egocentric view as the primary input and flexibly leverages available wrist-mounted views at inference time. Experiments show that incorporating wrist-mounted views generally improves tactile prediction over egocentric-only input, achieving up to 5.0% relative improvement in Contact IoU and 6.1% relative improvement in Volumetric IoU. We will publicly release the dataset, code, and benchmark.",
+  "paper_url": "https://arxiv.org/abs/2605.13083",
+  "pdf_url": "https://arxiv.org/pdf/2605.13083",
+  "project_url": "https://jianyi2004.github.io/TouchAnything-Website/",
+  "code_url": "https://github.com/Jianyi2004/TouchAnything",
+  "dataset_url": "https://huggingface.co/datasets/zhouzhoujy/EgoTouch/tree/main",
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Jianyi Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Ziteng Gao",
+      "affiliations": []
+    },
+    {
+      "name": "Feiyang Hong",
+      "affiliations": []
+    },
+    {
+      "name": "Zirui Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Guannan Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Weisheng Dai",
+      "affiliations": []
+    },
+    {
+      "name": "Ruichen Zhen",
+      "affiliations": []
+    },
+    {
+      "name": "Chuqiao Lyu",
+      "affiliations": []
+    },
+    {
+      "name": "Haotian Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Yinian Mao",
+      "affiliations": []
+    },
+    {
+      "name": "Xushi Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Yuxiang Jiang",
+      "affiliations": []
+    },
+    {
+      "name": "Wenbo Ding",
+      "affiliations": []
+    },
+    {
+      "name": "Shuo Yang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-05-13",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "topics": [
+      "dexterous",
+      "data",
+      "infrastructure"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [
+      "project",
+      "code",
+      "data"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 85,
+    "selection_reason": "TouchAnything聚焦灵巧操作与数据与评测，方法、实验和结论已通过 HTML 全文复核；综合评分为 85/100；已核验项目页、代码、数据链接。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文 HTML 未提供可稳定解析的机构 affiliation，未按作者身份猜测团队"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.13083",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.13083"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.13083"
+    },
+    {
+      "type": "paper",
+      "url": "https://jianyi2004.github.io/TouchAnything-Website/"
+    },
+    {
+      "type": "paper",
+      "url": "https://github.com/Jianyi2004/TouchAnything"
+    },
+    {
+      "type": "paper",
+      "url": "https://huggingface.co/datasets/zhouzhoujy/EgoTouch/tree/main"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://jianyi2004.github.io/TouchAnything-Website/",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://jianyi2004.github.io/TouchAnything-Website/"
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/Jianyi2004/TouchAnything",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://api.github.com/repos/Jianyi2004/TouchAnything"
+    },
+    {
+      "kind": "data",
+      "url": "https://huggingface.co/datasets/zhouzhoujy/EgoTouch/tree/main",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://huggingface.co/api/datasets/zhouzhoujy/EgoTouch"
+    }
+  ]
+}

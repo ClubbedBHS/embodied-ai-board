@@ -1,0 +1,179 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.20774",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models",
+  "title_zh": null,
+  "abstract": "Vision-Language-Action (VLA) models have shown strong promise for general-purpose robotic manipulation, but their real-world evaluation remains limited by a lack of accessible, reproducible, and consistent benchmarks. Simulation benchmarks fail to capture real-world complexity, while existing real-world benchmarks often require expensive hardware, centralized evaluation, or are limited in task diversity. We introduce VLA-REPLICA, a low-cost, easily reproducible real-world benchmark for evaluating VLA models. Built from off-the-shelf components, our system can be quickly assembled and replicated across laboratories, providing a consistent environment for policy evaluation anywhere in the world. VLA-REPLICA includes a diverse suite of manipulation tasks and a small-scale demonstration dataset for target-domain adaptation, with real-world evaluation protocols for both in-distribution and out-of-distribution settings. Experiments with imitation learning and state-of-the-art VLA models reveal model strengths and limitations, while consistent results across independently constructed setups demonstrate the reproducibility of our benchmark.",
+  "paper_url": "https://arxiv.org/abs/2605.20774",
+  "pdf_url": "https://arxiv.org/pdf/2605.20774",
+  "project_url": "https://irvlutd.github.io/VLAReplica/",
+  "code_url": "https://github.com/IRVLUTD/VLAReplica",
+  "dataset_url": "https://huggingface.co/datasets/HenryZhang/VLAReplica_SFT_data",
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Alex S. Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Jiahui Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Shiqing Tang",
+      "affiliations": []
+    },
+    {
+      "name": "Yu Xiang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "universityoftexasatdallas",
+      "name": "University of Texas at Dallas",
+      "role": "primary"
+    },
+    {
+      "id": "allenhighschool",
+      "name": "Allen High School",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-20",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data"
+    ],
+    "topics": [
+      "vla",
+      "data"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [
+      "project",
+      "code",
+      "data"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "benchmark"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 90,
+    "selection_reason": "VLA-REPLICA聚焦视觉—语言—动作模型与数据与评测，方法、实验和结论已通过 HTML 全文复核；综合评分为 90/100；已核验项目页、代码、数据链接。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前结论仍需在更多任务、平台或独立复现实验中验证"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.20774",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.20774"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.20774"
+    },
+    {
+      "type": "paper",
+      "url": "https://irvlutd.github.io/VLAReplica/"
+    },
+    {
+      "type": "paper",
+      "url": "https://github.com/IRVLUTD/VLAReplica"
+    },
+    {
+      "type": "paper",
+      "url": "https://huggingface.co/datasets/HenryZhang/VLAReplica_SFT_data"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "University of Texas at Dallas",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.20774",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Allen High School",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.20774",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://irvlutd.github.io/VLAReplica/",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-html",
+      "checked_at": "2026-07-29",
+      "http_status": 200
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/IRVLUTD/VLAReplica",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get-after-github-api-rate-limit",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200
+    },
+    {
+      "kind": "data",
+      "url": "https://huggingface.co/datasets/HenryZhang/VLAReplica_SFT_data",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200
+    }
+  ]
+}

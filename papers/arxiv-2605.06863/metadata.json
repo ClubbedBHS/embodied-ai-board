@@ -1,0 +1,194 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.06863",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Bi3: A Biplatform, Bicultural, Biperson Dataset for Social Robot Navigation",
+  "title_zh": null,
+  "abstract": "We contribute Bi3, a dataset of social robot navigation among groups of people in a constrained lab space. Compared to prior data collection efforts for social robot navigation, our dataset is unique in that it features: an original experiment design giving rise to close navigation encounters between two humans and a robot; five different navigation algorithms; two different robot platforms; a diverse participant pool of 74 people recruited from two sites in the USA and France; multimodal data streams including 10.5 hours of human and robot ground-truth motion tracks, RGB video, and user impressions over robot performance. Our analysis of the collected dataset through metrics like interaction density and human velocity suggests that Bi3 represents a benchmark of unique diversity and modeling complexity. Bi3 contributes towards understanding how humans and robots can productively mesh their activities in constrained environments, and can be a resource for training models of human motion prediction and robot control policies for navigation in densely crowded spaces.",
+  "paper_url": "https://arxiv.org/abs/2605.06863",
+  "pdf_url": "https://arxiv.org/pdf/2605.06863",
+  "project_url": "https://fluentrobotics.com/bi3dataset/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Andrew Stratton",
+      "affiliations": []
+    },
+    {
+      "name": "Phani Teja Singamaneni",
+      "affiliations": []
+    },
+    {
+      "name": "Pranav Goyal",
+      "affiliations": []
+    },
+    {
+      "name": "Rachid Alami",
+      "affiliations": []
+    },
+    {
+      "name": "Christoforos Mavrogiannis",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "universityofmichigan",
+      "name": "University of Michigan",
+      "role": "primary"
+    },
+    {
+      "id": "laascnrs",
+      "name": "LAAS-CNRS",
+      "role": "collaborator"
+    },
+    {
+      "id": "inria",
+      "name": "Inria",
+      "role": "collaborator"
+    },
+    {
+      "id": "cnrs",
+      "name": "CNRS",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-07",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data",
+      "infrastructure"
+    ],
+    "topics": [
+      "navigation",
+      "data",
+      "infrastructure"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [
+      "project",
+      "project"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 78,
+    "selection_reason": "Bi3聚焦具身导航与数据与评测，方法、实验和结论已通过 HTML 全文复核；综合评分为 78/100；已核验项目页链接。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.06863",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.06863"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.06863"
+    },
+    {
+      "type": "paper",
+      "url": "https://fluentrobotics.com/bi3dataset/"
+    },
+    {
+      "type": "paper",
+      "url": "https://www.dropbox.com/scl/fo/ix27cqjcknemh01u9i2f3/ANbzit4ZiK9FsnAVKGiWai0?rlkey=b4pg0n0m1wjf3j5d6g8z3eqkb&st=ol52lejh&dl=0"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "University of Michigan",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.06863",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "LAAS-CNRS",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.06863",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Inria",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.06863",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "CNRS",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.06863",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://fluentrobotics.com/bi3dataset/",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-affiliation-block",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://fluentrobotics.com/bi3dataset/"
+    },
+    {
+      "kind": "project",
+      "url": "https://www.dropbox.com/scl/fo/ix27cqjcknemh01u9i2f3/ANbzit4ZiK9FsnAVKGiWai0?rlkey=b4pg0n0m1wjf3j5d6g8z3eqkb&st=ol52lejh&dl=0",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://www.dropbox.com/scl/fo/ix27cqjcknemh01u9i2f3/ANbzit4ZiK9FsnAVKGiWai0?rlkey=b4pg0n0m1wjf3j5d6g8z3eqkb&st=ol52lejh&dl=0"
+    }
+  ]
+}

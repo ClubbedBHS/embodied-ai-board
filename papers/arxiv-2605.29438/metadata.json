@@ -1,0 +1,172 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.29438",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "ElegantVLA: Learning When to Think for Efficient Vision-Language-Action Models",
+  "title_zh": null,
+  "abstract": "Vision-Language-Action (VLA) models are a powerful paradigm for generalist robotic control. However, their high computational cost and limited control frequency hinder real-time robotic manipulation, especially when large vision-language backbones and iterative action heads run at every control step. Existing VLA acceleration methods often optimize individual components or rely on fixed acceleration rules, treating different control steps with largely fixed computation and overlooking the non-uniform reasoning demands of sequential embodied control. Inspired by human motor control, where cognitive and feedback resources concentrate on goal-sensitive stages, we argue that VLA models should learn when to invest full computation and when to reuse prior computation. We propose ElegantVLA, a plug-in phase-adaptive inference framework that accelerates VLA models through intra-model dynamic compute scheduling. ElegantVLA introduces a lightweight scheduler that observes temporal representation similarity, robot-motion cues, and episode progress to jointly allocate computation across the vision encoder, LLM, and action head. For perception-language reasoning, the scheduler selects a five-level Vision-LLM compute mode, from full recomputation to multi-step temporal reuse, based on visual-language representation stability. For action generation, it selects a three-level denoising mode, reusing intermediate denoising states during stable motion while preserving full refinement for goal-sensitive stages. By coordinating these decisions, ElegantVLA offers a general acceleration framework for modern VLA pipelines with explicit action-generation modules, without modifying or retraining the base model. Experiments on GR00T and CogACT achieve up to 2.55x and 3.77x speedup, and on six real-world GR00T tasks ElegantVLA cuts computation by 2.18x while raising control frequency from 13.8 Hz to 26.3 Hz.",
+  "paper_url": "https://arxiv.org/abs/2605.29438",
+  "pdf_url": "https://arxiv.org/pdf/2605.29438",
+  "project_url": "https://anonymous.4open.science/w/elegantvla/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Ye Li",
+      "affiliations": []
+    },
+    {
+      "name": "Huanan Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Kangye Ji",
+      "affiliations": []
+    },
+    {
+      "name": "Yuan Meng",
+      "affiliations": []
+    },
+    {
+      "name": "Jiajun Fan",
+      "affiliations": []
+    },
+    {
+      "name": "Yuansong Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Shiyu Qin",
+      "affiliations": []
+    },
+    {
+      "name": "Chenglei Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Shu-Tao Xia",
+      "affiliations": []
+    },
+    {
+      "name": "Zhi Wang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "tsinghuauniversity",
+      "name": "Tsinghua University",
+      "role": "primary"
+    },
+    {
+      "id": "universityofillinois",
+      "name": "University of Illinois",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-28",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [
+      "project"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 78,
+    "selection_reason": "ElegantVLA聚焦视觉—语言—动作模型，方法、实验和结论已通过 HTML 全文复核；综合评分为 78/100；已核验项目页链接。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.29438",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.29438"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.29438"
+    },
+    {
+      "type": "paper",
+      "url": "https://anonymous.4open.science/w/elegantvla/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Tsinghua University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.29438",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University of Illinois",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.29438",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://anonymous.4open.science/w/elegantvla/",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-link",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://anonymous.4open.science/w/elegantvla/"
+    }
+  ]
+}

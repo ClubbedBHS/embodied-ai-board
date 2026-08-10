@@ -1,0 +1,137 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.17204",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Event-Grounded Sparse Autoencoders for Vision-Language-Action Policies",
+  "title_zh": null,
+  "abstract": "Vision-Language-Action (VLA) policies translate language and visual inputs into robot actions, where their hidden representations directly shape closed-loop behavior. However, mechanistic interpretability tools from language and vision-language models do not transfer cleanly to VLAs: outputs are robot actions rather than human-readable tokens, and interventions can only be tested via expensive closed-loop rollouts. We propose an event-grounded interpretability pipeline that anchors SAE feature analysis to behavioral events rather than text contexts. End-effector keyframes are clustered within each task using visual, state, and temporal cues, linking SAE features to behaviorally salient events and, via optional VLM annotations, to semantic context. To our knowledge, our pipeline is among the first to ground SAE-based VLA analysis in closed-loop behavioral events. Across two simulation architectures and a real-robot study, event-grounded ranking yields the strongest causal effects on OpenVLA and transfers to the continuous action chunks of $\\pi_{0.5}$. SAE is a sparse but imperfect intervention basis: usability varies with architecture and intervention site, and aggressive intervention reveals safety and interpretability limits. Overall, event-grounded SAE analysis emerges as a practical starting point for behavior-anchored VLA interpretability, motivating future work on SAE features beyond action-aligned coordinates, finer-grained closed-loop evaluation, and safe interventions for high-stakes VLA deployments. Code is available at \\url{https://github.com/xc-j/Event-SAE}.",
+  "paper_url": "https://arxiv.org/abs/2605.17204",
+  "pdf_url": "https://arxiv.org/pdf/2605.17204",
+  "project_url": null,
+  "code_url": "https://github.com/xc-j/Event-SAE",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Xinchen Jin",
+      "affiliations": []
+    },
+    {
+      "name": "Aditya Chatterjee",
+      "affiliations": []
+    },
+    {
+      "name": "Pranav Kumar",
+      "affiliations": []
+    },
+    {
+      "name": "Rohan Paleja",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "purdueuniversity",
+      "name": "Purdue University",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-17",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [
+      "code"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 81,
+    "selection_reason": "Event-Grounded Sparse Autoencoders for Vision-Language-Action Policies聚焦视觉—语言—动作模型，方法、实验和结论已通过 HTML 全文复核；综合评分为 81/100；已核验代码链接。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "主要证据来自仿真，真实部署外推仍需验证"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.17204",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.17204"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.17204"
+    },
+    {
+      "type": "paper",
+      "url": "https://github.com/xc-j/Event-SAE"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Purdue University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.17204",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/xc-j/Event-SAE",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "paper-abstract",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://api.github.com/repos/xc-j/Event-SAE"
+    }
+  ]
+}

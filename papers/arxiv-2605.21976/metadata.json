@@ -1,0 +1,194 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.21976",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "TacO: Benchmarking Tactile Sensors for Object Manipulation",
+  "title_zh": null,
+  "abstract": "Vision-based learning from demonstrations has achieved remarkable success in enabling robots to perform manipulation tasks and high-level semantic reasoning, yet it remains insufficient for complex, contact-rich manipulation. While there is broad agreement that tactile sensing improves manipulation, there is no empirical guidance on which tactile sensors are best suited for which manipulation tasks. In this paper, we provide a systematic, task-driven evaluation of tactile sensors for robot manipulation and propose a framework for selecting and evaluating sensors based on manipulation policy performance. Separate manipulation policies are trained for tactile sensors of four distinct modalities: visual, acoustic, magnetic, and resistive, across three tasks: pick-and-place with unknown mass, object reorientation, and plug insertion. For each task, an analysis of how sensor properties such as spatial resolution, shear sensing, and tactile representation, and the inherent material friction affect task performances is done. Rather than tactile sensing being universally beneficial in the same way, our results show that the usefulness of tactile information depends strongly on sensor modality, material properties, and the specific manipulation tasks. All of the tactile sensors, code, data, and hardware setup will be publicly available on the project website.",
+  "paper_url": "https://arxiv.org/abs/2605.21976",
+  "pdf_url": "https://arxiv.org/pdf/2605.21976",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Anya Zorin",
+      "affiliations": []
+    },
+    {
+      "name": "Zilin Si",
+      "affiliations": []
+    },
+    {
+      "name": "Myungsun Park",
+      "affiliations": []
+    },
+    {
+      "name": "Junsung Park",
+      "affiliations": []
+    },
+    {
+      "name": "Alexiy Buynitsky",
+      "affiliations": []
+    },
+    {
+      "name": "Sachin Bhadang",
+      "affiliations": []
+    },
+    {
+      "name": "Taejun Park",
+      "affiliations": []
+    },
+    {
+      "name": "Sohee John Yoon",
+      "affiliations": []
+    },
+    {
+      "name": "Yong-Lae Park",
+      "affiliations": []
+    },
+    {
+      "name": "Oliver Kroemer",
+      "affiliations": []
+    },
+    {
+      "name": "Zeynep Temel",
+      "affiliations": []
+    },
+    {
+      "name": "Michael T. Tolley",
+      "affiliations": []
+    },
+    {
+      "name": "Sha Yi",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaolong Wang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "ucsandiego",
+      "name": "UC San Diego",
+      "role": "primary"
+    },
+    {
+      "id": "carnegiemellonuniversity",
+      "name": "Carnegie Mellon University",
+      "role": "collaborator"
+    },
+    {
+      "id": "seoulnationaluniversity",
+      "name": "Seoul National University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-21",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data"
+    ],
+    "topics": [
+      "manipulation",
+      "dexterous",
+      "data"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "benchmark"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 83,
+    "selection_reason": "TacO聚焦机器人操作与灵巧操作，方法、实验和结论已通过 HTML 全文复核；综合评分为 83/100；尚未核验到作者公开的核心复现资产。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文声明后续开源，但当前未发现可访问的核心资产"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.21976",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.21976"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.21976"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "UC San Diego",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.21976",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Carnegie Mellon University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.21976",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Seoul National University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.21976",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "announced",
+      "accessible": false,
+      "verification_method": "paper-statement",
+      "evidence_source": "paper-abstract",
+      "checked_at": "2026-07-29"
+    }
+  ]
+}

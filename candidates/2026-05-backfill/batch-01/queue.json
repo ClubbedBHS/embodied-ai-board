@@ -1,0 +1,148 @@
+{
+  "run": {
+    "run_id": "2026-05-backfill-batch-01",
+    "reviewed_at": "2026-07-29",
+    "stage": "abstract-reviewed-pending-fulltext",
+    "reviewer": "Codex",
+    "source": "arXiv abstract pages",
+    "note": "本文件只记录摘要复核后的全文阅读队列，不包含 selection-rubric 质量分。"
+  },
+  "candidates": [
+    {
+      "id": "arxiv-2605.17912",
+      "title": "WorldArena 2.0: Extending Embodied World Model Benchmarking on Modality, Functionality and Platform",
+      "first_publication": "2026-05-18",
+      "suggested_sections": ["data", "simulators", "infrastructure"],
+      "review_status": "priority-fulltext",
+      "abstract_review_reason": "把具身世界模型评测从视觉预测扩展到视触觉、交互式强化学习环境以及真实机器人平台，信息增益很高。"
+    },
+    {
+      "id": "arxiv-2605.09613",
+      "title": "SABER: A Scalable Action-Based Embodied Dataset for Real-World VLA Adaptation",
+      "first_publication": "2026-05-10",
+      "suggested_sections": ["data", "infrastructure"],
+      "review_status": "priority-fulltext",
+      "abstract_review_reason": "100 小时真实商店视频、三种动作表示和 GR00T 后训练结果，可能是五月最值得核验的数据工作之一。"
+    },
+    {
+      "id": "arxiv-2605.20373",
+      "title": "SUGAR: A Scalable Human-Video-Driven Generalizable Humanoid Loco-Manipulation Learning Framework",
+      "first_publication": "2026-05-19",
+      "suggested_sections": ["algorithms", "data"],
+      "review_status": "priority-fulltext",
+      "abstract_review_reason": "从非结构化人类视频自动提取交互先验，经物理修复和层级策略蒸馏到真实人形机器人，需重点核验规模化与真实闭环证据。"
+    },
+    {
+      "id": "arxiv-2605.20774",
+      "title": "VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models",
+      "first_publication": "2026-05-20",
+      "suggested_sections": ["data", "infrastructure"],
+      "review_status": "priority-fulltext",
+      "abstract_review_reason": "尝试用低成本可复制硬件建立跨实验室真实 VLA 评测，基础设施价值可能高于单一模型改进。"
+    },
+    {
+      "id": "arxiv-2605.16257",
+      "title": "DexJoCo: A Benchmark and Toolkit for Task-Oriented Dexterous Manipulation on MuJoCo",
+      "first_publication": "2026-05-15",
+      "suggested_sections": ["data", "simulators", "infrastructure"],
+      "review_status": "priority-fulltext",
+      "abstract_review_reason": "覆盖工具使用、双手协同、长程执行和推理的灵巧手基准，并提供 1.1K 轨迹与评测工具链。"
+    },
+    {
+      "id": "arxiv-2605.21976",
+      "title": "TacO: Benchmarking Tactile Sensors for Object Manipulation",
+      "first_publication": "2026-05-21",
+      "suggested_sections": ["data", "infrastructure"],
+      "review_status": "priority-fulltext",
+      "abstract_review_reason": "直接比较视觉式、声学、磁性和电阻式触觉传感器对不同操控任务的效用，结论可能具有长期参考价值。"
+    },
+    {
+      "id": "arxiv-2605.10942",
+      "title": "HarmoWAM: Harmonizing Generalizable and Precise Manipulation via Adaptive World Action Models",
+      "first_publication": "2026-05-11",
+      "suggested_sections": ["algorithms"],
+      "review_status": "priority-fulltext",
+      "abstract_review_reason": "明确提出 Imagine-then-Execute 与联合建模的泛化—精度权衡，并用双专家和门控机制统一两类控制。"
+    },
+    {
+      "id": "arxiv-2605.06481",
+      "title": "OA-WAM: Object-Addressable World Action Model for Robust Robot Manipulation",
+      "first_publication": "2026-05-07",
+      "suggested_sections": ["algorithms"],
+      "review_status": "priority-fulltext",
+      "abstract_review_reason": "以持久对象地址和 slot 状态替代整体图像世界表示，并提供 slot intervention 因果测试，值得核验其可解释增量。"
+    },
+    {
+      "id": "arxiv-2605.31286",
+      "title": "DeMaVLA: A Vision-Language-Action Foundation Model for Generalizable Deformable Manipulation",
+      "first_publication": "2026-05-29",
+      "suggested_sections": ["algorithms", "data"],
+      "review_status": "priority-fulltext",
+      "abstract_review_reason": "约 5,000 小时双臂真实数据加失败纠正轨迹，面向跨类别可变形物体操控；数据口径和对照必须全文核验。"
+    },
+    {
+      "id": "arxiv-2605.13083",
+      "title": "TouchAnything: A Dataset and Framework for Bimanual Tactile Estimation from Egocentric Video",
+      "first_publication": "2026-05-13",
+      "suggested_sections": ["data", "algorithms"],
+      "review_status": "priority-fulltext",
+      "abstract_review_reason": "EgoTouch 覆盖 208 个任务和 1,891 个 episode，并把可规模化人类视频与连续压力监督连接起来。"
+    },
+    {
+      "id": "arxiv-2605.22882",
+      "title": "GEM-4D: Geometry-Enhanced Video World Models for Robot Manipulation",
+      "first_publication": "2026-05-20",
+      "suggested_sections": ["algorithms"],
+      "review_status": "priority-fulltext",
+      "abstract_review_reason": "把稠密 4D 对应监督注入视频世界模型，宣称真实操控成功率由 61% 提升到 81%，需要核验协议与几何一致性证据。"
+    },
+    {
+      "id": "arxiv-2605.20752",
+      "title": "GaussianDream: A Feed-Forward 3D Gaussian World Model for Robotic Manipulation",
+      "first_publication": "2026-05-20",
+      "suggested_sections": ["algorithms"],
+      "review_status": "priority-fulltext",
+      "abstract_review_reason": "训练时使用当前和未来 3D Gaussian 监督、推理时移除辅助头，兼顾几何监督与部署效率。"
+    },
+    {
+      "id": "arxiv-2605.22283",
+      "title": "Spatial Memory for Out-of-Vision Manipulation in Vision-Language-Action",
+      "first_publication": "2026-05-21",
+      "suggested_sections": ["algorithms"],
+      "review_status": "priority-fulltext",
+      "abstract_review_reason": "面向视野外目标建立可更新空间记忆，并在五项真实双臂/多步任务中验证，问题设定清晰且具实用性。"
+    },
+    {
+      "id": "arxiv-2605.07308",
+      "title": "AT-VLA: Adaptive Tactile Injection for Enhanced Feedback Reaction in Vision-Language-Action Models",
+      "first_publication": "2026-05-08",
+      "suggested_sections": ["algorithms"],
+      "review_status": "fulltext",
+      "abstract_review_reason": "自适应触觉注入和快慢双流控制针对接触反馈延迟，但需要与五月多篇触觉 VLA 工作做增量比较。"
+    },
+    {
+      "id": "arxiv-2605.22446",
+      "title": "Pre-VLA: Preemptive Runtime Verification for Reliable Vision-Language-Action and World-Model Rollouts",
+      "first_publication": "2026-05-21",
+      "suggested_sections": ["algorithms", "infrastructure"],
+      "review_status": "fulltext",
+      "abstract_review_reason": "在动作执行和世界模型 rollout 前做运行时验证，安全方向重要，但目前摘要证据主要来自 LIBERO。"
+    },
+    {
+      "id": "arxiv-2605.05241",
+      "title": "DexSim2Real: Foundation Model-Guided Sim-to-Real Transfer for Generalizable Dexterous Manipulation",
+      "first_publication": "2026-05-03",
+      "suggested_sections": ["algorithms", "simulators"],
+      "review_status": "fulltext",
+      "abstract_review_reason": "VLM 视觉真实性 critic、视触觉策略和课程学习的组合较完整，但需判断贡献是非平凡机制还是工程集成。"
+    },
+    {
+      "id": "arxiv-2605.26831",
+      "title": "OSMa-Bench++: Toward Open-Ended Benchmarking of Semantic Mapping for Manipulation with Prompt-Generated Synthetic Scenes",
+      "first_publication": "2026-05-26",
+      "suggested_sections": ["simulators", "infrastructure"],
+      "review_status": "fulltext",
+      "abstract_review_reason": "用 prompt 生成场景主动压力测试语义地图，补足仿真器和评测板块；需核验场景多样性与 benchmark 有效性。"
+    }
+  ]
+}

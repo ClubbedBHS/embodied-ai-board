@@ -1,0 +1,199 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.22882",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "GEM-4D: Geometry-Enhanced Video World Models for Robot Manipulation",
+  "title_zh": null,
+  "abstract": "Video world models can generate realistic futures from a single instruction, but they often fail to track the same physical points consistently across time. As a result, the generated videos appear plausible, yet lack the physical grounding required for reliable action execution, such as robot manipulation. We present GEM-4D, a geometry-grounded video world model that resolves this limitation by injecting dense 4D correspondence supervision distilled from a pretrained geometry foundation model into the video generative backbone during training. This supervision enables the model to jointly capture appearance and geometric structure while retaining a single-stream architecture with no additional inference cost. We further introduce an inverse dynamics module that converts correspondence-consistent video rollouts into executable robot trajectories, enabling direct deployment in both real-world and simulated manipulation. GEM-4D achieves state-of-the-art performance on both video prediction and geometric consistency across both simulation and realistic scenarios and improves real-world manipulation success from 61% to 81%. Additional results are available at https://gem-4d.github.io/.",
+  "paper_url": "https://arxiv.org/abs/2605.22882",
+  "pdf_url": "https://arxiv.org/pdf/2605.22882",
+  "project_url": "https://gem-4d.github.io/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Kaichen Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Yuzhen Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Fangneng Zhan",
+      "affiliations": []
+    },
+    {
+      "name": "Hang Hua",
+      "affiliations": []
+    },
+    {
+      "name": "Grace Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Xinhai Chang",
+      "affiliations": []
+    },
+    {
+      "name": "Ao Qu",
+      "affiliations": []
+    },
+    {
+      "name": "Yilun Du",
+      "affiliations": []
+    },
+    {
+      "name": "Zhuang Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Paul Pu Liang",
+      "affiliations": []
+    },
+    {
+      "name": "Mengyu Wang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "harvarduniversity",
+      "name": "Harvard University",
+      "role": "primary"
+    },
+    {
+      "id": "mit",
+      "name": "MIT",
+      "role": "collaborator"
+    },
+    {
+      "id": "princetonuniversity",
+      "name": "Princeton University",
+      "role": "collaborator"
+    },
+    {
+      "id": "mitibmwatsonailab",
+      "name": "MIT-IBM Watson AI Lab",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-20",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model",
+      "manipulation"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [
+      "project"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 88,
+    "selection_reason": "GEM-4D聚焦具身世界模型与机器人操作，方法、实验和结论已通过 HTML 全文复核；综合评分为 88/100；已核验项目页链接。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.22882",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.22882"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.22882"
+    },
+    {
+      "type": "paper",
+      "url": "https://gem-4d.github.io/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Harvard University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.22882",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "MIT",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.22882",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Princeton University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.22882",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "MIT-IBM Watson AI Lab",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.22882",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://gem-4d.github.io/",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-abstract",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://gem-4d.github.io/"
+    }
+  ]
+}

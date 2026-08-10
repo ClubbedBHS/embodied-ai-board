@@ -1,0 +1,237 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.09613",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "SABER: A Scalable Action-Based Embodied Dataset for Real-World VLA Adaptation",
+  "title_zh": null,
+  "abstract": "Robotic deployment in real-world environments depends on rich, domain-specific action data as much as on strong model architecture. General-purpose robot foundation models show modest performance in complex unseen tasks such as manipulation in a retail domain when applied out of the box. The root cause is a data gap: retail environments are structurally absent from general robot pretraining distributions, and the path to filling that gap through teleoperation is prohibitively expensive, logistically constrained, and difficult to scale. We introduce SABER, a high-fidelity retail robotics action dataset built from over 100 hours of natural in-store capture across multiple real grocery environments. Egocentric footage from head-mounted cameras records fine-grained hand activity at the point of interaction, while exocentric 360-degree scene footage from DreamVu's ALIA camera simultaneously observes all actors and activities across the entire space. This combination yields a uniquely complete picture of human retail behavior: dexterous hand activity, whole-body motion, and scene dynamics, all captured without staging, scripting, or teleoperation overhead. The SABER corpus contains 44.8K training samples across three action representation streams: 25K latent action sequences via LAPA-style encoding, 18.6K dexterous hand-pose trajectories retargeted to robot joint space, and 1.2K whole-body synchronized motion sequences retargeted to a humanoid embodiment. When applied to GR00T N1.6 via a shared-backbone multi-task post-training recipe, SABER yields a mean success rate of 29.3% across ten retail manipulation tasks -- more than 2.19x over fine-tuning baselines (13.4%). SABER demonstrates that the path to capable retail robots runs through better data, which can be collected today, at scale, without a robot in the loop. The dataset and code are available at https://dreamvu.ai/saber",
+  "paper_url": "https://arxiv.org/abs/2605.09613",
+  "pdf_url": "https://arxiv.org/pdf/2605.09613",
+  "project_url": "https://dreamvu.ai/saber",
+  "code_url": null,
+  "dataset_url": "https://huggingface.co/datasets/DreamVu/SABER-10K",
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Narsimha Menga",
+      "affiliations": []
+    },
+    {
+      "name": "Parikshit Sakurikar",
+      "affiliations": []
+    },
+    {
+      "name": "Amirreza Rouhi",
+      "affiliations": []
+    },
+    {
+      "name": "Satya Sai Reddy",
+      "affiliations": []
+    },
+    {
+      "name": "Anirudh Govil",
+      "affiliations": []
+    },
+    {
+      "name": "Sri Harsha Chittajallu",
+      "affiliations": []
+    },
+    {
+      "name": "Rajat Aggarwal",
+      "affiliations": []
+    },
+    {
+      "name": "Anoop Namboodiri",
+      "affiliations": []
+    },
+    {
+      "name": "Sashi Reddi",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "dreamvu",
+      "name": "DreamVu",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-10",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data"
+    ],
+    "topics": [
+      "data"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [
+      "project",
+      "data",
+      "project",
+      "project",
+      "project",
+      "data"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 91,
+    "selection_reason": "SABER聚焦数据与评测，方法、实验和结论已通过 HTML 全文复核；综合评分为 91/100；已核验项目页、数据链接。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前结论仍需在更多任务、平台或独立复现实验中验证"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.09613",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.09613"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.09613"
+    },
+    {
+      "type": "paper",
+      "url": "https://dreamvu.ai/saber"
+    },
+    {
+      "type": "paper",
+      "url": "https://huggingface.co/datasets/DreamVu/SABER-10K"
+    },
+    {
+      "type": "paper",
+      "url": "https://dreamvu.ai/offerings/#cat-prism"
+    },
+    {
+      "type": "paper",
+      "url": "https://dreamvu.ai/offerings/#cat-saber"
+    },
+    {
+      "type": "paper",
+      "url": "https://dreamvu.ai/offerings/#cat-custom"
+    },
+    {
+      "type": "paper",
+      "url": "https://huggingface.co/datasets/DreamVu/PRISM-100K"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "DreamVu",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.09613",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://dreamvu.ai/saber",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-abstract",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://dreamvu.ai/saber/"
+    },
+    {
+      "kind": "data",
+      "url": "https://huggingface.co/datasets/DreamVu/SABER-10K",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://huggingface.co/api/datasets/DreamVu/SABER-10K"
+    },
+    {
+      "kind": "project",
+      "url": "https://dreamvu.ai/offerings/#cat-prism",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://dreamvu.ai/offerings/#cat-prism"
+    },
+    {
+      "kind": "project",
+      "url": "https://dreamvu.ai/offerings/#cat-saber",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://dreamvu.ai/offerings/#cat-saber"
+    },
+    {
+      "kind": "project",
+      "url": "https://dreamvu.ai/offerings/#cat-custom",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://dreamvu.ai/offerings/#cat-custom"
+    },
+    {
+      "kind": "data",
+      "url": "https://huggingface.co/datasets/DreamVu/PRISM-100K",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://huggingface.co/api/datasets/DreamVu/PRISM-100K"
+    }
+  ]
+}

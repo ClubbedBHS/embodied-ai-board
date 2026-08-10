@@ -1,0 +1,140 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.02757",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Seeing Realism from Simulation: Efficient Video Transfer for Vision-Language-Action Data Augmentation",
+  "title_zh": null,
+  "abstract": "Vision-language-action (VLA) models typically rely on large-scale real-world videos, whereas simulated data, despite being inexpensive and highly parallelizable to collect, often suffers from a substantial visual domain gap and limited environmental diversity, resulting in weak real-world generalization. We present an efficient video augmentation framework that converts simulated VLA videos into realistic training videos while preserving task semantics and action trajectories. Our pipeline extracts structured conditions from simulation via video semantic segmentation and video captioning, rewrites captions to diversify environments, and uses a conditional video transfer model to synthesize realistic videos. To make augmentation practical at scale, we introduce a diffusion feature-reuse mechanism that reuses video tokens across adjacent timesteps to accelerate generation, and a coreset sampling strategy that identifies a compact, non-redundant subset for augmentation under limited computation. Extensive experiments on Robotwin 2.0, LIBERO, LIBERO-Plus, and a real robotic platform demonstrate consistent improvements. For example, our method improves RDT-1B by 8% on Robotwin 2.0, and boosts $\\pi_0$ by 5.1% on the more challenging LIBERO-Plus benchmark. Code is available at: https://github.com/nanfangxiansheng/Seeing-Realism-from-Simulation.",
+  "paper_url": "https://arxiv.org/abs/2605.02757",
+  "pdf_url": "https://arxiv.org/pdf/2605.02757",
+  "project_url": null,
+  "code_url": "https://github.com/nanfangxiansheng/Seeing-Realism-from-Simulation",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Chenyu Hui",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaodi Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Siyu Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Yunke Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Shan You",
+      "affiliations": []
+    },
+    {
+      "name": "Fei Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Tao Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Chang Xu",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-05-04",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [
+      "code"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 84,
+    "selection_reason": "Seeing Realism from Simulation聚焦视觉—语言—动作模型，方法、实验和结论已通过 HTML 全文复核；综合评分为 84/100；已核验代码链接。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文 HTML 未提供可稳定解析的机构 affiliation，未按作者身份猜测团队"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.02757",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.02757"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.02757"
+    },
+    {
+      "type": "paper",
+      "url": "https://github.com/nanfangxiansheng/Seeing-Realism-from-Simulation"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/nanfangxiansheng/Seeing-Realism-from-Simulation",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "paper-abstract",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://api.github.com/repos/nanfangxiansheng/Seeing-Realism-from-Simulation"
+    }
+  ]
+}

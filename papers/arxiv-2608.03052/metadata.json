@@ -1,0 +1,183 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.03052",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "How Should Vision-Language-Action Models Use Proprioceptive State?",
+  "title_zh": "视觉—语言—动作模型应该如何使用本体状态？",
+  "abstract": "Recent Vision–Language–Action (VLA) models almost universally take robot proprioceptive state as input, yet wire it in incompatible ways—serialized into text prompts, projected into the vision–language prefix, or fed directly to the action expert—and almost always as a single current frame. Three questions remain open: (1) whether, and on which tasks, current state actually improves closed-loop control; (2) how much state history helps, and whether its benefit reflects genuine temporal variation rather than added conditioning capacity; and (3) where state should enter the model—the vision–language backbone or the action-generation module. We answer these questions through controlled experiments on a flow-matching VLA, fixing the backbone, training data, action representation, and evaluation protocol throughout. We implement five representative interfaces—discrete state prompt, VLM prefix, action prefix, state expert, and feature modulation—under matched implementation details, and evaluate them on 45 atomic tasks spanning three task families plus 20 composite tasks; we then sweep the state-history length from 1 to 96 frames to examine how historical state information affects model performance. The experiments yield systematic answers to all three questions, distilled into testable design principles for state-aware VLAs.",
+  "paper_url": "https://arxiv.org/abs/2608.03052",
+  "pdf_url": "https://arxiv.org/pdf/2608.03052",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yiren Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Ziyang Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Ziyang Rao",
+      "affiliations": []
+    },
+    {
+      "name": "Pengteng Li",
+      "affiliations": []
+    },
+    {
+      "name": "He Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Weiyu Guo",
+      "affiliations": []
+    },
+    {
+      "name": "Yandong Guo",
+      "affiliations": []
+    },
+    {
+      "name": "Rushi Dai",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "the-hong-kong-university-of-science-and-technology-guangzhou",
+      "name": "The Hong Kong University of Science and Technology (Guangzhou)",
+      "role": "primary"
+    },
+    {
+      "id": "multimedia-laboratory-the-chinese-university-of-hong-kong",
+      "name": "Multimedia Laboratory, The Chinese University of Hong Kong",
+      "role": "collaborator"
+    },
+    {
+      "id": "ai2-robotics-x-lab",
+      "name": "AI2 Robotics X-Lab",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-04",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "proprioception",
+      "action"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [],
+    "properties": [
+      "simulation-only"
+    ]
+  },
+  "paper_type": [
+    "analysis"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 85,
+    "selection_reason": "在固定骨干、数据、动作表示和评测协议下系统比较 5 种本体状态注入接口、1–96 帧历史，并覆盖 45 个原子任务和 20 个组合任务，给出可操作的 VLA 设计原则。",
+    "candidate_run": "2026-08-10-weekly-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-10",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "未发现可验证的官方代码仓库"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.03052",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, conclusion or limitations were reviewed in the complete arXiv HTML; first-page affiliations were verified from PDF where HTML omitted them.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-10"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.03052"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.03052"
+    },
+    {
+      "type": "affiliation",
+      "url": "https://arxiv.org/pdf/2608.03052"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "The Hong Kong University of Science and Technology (Guangzhou)",
+      "source": "paper-pdf",
+      "url": "https://arxiv.org/pdf/2608.03052",
+      "location": "first-page affiliation block"
+    },
+    {
+      "organization": "Multimedia Laboratory, The Chinese University of Hong Kong",
+      "source": "paper-pdf",
+      "url": "https://arxiv.org/pdf/2608.03052",
+      "location": "first-page affiliation block"
+    },
+    {
+      "organization": "AI2 Robotics X-Lab",
+      "source": "paper-pdf",
+      "url": "https://arxiv.org/pdf/2608.03052",
+      "location": "first-page affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "source-scan",
+      "evidence_source": "paper-fulltext",
+      "checked_at": "2026-08-10"
+    }
+  ]
+}

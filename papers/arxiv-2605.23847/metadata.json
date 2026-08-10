@@ -1,0 +1,128 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.23847",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Instrumentation for Imitation Learning: Enhancing Training Datasets for Clothes Hanger Insertion",
+  "title_zh": null,
+  "abstract": "Large behaviour models have transformed the field of robotic manipulation, but prohibitive data requirements have thus far prevented a revolution similar to vision language models. We believe that instrumentation, i.e. sensor integration in objects, can provide invaluable state information and enable efficient learning for robotic manipulation. In this paper, we present instrumented imitation learning of clothes hanger insertion. Using 180 teleoperated demonstrations, we train diffusion policies with and without access to instrumentation data. Results show that policies leveraging instrumentation outperform vision-only counterparts by 14-25 %pt and exhibit greater task awareness. Crucially, a black-box imitation learning policy learns to prioritise instrumentation signals without explicit guidance. In addition, enhancing the teleoperation dataset with rollouts from an instrumented expert policy, enables a vision-only student policy to achieve performance comparable to the instrumented expert, thereby surpassing the original vision-only policy. These findings establish instrumentation as a promising strategy to enhance imitation learning for robotic manipulation. Datasets are available on Zenodo.",
+  "paper_url": "https://arxiv.org/abs/2605.23847",
+  "pdf_url": "https://arxiv.org/pdf/2605.23847",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Remko Proesmans",
+      "affiliations": []
+    },
+    {
+      "name": "Thomas Lips",
+      "affiliations": []
+    },
+    {
+      "name": "Francis wyffels",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "ghentuniversity",
+      "name": "Ghent University",
+      "role": "primary"
+    },
+    {
+      "id": "imec",
+      "name": "imec",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-22",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data"
+    ],
+    "topics": [
+      "robot-learning",
+      "data"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 72,
+    "selection_reason": "Instrumentation for Imitation Learning聚焦机器人学习与数据与评测，方法、实验和结论已通过 HTML 全文复核；综合评分为 72/100；尚未核验到作者公开的核心复现资产。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.23847",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.23847"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.23847"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Ghent University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.23847",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "imec",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.23847",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": []
+}

@@ -1,0 +1,263 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.30280",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments",
+  "title_zh": null,
+  "abstract": "Embodied intelligence is often studied through specialized models for individual tasks such as manipulation or navigation, resulting in fragmented capabilities and limited generalization across tasks, environments, and robot embodiments. In this work, we study whether heterogeneous embodied decision-making problems can be unified within a single vision-language-action model. We present Qwen-VLA, a unified embodied foundation model that extends Qwen's vision-language modeling stack from perception, understanding, and reasoning to continuous action and trajectory generation through a DiT-based action decoder. Qwen-VLA is trained with a large-scale joint pretraining recipe over diverse data sources, including robotics manipulation trajectories, human egocentric demonstrations, synthetic simulation data, vision-and-language navigation data, trajectory-centric supervision, and auxiliary vision-language data. To support multiple robot platforms, we introduce embodiment-aware prompt conditioning, where robot-specific textual descriptions specify the current embodiment and control convention. We further cast manipulation, navigation, and trajectory prediction into a unified action-and-trajectory prediction framework, enabling transferable visual grounding, spatial reasoning, and continuous action generation across robot morphologies, task families, and environments. Experiments on manipulation, navigation, and trajectory-centric benchmarks show consistent multi-task performance and out-of-distribution generalization under variations in scene layout, background, lighting, object configuration, and robot embodiment. Qwen-VLA-Instruct achieves 97.9% on LIBERO, 73.7% on Simpler-WidowX, 86.1%/87.2% on RoboTwin-Easy/Hard, 69.0% OSR on R2R, 59.6% SR on RxR, 76.9% average OOD success in real-world ALOHA experiments, and 26.6% zero-shot success on DOMINO dynamic manipulation.",
+  "paper_url": "https://arxiv.org/abs/2605.30280",
+  "pdf_url": "https://arxiv.org/pdf/2605.30280",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Qiuyue Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Mingsheng Li",
+      "affiliations": []
+    },
+    {
+      "name": "Jian Guan",
+      "affiliations": []
+    },
+    {
+      "name": "Jinhui Ye",
+      "affiliations": []
+    },
+    {
+      "name": "Sicheng Xie",
+      "affiliations": []
+    },
+    {
+      "name": "Yitao Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Junhao Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Zhixuan Liang",
+      "affiliations": []
+    },
+    {
+      "name": "Jie Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Xintong Hu",
+      "affiliations": []
+    },
+    {
+      "name": "Xuhong Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Pei Lin",
+      "affiliations": []
+    },
+    {
+      "name": "Junyang Lin",
+      "affiliations": []
+    },
+    {
+      "name": "Dayiheng Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Shuai Bai",
+      "affiliations": []
+    },
+    {
+      "name": "Jingren Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Jiazhao Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Haoqi Yuan",
+      "affiliations": []
+    },
+    {
+      "name": "Gengze Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Hang Yin",
+      "affiliations": []
+    },
+    {
+      "name": "Ye Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Yiyang Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Zixing Lei",
+      "affiliations": []
+    },
+    {
+      "name": "Wujian Peng",
+      "affiliations": []
+    },
+    {
+      "name": "Delin Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Yingming Zheng",
+      "affiliations": []
+    },
+    {
+      "name": "Jingyang Fan",
+      "affiliations": []
+    },
+    {
+      "name": "Xianwei Zhuang",
+      "affiliations": []
+    },
+    {
+      "name": "Xin Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Haoyang Li",
+      "affiliations": []
+    },
+    {
+      "name": "Anzhe Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Tong Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Xuejing Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Yuchong Sun",
+      "affiliations": []
+    },
+    {
+      "name": "Ruizhe Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Zhaohai Li",
+      "affiliations": []
+    },
+    {
+      "name": "Chenxu Lü",
+      "affiliations": []
+    },
+    {
+      "name": "Zhibo Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Tao Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Xionghui Chen",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "qwen",
+      "name": "Qwen",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-28",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 92,
+    "selection_reason": "Qwen-VLA聚焦视觉—语言—动作模型，方法、实验和结论已通过 HTML 全文复核；综合评分为 92/100；尚未核验到作者公开的核心复现资产。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.30280",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.30280"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.30280"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Qwen",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.30280",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": []
+}

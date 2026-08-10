@@ -1,0 +1,153 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.28237",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "POINav: Benchmarking and Enhancing Final-Meters Arrival in Real-World Vision-Language Navigation",
+  "title_zh": null,
+  "abstract": "Real-world navigation is fundamentally driven by Points of Interest (POIs), yet reaching a precise POI remains a critical \"final-meters\" challenge. Existing Vision-Language Navigation (VLN) benchmarks of POI-goal navigation often suffer from coarse granularity or significant sim-to-real gaps due to generated scene. To bridge this gap, we present POINav-Bench, the first benchmark designed for closed-loop evaluation of real-world POI-goal navigation. It comprises 11 commercial areas reconstructed from real-world captures using 3D Gaussian Splatting (3DGS), covering 126,398 $m^{2}$ in total and spanning 163 distinct POIs. With traversability-aware annotations and reference trajectories, POINav-Bench enables high-fidelity evaluation of navigation agents in realistic, POI-rich real-world environments. Building on this, we propose the POINav Brain-Action Framework where a Brain module performs POI-grounded reasoning to guide an Action module in predicting continuous waypoints for real-world execution. We further curate the POINav-Dataset, containing 70K real-world signage-entrance pairs. Experiments show that our framework provides a viable path toward refining real-world POI-goal navigation.",
+  "paper_url": "https://arxiv.org/abs/2605.28237",
+  "pdf_url": "https://arxiv.org/pdf/2605.28237",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Ruiyan Gong",
+      "affiliations": []
+    },
+    {
+      "name": "Meisheng Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Yuxiang Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Mingchao Sun",
+      "affiliations": []
+    },
+    {
+      "name": "Yanfen Shen",
+      "affiliations": []
+    },
+    {
+      "name": "Zedong Chu",
+      "affiliations": []
+    },
+    {
+      "name": "Zhining Gu",
+      "affiliations": []
+    },
+    {
+      "name": "Wei Guo",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaolong Cheng",
+      "affiliations": []
+    },
+    {
+      "name": "Qiming Li",
+      "affiliations": []
+    },
+    {
+      "name": "Kangning Niu",
+      "affiliations": []
+    },
+    {
+      "name": "Yanqing Zhu",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaolong Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Tianlun Li",
+      "affiliations": []
+    },
+    {
+      "name": "Mu Xu",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-05-27",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data"
+    ],
+    "topics": [
+      "navigation",
+      "data"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "benchmark"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 90,
+    "selection_reason": "POINav聚焦具身导航与数据与评测，方法、实验和结论已通过 HTML 全文复核；综合评分为 90/100；尚未核验到作者公开的核心复现资产。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产",
+      "论文 HTML 未提供可稳定解析的机构 affiliation，未按作者身份猜测团队"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.28237",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.28237"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.28237"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": []
+}

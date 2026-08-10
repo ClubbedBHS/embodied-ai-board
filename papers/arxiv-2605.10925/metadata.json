@@ -1,0 +1,142 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.10925",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "PriorVLA: Prior-Preserving Adaptation for Vision-Language-Action Models",
+  "title_zh": null,
+  "abstract": "Large-scale pretraining has made Vision-Language-Action (VLA) models promising foundations for generalist robot manipulation, yet adapting them to downstream tasks remains necessary. However, the common practice of full fine-tuning treats pretraining as initialization and can shift broad priors toward narrow training-distribution patterns. We propose PriorVLA, a novel framework that preserves pretrained priors and learns to leverage them for effective adaptation. PriorVLA keeps a frozen Prior Expert as a read-only prior source and trains an Adaptation Expert for downstream specialization. Expert Queries capture scene priors from the pretrained VLM and motor priors from the Prior Expert, integrating both into the Adaptation Expert to guide adaptation. Together, PriorVLA updates only 25% of the parameters updated by full fine-tuning. Across RoboTwin 2.0, LIBERO, and real-world tasks, PriorVLA achieves stronger overall performance than full fine-tuning and state-of-the-art VLA baselines, with the largest gains under out-of-distribution (OOD) and few-shot settings. PriorVLA improves over pi0.5 by 11 points on RoboTwin 2.0-Hard and achieves 99.1% average success on LIBERO. Across eight real-world tasks and two embodiments, PriorVLA reaches 81% in-distribution (ID) and 57% OOD success with standard data. With only 10 demonstrations per task, PriorVLA reaches 48% ID and 32% OOD success, surpassing pi0.5 by 24 and 22 points, respectively.",
+  "paper_url": "https://arxiv.org/abs/2605.10925",
+  "pdf_url": "https://arxiv.org/pdf/2605.10925",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Xinyu Guo",
+      "affiliations": []
+    },
+    {
+      "name": "Bin Xie",
+      "affiliations": []
+    },
+    {
+      "name": "Wei Chai",
+      "affiliations": []
+    },
+    {
+      "name": "Xianchi Deng",
+      "affiliations": []
+    },
+    {
+      "name": "Tiancai Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Zhengxing Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Xingyu Chen",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "chineseacademyofsciences",
+      "name": "Chinese Academy of Sciences",
+      "role": "primary"
+    },
+    {
+      "id": "nanjinguniversity",
+      "name": "Nanjing University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-11",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 77,
+    "selection_reason": "PriorVLA聚焦视觉—语言—动作模型，方法、实验和结论已通过 HTML 全文复核；综合评分为 77/100；尚未核验到作者公开的核心复现资产。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.10925",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.10925"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.10925"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Chinese Academy of Sciences",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.10925",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Nanjing University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.10925",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": []
+}

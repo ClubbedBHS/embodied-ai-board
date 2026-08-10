@@ -1,0 +1,164 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.10903",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "CapVector: Learning Transferable Capability Vectors in Parametric Space for Vision-Language-Action Models",
+  "title_zh": null,
+  "abstract": "This paper proposes a novel approach to address the challenge that pretrained VLA models often fail to effectively improve performance and reduce adaptation costs during standard supervised finetuning (SFT). Some advanced finetuning methods with auxiliary training objectives can improve performance and reduce the number of convergence steps. However, they typically incur significant computational overhead due to the additional losses from auxiliary objectives. To simultaneously achieve the enhanced capabilities of auxiliary training with the simplicity of standard SFT, we decouple the two objectives of auxiliary-objective SFT within the parameter space, namely, enhancing general capabilities and fitting task-specific action distributions. To deliver the goal, we only need to train the model to converge on a small-scale task set using two distinct training strategies, resulting in two finetuned models. The parameters' difference between the two models can then be interpreted as capability vectors provided by auxiliary objectives. These vectors are then merged with pretrained parameters to form a capability-enhanced meta model. Moreover, when standard SFT is augmented with a lightweight orthogonal regularization loss, the merged model attains performance comparable to auxiliary finetuned baselines with reduced computational overhead. Internal and external experiments demonstrate that our capability vectors (1) are effective and versatile across diverse models, (2) can generalize to novel environments and embodiments out of the box.",
+  "paper_url": "https://arxiv.org/abs/2605.10903",
+  "pdf_url": "https://arxiv.org/pdf/2605.10903",
+  "project_url": null,
+  "code_url": "https://github.com/OpenHelix-Team/CapVector",
+  "dataset_url": null,
+  "model_url": "https://huggingface.co/haofuly/capvector_models_collection",
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Wenxuan Song",
+      "affiliations": []
+    },
+    {
+      "name": "Han Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Fuhao Li",
+      "affiliations": []
+    },
+    {
+      "name": "Ziyang Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Xi Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Jing Lyu",
+      "affiliations": []
+    },
+    {
+      "name": "Pengxiang Ding",
+      "affiliations": []
+    },
+    {
+      "name": "Yan Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Donglin Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Haoang Li",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-05-11",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [
+      "code",
+      "model"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 73,
+    "selection_reason": "CapVector聚焦视觉—语言—动作模型，方法、实验和结论已通过 HTML 全文复核；综合评分为 73/100；已核验代码、模型链接。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文 HTML 未提供可稳定解析的机构 affiliation，未按作者身份猜测团队"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.10903",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.10903"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.10903"
+    },
+    {
+      "type": "paper",
+      "url": "https://github.com/OpenHelix-Team/CapVector"
+    },
+    {
+      "type": "paper",
+      "url": "https://huggingface.co/haofuly/capvector_models_collection"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/OpenHelix-Team/CapVector",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "paper-visible-url",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://api.github.com/repos/OpenHelix-Team/CapVector"
+    },
+    {
+      "kind": "model",
+      "url": "https://huggingface.co/haofuly/capvector_models_collection",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "huggingface-api",
+      "evidence_source": "paper-visible-url",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://huggingface.co/api/models/haofuly/capvector_models_collection"
+    }
+  ]
+}

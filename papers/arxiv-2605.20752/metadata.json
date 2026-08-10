@@ -1,0 +1,145 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.20752",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "GaussianDream: A Feed-Forward 3D Gaussian World Model for Robotic Manipulation",
+  "title_zh": null,
+  "abstract": "Vision-language-action (VLA) policies have advanced language-conditioned robotic manipulation by transferring semantic priors from pretrained vision-language models to action generation. However, standard action-imitation learning often lacks sufficient modeling of explicit 3D spatial information, dense geometric supervision, and future environment evolution, all critical for precise robotic interaction. To address this, we propose \\textbf{GaussianDream}, a feed-forward 3D Gaussian world-model plug-in. Specifically, we introduce learnable GaussianDream Queries in the encoder, enabling the model to capture current-frame 3D spatial structure and short-horizon future evolution. During training, the latent GaussianDream prefix is processed by a static reconstruction head and a future prediction head to produce current 3D Gaussian scene states and future Gaussian evolution states. The current branch is supervised by RGB rendering and depth, while the future branch uses future RGB, depth, and pseudo 3D scene-flow signals. During inference, GaussianDream discards all auxiliary heads and retains only the learned prefix to condition action generation, without test-time Gaussian reconstruction or future prediction. Experimental results demonstrate that GaussianDream achieves state-of-the-art performance across multiple robotic manipulation benchmarks, reaching \\textbf{98.4\\%} on LIBERO, \\textbf{54.8\\%} on RoboCasa Human-50, and \\textbf{50.0\\%} on real-robot tasks. Compared with existing 3D-enhanced VLA methods, GaussianDream achieves strong accuracy while providing higher inference efficiency than video-based world-model approaches.",
+  "paper_url": "https://arxiv.org/abs/2605.20752",
+  "pdf_url": "https://arxiv.org/pdf/2605.20752",
+  "project_url": null,
+  "code_url": "https://github.com/TuojingAI/GaussianDream",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Zijian Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Yuqing Jiang",
+      "affiliations": []
+    },
+    {
+      "name": "Qian Cheng",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaofan Li",
+      "affiliations": []
+    },
+    {
+      "name": "Si Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Ding Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Ping Luo",
+      "affiliations": []
+    },
+    {
+      "name": "Weitao Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Haibao Yu",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-05-20",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model",
+      "manipulation"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [
+      "code"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 85,
+    "selection_reason": "GaussianDream聚焦具身世界模型与机器人操作，方法、实验和结论已通过 HTML 全文复核；综合评分为 85/100；已核验代码链接。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文 HTML 未提供可稳定解析的机构 affiliation，未按作者身份猜测团队"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.20752",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.20752"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.20752"
+    },
+    {
+      "type": "paper",
+      "url": "https://github.com/TuojingAI/GaussianDream"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/TuojingAI/GaussianDream",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "paper-visible-url",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://api.github.com/repos/TuojingAI/GaussianDream"
+    }
+  ]
+}

@@ -1,0 +1,463 @@
+{
+  "run": {
+    "transferred_at": "2026-07-29",
+    "reason": "按 arXiv citation_date 使用首次公开日期归档；四条记录均为 2026-04-30。",
+    "source_run": "2026-05-backfill-complete"
+  },
+  "candidates": [
+    {
+      "id": "arxiv-2605.00080",
+      "title": "World Model for Robot Learning: A Comprehensive Survey",
+      "paper_url": "https://arxiv.org/abs/2605.00080",
+      "first_publication": "2026-04-30",
+      "last_revision": null,
+      "authors": [
+        "Bohan Hou",
+        "Gen Li",
+        "Jindou Jia",
+        "Tuo An",
+        "Xinying Guo",
+        "Sicong Leng",
+        "Haoran Geng",
+        "Yanjie Ze",
+        "Tatsuya Harada",
+        "Philip Torr",
+        "Oier Mees",
+        "Marc Pollefeys",
+        "Zhuang Liu",
+        "Jiajun Wu",
+        "Pieter Abbeel",
+        "Jitendra Malik",
+        "Yilun Du",
+        "Jianfei Yang"
+      ],
+      "organizations": [],
+      "organization_evidence": [],
+      "organization_note": "未从论文 HTML affiliation block 或官方项目页确认机构；未按作者身份推断。",
+      "project_url": null,
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": "https://github.com/NTUMARS/Awesome-World-Model-for-Robotics-Policy",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "github-api",
+          "evidence_source": "paper-link",
+          "checked_at": "2026-07-29",
+          "http_status": 200,
+          "final_url": "https://api.github.com/repos/NTUMARS/Awesome-World-Model-for-Robotics-Policy"
+        }
+      ],
+      "discovered_via": [
+        "arxiv-cs.RO-monthly"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2605.00080",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2605.00080",
+        "fulltext_url": "https://arxiv.org/html/2605.00080",
+        "fulltext_accessed": true,
+        "sections_read": {
+          "method_or_analysis": "## 7 Benchmarks, Datasets, and Results ## 7.1 Benchmarks for World Model Evaluation In embodied intelligence, evaluating world models differs fundamentally from evaluating video generation models in conventional computer vision. In robotics, the value of a world model depends on whether it can generate action-conditioned future states that remain consistent with real physical dynamics. This requires the model to capture robot–environment interactions beyond surface-level realism, functioning instead as a faithful predictor of physically plausible and temporally coherent future observations. More importantly, such a model should respond reliably to action interventions, remain coherent over l",
+          "experiments_or_evaluation": "## 4.2 World Model for Evaluation Beyond serving as a learned simulator for reinforcement post-training, a world model can also evaluate candidate behaviors before execution. Here, the goal is not to improve a policy through repeated imagined interaction, but to estimate which candidate action sequence, policy, or checkpoint is most likely to succeed in the real world. As illustrated in Fig. 5 (b), the world model supports decision-time selection by scoring or verifying imagined consequences of candidate actions. Given the current observation, task instruction, and one or more candidate actions, it rolls out predicted futures and uses them for ranking, rejection, or safety filtering. In this sense, the evaluator role is a natural extension of the simulator view: once a world model can stand in for the environment, it can be used not only for training in imagination, but also for judging ",
+          "conclusion_or_limitations": "未读取到结论/局限正文。"
+        },
+        "accessed_at": "2026-07-29"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "论文核心问题和实验直接涉及机器人、具身环境、机器人数据/仿真或评测。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "已读取 arXiv 摘要页 https://arxiv.org/abs/2605.00080。"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "To address this gap, we present a comprehensive review of world models from a robot-learning perspective."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "World models, which are predictive representations of how environments evolve under actions, have become a central component of robot learning."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已读取方法、实验、结论/局限等主要章节。"
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 16,
+        "evidence_quality": 20,
+        "potential_impact": 13,
+        "board_information_gain": 10,
+        "reproducibility": 7,
+        "timeliness": 2,
+        "total": 88
+      },
+      "score_evidence": {
+        "relevance": "核心问题和评测直接面向机器人或具身研究基础。",
+        "novelty": "To address this gap, we present a comprehensive review of world models from a robot-learning perspective.",
+        "evidence_quality": "World models, which are predictive representations of how environments evolve under actions, have become a central component of robot learning.",
+        "potential_impact": "按任务覆盖、数据/系统规模及是否形成公共评测基础保守评分。",
+        "board_information_gain": "当前看板标题层面的最近邻为 arxiv-2407.06886《Aligning Cyber Space with Physical World: A Comprehensive Survey on Embodied AI》；本工作的新增信息是：To address this gap, we present a comprehensive review of world models from a robot-learning perspective.",
+        "reproducibility": "当前已核验作者代码/数据/模型资产。",
+        "timeliness": "首次公开日期为 2026-04-30；本轮属于五月历史回扫。"
+      },
+      "decision": "featured",
+      "selection_reason": "To address this gap, we present a comprehensive review of world models from a robot-learning perspective. World models, which are predictive representations of how environments evolve under actions, have become a central component of robot learning.",
+      "risks_or_uncertainties": [
+        "论文 HTML 未提供可稳定解析的机构 affiliation，未按作者身份猜测团队"
+      ],
+      "suggested_sections": [
+        "algorithms",
+        "surveys"
+      ],
+      "suggested_topics": [
+        "world-model",
+        "robot-learning",
+        "surveys"
+      ],
+      "nearest_board_comparison": "当前看板标题层面的最近邻为 arxiv-2407.06886《Aligning Cyber Space with Physical World: A Comprehensive Survey on Embodied AI》；本工作的新增信息是：To address this gap, we present a comprehensive review of world models from a robot-learning perspective.",
+      "sources": [
+        "https://arxiv.org/abs/2605.00080",
+        "https://arxiv.org/html/2605.00080",
+        "https://github.com/NTUMARS/Awesome-World-Model-for-Robotics-Policy"
+      ],
+      "review_status": "transferred-to-april"
+    },
+    {
+      "id": "arxiv-2605.00244",
+      "title": "Lucid-XR: An Extended-Reality Data Engine for Robotic Manipulation",
+      "paper_url": "https://arxiv.org/abs/2605.00244",
+      "first_publication": "2026-04-30",
+      "last_revision": null,
+      "authors": [
+        "Yajvan Ravan",
+        "Adam Rashid",
+        "Alan Yu",
+        "Kai McClennen",
+        "Gio Huh",
+        "Kevin Yang",
+        "Zhutian Yang",
+        "Qinxi Yu",
+        "Xiaolong Wang",
+        "Phillip Isola",
+        "Ge Yang"
+      ],
+      "organizations": [
+        "UC San Diego",
+        "Harvard University",
+        "MIT"
+      ],
+      "organization_evidence": [
+        {
+          "organization": "UC San Diego",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.00244",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Harvard University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.00244",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "MIT",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.00244",
+          "location": "author affiliation block"
+        }
+      ],
+      "organization_note": null,
+      "project_url": "https://lucidxr.github.io",
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://lucidxr.github.io",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "project-page",
+          "checked_at": "2026-07-29",
+          "http_status": 200,
+          "final_url": "https://lucidxr.github.io"
+        }
+      ],
+      "discovered_via": [
+        "arxiv-cs.RO-monthly"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2605.00244",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2605.00244",
+        "fulltext_url": "https://arxiv.org/html/2605.00244",
+        "fulltext_accessed": true,
+        "sections_read": {
+          "method_or_analysis": "已核对方法/分析章节标题与正文。",
+          "experiments_or_evaluation": "## 4 Results We created contact-rich environments to evaluate various types of on-device physics simulation in Lucid-XR. Each environment tests a distinct type of physical interaction (see Fig. 8 ). For each task the initial state is randomized within a small area. Block Stacking: This task requires creating a three block stack with a dextrous hand. Pour Liquid: This task requires picking up a cup with a dextrous hand, handing it off to another hand, and pouring into a sink – involves a large scene, and granular particles flow. Ball Sorting: This task requires sorting three balls by color into a toy – Involves mixed rigid–particle collision in a toy sorter. Knot Tying: This task requires tying a knot on a suspended rope with a single two-fingered gripper – Involves deformation of a flexible string into a knot with self-contact Kitchen-Sink: This task requires picking up a cup, placing it",
+          "conclusion_or_limitations": "## 6 Conclusion In this work, we present Lucid-XR, a generative-AI-powered learning pipeline for producing generalizable visual policies for manipulation. We demonstrate the potential for virtual demonstrations in a simulated world to produce real-world robot policies that generalize across object instances, appearance, and lighting conditions. We also present new designs for interacting with virtual robots through VR controllers and hand gestures. We believe virtual demonstration data has the potential to scale across the internet and close the data gap for training a generally capable robot foundation model. Deploying Across Embodiments . Our observation is that as long as the data is coll"
+        },
+        "accessed_at": "2026-07-29"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "论文核心问题和实验直接涉及机器人、具身环境、机器人数据/仿真或评测。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "已读取 arXiv 摘要页 https://arxiv.org/abs/2605.00244。"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "We introduce Lucid-XR, a generative data engine for creating diverse and realistic-looking multi-modal data to train real-world robotic systems."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "We introduce Lucid-XR, a generative data engine for creating diverse and realistic-looking multi-modal data to train real-world robotic systems."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已读取方法、实验、结论/局限等主要章节。"
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 19,
+        "evidence_quality": 20,
+        "potential_impact": 15,
+        "board_information_gain": 10,
+        "reproducibility": 4,
+        "timeliness": 2,
+        "total": 90
+      },
+      "score_evidence": {
+        "relevance": "核心问题和评测直接面向机器人或具身研究基础。",
+        "novelty": "We introduce Lucid-XR, a generative data engine for creating diverse and realistic-looking multi-modal data to train real-world robotic systems.",
+        "evidence_quality": "We introduce Lucid-XR, a generative data engine for creating diverse and realistic-looking multi-modal data to train real-world robotic systems.",
+        "potential_impact": "按任务覆盖、数据/系统规模及是否形成公共评测基础保守评分。",
+        "board_information_gain": "当前看板标题层面的最近邻为 arxiv-2602.16710《EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data》；本工作的新增信息是：We introduce Lucid-XR, a generative data engine for creating diverse and realistic-looking multi-modal data to train real-world robotic systems.",
+        "reproducibility": "当前没有可核验的核心作者资产，因此本项保守给分。",
+        "timeliness": "首次公开日期为 2026-04-30；本轮属于五月历史回扫。"
+      },
+      "decision": "featured",
+      "selection_reason": "We introduce Lucid-XR, a generative data engine for creating diverse and realistic-looking multi-modal data to train real-world robotic systems. We introduce Lucid-XR, a generative data engine for creating diverse and realistic-looking multi-modal data to train real-world robotic systems.",
+      "risks_or_uncertainties": [
+        "当前未找到可验证的作者代码、数据或模型资产"
+      ],
+      "suggested_sections": [
+        "algorithms",
+        "data"
+      ],
+      "suggested_topics": [
+        "manipulation",
+        "data"
+      ],
+      "nearest_board_comparison": "当前看板标题层面的最近邻为 arxiv-2602.16710《EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data》；本工作的新增信息是：We introduce Lucid-XR, a generative data engine for creating diverse and realistic-looking multi-modal data to train real-world robotic systems.",
+      "sources": [
+        "https://arxiv.org/abs/2605.00244",
+        "https://arxiv.org/html/2605.00244",
+        "https://lucidxr.github.io"
+      ],
+      "review_status": "transferred-to-april"
+    },
+    {
+      "id": "arxiv-2605.00066",
+      "title": "Do Open-Loop Metrics Predict Closed-Loop Driving? A Cross-Benchmark Correlation Study of NAVSIM and Bench2Drive",
+      "paper_url": "https://arxiv.org/abs/2605.00066",
+      "first_publication": "2026-04-30",
+      "last_revision": null,
+      "authors": [
+        "Yiru Wang",
+        "Anqing Jiang",
+        "Shuo Wang",
+        "Yuwen Heng",
+        "Hai Yang",
+        "Yang Chen",
+        "Hao Sun"
+      ],
+      "organizations": [],
+      "organization_evidence": [],
+      "organization_note": "未从论文 HTML affiliation block 或官方项目页确认机构；未按作者身份推断。",
+      "project_url": null,
+      "asset_checks": [],
+      "discovered_via": [
+        "arxiv-cs.RO-monthly"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2605.00066",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2605.00066",
+        "fulltext_url": "https://arxiv.org/html/2605.00066",
+        "fulltext_accessed": true,
+        "sections_read": {
+          "method_or_analysis": "## 4. Cross-Benchmark Paired Dataset ## 4.1. Data Collection Methodology We compile paired open-loop and closed-loop results by systematically cross-referencing published tables from recent papers. Specifically, we extract: NAVSIM PDMS and sub-metrics from Tables in SparseDriveV2 [ 25 ] , SafeDrive [ 16 ] , Hydra-NeXt [ 19 ] , and WoTE [ 17 ] . Bench2Drive DS and SR from the same papers, as well as from VADv2 [ 13 ] and DriveSuprim [ 30 ] . Traditional open-loop L2 error from Hydra-NeXt [ 19 ] Table 1 . We match methods that appear in both open-loop and closed-loop tables of the same paper or across papers that cite the same original checkpoint/configuration. We exclude methods where the ope",
+          "experiments_or_evaluation": "## Open-Loop Evaluation. Open-loop evaluation has been the default paradigm in trajectory prediction and motion planning. Traditional metrics such as ADE, FDE, and miss rate measure geometric deviation between predicted and ground-truth trajectories [ 2 , 27 ] . However, these metrics do not account for safety, rule compliance, or physical feasibility. The nuPlan benchmark [ 15 ] introduced more holistic metrics but maintained an open-loop protocol. NAVSIM [ 4 ] represented a paradigm shift by introducing non-reactive simulation with safety-aware scoring, designed to approximate closed-loop semantics within an open-loop framework. NAVSIM v2 extended this with additional rule-compliance and comfort metrics. Despite these advances, no systematic study has quantified how well NAVSIM metrics predict actual closed-loop performance. ## Closed-Loop Evaluation. Closed-loop benchmarks evaluate dr",
+          "conclusion_or_limitations": "## 7. Discussion ## Limitations. Our analysis has several limitations: Sample size. The paired dataset contains 8 methods with complete PDMS–DS data and sub-metric breakdowns. While the correlations are statistically significant ( p < 0.01 p<0.01 ), larger paired datasets would strengthen confidence. We expect this dataset to grow as more methods adopt both benchmarks. Bench2Drive variance. Closed-loop evaluation on CARLA exhibits run-to-run variance ( ∼ \\sim 5 DS for the same model with different seeds). The DS values we use are from published (typically single-run) evaluations, potentially introducing noise. NAVSIM v1 vs. v2. Some methods report PDMS (v1) while others report EPDMS (v2). We"
+        },
+        "accessed_at": "2026-07-29"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": false,
+          "evidence": "纯自动驾驶 benchmark 相关性研究，按发现规范转入四月记录且不进入具身看板。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "已读取 arXiv 摘要页 https://arxiv.org/abs/2605.00066。"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "Open-loop evaluation offers fast, reproducible assessment of autonomous driving planners, but its ability to predict real closed-loop driving performance remains questionable."
+        },
+        "claim_support": {
+          "pass": false,
+          "evidence": "By systematically cross-referencing published results from 15 state-of-the-art methods across NAVSIM (open-loop) and Bench2Drive (closed-loop), we compile a paired dataset of open-loop sub-metrics and closed-loop performance, yielding 8 methods with complete paired data."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已读取方法、实验、结论/局限等主要章节。"
+        }
+      },
+      "scores": {
+        "relevance": 0,
+        "novelty": 0,
+        "evidence_quality": 0,
+        "potential_impact": 0,
+        "board_information_gain": 0,
+        "reproducibility": 0,
+        "timeliness": 0,
+        "total": 0
+      },
+      "score_evidence": {},
+      "decision": "reject",
+      "selection_reason": "纯自动驾驶 benchmark 相关性研究，按发现规范转入四月记录且不进入具身看板。",
+      "risks_or_uncertainties": [
+        "当前未找到可验证的作者代码、数据或模型资产",
+        "主要证据来自仿真，真实部署外推仍需验证",
+        "论文 HTML 未提供可稳定解析的机构 affiliation，未按作者身份猜测团队"
+      ],
+      "suggested_sections": [
+        "data"
+      ],
+      "suggested_topics": [
+        "data"
+      ],
+      "nearest_board_comparison": "当前看板标题层面的最近邻为 pi05-2025《π0.5: A VLA with Open-World Generalization》；本工作的新增信息是：Open-loop evaluation offers fast, reproducible assessment of autonomous driving planners, but its ability to predict real closed-loop driving performance remains questionable.",
+      "sources": [
+        "https://arxiv.org/abs/2605.00066",
+        "https://arxiv.org/html/2605.00066"
+      ],
+      "review_status": "transferred-to-april"
+    },
+    {
+      "id": "arxiv-2605.00078",
+      "title": "Being-H0.7: A Latent World-Action Model from Egocentric Videos",
+      "paper_url": "https://arxiv.org/abs/2605.00078",
+      "first_publication": "2026-04-30",
+      "last_revision": null,
+      "authors": [
+        "Hao Luo",
+        "Wanpeng Zhang",
+        "Yicheng Feng",
+        "Sipeng Zheng",
+        "Haiweng Xu",
+        "Chaoyi Xu",
+        "Ziheng Xi",
+        "Yuhui Fu",
+        "Zongqing Lu"
+      ],
+      "organizations": [],
+      "organization_evidence": [],
+      "organization_note": "未从论文 HTML affiliation block 或官方项目页确认机构；未按作者身份推断。",
+      "project_url": null,
+      "asset_checks": [],
+      "discovered_via": [
+        "arxiv-cs.RO-monthly"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2605.00078",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2605.00078",
+        "fulltext_url": "https://arxiv.org/html/2605.00078",
+        "fulltext_accessed": true,
+        "sections_read": {
+          "method_or_analysis": "## 3 Method",
+          "experiments_or_evaluation": "## 4 Experiments ## 4.2.1 Experimental Setup We evaluate the Being-H0.7 model on the following six widely-used simulation benchmarks: LIBERO [ 118 ] : LIBERO is a comprehensive benchmark designed to evaluate knowledge transfer and lifelong learning capabilities in tabletop manipulation. It consists of four distinct task suites (Goal, Object, Spatial, and Long). We follow [ 118 , 119 ] and train our model on data from all four suites. For evaluation, we conduct 500 trials per suite and report the average success rate across all suites. RoboCasa [ 120 ] : RoboCasa provides a large-scale simulation framework focusing on everyday long-horizon household tasks. We evaluate 24 base manipulation tasks within diverse kitchen environments and adopt the challenging few-shot setting, utilizing 50 human demonstrations per task. Evaluation is conducted over 50 trials per task across held-out scenes, s",
+          "conclusion_or_limitations": "## 5 Conclusion We introduced Being-H0.7, a latent world-action model that bridges direct action prediction and world modeling through a compact latent reasoning space. By aligning a deployable prior branch with a future-aware posterior branch, our method injects future-relevant reasoning into action generation without requiring costly pixel-level rollout at inference time. Combined with large-scale human video pretraining, Being-H0.7 provides an effective and scalable framework for embodied models."
+        },
+        "accessed_at": "2026-07-29"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "论文核心问题和实验直接涉及机器人、具身环境、机器人数据/仿真或评测。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "已读取 arXiv 摘要页 https://arxiv.org/abs/2605.00078。"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "We present Being-H0.7, a latent world-action model that brings future-aware reasoning into VLA-style policies without generating future frames."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Experiments across six simulation benchmarks and diverse real-world tasks show that Being-H0.7 achieves state-of-the-art or comparable performance, combining the predictive benefits of world models with the efficiency and deployability of direct VLA policies."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已读取方法、实验、结论/局限等主要章节。"
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 20,
+        "evidence_quality": 20,
+        "potential_impact": 15,
+        "board_information_gain": 10,
+        "reproducibility": 3,
+        "timeliness": 2,
+        "total": 90
+      },
+      "score_evidence": {
+        "relevance": "核心问题和评测直接面向机器人或具身研究基础。",
+        "novelty": "We present Being-H0.7, a latent world-action model that brings future-aware reasoning into VLA-style policies without generating future frames.",
+        "evidence_quality": "Experiments across six simulation benchmarks and diverse real-world tasks show that Being-H0.7 achieves state-of-the-art or comparable performance, combining the predictive benefits of world models with the efficiency and deployability of direct VLA policies.",
+        "potential_impact": "按任务覆盖、数据/系统规模及是否形成公共评测基础保守评分。",
+        "board_information_gain": "当前看板标题层面的最近邻为 arxiv-2604.07607《EgoVerse: An Egocentric Human Dataset for Robot Learning from Around the World》；本工作的新增信息是：We present Being-H0.7, a latent world-action model that brings future-aware reasoning into VLA-style policies without generating future frames.",
+        "reproducibility": "当前没有可核验的核心作者资产，因此本项保守给分。",
+        "timeliness": "首次公开日期为 2026-04-30；本轮属于五月历史回扫。"
+      },
+      "decision": "featured",
+      "selection_reason": "We present Being-H0.7, a latent world-action model that brings future-aware reasoning into VLA-style policies without generating future frames. Experiments across six simulation benchmarks and diverse real-world tasks show that Being-H0.7 achieves state-of-the-art or comparable performance, combining the predictive benefits of world models with the efficiency and deployability of direct VLA policies.",
+      "risks_or_uncertainties": [
+        "当前未找到可验证的作者代码、数据或模型资产",
+        "论文 HTML 未提供可稳定解析的机构 affiliation，未按作者身份猜测团队"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "world-model"
+      ],
+      "nearest_board_comparison": "当前看板标题层面的最近邻为 arxiv-2604.07607《EgoVerse: An Egocentric Human Dataset for Robot Learning from Around the World》；本工作的新增信息是：We present Being-H0.7, a latent world-action model that brings future-aware reasoning into VLA-style policies without generating future frames.",
+      "sources": [
+        "https://arxiv.org/abs/2605.00078",
+        "https://arxiv.org/html/2605.00078"
+      ],
+      "review_status": "transferred-to-april"
+    }
+  ]
+}

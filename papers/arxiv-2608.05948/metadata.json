@@ -1,0 +1,242 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.05948",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "GAUGE: A Measurement-Grounded Benchmark for Physical Fidelity in Simulation Engines and Video World Models",
+  "title_zh": "GAUGE：以真实测量为锚点的仿真引擎与视频世界模型物理保真度基准",
+  "abstract": "Physics engines facilitate large-scale training and evaluation for embodied intelligence, while generative video world models are emerging as implicit simulators of future states and interactions. However, existing evaluations of physical fidelity are often conducted in isolation and rely heavily on perceptual similarity or human judgments, providing limited insight into which physical principles or parameters are violated. We introduce GAUGE , a real-world-grounded diagnostic benchmark for jointly evaluating how numerical simulators and generative video world models reproduce or deviate from real-world physics. It comprises 22 controlled task families covering rigid bodies, flexible cables, textiles, and volumetric deformable objects. Grounded in real-world trajectories and paired with calibrated physical metadata, uncertainty annotations, and task-specific observables, these tasks cover fundamental physical processes including collision, friction, momentum transfer, oscillation, self-contact, and deformation across diverse materials and conditions. We benchmark Isaac Sim, Genesis, and Newton on 14 task families using generalized trajectory errors, and evaluate 6 image-to-video models on 5 rigid-body tasks by testing physical-law consistency and the temporal stability of inferred parameters. Our results reveal no uniformly faithful physics engine, with the largest discrepancies arising in impulsive contact, rapid textile motion, and volumetric deformation. We further find that video world models can produce trajectories with the expected equation form while recovering incorrect accelerations, momentum transfer, and oscillation timing. GAUGE lays the groundwork for developing more physically faithful simulators and world models for embodied intelligence. Project page: https://internrobotics.github.io/GAUGE/.",
+  "paper_url": "https://arxiv.org/abs/2608.05948",
+  "pdf_url": "https://arxiv.org/pdf/2608.05948",
+  "project_url": "https://internrobotics.github.io/GAUGE/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Shuai Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Yaxin Feng",
+      "affiliations": []
+    },
+    {
+      "name": "Xuekun Jiang",
+      "affiliations": []
+    },
+    {
+      "name": "Shihan Tian",
+      "affiliations": []
+    },
+    {
+      "name": "Ningyu Yan",
+      "affiliations": []
+    },
+    {
+      "name": "Xing Shen",
+      "affiliations": []
+    },
+    {
+      "name": "Chaoyang Lyu",
+      "affiliations": []
+    },
+    {
+      "name": "Hui Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Yunsong Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Hanqing Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Jiangmiao Pang",
+      "affiliations": []
+    },
+    {
+      "name": "Yang Xiang",
+      "affiliations": []
+    },
+    {
+      "name": "Xing Gao",
+      "affiliations": []
+    },
+    {
+      "name": "Chunhua Shen",
+      "affiliations": []
+    },
+    {
+      "name": "Weinan Zhang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "shanghai-artificial-intelligence-laboratory",
+      "name": "Shanghai Artificial Intelligence Laboratory",
+      "role": "primary"
+    },
+    {
+      "id": "the-hong-kong-university-of-science-and-technology",
+      "name": "The Hong Kong University of Science and Technology",
+      "role": "collaborator"
+    },
+    {
+      "id": "shanghai-jiao-tong-university",
+      "name": "Shanghai Jiao Tong University",
+      "role": "collaborator"
+    },
+    {
+      "id": "zhejiang-university",
+      "name": "Zhejiang University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-06",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data",
+      "simulators"
+    ],
+    "topics": [
+      "world-model",
+      "sim-to-real"
+    ],
+    "tasks": [
+      "generalist-control"
+    ],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [
+      "vision"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "benchmark",
+    "dataset",
+    "analysis"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 90,
+    "selection_reason": "用真实测量、校准物理参数和任务特定可观测量统一诊断数值仿真器与视频世界模型；覆盖 22 个任务族，并实测对比 3 个物理引擎和 6 个视频模型。",
+    "candidate_run": "2026-08-10-weekly-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-10",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "未发现可验证的官方代码仓库"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.05948",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, conclusion or limitations were reviewed in the complete arXiv HTML; first-page affiliations were verified from PDF where HTML omitted them.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-10"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.05948"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.05948"
+    },
+    {
+      "type": "affiliation",
+      "url": "https://arxiv.org/pdf/2608.05948"
+    },
+    {
+      "type": "project",
+      "url": "https://internrobotics.github.io/GAUGE/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Shanghai Artificial Intelligence Laboratory",
+      "source": "paper-pdf",
+      "url": "https://arxiv.org/pdf/2608.05948",
+      "location": "first-page affiliation block"
+    },
+    {
+      "organization": "The Hong Kong University of Science and Technology",
+      "source": "paper-pdf",
+      "url": "https://arxiv.org/pdf/2608.05948",
+      "location": "first-page affiliation block"
+    },
+    {
+      "organization": "Shanghai Jiao Tong University",
+      "source": "paper-pdf",
+      "url": "https://arxiv.org/pdf/2608.05948",
+      "location": "first-page affiliation block"
+    },
+    {
+      "organization": "Zhejiang University",
+      "source": "paper-pdf",
+      "url": "https://arxiv.org/pdf/2608.05948",
+      "location": "first-page affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://internrobotics.github.io/GAUGE/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-fulltext",
+      "checked_at": "2026-08-10"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "source-scan",
+      "evidence_source": "paper-and-project-page",
+      "checked_at": "2026-08-10"
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "source-scan",
+      "evidence_source": "paper-and-project-page",
+      "checked_at": "2026-08-10"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.23568",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "TactileReflex: Noise-Statistics-Driven Vision-Tactile Reflex Control for Force-Sensitive Manipulation",
+  "title_zh": null,
+  "abstract": "Manipulating fragile deformable containers, such as disposable plastic cups filled with liquid, demands real-time grip-force adaptation within an extremely narrow force margin: insufficient force causes slip, while excessive force irreversibly deforms the thin wall. Existing approaches struggle to achieve such force-sensitive manipulation tasks. We propose a noise-statistics-based calibration-driven reflex control paradigm with vision-based tactile sensing: by analyzing the sensor's intrinsic noise characteristics (via a brief static-hold-and-unload protocol), we directly derive all controller thresholds, eliminating external force calibration, trial-and-error manual tuning, or material-specific physical models. Instantiating this paradigm, we present TactileReflex, a three-channel closed-loop controller that extracts three image-level proxies, shear intensity ($S_y$), contact intensity ($F_n$), and center of pressure ($C$), from dual visuo-tactile sensors and drives prioritized reflex channels at ~12 Hz for slip suppression, weight-adaptive release, and force protection. Each channel closes the loop directly on its proxy via noise-derived thresholds. Ablation demonstrates that only the full three-channel system is able to prevent irreversible container deformation (5/5 success vs. at most 1/5 for partial configurations). In a dynamic pouring task, fixed-effort baselines fail in all 10 attempts due to pose drift, while TactileReflex achieves 9/10 success across two water volumes. As a self-contained and interpretable controller, TactileReflex can serve as a plug-and-play safety layer beneath high-level manipulation pipelines, including haptic-free VR teleoperation and vision-language-action (VLA) policies.",
+  "paper_url": "https://arxiv.org/abs/2605.23568",
+  "pdf_url": "https://arxiv.org/pdf/2605.23568",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Ziyan Feng",
+      "affiliations": []
+    },
+    {
+      "name": "Yulong Fu",
+      "affiliations": []
+    },
+    {
+      "name": "Zheng Li",
+      "affiliations": []
+    },
+    {
+      "name": "Yuxin He",
+      "affiliations": []
+    },
+    {
+      "name": "Jieji Ren",
+      "affiliations": []
+    },
+    {
+      "name": "Yudong Zhong",
+      "affiliations": []
+    },
+    {
+      "name": "Lujia Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Jinni Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Qiang Nie",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "shanghaijiaotonguniversity",
+      "name": "Shanghai Jiao Tong University",
+      "role": "primary"
+    },
+    {
+      "id": "hongkonguniversityofscienceandtechnology",
+      "name": "Hong Kong University of Science and Technology",
+      "role": "collaborator"
+    },
+    {
+      "id": "hku",
+      "name": "HKU",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-22",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "manipulation",
+      "dexterous"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 73,
+    "selection_reason": "TactileReflex聚焦机器人操作与灵巧操作，方法、实验和结论已通过 HTML 全文复核；综合评分为 73/100；尚未核验到作者公开的核心复现资产。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.23568",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.23568"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.23568"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Shanghai Jiao Tong University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.23568",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Hong Kong University of Science and Technology",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.23568",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "HKU",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.23568",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": []
+}

@@ -1,0 +1,443 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.07943",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "TAVIS: A Benchmark for Egocentric Active Vision and Anticipatory Gaze in Imitation Learning",
+  "title_zh": null,
+  "abstract": "Active vision -- where a policy controls its own gaze during manipulation -- has emerged as a key capability for imitation learning, with multiple independent systems demonstrating its benefits in the past year. Yet there is no shared benchmark to compare approaches or quantify what active vision contributes, on which task types, and under what conditions. We introduce TAVIS, evaluation infrastructure for active-vision imitation learning, with two complementary task suites -- TAVIS-Head (5 tasks, global search via pan/tilt necks) and TAVIS-Hands (3 tasks, local occlusion via wrist cameras) -- on two humanoid torso embodiments (GR1T2, Reachy2), built on IsaacLab. TAVIS provides three evaluation primitives: a paired headcam-vs-fixedcam protocol on identical demonstrations; GALT (Gaze-Action Lead Time), a novel metric grounded in cognitive science and HRI that quantifies anticipatory gaze in learned policies; and procedural ID/OOD splits. Baseline experiments with Diffusion Policy and $\\pi_0$ reveal that (i) active-vision generally helps, but benefits are task-conditional rather than uniform; (ii) multi-task policies degrade sharply under controlled distribution shifts on both suites; and (iii) imitation alone yields anticipatory gaze, with median lead times comparable to the human teleoperator reference. Code, evaluation scripts, demonstrations (LeRobot v3.0; ~2200 episodes) and trained baselines are released at https://github.com/spiglerg/tavis and https://huggingface.co/tavis-benchmark.",
+  "paper_url": "https://arxiv.org/abs/2605.07943",
+  "pdf_url": "https://arxiv.org/pdf/2605.07943",
+  "project_url": "https://huggingface.co/spaces/tavis-benchmark/README",
+  "code_url": "https://github.com/spiglerg/tavis",
+  "dataset_url": "https://huggingface.co/datasets/tavis-benchmark/tavis-assets",
+  "model_url": "https://huggingface.co/tavis-benchmark/pi0-tavis-head-gr1t2-headcam",
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Giacomo Spigler",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "tilburguniversity",
+      "name": "Tilburg University",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-08",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data"
+    ],
+    "topics": [
+      "robot-learning",
+      "data"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [
+      "code",
+      "project",
+      "data",
+      "project",
+      "project",
+      "data",
+      "data",
+      "data",
+      "data",
+      "data",
+      "data",
+      "model",
+      "model",
+      "model",
+      "model",
+      "model",
+      "model"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "benchmark"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 86,
+    "selection_reason": "TAVIS聚焦机器人学习与数据与评测，方法、实验和结论已通过 HTML 全文复核；综合评分为 86/100；已核验代码、项目页、数据、模型链接。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "主要证据来自仿真，真实部署外推仍需验证"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.07943",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.07943"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.07943"
+    },
+    {
+      "type": "paper",
+      "url": "https://huggingface.co/spaces/tavis-benchmark/README"
+    },
+    {
+      "type": "paper",
+      "url": "https://github.com/spiglerg/tavis"
+    },
+    {
+      "type": "paper",
+      "url": "https://huggingface.co/datasets/tavis-benchmark/tavis-assets"
+    },
+    {
+      "type": "paper",
+      "url": "https://huggingface.co/spaces/tavis-benchmark/README/discussions"
+    },
+    {
+      "type": "paper",
+      "url": "https://huggingface.co/spaces/lerobot/visualize_dataset"
+    },
+    {
+      "type": "paper",
+      "url": "https://huggingface.co/datasets/tavis-benchmark/tavis-head-sample-gr1t2"
+    },
+    {
+      "type": "paper",
+      "url": "https://huggingface.co/datasets/tavis-benchmark/tavis-head-sample-reachy2"
+    },
+    {
+      "type": "paper",
+      "url": "https://huggingface.co/datasets/tavis-benchmark/tavis-head-gr1t2"
+    },
+    {
+      "type": "paper",
+      "url": "https://huggingface.co/datasets/tavis-benchmark/tavis-head-reachy2"
+    },
+    {
+      "type": "paper",
+      "url": "https://huggingface.co/datasets/tavis-benchmark/tavis-hands-gr1t2"
+    },
+    {
+      "type": "paper",
+      "url": "https://huggingface.co/datasets/tavis-benchmark/tavis-hands-reachy2"
+    },
+    {
+      "type": "paper",
+      "url": "https://huggingface.co/tavis-benchmark/pi0-tavis-head-gr1t2-headcam"
+    },
+    {
+      "type": "paper",
+      "url": "https://huggingface.co/tavis-benchmark/pi0-tavis-head-gr1t2-fixedcam"
+    },
+    {
+      "type": "paper",
+      "url": "https://huggingface.co/tavis-benchmark/pi0-tavis-head-reachy2-headcam"
+    },
+    {
+      "type": "paper",
+      "url": "https://huggingface.co/tavis-benchmark/pi0-tavis-head-reachy2-fixedcam"
+    },
+    {
+      "type": "paper",
+      "url": "https://huggingface.co/tavis-benchmark/pi0-tavis-hands-gr1t2"
+    },
+    {
+      "type": "paper",
+      "url": "https://huggingface.co/tavis-benchmark/pi0-tavis-hands-reachy2"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Tilburg University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.07943",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/spiglerg/tavis",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "paper-abstract",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://api.github.com/repos/spiglerg/tavis"
+    },
+    {
+      "kind": "model",
+      "url": "https://huggingface.co/join/discord",
+      "status": "verification-error",
+      "accessible": false,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "error": "HTTP 401"
+    },
+    {
+      "kind": "model",
+      "url": "https://huggingface.co/inference/models",
+      "status": "verification-error",
+      "accessible": false,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "error": "HTTP 401"
+    },
+    {
+      "kind": "model",
+      "url": "https://huggingface.co/organizations/tavis-benchmark/activity/all",
+      "status": "verification-error",
+      "accessible": false,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "error": "HTTP 401"
+    },
+    {
+      "kind": "project",
+      "url": "https://huggingface.co/spaces/tavis-benchmark/README",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://huggingface.co/api/spaces/tavis-benchmark/README"
+    },
+    {
+      "kind": "data",
+      "url": "https://huggingface.co/datasets/tavis-benchmark/tavis-assets",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://huggingface.co/api/datasets/tavis-benchmark/tavis-assets"
+    },
+    {
+      "kind": "project",
+      "url": "https://huggingface.co/spaces/tavis-benchmark/README/discussions",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://huggingface.co/api/spaces/tavis-benchmark/README"
+    },
+    {
+      "kind": "model",
+      "url": "https://huggingface.co/docs/hub/organizations-cards",
+      "status": "verification-error",
+      "accessible": false,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "error": "HTTP 401"
+    },
+    {
+      "kind": "project",
+      "url": "https://huggingface.co/spaces/lerobot/visualize_dataset",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://huggingface.co/api/spaces/lerobot/visualize_dataset"
+    },
+    {
+      "kind": "data",
+      "url": "https://huggingface.co/datasets/tavis-benchmark/tavis-head-sample-gr1t2",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://huggingface.co/api/datasets/tavis-benchmark/tavis-head-sample-gr1t2"
+    },
+    {
+      "kind": "data",
+      "url": "https://huggingface.co/datasets/tavis-benchmark/tavis-head-sample-reachy2",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://huggingface.co/api/datasets/tavis-benchmark/tavis-head-sample-reachy2"
+    },
+    {
+      "kind": "data",
+      "url": "https://huggingface.co/datasets/tavis-benchmark/tavis-head-gr1t2",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://huggingface.co/api/datasets/tavis-benchmark/tavis-head-gr1t2"
+    },
+    {
+      "kind": "data",
+      "url": "https://huggingface.co/datasets/tavis-benchmark/tavis-head-reachy2",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://huggingface.co/api/datasets/tavis-benchmark/tavis-head-reachy2"
+    },
+    {
+      "kind": "data",
+      "url": "https://huggingface.co/datasets/tavis-benchmark/tavis-hands-gr1t2",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://huggingface.co/api/datasets/tavis-benchmark/tavis-hands-gr1t2"
+    },
+    {
+      "kind": "data",
+      "url": "https://huggingface.co/datasets/tavis-benchmark/tavis-hands-reachy2",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://huggingface.co/api/datasets/tavis-benchmark/tavis-hands-reachy2"
+    },
+    {
+      "kind": "model",
+      "url": "https://huggingface.co/tavis-benchmark/pi0-tavis-head-gr1t2-headcam",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://huggingface.co/api/models/tavis-benchmark/pi0-tavis-head-gr1t2-headcam"
+    },
+    {
+      "kind": "model",
+      "url": "https://huggingface.co/tavis-benchmark/pi0-tavis-head-gr1t2-fixedcam",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://huggingface.co/api/models/tavis-benchmark/pi0-tavis-head-gr1t2-fixedcam"
+    },
+    {
+      "kind": "model",
+      "url": "https://huggingface.co/tavis-benchmark/pi0-tavis-head-reachy2-headcam",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://huggingface.co/api/models/tavis-benchmark/pi0-tavis-head-reachy2-headcam"
+    },
+    {
+      "kind": "model",
+      "url": "https://huggingface.co/tavis-benchmark/pi0-tavis-head-reachy2-fixedcam",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://huggingface.co/api/models/tavis-benchmark/pi0-tavis-head-reachy2-fixedcam"
+    },
+    {
+      "kind": "model",
+      "url": "https://huggingface.co/tavis-benchmark/pi0-tavis-hands-gr1t2",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://huggingface.co/api/models/tavis-benchmark/pi0-tavis-hands-gr1t2"
+    },
+    {
+      "kind": "model",
+      "url": "https://huggingface.co/tavis-benchmark/pi0-tavis-hands-reachy2",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://huggingface.co/api/models/tavis-benchmark/pi0-tavis-hands-reachy2"
+    },
+    {
+      "kind": "model",
+      "url": "https://huggingface.co/tavis-benchmark/models",
+      "status": "verification-error",
+      "accessible": false,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "error": "HTTP 401"
+    },
+    {
+      "kind": "model",
+      "url": "https://huggingface.co/tavis-benchmark/datasets",
+      "status": "verification-error",
+      "accessible": false,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "error": "HTTP 401"
+    }
+  ]
+}

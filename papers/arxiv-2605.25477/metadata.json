@@ -1,0 +1,158 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.25477",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "EXPO-FT: Sample-Efficient Reinforcement Learning Finetuning for Vision-Language-Action Models",
+  "title_zh": null,
+  "abstract": "The ability to efficiently and reliably learn new tasks has been a foundational challenge in robotics. Vision-Language-Action (VLA) models have demonstrated strong generalization across diverse manipulation tasks, yet pretrained policies consistently fall short of the reliability required for real-world deployment. Reinforcement learning (RL) fine-tuning offers a promising path to bridge this gap, but existing approaches either train from scratch without fully leveraging pretrained priors, or fine-tune VLAs without achieving the sample efficiency and success rates that practical deployment demands. We present EXPO-FT, a system for stable, sample-efficient RL finetuning of pretrained VLA policies that closes this gap. Our system solves a suite of challenging manipulation tasks, including routing string lights and inserting the plug to light it up, striking a pool ball into a pocket, and inserting a flower into a wine bottle, each requiring combinations of high precision, dynamic actions, and robustness to varied initial states. Our system achieves perfect task performance (30/30 successes) across all evaluated tasks within an average of 19.1 minutes of online robot data, outperforming both prior RL-from-scratch and VLA finetuning approaches. We release an open-source codebase with the aim of facilitating broader adoption of RL finetuning of VLA models in robotics.",
+  "paper_url": "https://arxiv.org/abs/2605.25477",
+  "pdf_url": "https://arxiv.org/pdf/2605.25477",
+  "project_url": "https://pd-perry.github.io/expo-ft/",
+  "code_url": "https://github.com/pd-perry/expo-ft",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Perry Dong",
+      "affiliations": []
+    },
+    {
+      "name": "Kuo-Han Hung",
+      "affiliations": []
+    },
+    {
+      "name": "Tian Gao",
+      "affiliations": []
+    },
+    {
+      "name": "Dorsa Sadigh",
+      "affiliations": []
+    },
+    {
+      "name": "Chelsea Finn",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "stanforduniversity",
+      "name": "Stanford University",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-25",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "robot-learning"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [
+      "project",
+      "code"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 89,
+    "selection_reason": "EXPO-FT聚焦视觉—语言—动作模型与机器人学习，方法、实验和结论已通过 HTML 全文复核；综合评分为 89/100；已核验项目页、代码链接。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前结论仍需在更多任务、平台或独立复现实验中验证"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.25477",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.25477"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.25477"
+    },
+    {
+      "type": "paper",
+      "url": "https://pd-perry.github.io/expo-ft/"
+    },
+    {
+      "type": "paper",
+      "url": "https://github.com/pd-perry/expo-ft"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Stanford University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.25477",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://pd-perry.github.io/expo-ft/",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-affiliation-block",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://pd-perry.github.io/expo-ft/"
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/pd-perry/expo-ft",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://api.github.com/repos/pd-perry/expo-ft"
+    }
+  ]
+}

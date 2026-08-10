@@ -1,0 +1,176 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.21414",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "PointACT: Vision-Language-Action Models with Multi-Scale Point-Action Interaction",
+  "title_zh": null,
+  "abstract": "Vision-Language-Action (VLA) models have shown strong potential for general-purpose robotic manipulation by leveraging large pretrained vision-language backbones. However, most existing VLAs rely primarily on 2D visual representations, which limit their ability to reason about fine-grained geometry and spatial grounding - capabilities that are essential for precise and robust manipulation in 3D environments. In this paper, we propose PointACT, a dual-system 3D-aware VLA policy that integrates hierarchical 3D point cloud representations directly into the action decoding process. PointACT employs a multi-scale point-action interaction mechanism with efficient bottleneck window self-attention, enabling evolving action tokens to densely attend to both local geometric detail and global scene structure. We evaluate PointACT on the LIBERO and RLBench benchmarks and systematically compare it against monolithic and dual-system VLA baselines, including variants augmented with point cloud inputs. PointACT achieves consistent improvements across both benchmarks, increasing success rates by 10% on the challenging RLBench-10Tasks suite over state-of-the-art pretrained VLAs, with even larger gains when the vision-language backbone is frozen and the action expert is trained from scratch. Extensive ablation studies demonstrate that tightly coupling hierarchical 3D geometry with pretrained 2D semantic representations is critical for robust and spatially grounded robot control. Our results also highlight the promise of pretrained 3D representations for 3D-aware VLA policies.",
+  "paper_url": "https://arxiv.org/abs/2605.21414",
+  "pdf_url": "https://arxiv.org/pdf/2605.21414",
+  "project_url": "https://cshizhe.github.io/projects/pointact.html",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Shizhe Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Paul Pacaud",
+      "affiliations": []
+    },
+    {
+      "name": "Cordelia Schmid",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "inria",
+      "name": "Inria",
+      "role": "primary"
+    },
+    {
+      "id": "colenormalesuprieure",
+      "name": "École normale supérieure",
+      "role": "collaborator"
+    },
+    {
+      "id": "cnrs",
+      "name": "CNRS",
+      "role": "collaborator"
+    },
+    {
+      "id": "pslresearchuniversity",
+      "name": "PSL Research University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-20",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [
+      "project"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 77,
+    "selection_reason": "PointACT聚焦视觉—语言—动作模型，方法、实验和结论已通过 HTML 全文复核；综合评分为 77/100；已核验项目页链接。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.21414",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.21414"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.21414"
+    },
+    {
+      "type": "paper",
+      "url": "https://cshizhe.github.io/projects/pointact.html"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Inria",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.21414",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "École normale supérieure",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.21414",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "CNRS",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.21414",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "PSL Research University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.21414",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://cshizhe.github.io/projects/pointact.html",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-affiliation-block",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://cshizhe.github.io/projects/pointact.html"
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/cshizhe/robot-PointAct",
+      "status": "verification-error",
+      "accessible": false,
+      "verification_method": "github-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "error": "HTTP 403"
+    }
+  ]
+}

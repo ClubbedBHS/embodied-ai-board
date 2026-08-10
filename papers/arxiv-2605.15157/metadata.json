@@ -1,0 +1,147 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.15157",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Hand-in-the-Loop: Improving VLA Policies for Dexterous Manipulation via Seamless Hand-Arm Intervention",
+  "title_zh": null,
+  "abstract": "Vision-Language-Action (VLA) models are prone to compounding errors in dexterous manipulation, where high-dimensional action spaces and contact-rich dynamics amplify small policy deviations over long horizons. While Interactive Imitation Learning (IIL) can refine policies through human correction data, applying it to high-degree-of-freedom (DoF) robotic hands remains challenging due to a command mismatch between human teleoperation and policy execution at the intervention moment, which causes abrupt robot-hand configuration changes, or \"gesture jumps\". We present Hand-in-the-Loop (HandITL), a seamless human-in-the-loop intervention method that blends human corrective intent with autonomous policy execution to avoid gesture jumps during bimanual dexterous manipulation. Compared with taking over control using direct teleoperation, HandITL reduces intervention jitter by 99.8% and preserves robust post-intervention manipulation, reducing grasp failures by 87.5% and mean completion time by 19.1%. We validate HandITL on tasks requiring bimanual coordination, tool use, and fine-grained long-horizon manipulation. When used to collect correction data for policy refinement, HandITL yields policies that outperform those trained with standard teleoperation data by 19% on average across three long-horizon dexterous tasks.",
+  "paper_url": "https://arxiv.org/abs/2605.15157",
+  "pdf_url": "https://arxiv.org/pdf/2605.15157",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Zhuohang Li",
+      "affiliations": []
+    },
+    {
+      "name": "Liqun Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Wei Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Zhengming Zhu",
+      "affiliations": []
+    },
+    {
+      "name": "Nie Lin",
+      "affiliations": []
+    },
+    {
+      "name": "Xiao Ma",
+      "affiliations": []
+    },
+    {
+      "name": "Xinjun Sheng",
+      "affiliations": []
+    },
+    {
+      "name": "Ruoshi Wen",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "sjtu",
+      "name": "SJTU",
+      "role": "primary"
+    },
+    {
+      "id": "bytedance",
+      "name": "ByteDance",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-14",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "manipulation",
+      "dexterous"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 78,
+    "selection_reason": "Hand-in-the-Loop聚焦机器人操作与灵巧操作，方法、实验和结论已通过 HTML 全文复核；综合评分为 78/100；尚未核验到作者公开的核心复现资产。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.15157",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.15157"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.15157"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "SJTU",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.15157",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "ByteDance",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.15157",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": []
+}

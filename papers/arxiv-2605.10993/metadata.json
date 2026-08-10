@@ -1,0 +1,150 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.10993",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "ECHO: Continuous Hierarchical Memory for Vision-Language-Action Models",
+  "title_zh": null,
+  "abstract": "Memory capacity is a critical factor determining the performance of Vision-Language-Action (VLA) models in long-horizon manipulation tasks. Existing memory-augmented architectures primarily rely on linear or flat storage, lacking structural priors for manipulation categories and hierarchical organization. This deficiency hinders efficient experience retrieval and limits generalization to unseen long-horizon task compositions. Inspired by the hierarchical organization of human experience, we propose ECHO (Experience Consolidation and Hierarchical Organization), a novel memory framework operating within a Continuous Hierarchical Space. By employing a hyperbolic autoencoder, ECHO maps VLA hidden states into this space. Leveraging hyperbolic metrics and entailment constraint mechanisms, experience vectors are organized into a semantic memory tree that supports efficient top-down retrieval. In parallel, a background consolidation mechanism continuously refines the memory tree through geometric interpolation and structural splitting, supporting virtual memory synthesis in the continuous space. We integrate ECHO into the $\\pi_0$ foundation model. Evaluations on LIBERO and preliminary real-world experiments demonstrate the effectiveness of our approach, notably achieving a 12.8% absolute improvement in execution success rate over the $\\pi_0$ baseline on LIBERO-Long, while improving compositional generalization on cross-suite unseen long-horizon tasks.",
+  "paper_url": "https://arxiv.org/abs/2605.10993",
+  "pdf_url": "https://arxiv.org/pdf/2605.10993",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yanbin Hu",
+      "affiliations": []
+    },
+    {
+      "name": "Jin Cui",
+      "affiliations": []
+    },
+    {
+      "name": "Jiayi Lu",
+      "affiliations": []
+    },
+    {
+      "name": "Ruixuan Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Jun Ye",
+      "affiliations": []
+    },
+    {
+      "name": "Boran Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Xingyu Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Xuguang Lan",
+      "affiliations": []
+    },
+    {
+      "name": "Pengju Ren",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "xianjiaotonguniversity",
+      "name": "Xi’an Jiaotong University",
+      "role": "primary"
+    },
+    {
+      "id": "instituteofartificialintelligenceandrobotics",
+      "name": "Institute of Artificial Intelligence and Robotics",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-09",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 82,
+    "selection_reason": "ECHO聚焦视觉—语言—动作模型，方法、实验和结论已通过 HTML 全文复核；综合评分为 82/100；尚未核验到作者公开的核心复现资产。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.10993",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.10993"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.10993"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Xi’an Jiaotong University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.10993",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Institute of Artificial Intelligence and Robotics",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.10993",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": []
+}

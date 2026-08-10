@@ -1,0 +1,203 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.02739",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Latent Bridge: Feature Delta Prediction for Efficient Dual-System Vision-Language-Action Model Inference",
+  "title_zh": null,
+  "abstract": "Dual-system Vision-Language-Action (VLA) models achieve state-of-the-art robotic manipulation but are bottlenecked by the VLM backbone, which must execute at every control step while producing temporally redundant features. We propose Latent Bridge, a lightweight model that predicts VLM output deltas between timesteps, enabling the action head to operate on predicted outputs while the expensive VLM backbone is called only periodically. We instantiate Latent Bridge on two architecturally distinct VLAs: GR00T-N1.6 (feature-space bridge) and {\\pi}0.5 (KV-cache bridge), demonstrating that the approach generalizes across VLA designs. Our task-agnostic DAgger training pipeline transfers across benchmarks without modification. Across four LIBERO suites, 24 RoboCasa kitchen tasks, and the ALOHA sim transfer-cube task, Latent Bridge achieves 95-100% performance retention while reducing VLM calls by 50-75%, yielding 1.65-1.73x net per-episode speedup.",
+  "paper_url": "https://arxiv.org/abs/2605.02739",
+  "pdf_url": "https://arxiv.org/pdf/2605.02739",
+  "project_url": null,
+  "code_url": "https://github.com/1999Lyd/Latent-Bridge",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yudong Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Yuan Li",
+      "affiliations": []
+    },
+    {
+      "name": "Zijia Tang",
+      "affiliations": []
+    },
+    {
+      "name": "Yuxi Zheng",
+      "affiliations": []
+    },
+    {
+      "name": "Yueqian Lin",
+      "affiliations": []
+    },
+    {
+      "name": "Qinsi Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Yi Li",
+      "affiliations": []
+    },
+    {
+      "name": "Shuangjun Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Shuai Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Taotao Jing",
+      "affiliations": []
+    },
+    {
+      "name": "Dashan Gao",
+      "affiliations": []
+    },
+    {
+      "name": "Ning Bi",
+      "affiliations": []
+    },
+    {
+      "name": "Jingwei Sun",
+      "affiliations": []
+    },
+    {
+      "name": "Yiran Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Hai Li",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "dukeuniversity",
+      "name": "Duke University",
+      "role": "primary"
+    },
+    {
+      "id": "qualcommairesearch",
+      "name": "Qualcomm AI Research",
+      "role": "collaborator"
+    },
+    {
+      "id": "universityofflorida",
+      "name": "University of Florida",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-04",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [
+      "code"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 83,
+    "selection_reason": "Latent Bridge聚焦视觉—语言—动作模型，方法、实验和结论已通过 HTML 全文复核；综合评分为 83/100；已核验代码链接。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "主要证据来自仿真，真实部署外推仍需验证"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.02739",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.02739"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.02739"
+    },
+    {
+      "type": "paper",
+      "url": "https://github.com/1999Lyd/Latent-Bridge"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Duke University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.02739",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Qualcomm AI Research",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.02739",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University of Florida",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.02739",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/1999Lyd/Latent-Bridge",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "paper-visible-url",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://api.github.com/repos/1999Lyd/Latent-Bridge"
+    }
+  ]
+}

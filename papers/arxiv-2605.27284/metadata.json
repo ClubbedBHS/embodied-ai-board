@@ -1,0 +1,257 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.27284",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "FineVLA: Fine-Grained Instruction Alignment for Steerable Vision-Language-Action Policies",
+  "title_zh": null,
+  "abstract": "Vision-Language-Action (VLA) models are increasingly expected to not only complete robot tasks, but also follow human instructions about how those tasks should be executed. However, existing robot datasets usually pair trajectories with coarse goal-level language, leaving execution-critical details such as active arm, approach direction, and contact region unspecified. This limits steerable policy learning and robotic video understanding. We introduce FineVLA, an open framework for action-aligned fine-grained VLA supervision. The framework includes: (1) a data construction tool that unifies 972,247 trajectories across 85K tasks from 10 open-source robot datasets and builds FineVLA-Data, a human-verified dataset of 47,159 fine-grained trajectories; (2) a held-out benchmark with 500 videos, 11,631 atomic facts, and 1,030 VQA questions; (3) a robotics-specialized VLM annotator for scalable fine-grained annotation; and (4) a steerable VLA policy trained with controlled mixtures of fine-grained and raw goal-level instructions. Our experiments yield three findings. First, fine-grained supervision does not sacrifice goal-level success: FG-only improves over Raw-only by +1.4 to +8.1 success-rate points across settings. Second, fine-grained and raw instructions are complementary, following a consistent inverted-U trend peaking at FG:Raw = 1:2 to 1:1. The best mixed setting reaches 86.8%/82.5% in RoboTwin simulation and 62.7/100 in real-world dual-arm manipulation (vs. 49.9 Raw-only). Third, fine-grained supervision improves steerable control: the largest real-world gains appear on pose (+23), color (+18), and approach direction (+18)--factors where goal-level instructions provide no guidance. Overall, fine-grained language should augment goal-level instructions: specifying how to execute alongside what to achieve. Project page: https://finevla.xlang.ai/",
+  "paper_url": "https://arxiv.org/abs/2605.27284",
+  "pdf_url": "https://arxiv.org/pdf/2605.27284",
+  "project_url": "https://finevla.xlang.ai/",
+  "code_url": null,
+  "dataset_url": "https://huggingface.co/datasets/xlangai/RoboFine-bench",
+  "model_url": "https://huggingface.co/xlangai/RoboFine-VLM-397B-A17B",
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Xintong Hu",
+      "affiliations": []
+    },
+    {
+      "name": "Xuhong Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Jinyu Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Yutong Yao",
+      "affiliations": []
+    },
+    {
+      "name": "Yuchong Sun",
+      "affiliations": []
+    },
+    {
+      "name": "Qiuyue Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Mingsheng Li",
+      "affiliations": []
+    },
+    {
+      "name": "Sicheng Xie",
+      "affiliations": []
+    },
+    {
+      "name": "Yitao Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Junhao Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Yixuan Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Yingming Zheng",
+      "affiliations": []
+    },
+    {
+      "name": "Shuai Bai",
+      "affiliations": []
+    },
+    {
+      "name": "Tao Yu",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "theuniversityofhongkong",
+      "name": "The University of Hong Kong",
+      "role": "primary"
+    },
+    {
+      "id": "alibaba",
+      "name": "Alibaba",
+      "role": "collaborator"
+    },
+    {
+      "id": "qwen",
+      "name": "Qwen",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-26",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [
+      "project",
+      "project",
+      "data",
+      "model"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 93,
+    "selection_reason": "FineVLA聚焦视觉—语言—动作模型，方法、实验和结论已通过 HTML 全文复核；综合评分为 93/100；已核验项目页、数据、模型链接。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前结论仍需在更多任务、平台或独立复现实验中验证"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.27284",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.27284"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.27284"
+    },
+    {
+      "type": "paper",
+      "url": "https://finevla.xlang.ai/"
+    },
+    {
+      "type": "paper",
+      "url": "https://finevla.xlang.ai/#data"
+    },
+    {
+      "type": "paper",
+      "url": "https://huggingface.co/datasets/xlangai/RoboFine-bench"
+    },
+    {
+      "type": "paper",
+      "url": "https://huggingface.co/xlangai/RoboFine-VLM-397B-A17B"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "The University of Hong Kong",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.27284",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Alibaba",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.27284",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Qwen",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.27284",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://finevla.xlang.ai/",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-abstract",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://finevla.xlang.ai/"
+    },
+    {
+      "kind": "project",
+      "url": "https://finevla.xlang.ai/#data",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://finevla.xlang.ai/#data"
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/xlang-ai/FineVLA",
+      "status": "verification-error",
+      "accessible": false,
+      "verification_method": "github-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "error": "HTTP 403"
+    },
+    {
+      "kind": "data",
+      "url": "https://huggingface.co/datasets/xlangai/RoboFine-bench",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://huggingface.co/api/datasets/xlangai/RoboFine-bench"
+    },
+    {
+      "kind": "model",
+      "url": "https://huggingface.co/xlangai/RoboFine-VLM-397B-A17B",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "huggingface-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://huggingface.co/api/models/xlangai/RoboFine-VLM-397B-A17B"
+    }
+  ]
+}

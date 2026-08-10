@@ -1,0 +1,140 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.19981",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "CEER: Compliant End-Effector and Root Control as a Unified Interface for Hierarchical Humanoid Loco-Manipulation",
+  "title_zh": null,
+  "abstract": "Humanoid robots have achieved impressive locomotion performance, yet contact-rich and long-horizon manipulation remains a major bottleneck. Manipulation is inherently contact-rich and demands compliant whole-body control for stable interaction, while its diversity and long-horizon nature favor modular, planner-compatible interfaces over joint-space tracking. We propose CEER, a compliant end-effector-root (EE-root) control abstraction for modular humanoid loco-manipulation within a hierarchical planning framework. CEER enables compliance-aware whole-body control in an interpretable task space defined by root motion commands and end-effector pose targets, and supports plug-and-play integration with heterogeneous high-level planners. A teacher-student framework is adopted to distill a general motion-tracking controller into a low-level policy that consumes only EE-root commands. We further construct a hierarchical system that integrates heterogeneous planners and task modules through the EE-root interface, enabling diverse manipulation tasks without retraining the underlying whole-body policy. Experiments in simulation and on hardware demonstrate 3.3 cm end-effector tracking accuracy with substantially reduced jerk compared to baselines, stable contact-rich manipulation under teleoperation, and up to 70% success in simulated single-object loco-manipulation tasks within a room-scale environment. These results indicate that compliant EE-root control provides a practical abstraction for humanoid loco-manipulation, enabling modular and scalable integration of diverse skills.",
+  "paper_url": "https://arxiv.org/abs/2605.19981",
+  "pdf_url": "https://arxiv.org/pdf/2605.19981",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Xinyuan Luo",
+      "affiliations": []
+    },
+    {
+      "name": "Xingrui Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Xunjian Yin",
+      "affiliations": []
+    },
+    {
+      "name": "Hongxuan Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Boxi Xia",
+      "affiliations": []
+    },
+    {
+      "name": "Zhuoqun Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Jinzhou Li",
+      "affiliations": []
+    },
+    {
+      "name": "Boyuan Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Xianyi Cheng",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "dukeuniversity",
+      "name": "Duke University",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-19",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "manipulation",
+      "humanoid"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 84,
+    "selection_reason": "CEER聚焦机器人操作与人形机器人，方法、实验和结论已通过 HTML 全文复核；综合评分为 84/100；尚未核验到作者公开的核心复现资产。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.19981",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.19981"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.19981"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Duke University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.19981",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": []
+}

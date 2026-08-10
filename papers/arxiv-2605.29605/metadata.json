@@ -1,0 +1,170 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.29605",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "VLAConf: Calibrated Task-Success Confidence for Vision-Language-Action Models",
+  "title_zh": null,
+  "abstract": "Confidence estimation for Vision-Language-Action (VLA) models is essential for robots to perform manipulation tasks in the open world, providing crucial signals for risk-sensitive decision-making and failure anticipation. Existing confidence estimation methods typically rely on ensemble-based paradigms or action-token probabilities to predict the likelihood of task success. However, they still encounter challenges in computational efficiency and cross-architecture generalizability. These methods usually require repeated sampling, leading to inference inefficiency, and are restricted to VLA models with discrete action outputs, making them difficult to apply to continuous action spaces. To address this issue, we propose VLAConf, a one-class discriminative confidence framework. By leveraging frozen pretrained VLA internal representations, VLAConf directly estimates step-wise anomaly scores in a single forward pass using a lightweight confidence head, thereby eliminating the overhead of exhaustive resampling. We additionally use step-conditioned modeling to encode rollout-phase information along the manipulation trajectory. Experiments on the LIBERO benchmark demonstrate that VLAConf significantly improves the quality of the confidence signal constructed for post-hoc calibration, outperforming existing baselines by a large margin in inference efficiency. The effectiveness of VLAConf is further validated in real-robot experiments. To access the source code and supplementary videos, visit https://sites.google.com/view/vlaconf.",
+  "paper_url": "https://arxiv.org/abs/2605.29605",
+  "pdf_url": "https://arxiv.org/pdf/2605.29605",
+  "project_url": "https://sites.google.com/view/vlaconf",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Dehao Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Aoxiang Gu",
+      "affiliations": []
+    },
+    {
+      "name": "Chengjie Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Bolin Zou",
+      "affiliations": []
+    },
+    {
+      "name": "Wenlong Dong",
+      "affiliations": []
+    },
+    {
+      "name": "Zilang Cen",
+      "affiliations": []
+    },
+    {
+      "name": "Yue Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Hong Zhang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "wuhanuniversity",
+      "name": "Wuhan University",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-28",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [
+      "project",
+      "project"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 79,
+    "selection_reason": "VLAConf聚焦视觉—语言—动作模型，方法、实验和结论已通过 HTML 全文复核；综合评分为 79/100；已核验项目页链接。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产",
+      "主要证据来自仿真，真实部署外推仍需验证"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.29605",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.29605"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.29605"
+    },
+    {
+      "type": "paper",
+      "url": "https://sites.google.com/view/vlaconf"
+    },
+    {
+      "type": "paper",
+      "url": "http://www.google.com/url?q=http%3A%2F%2Ftbd&sa=D&sntz=1&usg=AOvVaw01p7E2WLvtbCCRVUuzixxe"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Wuhan University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.29605",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://sites.google.com/view/vlaconf",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-abstract",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://sites.google.com/view/vlaconf"
+    },
+    {
+      "kind": "project",
+      "url": "http://www.google.com/url?q=http%3A%2F%2Ftbd&sa=D&sntz=1&usg=AOvVaw01p7E2WLvtbCCRVUuzixxe",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "http://www.google.com/url?q=http%3A%2F%2Ftbd&sa=D&sntz=1&usg=AOvVaw01p7E2WLvtbCCRVUuzixxe"
+    }
+  ]
+}

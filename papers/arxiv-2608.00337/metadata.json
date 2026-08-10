@@ -1,0 +1,184 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.00337",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Action Chunk Scheduling for Batched Robot Policy Serving",
+  "title_zh": "面向批量机器人策略服务的动作块调度",
+  "abstract": "Deploying robot foundation models at scale is the next step towards realizing the potential of general-purpose robots. However, Vision-Language-Action (VLA) and other foundation models are computationally demanding, and on-device compute is constrained by power and space. In this paper, we introduce the problem of serving a robot policy to multiple robots from a remote GPU and formulate it as a scheduling problem. We build Armory, a serving system validated on fleets of both simulated and real robots. Our experiments show that naive scheduling heuristics perform well when all robots are the same, but fall short when robots consume action chunks at different rates, uncovering a mismatch between conventional batching methods and the closed-loop requirements of robot policy execution. To address this, we propose a scheduling algorithm that accounts for this heterogeneity and improves overall system throughput by up to in real-world experiments. Additional details are available at https://gatech-rl2.github.io/actionchunkscheduling/ .",
+  "paper_url": "https://arxiv.org/abs/2608.00337",
+  "pdf_url": "https://arxiv.org/pdf/2608.00337",
+  "project_url": "https://gatech-rl2.github.io/actionchunkscheduling/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Rohan Bansal",
+      "affiliations": []
+    },
+    {
+      "name": "David He",
+      "affiliations": []
+    },
+    {
+      "name": "Nadun Ranawaka Arachchige",
+      "affiliations": []
+    },
+    {
+      "name": "Zhenyang Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Soobum Kim",
+      "affiliations": []
+    },
+    {
+      "name": "Kexin Rong",
+      "affiliations": []
+    },
+    {
+      "name": "Danfei Xu",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "georgia-institute-of-technology",
+      "name": "Georgia Institute of Technology",
+      "role": "primary"
+    },
+    {
+      "id": "advanced-robotic-manipulation-lab",
+      "name": "Advanced Robotic Manipulation Lab",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-07-31",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "infrastructure",
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "control"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "multi-robot",
+      "robot-arm"
+    ],
+    "modalities": [
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "multi-robot",
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "infrastructure",
+    "system",
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 88,
+    "selection_reason": "把多机器人共享远端 VLA 推理明确建模为闭环调度问题；Armory 在仿真与 10 台真实机械臂上验证，异构负载下吞吐最高提升 18%。",
+    "candidate_run": "2026-08-10-weekly-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-10",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "未发现可验证的官方代码仓库"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.00337",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, conclusion or limitations were reviewed in the complete arXiv HTML; first-page affiliations were verified from PDF where HTML omitted them.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-10"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.00337"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.00337"
+    },
+    {
+      "type": "affiliation",
+      "url": "https://arxiv.org/pdf/2608.00337"
+    },
+    {
+      "type": "project",
+      "url": "https://gatech-rl2.github.io/actionchunkscheduling/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Georgia Institute of Technology",
+      "source": "paper-pdf",
+      "url": "https://arxiv.org/pdf/2608.00337",
+      "location": "first-page affiliation block"
+    },
+    {
+      "organization": "Advanced Robotic Manipulation Lab",
+      "source": "paper-pdf",
+      "url": "https://arxiv.org/pdf/2608.00337",
+      "location": "first-page affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://gatech-rl2.github.io/actionchunkscheduling/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-fulltext",
+      "checked_at": "2026-08-10"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "source-scan",
+      "evidence_source": "paper-and-project-page",
+      "checked_at": "2026-08-10",
+      "note": "Project source contains a commented VideoMimic template link; it is unrelated and was not accepted as Armory code."
+    }
+  ]
+}

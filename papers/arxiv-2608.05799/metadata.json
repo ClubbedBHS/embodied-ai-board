@@ -1,0 +1,227 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.05799",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "XEWorld: Can Action-Conditioned World Models Generalize to Unseen Robot Embodiments?",
+  "title_zh": "XEWorld：动作条件世界模型能否泛化到未见机器人本体？",
+  "abstract": "Action-conditioned world models are promising learned simulators for robotic manipulation, yet evaluating them exclusively on training robots fails to reveal whether they capture physical dynamics or merely memorize visual patterns. To answer whether a model can faithfully render a robot it has never seen, we introduce XEWorld , a controlled cross-embodiment testbed for world models that isolates embodiments by evaluating held-out robots within physically identical scenes. Our systematic analysis uncovers a shared architectural bottleneck: current models act primarily as 2D visual pattern matchers whose generalization is governed by visual similarity rather than physical kinematic similarity. Driven by this limitation, they struggle to translate abstract numeric joint actions into coherent visual trajectories, and fail to predict dynamic visual changes from static initial observations. Consequently, successfully rendering an unseen embodiment zero-shot strictly requires heavily grounded cues, specifically pixel-space actions and explicit spatial-temporal alignment. Even when bypassing this zero-shot barrier via few-shot adaptation, the forced appearance recovery triggers catastrophic forgetting of seen embodiments. Together, these failures expose a critical inability to apply learned physical dynamics to novel visual appearances, highlighting that achieving true cross-embodiment generalization requires architectural innovations that decouple visual appearance from underlying physical dynamics.",
+  "paper_url": "https://arxiv.org/abs/2608.05799",
+  "pdf_url": "https://arxiv.org/pdf/2608.05799",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yixiang Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Jiabing Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Yuan Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Qisen Ma",
+      "affiliations": []
+    },
+    {
+      "name": "Keji He",
+      "affiliations": []
+    },
+    {
+      "name": "Peiyan Li",
+      "affiliations": []
+    },
+    {
+      "name": "Kai Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Ziheng He",
+      "affiliations": []
+    },
+    {
+      "name": "Xiangnan Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Jing Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Nianfeng Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Yan Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Liang Wang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "new-laboratory-of-pattern-recognition-institute-of-automation-chinese-academy-of-sciences",
+      "name": "New Laboratory of Pattern Recognition, Institute of Automation, Chinese Academy of Sciences",
+      "role": "primary"
+    },
+    {
+      "id": "university-of-chinese-academy-of-sciences",
+      "name": "University of Chinese Academy of Sciences",
+      "role": "collaborator"
+    },
+    {
+      "id": "shandong-university",
+      "name": "Shandong University",
+      "role": "collaborator"
+    },
+    {
+      "id": "fiveages",
+      "name": "FiveAges",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-06",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data",
+      "algorithms"
+    ],
+    "topics": [
+      "world-model",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "action"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [],
+    "properties": [
+      "zero-shot",
+      "few-shot",
+      "simulation-only"
+    ]
+  },
+  "paper_type": [
+    "benchmark",
+    "analysis"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 88,
+    "selection_reason": "用 25 个任务、5 种机器人和严格配对场景隔离 embodiment 变量，给出重要反例：当前世界模型的迁移更受视觉相似性而非运动学相似性支配，少样本适配还会导致旧 embodiment 遗忘。",
+    "candidate_run": "2026-08-10-weekly-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-10",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "作者已声明后续开放部分资产，但当前没有可访问的直接地址",
+      "未发现可验证的官方代码仓库"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.05799",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, conclusion or limitations were reviewed in the complete arXiv HTML; first-page affiliations were verified from PDF where HTML omitted them.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-10"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.05799"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.05799"
+    },
+    {
+      "type": "affiliation",
+      "url": "https://arxiv.org/pdf/2608.05799"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "New Laboratory of Pattern Recognition, Institute of Automation, Chinese Academy of Sciences",
+      "source": "paper-pdf",
+      "url": "https://arxiv.org/pdf/2608.05799",
+      "location": "first-page affiliation block"
+    },
+    {
+      "organization": "University of Chinese Academy of Sciences",
+      "source": "paper-pdf",
+      "url": "https://arxiv.org/pdf/2608.05799",
+      "location": "first-page affiliation block"
+    },
+    {
+      "organization": "Shandong University",
+      "source": "paper-pdf",
+      "url": "https://arxiv.org/pdf/2608.05799",
+      "location": "first-page affiliation block"
+    },
+    {
+      "organization": "FiveAges",
+      "source": "paper-pdf",
+      "url": "https://arxiv.org/pdf/2608.05799",
+      "location": "first-page affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "announced",
+      "accessible": false,
+      "verification_method": "paper-fulltext-scan",
+      "evidence_source": "paper-fulltext",
+      "checked_at": "2026-08-10",
+      "note": "Paper states that the release covers 25 tasks × 5 robots, but no direct download URL was found."
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "source-scan",
+      "evidence_source": "paper-fulltext",
+      "checked_at": "2026-08-10"
+    }
+  ]
+}

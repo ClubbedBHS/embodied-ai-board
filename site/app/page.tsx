@@ -48,9 +48,21 @@ function formatDate(value: string | null | undefined) {
   return value.replaceAll("-", ".");
 }
 
-function formatMonth(value: string) {
-  const [year, month] = value.split("-");
-  return `${year} 年 ${Number(month)} 月`;
+const BOARD_UPDATED_AT = "2026-08-10";
+const DAY_MS = 24 * 60 * 60 * 1000;
+
+function parseDate(value: string) {
+  return new Date(`${value}T00:00:00Z`).getTime();
+}
+
+function isWithinDays(value: string | null | undefined, anchor: string, days: number) {
+  if (!value) return false;
+  const delta = parseDate(anchor) - parseDate(value);
+  return delta >= 0 && delta < days * DAY_MS;
+}
+
+function dateDaysBefore(value: string, days: number) {
+  return new Date(parseDate(value) - days * DAY_MS).toISOString().slice(0, 10);
 }
 
 export default function Home() {
@@ -58,7 +70,7 @@ export default function Home() {
   const [topic, setTopic] = useState("all");
   const [query, setQuery] = useState("");
   const [selected, setSelected] = useState<Paper | null>(null);
-  const [showAllMonthly, setShowAllMonthly] = useState(false);
+  const [showAllRecent, setShowAllRecent] = useState(false);
 
   const topics = useMemo(() => {
     const counts = new Map<string, number>();
@@ -78,19 +90,20 @@ export default function Home() {
     });
   }, [query, section, topic]);
 
-  const latestMonth = papers
-    .map((paper) => paper.date?.slice(0, 7) || "")
-    .sort((a, b) => b.localeCompare(a))[0];
-
-  const monthlyHighlights = papers
+  const recentStart = dateDaysBefore(BOARD_UPDATED_AT, 29);
+  const recentHighlights = papers
     .filter((paper) =>
-      paper.date?.startsWith(latestMonth) &&
+      isWithinDays(paper.date, BOARD_UPDATED_AT, 30) &&
       (paper.selectionScore || 0) >= 90
     )
-    .sort((a, b) => (b.selectionScore || 0) - (a.selectionScore || 0));
+    .sort((a, b) =>
+      (b.selectionScore || 0) - (a.selectionScore || 0) ||
+      (b.date || "").localeCompare(a.date || "")
+    );
 
-  const monthlyLead = monthlyHighlights[0];
-  const monthlyRest = showAllMonthly ? monthlyHighlights.slice(1) : [];
+  const recentHighlightIds = new Set(recentHighlights.map((paper) => paper.id));
+  const recentLead = recentHighlights[0];
+  const recentRest = showAllRecent ? recentHighlights.slice(1) : [];
   const weeklyHighlights = papers
     .filter((paper) => paper.importance === "featured")
     .sort((a, b) => {
@@ -107,34 +120,34 @@ export default function Home() {
           <span>Embodied AI Board</span>
         </a>
         <nav aria-label="主导航">
-          <a href="#top">本月关注</a>
+          <a href="#top">近 30 天关注</a>
           <a href="#latest">论文库</a>
-          <span className="update-pill"><i /> 上次更新：2026.07.29</span>
+          <span className="update-pill"><i /> 上次更新：{formatDate(BOARD_UPDATED_AT)}</span>
         </nav>
       </header>
 
       <section className="monthly-focus" id="top" aria-labelledby="monthly-title">
         <div className="monthly-heading">
           <div>
-            <span className="eyebrow">MONTHLY SIGNAL · {latestMonth.replace("-", ".")}</span>
-            <h1 id="monthly-title">{formatMonth(latestMonth)}<br /><em>值得关注的工作</em></h1>
+            <span className="eyebrow">30-DAY SIGNAL · {formatDate(recentStart)}—{formatDate(BOARD_UPDATED_AT)}</span>
+            <h1 id="monthly-title">近 30 天<br /><em>值得关注的工作</em></h1>
           </div>
         </div>
 
-        {monthlyLead && (
-          <button className="monthly-lead" onClick={() => setSelected(monthlyLead)}>
-            <div className="monthly-rank"><span>01</span><b>本月首选</b></div>
+        {recentLead && (
+          <button className="monthly-lead" onClick={() => setSelected(recentLead)}>
+            <div className="monthly-rank"><span>01</span><b>近 30 天首选</b></div>
             <div className="monthly-lead-copy">
-              <div className="feature-meta"><span>{sectionLabels[monthlyLead.sections[0]] || monthlyLead.sections[0]}</span><span>{formatDate(monthlyLead.date)}</span></div>
-              <h2>{monthlyLead.titleZh || monthlyLead.title}</h2>
-              <p>{monthlyLead.oneLiner}</p>
+              <div className="feature-meta"><span>{sectionLabels[recentLead.sections[0]] || recentLead.sections[0]}</span><span>{formatDate(recentLead.date)}</span></div>
+              <h2>{recentLead.titleZh || recentLead.title}</h2>
+              <p>{recentLead.oneLiner}</p>
               <span className="read-more">查看重点解读 <b>↗</b></span>
             </div>
           </button>
         )}
 
         <div className="monthly-list">
-          {monthlyRest.map((paper, index) => (
+          {recentRest.map((paper, index) => (
             <button className="monthly-item" key={paper.id} onClick={() => setSelected(paper)}>
               <span className="feature-index">0{index + 2}</span>
               <div>
@@ -146,19 +159,19 @@ export default function Home() {
             </button>
           ))}
         </div>
-        {monthlyHighlights.length > 1 && (
+        {recentHighlights.length > 1 && (
           <button
             className="monthly-toggle"
             type="button"
-            aria-expanded={showAllMonthly}
-            onClick={() => setShowAllMonthly((value) => !value)}
+            aria-expanded={showAllRecent}
+            onClick={() => setShowAllRecent((value) => !value)}
           >
             <span>
-              {showAllMonthly
-                ? "收起月度列表"
-                : `展开查看全部 ${monthlyHighlights.length} 篇 90 分以上论文`}
+              {showAllRecent
+                ? "收起近 30 天列表"
+                : `展开查看近 30 天全部 ${recentHighlights.length} 篇 90 分以上论文`}
             </span>
-            <b aria-hidden="true">{showAllMonthly ? "↑" : "↓"}</b>
+            <b aria-hidden="true">{showAllRecent ? "↑" : "↓"}</b>
           </button>
         )}
       </section>
@@ -214,8 +227,8 @@ export default function Home() {
                 <div className="paper-card-top">
                   <div className="tag-row">
                     <span className="content-tag">{contentTypeLabels[paper.contentType] || paper.contentType}</span>
-                    {(paper.selectionScore || 0) >= 90
-                      ? <span className="featured-tag">本月精选</span>
+                    {recentHighlightIds.has(paper.id)
+                      ? <span className="featured-tag">近 30 天精选</span>
                       : paper.importance === "featured" && <span className="featured-tag">重点推荐</span>}
                     {paper.sections.slice(0, 2).map((item) => <span className="section-tag" key={item}>{sectionLabels[item] || item}</span>)}
                     {paper.topics.slice(0, 2).map((item) => <span key={item}>{topicLabels[item] || item}</span>)}

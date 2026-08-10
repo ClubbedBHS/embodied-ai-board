@@ -1,0 +1,176 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.23187",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "IntentionNav: A Benchmark for Intent-Driven Object Navigation from Implicit Human Instruction",
+  "title_zh": null,
+  "abstract": "Existing object navigation benchmarks usually tell an embodied agent which object category to find, such as microwave or chair. Human-facing embodied AI is often asked something less direct: \"I need something to warm this food\" or \"the room feels stuffy.\" The agent must infer the object that can satisfy the need, find a scene-grounded instance, and decide whether the goal has been reached. We study this setting as intent-driven object navigation and introduce IntentionNav, a diagnostic benchmark for active object search from implicit human instructions. Each episode provides a free-text intent, RGB-D observations, and pose, but withholds the target object name. IntentionNav contains 500 intents over 176 Isaac Sim scenes and 64 target categories. Each intent is rewritten in four controlled instruction styles and annotated with one of four intent modes, separating surface phrasing from semantic cue type under matched geometry. This paired design supports analysis of target inference, language robustness, neighborhood reachability, and terminal success rather than only aggregate success. We evaluated three VLMs using a fixed active-navigation agent. Models identify the intended target in 48.3 percent of episodes and enter its 2 m neighborhood in 68.7 percent, but terminate successfully in only 24.9 percent and achieve grounded 1 m success in 5.5 percent. Success is highest for event-script intents (28.7 percent) and lower for physical-state and affordance intents (19.2 percent and 18.5 percent), showing that indirect human intent remains a bottleneck for target selection, visual verification, and terminal localization in active embodied search.",
+  "paper_url": "https://arxiv.org/abs/2605.23187",
+  "pdf_url": "https://arxiv.org/pdf/2605.23187",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Lin Qian",
+      "affiliations": []
+    },
+    {
+      "name": "Shijie Li",
+      "affiliations": []
+    },
+    {
+      "name": "Sihao Lin",
+      "affiliations": []
+    },
+    {
+      "name": "Xuan Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Bangya Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Yanran Li",
+      "affiliations": []
+    },
+    {
+      "name": "Hujun Yin",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "theuniversityofmanchester",
+      "name": "The University of Manchester",
+      "role": "primary"
+    },
+    {
+      "id": "astar",
+      "name": "A*STAR",
+      "role": "collaborator"
+    },
+    {
+      "id": "adelaideuniversity",
+      "name": "Adelaide University",
+      "role": "collaborator"
+    },
+    {
+      "id": "2077ai",
+      "name": "2077AI",
+      "role": "collaborator"
+    },
+    {
+      "id": "universityofbedfordshire",
+      "name": "University of Bedfordshire",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-22",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data"
+    ],
+    "topics": [
+      "data"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "benchmark"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 84,
+    "selection_reason": "IntentionNav聚焦数据与评测，方法、实验和结论已通过 HTML 全文复核；综合评分为 84/100；尚未核验到作者公开的核心复现资产。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产",
+      "主要证据来自仿真，真实部署外推仍需验证"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.23187",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.23187"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.23187"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "The University of Manchester",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.23187",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "A*STAR",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.23187",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Adelaide University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.23187",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "2077AI",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.23187",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University of Bedfordshire",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.23187",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": []
+}

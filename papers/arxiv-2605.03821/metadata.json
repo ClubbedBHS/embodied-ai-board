@@ -1,0 +1,161 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.03821",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "RoboAlign-R1: Distilled Multimodal Reward Alignment for Robot Video World Models",
+  "title_zh": null,
+  "abstract": "Existing robot video world models are typically trained with low-level objectives such as reconstruction and perceptual similarity, which are poorly aligned with the capabilities that matter most for robot decision making, including instruction following, manipulation success, and physical plausibility. They also suffer from error accumulation in long-horizon autoregressive prediction. We present RoboAlign-R1, a framework that combines reward-aligned post-training with stabilized long-horizon inference for robot video world models. We construct RobotWorldBench, a benchmark of 10,000 annotated video-instruction pairs collected from four robot data sources, and train a multimodal teacher judge, RoboAlign-Judge, to provide fine-grained six-dimensional evaluation of generated videos. We then distill the teacher into a lightweight student reward model for efficient reinforcement-learning-based post-training. To reduce long-horizon rollout drift, we further introduce Sliding Window Re-encoding (SWR), a training-free inference strategy that periodically refreshes the generation context. Under our in-domain evaluation protocol, RoboAlign-R1 improves the aggregate six-dimension score by 10.1% over the strongest baseline, including gains of 7.5% on Manipulation Accuracy and 4.6% on Instruction Following; these ranking improvements are further supported by an external VLM-based cross-check and a blinded human study. Meanwhile, SWR improves long-horizon prediction quality with only about 1% additional latency, yielding a 2.8% gain in SSIM and a 9.8% reduction in LPIPS. Together, these results show that reward-aligned post-training and stabilized long-horizon decoding improve task consistency, physical realism, and long-horizon prediction quality in robot video world models.",
+  "paper_url": "https://arxiv.org/abs/2605.03821",
+  "pdf_url": "https://arxiv.org/pdf/2605.03821",
+  "project_url": null,
+  "code_url": "https://github.com/Alexander-wu/RoboAlign_R1",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Hao Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Yuqi Li",
+      "affiliations": []
+    },
+    {
+      "name": "Yuan Gao",
+      "affiliations": []
+    },
+    {
+      "name": "Fan Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Fan Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Kun Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Penghao Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Qiufeng Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Yizhou Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Weiyan Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Yingli Tian",
+      "affiliations": []
+    },
+    {
+      "name": "Xian Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaomeng Huang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-05-05",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [
+      "code"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 90,
+    "selection_reason": "RoboAlign-R1聚焦具身世界模型，方法、实验和结论已通过 HTML 全文复核；综合评分为 90/100；已核验代码链接。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "主要证据来自仿真，真实部署外推仍需验证",
+      "论文 HTML 未提供可稳定解析的机构 affiliation，未按作者身份猜测团队"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.03821",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.03821"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.03821"
+    },
+    {
+      "type": "paper",
+      "url": "https://github.com/Alexander-wu/RoboAlign_R1"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/Alexander-wu/RoboAlign_R1",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "paper-visible-url",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://api.github.com/repos/Alexander-wu/RoboAlign_R1"
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.06222",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "When to Trust Imagination: Adaptive Action Execution for World Action Models",
+  "title_zh": null,
+  "abstract": "World Action Models (WAMs) have recently emerged as a promising paradigm for robotic manipulation by jointly predicting future visual observations and future actions. However, current WAMs typically execute a fixed number of predicted actions after each model inference, leaving the robot blind to whether the imagined future remains consistent with the actual physical rollout. In this work, we formulate adaptive WAM execution as a future-reality verification problem: the robot should execute longer when the WAM-predicted future remains reliable, and replan earlier when reality deviates from imagination. To this end, we propose Future Forward Dynamics Causal Attention (FFDC), a lightweight verifier that jointly reasons over predicted future actions, predicted visual dynamics, real observations, and language instructions to estimate whether the remaining action rollout can still be trusted. FFDC enables adaptive action chunk sizes as an emergent consequence of prediction-observation consistency, preserving the efficiency of long-horizon execution while restoring responsiveness in contact-rich or difficult phases. We further introduce Mixture-of-Horizon Training to improve long-horizon trajectory coverage for adaptive execution. Experiments on the RoboTwin benchmark and in the real world demonstrate that our method achieves a strong robustness-efficiency trade-off: on RoboTwin, it reduces WAM forward passes by 69.10% and execution time by 34.02%, while improving success rate by 2.54% over the short-chunk baseline; in real-world experiments, it improves success rate by 35%.",
+  "paper_url": "https://arxiv.org/abs/2605.06222",
+  "pdf_url": "https://arxiv.org/pdf/2605.06222",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Rui Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Yue Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Jiehong Lin",
+      "affiliations": []
+    },
+    {
+      "name": "Kuncheng Luo",
+      "affiliations": []
+    },
+    {
+      "name": "Jianan Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Zhongrui Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaojuan Qi",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "theuniversityofhongkong",
+      "name": "The University of Hong Kong",
+      "role": "primary"
+    },
+    {
+      "id": "hku",
+      "name": "HKU",
+      "role": "collaborator"
+    },
+    {
+      "id": "sustech",
+      "name": "SUSTech",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-07",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 84,
+    "selection_reason": "When to Trust Imagination聚焦具身世界模型，方法、实验和结论已通过 HTML 全文复核；综合评分为 84/100；尚未核验到作者公开的核心复现资产。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.06222",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.06222"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.06222"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "The University of Hong Kong",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.06222",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "HKU",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.06222",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "SUSTech",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.06222",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": []
+}

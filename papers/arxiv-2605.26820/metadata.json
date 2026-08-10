@@ -1,0 +1,198 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.26820",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Can Vision-Language-Action Models Learn from Real-World Data Continually without Forgetting?",
+  "title_zh": null,
+  "abstract": "Vision-Language-Action (VLA) models provide a promising foundation for general-purpose robotics, yet their real-world deployment demands the ability to continually acquire new skills without forgetting prior ones. While recent studies have explored continual learning for VLA models in simulated settings, the challenge remains largely unexamined under realistic physical conditions. To bridge this gap, we construct a real-world continual learning benchmark comprising ten diverse sequential manipulation tasks across both single-arm and bimanual configurations. Through extensive experiments on this benchmark, we find that naive sequential fine-tuning leads to severe catastrophic forgetting, whereas a well-configured experience replay (ER) approach can effectively mitigate forgetting and outperform joint multi-task training under equivalent computational budgets. Notably, by synthesizing our empirical findings, we successfully achieve stable continual learning across the full 10-task heterogeneous stream, retaining previously acquired capabilities while adapting to diverse new skills in real-world deployment. This work presents an empirical study grounded in real-world continual VLA learning and offers actionable insights for deploying robust, long-lived robotic policies.",
+  "paper_url": "https://arxiv.org/abs/2605.26820",
+  "pdf_url": "https://arxiv.org/pdf/2605.26820",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Jiarun Zhu",
+      "affiliations": []
+    },
+    {
+      "name": "Yijun Hong",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaoquan Sun",
+      "affiliations": []
+    },
+    {
+      "name": "Zetian Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Qijun He",
+      "affiliations": []
+    },
+    {
+      "name": "Haijier Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Zhiyong Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Mingqi Yuan",
+      "affiliations": []
+    },
+    {
+      "name": "Wenjun Zeng",
+      "affiliations": []
+    },
+    {
+      "name": "Jiayu Chen",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "hku",
+      "name": "HKU",
+      "role": "primary"
+    },
+    {
+      "id": "infiforce",
+      "name": "INFIFORCE",
+      "role": "collaborator"
+    },
+    {
+      "id": "eitningbo",
+      "name": "EIT, Ningbo",
+      "role": "collaborator"
+    },
+    {
+      "id": "hust",
+      "name": "HUST",
+      "role": "collaborator"
+    },
+    {
+      "id": "sustech",
+      "name": "SUSTech",
+      "role": "collaborator"
+    },
+    {
+      "id": "hitsz",
+      "name": "HITSZ",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-26",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 89,
+    "selection_reason": "Can Vision-Language-Action Models Learn from Real-World Data Continually without Forgetting?聚焦视觉—语言—动作模型，方法、实验和结论已通过 HTML 全文复核；综合评分为 89/100；尚未核验到作者公开的核心复现资产。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.26820",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.26820"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.26820"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "HKU",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.26820",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "INFIFORCE",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.26820",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "EIT, Ningbo",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.26820",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "HUST",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.26820",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "SUSTech",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.26820",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "HITSZ",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.26820",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": []
+}

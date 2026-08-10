@@ -1,0 +1,116 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.20433",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Spacetime Optimal-Transport Attention for Visuo-Haptic Imitation Learning of Contact-Rich Manipulation",
+  "title_zh": null,
+  "abstract": "Contact-rich manipulation tasks such as tight-clearance insertion, connector mating, polishing, and surface-conforming wiping remain difficult for data-driven controllers because they couple discontinuous contact dynamics, partial observability, and strict safety constraints. No single sensing modality suffices: vision supplies global context before contact, force/torque (F/T) feedback governs interaction after contact, and proprioceptive pose provides a consistent kinematic backbone. Most prior imitation-learning policies for contact-rich tasks operate on uni- or bi-modal signals, and the few that fuse three modalities typically adopt off-the-shelf attention modules with no explicit prior on how attention mass should be distributed across task-relevant regions. We present Spacetime Optimal-Transport Attention (SO-TA), a tri-modal fusion backbone that replaces softmax-normalized patch attention by an entropy-regularized Optimal Transport (OT) alignment between force-pose-derived sub-queries and visual patches. Explicit marginal constraints act as a structured inductive bias for contact-rich tasks, encouraging conditioning-aware spatial selection that is stable across illumination, distractors, and partial occlusion. SO-TA is paired with a diffusion-based sequence policy mapping observation windows to pose-action chunks. We evaluate SO-TA on three real-robot tasks: tight peg-in-hole assembly, BCM wiring-connector insertion, and curved-surface mark erasing. With ~200 rollouts per condition, SO-TA reaches 100% success on tight peg-in-hole versus 93% for cross-attention at matched capacity, and retains 82.5% success under illumination, distractor, and partial-occlusion perturbations where a concatenation baseline drops to 43.5%. OT-derived patch heatmaps and leave-one-out modality-influence ratios provide interpretable, phase-dependent diagnostics.",
+  "paper_url": "https://arxiv.org/abs/2605.20433",
+  "pdf_url": "https://arxiv.org/pdf/2605.20433",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yue Feng",
+      "affiliations": []
+    },
+    {
+      "name": "Weicheng Huang",
+      "affiliations": []
+    },
+    {
+      "name": "I-Ming Chen",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "nanyangtechnologicaluniversity",
+      "name": "Nanyang Technological University",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-19",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "robot-learning",
+      "manipulation"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 80,
+    "selection_reason": "Spacetime Optimal-Transport Attention for Visuo-Haptic Imitation Learning of Contact-Rich Manipulation聚焦机器人学习与机器人操作，方法、实验和结论已通过 HTML 全文复核；综合评分为 80/100；尚未核验到作者公开的核心复现资产。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.20433",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.20433"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.20433"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Nanyang Technological University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.20433",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": []
+}

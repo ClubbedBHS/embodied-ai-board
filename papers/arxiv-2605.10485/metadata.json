@@ -1,0 +1,155 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.10485",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "VEGA: Visual Encoder Grounding Alignment for Spatially-Aware Vision-Language-Action Models",
+  "title_zh": null,
+  "abstract": "Precise spatial reasoning is fundamental to robotic manipulation, yet the visual backbones of current vision-language-action (VLA) models are predominantly pretrained on 2D image data without explicit 3D geometric supervision, resulting in representations that lack accurate spatial awareness. Existing implicit spatial grounding methods partially address this by aligning VLA features with those of 3D-aware foundation models, but they rely on empirical layer search and perform alignment on LLM-level visual tokens where spatial structure has already been entangled with linguistic semantics, limiting both generalizability and geometric interpretability. We propose VEGA (Visual Encoder Grounding Alignment), a simple yet effective framework that directly aligns the output of the VLA's visual encoder with spatially-aware features from DINOv2-FiT3D, a DINOv2 model fine-tuned with multi-view consistent 3D Gaussian Splatting supervision. By performing alignment at the visual encoder output level, VEGA grounds spatial awareness before any linguistic entanglement occurs, offering a more interpretable and principled alignment target. The alignment is implemented via a lightweight projector trained with a cosine similarity loss alongside the standard action prediction objective, and is discarded at inference time, introducing no additional computational overhead. Extensive experiments on simulation benchmark and real-world manipulation tasks demonstrate that VEGA consistently outperforms existing implicit spatial grounding baselines, establishing a new state-of-the-art among implicit spatial grounding methods for VLA models.",
+  "paper_url": "https://arxiv.org/abs/2605.10485",
+  "pdf_url": "https://arxiv.org/pdf/2605.10485",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Hao Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaobao Wei",
+      "affiliations": []
+    },
+    {
+      "name": "Jingyang He",
+      "affiliations": []
+    },
+    {
+      "name": "Chengyu Bai",
+      "affiliations": []
+    },
+    {
+      "name": "Chun-Kai Fan",
+      "affiliations": []
+    },
+    {
+      "name": "Jiajun Cao",
+      "affiliations": []
+    },
+    {
+      "name": "Jintao Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Ying Li",
+      "affiliations": []
+    },
+    {
+      "name": "Shanyu Rong",
+      "affiliations": []
+    },
+    {
+      "name": "Ming Lu",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaozhu Ju",
+      "affiliations": []
+    },
+    {
+      "name": "Jian Tang",
+      "affiliations": []
+    },
+    {
+      "name": "Shanghang Zhang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "pekinguniversity",
+      "name": "Peking University",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-11",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 76,
+    "selection_reason": "VEGA聚焦视觉—语言—动作模型，方法、实验和结论已通过 HTML 全文复核；综合评分为 76/100；尚未核验到作者公开的核心复现资产。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.10485",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.10485"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.10485"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Peking University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.10485",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": []
+}

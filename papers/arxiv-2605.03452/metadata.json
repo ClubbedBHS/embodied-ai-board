@@ -1,0 +1,128 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.03452",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "BifrostUMI: Bridging Robot-Free Demonstrations and Humanoid Whole-Body Manipulation",
+  "title_zh": null,
+  "abstract": "High-quality demonstration data are essential for humanoid robot skill learning, especially for whole-body behaviors that require coordinated perception, locomotion, and manipulation. Existing data-collection methods largely rely on robot teleoperation, which is constrained by hardware accessibility, operator expertise, and limited efficiency. Inspired by the Universal Manipulation Interface (UMI), we propose BifrostUMI, a portable and robot-free framework for humanoid whole-body data collection. BifrostUMI uses lightweight VR devices and UMI-inspired grippers to collect sparse human keypoint trajectories, wrist-view observations, and gripper actions. These demonstrations train a high-level policy to predict future keypoints, which are retargeted to robot-native whole-body references and executed by a whole-body controller. Experiments in five real-world scenarios demonstrate the effectiveness of the proposed framework and validate the collected demonstrations for transferable humanoid whole-body skill learning.",
+  "paper_url": "https://arxiv.org/abs/2605.03452",
+  "pdf_url": "https://arxiv.org/pdf/2605.03452",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Hongwu Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Chenhao Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Youhao Hu",
+      "affiliations": []
+    },
+    {
+      "name": "Jiachen Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Yuanyuan Li",
+      "affiliations": []
+    },
+    {
+      "name": "Shaqi Luo",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "beijingacademyofartificialintelligence",
+      "name": "Beijing Academy of Artificial Intelligence",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-05",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "manipulation",
+      "humanoid"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 82,
+    "selection_reason": "BifrostUMI聚焦机器人操作与人形机器人，方法、实验和结论已通过 HTML 全文复核；综合评分为 82/100；尚未核验到作者公开的核心复现资产。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.03452",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.03452"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.03452"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Beijing Academy of Artificial Intelligence",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.03452",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": []
+}

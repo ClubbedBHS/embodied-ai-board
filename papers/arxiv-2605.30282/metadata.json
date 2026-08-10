@@ -1,0 +1,140 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.30282",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Gaze2Act: Gaze-Conditioned Vision-Language-Action Policies for Interactive Robot Manipulation",
+  "title_zh": null,
+  "abstract": "Vision-Language-Action (VLA) models have recently shown strong potential for robot learning by following language instructions. However, in practice, language alone is often insufficient to precisely convey human intent. It is difficult to describe which exact object to interact with among similar candidates, where to act on the object, or how the target may change during execution. To address this limitation, we propose Gaze2Act, a novel VLA framework that leverages human gaze as a dynamic and intuitive intent signal for complex interactive manipulation. Gaze2Act first bridges the ego-exo view gap by mapping first-person gaze into the robot's perspective through cross-view semantic matching, producing both an object mask and a gaze point for coarse-to-fine target specification. These cues are then integrated into the policy through perception-level prompting and action-level conditioning, allowing the robot to attend to relevant regions and execute precise interactions under dynamic intent. In a systematic evaluation across seven task categories and 16 real-robot tasks on a Unitree G1 humanoid, Gaze2Act achieves state-of-the-art performance in both intent accuracy and task success rate. It notably outperforms baselines in object disambiguation, fine-grained interaction, and dynamic intent steering. These results demonstrate that human gaze provides a natural, low-burden, and highly expressive modality for human-in-the-loop VLA control.",
+  "paper_url": "https://arxiv.org/abs/2605.30282",
+  "pdf_url": "https://arxiv.org/pdf/2605.30282",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Kuangji Zuo",
+      "affiliations": []
+    },
+    {
+      "name": "Gen Li",
+      "affiliations": []
+    },
+    {
+      "name": "Bofan Lyu",
+      "affiliations": []
+    },
+    {
+      "name": "Yanshuo Lu",
+      "affiliations": []
+    },
+    {
+      "name": "Boyu Ma",
+      "affiliations": []
+    },
+    {
+      "name": "Shijia Han",
+      "affiliations": []
+    },
+    {
+      "name": "Xinyu Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Xichen Yuan",
+      "affiliations": []
+    },
+    {
+      "name": "Chuhao Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Jiaqi Bai",
+      "affiliations": []
+    },
+    {
+      "name": "Geng Li",
+      "affiliations": []
+    },
+    {
+      "name": "Jianfei Yang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-05-28",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "manipulation"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 74,
+    "selection_reason": "Gaze2Act聚焦视觉—语言—动作模型与机器人操作，方法、实验和结论已通过 HTML 全文复核；综合评分为 74/100；尚未核验到作者公开的核心复现资产。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产",
+      "论文 HTML 未提供可稳定解析的机构 affiliation，未按作者身份猜测团队"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.30282",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.30282"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.30282"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": []
+}

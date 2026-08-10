@@ -1,0 +1,218 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.06332",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "GeniWorld: A Generalizable Interactive World Model for Robotic Manipulation via Visual Actions",
+  "title_zh": "GeniWorld：通过视觉动作实现可泛化机器人操作的交互式世界模型",
+  "abstract": "Generalist robot policies exhibit strong capabilities, but their robustness in complex and unseen environments remains limited. Scaling robot learning and evaluation in diverse real-world environments remains costly and challenging. Action-conditioned world models offer a promising alternative, but they often suffer from limited action controllability and poor generalization to out-of-distribution (OOD) scenarios. To this end, we present GeniWorld , an interactive world model for robots that generalizes robustly across unseen scenarios. Building on pretrained video generative models, we use URDF-based rendering to transform numerical actions into visual action representations, enabling spatially grounded action control. By explicitly decoupling embodiment kinematics from environmental dynamics, our model mitigates scene overfitting and facilitates modeling of robot-environment interactions. To achieve closed-loop control, we construct an autoregressive video prediction model integrated with high-frequency robot kinematic control, enabling interaction with both robot policies and human teleoperators. In our experiments, even when trained solely on limited fixed-scene data, our model achieves superior in-domain performance and robust zero-shot generalization to highly randomized, unseen environments. For downstream applications, GeniWorld serves as a scalable policy evaluator that remains reliable under environmental perturbations. Furthermore, even with limited real-world demonstrations, GeniWorld generates diverse manipulation trajectories within the world model, improving downstream policy performance and robustness in complex environments.",
+  "paper_url": "https://arxiv.org/abs/2608.06332",
+  "pdf_url": "https://arxiv.org/pdf/2608.06332",
+  "project_url": "https://chenghaogu.github.io/GeniWorld/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Chenghao Gu",
+      "affiliations": []
+    },
+    {
+      "name": "Hanyang Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Jingbo Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Haitao Lin",
+      "affiliations": []
+    },
+    {
+      "name": "Wenyao Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Jinghe Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Hanglei Jin",
+      "affiliations": []
+    },
+    {
+      "name": "Shuzhao Xie",
+      "affiliations": []
+    },
+    {
+      "name": "Jingyan Jiang",
+      "affiliations": []
+    },
+    {
+      "name": "Zhi Wang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "shenzhen-international-graduate-school-tsinghua-university",
+      "name": "Shenzhen International Graduate School, Tsinghua University",
+      "role": "primary"
+    },
+    {
+      "id": "tencent-robotics-x",
+      "name": "Tencent Robotics X",
+      "role": "collaborator"
+    },
+    {
+      "id": "the-hong-kong-university-of-science-and-technology",
+      "name": "The Hong Kong University of Science and Technology",
+      "role": "collaborator"
+    },
+    {
+      "id": "shenzhen-technology-university",
+      "name": "Shenzhen Technology University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-06",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "simulators"
+    ],
+    "topics": [
+      "world-model",
+      "representation-learning",
+      "sim-to-real"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "simulator"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 86,
+    "selection_reason": "用 URDF 渲染把数值动作变成视觉动作表示，并解耦机器人运动学与环境动力学；合成数据将 OOD 条件下总体策略成功率从 40.8% 提升到 69.0%。",
+    "candidate_run": "2026-08-10-weekly-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-10",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "作者已声明后续开放部分资产，但当前没有可访问的直接地址",
+      "未发现可验证的官方代码仓库"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.06332",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, conclusion or limitations were reviewed in the complete arXiv HTML; first-page affiliations were verified from PDF where HTML omitted them.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-10"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.06332"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.06332"
+    },
+    {
+      "type": "affiliation",
+      "url": "https://arxiv.org/pdf/2608.06332"
+    },
+    {
+      "type": "project",
+      "url": "https://chenghaogu.github.io/GeniWorld/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Shenzhen International Graduate School, Tsinghua University",
+      "source": "paper-pdf",
+      "url": "https://arxiv.org/pdf/2608.06332",
+      "location": "first-page affiliation block"
+    },
+    {
+      "organization": "Tencent Robotics X",
+      "source": "paper-pdf",
+      "url": "https://arxiv.org/pdf/2608.06332",
+      "location": "first-page affiliation block"
+    },
+    {
+      "organization": "The Hong Kong University of Science and Technology",
+      "source": "paper-pdf",
+      "url": "https://arxiv.org/pdf/2608.06332",
+      "location": "first-page affiliation block"
+    },
+    {
+      "organization": "Shenzhen Technology University",
+      "source": "paper-pdf",
+      "url": "https://arxiv.org/pdf/2608.06332",
+      "location": "first-page affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://chenghaogu.github.io/GeniWorld/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-fulltext",
+      "checked_at": "2026-08-10"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "announced",
+      "accessible": false,
+      "verification_method": "project-page-scan",
+      "evidence_source": "project-page",
+      "checked_at": "2026-08-10",
+      "note": "Official project page says Coming soon."
+    }
+  ]
+}

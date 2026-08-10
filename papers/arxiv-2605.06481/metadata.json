@@ -1,0 +1,167 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.06481",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "OA-WAM: Object-Addressable World Action Model for Robust Robot Manipulation",
+  "title_zh": null,
+  "abstract": "World Action Models (WAMs) enhance Vision-Language-Action policies by jointly predicting scene evolution and robot actions, but existing methods usually represent the predicted world as holistic images, video tokens, or global latents. These representations are difficult for an action decoder to address when an instruction refers to a particular object, especially under scene shifts where object identity is entangled with context. We propose OA-WAM, an Object-Addressable World Action Model for robust robot manipulation. OA-WAM decomposes each frame into N+1 slot states, with one robot slot and N object slots. Each slot contains a persistent address vector and a time-varying content vector, and is fused with text, image, proprioception, and past-action tokens in a block-causal sequence. A world head predicts next-frame slot states, while a flow-matching action head decodes a 16-step continuous action chunk in the same forward pass. Addressability is enforced by routing cross-slot attention through address-only keys and resetting the address slice at every transformer layer, separating which object to act on from what that object currently is without adding extra tokens. OA-WAM matches strong VLA and WAM baselines on LIBERO (97.8%) and SimplerEnv (79.3%), reaches state-of-the-art performance on the most relevant LIBERO-Plus geometric axes, and remains competitive on the seven-axis aggregate. A causal slot-intervention test yields a swap-binding cosine of 0.87, versus at most 0.09 for holistic baselines. These results suggest that addressable object states provide an effective interface for robust world-action modeling under scene perturbations.",
+  "paper_url": "https://arxiv.org/abs/2605.06481",
+  "pdf_url": "https://arxiv.org/pdf/2605.06481",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yushan Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Peibo Sun",
+      "affiliations": []
+    },
+    {
+      "name": "Shoujie Li",
+      "affiliations": []
+    },
+    {
+      "name": "Yifan Xie",
+      "affiliations": []
+    },
+    {
+      "name": "Lingfeng Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Xintao Chao",
+      "affiliations": []
+    },
+    {
+      "name": "Shiyuan Dong",
+      "affiliations": []
+    },
+    {
+      "name": "Fang Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Xiao-Ping Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Wenbo Ding",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "tsinghuauniversity",
+      "name": "Tsinghua University",
+      "role": "primary"
+    },
+    {
+      "id": "shanghaijiaotonguniversity",
+      "name": "Shanghai Jiao Tong University",
+      "role": "collaborator"
+    },
+    {
+      "id": "nanyangtechnologicaluniversity",
+      "name": "Nanyang Technological University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-07",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model",
+      "manipulation"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 84,
+    "selection_reason": "OA-WAM聚焦具身世界模型与机器人操作，方法、实验和结论已通过 HTML 全文复核；综合评分为 84/100；尚未核验到作者公开的核心复现资产。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产",
+      "主要证据来自仿真，真实部署外推仍需验证"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.06481",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.06481"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.06481"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Tsinghua University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.06481",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Shanghai Jiao Tong University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.06481",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Nanyang Technological University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.06481",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": []
+}

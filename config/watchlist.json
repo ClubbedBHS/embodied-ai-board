@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "updated_at": "2026-07-22",
+  "updated_at": "2026-08-10",
   "purpose": "Embodied AI Board 的论文发现观察名单。命中观察名单只提高发现优先级，不直接增加论文质量分。",
   "identity_policy": {
     "organization": "优先使用实验室或机构官网的稳定 URL 作为身份依据。",
@@ -160,7 +160,20 @@
     {"name": "Linxi Jim Fan", "homepage": "https://www.jimfan.me/", "focus": ["foundation-model", "simulation", "generalist-agent"]},
     {"name": "Ajay Mandlekar", "homepage": "https://ai.stanford.edu/~amandlek/", "focus": ["imitation-learning", "data", "manipulation"]},
     {"name": "Guanya Shi", "homepage": "https://www.gshi.me/", "focus": ["control", "reinforcement-learning", "locomotion"]},
-    {"name": "Zhengyi Luo", "homepage": "https://www.zhengyiluo.com/", "focus": ["humanoid-control", "reinforcement-learning", "motion"]}
+    {"name": "Zhengyi Luo", "homepage": "https://www.zhengyiluo.com/", "focus": ["humanoid-control", "reinforcement-learning", "motion"]},
+    {
+      "id": "heng-ji",
+      "name": "Heng Ji",
+      "aliases": ["Ji Heng"],
+      "homepage": "https://siebelschool.illinois.edu/about/people/all-faculty/hengji",
+      "focus": ["foundation-model", "vision-language-model", "knowledge-reasoning", "multimodal-agent"]
+    },
+    {
+      "id": "yaqi-xie",
+      "name": "Yaqi Xie",
+      "homepage": "https://yaqi-xie.me/",
+      "focus": ["human-robot-interaction", "neuro-symbolic", "planning", "robot-learning"]
+    }
   ],
   "queries": {
     "include_any": [

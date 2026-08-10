@@ -1,0 +1,207 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.19138",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "COBALT: Crowdsourcing Robot Learning via Cloud-Based Teleoperation with Smartphones",
+  "title_zh": null,
+  "abstract": "The scarcity of large-scale, high-quality demonstration data remains a bottleneck in scaling imitation learning for robotic manipulation. We present COBALT, a teleoperation platform designed to democratize robot learning at scale both in simulation and in the real world. By leveraging vectorized environments, our scalable, load-balanced infrastructure supports concurrent teleoperation by multiple users on a single GPU, yielding a significant reduction in teleoperation cost. Operators can connect from nearly anywhere on Earth using commonly available devices, including single or dual smartphones, VR headsets, 3D mice, and keyboards. An inmemory data cache and efficient video streaming keep control and rendering synchronous, sustaining dozens of concurrent users at 20 Hz with sub-100 ms end-to-end latency for up to 8 concurrent users per GPU. We also demonstrate stable operation supporting 256 simulated clients across 8 GPUs, underscoring the system's ability to scale across hardware and within individual servers. We perform a comprehensive user study showing that phone-based teleoperation performs comparably to or better than specialized hardware, enabling faster, more ergonomic data collection. To ensure data quality, COBALT logs a suite of real-time metrics to automatically filter suboptimal demonstrations. We further demonstrate that a structured user training curriculum significantly improves data collection quality. Guided by insights from our user study, we crowdsource the collection of a large-scale, high-quality pilot dataset with 7500+ demonstrations (50+ hours) collected with smartphones across nine countries over five days. We validate the dataset's quality by training state-of-the-art imitation learning algorithms. Please visit https://cobalt-teleop.github.io/ for more details.",
+  "paper_url": "https://arxiv.org/abs/2605.19138",
+  "pdf_url": "https://arxiv.org/pdf/2605.19138",
+  "project_url": "https://cobalt-teleop.github.io/",
+  "code_url": "https://github.com/pairlab/COBALT",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Ayush Agarwal",
+      "affiliations": []
+    },
+    {
+      "name": "Ansh Gandhi",
+      "affiliations": []
+    },
+    {
+      "name": "Jeremy A. Collins",
+      "affiliations": []
+    },
+    {
+      "name": "Omar Rayyan",
+      "affiliations": []
+    },
+    {
+      "name": "Aryan Sarswat",
+      "affiliations": []
+    },
+    {
+      "name": "Ranjani Koushik",
+      "affiliations": []
+    },
+    {
+      "name": "Masoud Moghani",
+      "affiliations": []
+    },
+    {
+      "name": "Ajay Mandlekar",
+      "affiliations": []
+    },
+    {
+      "name": "Animesh Garg",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "universityofcaliforniaberkeley",
+      "name": "University of California, Berkeley",
+      "role": "primary"
+    },
+    {
+      "id": "nvidia",
+      "name": "NVIDIA",
+      "role": "collaborator"
+    },
+    {
+      "id": "universityoftoronto",
+      "name": "University of Toronto",
+      "role": "collaborator"
+    },
+    {
+      "id": "georgiainstituteoftechnology",
+      "name": "Georgia Institute of Technology",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-18",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "robot-learning",
+      "manipulation"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [
+      "project",
+      "code"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 88,
+    "selection_reason": "COBALT聚焦机器人学习与机器人操作，方法、实验和结论已通过 HTML 全文复核；综合评分为 88/100；已核验项目页、代码链接。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前结论仍需在更多任务、平台或独立复现实验中验证"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.19138",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.19138"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.19138"
+    },
+    {
+      "type": "paper",
+      "url": "https://cobalt-teleop.github.io/"
+    },
+    {
+      "type": "paper",
+      "url": "https://github.com/pairlab/COBALT"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "University of California, Berkeley",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.19138",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "NVIDIA",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.19138",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University of Toronto",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.19138",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Georgia Institute of Technology",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.19138",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://cobalt-teleop.github.io/",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-abstract",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://cobalt-teleop.github.io/"
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/pairlab/COBALT",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://api.github.com/repos/pairlab/COBALT"
+    }
+  ]
+}

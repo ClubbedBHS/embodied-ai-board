@@ -1,0 +1,164 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.18287",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "StableVLA: Towards Robust Vision-Language-Action Models without Extra Data",
+  "title_zh": null,
+  "abstract": "It is infeasible to encompass all possible disturbances within the training dataset. This raises a critical question regarding the robustness of Vision-Language-Action (VLA) models when encountering unseen real-world visual disturbances, particularly under imperfect visual conditions. In this work, we conduct a systematic study based on recent state-of-the-art VLA models and reveal a significant performance drop when visual disturbances absent from the training data are introduced. To mitigate this issue, we propose a lightweight adapter module grounded in information theory, termed the Information Bottleneck Adapter (IB-Adapter), which selectively filters potential noise from visual inputs. Without requiring any extra data or augmentation strategies, IB-Adapter consistently improves over the baseline by an average of 30%, while adding fewer than 10M parameters, demonstrating notable efficiency and effectiveness. Furthermore, even with a 14x smaller backbone (0.5B parameters) and no pre-training on the Open X-Embodiment dataset, our model StableVLA achieves robustness competitive with 7B-scale state-of-the-art VLAs. With negligible parameter overhead (<10M), our approach maintains accuracy on long-horizon tasks and surpasses OpenPi under both synthetic and physical visual corruptions.",
+  "paper_url": "https://arxiv.org/abs/2605.18287",
+  "pdf_url": "https://arxiv.org/pdf/2605.18287",
+  "project_url": null,
+  "code_url": "https://github.com/DAGroup-PKU/HumanNet",
+  "dataset_url": null,
+  "model_url": "https://huggingface.co/DAGroup-PKU/StableVLA",
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yiyang Fu",
+      "affiliations": []
+    },
+    {
+      "name": "Chubin Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Shukai Gong",
+      "affiliations": []
+    },
+    {
+      "name": "Yufan Deng",
+      "affiliations": []
+    },
+    {
+      "name": "Kaiwei Sun",
+      "affiliations": []
+    },
+    {
+      "name": "Qiyang Min",
+      "affiliations": []
+    },
+    {
+      "name": "Qibin Hou",
+      "affiliations": []
+    },
+    {
+      "name": "Yansong Tang",
+      "affiliations": []
+    },
+    {
+      "name": "Jianan Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Daquan Zhou",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-05-18",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [
+      "code",
+      "model"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 78,
+    "selection_reason": "StableVLA聚焦视觉—语言—动作模型，方法、实验和结论已通过 HTML 全文复核；综合评分为 78/100；已核验代码、模型链接。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文 HTML 未提供可稳定解析的机构 affiliation，未按作者身份猜测团队"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.18287",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.18287"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.18287"
+    },
+    {
+      "type": "paper",
+      "url": "https://github.com/DAGroup-PKU/HumanNet"
+    },
+    {
+      "type": "paper",
+      "url": "https://huggingface.co/DAGroup-PKU/StableVLA"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/DAGroup-PKU/HumanNet",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "paper-link",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://api.github.com/repos/DAGroup-PKU/HumanNet"
+    },
+    {
+      "kind": "model",
+      "url": "https://huggingface.co/DAGroup-PKU/StableVLA",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "huggingface-api",
+      "evidence_source": "paper-visible-url",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://huggingface.co/api/models/DAGroup-PKU/StableVLA"
+    }
+  ]
+}

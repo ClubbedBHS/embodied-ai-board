@@ -1,0 +1,2393 @@
+{
+  "run": {
+    "run_id": "2026-05-backfill-batch-01",
+    "run_at": "2026-07-29",
+    "window_start": "2026-05-01",
+    "window_end": "2026-05-31",
+    "sources_checked": [
+      "arXiv official cs.RO May 2026 monthly list",
+      "arXiv abstract HTML",
+      "arXiv official HTML",
+      "ar5iv HTML fallback",
+      "paper-declared project/code/data/model URLs"
+    ],
+    "rubric_version": "0.1",
+    "metadata_verification_version": "0.1",
+    "reviewer": "Codex",
+    "note": "120 篇全部完成摘要复核；117 篇获得结构化全文，3 篇因 HTML 全文不可用而 defer；4 篇首发日期属于四月并转移。",
+    "selection_rule": "摘要优先队列 17 篇，已完成全文评分。"
+  },
+  "candidates": [
+    {
+      "id": "arxiv-2605.22446",
+      "title": "Pre-VLA: Preemptive Runtime Verification for Reliable Vision-Language-Action and World-Model Rollouts",
+      "paper_url": "https://arxiv.org/abs/2605.22446",
+      "first_publication": "2026-05-21",
+      "last_revision": null,
+      "authors": [
+        "Zhen Sun",
+        "Yongjian Guo",
+        "Haoran Sun",
+        "Luqiao Wang",
+        "Wei Lu",
+        "Jiachi Ji",
+        "Shengzhe Ji",
+        "Junwu Xiong",
+        "Zhijun Meng"
+      ],
+      "organizations": [],
+      "organization_evidence": [],
+      "organization_note": "未从论文 HTML affiliation block 或官方项目页确认机构；未按作者身份推断。",
+      "project_url": null,
+      "asset_checks": [],
+      "discovered_via": [
+        "arxiv-cs.RO-monthly"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2605.22446",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2605.22446",
+        "fulltext_url": "https://arxiv.org/html/2605.22446",
+        "fulltext_accessed": true,
+        "sections_read": {
+          "method_or_analysis": "## III Runtime Safety Verification Framework: Pre-VLA",
+          "experiments_or_evaluation": "## IV Experiment ## IV-A Experiment Setup Baseline Model: We adopt RynnVLA-002 [ 7 ] as the target VLA/WM baseline model. RynnVLA-002 contains both a VLA action generation branch and a world model future state prediction branch, making it suitable for evaluating Pre-VLA in both closed-loop execution and WM imagination scenarios. Pre-VLA is built upon an improved WorldVLA [ 8 ] unified multimodal backbone and equipped with a retrained action verification head. Datasets: The training data for Pre-VLA is collected from PPO rollout [ 35 ] trajectories in LIBERO [ 24 ] , where the PPO critic is used to construct action validity labels. The complete dataset contains 1,284,485 action chunk samples, with an initial positive-to-negative sample ratio of approximately 95:5, and is split into training and testing sets with a ratio of 92:8. Binary classification labels are generated from critic-deriv",
+          "conclusion_or_limitations": "## V Conclusion and Discussion In this paper, we introduced Pre-VLA , a unified runtime verification architecture for improving the safety and efficiency of embodied robotic decision making. Pre-VLA performs preemptive verification on candidate action chunks before they are dispatched to the physical environment for execution or used for world model imagination. Built upon an efficient unified multimodal backbone, Pre-VLA combines modality-aware feature pooling with a lightweight dual-branch prediction head to jointly estimate action safety confidence and action advantage scores. In addition, we formulate a multi-task training objective that integrates Focal classification, advantage regress"
+        },
+        "accessed_at": "2026-07-29"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "论文核心问题和实验直接涉及机器人、具身环境、机器人数据/仿真或评测。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "已读取 arXiv 摘要页 https://arxiv.org/abs/2605.22446。"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "To address this issue, we propose Pre-VLA, a unified runtime verification architecture that performs preemptive action validity assessment before physical execution or world-model imagination."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Experiments on the LIBERO benchmark show that Pre-VLA improves the average closed-loop success rate across four suites from 30.79\\% to 37.62\\% over RynnVLA-002, reduces task execution steps, achieves 183.9 ms average forward verification time per action chunk, and mitigates error accumulation in world-model rollouts."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已读取方法、实验、结论/局限等主要章节。"
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 13,
+        "evidence_quality": 17,
+        "potential_impact": 10,
+        "board_information_gain": 9,
+        "reproducibility": 3,
+        "timeliness": 4,
+        "total": 76
+      },
+      "score_evidence": {
+        "relevance": "核心问题和评测直接面向机器人或具身研究基础。",
+        "novelty": "To address this issue, we propose Pre-VLA, a unified runtime verification architecture that performs preemptive action validity assessment before physical execution or world-model imagination.",
+        "evidence_quality": "Experiments on the LIBERO benchmark show that Pre-VLA improves the average closed-loop success rate across four suites from 30.79\\% to 37.62\\% over RynnVLA-002, reduces task execution steps, achieves 183.9 ms average forward verification time per action chunk, and mitigates error accumulation in world-model rollouts.",
+        "potential_impact": "按任务覆盖、数据/系统规模及是否形成公共评测基础保守评分。",
+        "board_information_gain": "当前看板标题层面的最近邻为 pi05-2025《π0.5: A VLA with Open-World Generalization》；本工作的新增信息是：To address this issue, we propose Pre-VLA, a unified runtime verification architecture that performs preemptive action validity assessment before physical execution or world-model imagination.",
+        "reproducibility": "当前没有可核验的核心作者资产，因此本项保守给分。",
+        "timeliness": "首次公开日期为 2026-05-21；本轮属于五月历史回扫。"
+      },
+      "decision": "include",
+      "selection_reason": "To address this issue, we propose Pre-VLA, a unified runtime verification architecture that performs preemptive action validity assessment before physical execution or world-model imagination. Experiments on the LIBERO benchmark show that Pre-VLA improves the average closed-loop success rate across four suites from 30.79\\% to 37.62\\% over RynnVLA-002, reduces task execution steps, achieves 183.9 ms average forward verification time per action chunk, and mitigates error accumulation in world-model rollouts.",
+      "risks_or_uncertainties": [
+        "当前未找到可验证的作者代码、数据或模型资产",
+        "主要证据来自仿真，真实部署外推仍需验证",
+        "论文 HTML 未提供可稳定解析的机构 affiliation，未按作者身份猜测团队"
+      ],
+      "suggested_sections": [
+        "algorithms",
+        "infrastructure"
+      ],
+      "suggested_topics": [
+        "vla",
+        "world-model",
+        "infrastructure"
+      ],
+      "nearest_board_comparison": "当前看板标题层面的最近邻为 pi05-2025《π0.5: A VLA with Open-World Generalization》；本工作的新增信息是：To address this issue, we propose Pre-VLA, a unified runtime verification architecture that performs preemptive action validity assessment before physical execution or world-model imagination.",
+      "sources": [
+        "https://arxiv.org/abs/2605.22446",
+        "https://arxiv.org/html/2605.22446"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "id": "arxiv-2605.16257",
+      "title": "DexJoCo: A Benchmark and Toolkit for Task-Oriented Dexterous Manipulation on MuJoCo",
+      "paper_url": "https://arxiv.org/abs/2605.16257",
+      "first_publication": "2026-05-15",
+      "last_revision": null,
+      "authors": [
+        "Hanwen Wang",
+        "Weizhi Zhao",
+        "Xiangyu Wang",
+        "Siyuan Huang",
+        "He Lin",
+        "Boyuan Zheng",
+        "Rongtao Xu",
+        "Gang Wang",
+        "Yao Mu",
+        "He Wang",
+        "Lue Fan",
+        "Hongsheng Li",
+        "Zhaoxiang Zhang",
+        "Tieniu Tan"
+      ],
+      "organizations": [
+        "CASIA",
+        "Shanghai Jiao Tong University",
+        "MBZUAI",
+        "Beijing Institute of Basic Medical Sciences",
+        "Peking University",
+        "Galbot",
+        "CUHK"
+      ],
+      "organization_evidence": [
+        {
+          "organization": "CASIA",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.16257",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Shanghai Jiao Tong University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.16257",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "MBZUAI",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.16257",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Beijing Institute of Basic Medical Sciences",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.16257",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Peking University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.16257",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Galbot",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.16257",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "CUHK",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.16257",
+          "location": "author affiliation block"
+        }
+      ],
+      "organization_note": null,
+      "project_url": "https://dexjoco.github.io",
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://dexjoco.github.io",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "paper-abstract",
+          "checked_at": "2026-07-29",
+          "http_status": 200,
+          "final_url": "https://dexjoco.github.io"
+        },
+        {
+          "kind": "code",
+          "url": "https://github.com/brave-eai/dexjoco",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "github-api",
+          "evidence_source": "project-page",
+          "checked_at": "2026-07-29",
+          "http_status": 200,
+          "final_url": "https://api.github.com/repos/brave-eai/dexjoco"
+        },
+        {
+          "kind": "data",
+          "url": "https://huggingface.co/datasets/DexJoCo/DexJoCo-Datasets-LeRobot",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "huggingface-api",
+          "evidence_source": "project-page",
+          "checked_at": "2026-07-29",
+          "http_status": 200,
+          "final_url": "https://huggingface.co/api/datasets/DexJoCo/DexJoCo-Datasets-LeRobot"
+        }
+      ],
+      "discovered_via": [
+        "arxiv-cs.RO-monthly"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2605.16257",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2605.16257",
+        "fulltext_url": "https://arxiv.org/html/2605.16257",
+        "fulltext_accessed": true,
+        "sections_read": {
+          "method_or_analysis": "## Dexterous Manipulation Benchmark When designing benchmarks for manipulator–gripper robotic systems, the relatively low degrees of freedom of these robots make it possible to collect large amounts of trajectory data at low cost or through automated procedures [ 11 , 17 , 22 , 20 , 23 , 25 , 24 , 26 , 27 , 21 , 36 ] . However, achieving human-level manipulation requires dedicated benchmarks for manipulator–hand robotic systems. Several existing dexterous hand benchmarks [ 2 , 44 , 38 ] are primarily designed for reinforcement learning and mainly focus on in-hand manipulation. While effective for evaluating low-level dexterous control, their task formulations often provide limited coverage o",
+          "experiments_or_evaluation": "## 3.5 Imitation Learning Policy Evaluation ## 4 Experiments ## Appendix A Statistical Analysis for Language Generalization Results",
+          "conclusion_or_limitations": "## 5 Discussion Through our study, we identify several limitations in existing approaches: Lack of Dexterous Hand Centric Foundation Models. Current VLA models are largely pretrained on gripper-based data, resulting in an action space mismatch for dexterous hands. Their action heads fail to capture high-dimensional joint coupling, limiting expressivity and transfer, and motivating embodiment-aware representations with hand-centric pretraining. Limitations of Vision-Only Policies in Contact-Rich Manipulation. Vision-only policies are insufficient for contact-rich manipulation. Even with proprioception, they miss critical cues such as contact forces; incorporating tactile sensing enables more "
+        },
+        "accessed_at": "2026-07-29"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "论文核心问题和实验直接涉及机器人、具身环境、机器人数据/仿真或评测。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "已读取 arXiv 摘要页 https://arxiv.org/abs/2605.16257。"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "In this paper, we present DexJoCo, a benchmark and toolkit for task-oriented dexterous manipulation, comprising 11 functionally grounded tasks that evaluate tool-use, bimanual coordination, long-horizon execution, and reasoning."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Achieving human-level manipulation requires dexterous robotic hands capable of complex object interactions."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已读取方法、实验、结论/局限等主要章节。"
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 16,
+        "evidence_quality": 16,
+        "potential_impact": 13,
+        "board_information_gain": 10,
+        "reproducibility": 9,
+        "timeliness": 4,
+        "total": 88
+      },
+      "score_evidence": {
+        "relevance": "核心问题和评测直接面向机器人或具身研究基础。",
+        "novelty": "In this paper, we present DexJoCo, a benchmark and toolkit for task-oriented dexterous manipulation, comprising 11 functionally grounded tasks that evaluate tool-use, bimanual coordination, long-horizon execution, and reasoning.",
+        "evidence_quality": "Achieving human-level manipulation requires dexterous robotic hands capable of complex object interactions.",
+        "potential_impact": "按任务覆盖、数据/系统规模及是否形成公共评测基础保守评分。",
+        "board_information_gain": "当前看板标题层面的最近邻为 arxiv-2607.08751《DexVerse: A Modular Benchmark for Multi-Task, Multi-Embodiment Dexterous Manipulation》；本工作的新增信息是：In this paper, we present DexJoCo, a benchmark and toolkit for task-oriented dexterous manipulation, comprising 11 functionally grounded tasks that evaluate tool-use, bimanual coordination, long-horizon execution, and reasoning.",
+        "reproducibility": "当前已核验作者代码/数据/模型资产。",
+        "timeliness": "首次公开日期为 2026-05-15；本轮属于五月历史回扫。"
+      },
+      "decision": "featured",
+      "selection_reason": "In this paper, we present DexJoCo, a benchmark and toolkit for task-oriented dexterous manipulation, comprising 11 functionally grounded tasks that evaluate tool-use, bimanual coordination, long-horizon execution, and reasoning. Achieving human-level manipulation requires dexterous robotic hands capable of complex object interactions.",
+      "risks_or_uncertainties": [],
+      "suggested_sections": [
+        "algorithms",
+        "data"
+      ],
+      "suggested_topics": [
+        "manipulation",
+        "dexterous",
+        "data"
+      ],
+      "nearest_board_comparison": "当前看板标题层面的最近邻为 arxiv-2607.08751《DexVerse: A Modular Benchmark for Multi-Task, Multi-Embodiment Dexterous Manipulation》；本工作的新增信息是：In this paper, we present DexJoCo, a benchmark and toolkit for task-oriented dexterous manipulation, comprising 11 functionally grounded tasks that evaluate tool-use, bimanual coordination, long-horizon execution, and reasoning.",
+      "sources": [
+        "https://arxiv.org/abs/2605.16257",
+        "https://arxiv.org/html/2605.16257",
+        "https://dexjoco.github.io",
+        "https://github.com/brave-eai/dexjoco",
+        "https://huggingface.co/datasets/DexJoCo/DexJoCo-Datasets-LeRobot"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "id": "arxiv-2605.17912",
+      "title": "WorldArena 2.0: Extending Embodied World Model Benchmarking on Modality, Functionality and Platform",
+      "paper_url": "https://arxiv.org/abs/2605.17912",
+      "first_publication": "2026-05-18",
+      "last_revision": null,
+      "authors": [
+        "Yu Shang",
+        "Yinzhou Tang",
+        "Yiding Ma",
+        "Zhuohang Li",
+        "Lei Jin",
+        "Weikang Su",
+        "Xin Jin",
+        "Zhaolu Wang",
+        "Ziyou Wang",
+        "Xin Zhang",
+        "Haisheng Su",
+        "Weizhen He",
+        "Wei Wu",
+        "Haoyi Duan",
+        "Gordon Wetzstein",
+        "Xihui Liu",
+        "Dhruv Shah",
+        "Zhaoxiang Zhang",
+        "Zhibo Chen",
+        "Jun Zhu",
+        "Yonghong Tian",
+        "Tat-Seng Chua",
+        "Wenwu Zhu",
+        "Chen Gao",
+        "Yong Li"
+      ],
+      "organizations": [
+        "Tsinghua University",
+        "Shanghai Jiao Tong University",
+        "Zhejiang University",
+        "Stanford University",
+        "The University of Hong Kong",
+        "Princeton University",
+        "Chinese Academy of Sciences",
+        "University of Science and Technology of China",
+        "Peking University",
+        "National University of Singapore"
+      ],
+      "organization_evidence": [
+        {
+          "organization": "Tsinghua University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.17912",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Shanghai Jiao Tong University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.17912",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Zhejiang University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.17912",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Stanford University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.17912",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "The University of Hong Kong",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.17912",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Princeton University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.17912",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Chinese Academy of Sciences",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.17912",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "University of Science and Technology of China",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.17912",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Peking University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.17912",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "National University of Singapore",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.17912",
+          "location": "author affiliation block"
+        }
+      ],
+      "organization_note": null,
+      "project_url": "https://world-arena.ai",
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://world-arena.ai",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "paper-abstract",
+          "checked_at": "2026-07-29",
+          "http_status": 200,
+          "final_url": "https://world-arena.ai"
+        },
+        {
+          "kind": "code",
+          "url": "https://github.com/tsinghua-fib-lab/WorldArena",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "github-api",
+          "evidence_source": "project-page",
+          "checked_at": "2026-07-29",
+          "http_status": 200,
+          "final_url": "https://api.github.com/repos/tsinghua-fib-lab/WorldArena"
+        },
+        {
+          "kind": "project",
+          "url": "https://huggingface.co/spaces/WorldArena/WorldArena",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "huggingface-api",
+          "evidence_source": "project-page",
+          "checked_at": "2026-07-29",
+          "http_status": 200,
+          "final_url": "https://huggingface.co/api/spaces/WorldArena/WorldArena"
+        },
+        {
+          "kind": "data",
+          "url": "https://huggingface.co/datasets/WorldArena/WorldArena_Robotwin2.0",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "huggingface-api",
+          "evidence_source": "project-page",
+          "checked_at": "2026-07-29",
+          "http_status": 200,
+          "final_url": "https://huggingface.co/api/datasets/WorldArena/WorldArena_Robotwin2.0"
+        }
+      ],
+      "discovered_via": [
+        "arxiv-cs.RO-monthly"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2605.17912",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2605.17912",
+        "fulltext_url": "https://arxiv.org/html/2605.17912",
+        "fulltext_accessed": true,
+        "sections_read": {
+          "method_or_analysis": "## 2.2 Benchmarks for Embodied World Models As generative models are increasingly applied in embodied domains, evaluating their effectiveness as world models remains challenging. Standard video generation metrics Duan et al. ( 2025 ); Lu et al. ( 2025 ) emphasize perceptual quality but largely overlook physical realism and action-relevant fidelity. Recent benchmarks can be grouped into three types. The first type focuses on perceptual and spatiotemporal quality, e.g., EWMBench Yue et al. ( 2025 ) , which measures scene consistency, motion correctness, and semantic alignment. While informative for visual fidelity, such benchmarks do not assess whether generated dynamics support embodied decis",
+          "experiments_or_evaluation": "## 3.4 Platform Extension: Cross-Embodiment Sim-to-Real Evaluation Most existing benchmarks Yue et al. ( 2025 ); Li et al. ( 2025c ) for embodied world models predominantly evaluate prediction quality on a single simulator with a fixed task set and limited object variation. While this narrow scope simplifies evaluation, it makes results susceptible to overfitting, leading to artificially inflated rankings. Furthermore, conclusions drawn from a single platform are unstable by construction, as they provide no signal on whether a model’s learned visual and physical priors can withstand the distribution shifts encountered on different robotic morphologies or real-world sensing conditions. To overcome these limitations, WorldArena 2.0 introduces a cross-embodiment evaluation protocol spanning three distinct platforms, RoboTwin 2.0, LIBERO, and an AgileX split-body ALOHA robot, which together ",
+          "conclusion_or_limitations": "## 5 Conclusion and Future Work We introduce WorldArena 2.0, a comprehensive benchmark built on WorldArena that extends the evaluation of embodied world models across three key dimensions: modality, functionality, and platform. It incorporates visuotactile sensory inputs, interactive reinforcement learning tasks, and real-world robotic testbeds. Experiments across 12 state-of-the-art models reveal substantial sim-to-real gaps and identify critical areas for improving embodied world model design. Looking ahead, we plan to expand the benchmark to include additional sensory modalities, increase task complexity and diversity, and explore more challenging real-world scenarios, enabling a deeper u"
+        },
+        "accessed_at": "2026-07-29"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "论文核心问题和实验直接涉及机器人、具身环境、机器人数据/仿真或评测。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "已读取 arXiv 摘要页 https://arxiv.org/abs/2605.17912。"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "In this work, we introduce WorldArena 2.0, an expanded benchmark that systematically broadens embodied world model evaluation along three dimensions: modality, functionality, and platform."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "World models have emerged as a central paradigm for embodied intelligence, enabling agents to predict action-conditioned future and reason about environmental dynamics."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已读取方法、实验、结论/局限等主要章节。"
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 17,
+        "evidence_quality": 20,
+        "potential_impact": 14,
+        "board_information_gain": 10,
+        "reproducibility": 9,
+        "timeliness": 4,
+        "total": 94
+      },
+      "score_evidence": {
+        "relevance": "核心问题和评测直接面向机器人或具身研究基础。",
+        "novelty": "In this work, we introduce WorldArena 2.0, an expanded benchmark that systematically broadens embodied world model evaluation along three dimensions: modality, functionality, and platform.",
+        "evidence_quality": "World models have emerged as a central paradigm for embodied intelligence, enabling agents to predict action-conditioned future and reason about environmental dynamics.",
+        "potential_impact": "按任务覆盖、数据/系统规模及是否形成公共评测基础保守评分。",
+        "board_information_gain": "当前看板标题层面的最近邻为 arxiv-2607.07459《EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI》；本工作的新增信息是：In this work, we introduce WorldArena 2.0, an expanded benchmark that systematically broadens embodied world model evaluation along three dimensions: modality, functionality, and platform.",
+        "reproducibility": "当前已核验作者代码/数据/模型资产。",
+        "timeliness": "首次公开日期为 2026-05-18；本轮属于五月历史回扫。"
+      },
+      "decision": "featured",
+      "selection_reason": "In this work, we introduce WorldArena 2.0, an expanded benchmark that systematically broadens embodied world model evaluation along three dimensions: modality, functionality, and platform. World models have emerged as a central paradigm for embodied intelligence, enabling agents to predict action-conditioned future and reason about environmental dynamics.",
+      "risks_or_uncertainties": [],
+      "suggested_sections": [
+        "algorithms",
+        "data",
+        "infrastructure"
+      ],
+      "suggested_topics": [
+        "world-model",
+        "data",
+        "infrastructure"
+      ],
+      "nearest_board_comparison": "当前看板标题层面的最近邻为 arxiv-2607.07459《EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI》；本工作的新增信息是：In this work, we introduce WorldArena 2.0, an expanded benchmark that systematically broadens embodied world model evaluation along three dimensions: modality, functionality, and platform.",
+      "sources": [
+        "https://arxiv.org/abs/2605.17912",
+        "https://arxiv.org/html/2605.17912",
+        "https://world-arena.ai",
+        "https://github.com/tsinghua-fib-lab/WorldArena",
+        "https://huggingface.co/spaces/WorldArena/WorldArena",
+        "https://huggingface.co/datasets/WorldArena/WorldArena_Robotwin2.0"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "id": "arxiv-2605.20774",
+      "title": "VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models",
+      "paper_url": "https://arxiv.org/abs/2605.20774",
+      "first_publication": "2026-05-20",
+      "last_revision": null,
+      "authors": [
+        "Alex S. Huang",
+        "Jiahui Zhang",
+        "Shiqing Tang",
+        "Yu Xiang"
+      ],
+      "organizations": [
+        "University of Texas at Dallas",
+        "Allen High School"
+      ],
+      "organization_evidence": [
+        {
+          "organization": "University of Texas at Dallas",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.20774",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Allen High School",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.20774",
+          "location": "author affiliation block"
+        }
+      ],
+      "organization_note": null,
+      "project_url": "https://irvlutd.github.io/VLAReplica/",
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://irvlutd.github.io/VLAReplica/",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "paper-html",
+          "checked_at": "2026-07-29",
+          "http_status": 200
+        },
+        {
+          "kind": "code",
+          "url": "https://github.com/IRVLUTD/VLAReplica",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "http-get-after-github-api-rate-limit",
+          "evidence_source": "project-page",
+          "checked_at": "2026-07-29",
+          "http_status": 200
+        },
+        {
+          "kind": "data",
+          "url": "https://huggingface.co/datasets/HenryZhang/VLAReplica_SFT_data",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "huggingface-api",
+          "evidence_source": "project-page",
+          "checked_at": "2026-07-29",
+          "http_status": 200
+        }
+      ],
+      "discovered_via": [
+        "arxiv-cs.RO-monthly"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2605.20774",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2605.20774",
+        "fulltext_url": "https://arxiv.org/html/2605.20774",
+        "fulltext_accessed": true,
+        "sections_read": {
+          "method_or_analysis": "## 3 The VLA-Replica Benchmark ## 4 Benchmarking Experiments ## Appendix A VLA-REPLICA Benchmark Setup Instructions ## A.8 Policy evaluation script benchmark.py ## Appendix B Dataset Objects ## Appendix D Demonstration Dataset Object Placements",
+          "experiments_or_evaluation": "## 3.3 Task Suite and Evaluation Protocols Our VLA-REPLICA task suite consists of ten tasks as shown in Table 3 . The task suite covers a diverse set of robot behaviors, including pick-and-place, pulling, wiping, pouring, other object-centric interactions, and memory capabilities. The full task list, including task success criterion, is provided in Appendix C . Demonstration and Training Data Collection. We collect demonstrations for the suite of ten real-world robot manipulation tasks by using an SO-101 leader arm to control the SO-101 follower arm. For each task, we collect 50 demonstrations with different scene configurations through an expert teleoperator, resulting in 500 demonstrations total. We ensured consistent robot actions to reduce action divergence, including establishing a “home position” for the robot to return to at the beginning and end of an episode. Fig. 3 (a) shows so",
+          "conclusion_or_limitations": "## 5 Conclusion & Limitation We introduced VLA-REPLICA , a low-cost and reproducible real-world benchmark for evaluating vision-language-action (VLA) models. Our benchmark combines an affordable hardware setup, standardized environment design, and a unified evaluation protocol covering both in-distribution adaptation and out-of-distribution generalization. Experiments with imitation learning and state-of-the-art VLA models reveal their strengths and limitations in real-world settings. We further show that evaluation results are consistent across independently constructed setups, demonstrating the reproducibility of our benchmark. We hope VLA-REPLICA provides a practical foundation for standa"
+        },
+        "accessed_at": "2026-07-29"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "论文核心问题和实验直接涉及机器人、具身环境、机器人数据/仿真或评测。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "已读取 arXiv 摘要页 https://arxiv.org/abs/2605.20774。"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "We introduce VLA-REPLICA, a low-cost, easily reproducible real-world benchmark for evaluating VLA models."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Experiments with imitation learning and state-of-the-art VLA models reveal model strengths and limitations, while consistent results across independently constructed setups demonstrate the reproducibility of our benchmark."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已读取方法、实验、结论/局限等主要章节。"
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 16,
+        "evidence_quality": 19,
+        "potential_impact": 12,
+        "board_information_gain": 10,
+        "reproducibility": 9,
+        "timeliness": 4,
+        "total": 90
+      },
+      "score_evidence": {
+        "relevance": "核心问题和评测直接面向机器人或具身研究基础。",
+        "novelty": "We introduce VLA-REPLICA, a low-cost, easily reproducible real-world benchmark for evaluating VLA models.",
+        "evidence_quality": "Experiments with imitation learning and state-of-the-art VLA models reveal model strengths and limitations, while consistent results across independently constructed setups demonstrate the reproducibility of our benchmark.",
+        "potential_impact": "按任务覆盖、数据/系统规模及是否形成公共评测基础保守评分。",
+        "board_information_gain": "当前看板标题层面的最近邻为 arxiv-2607.09190《TactiDex: A Real-World Tactile-Guided Benchmark for Human-Like Dexterous Manipulation》；本工作的新增信息是：We introduce VLA-REPLICA, a low-cost, easily reproducible real-world benchmark for evaluating VLA models.",
+        "reproducibility": "当前已核验作者代码/数据/模型资产。",
+        "timeliness": "首次公开日期为 2026-05-20；本轮属于五月历史回扫。"
+      },
+      "decision": "featured",
+      "selection_reason": "We introduce VLA-REPLICA, a low-cost, easily reproducible real-world benchmark for evaluating VLA models. Experiments with imitation learning and state-of-the-art VLA models reveal model strengths and limitations, while consistent results across independently constructed setups demonstrate the reproducibility of our benchmark.",
+      "risks_or_uncertainties": [],
+      "suggested_sections": [
+        "algorithms",
+        "data"
+      ],
+      "suggested_topics": [
+        "vla",
+        "data"
+      ],
+      "nearest_board_comparison": "当前看板标题层面的最近邻为 arxiv-2607.09190《TactiDex: A Real-World Tactile-Guided Benchmark for Human-Like Dexterous Manipulation》；本工作的新增信息是：We introduce VLA-REPLICA, a low-cost, easily reproducible real-world benchmark for evaluating VLA models.",
+      "sources": [
+        "https://arxiv.org/abs/2605.20774",
+        "https://arxiv.org/html/2605.20774",
+        "https://irvlutd.github.io/VLAReplica/",
+        "https://github.com/IRVLUTD/VLAReplica",
+        "https://huggingface.co/datasets/HenryZhang/VLAReplica_SFT_data"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "id": "arxiv-2605.21976",
+      "title": "TacO: Benchmarking Tactile Sensors for Object Manipulation",
+      "paper_url": "https://arxiv.org/abs/2605.21976",
+      "first_publication": "2026-05-21",
+      "last_revision": null,
+      "authors": [
+        "Anya Zorin",
+        "Zilin Si",
+        "Myungsun Park",
+        "Junsung Park",
+        "Alexiy Buynitsky",
+        "Sachin Bhadang",
+        "Taejun Park",
+        "Sohee John Yoon",
+        "Yong-Lae Park",
+        "Oliver Kroemer",
+        "Zeynep Temel",
+        "Michael T. Tolley",
+        "Sha Yi",
+        "Xiaolong Wang"
+      ],
+      "organizations": [
+        "UC San Diego",
+        "Carnegie Mellon University",
+        "Seoul National University"
+      ],
+      "organization_evidence": [
+        {
+          "organization": "UC San Diego",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.21976",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Carnegie Mellon University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.21976",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Seoul National University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.21976",
+          "location": "author affiliation block"
+        }
+      ],
+      "organization_note": null,
+      "project_url": null,
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": null,
+          "status": "announced",
+          "accessible": false,
+          "verification_method": "paper-statement",
+          "evidence_source": "paper-abstract",
+          "checked_at": "2026-07-29"
+        }
+      ],
+      "discovered_via": [
+        "arxiv-cs.RO-monthly"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2605.21976",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2605.21976",
+        "fulltext_url": "https://arxiv.org/html/2605.21976",
+        "fulltext_accessed": true,
+        "sections_read": {
+          "method_or_analysis": "已核对方法/分析章节标题与正文。",
+          "experiments_or_evaluation": "## 5 Experiments General Experiment Setup: Experiments were conducted across two institutions, both using Franka Panda 7-DOF arms. The first institution tested FSR, FlexiTac, eGain, Daimon, and eFlesh using the Gello [ 44 ] teleoperation system with a custom motorized gripper and finray [ 10 ] fingers, modified to accommodate each sensor as shown in Fig. 1 . The second institution tested the contact microphone using the Factr [ 27 ] teleoperation system with the standard Franka gripper and finray fingers. Both setups include a wrist-mounted RGB camera and a top-down RGB camera, with end-effector position control via the franky library [ 37 ] . Pick-and-Place with Unknown Object Mass: The pick-and-place task involves grasping a visually identical object with unknown internal mass. A can is used, which is empty in half of the trials and weighted with marbles in the other half. We collect 6",
+          "conclusion_or_limitations": "## 7 Conclusions TacO is a task-driven evaluation of tactile sensors for learning-based object manipulation using a modular imitation learning pipeline. Across multiple manipulation tasks and sensing modalities, we show that incorporating tactile feedback consistently improves policy performance relative to vision-only baselines, and that accessible, open-source sensors can achieve performance comparable to more expensive commercial systems. Sensor material and surface properties impact performance, with high-friction, compliant interfaces better supporting effective tactile interaction. All sensors, code, data, and the repeatability testing apparatus will be released publicly. Limitations a"
+        },
+        "accessed_at": "2026-07-29"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "论文核心问题和实验直接涉及机器人、具身环境、机器人数据/仿真或评测。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "已读取 arXiv 摘要页 https://arxiv.org/abs/2605.21976。"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "Vision-based learning from demonstrations has achieved remarkable success in enabling robots to perform manipulation tasks and high-level semantic reasoning, yet it remains insufficient for complex, contact-rich manipulation."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Rather than tactile sensing being universally beneficial in the same way, our results show that the usefulness of tactile information depends strongly on sensor modality, material properties, and the specific manipulation tasks."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已读取方法、实验、结论/局限等主要章节。"
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 15,
+        "evidence_quality": 19,
+        "potential_impact": 12,
+        "board_information_gain": 10,
+        "reproducibility": 3,
+        "timeliness": 4,
+        "total": 83
+      },
+      "score_evidence": {
+        "relevance": "核心问题和评测直接面向机器人或具身研究基础。",
+        "novelty": "Vision-based learning from demonstrations has achieved remarkable success in enabling robots to perform manipulation tasks and high-level semantic reasoning, yet it remains insufficient for complex, contact-rich manipulation.",
+        "evidence_quality": "Rather than tactile sensing being universally beneficial in the same way, our results show that the usefulness of tactile information depends strongly on sensor modality, material properties, and the specific manipulation tasks.",
+        "potential_impact": "按任务覆盖、数据/系统规模及是否形成公共评测基础保守评分。",
+        "board_information_gain": "当前看板标题层面的最近邻为 arxiv-2606.17055《T-Rex: Tactile-Reactive Dexterous Manipulation》；本工作的新增信息是：Vision-based learning from demonstrations has achieved remarkable success in enabling robots to perform manipulation tasks and high-level semantic reasoning, yet it remains insufficient for complex, contact-rich manipulation.",
+        "reproducibility": "当前没有可核验的核心作者资产，因此本项保守给分。",
+        "timeliness": "首次公开日期为 2026-05-21；本轮属于五月历史回扫。"
+      },
+      "decision": "featured",
+      "selection_reason": "Vision-based learning from demonstrations has achieved remarkable success in enabling robots to perform manipulation tasks and high-level semantic reasoning, yet it remains insufficient for complex, contact-rich manipulation. Rather than tactile sensing being universally beneficial in the same way, our results show that the usefulness of tactile information depends strongly on sensor modality, material properties, and the specific manipulation tasks.",
+      "risks_or_uncertainties": [
+        "论文声明后续开源，但当前未发现可访问的核心资产"
+      ],
+      "suggested_sections": [
+        "algorithms",
+        "data"
+      ],
+      "suggested_topics": [
+        "manipulation",
+        "dexterous",
+        "data"
+      ],
+      "nearest_board_comparison": "当前看板标题层面的最近邻为 arxiv-2606.17055《T-Rex: Tactile-Reactive Dexterous Manipulation》；本工作的新增信息是：Vision-based learning from demonstrations has achieved remarkable success in enabling robots to perform manipulation tasks and high-level semantic reasoning, yet it remains insufficient for complex, contact-rich manipulation.",
+      "sources": [
+        "https://arxiv.org/abs/2605.21976",
+        "https://arxiv.org/html/2605.21976"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "id": "arxiv-2605.10942",
+      "title": "HarmoWAM: Harmonizing Generalizable and Precise Manipulation via Adaptive World Action Models",
+      "paper_url": "https://arxiv.org/abs/2605.10942",
+      "first_publication": "2026-05-11",
+      "last_revision": null,
+      "authors": [
+        "Qiuxuan Feng",
+        "Jiale Yu",
+        "Jiaming Liu",
+        "Yueru Jia",
+        "Zhuangzhe Wu",
+        "Hao Chen",
+        "Zezhong Qian",
+        "Shuo Gu",
+        "Peng Jia",
+        "Siwei Ma",
+        "Shanghang Zhang"
+      ],
+      "organizations": [
+        "Peking University",
+        "Simplexity Robotics",
+        "CUHK"
+      ],
+      "organization_evidence": [
+        {
+          "organization": "Peking University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.10942",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Simplexity Robotics",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.10942",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "CUHK",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.10942",
+          "location": "author affiliation block"
+        }
+      ],
+      "organization_note": null,
+      "project_url": "https://elbb-yu.github.io/HarmoWAM/",
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://elbb-yu.github.io/HarmoWAM/",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "paper-affiliation-block",
+          "checked_at": "2026-07-29",
+          "http_status": 200,
+          "final_url": "https://elbb-yu.github.io/HarmoWAM/"
+        },
+        {
+          "kind": "code",
+          "url": "https://github.com/xuanxuanzzzii/HarmoWAM",
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "github-api",
+          "evidence_source": "project-page",
+          "checked_at": "2026-07-29",
+          "error": "HTTP 404"
+        }
+      ],
+      "discovered_via": [
+        "arxiv-cs.RO-monthly"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2605.10942",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2605.10942",
+        "fulltext_url": "https://arxiv.org/html/2605.10942",
+        "fulltext_accessed": true,
+        "sections_read": {
+          "method_or_analysis": "## 3 Methods ## 3.3 HarmoWAM Framework Motivated by the above findings, we propose HarmoWAM, a novel WAM that jointly achieves generalizable transit and precise manipulation. Going beyond architectural refinements, our design represents a first step toward a unified paradigm that organically integrates these complementary capabilities, fully unlocking the knowledge encoded in world models. Overall Architecture. As shown in Figure 2 , HarmoWAM adopts an adaptive architecture by leveraging a world model to seamlessly bridge spatio-temporal reasoning and motion generation with two complementary action experts. The world model is instantiated using the Wan2.2-TI2V-5B Wan et al. ( 2025 ) , and is",
+          "experiments_or_evaluation": "## 4 Experiments Section 4.1 introduces the experimental setup. Section 4.2 reports results on real-world in-domain (ID) tasks, while Section 4.3 evaluates performance on out-of-domain (OOD) scenarios to assess generalization. Section 4.4 presents ablation studies of key components. ## 4.1 Experiment Setup Data Collection. We evaluate HarmoWAM on real-world manipulation tasks using dual-arm Franka Research 3 robots, each equipped with three Intel RealSense cameras (one third-person and two wrist-mounted views). We collect demonstrations for four single-arm tasks— Pick Fruit to Plate , Stack Coke Cans , Pour Coke into Beaker , and Write “Yes” , and two dual-arm collaborative tasks, Put Flowers in Vase and Put Items to Bag and Zip . Each task includes 100 demonstration trajectories collected via SpaceMouse teleoperation. Details are provided in Appendix A and B . Training and Evaluation De",
+          "conclusion_or_limitations": "## 5 Conclusion In this work, we identify a fundamental trade-off in existing World Action Models (WAMs) between generalizable motion transit and precise manipulation, arising from their distinct modeling paradigms. Therefore, we propose HarmoWAM, an end-to-end WAM that unifies predictive and reactive control under a shared world model. By leveraging spatio-temporal priors and coordinating two complementary action experts via a Process-Adaptive Gating Mechanism, HarmoWAM enables stage-aware control that jointly achieves broad exploration and fine-grained interaction within a unified closed-loop policy. Extensive real-world experiments across diverse tasks and unseen environments demonstrate "
+        },
+        "accessed_at": "2026-07-29"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "论文核心问题和实验直接涉及机器人、具身环境、机器人数据/仿真或评测。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "已读取 arXiv 摘要页 https://arxiv.org/abs/2605.10942。"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "Motivated by these findings, we propose HarmoWAM, an end-to-end WAM that fully leverages a world model to unify predictive and reactive control, enabling both generalizable transit and precise manipulation."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Based on systematic experiments, we observe a fundamental trade-off between these paradigms: the former explicitly leverages world models for generalizable transit but lacks interaction precision, whereas the latter enables fine-grained, temporally coherent action generation but is constrained by the exploration space of the training distribution."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已读取方法、实验、结论/局限等主要章节。"
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 16,
+        "evidence_quality": 20,
+        "potential_impact": 13,
+        "board_information_gain": 10,
+        "reproducibility": 4,
+        "timeliness": 4,
+        "total": 87
+      },
+      "score_evidence": {
+        "relevance": "核心问题和评测直接面向机器人或具身研究基础。",
+        "novelty": "Motivated by these findings, we propose HarmoWAM, an end-to-end WAM that fully leverages a world model to unify predictive and reactive control, enabling both generalizable transit and precise manipulation.",
+        "evidence_quality": "Based on systematic experiments, we observe a fundamental trade-off between these paradigms: the former explicitly leverages world models for generalizable transit but lacks interaction precision, whereas the latter enables fine-grained, temporally coherent action generation but is constrained by the exploration space of the training distribution.",
+        "potential_impact": "按任务覆盖、数据/系统规模及是否形成公共评测基础保守评分。",
+        "board_information_gain": "当前看板标题层面的最近邻为 arxiv-2606.18375《PAIWorld: A 3D-Consistent World Foundation Model for Robotic Manipulation》；本工作的新增信息是：Motivated by these findings, we propose HarmoWAM, an end-to-end WAM that fully leverages a world model to unify predictive and reactive control, enabling both generalizable transit and precise manipulation.",
+        "reproducibility": "当前没有可核验的核心作者资产，因此本项保守给分。",
+        "timeliness": "首次公开日期为 2026-05-11；本轮属于五月历史回扫。"
+      },
+      "decision": "featured",
+      "selection_reason": "Motivated by these findings, we propose HarmoWAM, an end-to-end WAM that fully leverages a world model to unify predictive and reactive control, enabling both generalizable transit and precise manipulation. Based on systematic experiments, we observe a fundamental trade-off between these paradigms: the former explicitly leverages world models for generalizable transit but lacks interaction precision, whereas the latter enables fine-grained, temporally coherent action generation but is constrained by the exploration space of the training distribution.",
+      "risks_or_uncertainties": [
+        "当前未找到可验证的作者代码、数据或模型资产"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "world-model",
+        "manipulation"
+      ],
+      "nearest_board_comparison": "当前看板标题层面的最近邻为 arxiv-2606.18375《PAIWorld: A 3D-Consistent World Foundation Model for Robotic Manipulation》；本工作的新增信息是：Motivated by these findings, we propose HarmoWAM, an end-to-end WAM that fully leverages a world model to unify predictive and reactive control, enabling both generalizable transit and precise manipulation.",
+      "sources": [
+        "https://arxiv.org/abs/2605.10942",
+        "https://arxiv.org/html/2605.10942",
+        "https://elbb-yu.github.io/HarmoWAM/"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "id": "arxiv-2605.31286",
+      "title": "DeMaVLA: A Vision-Language-Action Foundation Model for Generalizable Deformable Manipulation",
+      "paper_url": "https://arxiv.org/abs/2605.31286",
+      "first_publication": "2026-05-29",
+      "last_revision": null,
+      "authors": [
+        "Taiyi Su",
+        "Jian Zhu",
+        "Tianjian Wang",
+        "Youzhang He",
+        "Zitai Huang",
+        "Jianjun Zhang",
+        "Chong Ma",
+        "Hanyang Wang",
+        "Tianjiao Zhang",
+        "Munan Yin",
+        "Weihao Ding",
+        "Yi Xu"
+      ],
+      "organizations": [],
+      "organization_evidence": [],
+      "organization_note": "未从论文 HTML affiliation block 或官方项目页确认机构；未按作者身份推断。",
+      "project_url": null,
+      "asset_checks": [],
+      "discovered_via": [
+        "arxiv-cs.RO-monthly"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2605.31286",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2605.31286",
+        "fulltext_url": "https://arxiv.org/html/2605.31286",
+        "fulltext_accessed": true,
+        "sections_read": {
+          "method_or_analysis": "## 3.1 Pre-training Dataset Our pre-training dataset contains approximately 5,000 hours of real-world demonstrations from dual-arm humanoid manipulation. Fig. 1 visualizes the data distribution. The pre-training dataset covers a wide range of real-world bimanual manipulation skills, including household organization, folding, object transfer, industrial handling, and long-horizon coordinated interaction. This broad coverage allows DeMaVLA to acquire general manipulation priors such as reaching, grasping, placement, object rearrangement, and two-arm coordination. At the same time, the folding-oriented subsets provide dense supervision for garment handling, spreading, alignment, and deformable-",
+          "experiments_or_evaluation": "## 4 Experiments ## 4.3 Pre-training Scaling Analysis We further study how the scale of pre-training data affects downstream real-world folding performance. To isolate the effect of pre-training scale, we compare three DeMaVLA checkpoints trained with different amounts of selected real-world pre-training data: 500 hours, 2,500 hours, and 5,000 hours. All checkpoints are then post-trained with the same shirt-folding data and evaluated under the same real-world protocol. The results in Table 5 show a clear scaling trend. As the pre-training data increases from 500 to 5,000 hours, the SR improves from 55.0% to 100.0%, while the average completion time decreases from 3:34 to 2:04. The intermediate 2,500-hour checkpoint also shows consistent improvement, achieving a 70.0% SR and 3:21 average completion time. These results indicate that scaling real-world pre-training data improves not only do",
+          "conclusion_or_limitations": "## 5 Conclusion We introduced DeMaVLA, a VLA foundation model for generalizable deformable manipulation. DeMaVLA moves beyond category-specific folding policies by using a single checkpoint to handle multiple household folding tasks with different garments, initial states, and long-horizon bimanual routines. Its design combines a Qwen3-VL backbone, an LLM-based layer-aligned action expert, skip-layer pruning, flow-matching action generation, and training-time RTC, showing that implementation-level architecture and deployment choices are central to effective real-world VLA policies. To support scalable learning, DeMaVLA is pre-trained on approximately 5,000 hours of selected real-world dual-a"
+        },
+        "accessed_at": "2026-07-29"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "论文核心问题和实验直接涉及机器人、具身环境、机器人数据/仿真或评测。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "已读取 arXiv 摘要页 https://arxiv.org/abs/2605.31286。"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "To move beyond category-specific folding policies, we introduce DeMaVLA, a VLA foundation model for generalizable Deformable Manipulation."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Experiments show that DeMaVLA achieves competitive performance on RoboTwin 2.0 and strong real-world results on our household folding benchmark."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已读取方法、实验、结论/局限等主要章节。"
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 17,
+        "evidence_quality": 18,
+        "potential_impact": 14,
+        "board_information_gain": 10,
+        "reproducibility": 3,
+        "timeliness": 4,
+        "total": 86
+      },
+      "score_evidence": {
+        "relevance": "核心问题和评测直接面向机器人或具身研究基础。",
+        "novelty": "To move beyond category-specific folding policies, we introduce DeMaVLA, a VLA foundation model for generalizable Deformable Manipulation.",
+        "evidence_quality": "Experiments show that DeMaVLA achieves competitive performance on RoboTwin 2.0 and strong real-world results on our household folding benchmark.",
+        "potential_impact": "按任务覆盖、数据/系统规模及是否形成公共评测基础保守评分。",
+        "board_information_gain": "当前看板标题层面的最近邻为 arxiv-2606.18375《PAIWorld: A 3D-Consistent World Foundation Model for Robotic Manipulation》；本工作的新增信息是：To move beyond category-specific folding policies, we introduce DeMaVLA, a VLA foundation model for generalizable Deformable Manipulation.",
+        "reproducibility": "当前没有可核验的核心作者资产，因此本项保守给分。",
+        "timeliness": "首次公开日期为 2026-05-29；本轮属于五月历史回扫。"
+      },
+      "decision": "featured",
+      "selection_reason": "To move beyond category-specific folding policies, we introduce DeMaVLA, a VLA foundation model for generalizable Deformable Manipulation. Experiments show that DeMaVLA achieves competitive performance on RoboTwin 2.0 and strong real-world results on our household folding benchmark.",
+      "risks_or_uncertainties": [
+        "当前未找到可验证的作者代码、数据或模型资产",
+        "论文 HTML 未提供可稳定解析的机构 affiliation，未按作者身份猜测团队"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "vla",
+        "manipulation"
+      ],
+      "nearest_board_comparison": "当前看板标题层面的最近邻为 arxiv-2606.18375《PAIWorld: A 3D-Consistent World Foundation Model for Robotic Manipulation》；本工作的新增信息是：To move beyond category-specific folding policies, we introduce DeMaVLA, a VLA foundation model for generalizable Deformable Manipulation.",
+      "sources": [
+        "https://arxiv.org/abs/2605.31286",
+        "https://arxiv.org/html/2605.31286"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "id": "arxiv-2605.07308",
+      "title": "AT-VLA: Adaptive Tactile Injection for Enhanced Feedback Reaction in Vision-Language-Action Models",
+      "paper_url": "https://arxiv.org/abs/2605.07308",
+      "first_publication": "2026-05-08",
+      "last_revision": null,
+      "authors": [
+        "Xiaoqi Li",
+        "Muhe Cai",
+        "Jiadong Xu",
+        "Juan Zhu",
+        "Hongwei Fan",
+        "Yan Shen",
+        "Guangrui Ren",
+        "Hao Dong"
+      ],
+      "organizations": [
+        "Peking University",
+        "PrimeBot"
+      ],
+      "organization_evidence": [
+        {
+          "organization": "Peking University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.07308",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "PrimeBot",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.07308",
+          "location": "author affiliation block"
+        }
+      ],
+      "organization_note": null,
+      "project_url": "https://sites.google.com/view/at-vla",
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://sites.google.com/view/at-vla",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "paper-abstract",
+          "checked_at": "2026-07-29",
+          "http_status": 200,
+          "final_url": "https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fsites.google.com%2Fview%2Fat-vla&dsh=S354395081%3A1785310530656535&followup=https%3A%2F%2Fsites.google.com%2Fview%2Fat-vla&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=Ac50bxsC0fvvsly9KH2mm8VouXbOp-deADZYPk97-AUE-yNil39G1bh6X1Qco46uNRX14Rb6gv4s-A"
+        }
+      ],
+      "discovered_via": [
+        "arxiv-cs.RO-monthly"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2605.07308",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2605.07308",
+        "fulltext_url": "https://arxiv.org/html/2605.07308",
+        "fulltext_accessed": true,
+        "sections_read": {
+          "method_or_analysis": "## 3 Method ## 3.1 Framework of AT-VLA Problem Formulation. As shown in Fig. 2 , the policy π θ \\pi_{\\theta} takes as input the image observations I = { I h , I r , I l } I=\\{I_{h},I_{r},I_{l}\\} from the head camera, right wrist camera, and left wrist camera, respectively; the language instruction L L ; the tactile feedback T T ; and the robot’s proprioceptive state S S . For the tactile feedback, we extract the resultant force from the tactile sensors, which contains both the 3D normal and 3D tangential components of contact forces. The policy then generates an action chunk A A , representing the 14-DoF end-effector pose for both arms: Model Instantiation. AT-VLA is designed to be general a",
+          "experiments_or_evaluation": "## 4 Experiment ## 4.2 Contact-rich Task Evaluation Baselines. We compare with four SOTA baselines: GO-1 [ 10 ] serves as the vanilla model of our approach and is pretrained on the same dataset as ours. It can reflect how much improvement our method achieves. π 0.5 \\mathbf{\\pi_{0.5}} [ 6 ] is a state-of-the-art VLA model consisting of both pretraining and post-training stages. VTLA [ 46 ] is a vision-language-action (VLA) model that incorporates tactile input. It employs Qwen2-VL [ 38 ] as the VLM backbone and adds an additional ViT [ 17 ] to extract tactile features, where tactile information is represented as visual-tactile images. Since the official implementation is not publicly available, we replicate it based on the DexVLA [ 39 ] codebase, which also builds upon Qwen2-VL. RDP [ 42 ] is built upon Diffusion Policy [ 15 ] and takes 2D tactile marker inputs. It applies PCA for dimensi",
+          "conclusion_or_limitations": "## 5 Conclusion In summary, AT-VLA introduces an adaptive framework that seamlessly integrates tactile sensing into vision-language-action models. Through the Adaptive Tactile Injection mechanism, AT-VLA dynamically balances pretrained visual-language knowledge with newly learned tactile representations, preserving model integrity while enhancing action precision. The Tactile Reaction Dual-Stream mechanism further enables rapid, high-frequency tactile responses by decoupling slow perceptual reasoning from fast physical control, achieving closed-loop reaction within 0.04 s. Extensive real-world experiments demonstrate that AT-VLA significantly outperforms state-of-the-art VLA and tactile-base"
+        },
+        "accessed_at": "2026-07-29"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "论文核心问题和实验直接涉及机器人、具身环境、机器人数据/仿真或评测。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "已读取 arXiv 摘要页 https://arxiv.org/abs/2605.07308。"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "To overcome these challenges, we propose Adaptive Tactile Vision-Language-Action (AT-VLA), which introduces a novel Adaptive Tactile Injection mechanism."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Real-world experiments thoroughly validate the effectiveness of AT-VLA in contact-rich manipulation tasks."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已读取方法、实验、结论/局限等主要章节。"
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 14,
+        "evidence_quality": 18,
+        "potential_impact": 11,
+        "board_information_gain": 10,
+        "reproducibility": 4,
+        "timeliness": 4,
+        "total": 81
+      },
+      "score_evidence": {
+        "relevance": "核心问题和评测直接面向机器人或具身研究基础。",
+        "novelty": "To overcome these challenges, we propose Adaptive Tactile Vision-Language-Action (AT-VLA), which introduces a novel Adaptive Tactile Injection mechanism.",
+        "evidence_quality": "Real-world experiments thoroughly validate the effectiveness of AT-VLA in contact-rich manipulation tasks.",
+        "potential_impact": "按任务覆盖、数据/系统规模及是否形成公共评测基础保守评分。",
+        "board_information_gain": "当前看板标题层面的最近邻为 arxiv-2606.11743《TacCoRL: Integrating Tactile Feedback into VLA via Simulation》；本工作的新增信息是：To overcome these challenges, we propose Adaptive Tactile Vision-Language-Action (AT-VLA), which introduces a novel Adaptive Tactile Injection mechanism.",
+        "reproducibility": "当前没有可核验的核心作者资产，因此本项保守给分。",
+        "timeliness": "首次公开日期为 2026-05-08；本轮属于五月历史回扫。"
+      },
+      "decision": "featured",
+      "selection_reason": "To overcome these challenges, we propose Adaptive Tactile Vision-Language-Action (AT-VLA), which introduces a novel Adaptive Tactile Injection mechanism. Real-world experiments thoroughly validate the effectiveness of AT-VLA in contact-rich manipulation tasks.",
+      "risks_or_uncertainties": [
+        "当前未找到可验证的作者代码、数据或模型资产"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "vla",
+        "dexterous"
+      ],
+      "nearest_board_comparison": "当前看板标题层面的最近邻为 arxiv-2606.11743《TacCoRL: Integrating Tactile Feedback into VLA via Simulation》；本工作的新增信息是：To overcome these challenges, we propose Adaptive Tactile Vision-Language-Action (AT-VLA), which introduces a novel Adaptive Tactile Injection mechanism.",
+      "sources": [
+        "https://arxiv.org/abs/2605.07308",
+        "https://arxiv.org/html/2605.07308",
+        "https://sites.google.com/view/at-vla"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "id": "arxiv-2605.09613",
+      "title": "SABER: A Scalable Action-Based Embodied Dataset for Real-World VLA Adaptation",
+      "paper_url": "https://arxiv.org/abs/2605.09613",
+      "first_publication": "2026-05-10",
+      "last_revision": null,
+      "authors": [
+        "Narsimha Menga",
+        "Parikshit Sakurikar",
+        "Amirreza Rouhi",
+        "Satya Sai Reddy",
+        "Anirudh Govil",
+        "Sri Harsha Chittajallu",
+        "Rajat Aggarwal",
+        "Anoop Namboodiri",
+        "Sashi Reddi"
+      ],
+      "organizations": [
+        "DreamVu"
+      ],
+      "organization_evidence": [
+        {
+          "organization": "DreamVu",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.09613",
+          "location": "author affiliation block"
+        }
+      ],
+      "organization_note": null,
+      "project_url": "https://dreamvu.ai/saber",
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://dreamvu.ai/saber",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "paper-abstract",
+          "checked_at": "2026-07-29",
+          "http_status": 200,
+          "final_url": "https://dreamvu.ai/saber/"
+        },
+        {
+          "kind": "data",
+          "url": "https://huggingface.co/datasets/DreamVu/SABER-10K",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "huggingface-api",
+          "evidence_source": "project-page",
+          "checked_at": "2026-07-29",
+          "http_status": 200,
+          "final_url": "https://huggingface.co/api/datasets/DreamVu/SABER-10K"
+        },
+        {
+          "kind": "project",
+          "url": "https://dreamvu.ai/offerings/#cat-prism",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "project-page",
+          "checked_at": "2026-07-29",
+          "http_status": 200,
+          "final_url": "https://dreamvu.ai/offerings/#cat-prism"
+        },
+        {
+          "kind": "project",
+          "url": "https://dreamvu.ai/offerings/#cat-saber",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "project-page",
+          "checked_at": "2026-07-29",
+          "http_status": 200,
+          "final_url": "https://dreamvu.ai/offerings/#cat-saber"
+        },
+        {
+          "kind": "project",
+          "url": "https://dreamvu.ai/offerings/#cat-custom",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "project-page",
+          "checked_at": "2026-07-29",
+          "http_status": 200,
+          "final_url": "https://dreamvu.ai/offerings/#cat-custom"
+        },
+        {
+          "kind": "data",
+          "url": "https://huggingface.co/datasets/DreamVu/PRISM-100K",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "huggingface-api",
+          "evidence_source": "project-page",
+          "checked_at": "2026-07-29",
+          "http_status": 200,
+          "final_url": "https://huggingface.co/api/datasets/DreamVu/PRISM-100K"
+        }
+      ],
+      "discovered_via": [
+        "arxiv-cs.RO-monthly"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2605.09613",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2605.09613",
+        "fulltext_url": "https://arxiv.org/html/2605.09613",
+        "fulltext_accessed": true,
+        "sections_read": {
+          "method_or_analysis": "## 4 The SABER Dataset ## 4.3 Dataset Statistics Fig. ˜ 8 summarises the DreamVu retail capture database that underlies SABER. Statistics are derived from the raw captures (egocentric and exocentric) before action extraction and retargeting, thereby characterising the behavioural richness of the source material. Skill-tag distribution (Panel A). Across the corpus, 66,680 skill-tag annotations span four main categories: navigation (31,962; 47.9%), manipulation (24,093; 36.1%), human–robot interaction (10,306; 15.5%), and perception (319; 0.5%). The near-equal split between navigation and manipulation reflects the natural shopping workflow: actors travel between shelf zones ( navigation ) and ",
+          "experiments_or_evaluation": "## 6 Experiments We evaluate SABER on a standardized retail manipulation benchmark, measuring the impact of domain-specific post-training against simulation-only and label-free baselines. ## 6.1 Evaluation Benchmark We evaluate on ten tasks from RoboBenchMart [ robobenchmart ] , covering four categories and Fetch(mobile robot + panda arm ) robot is used for all the tasks : Fridge (2 tasks): open_fridge , close_fridge - open/close a sliding door of the fridge. Move from board to board (3 tasks): duff , nestle , vanish - Move the target item from one shelf to another. Pick from floor (2 tasks): beans , slam - Pick the target item from the floor and place in on the shelf. Pick to basket (3 tasks): fanta , nivea , stars - Pick the target item from shelf and place it in the basket. For our evaluation we perform 100 roll-outs for each task and success is decided if the rollout has reached this",
+          "conclusion_or_limitations": "## 8 Discussion Complementarity of three representation streams. The core hypothesis behind SABER’s multi-stream design is that LAPA, hand, and body retargets provide non-overlapping kinematic information. (a) Fail (b) Pass (a) Fail (b) Pass (a) Fail (b) Pass LAPA tokens are strong on whole-arm trajectory and visually recognizable contact events, but weaker on finger articulation and full-body coordination. Dex-Retargeting provide finger-level precision that LAPA cannot encode—the explicit joint angles of a pinch grasp or precision grip, retargeted to robot space. Body pose retargets supply the only source of torso-arm-leg coordination in the corpus, essential for floor retrieval and extende"
+        },
+        "accessed_at": "2026-07-29"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "论文核心问题和实验直接涉及机器人、具身环境、机器人数据/仿真或评测。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "已读取 arXiv 摘要页 https://arxiv.org/abs/2605.09613。"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "We introduce SABER, a high-fidelity retail robotics action dataset built from over 100 hours of natural in-store capture across multiple real grocery environments."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Robotic deployment in real-world environments depends on rich, domain-specific action data as much as on strong model architecture."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已读取方法、实验、结论/局限等主要章节。"
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 17,
+        "evidence_quality": 20,
+        "potential_impact": 14,
+        "board_information_gain": 10,
+        "reproducibility": 6,
+        "timeliness": 4,
+        "total": 91
+      },
+      "score_evidence": {
+        "relevance": "核心问题和评测直接面向机器人或具身研究基础。",
+        "novelty": "We introduce SABER, a high-fidelity retail robotics action dataset built from over 100 hours of natural in-store capture across multiple real grocery environments.",
+        "evidence_quality": "Robotic deployment in real-world environments depends on rich, domain-specific action data as much as on strong model architecture.",
+        "potential_impact": "按任务覆盖、数据/系统规模及是否形成公共评测基础保守评分。",
+        "board_information_gain": "当前看板标题层面的最近邻为 pi05-2025《π0.5: A VLA with Open-World Generalization》；本工作的新增信息是：We introduce SABER, a high-fidelity retail robotics action dataset built from over 100 hours of natural in-store capture across multiple real grocery environments.",
+        "reproducibility": "当前已核验作者代码/数据/模型资产。",
+        "timeliness": "首次公开日期为 2026-05-10；本轮属于五月历史回扫。"
+      },
+      "decision": "featured",
+      "selection_reason": "We introduce SABER, a high-fidelity retail robotics action dataset built from over 100 hours of natural in-store capture across multiple real grocery environments. Robotic deployment in real-world environments depends on rich, domain-specific action data as much as on strong model architecture.",
+      "risks_or_uncertainties": [],
+      "suggested_sections": [
+        "data"
+      ],
+      "suggested_topics": [
+        "data"
+      ],
+      "nearest_board_comparison": "当前看板标题层面的最近邻为 pi05-2025《π0.5: A VLA with Open-World Generalization》；本工作的新增信息是：We introduce SABER, a high-fidelity retail robotics action dataset built from over 100 hours of natural in-store capture across multiple real grocery environments.",
+      "sources": [
+        "https://arxiv.org/abs/2605.09613",
+        "https://arxiv.org/html/2605.09613",
+        "https://dreamvu.ai/saber",
+        "https://huggingface.co/datasets/DreamVu/SABER-10K",
+        "https://dreamvu.ai/offerings/#cat-prism",
+        "https://dreamvu.ai/offerings/#cat-saber",
+        "https://dreamvu.ai/offerings/#cat-custom",
+        "https://huggingface.co/datasets/DreamVu/PRISM-100K"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "id": "arxiv-2605.06481",
+      "title": "OA-WAM: Object-Addressable World Action Model for Robust Robot Manipulation",
+      "paper_url": "https://arxiv.org/abs/2605.06481",
+      "first_publication": "2026-05-07",
+      "last_revision": null,
+      "authors": [
+        "Yushan Liu",
+        "Peibo Sun",
+        "Shoujie Li",
+        "Yifan Xie",
+        "Lingfeng Zhang",
+        "Xintao Chao",
+        "Shiyuan Dong",
+        "Fang Chen",
+        "Xiao-Ping Zhang",
+        "Wenbo Ding"
+      ],
+      "organizations": [
+        "Tsinghua University",
+        "Shanghai Jiao Tong University",
+        "Nanyang Technological University"
+      ],
+      "organization_evidence": [
+        {
+          "organization": "Tsinghua University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.06481",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Shanghai Jiao Tong University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.06481",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Nanyang Technological University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.06481",
+          "location": "author affiliation block"
+        }
+      ],
+      "organization_note": null,
+      "project_url": null,
+      "asset_checks": [],
+      "discovered_via": [
+        "arxiv-cs.RO-monthly"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2605.06481",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2605.06481",
+        "fulltext_url": "https://arxiv.org/html/2605.06481",
+        "fulltext_accessed": true,
+        "sections_read": {
+          "method_or_analysis": "## 3 Method ## Standard benchmarks. On LIBERO and SimplerEnv (Table 1 ), OA-WAM reaches 97.8 97.8 and 79.3 79.3 average success, beating the strongest prior baseline by + 0.6 +0.6 % on LIBERO (VLA-JEPA, 97.2 97.2 ) and + 3.3 +3.3 % on SimplerEnv (CoWVLA, 76.0 76.0 ). The slot-aware decomposition therefore does not give up in-distribution accuracy—a precondition for the robustness comparisons that follow. ## Robustness benchmark. On LIBERO-Plus (Table 2 ), OA-WAM sets a new SOTA on the three geometric axes most aligned with our hypothesis (Geo Avg 84.3 84.3 , + 4.8 +4.8 % over π 0.5 \\pi_{0.5} ): all three preserve target-object identity while geometrically rearranging the scene—exactly the re",
+          "experiments_or_evaluation": "## 4 Experiments ## 4.2 Main results ## 4.3 Ablation study ## Evaluation runtime ## Wall-clock per evaluation pass. ## Appendix H Evaluation protocol ## Result sources.",
+          "conclusion_or_limitations": "## 5 Conclusion OA-WAM makes world-action modeling object-addressable: a slot-aware 7 7 B trunk routes cross-slot attention through a frozen per-object identity address. It leads on LIBERO and SimplerEnv and sets a new SOTA on the geometric LIBERO-Plus axes ( + 4.8 +4.8 % Geo Avg over π 0.5 \\pi_{0.5} ); the bias is also verifiable —swap binding 0.87 0.87 vs ≤ 0.09 \\leq\\!0.09 for every holistic baseline and OA isolation specifically degrading geometric axes while leaving LIBERO essentially unchanged—offering a verifiable design path toward world-action models that stay stable when scenes are geometrically rearranged while target identity is preserved. ## Limitations. Validation is simulator-o"
+        },
+        "accessed_at": "2026-07-29"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "论文核心问题和实验直接涉及机器人、具身环境、机器人数据/仿真或评测。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "已读取 arXiv 摘要页 https://arxiv.org/abs/2605.06481。"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "We propose OA-WAM, an Object-Addressable World Action Model for robust robot manipulation."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "These results suggest that addressable object states provide an effective interface for robust world-action modeling under scene perturbations."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已读取方法、实验、结论/局限等主要章节。"
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 17,
+        "evidence_quality": 17,
+        "potential_impact": 13,
+        "board_information_gain": 10,
+        "reproducibility": 3,
+        "timeliness": 4,
+        "total": 84
+      },
+      "score_evidence": {
+        "relevance": "核心问题和评测直接面向机器人或具身研究基础。",
+        "novelty": "We propose OA-WAM, an Object-Addressable World Action Model for robust robot manipulation.",
+        "evidence_quality": "These results suggest that addressable object states provide an effective interface for robust world-action modeling under scene perturbations.",
+        "potential_impact": "按任务覆盖、数据/系统规模及是否形成公共评测基础保守评分。",
+        "board_information_gain": "当前看板标题层面的最近邻为 arxiv-2607.02503《VT-WAM: Visual-Tactile World Action Model for Contact-Rich Manipulation》；本工作的新增信息是：We propose OA-WAM, an Object-Addressable World Action Model for robust robot manipulation.",
+        "reproducibility": "当前没有可核验的核心作者资产，因此本项保守给分。",
+        "timeliness": "首次公开日期为 2026-05-07；本轮属于五月历史回扫。"
+      },
+      "decision": "featured",
+      "selection_reason": "We propose OA-WAM, an Object-Addressable World Action Model for robust robot manipulation. These results suggest that addressable object states provide an effective interface for robust world-action modeling under scene perturbations.",
+      "risks_or_uncertainties": [
+        "当前未找到可验证的作者代码、数据或模型资产",
+        "主要证据来自仿真，真实部署外推仍需验证"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "world-model",
+        "manipulation"
+      ],
+      "nearest_board_comparison": "当前看板标题层面的最近邻为 arxiv-2607.02503《VT-WAM: Visual-Tactile World Action Model for Contact-Rich Manipulation》；本工作的新增信息是：We propose OA-WAM, an Object-Addressable World Action Model for robust robot manipulation.",
+      "sources": [
+        "https://arxiv.org/abs/2605.06481",
+        "https://arxiv.org/html/2605.06481"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "id": "arxiv-2605.13083",
+      "title": "TouchAnything: A Dataset and Framework for Bimanual Tactile Estimation from Egocentric Video",
+      "paper_url": "https://arxiv.org/abs/2605.13083",
+      "first_publication": "2026-05-13",
+      "last_revision": null,
+      "authors": [
+        "Jianyi Zhou",
+        "Ziteng Gao",
+        "Feiyang Hong",
+        "Zirui Liu",
+        "Guannan Zhang",
+        "Weisheng Dai",
+        "Ruichen Zhen",
+        "Chuqiao Lyu",
+        "Haotian Wu",
+        "Yinian Mao",
+        "Xushi Wang",
+        "Yuxiang Jiang",
+        "Wenbo Ding",
+        "Shuo Yang"
+      ],
+      "organizations": [],
+      "organization_evidence": [],
+      "organization_note": "未从论文 HTML affiliation block 或官方项目页确认机构；未按作者身份推断。",
+      "project_url": "https://jianyi2004.github.io/TouchAnything-Website/",
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://jianyi2004.github.io/TouchAnything-Website/",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "project-page",
+          "checked_at": "2026-07-29",
+          "http_status": 200,
+          "final_url": "https://jianyi2004.github.io/TouchAnything-Website/"
+        },
+        {
+          "kind": "code",
+          "url": "https://github.com/Jianyi2004/TouchAnything",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "github-api",
+          "evidence_source": "project-page",
+          "checked_at": "2026-07-29",
+          "http_status": 200,
+          "final_url": "https://api.github.com/repos/Jianyi2004/TouchAnything"
+        },
+        {
+          "kind": "data",
+          "url": "https://huggingface.co/datasets/zhouzhoujy/EgoTouch/tree/main",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "huggingface-api",
+          "evidence_source": "project-page",
+          "checked_at": "2026-07-29",
+          "http_status": 200,
+          "final_url": "https://huggingface.co/api/datasets/zhouzhoujy/EgoTouch"
+        }
+      ],
+      "discovered_via": [
+        "arxiv-cs.RO-monthly"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2605.13083",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2605.13083",
+        "fulltext_url": "https://arxiv.org/html/2605.13083",
+        "fulltext_accessed": true,
+        "sections_read": {
+          "method_or_analysis": "## 2 EgoTouch Dataset The EgoTouch dataset contains 20 hours of multi-view egocentric video collected at 30 Hz, comprising 1,891 episodes across 208 diverse manipulation tasks. This amounts to approximately 2.1 million frames covering over 1,000 objects in both indoor and outdoor environments. The dataset provides rich and structured annotations, including synchronized multi-view RGB videos, bimanual 3D hand pose, and dense tactile pressure maps for both hands. All modalities are temporally aligned at the frame level to enable precise cross-modal learning. We compare EgoTouch with existing hand-object interaction and tactile datasets in Table 1 . ## 3 METHOD: Tactile Prediction Framework We ",
+          "experiments_or_evaluation": "## 4 Experiments ## 4.1 Experimental Setup Dataset split. We split the dataset into training, validation, and test sets with a ratio of 80% / 10% / 10% at the episode level to avoid temporal data leakage. The test set is further divided into seen-object and unseen-object subsets to evaluate generalization to novel object instances. All splits cover a diverse set of interaction scenarios, ensuring variation in objects, tasks, and environments. This setup enables evaluation under both in-distribution and out-of-distribution settings. Evaluation metric. We define the following benchmark tasks on EgoTouch: 1) Tactile prediction. Given multi-view video and hand pose, predict the bilateral pressure map. This is the primary benchmark. 2) Contact detection. A binarized version: predict whether each region is in contact (pressure > τ >\\tau ). Derived from the tactile prediction output. We evaluat",
+          "conclusion_or_limitations": "## 5 Conclusion We presented EgoTouch, a large-scale multi-view egocentric dataset with dense tactile supervision for bimanual hand-object interaction. EgoTouch provides synchronized head- and wrist-mounted RGB videos, bimanual 3D hand pose, tracker poses, and continuous tactile pressure maps across 208 tasks and 1,891 episodes. We further introduced TouchAnything, a multi-view vision-to-touch baseline with cross-view fusion and view dropout for flexible inference under different camera configurations. Experiments show that wrist-mounted views provide complementary contact evidence and improve tactile prediction, especially for contact localization and pressure estimation under egocentric oc"
+        },
+        "accessed_at": "2026-07-29"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "论文核心问题和实验直接涉及机器人、具身环境、机器人数据/仿真或评测。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "已读取 arXiv 摘要页 https://arxiv.org/abs/2605.13083。"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "To enable research in this direction, we introduce EgoTouch, a large-scale multi-view egocentric dataset with dense tactile supervision for bimanual hand-object interaction."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Experiments show that incorporating wrist-mounted views generally improves tactile prediction over egocentric-only input, achieving up to 5.0% relative improvement in Contact IoU and 6.1% relative improvement in Volumetric IoU."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已读取方法、实验、结论/局限等主要章节。"
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 14,
+        "evidence_quality": 17,
+        "potential_impact": 11,
+        "board_information_gain": 10,
+        "reproducibility": 9,
+        "timeliness": 4,
+        "total": 85
+      },
+      "score_evidence": {
+        "relevance": "核心问题和评测直接面向机器人或具身研究基础。",
+        "novelty": "To enable research in this direction, we introduce EgoTouch, a large-scale multi-view egocentric dataset with dense tactile supervision for bimanual hand-object interaction.",
+        "evidence_quality": "Experiments show that incorporating wrist-mounted views generally improves tactile prediction over egocentric-only input, achieving up to 5.0% relative improvement in Contact IoU and 6.1% relative improvement in Volumetric IoU.",
+        "potential_impact": "按任务覆盖、数据/系统规模及是否形成公共评测基础保守评分。",
+        "board_information_gain": "当前看板标题层面的最近邻为 arxiv-2604.07607《EgoVerse: An Egocentric Human Dataset for Robot Learning from Around the World》；本工作的新增信息是：To enable research in this direction, we introduce EgoTouch, a large-scale multi-view egocentric dataset with dense tactile supervision for bimanual hand-object interaction.",
+        "reproducibility": "当前已核验作者代码/数据/模型资产。",
+        "timeliness": "首次公开日期为 2026-05-13；本轮属于五月历史回扫。"
+      },
+      "decision": "featured",
+      "selection_reason": "To enable research in this direction, we introduce EgoTouch, a large-scale multi-view egocentric dataset with dense tactile supervision for bimanual hand-object interaction. Experiments show that incorporating wrist-mounted views generally improves tactile prediction over egocentric-only input, achieving up to 5.0% relative improvement in Contact IoU and 6.1% relative improvement in Volumetric IoU.",
+      "risks_or_uncertainties": [
+        "论文 HTML 未提供可稳定解析的机构 affiliation，未按作者身份猜测团队"
+      ],
+      "suggested_sections": [
+        "algorithms",
+        "data",
+        "infrastructure"
+      ],
+      "suggested_topics": [
+        "dexterous",
+        "data",
+        "infrastructure"
+      ],
+      "nearest_board_comparison": "当前看板标题层面的最近邻为 arxiv-2604.07607《EgoVerse: An Egocentric Human Dataset for Robot Learning from Around the World》；本工作的新增信息是：To enable research in this direction, we introduce EgoTouch, a large-scale multi-view egocentric dataset with dense tactile supervision for bimanual hand-object interaction.",
+      "sources": [
+        "https://arxiv.org/abs/2605.13083",
+        "https://arxiv.org/html/2605.13083",
+        "https://jianyi2004.github.io/TouchAnything-Website/",
+        "https://github.com/Jianyi2004/TouchAnything",
+        "https://huggingface.co/datasets/zhouzhoujy/EgoTouch/tree/main"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "id": "arxiv-2605.22283",
+      "title": "Spatial Memory for Out-of-Vision Manipulation in Vision-Language-Action",
+      "paper_url": "https://arxiv.org/abs/2605.22283",
+      "first_publication": "2026-05-21",
+      "last_revision": null,
+      "authors": [
+        "Pengteng Li",
+        "Weiyu Guo",
+        "He Zhang",
+        "Tiefu Cai",
+        "Xiao He",
+        "Yandong Guo",
+        "Hui Xiong"
+      ],
+      "organizations": [],
+      "organization_evidence": [],
+      "organization_note": "未从论文 HTML affiliation block 或官方项目页确认机构；未按作者身份推断。",
+      "project_url": null,
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": null,
+          "status": "announced",
+          "accessible": false,
+          "verification_method": "paper-statement",
+          "evidence_source": "paper-abstract",
+          "checked_at": "2026-07-29"
+        }
+      ],
+      "discovered_via": [
+        "arxiv-cs.RO-monthly"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2605.22283",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2605.22283",
+        "fulltext_url": "https://arxiv.org/html/2605.22283",
+        "fulltext_accessed": true,
+        "sections_read": {
+          "method_or_analysis": "## 3 Method As shown in Figure 2 , SOMA addresses the challenge of out-of-vision manipulation by equipping VLA with a spatial memory that supports persistent scene understanding beyond the current camera view. Prior to manipulation, if the target object referenced in the instruction cannot be localized in the current camera observation by the perception module, the robot performs a dedicated scene observation phase using a movable head camera to initialize Spatial Memory Construction . Given a multi-view scanning sequence, object-level semantics and their relative spatial relationships are extracted by combining efficient visual perception and geometric modeling. These representations are ag",
+          "experiments_or_evaluation": "## 4 Experiments ## 4.3 Real World Results In Figure 4 , SOMA achieves the highest success rates across all five real-world out-of-vision (OOV) manipulation tasks. The fixed-head variant fails once either the target or the goal leaves the field of view, confirming the brittleness of view-bound policies under partial observability. Although prior VLAs with active head control (e.g., StarVLA (Ye et al. , 2026 ; Community, 2026 ) , SpatialVLA (Qu et al. , 2025 ) , and GR00T-N1.5 (Bjorck et al. , 2025 ) ) can partially recover visibility, their performance degrades in multi-stage and dual-arm tasks, where spatial information must be preserved and reused across stages. In contrast, SOMA maintains consistently higher success rates across both Pick and Place stages, with the performance gap widening as task complexity increases. These results indicate that persistent spatial memory, rather than",
+          "conclusion_or_limitations": "## 5 Conclusion We propose SOMA, a spatial memory framework for Vision-Language-Action models that addresses the fundamental limitation of view-bound perception in out-of-vision manipulation. By constructing, refining, and retrieving a persistent spatial–semantic memory from multi-view observations, SOMA enables robots to retain and reuse spatial evidence beyond instantaneous visual input. This memory-centric design supports robust reasoning and manipulation when task-relevant objects are temporarily outside the field of view, without relying on brittle view-dependent behaviors. Extensive real-world experiments demonstrate the practical effectiveness of SOMA in challenging out-of-vision mani"
+        },
+        "accessed_at": "2026-07-29"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "论文核心问题和实验直接涉及机器人、具身环境、机器人数据/仿真或评测。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "已读取 arXiv 摘要页 https://arxiv.org/abs/2605.22283。"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "We introduce SOMA, the Spatial Memory framework for Out-of-Vision Manipulation in Vision-Language-Action (VLA) models."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Experimental results show that SOMA not only improves task success rates, but also induces qualitatively different manipulation behaviors, with faster target localization, reduced viewpoint search, and near one-shot grasping under partial observability."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已读取方法、实验、结论/局限等主要章节。"
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 16,
+        "evidence_quality": 20,
+        "potential_impact": 13,
+        "board_information_gain": 10,
+        "reproducibility": 3,
+        "timeliness": 4,
+        "total": 86
+      },
+      "score_evidence": {
+        "relevance": "核心问题和评测直接面向机器人或具身研究基础。",
+        "novelty": "We introduce SOMA, the Spatial Memory framework for Out-of-Vision Manipulation in Vision-Language-Action (VLA) models.",
+        "evidence_quality": "Experimental results show that SOMA not only improves task success rates, but also induces qualitatively different manipulation behaviors, with faster target localization, reduced viewpoint search, and near one-shot grasping under partial observability.",
+        "potential_impact": "按任务覆盖、数据/系统规模及是否形成公共评测基础保守评分。",
+        "board_information_gain": "当前看板标题层面的最近邻为 arxiv-2607.07608《Dual Latent Memory in Vision-Language-Action Models for Robotic Manipulation》；本工作的新增信息是：We introduce SOMA, the Spatial Memory framework for Out-of-Vision Manipulation in Vision-Language-Action (VLA) models.",
+        "reproducibility": "当前没有可核验的核心作者资产，因此本项保守给分。",
+        "timeliness": "首次公开日期为 2026-05-21；本轮属于五月历史回扫。"
+      },
+      "decision": "featured",
+      "selection_reason": "We introduce SOMA, the Spatial Memory framework for Out-of-Vision Manipulation in Vision-Language-Action (VLA) models. Experimental results show that SOMA not only improves task success rates, but also induces qualitatively different manipulation behaviors, with faster target localization, reduced viewpoint search, and near one-shot grasping under partial observability.",
+      "risks_or_uncertainties": [
+        "论文声明后续开源，但当前未发现可访问的核心资产",
+        "论文 HTML 未提供可稳定解析的机构 affiliation，未按作者身份猜测团队"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "vla",
+        "manipulation"
+      ],
+      "nearest_board_comparison": "当前看板标题层面的最近邻为 arxiv-2607.07608《Dual Latent Memory in Vision-Language-Action Models for Robotic Manipulation》；本工作的新增信息是：We introduce SOMA, the Spatial Memory framework for Out-of-Vision Manipulation in Vision-Language-Action (VLA) models.",
+      "sources": [
+        "https://arxiv.org/abs/2605.22283",
+        "https://arxiv.org/html/2605.22283"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "id": "arxiv-2605.26831",
+      "title": "OSMa-Bench++: Toward Open-Ended Benchmarking of Semantic Mapping for Manipulation with Prompt-Generated Synthetic Scenes",
+      "paper_url": "https://arxiv.org/abs/2605.26831",
+      "first_publication": "2026-05-26",
+      "last_revision": null,
+      "authors": [
+        "Regina Kurkova",
+        "Maxim Popov",
+        "Sergey Kolyubin"
+      ],
+      "organizations": [
+        "ITMO University"
+      ],
+      "organization_evidence": [
+        {
+          "organization": "ITMO University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.26831",
+          "location": "author affiliation block"
+        }
+      ],
+      "organization_note": null,
+      "project_url": null,
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": "https://github.com/be2rlab/OSMa-Bench-v2",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "github-api",
+          "evidence_source": "paper-abstract",
+          "checked_at": "2026-07-29",
+          "http_status": 200,
+          "final_url": "https://api.github.com/repos/be2rlab/OSMa-Bench-v2"
+        }
+      ],
+      "discovered_via": [
+        "arxiv-cs.RO-monthly"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2605.26831",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2605.26831",
+        "fulltext_url": "https://arxiv.org/html/2605.26831",
+        "fulltext_accessed": true,
+        "sections_read": {
+          "method_or_analysis": "## II Methodology Our pipeline xtends original method with controllable generation of synthetic indoor scenes for manipulation-oriented evaluation of semantic scene representations. The overall workflow is illustrated in Fig. 1 . Starting from textual scene descriptions, we synthesize indoor environments with SceneSmith [ undefa ] , convert the resulting assets into a Habitat-compatible format, generate RGB-D observation sequences with the HaDaGe generator [ undef ] used in OSMa-Bench, run semantic mapping approaches on these sequences, and finally evaluate the resulting representations through segmentation metrics and VQA-based scene graph assessment. We begin from automatic generation of s",
+          "experiments_or_evaluation": "## III Experiments ## III-A Experimental Setup We evaluate the proposed extension on SceneSmith-generated indoor scenes integrated into OSMa-Bench. We consider two open semantic mapping methods, ConceptGraphs [ undeff ] and BBQ [ undefg ] , which produce structured scene representations for downstream question answering. The evaluation set is constructed from automatically generated prompts.From an initial pool of 350 prompts, we retain diverse candidates using the filtering procedure in Section II and keep only technically valid scenes. The final benchmark contains 40 scenes, split into 24 furniture scenes and 16 manipuland scenes. Prompt-to-scene correspondence was manually checked for both categories. Scenes with substantial mismatches were excluded during quality control. In the final set of 40 scenes, only four minor synthesis errors were observed, each corresponding to one missing ",
+          "conclusion_or_limitations": "## IV Conclusion We presented an extension of original OSMa-Bench that enables controllable benchmarking of semantic mapping methods with prompt-generated synthetic indoor scenes. By combining prompt generation, SceneSmith-based scene synthesis, Habitat-compatible conversion, and HaDaGe-based sequence generation, the proposed pipeline makes it possible to construct evaluation scenarios that are difficult to obtain in fixed datasets, including cluttered layouts, small interaction-relevant objects, and relation-heavy scenes. A central property of this setup is that the original scene-generation prompt is known a priori and can therefore be reused as an auxiliary semantic specification for eval"
+        },
+        "accessed_at": "2026-07-29"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "论文核心问题和实验直接涉及机器人、具身环境、机器人数据/仿真或评测。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "已读取 arXiv 摘要页 https://arxiv.org/abs/2605.26831。"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "Semantic mapping methods are increasingly used as intermediate scene representations for downstream robotic reasoning and manipulation, yet their evaluation is still largely tied to fixed benchmark datasets with limited coverage of manipulation-relevant corner cases."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Semantic mapping methods are increasingly used as intermediate scene representations for downstream robotic reasoning and manipulation, yet their evaluation is still largely tied to fixed benchmark datasets with limited coverage of manipulation-relevant corner cases."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已读取方法、实验、结论/局限等主要章节。"
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 12,
+        "evidence_quality": 16,
+        "potential_impact": 9,
+        "board_information_gain": 8,
+        "reproducibility": 7,
+        "timeliness": 4,
+        "total": 76
+      },
+      "score_evidence": {
+        "relevance": "核心问题和评测直接面向机器人或具身研究基础。",
+        "novelty": "Semantic mapping methods are increasingly used as intermediate scene representations for downstream robotic reasoning and manipulation, yet their evaluation is still largely tied to fixed benchmark datasets with limited coverage of manipulation-relevant corner cases.",
+        "evidence_quality": "Semantic mapping methods are increasingly used as intermediate scene representations for downstream robotic reasoning and manipulation, yet their evaluation is still largely tied to fixed benchmark datasets with limited coverage of manipulation-relevant corner cases.",
+        "potential_impact": "按任务覆盖、数据/系统规模及是否形成公共评测基础保守评分。",
+        "board_information_gain": "当前看板标题层面的最近邻为 arxiv-2606.30645《VLK: Learning Humanoid Loco-Manipulation from Synthetic Interactions in Reconstructed Scenes》；本工作的新增信息是：Semantic mapping methods are increasingly used as intermediate scene representations for downstream robotic reasoning and manipulation, yet their evaluation is still largely tied to fixed benchmark datasets with limited coverage of manipulation-relevant corner cases.",
+        "reproducibility": "当前已核验作者代码/数据/模型资产。",
+        "timeliness": "首次公开日期为 2026-05-26；本轮属于五月历史回扫。"
+      },
+      "decision": "include",
+      "selection_reason": "Semantic mapping methods are increasingly used as intermediate scene representations for downstream robotic reasoning and manipulation, yet their evaluation is still largely tied to fixed benchmark datasets with limited coverage of manipulation-relevant corner cases. Semantic mapping methods are increasingly used as intermediate scene representations for downstream robotic reasoning and manipulation, yet their evaluation is still largely tied to fixed benchmark datasets with limited coverage of manipulation-relevant corner cases.",
+      "risks_or_uncertainties": [
+        "主要证据来自仿真，真实部署外推仍需验证"
+      ],
+      "suggested_sections": [
+        "algorithms",
+        "data"
+      ],
+      "suggested_topics": [
+        "manipulation",
+        "data"
+      ],
+      "nearest_board_comparison": "当前看板标题层面的最近邻为 arxiv-2606.30645《VLK: Learning Humanoid Loco-Manipulation from Synthetic Interactions in Reconstructed Scenes》；本工作的新增信息是：Semantic mapping methods are increasingly used as intermediate scene representations for downstream robotic reasoning and manipulation, yet their evaluation is still largely tied to fixed benchmark datasets with limited coverage of manipulation-relevant corner cases.",
+      "sources": [
+        "https://arxiv.org/abs/2605.26831",
+        "https://arxiv.org/html/2605.26831",
+        "https://github.com/be2rlab/OSMa-Bench-v2"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "id": "arxiv-2605.05241",
+      "title": "DexSim2Real: Foundation Model-Guided Sim-to-Real Transfer for Generalizable Dexterous Manipulation",
+      "paper_url": "https://arxiv.org/abs/2605.05241",
+      "first_publication": "2026-05-03",
+      "last_revision": null,
+      "authors": [
+        "Zijian Zeng",
+        "Fei Ding",
+        "Huiming Yang",
+        "Xianwei Li",
+        "Yuhao Liao"
+      ],
+      "organizations": [],
+      "organization_evidence": [],
+      "organization_note": "未从论文 HTML affiliation block 或官方项目页确认机构；未按作者身份推断。",
+      "project_url": null,
+      "asset_checks": [],
+      "discovered_via": [
+        "arxiv-cs.RO-monthly"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2605.05241",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2605.05241",
+        "fulltext_url": "https://arxiv.org/html/2605.05241",
+        "fulltext_accessed": true,
+        "sections_read": {
+          "method_or_analysis": "## 3 Method We present DexSim2Real, a three-stage framework for sim-to-real dexterous manipulation (Fig. 1 ). Given a target manipulation task specified in natural language, our system: (1) optimizes simulation parameters via FM-DR (§ 3.1 ), (2) trains a multi-modal policy using TVCAP (§ 3.2 ), and (3) structures training via PSC (§ 3.3 ).",
+          "experiments_or_evaluation": "## 4 Experiments ## 4.1 Experimental Setup Simulation. We use NVIDIA Isaac Sim [ makoviychuk2021isaac ] with PhysX 5 for physics simulation at 120 Hz control frequency. Training is parallelized across 4096 environments on 4 × \\times NVIDIA A100 GPUs. Hardware. Our real-world setup consists of a Franka Emika Panda arm equipped with an Allegro Hand (16-DoF) featuring XELA tactile sensors (15 taxels per fingertip, 4 fingers). Two Intel RealSense D435 cameras provide RGB observations from front and wrist-mounted viewpoints. Tasks. We evaluate on six manipulation tasks of increasing difficulty: Pick-Place : Grasp a YCB object and place it at a target location. Stacking : Stack two blocks precisely (tolerance < < 5 mm). Peg Insertion : Insert a peg into a tight-fitting hole (1 mm clearance). In-Hand Rotation : Rotate a cube 90 ∘ using fingertip manipulation. Tool Use : Grasp a spatula and flip",
+          "conclusion_or_limitations": "## 5 Conclusion We presented DexSim2Real, an integrated system that leverages vision-language foundation models to bridge the sim-to-real gap for dexterous manipulation. Our framework combines FM-DR for VLM-guided domain randomization, TVCAP for multi-modal policy learning, and PSC for curriculum-based training. While individual components build on prior work—DrEureka [ ma2024dreureka ] for LLM-guided DR, cross-attention visuo-tactile fusion [ huang20243dvitac , liang2025vitacformer ] , and LLM-based curricula [ ryu2025curricullm , dalal2024planseqlearn ] —our contribution is their integration into a unified zero-shot sim-to-real pipeline with complementary visual feedback. Experiments on si"
+        },
+        "accessed_at": "2026-07-29"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "论文核心问题和实验直接涉及机器人、具身环境、机器人数据/仿真或评测。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "已读取 arXiv 摘要页 https://arxiv.org/abs/2605.05241。"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "We present DexSim2Real, an integrated framework that leverages vision-language foundation models to bridge the sim-to-real gap for dexterous manipulation."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Extensive experiments on six challenging manipulation tasks with blinded evaluation demonstrate that DexSim2Real achieves a 78.2% average real-world success rate, outperforming DrEureka and DeXtreme while reducing the sim-to-real performance gap to only 8.3%."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已读取方法、实验、结论/局限等主要章节。"
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 13,
+        "evidence_quality": 16,
+        "potential_impact": 10,
+        "board_information_gain": 9,
+        "reproducibility": 3,
+        "timeliness": 4,
+        "total": 75
+      },
+      "score_evidence": {
+        "relevance": "核心问题和评测直接面向机器人或具身研究基础。",
+        "novelty": "We present DexSim2Real, an integrated framework that leverages vision-language foundation models to bridge the sim-to-real gap for dexterous manipulation.",
+        "evidence_quality": "Extensive experiments on six challenging manipulation tasks with blinded evaluation demonstrate that DexSim2Real achieves a 78.2% average real-world success rate, outperforming DrEureka and DeXtreme while reducing the sim-to-real performance gap to only 8.3%.",
+        "potential_impact": "按任务覆盖、数据/系统规模及是否形成公共评测基础保守评分。",
+        "board_information_gain": "当前看板标题层面的最近邻为 arxiv-2607.09190《TactiDex: A Real-World Tactile-Guided Benchmark for Human-Like Dexterous Manipulation》；本工作的新增信息是：We present DexSim2Real, an integrated framework that leverages vision-language foundation models to bridge the sim-to-real gap for dexterous manipulation.",
+        "reproducibility": "当前没有可核验的核心作者资产，因此本项保守给分。",
+        "timeliness": "首次公开日期为 2026-05-03；本轮属于五月历史回扫。"
+      },
+      "decision": "include",
+      "selection_reason": "We present DexSim2Real, an integrated framework that leverages vision-language foundation models to bridge the sim-to-real gap for dexterous manipulation. Extensive experiments on six challenging manipulation tasks with blinded evaluation demonstrate that DexSim2Real achieves a 78.2% average real-world success rate, outperforming DrEureka and DeXtreme while reducing the sim-to-real performance gap to only 8.3%.",
+      "risks_or_uncertainties": [
+        "当前未找到可验证的作者代码、数据或模型资产",
+        "论文 HTML 未提供可稳定解析的机构 affiliation，未按作者身份猜测团队"
+      ],
+      "suggested_sections": [
+        "algorithms",
+        "simulators"
+      ],
+      "suggested_topics": [
+        "manipulation",
+        "dexterous",
+        "simulators"
+      ],
+      "nearest_board_comparison": "当前看板标题层面的最近邻为 arxiv-2607.09190《TactiDex: A Real-World Tactile-Guided Benchmark for Human-Like Dexterous Manipulation》；本工作的新增信息是：We present DexSim2Real, an integrated framework that leverages vision-language foundation models to bridge the sim-to-real gap for dexterous manipulation.",
+      "sources": [
+        "https://arxiv.org/abs/2605.05241",
+        "https://arxiv.org/html/2605.05241"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "id": "arxiv-2605.20373",
+      "title": "SUGAR: A Scalable Human-Video-Driven Generalizable Humanoid Loco-Manipulation Learning Framework",
+      "paper_url": "https://arxiv.org/abs/2605.20373",
+      "first_publication": "2026-05-19",
+      "last_revision": null,
+      "authors": [
+        "Tianshu Wu",
+        "Xiangqi Kong",
+        "Yue Chen",
+        "Qize Yu",
+        "Hang Ye",
+        "Jia Li",
+        "Yizhou Wang",
+        "Hao Dong"
+      ],
+      "organizations": [
+        "Peking University",
+        "Beihang University"
+      ],
+      "organization_evidence": [
+        {
+          "organization": "Peking University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.20373",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Beihang University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.20373",
+          "location": "author affiliation block"
+        }
+      ],
+      "organization_note": null,
+      "project_url": "https://tianshuwu.github.io/sugar-humanoid/",
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://tianshuwu.github.io/sugar-humanoid/",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "paper-abstract",
+          "checked_at": "2026-07-29",
+          "http_status": 200,
+          "final_url": "https://tianshuwu.github.io/sugar-humanoid/"
+        },
+        {
+          "kind": "code",
+          "url": "https://github.com/tianshuwu/SUGAR",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "github-api",
+          "evidence_source": "project-page",
+          "checked_at": "2026-07-29",
+          "http_status": 200,
+          "final_url": "https://api.github.com/repos/tianshuwu/SUGAR"
+        }
+      ],
+      "discovered_via": [
+        "arxiv-cs.RO-monthly"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2605.20373",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2605.20373",
+        "fulltext_url": "https://arxiv.org/html/2605.20373",
+        "fulltext_accessed": true,
+        "sections_read": {
+          "method_or_analysis": "## 3 Method ## Dataset. For each task, we collect 100 human video demonstrations for training and 30 for testing. By leveraging human videos rather than robot teleoperation, data collection remains efficient and low-cost. Our pipeline then automatically processes these videos into training-ready data.",
+          "experiments_or_evaluation": "## 4 Experiment To evaluate the effectiveness of our method, we design a series of experiments to answer the following questions: (1) Performance and Generalization: How does our method perform compared to prior approaches in terms of performance and generalization to unseen initial and target states? (2) Data Scaling: How does the performance of our method improve as the amount of training data increases? (3) Component Analysis: How does each component contribute to our framework? (4) Sim-to-Real Transfer: Can the learned policy be robustly transferred from simulation to real-world deployment? ## 4.1 Experiment Setup ## Evaluation Metrics. We use the following metrics: (1) Success Rate : the percentage of successful trials. A trial is considered successful based on task-specific criteria. For Carry Box , Push Box , and Kick Box , success is defined as the final object position being wit",
+          "conclusion_or_limitations": "## 5 Conclusion In this work, we introduced Sugar , a data-driven learning framework that successfully unlocks generalizable humanoid loco-manipulation skills from diverse, unconstrained human videos. To address the physical implausibility and artifacts inherent in video-derived motion priors, we implement a robust three-stage pipeline: automated kinematic interaction prior extraction, privileged physics-based refinement via a unified reward, and hierarchical policy distillation. Our extensive evaluations on the Unitree G1 demonstrate that Sugar scales robustly with data volume, successfully transfers to the real world, and maintains successful task completion under external disturbances, pr"
+        },
+        "accessed_at": "2026-07-29"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "论文核心问题和实验直接涉及机器人、具身环境、机器人数据/仿真或评测。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "已读取 arXiv 摘要页 https://arxiv.org/abs/2605.20373。"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "To address this, we present SUGAR, a scalable data-driven framework that converts diverse human videos into deployable humanoid loco-manipulation skills, without any task-specific reward engineering or reference-motion conditioning at inference."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Our method substantially outperforms reference-tracking baselines, and performance scales clearly with the amount of human video data."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已读取方法、实验、结论/局限等主要章节。"
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 16,
+        "evidence_quality": 20,
+        "potential_impact": 13,
+        "board_information_gain": 10,
+        "reproducibility": 7,
+        "timeliness": 4,
+        "total": 90
+      },
+      "score_evidence": {
+        "relevance": "核心问题和评测直接面向机器人或具身研究基础。",
+        "novelty": "To address this, we present SUGAR, a scalable data-driven framework that converts diverse human videos into deployable humanoid loco-manipulation skills, without any task-specific reward engineering or reference-motion conditioning at inference.",
+        "evidence_quality": "Our method substantially outperforms reference-tracking baselines, and performance scales clearly with the amount of human video data.",
+        "potential_impact": "按任务覆盖、数据/系统规模及是否形成公共评测基础保守评分。",
+        "board_information_gain": "当前看板标题层面的最近邻为 arxiv-2606.18772《HALOMI: Learning Humanoid Loco-Manipulation with Active Perception from Human Demonstrations》；本工作的新增信息是：To address this, we present SUGAR, a scalable data-driven framework that converts diverse human videos into deployable humanoid loco-manipulation skills, without any task-specific reward engineering or reference-motion conditioning at inference.",
+        "reproducibility": "当前已核验作者代码/数据/模型资产。",
+        "timeliness": "首次公开日期为 2026-05-19；本轮属于五月历史回扫。"
+      },
+      "decision": "featured",
+      "selection_reason": "To address this, we present SUGAR, a scalable data-driven framework that converts diverse human videos into deployable humanoid loco-manipulation skills, without any task-specific reward engineering or reference-motion conditioning at inference. Our method substantially outperforms reference-tracking baselines, and performance scales clearly with the amount of human video data.",
+      "risks_or_uncertainties": [],
+      "suggested_sections": [
+        "algorithms",
+        "infrastructure"
+      ],
+      "suggested_topics": [
+        "manipulation",
+        "humanoid",
+        "infrastructure"
+      ],
+      "nearest_board_comparison": "当前看板标题层面的最近邻为 arxiv-2606.18772《HALOMI: Learning Humanoid Loco-Manipulation with Active Perception from Human Demonstrations》；本工作的新增信息是：To address this, we present SUGAR, a scalable data-driven framework that converts diverse human videos into deployable humanoid loco-manipulation skills, without any task-specific reward engineering or reference-motion conditioning at inference.",
+      "sources": [
+        "https://arxiv.org/abs/2605.20373",
+        "https://arxiv.org/html/2605.20373",
+        "https://tianshuwu.github.io/sugar-humanoid/",
+        "https://github.com/tianshuwu/SUGAR"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "id": "arxiv-2605.20752",
+      "title": "GaussianDream: A Feed-Forward 3D Gaussian World Model for Robotic Manipulation",
+      "paper_url": "https://arxiv.org/abs/2605.20752",
+      "first_publication": "2026-05-20",
+      "last_revision": null,
+      "authors": [
+        "Zijian Zhang",
+        "Yuqing Jiang",
+        "Qian Cheng",
+        "Xiaofan Li",
+        "Si Liu",
+        "Ding Zhao",
+        "Ping Luo",
+        "Weitao Zhou",
+        "Haibao Yu"
+      ],
+      "organizations": [],
+      "organization_evidence": [],
+      "organization_note": "未从论文 HTML affiliation block 或官方项目页确认机构；未按作者身份推断。",
+      "project_url": null,
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": "https://github.com/TuojingAI/GaussianDream",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "github-api",
+          "evidence_source": "paper-visible-url",
+          "checked_at": "2026-07-29",
+          "http_status": 200,
+          "final_url": "https://api.github.com/repos/TuojingAI/GaussianDream"
+        }
+      ],
+      "discovered_via": [
+        "arxiv-cs.RO-monthly"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2605.20752",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2605.20752",
+        "fulltext_url": "https://arxiv.org/html/2605.20752",
+        "fulltext_accessed": true,
+        "sections_read": {
+          "method_or_analysis": "## 3 Method ## Simulation benchmarks. We evaluate GaussianDream on LIBERO ( liu2023libero ) and RoboCasa ( nasiriany2024robocasa ) . For LIBERO, we follow the Spatial, Object, Goal, and Long protocols with 50 demonstrations and 50 evaluation trials. For RoboCasa, we use the Human-50 few-shot setting over 24 long-horizon kitchen tasks, with 50 trials per task across five scenes. Together, these benchmarks cover spatial reasoning, object grounding, goal-conditioned manipulation, and long-horizon household tasks.",
+          "experiments_or_evaluation": "## 4 Experiments We evaluate GaussianDream in simulation and real-world manipulation settings. The experiments examine four questions: whether GaussianDream improves spatially precise manipulation over strong VLA, 3D-enhanced, and world-model baselines; whether the learned prefix transfers to physical execution; whether current reconstruction and future prediction are complementary; and whether rendering and depth losses provide useful dense supervision. ## 4.1 Experimental Setup ## Real-robot evaluation. We compare GaussianDream with the base π 0.5 \\pi_{0.5} policy ( physicalintelligence2025pi05 ) on a physical robot. As shown in Fig. 4 , the tasks cover attribute grounding, spatial relations, stacking/unstacking, and long-horizon execution. These scenarios evaluate whether the GaussianDream prefix remains effective under camera noise, embodiment mismatch, and physical execution errors.",
+          "conclusion_or_limitations": "## 5 Conclusion We presented GaussianDream , a unified feed-forward 3D Gaussian world-model plug-in for language-conditioned robotic manipulation. GaussianDream addresses three VLA limitations by grounding actions in reconstructed 3D Gaussian states, mining dense RGB/depth/scene-flow supervision from robot trajectories, and learning horizon-conditioned future prediction for short-horizon environment emulation. Its asymmetric design uses full Gaussian reconstruction and prediction as training supervision, but discards all auxiliary decoding heads at deployment and retains only a compact GaussianDream prefix for action generation. Experiments on LIBERO, RoboCasa Human-50, and real-robot tasks "
+        },
+        "accessed_at": "2026-07-29"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "论文核心问题和实验直接涉及机器人、具身环境、机器人数据/仿真或评测。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "已读取 arXiv 摘要页 https://arxiv.org/abs/2605.20752。"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "To address this, we propose \\textbf{GaussianDream}, a feed-forward 3D Gaussian world-model plug-in."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Experimental results demonstrate that GaussianDream achieves state-of-the-art performance across multiple robotic manipulation benchmarks, reaching \\textbf{98.4\\%} on LIBERO, \\textbf{54.8\\%} on RoboCasa Human-50, and \\textbf{50.0\\%} on real-robot tasks."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已读取方法、实验、结论/局限等主要章节。"
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 15,
+        "evidence_quality": 18,
+        "potential_impact": 11,
+        "board_information_gain": 10,
+        "reproducibility": 7,
+        "timeliness": 4,
+        "total": 85
+      },
+      "score_evidence": {
+        "relevance": "核心问题和评测直接面向机器人或具身研究基础。",
+        "novelty": "To address this, we propose \\textbf{GaussianDream}, a feed-forward 3D Gaussian world-model plug-in.",
+        "evidence_quality": "Experimental results demonstrate that GaussianDream achieves state-of-the-art performance across multiple robotic manipulation benchmarks, reaching \\textbf{98.4\\%} on LIBERO, \\textbf{54.8\\%} on RoboCasa Human-50, and \\textbf{50.0\\%} on real-robot tasks.",
+        "potential_impact": "按任务覆盖、数据/系统规模及是否形成公共评测基础保守评分。",
+        "board_information_gain": "当前看板标题层面的最近邻为 arxiv-2606.18375《PAIWorld: A 3D-Consistent World Foundation Model for Robotic Manipulation》；本工作的新增信息是：To address this, we propose \\textbf{GaussianDream}, a feed-forward 3D Gaussian world-model plug-in.",
+        "reproducibility": "当前已核验作者代码/数据/模型资产。",
+        "timeliness": "首次公开日期为 2026-05-20；本轮属于五月历史回扫。"
+      },
+      "decision": "featured",
+      "selection_reason": "To address this, we propose \\textbf{GaussianDream}, a feed-forward 3D Gaussian world-model plug-in. Experimental results demonstrate that GaussianDream achieves state-of-the-art performance across multiple robotic manipulation benchmarks, reaching \\textbf{98.4\\%} on LIBERO, \\textbf{54.8\\%} on RoboCasa Human-50, and \\textbf{50.0\\%} on real-robot tasks.",
+      "risks_or_uncertainties": [
+        "论文 HTML 未提供可稳定解析的机构 affiliation，未按作者身份猜测团队"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "world-model",
+        "manipulation"
+      ],
+      "nearest_board_comparison": "当前看板标题层面的最近邻为 arxiv-2606.18375《PAIWorld: A 3D-Consistent World Foundation Model for Robotic Manipulation》；本工作的新增信息是：To address this, we propose \\textbf{GaussianDream}, a feed-forward 3D Gaussian world-model plug-in.",
+      "sources": [
+        "https://arxiv.org/abs/2605.20752",
+        "https://arxiv.org/html/2605.20752",
+        "https://github.com/TuojingAI/GaussianDream"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "id": "arxiv-2605.22882",
+      "title": "GEM-4D: Geometry-Enhanced Video World Models for Robot Manipulation",
+      "paper_url": "https://arxiv.org/abs/2605.22882",
+      "first_publication": "2026-05-20",
+      "last_revision": null,
+      "authors": [
+        "Kaichen Zhou",
+        "Yuzhen Chen",
+        "Fangneng Zhan",
+        "Hang Hua",
+        "Grace Chen",
+        "Xinhai Chang",
+        "Ao Qu",
+        "Yilun Du",
+        "Zhuang Liu",
+        "Paul Pu Liang",
+        "Mengyu Wang"
+      ],
+      "organizations": [
+        "Harvard University",
+        "MIT",
+        "Princeton University",
+        "MIT-IBM Watson AI Lab"
+      ],
+      "organization_evidence": [
+        {
+          "organization": "Harvard University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.22882",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "MIT",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.22882",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "Princeton University",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.22882",
+          "location": "author affiliation block"
+        },
+        {
+          "organization": "MIT-IBM Watson AI Lab",
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2605.22882",
+          "location": "author affiliation block"
+        }
+      ],
+      "organization_note": null,
+      "project_url": "https://gem-4d.github.io/",
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://gem-4d.github.io/",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "paper-abstract",
+          "checked_at": "2026-07-29",
+          "http_status": 200,
+          "final_url": "https://gem-4d.github.io/"
+        }
+      ],
+      "discovered_via": [
+        "arxiv-cs.RO-monthly"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2605.22882",
+      "source_access": {
+        "metadata_url": "https://arxiv.org/abs/2605.22882",
+        "fulltext_url": "https://arxiv.org/html/2605.22882",
+        "fulltext_accessed": true,
+        "sections_read": {
+          "method_or_analysis": "## 3.3 Adaptive Inverse Dynamic System Given generated frames { 𝐈 t } t = 0 N \\{\\mathbf{I}_{t}\\}_{t=0}^{N} , we make use of Adaptive Inverse Dynamic System (AIDS) to convert it into executable 6-DoF action trajectories { 𝐚 t } t = 0 N − 1 \\{\\mathbf{a}_{t}\\}_{t=0}^{N-1} , as illustrated in Fig. ˜ 3 . AIDS introduces two mechanisms that together make action extraction robust to these artifacts in generated results without any task-specific training: (i) a dual-criterion confidence-gated tracker that separates gradual drift from catastrophic collapse and invokes heavyweight VLM re-grounding only when warranted, and (ii) a geometry–kinematics pose fallback that decouples translation (well-observ",
+          "experiments_or_evaluation": "## 4 Experiments Overview. Our experiments are structured around two research questions. First, does geometry distillation improve 4D scene prediction in terms of appearance, depth, and correspondence consistency? Second, can the resulting geometry-consistent rollouts improve downstream robot manipulation when converted into executable actions? We therefore organize the evaluation into two parts: Sec. 4.1 studies 4D scene reconstruction quality. Sec. 4.2 evaluates whether the generated rollouts support more reliable robot action planning and execution. Sec. 4.3 examines the effectiveness of the proposed geometry flow branch. ## Results and analysis. Table 1 reports quantitative comparisons on both real and synthetic datasets. Qualitative results are shown in Fig 5 . Our method consistently achieves the best overall performance across most RGB appearance metrics and depth reconstruction m",
+          "conclusion_or_limitations": "## 5 Conclusion We presented GEM-4D, a geometry-enhanced video world model for robot manipulation. Unlike prior video world models that often generate visually plausible but geometrically inconsistent futures, GEM-4D incorporates supervision from geometry foundation models to enforce correspondence-consistent scene evolution during training, while retaining a single-stream architecture with no additional inference cost. Our approach improves both appearance generation and geometric fidelity, enabling predicted rollouts to support downstream action extraction. To close the loop from generation to control, we further introduced an adaptive inverse dynamics system that converts generated videos"
+        },
+        "accessed_at": "2026-07-29"
+      },
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "论文核心问题和实验直接涉及机器人、具身环境、机器人数据/仿真或评测。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "已读取 arXiv 摘要页 https://arxiv.org/abs/2605.22882。"
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "We present GEM-4D, a geometry-grounded video world model that resolves this limitation by injecting dense 4D correspondence supervision distilled from a pretrained geometry foundation model into the video generative backbone during training."
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "As a result, the generated videos appear plausible, yet lack the physical grounding required for reliable action execution, such as robot manipulation."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "已读取方法、实验、结论/局限等主要章节。"
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 17,
+        "evidence_quality": 20,
+        "potential_impact": 13,
+        "board_information_gain": 10,
+        "reproducibility": 4,
+        "timeliness": 4,
+        "total": 88
+      },
+      "score_evidence": {
+        "relevance": "核心问题和评测直接面向机器人或具身研究基础。",
+        "novelty": "We present GEM-4D, a geometry-grounded video world model that resolves this limitation by injecting dense 4D correspondence supervision distilled from a pretrained geometry foundation model into the video generative backbone during training.",
+        "evidence_quality": "As a result, the generated videos appear plausible, yet lack the physical grounding required for reliable action execution, such as robot manipulation.",
+        "potential_impact": "按任务覆盖、数据/系统规模及是否形成公共评测基础保守评分。",
+        "board_information_gain": "当前看板标题层面的最近邻为 arxiv-2606.18375《PAIWorld: A 3D-Consistent World Foundation Model for Robotic Manipulation》；本工作的新增信息是：We present GEM-4D, a geometry-grounded video world model that resolves this limitation by injecting dense 4D correspondence supervision distilled from a pretrained geometry foundation model into the video generative backbone during training.",
+        "reproducibility": "当前没有可核验的核心作者资产，因此本项保守给分。",
+        "timeliness": "首次公开日期为 2026-05-20；本轮属于五月历史回扫。"
+      },
+      "decision": "featured",
+      "selection_reason": "We present GEM-4D, a geometry-grounded video world model that resolves this limitation by injecting dense 4D correspondence supervision distilled from a pretrained geometry foundation model into the video generative backbone during training. As a result, the generated videos appear plausible, yet lack the physical grounding required for reliable action execution, such as robot manipulation.",
+      "risks_or_uncertainties": [
+        "当前未找到可验证的作者代码、数据或模型资产"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "world-model",
+        "manipulation"
+      ],
+      "nearest_board_comparison": "当前看板标题层面的最近邻为 arxiv-2606.18375《PAIWorld: A 3D-Consistent World Foundation Model for Robotic Manipulation》；本工作的新增信息是：We present GEM-4D, a geometry-grounded video world model that resolves this limitation by injecting dense 4D correspondence supervision distilled from a pretrained geometry foundation model into the video generative backbone during training.",
+      "sources": [
+        "https://arxiv.org/abs/2605.22882",
+        "https://arxiv.org/html/2605.22882",
+        "https://gem-4d.github.io/"
+      ],
+      "review_status": "reviewed"
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.01368",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Assistance Without Interruption: A Benchmark and LLM-based Framework for Non-Intrusive Human-Robot Assistance",
+  "title_zh": null,
+  "abstract": "Human-robot interaction (HRI) has long studied how agents and people coordinate to achieve shared goals. In this work, we formalize and benchmark the non-intrusive assistance as an independent paradigm of HRI, where a robot proactively supports a human's ongoing multi-step activities while strictly avoiding interruptions. Unlike conventional HRI tasks that rely on direct commands, explicit negotiation, or proactive interventions based on user habits and history, our task treats the human's plan as the primary process and formulates assistance as a joint decision over when to act and what to do. To systematically evaluate this problem, we establish a simulation benchmark, NIABench, along with new metrics tailored to the non-intrusive assistance task. We further propose a hybrid architecture that integrates an LLM with a scoring model. The scoring model first applies semantic retrieval to prune large candidate action sets, and then a ranker evaluates human-step and robot-action pairs, enabling reasoning over timing and cross-step dependencies. Comprehensive experiments on both NIABench and real-world scenarios demonstrate that our method achieves proactive, non-intrusive assistance that reduces human effort while preserving task effectiveness.",
+  "paper_url": "https://arxiv.org/abs/2605.01368",
+  "pdf_url": "https://arxiv.org/pdf/2605.01368",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yuedi Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Shuanghao Bai",
+      "affiliations": []
+    },
+    {
+      "name": "Wanqi Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Haoran Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Qi Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Zhirong Luan",
+      "affiliations": []
+    },
+    {
+      "name": "Badong Chen",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "xianjiaotonguniversity",
+      "name": "Xi’an Jiaotong University",
+      "role": "primary"
+    },
+    {
+      "id": "xianuniversityoftechnology",
+      "name": "Xi’an University of Technology",
+      "role": "collaborator"
+    },
+    {
+      "id": "instituteofartificialintelligenceandrobotics",
+      "name": "Institute of Artificial Intelligence and Robotics",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-02",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data",
+      "infrastructure"
+    ],
+    "topics": [
+      "data",
+      "infrastructure"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "benchmark"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 80,
+    "selection_reason": "Assistance Without Interruption聚焦数据与评测与研究基础设施，方法、实验和结论已通过 HTML 全文复核；综合评分为 80/100；尚未核验到作者公开的核心复现资产。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.01368",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.01368"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.01368"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Xi’an Jiaotong University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.01368",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Xi’an University of Technology",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.01368",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Institute of Artificial Intelligence and Robotics",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.01368",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": []
+}

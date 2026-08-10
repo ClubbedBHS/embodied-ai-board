@@ -1,0 +1,145 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.13632",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Guide, Think, Act: Interactive Embodied Reasoning in Vision-Language-Action Models",
+  "title_zh": null,
+  "abstract": "In this paper, we propose GTA-VLA(Guide, Think, Act), an interactive Vision-Language-Action (VLA) framework that enables spatially steerable embodied reasoning by allowing users to guide robot policies with explicit visual cues. Existing VLA models learn a direct \"Sense-to-Act\" mapping from multimodal observations to robot actions. While effective within the training distribution, such tightly coupled policies are brittle under out-of-domain (OOD) shifts and difficult to correct when failures occur. Although recent embodied Chain-of-Thought (CoT) approaches expose intermediate reasoning, they still lack a mechanism for incorporating human spatial guidance, limiting their ability to resolve visual ambiguities or recover from mistakes. To address this gap, our framework allows users to optionally guide the policy with spatial priors, such as affordance points, boxes, and traces, which the subsequent reasoning process can directly condition on. Based on these inputs, the model generates a unified spatial-visual Chain-of-Thought that integrates external guidance with internal task planning, aligning human visual intent with autonomous decision-making. For practical deployment, we further couple the reasoning module with a lightweight reactive action head for efficient action execution. Extensive experiments demonstrate the effectiveness of our approach. On the in-domain SimplerEnv WidowX benchmark, our framework achieves a state-of-the-art 81.2% success rate. Under OOD visual shifts and spatial ambiguities, a single visual interaction substantially improves task success over existing methods, highlighting the value of interactive reasoning for failure recovery in embodied control. More details of the project can be found here: https://github.com/FutianLabs/GTA-VLA.",
+  "paper_url": "https://arxiv.org/abs/2605.13632",
+  "pdf_url": "https://arxiv.org/pdf/2605.13632",
+  "project_url": null,
+  "code_url": "https://github.com/FutianLabs/GTA-VLA",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yiran Ling",
+      "affiliations": []
+    },
+    {
+      "name": "Qing Lian",
+      "affiliations": []
+    },
+    {
+      "name": "Jinghang Li",
+      "affiliations": []
+    },
+    {
+      "name": "Qing Jiang",
+      "affiliations": []
+    },
+    {
+      "name": "Tianming Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaoke Jiang",
+      "affiliations": []
+    },
+    {
+      "name": "Chuanxiu Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Jie Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Lei Zhang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-05-13",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [
+      "code"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 80,
+    "selection_reason": "Guide, Think, Act聚焦视觉—语言—动作模型，方法、实验和结论已通过 HTML 全文复核；综合评分为 80/100；已核验代码链接。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "主要证据来自仿真，真实部署外推仍需验证",
+      "论文 HTML 未提供可稳定解析的机构 affiliation，未按作者身份猜测团队"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.13632",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.13632"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.13632"
+    },
+    {
+      "type": "paper",
+      "url": "https://github.com/FutianLabs/GTA-VLA"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/FutianLabs/GTA-VLA",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "paper-abstract",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://api.github.com/repos/FutianLabs/GTA-VLA"
+    }
+  ]
+}

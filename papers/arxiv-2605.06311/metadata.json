@@ -1,0 +1,155 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.06311",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Toward Visually Realistic Simulation: A Benchmark for Evaluating Robot Manipulation in Simulation",
+  "title_zh": null,
+  "abstract": "Reliable simulation evaluation of robot manipulation policies serves as a high-fidelity proxy for real-world performance. Although existing benchmarks cover a wide range of task categories, they lack visual realism, creating a large domain gap between simulation and reality. This undermines the reliability of simulation-based evaluation in predicting real-world performance. To mitigate the sim-to-real visual gap, we conduct a systematic analysis to isolate the effects of lighting and material. Our results show that these factors play a critical role in geometric reasoning and spatial grounding, yet are largely overlooked in existing benchmarks. Motivated by the analysis, we propose VISER, a visually realistic benchmark for evaluating robot manipulation in simulation. VISER features a high-fidelity dataset of over 1,000 3D assets with physically-based rendering (PBR) materials, along with 3D scenes created from these assets through curated layouts or generation. To this end, we propose an automated pipeline leveraging Multi-modal Large Language Models (MLLMs) for material-aware part segmentation and material retrieval, enabling scalable generation of physically plausible assets. Building on the high-fidelity 3D asset dataset, we construct diverse evaluation tasks, such as grasping, placing, and long-horizon tasks, enabling scalable and reproducible assessment of Vision-Language-Action (VLA) models. Our benchmark shows a strong correlation between simulation and real-world performance, achieving an average Pearson correlation coefficient of 0.92 across different policies.",
+  "paper_url": "https://arxiv.org/abs/2605.06311",
+  "pdf_url": "https://arxiv.org/pdf/2605.06311",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yixin Zhu",
+      "affiliations": []
+    },
+    {
+      "name": "Zixiong Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Jian Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Jin Xie",
+      "affiliations": []
+    },
+    {
+      "name": "Jingyi Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Jiayuan Gu",
+      "affiliations": []
+    },
+    {
+      "name": "Beibei Wang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "nanjinguniversity",
+      "name": "Nanjing University",
+      "role": "primary"
+    },
+    {
+      "id": "nankaiuniversity",
+      "name": "Nankai University",
+      "role": "collaborator"
+    },
+    {
+      "id": "shanghaitechuniversity",
+      "name": "ShanghaiTech University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-07",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data"
+    ],
+    "topics": [
+      "manipulation",
+      "data"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "benchmark"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 88,
+    "selection_reason": "Toward Visually Realistic Simulation聚焦机器人操作与数据与评测，方法、实验和结论已通过 HTML 全文复核；综合评分为 88/100；尚未核验到作者公开的核心复现资产。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.06311",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.06311"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.06311"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Nanjing University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.06311",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Nankai University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.06311",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "ShanghaiTech University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.06311",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": []
+}

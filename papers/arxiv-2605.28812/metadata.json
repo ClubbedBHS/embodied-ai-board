@@ -1,0 +1,140 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.28812",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Beyond Binary: Sim-to-Real Dexterous Manipulation with Physics-Grounded Contact Representation",
+  "title_zh": null,
+  "abstract": "A primary bottleneck in contact-rich manipulation is the difficulty of collecting real-world data. Sim-to-real reinforcement learning offers a scalable alternative, but the simulation-reality gap prevents information-dense modalities like touch from being effectively used. Existing sim-to-real methods often mitigate this gap by simplifying tactile data into coarse low-dimensional features -- sacrificing the richness required for complex manipulation. In this work, we introduce Center-of-Pressure (CoP), an effective tactile representation grounded in physical principles that preserves dense contact information while maintaining robustness for sim-to-real transfer. To support this representation, we propose a sensor calibration scheme based on differentiable dynamics, enabling the estimation of taxel orientations without requiring ground-truth force measurements. We evaluate CoP on two blind, challenging contact-rich manipulation tasks: peg-in-hole insertion and ball balancing. Across both tasks, policies conditioned on CoP achieve zero-shot sim-to-real transfer on a multi-fingered hand, and outperform both coarse binary-contact and raw-taxel baselines. Analysis of learned policy states further suggests that CoP-conditioned policies encode task-relevant physical properties, such as object mass, as an emergent byproduct of control.",
+  "paper_url": "https://arxiv.org/abs/2605.28812",
+  "pdf_url": "https://arxiv.org/pdf/2605.28812",
+  "project_url": "https://mpan31415.github.io/tactile_rep/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Jiahe Pan",
+      "affiliations": []
+    },
+    {
+      "name": "Stelian Coros",
+      "affiliations": []
+    },
+    {
+      "name": "Jitendra Malik",
+      "affiliations": []
+    },
+    {
+      "name": "Toru Lin",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "ucberkeley",
+      "name": "UC Berkeley",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-27",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "simulators"
+    ],
+    "topics": [
+      "manipulation",
+      "dexterous",
+      "simulators"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [
+      "project"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 81,
+    "selection_reason": "Beyond Binary聚焦机器人操作与灵巧操作，方法、实验和结论已通过 HTML 全文复核；综合评分为 81/100；已核验项目页链接。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.28812",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.28812"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.28812"
+    },
+    {
+      "type": "paper",
+      "url": "https://mpan31415.github.io/tactile_rep/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "UC Berkeley",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.28812",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://mpan31415.github.io/tactile_rep/",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-link",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://mpan31415.github.io/tactile_rep/"
+    }
+  ]
+}

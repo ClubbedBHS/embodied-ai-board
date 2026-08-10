@@ -1,0 +1,204 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.06729",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "AtlasVLA: Persistent World-Ego State Modeling for Vision-Language-Action Models",
+  "title_zh": "AtlasVLA：面向视觉—语言—动作模型的持久世界—自我状态建模",
+  "abstract": "While Vision-Language-Action (VLA) models have advanced embodied AI, their fundamentally reactive paradigm severely limits performance in partially observable and long-horizon tasks. When restricted to a single wrist-mounted camera, they inevitably suffer from perception forgetting as objects exit the field of view, and temporal task-progress forgetting during multi-step execution. To overcome these bottlenecks, we propose AtlasVLA, a novel framework that transitions from direct reactive manipulation to proactive reasoning through a persistent world-ego state. AtlasVLA features a dual-memory architecture: a 4D Persistent World State Memory that lifts transient 2D observations into a globally updated, voxel-hashed spatial state to resolve visual blind spots, and an Ego-Working State Memory that tracks historical ego state and task progress. By conditioning a diffusion transformer (DiT) on this joint World-Ego state, AtlasVLA enables robust spatial reasoning. Extensive evaluations across LIBERO, RLBench, and real-world benchmarks demonstrate that AtlasVLA achieves state-of-the-art performance using solely a wrist camera. Remarkably, it decisively outperforms multi-view baselines, yielding absolute success rate improvements of 9.4% on LIBERO-Long and 17.5% in real-world long-horizon tasks.",
+  "paper_url": "https://arxiv.org/abs/2608.06729",
+  "pdf_url": "https://arxiv.org/pdf/2608.06729",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Guiyu Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Longteng Guo",
+      "affiliations": []
+    },
+    {
+      "name": "Yanghong Mei",
+      "affiliations": []
+    },
+    {
+      "name": "Zilin Zhu",
+      "affiliations": []
+    },
+    {
+      "name": "Yu Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Bin Cao",
+      "affiliations": []
+    },
+    {
+      "name": "Mingming Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Xingjian He",
+      "affiliations": []
+    },
+    {
+      "name": "Jie Jiang",
+      "affiliations": []
+    },
+    {
+      "name": "Jing Liu",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "institute-of-automation-chinese-academy-of-sciences",
+      "name": "Institute of Automation, Chinese Academy of Sciences",
+      "role": "primary"
+    },
+    {
+      "id": "university-of-chinese-academy-of-sciences",
+      "name": "University of Chinese Academy of Sciences",
+      "role": "collaborator"
+    },
+    {
+      "id": "beijing-freedo-technology-co-ltd",
+      "name": "Beijing Freedo Technology Co., Ltd.",
+      "role": "collaborator"
+    },
+    {
+      "id": "beihang-university",
+      "name": "Beihang University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-07",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "world-model",
+      "planning",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "depth",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 82,
+    "selection_reason": "以 4D 持久世界状态和 ego working memory 解决腕部单相机的视野外遗忘与任务进度遗忘；在 LIBERO、RLBench 和真实长时程任务上给出系统消融。",
+    "candidate_run": "2026-08-10-weekly-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-10",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "未发现可验证的官方代码仓库"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.06729",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, conclusion or limitations were reviewed in the complete arXiv HTML; first-page affiliations were verified from PDF where HTML omitted them.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-10"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.06729"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.06729"
+    },
+    {
+      "type": "affiliation",
+      "url": "https://arxiv.org/pdf/2608.06729"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Institute of Automation, Chinese Academy of Sciences",
+      "source": "paper-pdf",
+      "url": "https://arxiv.org/pdf/2608.06729",
+      "location": "first-page affiliation block"
+    },
+    {
+      "organization": "University of Chinese Academy of Sciences",
+      "source": "paper-pdf",
+      "url": "https://arxiv.org/pdf/2608.06729",
+      "location": "first-page affiliation block"
+    },
+    {
+      "organization": "Beijing Freedo Technology Co., Ltd.",
+      "source": "paper-pdf",
+      "url": "https://arxiv.org/pdf/2608.06729",
+      "location": "first-page affiliation block"
+    },
+    {
+      "organization": "Beihang University",
+      "source": "paper-pdf",
+      "url": "https://arxiv.org/pdf/2608.06729",
+      "location": "first-page affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "source-scan",
+      "evidence_source": "paper-fulltext",
+      "checked_at": "2026-08-10"
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.13276",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "D-VLA: A High-Concurrency Distributed Asynchronous Reinforcement Learning Framework for Vision-Language-Action Models",
+  "title_zh": null,
+  "abstract": "The rapid evolution of Embodied AI has enabled Vision-Language-Action (VLA) models to excel in multimodal perception and task execution. However, applying Reinforcement Learning (RL) to these massive models in large-scale distributed environments faces severe systemic bottlenecks, primarily due to the resource conflict between high-fidelity physical simulation and the intensive VRAM/bandwidth demands of deep learning. This conflict often leaves overall throughput constrained by execution-phase inefficiencies. To address these challenges, we propose D-VLA, a high-concurrency, low-latency distributed RL framework for large-scale embodied foundation models. D-VLA introduces \"Plane Decoupling,\" physically isolating high-frequency training data from low-frequency weight control to eliminate interference between simulation and optimization. We further design a four-thread asynchronous \"Swimlane\" pipeline, enabling full parallel overlap of sampling, inference, gradient computation, and parameter distribution. Additionally, a dual-pool VRAM management model and topology-aware replication resolve memory fragmentation and optimize communication efficiency. Experiments on benchmarks like LIBERO show that D-VLA significantly outperforms mainstream RL frameworks in throughput and sampling efficiency for billion-parameter VLA models. In trillion-parameter scalability tests, our framework maintains exceptional stability and linear speedup, providing a robust system for high-performance general-purpose embodied agents.",
+  "paper_url": "https://arxiv.org/abs/2605.13276",
+  "pdf_url": "https://arxiv.org/pdf/2605.13276",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yucheng Guo",
+      "affiliations": []
+    },
+    {
+      "name": "Yongjian Guo",
+      "affiliations": []
+    },
+    {
+      "name": "Zhong Guan",
+      "affiliations": []
+    },
+    {
+      "name": "Wen Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Haoran Sun",
+      "affiliations": []
+    },
+    {
+      "name": "Haodong Yue",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaolong Xiang",
+      "affiliations": []
+    },
+    {
+      "name": "Shuai Di",
+      "affiliations": []
+    },
+    {
+      "name": "Zhen Sun",
+      "affiliations": []
+    },
+    {
+      "name": "Luqiao Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Junwu Xiong",
+      "affiliations": []
+    },
+    {
+      "name": "Yicheng Gong",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "tsinghuauniversity",
+      "name": "Tsinghua University",
+      "role": "primary"
+    },
+    {
+      "id": "pekinguniversity",
+      "name": "Peking University",
+      "role": "collaborator"
+    },
+    {
+      "id": "beihanguniversity",
+      "name": "Beihang University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-13",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "topics": [
+      "vla",
+      "robot-learning",
+      "infrastructure"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 81,
+    "selection_reason": "D-VLA聚焦视觉—语言—动作模型与机器人学习，方法、实验和结论已通过 HTML 全文复核；综合评分为 81/100；尚未核验到作者公开的核心复现资产。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产",
+      "主要证据来自仿真，真实部署外推仍需验证"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.13276",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.13276"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.13276"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Tsinghua University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.13276",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Peking University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.13276",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Beihang University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.13276",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": []
+}

@@ -1,0 +1,136 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.04678",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "From Pixels to Tokens: A Systematic Study of Latent Action Supervision for Vision-Language-Action Models",
+  "title_zh": null,
+  "abstract": "Latent actions serve as an intermediate representation that enables consistent modeling of vision-language-action (VLA) models across heterogeneous datasets. However, approaches to supervising VLAs with latent actions are fragmented and lack a systematic comparison. This work structures the study of latent action supervision from two perspectives: (i) regularizing the trajectory via image-based latent actions, and (ii) unifying the target space with action-based latent actions. Under a unified VLA baseline, we instantiate and compare four representative integration strategies. Our results reveal a formulation-task correspondence: image-based latent actions benefit long-horizon reasoning and scene-level generalization, whereas action-based latent actions excel at complex motor coordination. Furthermore, we find that directly supervising the VLM with discrete latent action tokens yields the most effective performance. Finally, our experiments offer initial insights into the benefits of latent action supervision in mixed-data, suggesting a promising direction for VLA training. Code is available at https://github.com/RUCKBReasoning/From_Pixels_to_Tokens.",
+  "paper_url": "https://arxiv.org/abs/2605.04678",
+  "pdf_url": "https://arxiv.org/pdf/2605.04678",
+  "project_url": null,
+  "code_url": "https://github.com/RUCKBReasoning/From_Pixels_to_Tokens",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yihan Lin",
+      "affiliations": []
+    },
+    {
+      "name": "Haoyang Li",
+      "affiliations": []
+    },
+    {
+      "name": "Yang Li",
+      "affiliations": []
+    },
+    {
+      "name": "Haitao Shen",
+      "affiliations": []
+    },
+    {
+      "name": "Yihan Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Chao Shao",
+      "affiliations": []
+    },
+    {
+      "name": "Jing Zhang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-05-06",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [
+      "code"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 84,
+    "selection_reason": "From Pixels to Tokens聚焦视觉—语言—动作模型，方法、实验和结论已通过 HTML 全文复核；综合评分为 84/100；已核验代码链接。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文 HTML 未提供可稳定解析的机构 affiliation，未按作者身份猜测团队"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.04678",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.04678"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.04678"
+    },
+    {
+      "type": "paper",
+      "url": "https://github.com/RUCKBReasoning/From_Pixels_to_Tokens"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/RUCKBReasoning/From_Pixels_to_Tokens",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "evidence_source": "paper-abstract",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://api.github.com/repos/RUCKBReasoning/From_Pixels_to_Tokens"
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.06375",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "$ω$-0: A Latent Predictive World Action Model for Concurrent Humanoid Loco-Manipulation",
+  "title_zh": "ω-0：面向人形机器人并发移动操作的潜变量预测世界动作模型",
+  "abstract": "Humanoid household tasks often require concurrent loco-manipulation, where the robot must move, adjust posture, maintain balance, and manipulate objects as a single coordinated behavior. Yet existing humanoid policies typically decompose locomotion and manipulation, while recent world-action models remain either arm-centric or video-centered. We present -0, a latent predictive whole-body world-action model for real-world humanoid concurrent loco-manipulation. Given a language instruction, current visual observation, and robot proprioceptive state, -0 directly predicts controller-compatible whole-body action latents for real-robot execution. Rather than reconstructing future videos, -0 learns compact future observation embeddings as a lightweight predictive objective, coupling latent visual foresight with diffusion-based whole-body action generation. The model supports egocentric RGB, exocentric RGB, and exocentric depth inputs, and leverages controller-based simulation replay to ground human/public visual-motion priors into robot-executable action latents. We further collect -HOME, a 40+ hour real-world household humanoid dataset with synchronized multi-view observations, whole-body SMPL motions, robot states, and action latents. Real-world experiments on 11 household tasks demonstrate that a single -0 model can produce smooth manipulate-while-moving behaviors and consistently outperform representative imitation learning, VLA, humanoid, and WAM baselines.",
+  "paper_url": "https://arxiv.org/abs/2608.06375",
+  "pdf_url": "https://arxiv.org/pdf/2608.06375",
+  "project_url": "https://gentlefress.github.io/OMEGA-0_page/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Zhe Li",
+      "affiliations": []
+    },
+    {
+      "name": "Zhenzhe Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Yangyang Wei",
+      "affiliations": []
+    },
+    {
+      "name": "Wenjie Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Xichen Yuan",
+      "affiliations": []
+    },
+    {
+      "name": "Peiyuan Zhi",
+      "affiliations": []
+    },
+    {
+      "name": "Gen Li",
+      "affiliations": []
+    },
+    {
+      "name": "Xinying Guo",
+      "affiliations": []
+    },
+    {
+      "name": "Fengjie Gao",
+      "affiliations": []
+    },
+    {
+      "name": "Jianfei Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Shanghang Zhang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "mars-lab-nanyang-technological-university",
+      "name": "MARS Lab, Nanyang Technological University",
+      "role": "primary"
+    },
+    {
+      "id": "peking-university",
+      "name": "Peking University",
+      "role": "collaborator"
+    },
+    {
+      "id": "beijing-academy-of-artificial-intelligence",
+      "name": "Beijing Academy of Artificial Intelligence",
+      "role": "collaborator"
+    },
+    {
+      "id": "the-hong-kong-university-of-science-and-technology-guangzhou",
+      "name": "The Hong Kong University of Science and Technology (Guangzhou)",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-06",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data"
+    ],
+    "topics": [
+      "world-model",
+      "diffusion-policy",
+      "imitation-learning"
+    ],
+    "tasks": [
+      "mobile-manipulation",
+      "humanoid-control",
+      "locomotion"
+    ],
+    "platforms": [
+      "humanoid"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "proprioception",
+      "action",
+      "depth"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "large-scale-data",
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "dataset"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 88,
+    "selection_reason": "将未来视觉潜变量预测与全身扩散动作生成结合，直接处理移动、平衡与操作并发的人形机器人任务；提供 40+ 小时多视角真实家庭数据并在 11 项真实任务上比较多类基线。",
+    "candidate_run": "2026-08-10-weekly-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-10",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "作者已声明后续开放部分资产，但当前没有可访问的直接地址",
+      "未发现可验证的官方代码仓库"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.06375",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, conclusion or limitations were reviewed in the complete arXiv HTML; first-page affiliations were verified from PDF where HTML omitted them.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-10"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.06375"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.06375"
+    },
+    {
+      "type": "affiliation",
+      "url": "https://arxiv.org/pdf/2608.06375"
+    },
+    {
+      "type": "project",
+      "url": "https://gentlefress.github.io/OMEGA-0_page/"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "world-action-model",
+      "name": "World Action Model",
+      "reason": "The model jointly predicts future visual latents and executable whole-body actions."
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "MARS Lab, Nanyang Technological University",
+      "source": "paper-pdf",
+      "url": "https://arxiv.org/pdf/2608.06375",
+      "location": "first-page affiliation block"
+    },
+    {
+      "organization": "Peking University",
+      "source": "paper-pdf",
+      "url": "https://arxiv.org/pdf/2608.06375",
+      "location": "first-page affiliation block"
+    },
+    {
+      "organization": "Beijing Academy of Artificial Intelligence",
+      "source": "paper-pdf",
+      "url": "https://arxiv.org/pdf/2608.06375",
+      "location": "first-page affiliation block"
+    },
+    {
+      "organization": "The Hong Kong University of Science and Technology (Guangzhou)",
+      "source": "paper-pdf",
+      "url": "https://arxiv.org/pdf/2608.06375",
+      "location": "first-page affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://gentlefress.github.io/OMEGA-0_page/",
+      "status": "project-page-only",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-fulltext",
+      "checked_at": "2026-08-10"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "announced",
+      "accessible": false,
+      "verification_method": "project-page-scan",
+      "evidence_source": "project-page",
+      "checked_at": "2026-08-10",
+      "note": "Official page labels Code as WIP."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "announced",
+      "accessible": false,
+      "verification_method": "project-page-scan",
+      "evidence_source": "project-page",
+      "checked_at": "2026-08-10",
+      "note": "Official page labels Dataset as WIP."
+    }
+  ]
+}

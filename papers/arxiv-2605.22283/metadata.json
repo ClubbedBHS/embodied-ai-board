@@ -1,0 +1,130 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.22283",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Spatial Memory for Out-of-Vision Manipulation in Vision-Language-Action",
+  "title_zh": null,
+  "abstract": "We introduce SOMA, the Spatial Memory framework for Out-of-Vision Manipulation in Vision-Language-Action (VLA) models. Most existing VLAs implicitly assume that task-relevant objects are always visible, leading to brittle and reactive behaviors when targets fall outside the camera's field of view. SOMA addresses this limitation by equipping VLAs with a persistent spatial memory constructed from multi-view observations acquired via a movable head camera, enabling reasoning beyond the current visual frustum. The framework consists of three components: Spatial Memory Construction, which aggregates angular-wise observations into a unified spatial-semantic representation through scanning; Dynamic Memory Refinement, which maintains global consistency over time; and Contextual Memory Retrieval, which activates instruction-relevant spatial cues during manipulation. We evaluate SOMA on five challenging real-world out-of-vision manipulation tasks, including multi-step and dual-arm scenarios where target objects are initially invisible. Experimental results show that SOMA not only improves task success rates, but also induces qualitatively different manipulation behaviors, with faster target localization, reduced viewpoint search, and near one-shot grasping under partial observability. Additional experiments on RoboCasa GR1 and SimplerEnv further validate the effectiveness of SOMA's memory design under conventional fully observable settings. Code will be released soon.",
+  "paper_url": "https://arxiv.org/abs/2605.22283",
+  "pdf_url": "https://arxiv.org/pdf/2605.22283",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Pengteng Li",
+      "affiliations": []
+    },
+    {
+      "name": "Weiyu Guo",
+      "affiliations": []
+    },
+    {
+      "name": "He Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Tiefu Cai",
+      "affiliations": []
+    },
+    {
+      "name": "Xiao He",
+      "affiliations": []
+    },
+    {
+      "name": "Yandong Guo",
+      "affiliations": []
+    },
+    {
+      "name": "Hui Xiong",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-05-21",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "manipulation"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 86,
+    "selection_reason": "Spatial Memory for Out-of-Vision Manipulation in Vision-Language-Action聚焦视觉—语言—动作模型与机器人操作，方法、实验和结论已通过 HTML 全文复核；综合评分为 86/100；尚未核验到作者公开的核心复现资产。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文声明后续开源，但当前未发现可访问的核心资产",
+      "论文 HTML 未提供可稳定解析的机构 affiliation，未按作者身份猜测团队"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.22283",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.22283"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.22283"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "announced",
+      "accessible": false,
+      "verification_method": "paper-statement",
+      "evidence_source": "paper-abstract",
+      "checked_at": "2026-07-29"
+    }
+  ]
+}

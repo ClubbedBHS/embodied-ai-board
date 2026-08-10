@@ -1,0 +1,168 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.25044",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "X-DiffVLA: X-Embodied Diffusion Action Heads for Vision-Language-Action Models",
+  "title_zh": null,
+  "abstract": "Learning universal policies from cross-embodied data remains a fundamental challenge in robotics. Although Vision-Language-Action (VLA) models are pre-trained on large and diverse datasets, they typically rely on embodiment-specific fine-tuning to achieve strong performance in downstream tasks. This requirement severely limits their generalization capability and restricts knowledge transfer across embodiments performing similar tasks. To overcome these limitations, we focus on cross-embodied settings with shared robotic bases and heterogeneous end-effectors, and propose X-DiffVLA, a diffusion-based VLA model featuring a unified cross-embodied action head. X-DiffVLA can leverage the generative strengths of diffusion models to capture both the diversity and latent correlations in cross-embodied datasets. Specifically, we introduce Embodiment Forcing, a classifier-free guidance technique to implicitly steer action generation toward embodiment-specific functional components, capturing fine-grained structural nuances without explicit supervision. In addition, a Morphological Tree Diffusion approach is designed to strengthen behavioral correlations across diverse end-effectors, maximizing the transferability of heterogeneous demonstrations. Experimental results across RoboCasa and Isaac Gym, covering different embodiments from grippers to dexterous hands, show that X-DiffVLA achieves state-of-the-art performance, with improvements of 15.3% and 12.5%, respectively. Real-world evaluations further validate the robustness of the proposed framework and its effectiveness in scalable cross-embodied policy learning.",
+  "paper_url": "https://arxiv.org/abs/2605.25044",
+  "pdf_url": "https://arxiv.org/pdf/2605.25044",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Boyu Li",
+      "affiliations": []
+    },
+    {
+      "name": "Chaoyi Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Haoqi Yuan",
+      "affiliations": []
+    },
+    {
+      "name": "Xinrun Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Börje F. Karlsson",
+      "affiliations": []
+    },
+    {
+      "name": "Haoran Li",
+      "affiliations": []
+    },
+    {
+      "name": "Zongqing Lu",
+      "affiliations": []
+    },
+    {
+      "name": "Dongbin Zhao",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "chineseacademyofsciences",
+      "name": "Chinese Academy of Sciences",
+      "role": "primary"
+    },
+    {
+      "id": "pekinguniversity",
+      "name": "Peking University",
+      "role": "collaborator"
+    },
+    {
+      "id": "mais",
+      "name": "MAIS",
+      "role": "collaborator"
+    },
+    {
+      "id": "beijingacademyofartificialintelligence",
+      "name": "Beijing Academy of Artificial Intelligence",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-24",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 76,
+    "selection_reason": "X-DiffVLA聚焦视觉—语言—动作模型，方法、实验和结论已通过 HTML 全文复核；综合评分为 76/100；尚未核验到作者公开的核心复现资产。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.25044",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.25044"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.25044"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Chinese Academy of Sciences",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.25044",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Peking University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.25044",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "MAIS",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.25044",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Beijing Academy of Artificial Intelligence",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.25044",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": []
+}

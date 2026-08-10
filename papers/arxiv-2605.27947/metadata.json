@@ -1,0 +1,171 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.27947",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "SANTS: A State-Adaptive Scheduler for World Action Models",
+  "title_zh": null,
+  "abstract": "World Action Models (WAMs) improve robot manipulation by using video-based future representations to condition action generation. In pixel-space WAMs, however, the best action condition is not necessarily the fully denoised video. Controlled denoising-depth scans show that video refinement can reduce action error up to a state-dependent point, after which the gain may saturate or even reverse when late predictions become less action-relevant or physically unreliable. This suggests that action generation should use a state-dependent point along the video noise trajectory rather than a fixed terminal denoising depth. We introduce State-Adaptive Noise Trajectory Scheduler (SANTS), a lightweight scheduler for video-to-action diffusion policies. At each video decision point, SANTS reads the current video-state representation and noise level, then jointly predicts a cumulative stopping hazard and a relative noise-progression ratio. SANTS is post-trained with a path-level reward computed after the frozen action branch generates the final action chunk, so the scheduler is optimized for downstream action quality rather than intermediate video fidelity, while redundant video-state updates are explicitly penalized. Experiments show that SANTS reaches \\(94.4\\%\\) overall success on RoboTwin 2.0 and \\(73.1\\%\\) average success across seven real-robot tasks, while reducing latency by \\(81.7\\%\\) and \\(79.0\\%\\) relative to full video denoising, respectively. These results indicate that adaptive selection along the video noise trajectory can preserve the control benefits of WAM-style future reasoning while removing much of its redundant inference cost.",
+  "paper_url": "https://arxiv.org/abs/2605.27947",
+  "pdf_url": "https://arxiv.org/pdf/2605.27947",
+  "project_url": "https://advanced-robotics-lab.github.io/SANTS/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yirui Sun",
+      "affiliations": []
+    },
+    {
+      "name": "Guangyu Zhuge",
+      "affiliations": []
+    },
+    {
+      "name": "Keliang Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Jie Gu",
+      "affiliations": []
+    },
+    {
+      "name": "Xinyu Bing",
+      "affiliations": []
+    },
+    {
+      "name": "Zhongxue Gan",
+      "affiliations": []
+    },
+    {
+      "name": "Chunxu Tian",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "fudanuniversity",
+      "name": "Fudan University",
+      "role": "primary"
+    },
+    {
+      "id": "harbininstituteoftechnology",
+      "name": "Harbin Institute of Technology",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-27",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [
+      "project"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 78,
+    "selection_reason": "SANTS聚焦具身世界模型，方法、实验和结论已通过 HTML 全文复核；综合评分为 78/100；已核验项目页链接。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产",
+      "主要证据来自仿真，真实部署外推仍需验证"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.27947",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.27947"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.27947"
+    },
+    {
+      "type": "paper",
+      "url": "https://advanced-robotics-lab.github.io/SANTS/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "Fudan University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.27947",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Harbin Institute of Technology",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.27947",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://advanced-robotics-lab.github.io/SANTS/",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-affiliation-block",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://advanced-robotics-lab.github.io/SANTS/"
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/Advanced-Robotics-Lab/SANTS-code",
+      "status": "verification-error",
+      "accessible": false,
+      "verification_method": "github-api",
+      "evidence_source": "project-page",
+      "checked_at": "2026-07-29",
+      "error": "HTTP 403"
+    }
+  ]
+}

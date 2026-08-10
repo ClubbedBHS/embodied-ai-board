@@ -1,0 +1,141 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2605.24761",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Drift-Resistant Navigation World Model with Anchored Epipolar Guidance",
+  "title_zh": null,
+  "abstract": "We propose Drift-Resistant Navigation World Model, a generative model that mitigates both perceptual drift and geometric drift in conventional rollout-based navigation world models. Existing methods recursively feed generated content into subsequent steps, causing noise accumulation and degraded predictions, i.e., perceptual drift. Meanwhile, their predictions often deviate from the agent's motion, resulting in geometry drift. We address both types of drift by redesigning world-model prediction as an anchor-guided rollout. Instead of rolling out every frame sequentially, we first predict sparse future anchors that serve as stable long-range targets, and then generate intermediate frames within each chunk conditioned on both past context and future anchors. Importantly, these sparse anchors also provide geometric constraints, supported by bidirectional epipolar geometry, to localize where corresponding content should appear in the intermediate frames. Experiments on four benchmarks demonstrate consistent improvements over strong baselines in long-horizon visual quality, geometric consistency, and multi-view coherence. These gains further translate into improved downstream planning performance under the same planners, highlighting the importance of drift-resistant, geometry-aware prediction for reliable navigation world models.",
+  "paper_url": "https://arxiv.org/abs/2605.24761",
+  "pdf_url": "https://arxiv.org/pdf/2605.24761",
+  "project_url": "https://vita-epfl.github.io/DR-NWM.io/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Po-Chien Luan",
+      "affiliations": []
+    },
+    {
+      "name": "Zimin Xia",
+      "affiliations": []
+    },
+    {
+      "name": "Wuyang Li",
+      "affiliations": []
+    },
+    {
+      "name": "Yang Gao",
+      "affiliations": []
+    },
+    {
+      "name": "Alexandre Alahi",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "epfl",
+      "name": "EPFL",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-05-23",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model"
+    ],
+    "tasks": [],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [],
+    "environments": [],
+    "assets": [
+      "project"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 83,
+    "selection_reason": "Drift-Resistant Navigation World Model with Anchored Epipolar Guidance聚焦具身世界模型，方法、实验和结论已通过 HTML 全文复核；综合评分为 83/100；已核验项目页链接。",
+    "candidate_run": "2026-05-backfill",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-07-30",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前未找到可验证的作者代码、数据或模型资产"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2605.24761",
+    "fulltext_accessed": true,
+    "fulltext_note": "Candidate screening verified method, experiments, and conclusion or limitations in HTML full text.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-07-29"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2605.24761"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2605.24761"
+    },
+    {
+      "type": "paper",
+      "url": "https://vita-epfl.github.io/DR-NWM.io/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "organization": "EPFL",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2605.24761",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://vita-epfl.github.io/DR-NWM.io/",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "evidence_source": "paper-affiliation-block",
+      "checked_at": "2026-07-29",
+      "http_status": 200,
+      "final_url": "https://vita-epfl.github.io/DR-NWM.io/"
+    }
+  ]
+}

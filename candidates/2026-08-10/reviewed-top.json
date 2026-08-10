@@ -1,0 +1,651 @@
+{
+  "run": {
+    "run_id": "2026-08-10-weekly-01",
+    "stage": "asset-verified-and-promoted",
+    "reviewed_at": "2026-08-10",
+    "source_scope": "arxiv-abstract-and-html-fulltext",
+    "rubric_version": "0.1",
+    "note": "9 篇全文优先候选已完成论文首页团队核验、项目页与代码/数据/模型扫描，并生成正式中文 AI 初稿。未发现可计分的 verified 代码、数据或模型资产，原评分保持不变。"
+  },
+  "candidates": [
+    {
+      "id": "arxiv-2608.05948",
+      "title": "GAUGE: A Measurement-Grounded Benchmark for Physical Fidelity in Simulation Engines and Video World Models",
+      "paper_url": "https://arxiv.org/abs/2608.05948",
+      "first_publication": "2026-08-06",
+      "decision": "featured",
+      "scores": {
+        "relevance": 20,
+        "novelty": 18,
+        "evidence_quality": 19,
+        "potential_impact": 14,
+        "board_information_gain": 10,
+        "reproducibility": 4,
+        "timeliness": 5,
+        "total": 90
+      },
+      "selection_reason": "用真实测量、校准物理参数和任务特定可观测量统一诊断数值仿真器与视频世界模型；覆盖 22 个任务族，并实测对比 3 个物理引擎和 6 个视频模型。",
+      "risks": [
+        "世界模型评测当前主要限于可从二维轨迹评估的刚体任务",
+        "项目页可访问，但未发现可下载代码或数据"
+      ],
+      "organizations": [
+        "Shanghai Artificial Intelligence Laboratory",
+        "The Hong Kong University of Science and Technology",
+        "Shanghai Jiao Tong University",
+        "Zhejiang University"
+      ],
+      "organization_evidence": [
+        {
+          "organization": "Shanghai Artificial Intelligence Laboratory",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.05948",
+          "location": "first-page affiliation block"
+        },
+        {
+          "organization": "The Hong Kong University of Science and Technology",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.05948",
+          "location": "first-page affiliation block"
+        },
+        {
+          "organization": "Shanghai Jiao Tong University",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.05948",
+          "location": "first-page affiliation block"
+        },
+        {
+          "organization": "Zhejiang University",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.05948",
+          "location": "first-page affiliation block"
+        }
+      ],
+      "project_url": "https://internrobotics.github.io/GAUGE/",
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://internrobotics.github.io/GAUGE/",
+          "status": "project-page-only",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "paper-fulltext",
+          "checked_at": "2026-08-10"
+        },
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "source-scan",
+          "evidence_source": "paper-and-project-page",
+          "checked_at": "2026-08-10"
+        },
+        {
+          "kind": "dataset",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "source-scan",
+          "evidence_source": "paper-and-project-page",
+          "checked_at": "2026-08-10"
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2608.00337",
+      "title": "Action Chunk Scheduling for Batched Robot Policy Serving",
+      "paper_url": "https://arxiv.org/abs/2608.00337",
+      "first_publication": "2026-07-31",
+      "decision": "featured",
+      "watchlist_matches": [
+        "author:danfei-xu"
+      ],
+      "organizations": [
+        "Georgia Institute of Technology",
+        "Advanced Robotic Manipulation Lab"
+      ],
+      "project_url": "https://gatech-rl2.github.io/actionchunkscheduling/",
+      "scores": {
+        "relevance": 20,
+        "novelty": 18,
+        "evidence_quality": 18,
+        "potential_impact": 13,
+        "board_information_gain": 10,
+        "reproducibility": 4,
+        "timeliness": 5,
+        "total": 88
+      },
+      "selection_reason": "把多机器人共享远端 VLA 推理明确建模为闭环调度问题；Armory 在仿真与 10 台真实机械臂上验证，异构负载下吞吐最高提升 18%。",
+      "risks": [
+        "当前只核验到项目页，未确认核心代码是否公开",
+        "共址网络条件优于许多实际远程部署"
+      ],
+      "organization_evidence": [
+        {
+          "organization": "Georgia Institute of Technology",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.00337",
+          "location": "first-page affiliation block"
+        },
+        {
+          "organization": "Advanced Robotic Manipulation Lab",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.00337",
+          "location": "first-page affiliation block"
+        }
+      ],
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://gatech-rl2.github.io/actionchunkscheduling/",
+          "status": "project-page-only",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "paper-fulltext",
+          "checked_at": "2026-08-10"
+        },
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "source-scan",
+          "evidence_source": "paper-and-project-page",
+          "checked_at": "2026-08-10",
+          "note": "Project source contains a commented VideoMimic template link; it is unrelated and was not accepted as Armory code."
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2608.06375",
+      "title": "$ω$-0: A Latent Predictive World Action Model for Concurrent Humanoid Loco-Manipulation",
+      "paper_url": "https://arxiv.org/abs/2608.06375",
+      "first_publication": "2026-08-06",
+      "decision": "featured",
+      "organizations": [
+        "MARS Lab, Nanyang Technological University",
+        "Peking University",
+        "Beijing Academy of Artificial Intelligence",
+        "The Hong Kong University of Science and Technology (Guangzhou)"
+      ],
+      "project_url": "https://gentlefress.github.io/OMEGA-0_page/",
+      "scores": {
+        "relevance": 20,
+        "novelty": 18,
+        "evidence_quality": 18,
+        "potential_impact": 14,
+        "board_information_gain": 9,
+        "reproducibility": 4,
+        "timeliness": 5,
+        "total": 88
+      },
+      "selection_reason": "将未来视觉潜变量预测与全身扩散动作生成结合，直接处理移动、平衡与操作并发的人形机器人任务；提供 40+ 小时多视角真实家庭数据并在 11 项真实任务上比较多类基线。",
+      "risks": [
+        "正文没有独立的局限性章节",
+        "数据、权重与代码当前仅标注 WIP，尚未提供可访问地址"
+      ],
+      "organization_evidence": [
+        {
+          "organization": "MARS Lab, Nanyang Technological University",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.06375",
+          "location": "first-page affiliation block"
+        },
+        {
+          "organization": "Peking University",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.06375",
+          "location": "first-page affiliation block"
+        },
+        {
+          "organization": "Beijing Academy of Artificial Intelligence",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.06375",
+          "location": "first-page affiliation block"
+        },
+        {
+          "organization": "The Hong Kong University of Science and Technology (Guangzhou)",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.06375",
+          "location": "first-page affiliation block"
+        }
+      ],
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://gentlefress.github.io/OMEGA-0_page/",
+          "status": "project-page-only",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "paper-fulltext",
+          "checked_at": "2026-08-10"
+        },
+        {
+          "kind": "code",
+          "url": null,
+          "status": "announced",
+          "accessible": false,
+          "verification_method": "project-page-scan",
+          "evidence_source": "project-page",
+          "checked_at": "2026-08-10",
+          "note": "Official page labels Code as WIP."
+        },
+        {
+          "kind": "dataset",
+          "url": null,
+          "status": "announced",
+          "accessible": false,
+          "verification_method": "project-page-scan",
+          "evidence_source": "project-page",
+          "checked_at": "2026-08-10",
+          "note": "Official page labels Dataset as WIP."
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2608.05799",
+      "title": "XEWorld: Can Action-Conditioned World Models Generalize to Unseen Robot Embodiments?",
+      "paper_url": "https://arxiv.org/abs/2608.05799",
+      "first_publication": "2026-08-06",
+      "decision": "featured",
+      "scores": {
+        "relevance": 20,
+        "novelty": 18,
+        "evidence_quality": 19,
+        "potential_impact": 13,
+        "board_information_gain": 10,
+        "reproducibility": 3,
+        "timeliness": 5,
+        "total": 88
+      },
+      "selection_reason": "用 25 个任务、5 种机器人和严格配对场景隔离 embodiment 变量，给出重要反例：当前世界模型的迁移更受视觉相似性而非运动学相似性支配，少样本适配还会导致旧 embodiment 遗忘。",
+      "risks": [
+        "核心结论主要来自 RoboTwin 配对仿真",
+        "尚论文声明数据 release，但未提供下载地址，评测代码未发现"
+      ],
+      "organizations": [
+        "New Laboratory of Pattern Recognition, Institute of Automation, Chinese Academy of Sciences",
+        "University of Chinese Academy of Sciences",
+        "Shandong University",
+        "FiveAges"
+      ],
+      "organization_evidence": [
+        {
+          "organization": "New Laboratory of Pattern Recognition, Institute of Automation, Chinese Academy of Sciences",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.05799",
+          "location": "first-page affiliation block"
+        },
+        {
+          "organization": "University of Chinese Academy of Sciences",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.05799",
+          "location": "first-page affiliation block"
+        },
+        {
+          "organization": "Shandong University",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.05799",
+          "location": "first-page affiliation block"
+        },
+        {
+          "organization": "FiveAges",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.05799",
+          "location": "first-page affiliation block"
+        }
+      ],
+      "project_url": null,
+      "asset_checks": [
+        {
+          "kind": "dataset",
+          "url": null,
+          "status": "announced",
+          "accessible": false,
+          "verification_method": "paper-fulltext-scan",
+          "evidence_source": "paper-fulltext",
+          "checked_at": "2026-08-10",
+          "note": "Paper states that the release covers 25 tasks × 5 robots, but no direct download URL was found."
+        },
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "source-scan",
+          "evidence_source": "paper-fulltext",
+          "checked_at": "2026-08-10"
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2608.06332",
+      "title": "GeniWorld: A Generalizable Interactive World Model for Robotic Manipulation via Visual Actions",
+      "paper_url": "https://arxiv.org/abs/2608.06332",
+      "first_publication": "2026-08-06",
+      "decision": "featured",
+      "organizations": [
+        "Shenzhen International Graduate School, Tsinghua University",
+        "Tencent Robotics X",
+        "The Hong Kong University of Science and Technology",
+        "Shenzhen Technology University"
+      ],
+      "project_url": "https://chenghaogu.github.io/GeniWorld/",
+      "scores": {
+        "relevance": 20,
+        "novelty": 17,
+        "evidence_quality": 18,
+        "potential_impact": 13,
+        "board_information_gain": 9,
+        "reproducibility": 4,
+        "timeliness": 5,
+        "total": 86
+      },
+      "selection_reason": "用 URDF 渲染把数值动作变成视觉动作表示，并解耦机器人运动学与环境动力学；合成数据将 OOD 条件下总体策略成功率从 40.8% 提升到 69.0%。",
+      "risks": [
+        "闭环世界模型的长期误差累积仍需更广任务验证",
+        "项目页已确认，但代码与模型当前仅标注 Coming soon，尚未提供可访问地址"
+      ],
+      "organization_evidence": [
+        {
+          "organization": "Shenzhen International Graduate School, Tsinghua University",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.06332",
+          "location": "first-page affiliation block"
+        },
+        {
+          "organization": "Tencent Robotics X",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.06332",
+          "location": "first-page affiliation block"
+        },
+        {
+          "organization": "The Hong Kong University of Science and Technology",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.06332",
+          "location": "first-page affiliation block"
+        },
+        {
+          "organization": "Shenzhen Technology University",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.06332",
+          "location": "first-page affiliation block"
+        }
+      ],
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://chenghaogu.github.io/GeniWorld/",
+          "status": "project-page-only",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "paper-fulltext",
+          "checked_at": "2026-08-10"
+        },
+        {
+          "kind": "code",
+          "url": null,
+          "status": "announced",
+          "accessible": false,
+          "verification_method": "project-page-scan",
+          "evidence_source": "project-page",
+          "checked_at": "2026-08-10",
+          "note": "Official project page says Coming soon."
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2608.03052",
+      "title": "How Should Vision-Language-Action Models Use Proprioceptive State?",
+      "paper_url": "https://arxiv.org/abs/2608.03052",
+      "first_publication": "2026-08-04",
+      "decision": "featured",
+      "scores": {
+        "relevance": 20,
+        "novelty": 17,
+        "evidence_quality": 19,
+        "potential_impact": 12,
+        "board_information_gain": 9,
+        "reproducibility": 3,
+        "timeliness": 5,
+        "total": 85
+      },
+      "selection_reason": "在固定骨干、数据、动作表示和评测协议下系统比较 5 种本体状态注入接口、1–96 帧历史，并覆盖 45 个原子任务和 20 个组合任务，给出可操作的 VLA 设计原则。",
+      "risks": [
+        "结论基于一种 flow-matching VLA，跨架构外推仍待验证",
+        "未发现公开代码和训练配置资产"
+      ],
+      "organizations": [
+        "The Hong Kong University of Science and Technology (Guangzhou)",
+        "Multimedia Laboratory, The Chinese University of Hong Kong",
+        "AI2 Robotics X-Lab"
+      ],
+      "organization_evidence": [
+        {
+          "organization": "The Hong Kong University of Science and Technology (Guangzhou)",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.03052",
+          "location": "first-page affiliation block"
+        },
+        {
+          "organization": "Multimedia Laboratory, The Chinese University of Hong Kong",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.03052",
+          "location": "first-page affiliation block"
+        },
+        {
+          "organization": "AI2 Robotics X-Lab",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.03052",
+          "location": "first-page affiliation block"
+        }
+      ],
+      "project_url": null,
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "source-scan",
+          "evidence_source": "paper-fulltext",
+          "checked_at": "2026-08-10"
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2608.06729",
+      "title": "AtlasVLA: Persistent World-Ego State Modeling for Vision-Language-Action Models",
+      "paper_url": "https://arxiv.org/abs/2608.06729",
+      "first_publication": "2026-08-07",
+      "decision": "featured",
+      "scores": {
+        "relevance": 20,
+        "novelty": 16,
+        "evidence_quality": 17,
+        "potential_impact": 12,
+        "board_information_gain": 9,
+        "reproducibility": 3,
+        "timeliness": 5,
+        "total": 82
+      },
+      "selection_reason": "以 4D 持久世界状态和 ego working memory 解决腕部单相机的视野外遗忘与任务进度遗忘；在 LIBERO、RLBench 和真实长时程任务上给出系统消融。",
+      "risks": [
+        "需要评估 4D 状态构建的计算与标定成本",
+        "未发现公开代码或模型"
+      ],
+      "organizations": [
+        "Institute of Automation, Chinese Academy of Sciences",
+        "University of Chinese Academy of Sciences",
+        "Beijing Freedo Technology Co., Ltd.",
+        "Beihang University"
+      ],
+      "organization_evidence": [
+        {
+          "organization": "Institute of Automation, Chinese Academy of Sciences",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.06729",
+          "location": "first-page affiliation block"
+        },
+        {
+          "organization": "University of Chinese Academy of Sciences",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.06729",
+          "location": "first-page affiliation block"
+        },
+        {
+          "organization": "Beijing Freedo Technology Co., Ltd.",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.06729",
+          "location": "first-page affiliation block"
+        },
+        {
+          "organization": "Beihang University",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.06729",
+          "location": "first-page affiliation block"
+        }
+      ],
+      "project_url": null,
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "source-scan",
+          "evidence_source": "paper-fulltext",
+          "checked_at": "2026-08-10"
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2608.02326",
+      "title": "ChainVLA: Chaining Vision-Language-Action Queries through a Unified Execution State for Long-Horizon Manipulation",
+      "paper_url": "https://arxiv.org/abs/2608.02326",
+      "first_publication": "2026-08-03",
+      "decision": "featured",
+      "project_url": "https://muqy1818.github.io/chainvla-web/",
+      "scores": {
+        "relevance": 20,
+        "novelty": 16,
+        "evidence_quality": 17,
+        "potential_impact": 11,
+        "board_information_gain": 9,
+        "reproducibility": 3,
+        "timeliness": 5,
+        "total": 81
+      },
+      "selection_reason": "把跨 action-chunk 查询的任务进度与未执行 motion tail 统一为可修订执行状态；RMBench 消融显示两条状态通路缺一都会大幅退化，并明确披露外部基线不可直接比较。",
+      "risks": [
+        "外部基线没有在同一协议下重跑",
+        "超参数敏感性和真实机器人验证不足"
+      ],
+      "organizations": [
+        "Shenzhen International Graduate School, Tsinghua University",
+        "China University of Mining and Technology",
+        "Shenzhen Technology University"
+      ],
+      "organization_evidence": [
+        {
+          "organization": "Shenzhen International Graduate School, Tsinghua University",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.02326",
+          "location": "first-page affiliation block"
+        },
+        {
+          "organization": "China University of Mining and Technology",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.02326",
+          "location": "first-page affiliation block"
+        },
+        {
+          "organization": "Shenzhen Technology University",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.02326",
+          "location": "first-page affiliation block"
+        }
+      ],
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://muqy1818.github.io/chainvla-web/",
+          "status": "project-page-only",
+          "accessible": true,
+          "verification_method": "http-get",
+          "evidence_source": "paper-fulltext",
+          "checked_at": "2026-08-10"
+        },
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "source-scan",
+          "evidence_source": "paper-and-project-page",
+          "checked_at": "2026-08-10"
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2608.05738",
+      "title": "In-Context VLA: Endowing Vision-Language-Action Models with Language via In-Context Post-Training and Agentic Tool Use",
+      "paper_url": "https://arxiv.org/abs/2608.05738",
+      "first_publication": "2026-08-06",
+      "decision": "featured",
+      "scores": {
+        "relevance": 20,
+        "novelty": 16,
+        "evidence_quality": 17,
+        "potential_impact": 12,
+        "board_information_gain": 8,
+        "reproducibility": 3,
+        "timeliness": 5,
+        "total": 81
+      },
+      "selection_reason": "提出 VLA 应消费 grounded language 而非生成自由文本 CoT，并通过 in-context 后训练与感知工具调用注入结构化证据；覆盖三类仿真基准与 8 个真实任务，且披露工具依赖和标定要求。",
+      "risks": [
+        "性能受外部检测、深度和 VLM 工具质量约束",
+        "主要任务仍集中在抓放、开关、倾倒和插入"
+      ],
+      "organizations": [
+        "Nankai University",
+        "Tsinghua University",
+        "Swiss Federal Institute of Technology Lausanne (EPFL)"
+      ],
+      "organization_evidence": [
+        {
+          "organization": "Nankai University",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.05738",
+          "location": "first-page affiliation block"
+        },
+        {
+          "organization": "Tsinghua University",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.05738",
+          "location": "first-page affiliation block"
+        },
+        {
+          "organization": "Swiss Federal Institute of Technology Lausanne (EPFL)",
+          "source": "paper-pdf",
+          "url": "https://arxiv.org/pdf/2608.05738",
+          "location": "first-page affiliation block"
+        }
+      ],
+      "project_url": null,
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "accessible": false,
+          "verification_method": "source-scan",
+          "evidence_source": "paper-fulltext",
+          "checked_at": "2026-08-10"
+        }
+      ]
+    }
+  ]
+}
