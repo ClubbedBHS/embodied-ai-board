@@ -1,0 +1,1801 @@
+{
+  "run": {
+    "run_id": "2026-08-12-weekly-01",
+    "stage": "discovery-triage",
+    "run_at": "2026-08-12",
+    "window_start": "2026-08-11",
+    "window_end": "2026-08-12",
+    "sources_checked": [
+      "arXiv official cs.RO pastweek submissions page"
+    ],
+    "source_entry_count": 156,
+    "announcement_dates_observed": [
+      "2026-08-11",
+      "2026-08-12"
+    ],
+    "triage_match_count": 47,
+    "queued_for_abstract_review": 47,
+    "rubric_version": "0.1",
+    "watchlist_version": "0.1",
+    "note": "triage_score 只用于安排摘要和全文阅读顺序，不是论文质量分；候选尚未通过硬门槛，不可直接发布。"
+  },
+  "candidates": [
+    {
+      "id": "arxiv-2608.07619",
+      "arxiv_id": "2608.07619",
+      "title": "GWM-VLA: Geometry-Aware Latent World Modeling for Vision-Language-Action Learning",
+      "paper_url": "https://arxiv.org/abs/2608.07619",
+      "fulltext_url": "https://arxiv.org/html/2608.07619",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Yanping Zhao",
+        "Hang Yu",
+        "Yiwei Wang",
+        "Chen Ye",
+        "Siyu Tian",
+        "Di Zhang",
+        "Qingjun Wang",
+        "Qian Chen",
+        "Junqiao Zhao",
+        "Chen Ye",
+        "Guang Chen"
+      ],
+      "comments": null,
+      "subjects": "Robotics (cs.RO)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 17,
+      "triage_topics": [
+        "vla",
+        "world-model"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.09381",
+      "arxiv_id": "2608.09381",
+      "title": "JEPA-WAM: Learning Vision-Language-Action Policies with Joint-Embedding World Modeling",
+      "paper_url": "https://arxiv.org/abs/2608.09381",
+      "fulltext_url": "https://arxiv.org/html/2608.09381",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Yihan Lin",
+        "Jiawei He",
+        "Shifeng Bao",
+        "Chen Zhao",
+        "Yang Li",
+        "Xiaobo Wang",
+        "Yan Wang",
+        "Cheng Chi",
+        "Jing Zhang"
+      ],
+      "comments": "22 pages, 7 figures. Project page: this https URL",
+      "subjects": "Robotics (cs.RO)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 17,
+      "triage_topics": [
+        "vla",
+        "world-model"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.09298",
+      "arxiv_id": "2608.09298",
+      "title": "WorldSimProbe: Diagnosing Simulator Faithfulness in Action-Conditioned World Models for Embodied Manipulation",
+      "paper_url": "https://arxiv.org/abs/2608.09298",
+      "fulltext_url": "https://arxiv.org/html/2608.09298",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Peterson Co",
+        "Sicheng Hu",
+        "Chunxuan Jiao",
+        "Hongyang Cheng",
+        "Yulin Luo",
+        "Yijie Xu",
+        "Sixiang Chen",
+        "Zhongxia Zhao",
+        "Zihao Wang",
+        "DaFeng Chi",
+        "Peidong Liu",
+        "YuTong Chen",
+        "Henghua Liu",
+        "Zhihao Yuan",
+        "Huizhu Jia",
+        "Yuzheng Zhuang",
+        "Tianle Zhang",
+        "Liang Lin",
+        "Huajie Tan",
+        "Shanghang Zhang"
+      ],
+      "comments": "20 pages, 18 figures, and 10 tables, including supplementary material. Code and data: this https URL",
+      "subjects": "Robotics (cs.RO) ; Artificial Intelligence (cs.AI)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 13,
+      "triage_topics": [
+        "world-model",
+        "manipulation",
+        "simulators"
+      ],
+      "suggested_sections": [
+        "algorithms",
+        "simulators"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.10780",
+      "arxiv_id": "2608.10780",
+      "title": "JEPA-WAM: Stage-Level Joint-Embedding Prediction for World-Action Models in Robot Manipulation",
+      "paper_url": "https://arxiv.org/abs/2608.10780",
+      "fulltext_url": "https://arxiv.org/html/2608.10780",
+      "first_publication": "2026-08-12",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Xiao Liu",
+        "Yuguang Yang",
+        "Xi Wang",
+        "Kai Jiang",
+        "Cheng Chi",
+        "Yong Xu",
+        "Wenchao Ding",
+        "Yilun Chen",
+        "Yan Wang"
+      ],
+      "comments": null,
+      "subjects": "Robotics (cs.RO)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 13,
+      "triage_topics": [
+        "world-model",
+        "manipulation"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.07558",
+      "arxiv_id": "2608.07558",
+      "title": "Learning Physical Interaction: A Survey of Tactile- and Force-aware Robot Learning",
+      "paper_url": "https://arxiv.org/abs/2608.07558",
+      "fulltext_url": "https://arxiv.org/html/2608.07558",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Shilin Shan",
+        "Chuhao Zhou",
+        "Ruize Wang",
+        "Xinyan Chen",
+        "Xiangyu Chen",
+        "Xinyu Zhou",
+        "Boyu Ma",
+        "Iris Yuxuan Hu",
+        "Jingliang Li",
+        "Celeste Yuxuan Hu",
+        "Geng Li",
+        "Guohao Chen",
+        "Tianrui Zhu",
+        "Zhe Li",
+        "Yanjie Ze",
+        "Haoran Geng",
+        "Zhiyang Dou",
+        "Jianxin Bi",
+        "Yuejiang Liu",
+        "Jianshu Zhou",
+        "Jiachen Li",
+        "Paul Liang",
+        "Tatsuya Harada",
+        "Robert Katzschmann",
+        "Harold Soh",
+        "Na Li",
+        "Edward Johns",
+        "Danica Kragic",
+        "Jan Peters",
+        "Wojciech Matusik",
+        "Masayoshi Tomizuka",
+        "Jitendra Malik",
+        "Jianfei Yang"
+      ],
+      "comments": "53 pages, 7 figures",
+      "subjects": "Robotics (cs.RO) ; Computer Vision and Pattern Recognition (cs.CV)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 12,
+      "triage_topics": [
+        "robot-learning",
+        "dexterous",
+        "surveys"
+      ],
+      "suggested_sections": [
+        "algorithms",
+        "surveys"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.07548",
+      "arxiv_id": "2608.07548",
+      "title": "SC$^{2}$-WM: A Self-Correcting World Model with Closed-Loop Feedback for Vision-and-Language Navigation in Continuous Environments",
+      "paper_url": "https://arxiv.org/abs/2608.07548",
+      "fulltext_url": "https://arxiv.org/html/2608.07548",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Xuan Yao",
+        "Yuze Zhu",
+        "Junyu Gao",
+        "Zongmeng Wang",
+        "Changsheng Xu"
+      ],
+      "comments": "Accepted by ICML 2026",
+      "subjects": "Robotics (cs.RO) ; Computer Vision and Pattern Recognition (cs.CV)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 11,
+      "triage_topics": [
+        "world-model"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.07746",
+      "arxiv_id": "2608.07746",
+      "title": "LUCID: Latent-Skill Unified Control via Imagined Dynamics for Long-Horizon Humanoid Loco-Manipulation",
+      "paper_url": "https://arxiv.org/abs/2608.07746",
+      "fulltext_url": "https://arxiv.org/html/2608.07746",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Cheng Guo",
+        "Mingzhe Ni",
+        "Angelo Cangelosi",
+        "Arash Ajoudani"
+      ],
+      "comments": null,
+      "subjects": "Machine Learning (cs.LG) ; Robotics (cs.RO)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 11,
+      "triage_topics": [
+        "manipulation",
+        "humanoid"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.09073",
+      "arxiv_id": "2608.09073",
+      "title": "Latent World Models with Monotone Planning Costs for Image-Goal Navigation",
+      "paper_url": "https://arxiv.org/abs/2608.09073",
+      "fulltext_url": "https://arxiv.org/html/2608.09073",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Amirhosein Chahe",
+        "Siwei Cai",
+        "Lifeng Zhou"
+      ],
+      "comments": null,
+      "subjects": "Robotics (cs.RO)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 11,
+      "triage_topics": [
+        "world-model"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.07600",
+      "arxiv_id": "2608.07600",
+      "title": "AdaDexGrasp: Adaptive Dexterous Grasping via 3D Visuo-Tactile Representation Fusion",
+      "paper_url": "https://arxiv.org/abs/2608.07600",
+      "fulltext_url": "https://arxiv.org/html/2608.07600",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Xirui Liang",
+        "Jiaqi Liang",
+        "Jingkai Xu",
+        "Yuran Wang",
+        "Ruochong Li",
+        "Yuanpei Chen",
+        "Masayoshi Tomizuka",
+        "Wei Zhan",
+        "Ruihai Wu"
+      ],
+      "comments": "Accepted at ECCV 2026",
+      "subjects": "Robotics (cs.RO) ; Image and Video Processing (eess.IV)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 10,
+      "triage_topics": [
+        "manipulation",
+        "dexterous"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.09876",
+      "arxiv_id": "2608.09876",
+      "title": "Energy-Structured Latent World Models with Neural Time Fields for Physically Constistent Open-World Motion Planning",
+      "paper_url": "https://arxiv.org/abs/2608.09876",
+      "fulltext_url": "https://arxiv.org/html/2608.09876",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Yapeng Liu",
+        "Yuanzhao Zhai",
+        "Bo Ding",
+        "Huaimin Wang",
+        "Lin Wang"
+      ],
+      "comments": "9 pages, 5 figures",
+      "subjects": "Robotics (cs.RO) ; Artificial Intelligence (cs.AI)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 10,
+      "triage_topics": [
+        "world-model"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.07596",
+      "arxiv_id": "2608.07596",
+      "title": "LIRA: Local Cross-Layer Information Routing for Vision-Language-Action Decoding",
+      "paper_url": "https://arxiv.org/abs/2608.07596",
+      "fulltext_url": "https://arxiv.org/html/2608.07596",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Zhewei Zhang",
+        "Puyue Wang",
+        "Guanren Qiao",
+        "Yijie Weng",
+        "Jiawei Hu",
+        "Guo Li",
+        "Lujia Wang",
+        "Junyan Wang",
+        "Tao Gu",
+        "Hongliang Lu",
+        "Guiliang Liu",
+        "Hong Jia",
+        "Xinhu Zheng"
+      ],
+      "comments": "9 pages, 4 figures. Code and model checkpoints will be released upon acceptance of the paper",
+      "subjects": "Robotics (cs.RO) ; Computer Vision and Pattern Recognition (cs.CV)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 9,
+      "triage_topics": [
+        "vla"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.07621",
+      "arxiv_id": "2608.07621",
+      "title": "CMU-Drive and V2V-VLA: Cooperative Multi-agent Unified Driving with Reasoning Benchmark and Vehicle-to-Vehicle Vision-Language-Action Models",
+      "paper_url": "https://arxiv.org/abs/2608.07621",
+      "fulltext_url": "https://arxiv.org/html/2608.07621",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Hsu-kuang Chiu",
+        "Stephen F. Smith"
+      ],
+      "comments": null,
+      "subjects": "Artificial Intelligence (cs.AI) ; Computer Vision and Pattern Recognition (cs.CV); Robotics (cs.RO)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 9,
+      "triage_topics": [
+        "vla",
+        "data"
+      ],
+      "suggested_sections": [
+        "algorithms",
+        "data"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.08023",
+      "arxiv_id": "2608.08023",
+      "title": "4D-WAM: Infusing Spatiotemporal Awareness into World Action Models through Trajectory Fields",
+      "paper_url": "https://arxiv.org/abs/2608.08023",
+      "fulltext_url": "https://arxiv.org/html/2608.08023",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Lishan Yang",
+        "Wenxuan Song",
+        "Xi Wang",
+        "Pingyue Sheng",
+        "Zheng Fang",
+        "Ziyang Zhou",
+        "Junjie He",
+        "Haodong Yan",
+        "Jiayi Chen",
+        "Nan Sun",
+        "Qiao Sun",
+        "Lingqiao Liu",
+        "Yan Wang",
+        "Yuxiang Gao",
+        "Feras Dayoub",
+        "Haoang Li"
+      ],
+      "comments": null,
+      "subjects": "Robotics (cs.RO)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 9,
+      "triage_topics": [
+        "world-model"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.08558",
+      "arxiv_id": "2608.08558",
+      "title": "Vid2WAM: Distilling Video Diffusion Priors into World Action Models",
+      "paper_url": "https://arxiv.org/abs/2608.08558",
+      "fulltext_url": "https://arxiv.org/html/2608.08558",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Chenhao Qiu",
+        "Ruixiang Wang",
+        "Runyi Zhao",
+        "Sixu Lin",
+        "Songen Gu",
+        "Shufeng Nan",
+        "Guiliang Liu",
+        "Kui Jia",
+        "Yanwei Fu",
+        "Simo Wu"
+      ],
+      "comments": "Project website: this https URL",
+      "subjects": "Robotics (cs.RO)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 9,
+      "triage_topics": [
+        "world-model"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.08725",
+      "arxiv_id": "2608.08725",
+      "title": "WA-SpecDec: World-Aware Speculative Decoding for Vision-Language-Action Models",
+      "paper_url": "https://arxiv.org/abs/2608.08725",
+      "fulltext_url": "https://arxiv.org/html/2608.08725",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Zikang Wen",
+        "Yuning Zhang",
+        "Dong Yuan"
+      ],
+      "comments": "Preprint",
+      "subjects": "Robotics (cs.RO)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 9,
+      "triage_topics": [
+        "vla"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.08839",
+      "arxiv_id": "2608.08839",
+      "title": "SG-WAM: Text-Grounded and Spatial-aware Semantic Guidance for World-Action Models",
+      "paper_url": "https://arxiv.org/abs/2608.08839",
+      "fulltext_url": "https://arxiv.org/html/2608.08839",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Junjie He",
+        "Junfeng Li",
+        "Zhide Zhong",
+        "Haodong Yan",
+        "Ruixin Li",
+        "Yangyang Zheng",
+        "Jiaguan Zhu",
+        "Tianran Zhang",
+        "Yuqiao Du",
+        "Wen Chen",
+        "Shunbo Zhou",
+        "Haoang Li"
+      ],
+      "comments": null,
+      "subjects": "Robotics (cs.RO) ; Computer Vision and Pattern Recognition (cs.CV)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 9,
+      "triage_topics": [
+        "world-model"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.09448",
+      "arxiv_id": "2608.09448",
+      "title": "VANE: Reliable Test-Time Training for Vision-Language-Action Models via Future Visual Representation Prediction",
+      "paper_url": "https://arxiv.org/abs/2608.09448",
+      "fulltext_url": "https://arxiv.org/html/2608.09448",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Hongjin Ji",
+        "Guoyang Xia",
+        "Luoyang Sun",
+        "Fangxiang Feng",
+        "Lei Ren"
+      ],
+      "comments": null,
+      "subjects": "Robotics (cs.RO) ; Computer Vision and Pattern Recognition (cs.CV)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 9,
+      "triage_topics": [
+        "vla"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.09492",
+      "arxiv_id": "2608.09492",
+      "title": "Rethink Before You Execute: Adaptive Execution for World Action Models",
+      "paper_url": "https://arxiv.org/abs/2608.09492",
+      "fulltext_url": "https://arxiv.org/html/2608.09492",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Feng Ye",
+        "Yiming Zhao",
+        "Yong Yu",
+        "Hongxu Zhou",
+        "Yong Pan",
+        "Yuan Xue",
+        "Peng Jia",
+        "Chuanmin Jia"
+      ],
+      "comments": null,
+      "subjects": "Robotics (cs.RO)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 9,
+      "triage_topics": [
+        "world-model"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.09516",
+      "arxiv_id": "2608.09516",
+      "title": "HarnessWAM: Bridging Prediction and Deliberation in World Action Models",
+      "paper_url": "https://arxiv.org/abs/2608.09516",
+      "fulltext_url": "https://arxiv.org/html/2608.09516",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Zhaopeng Gu",
+        "Bingke Zhu",
+        "Tianxi Lin",
+        "Guibo Zhu",
+        "Yingying Chen",
+        "Kai Wang",
+        "Tingyu Yuan",
+        "Chaoyang Zhao",
+        "Zhaowen Li",
+        "Peng Su",
+        "Jinqiao Wang"
+      ],
+      "comments": null,
+      "subjects": "Robotics (cs.RO)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 9,
+      "triage_topics": [
+        "world-model"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.10232",
+      "arxiv_id": "2608.10232",
+      "title": "FACT: Failure-Aware Causal Training for World-Action Models",
+      "paper_url": "https://arxiv.org/abs/2608.10232",
+      "fulltext_url": "https://arxiv.org/html/2608.10232",
+      "first_publication": "2026-08-12",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Quanquan Peng",
+        "Yutong Liang",
+        "Rui Yan",
+        "Nicklas Hansen",
+        "Xiaolong Wang"
+      ],
+      "comments": null,
+      "subjects": "Robotics (cs.RO) ; Artificial Intelligence (cs.AI); Machine Learning (cs.LG)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 9,
+      "triage_topics": [
+        "world-model"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.10393",
+      "arxiv_id": "2608.10393",
+      "title": "Hidden in Plain Sight: Diffusion-Based Unrestricted Robotic Attacks on Vision-Language-Action Models",
+      "paper_url": "https://arxiv.org/abs/2608.10393",
+      "fulltext_url": "https://arxiv.org/html/2608.10393",
+      "first_publication": "2026-08-12",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Jiahui Han",
+        "Yuhui Yao",
+        "Xin Wang",
+        "Jiafei Cao",
+        "Mingxuan Zhang",
+        "Danfeng Shan",
+        "Huiqi Deng",
+        "Guanchu Wang",
+        "Xia Hu"
+      ],
+      "comments": null,
+      "subjects": "Artificial Intelligence (cs.AI) ; Robotics (cs.RO)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 9,
+      "triage_topics": [
+        "vla"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.10484",
+      "arxiv_id": "2608.10484",
+      "title": "Lost in Reconstruction: Aligning Action Representations with Language in Vision-Language-Action Models",
+      "paper_url": "https://arxiv.org/abs/2608.10484",
+      "fulltext_url": "https://arxiv.org/html/2608.10484",
+      "first_publication": "2026-08-12",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Li Wenjie",
+        "Yash Jangir",
+        "Ignacy Stepka",
+        "Yash Agarwal",
+        "Marion Kipsang",
+        "Yonatan Bisk"
+      ],
+      "comments": null,
+      "subjects": "Robotics (cs.RO) ; Artificial Intelligence (cs.AI); Computation and Language (cs.CL)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 9,
+      "triage_topics": [
+        "vla"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.10824",
+      "arxiv_id": "2608.10824",
+      "title": "Neural Introspection Gating for Adaptive KV-Cache Reuse in Vision-Language-Action Models",
+      "paper_url": "https://arxiv.org/abs/2608.10824",
+      "fulltext_url": "https://arxiv.org/html/2608.10824",
+      "first_publication": "2026-08-12",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Zhijie Wu",
+        "Kento Kawaharazuka",
+        "Kei Okada"
+      ],
+      "comments": "6 pages, 5 figures, Accepted in IROS 2026. Project Page: this https URL",
+      "subjects": "Robotics (cs.RO) ; Computer Vision and Pattern Recognition (cs.CV)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 9,
+      "triage_topics": [
+        "vla"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.10860",
+      "arxiv_id": "2608.10860",
+      "title": "Flex-$π$: A Multi-Stream World-Action Model with Compute Flexibility",
+      "paper_url": "https://arxiv.org/abs/2608.10860",
+      "fulltext_url": "https://arxiv.org/html/2608.10860",
+      "first_publication": "2026-08-12",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Ge Yan",
+        "Jinghao Liu",
+        "Yuzhi Fan",
+        "Lei Cai",
+        "Minwen Liao",
+        "Jesse Zhang",
+        "Dieter Fox"
+      ],
+      "comments": "Project page: this https URL",
+      "subjects": "Robotics (cs.RO) ; Computer Vision and Pattern Recognition (cs.CV)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 9,
+      "triage_topics": [
+        "world-model"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.09892",
+      "arxiv_id": "2608.09892",
+      "title": "XPolicyLab: A Unified Standard and Open Ecosystem for Robot Policy Evaluation and Deployment",
+      "paper_url": "https://arxiv.org/abs/2608.09892",
+      "fulltext_url": "https://arxiv.org/html/2608.09892",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "XPolicyLab Community",
+        "Tianxing Chen",
+        "Yue Chen",
+        "Tian Nian",
+        "Zijian Cai",
+        "Guangyu Chen",
+        "Wenwei Lin",
+        "Qiwei Liang",
+        "Zanxin Chen",
+        "Peicheng Xiang",
+        "Kailun Su",
+        "Zixuan Li",
+        "Junyuan Tang",
+        "Yan Qin",
+        "Qiangyu Chen",
+        "Shaolong Zhu",
+        "Xiang Li",
+        "Jiahao Zhang",
+        "Weijie Wan",
+        "Baijun Chen",
+        "Honghao Su",
+        "Kehe Ye",
+        "Shujia Liu",
+        "Kaixuan Wang",
+        "Haotian Liang",
+        "Yunze Liu",
+        "Mingleyang Li",
+        "Yuran Wang",
+        "Boyu Chen",
+        "Hongzhe Bi",
+        "Shuhe Huang",
+        "Hengkai Tan",
+        "Jisong Cai",
+        "Yao Mu",
+        "Jun Guo",
+        "Xiaofeng Wang",
+        "Zheng Zhu",
+        "Weijie Ke",
+        "Hengtao Li",
+        "Yuhang Tang",
+        "Xiaofan Li",
+        "Ganlin Yang",
+        "Zhangzheng Tu",
+        "Shuai Yang",
+        "Wenxuan Song",
+        "Pengxiang Ding",
+        "Kaidong Zhang",
+        "Yu Sun",
+        "Junliang Guo",
+        "Tong Zhang",
+        "Yixing Chen",
+        "Rongxu Cui",
+        "Zongzheng Zhang",
+        "Haoxiang Ma",
+        "Junhao Cai",
+        "Haoyu Zhang",
+        "Senqiao Yang",
+        "Jinhui Ye",
+        "Pengguang Chen",
+        "Shu Liu",
+        "Xiu Su",
+        "Wenhan Fang",
+        "Wenhao Li",
+        "Yichao Cao",
+        "Chengyao Wang",
+        "Qiang Chen",
+        "Ping Luo",
+        "Wenbo Ding"
+      ],
+      "comments": "Website: this http URL , Code: this https URL",
+      "subjects": "Robotics (cs.RO)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 8,
+      "triage_topics": [
+        "robot-learning"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.10618",
+      "arxiv_id": "2608.10618",
+      "title": "Toward the Cognitive--Physical Limits of Embodied Intelligence through a World-Model-Centric Autonomous Racing Agent",
+      "paper_url": "https://arxiv.org/abs/2608.10618",
+      "fulltext_url": "https://arxiv.org/html/2608.10618",
+      "first_publication": "2026-08-12",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Zitong Shan",
+        "Baichuan Lou",
+        "Yanxin Zhou",
+        "Shuge Wu",
+        "Xianqi He",
+        "Bolin Zhao",
+        "Sheng Zhao",
+        "Zhouheng Li",
+        "Chee Kiong Ong",
+        "King Ho Holden Li",
+        "Chen Lv"
+      ],
+      "comments": null,
+      "subjects": "Robotics (cs.RO)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 8,
+      "triage_topics": [
+        "world-model"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.11174",
+      "arxiv_id": "2608.11174",
+      "title": "VIScore: Diagnosing Planning-Relevant Quality in Latent World Models",
+      "paper_url": "https://arxiv.org/abs/2608.11174",
+      "fulltext_url": "https://arxiv.org/html/2608.11174",
+      "first_publication": "2026-08-12",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Haiyu Wu",
+        "Randall Balestriero",
+        "Morgan Levine"
+      ],
+      "comments": null,
+      "subjects": "Robotics (cs.RO)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 8,
+      "triage_topics": [
+        "world-model"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.08036",
+      "arxiv_id": "2608.08036",
+      "title": "Compiling and Benchmarking Task-State Horizons for Embodied Agents",
+      "paper_url": "https://arxiv.org/abs/2608.08036",
+      "fulltext_url": "https://arxiv.org/html/2608.08036",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Meiqi Wang",
+        "Shichao Li"
+      ],
+      "comments": "32 pages, including appendices",
+      "subjects": "Robotics (cs.RO)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 7,
+      "triage_topics": [
+        "data"
+      ],
+      "suggested_sections": [
+        "data"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.10756",
+      "arxiv_id": "2608.10756",
+      "title": "Embodied Multimodal Grounding for Open-Vocabulary Mobile Manipulation via Semantic 3D Gaussian Splatting",
+      "paper_url": "https://arxiv.org/abs/2608.10756",
+      "fulltext_url": "https://arxiv.org/html/2608.10756",
+      "first_publication": "2026-08-12",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Huosen Ou",
+        "Dongni Song",
+        "Yuncong Wang",
+        "Tao Zhou",
+        "Yiding Ji"
+      ],
+      "comments": "9 pages, 11 figures. Accepted to ACM Multimedia 2026 (MM '26)",
+      "subjects": "Robotics (cs.RO) ; Computer Vision and Pattern Recognition (cs.CV)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 7,
+      "triage_topics": [
+        "manipulation",
+        "navigation"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.08070",
+      "arxiv_id": "2608.08070",
+      "title": "SurgWMBench: A Vision-Based Benchmark for World-Modeling Surgical Instrument Motion Planning",
+      "paper_url": "https://arxiv.org/abs/2608.08070",
+      "fulltext_url": "https://arxiv.org/html/2608.08070",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Huanrong Liu",
+        "Weiliang Huang",
+        "Bob Zhang",
+        "Weichao Cai",
+        "Chunlin Tian",
+        "Qingbiao Li"
+      ],
+      "comments": null,
+      "subjects": "Robotics (cs.RO)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 6,
+      "triage_topics": [
+        "world-model",
+        "data"
+      ],
+      "suggested_sections": [
+        "algorithms",
+        "data"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.08749",
+      "arxiv_id": "2608.08749",
+      "title": "OnEvoMemory: Evolving Memory through Online Robot Rollouts for Pretrained Robot Policies",
+      "paper_url": "https://arxiv.org/abs/2608.08749",
+      "fulltext_url": "https://arxiv.org/html/2608.08749",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Zhongxi Chen",
+        "Shenqi Zong"
+      ],
+      "comments": "6 pages, 1 figure. Accepted as a poster at the ECCV 2026 Workshop on Embodied Multimodal Reasoning in Physical Environments (EMR)",
+      "subjects": "Robotics (cs.RO)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 6,
+      "triage_topics": [
+        "robot-learning"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.10383",
+      "arxiv_id": "2608.10383",
+      "title": "Real-World Cooperative Bimanual Dexterous Grasp of Large Objects from Single-View Observations",
+      "paper_url": "https://arxiv.org/abs/2608.10383",
+      "fulltext_url": "https://arxiv.org/html/2608.10383",
+      "first_publication": "2026-08-12",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Ziming Li",
+        "Mingxuan Wu",
+        "Jiaqi Zhang",
+        "Hongfei Li",
+        "Yan Gan",
+        "Deqiang Ouyang",
+        "Ning Wang"
+      ],
+      "comments": null,
+      "subjects": "Robotics (cs.RO)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 6,
+      "triage_topics": [
+        "manipulation",
+        "dexterous"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.11204",
+      "arxiv_id": "2608.11204",
+      "title": "Surgical WAM: A World-Action Model for Data-Efficient Surgical Robot Learning",
+      "paper_url": "https://arxiv.org/abs/2608.11204",
+      "fulltext_url": "https://arxiv.org/html/2608.11204",
+      "first_publication": "2026-08-12",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Wenrui Bao",
+        "Tianyun Jiang",
+        "Zhiben Chen",
+        "Ser-Nam Lim",
+        "Peter D. Peng",
+        "Yuzhang Shang"
+      ],
+      "comments": null,
+      "subjects": "Robotics (cs.RO) ; Artificial Intelligence (cs.AI); Computer Vision and Pattern Recognition (cs.CV)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 6,
+      "triage_topics": [
+        "world-model",
+        "robot-learning"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.09167",
+      "arxiv_id": "2608.09167",
+      "title": "Intuitive Hand Positional Guidance Using McKibben-Based Surface Tactile Sensations to Shoulder and Elbow",
+      "paper_url": "https://arxiv.org/abs/2608.09167",
+      "fulltext_url": "https://arxiv.org/html/2608.09167",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Kenta Yokoe",
+        "Yuki Funabora",
+        "Tadayoshi Aoyama"
+      ],
+      "comments": "This is the accepted version of an article published in IEEE Robotics and Automation Letters 10(4), 3254-3261 (2025). DOI: https://doi.org/10.1109/LRA.2025.3540579 . Open Access under CC BY-NC-ND 4.0",
+      "subjects": "Human-Computer Interaction (cs.HC) ; Robotics (cs.RO)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 5,
+      "triage_topics": [
+        "dexterous"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.09762",
+      "arxiv_id": "2608.09762",
+      "title": "Efficient Real-World Online Reinforcement Learning for Robot Manipulation via Centralized Training and Critic Decomposition",
+      "paper_url": "https://arxiv.org/abs/2608.09762",
+      "fulltext_url": "https://arxiv.org/html/2608.09762",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Changhao Li",
+        "Yifang Zhang",
+        "Heng Zhang",
+        "Davide Torielli",
+        "Damiano Gasperini",
+        "Arturo Laurenzi",
+        "Luca Muratore",
+        "Arash Ajoudani",
+        "Nikos Tsagarakis"
+      ],
+      "comments": null,
+      "subjects": "Robotics (cs.RO)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 5,
+      "triage_topics": [
+        "robot-learning",
+        "manipulation"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.09778",
+      "arxiv_id": "2608.09778",
+      "title": "RoboSeg: Online Part-Level Semantic Reconstruction for Robotic Manipulation via a Single Eye-in-Hand Camera",
+      "paper_url": "https://arxiv.org/abs/2608.09778",
+      "fulltext_url": "https://arxiv.org/html/2608.09778",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Zhaochen Lan",
+        "Mengxiang Lin"
+      ],
+      "comments": null,
+      "subjects": "Robotics (cs.RO)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 5,
+      "triage_topics": [
+        "manipulation",
+        "dexterous"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.10220",
+      "arxiv_id": "2608.10220",
+      "title": "Whole-Body Planning for Humanoids Navigating Confined Spaces via Self-Collision Avoidance References",
+      "paper_url": "https://arxiv.org/abs/2608.10220",
+      "fulltext_url": "https://arxiv.org/html/2608.10220",
+      "first_publication": "2026-08-12",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Carlos Gonzalez",
+        "Luis Sentis"
+      ],
+      "comments": null,
+      "subjects": "Robotics (cs.RO)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 5,
+      "triage_topics": [
+        "humanoid"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.07553",
+      "arxiv_id": "2608.07553",
+      "title": "Self Supervised Learning from Automatically Generated Demonstrations for Visual Robotic Manipulation",
+      "paper_url": "https://arxiv.org/abs/2608.07553",
+      "fulltext_url": "https://arxiv.org/html/2608.07553",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Andres Rivas",
+        "Anselmo R. Cukla",
+        "Rodrigo S. Guerra",
+        "Bruna V. Guterres",
+        "Ricardo B. Grando"
+      ],
+      "comments": "Paper accepted at the ICCAS 2026",
+      "subjects": "Robotics (cs.RO)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 4,
+      "triage_topics": [
+        "manipulation"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.07751",
+      "arxiv_id": "2608.07751",
+      "title": "CoCoNav: Conformal Control for Safe Robot Navigation in Crowds",
+      "paper_url": "https://arxiv.org/abs/2608.07751",
+      "fulltext_url": "https://arxiv.org/html/2608.07751",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Cheng Guo",
+        "Mingzhe Ni",
+        "Zheng Liang",
+        "Yihu Ling",
+        "Yuan Hu",
+        "Michele Caprio",
+        "Daniele Pucci",
+        "Wei Pan"
+      ],
+      "comments": null,
+      "subjects": "Robotics (cs.RO) ; Machine Learning (cs.LG)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 4,
+      "triage_topics": [
+        "navigation"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.08200",
+      "arxiv_id": "2608.08200",
+      "title": "Spatiotemporal Context-dependent Personalized Movement Compensation in Delayed Telemanipulation",
+      "paper_url": "https://arxiv.org/abs/2608.08200",
+      "fulltext_url": "https://arxiv.org/html/2608.08200",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Sai Jiang",
+        "Zonghe Chua"
+      ],
+      "comments": "10 pages, 6 figures",
+      "subjects": "Robotics (cs.RO) ; Human-Computer Interaction (cs.HC); Systems and Control (eess.SY)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 4,
+      "triage_topics": [
+        "manipulation"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.08323",
+      "arxiv_id": "2608.08323",
+      "title": "MPPI Planning with Gaussian-Based Human Cost Function for Social Navigation",
+      "paper_url": "https://arxiv.org/abs/2608.08323",
+      "fulltext_url": "https://arxiv.org/html/2608.08323",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Chinmay Mundane"
+      ],
+      "comments": "Will appear in Springer's Proceedings in Advanced Robotics series",
+      "subjects": "Robotics (cs.RO) ; Systems and Control (eess.SY)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 4,
+      "triage_topics": [
+        "navigation"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.09410",
+      "arxiv_id": "2608.09410",
+      "title": "Skills in Weights, Memory in Code: Hybrid Learning for Memory-Dependent Robot Manipulation",
+      "paper_url": "https://arxiv.org/abs/2608.09410",
+      "fulltext_url": "https://arxiv.org/html/2608.09410",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Yunhao Zhao",
+        "Zhenyang Ni",
+        "Haoyang Chen",
+        "Ruohan Zhang",
+        "Qi Zhu"
+      ],
+      "comments": "9 pages, 4 figures, and 3 tables",
+      "subjects": "Robotics (cs.RO)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 4,
+      "triage_topics": [
+        "manipulation"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.09731",
+      "arxiv_id": "2608.09731",
+      "title": "TAMS: Task-Aware Multi-View Adaptive Streaming for Wireless Telerobotic Manipulation",
+      "paper_url": "https://arxiv.org/abs/2608.09731",
+      "fulltext_url": "https://arxiv.org/html/2608.09731",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Zexin Deng",
+        "Zhenhui Yuan",
+        "Lu Tian",
+        "Subhash Lakshminarayana",
+        "Longhao Zou"
+      ],
+      "comments": "6 pages, 5 figures, 2 tables. Code available at: this https URL",
+      "subjects": "Robotics (cs.RO) ; Multimedia (cs.MM)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 4,
+      "triage_topics": [
+        "manipulation"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.09771",
+      "arxiv_id": "2608.09771",
+      "title": "SLIM-0.5B: Learning Action-Grounded Predictive Latents for Robot Manipulation",
+      "paper_url": "https://arxiv.org/abs/2608.09771",
+      "fulltext_url": "https://arxiv.org/html/2608.09771",
+      "first_publication": "2026-08-11",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Jingkai Wang",
+        "Zihan Tang",
+        "Gu Zhang",
+        "Mingyu Cao",
+        "Jiapeng Chen",
+        "Jingjiao Zhao",
+        "Xiansheng Chen",
+        "Pengwei Wang",
+        "Lemao Liu",
+        "Dejing Dou"
+      ],
+      "comments": "18 pages, 11 figures. Project page: this https URL",
+      "subjects": "Robotics (cs.RO)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 4,
+      "triage_topics": [
+        "manipulation"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.10033",
+      "arxiv_id": "2608.10033",
+      "title": "Immersive Micromanipulation Integrating Pipette and Injector Operations with McKibben-Based Haptic Sensations for Workload Reduction",
+      "paper_url": "https://arxiv.org/abs/2608.10033",
+      "fulltext_url": "https://arxiv.org/html/2608.10033",
+      "first_publication": "2026-08-12",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Kenta Yokoe",
+        "Sumiwa Saito",
+        "Yuki Funabora",
+        "Tomoko Isomura",
+        "Tadayoshi Aoyama"
+      ],
+      "comments": "This is the accepted version of an article published in IEEE Access 14, 116393-116404 (2026). DOI: https://doi.org/10.1109/ACCESS.2026.3717843 . Open Access under CC BY 4.0",
+      "subjects": "Human-Computer Interaction (cs.HC) ; Robotics (cs.RO)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 4,
+      "triage_topics": [
+        "manipulation"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.10718",
+      "arxiv_id": "2608.10718",
+      "title": "TCAM for Autonomous Deformable Manipulation: The RMC2 Champion System for WBCD 2026 Track 4",
+      "paper_url": "https://arxiv.org/abs/2608.10718",
+      "fulltext_url": "https://arxiv.org/html/2608.10718",
+      "first_publication": "2026-08-12",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Guangrui Shen",
+        "Zhili He",
+        "Shigang Wang",
+        "Yuanjun Sun",
+        "Qing Yu"
+      ],
+      "comments": null,
+      "subjects": "Robotics (cs.RO)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 4,
+      "triage_topics": [
+        "manipulation"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    },
+    {
+      "id": "arxiv-2608.10791",
+      "arxiv_id": "2608.10791",
+      "title": "Dual Stress: Runtime Safety Monitoring for Safety-Constrained MPC Navigation",
+      "paper_url": "https://arxiv.org/abs/2608.10791",
+      "fulltext_url": "https://arxiv.org/html/2608.10791",
+      "first_publication": "2026-08-12",
+      "announcement_month": null,
+      "date_precision": "day",
+      "authors": [
+        "Jamil Chahine",
+        "Wenqi Cai",
+        "John Abanes",
+        "Anthony Tzes"
+      ],
+      "comments": "6 pages, 4 figures, 2 tables, submitted to the 13th International Conference on Automation, Robotics and Applications (ICARA 2027)",
+      "subjects": "Robotics (cs.RO)",
+      "already_on_board": false,
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "source_scope": "title-and-metadata",
+      "triage_score": 4,
+      "triage_topics": [
+        "infrastructure"
+      ],
+      "suggested_sections": [
+        "infrastructure"
+      ],
+      "review_status": "pending-abstract",
+      "selection_decision": null
+    }
+  ]
+}

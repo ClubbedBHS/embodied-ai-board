@@ -1,0 +1,100 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.09298",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "WorldSimProbe: Diagnosing Simulator Faithfulness in Action-Conditioned World Models for Embodied Manipulation",
+  "title_zh": "WorldSimProbe：诊断具身操作动作条件世界模型的仿真忠实度",
+  "abstract": "Action-conditioned world models (ACWMs) promise to provide embodied AI with scalable predictive simulators for planning, policy evaluation, and data generation. Realizing this promise requires precise action-conditioned transitions rather than merely plausible outputs. Yet their applicability remains difficult to establish because prevailing evaluations emphasize visual quality, task outcomes, or coarse rollout-level responsiveness without directly testing simulator fidelity. To address this gap, we evaluate ACWMs through the observable capabilities expected of physical simulators. Accordingly, we formalize Observable Simulator Contract, a minimal contract that any action-conditioned physical simulator should satisfy: supplied actions must induce corresponding agent motion, and environment responses must be grounded in that realized motion. To operationalize this contract, we introduce WorldSimProbe, comprising five controlled suites spanning local control sensitivity, global trajectory variation, source-diverse actions, interaction grounding, and dynamics. Suite-specific evaluators assess simulator-relative calibration, dense action-to-motion correspondence, false-interaction grounding, and primitive-level dynamics. We evaluate six open-source ACWMs on more than 18,000 instances across RoboTwin, ManiSkill, and LIBERO. WorldSimProbe reveals systematic action-realization degradation across control variation, structured failures in interaction grounding and dynamics, and benchmark signals consistent with human judgments and downstream outcomes. Together, this capability-based framework provides a transparent, and standardized paradigm for diagnosing ACWM simulator fidelity beyond coarse, task-directed evaluation.",
+  "paper_url": "https://arxiv.org/abs/2608.09298",
+  "pdf_url": "https://arxiv.org/pdf/2608.09298",
+  "project_url": "https://evophys.com/WorldSimProbe/",
+  "code_url": "https://github.com/pxxq25/WorldSimProbe",
+  "dataset_url": "https://huggingface.co/datasets/petersonco/worldsimprobe_robotwin",
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {"name": "Peterson Co", "affiliations": []},
+    {"name": "Sicheng Hu", "affiliations": []},
+    {"name": "Chunxuan Jiao", "affiliations": []},
+    {"name": "Hongyang Cheng", "affiliations": []},
+    {"name": "Yulin Luo", "affiliations": []},
+    {"name": "Yijie Xu", "affiliations": []},
+    {"name": "Sixiang Chen", "affiliations": []},
+    {"name": "Zhongxia Zhao", "affiliations": []},
+    {"name": "Zihao Wang", "affiliations": []},
+    {"name": "DaFeng Chi", "affiliations": []},
+    {"name": "Peidong Liu", "affiliations": []},
+    {"name": "YuTong Chen", "affiliations": []},
+    {"name": "Henghua Liu", "affiliations": []},
+    {"name": "Zhihao Yuan", "affiliations": []},
+    {"name": "Huizhu Jia", "affiliations": []},
+    {"name": "Yuzheng Zhuang", "affiliations": []},
+    {"name": "Tianle Zhang", "affiliations": []},
+    {"name": "Liang Lin", "affiliations": []},
+    {"name": "Huajie Tan", "affiliations": []},
+    {"name": "Shanghang Zhang", "affiliations": []}
+  ],
+  "organizations": [
+    {"id": "peking-university", "name": "Peking University", "role": "primary"},
+    {"id": "the-university-of-sydney", "name": "The University of Sydney", "role": "collaborator"},
+    {"id": "the-hong-kong-university-of-science-and-technology", "name": "The Hong Kong University of Science and Technology", "role": "collaborator"},
+    {"id": "beijing-institute-of-technology", "name": "Beijing Institute of Technology", "role": "collaborator"}
+  ],
+  "dates": {"first_publication": "2026-08-11", "last_revision": null},
+  "venue": {"name": null, "year": null, "status": "preprint"},
+  "labels": {
+    "sections": ["infrastructure", "simulators"],
+    "topics": ["world-model", "sim-to-real"],
+    "tasks": ["manipulation"],
+    "platforms": ["robot-arm"],
+    "modalities": ["vision", "action"],
+    "environments": ["simulation"],
+    "assets": ["code", "dataset"],
+    "properties": ["open-source"]
+  },
+  "paper_type": ["benchmark", "analysis", "infrastructure"],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 90,
+    "selection_reason": "用 Observable Simulator Contract 和五套受控诊断测试动作条件世界模型是否真正执行动作、接地交互并保持动力学；覆盖 6 个模型、3 个平台和 18,000 余实例，代码数据已开放。",
+    "candidate_run": "2026-08-12-weekly-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-12",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": ["当前评测仍以仿真器参考为主，尚无真实物理测量"]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.09298",
+    "fulltext_accessed": true,
+    "fulltext_note": "Benchmark contract, five suites, experiments, validation, release plan and limitations were reviewed from full HTML.",
+    "sections_detected": ["Benchmark Design", "Experiments", "Validation", "Conclusion and Future Work"],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-12"
+  },
+  "sources": [
+    {"type": "paper", "url": "https://arxiv.org/abs/2608.09298"},
+    {"type": "fulltext", "url": "https://arxiv.org/html/2608.09298"},
+    {"type": "project", "url": "https://evophys.com/WorldSimProbe/"},
+    {"type": "code", "url": "https://github.com/pxxq25/WorldSimProbe"},
+    {"type": "dataset", "url": "https://huggingface.co/datasets/petersonco/worldsimprobe_robotwin"}
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {"organization": "Peking University", "source": "paper-html", "url": "https://arxiv.org/html/2608.09298", "location": "author affiliation block"},
+    {"organization": "The University of Sydney", "source": "paper-html", "url": "https://arxiv.org/html/2608.09298", "location": "author affiliation block"},
+    {"organization": "The Hong Kong University of Science and Technology", "source": "paper-html", "url": "https://arxiv.org/html/2608.09298", "location": "author affiliation block"},
+    {"organization": "Beijing Institute of Technology", "source": "paper-html", "url": "https://arxiv.org/html/2608.09298", "location": "author affiliation block"}
+  ],
+  "asset_checks": [
+    {"kind": "project", "url": "https://evophys.com/WorldSimProbe/", "status": "verified", "accessible": true, "verification_method": "http-get", "evidence_source": "paper-fulltext", "checked_at": "2026-08-12"},
+    {"kind": "code", "url": "https://github.com/pxxq25/WorldSimProbe", "status": "verified", "accessible": true, "verification_method": "github-api", "evidence_source": "official-project-page", "checked_at": "2026-08-12"},
+    {"kind": "dataset", "url": "https://huggingface.co/datasets/petersonco/worldsimprobe_robotwin", "status": "verified", "accessible": true, "verification_method": "huggingface-api", "evidence_source": "official-project-page", "checked_at": "2026-08-12"}
+  ]
+}
