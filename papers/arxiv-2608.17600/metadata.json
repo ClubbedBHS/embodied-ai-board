@@ -1,0 +1,128 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.17600",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "LIBERO-VIFO: Benchmarking the Capability and Safety of Visual Cue Following in Vision-Language-Action Models",
+  "title_zh": "LIBERO-VIFO：评测 VLA 视觉提示跟随能力与安全性",
+  "abstract": "Visual cues are increasingly adopted to guide robot learning, but whether Vision-Language-Action (VLA) models can reliably follow authorized cues while disregarding unauthorized ones remains unclear. Existing work covers only a narrow range of cue forms and focuses on final task success, providing only a coarse assessment of cue-following capability. Treating all visual cues as authorized also leaves safety risks of unauthorized following unexplored. To address these gaps, we introduce LIBERO-VIFO, a benchmark to evaluate both the capability and safety of visual cue following in VLA models. LIBERO-VIFO defines eight visual cue families spanning diverse forms. A total of four protocols in two parts are defined: Part I tests cue understanding and authorized following, while Part II evaluates unauthorized visual cue following under language-cue conflict and empty language conditions. Evaluating seven VLA models reveals that although visual cue understanding does not reliably translate into execution, current VLAs are able to execute cue-indicated tasks without language instruction, exposing an emerging risk of unauthorized visual cue following. Extended experiments on scene-instantiated cues, safety-critical settings, and real-robot deployment corroborate these findings. LIBERO-VIFO brings both the capability and safety of visual cue following into systematic evaluation, establishing visual-centric safety as a new perspective for the VLA community.",
+  "paper_url": "https://arxiv.org/abs/2608.17600",
+  "pdf_url": "https://arxiv.org/pdf/2608.17600",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Zhengyan Qian",
+      "affiliations": []
+    },
+    {
+      "name": "Rui Yan",
+      "affiliations": []
+    },
+    {
+      "name": "Alex Jinpeng Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Jinhui Tang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-08-19",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data"
+    ],
+    "topics": [
+      "vla",
+      "control"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [],
+    "properties": [
+      "simulation-only"
+    ]
+  },
+  "paper_type": [
+    "benchmark"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 78,
+    "selection_reason": "LIBERO-VIFO补充了VLA视觉提示的授权/未授权边界，但证据仍局限LIBERO，且无项目和代码资产；适合作为安全专题常规收录，不与ManiGuard同级。",
+    "candidate_run": "2026-08-20-weekly-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-20",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "只有仿真",
+      "视觉提示行为可能来自场景捷径而非真正理解",
+      "无公开资产和已确认团队信息"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.17600",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, results and limitations were reviewed from the full HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-20"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.17600"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.17600"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "paper-link-scan",
+      "checked_at": "2026-08-20"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.14379",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Reflex: Enabling Fast and Predictive Vision-Language-Action Models for Reaction-Critical Manipulation",
+  "title_zh": "Reflex：面向反应关键操作的快速预测式视觉语言动作模型",
+  "abstract": "Vision-Language-Action (VLA) models have recently achieved promising performance in robotic manipulation. However, existing benchmarks mainly evaluate generalization on static manipulation tasks and largely overlook dynamic interaction scenarios. To address this gap, we present ReflexBench, a benchmark for reaction-critical manipulation. ReflexBench contains six dynamic tasks and introduces an evaluation framework that decouples simulator stepping from robot control while supporting configurable latency under synchronous and asynchronous inference. Building upon ReflexBench, we propose ReflexVLA, an efficient VLA model designed for reaction-critical manipulation without large-scale robot-data pretraining. ReflexVLA enhances temporal reasoning through latent future prediction and multi-frame temporal fusion within the vision backbone, while reducing deployment latency through batched visual encoding and CUDA Graph replay. Experiments show that ReflexVLA consistently improves dynamic manipulation performance while maintaining competitive accuracy on standard static manipulation benchmarks, and real-world experiments further demonstrate its effectiveness under practical deployment conditions. Project website: https://reflexvla.github.io",
+  "paper_url": "https://arxiv.org/abs/2608.14379",
+  "pdf_url": "https://arxiv.org/pdf/2608.14379",
+  "project_url": "https://reflexvla.github.io/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yuxuan Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Wanruo Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Xiao Li",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "shanghai-jiao-tong-university",
+      "name": "Shanghai Jiao Tong University",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-17",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "topics": [
+      "vla",
+      "world-model",
+      "control"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "benchmark"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 81,
+    "selection_reason": "ReflexBench把仿真步进与机器人控制解耦，从而受控研究推理延迟；ReflexVLA将latent future prediction、时序融合与CUDA优化结合，并在三项真机动态任务验证。",
+    "candidate_run": "2026-08-20-weekly-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-20",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "代码承诺接收后发布，当前不可用",
+      "预测模块只在finetuning引入，未验证大规模预训练",
+      "只比较同步与基础异步两类推理机制"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.14379",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, results and limitations were reviewed from the full HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-20"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.14379"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.14379"
+    },
+    {
+      "type": "project",
+      "url": "https://reflexvla.github.io/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "source": "paper-fulltext",
+      "url": "https://arxiv.org/html/2608.14379",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "announced-after-acceptance",
+      "accessible": false,
+      "verification_method": "project-page-scan",
+      "checked_at": "2026-08-20"
+    }
+  ]
+}

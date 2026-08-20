@@ -1,5 +1,697 @@
 [
   {
+    "id": "arxiv-2608.18618",
+    "title": "LabDex: A Hierarchical Benchmark for Dexterous Manipulation in Laboratories",
+    "titleZh": "LabDex：面向实验室灵巧操作的分层基准",
+    "oneLiner": "LabDex把实验室灵巧操作按原子技能、组合技能和长流程组织，并统一真机与仿真任务定义。结果不只给总成功率，还暴露初始抓取和技能过渡是长流程失败的主要瓶颈，数据入口已提供。",
+    "researchQuestion": "自动化实验室要求机器人既能操作脆弱、多样的器皿，也能执行依赖状态的长流程。既有基准往往只覆盖单步技能，难以定位复杂实验失败发生在哪一层。",
+    "contribution": "LabDex把实验室灵巧操作按原子技能、组合技能和长流程组织，并统一真机与仿真任务定义。结果不只给总成功率，还暴露初始抓取和技能过渡是长流程失败的主要瓶颈，数据入口已提供。 综合评分：89/100。评分用于编辑筛选，综合考虑研究增量、证据质量、潜在影响、看板信息价值、复现性与时效性。",
+    "abstract": "Autonomous laboratories hold great promise for accelerating scientific discovery. To achieve this vision, robots are supposed to dexterously manipulate diverse labware and instruments and execute long-horizon, state-dependent experimental procedures. Yet existing benchmarks do not jointly capture dexterous hand use, real-world laboratory interactions, and multi-stage experimental procedures, limiting systematic training and evaluation. To bridge this gap, we introduce LabDex, a large-scale real-world dataset and benchmark for dexterous manipulation in chemistry laboratories, organized around a hierarchical task taxonomy spanning atomic skills, compositional tasks, and long-horizon experiments. First, LabDex is cross-platform and, for the first time, unifies real-world and simulation platforms under a common framework, providing standardized task definitions, demonstrations, and evaluation protocols. Second, LabDex is large-scale and systematically organizes chemistry laboratory operations into three interconnected levels: Atomic Skills, which characterize fundamental dexterous manipulation capabilities; Compositional Skills; and Long-Horizon Laboratory Workflows. This hierarchical design not only supports the evaluation of end-task performance, but also enables the analysis of how fundamental dexterous skills compose and influence more complex laboratory operations. We conduct cross-level evaluations of representative robot learning methods in both real-world and simulation environments. The experimental results validate the effectiveness of the LabDex task design and demonstration data, and show that the benchmark supports the training and systematic evaluation of existing robotic policies across laboratory dexterous manipulation tasks at different levels, providing a foundation for further research and development of autonomous laboratory robots.",
+    "paperUrl": "https://arxiv.org/abs/2608.18618",
+    "projectUrl": "https://zhipeng-tang.github.io/LabDex/",
+    "codeUrl": null,
+    "authors": [
+      "Zhipeng Tang",
+      "Sihang Chen",
+      "Sha Zhang",
+      "Peihao Yang",
+      "Yan Liu",
+      "Wentao Zhao",
+      "Xinrui Liu",
+      "Rui Huang",
+      "Wensheng Du",
+      "Yuting Huang",
+      "Jiajun Deng",
+      "Lidian Wang",
+      "Yuan Zhang",
+      "Yanyong Zhang"
+    ],
+    "organizations": [
+      "LabDex collaboration"
+    ],
+    "date": "2026-08-20",
+    "venue": null,
+    "venueStatus": "preprint",
+    "sections": [
+      "data"
+    ],
+    "topics": [
+      "imitation-learning",
+      "behavior-cloning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "properties": [
+      "real-robot-evaluation",
+      "large-scale-data"
+    ],
+    "assets": [
+      "dataset"
+    ],
+    "contentType": "paper",
+    "sourceScope": "full-source",
+    "confidence": "medium",
+    "importance": "featured",
+    "selectionScore": 89,
+    "selectionReason": "LabDex把实验室灵巧操作按原子技能、组合技能和长流程组织，并统一真机与仿真任务定义。结果不只给总成功率，还暴露初始抓取和技能过渡是长流程失败的主要瓶颈，数据入口已提供。",
+    "status": "ai-draft"
+  },
+  {
+    "id": "arxiv-2608.18701",
+    "title": "SoftVTBench: A Deformation-Aware Visuo-Tactile Dataset and Benchmark for Deformable-Object Manipulation",
+    "titleZh": "SoftVTBench：面向软体操作的形变感知视觉触觉数据集与基准",
+    "oneLiner": "SoftVTBench不仅判断软物体任务是否完成，还利用策略不可见的FEM状态评估滑移与过度形变；4,000条示范、50余资产和刚性双胞胎对照使触觉贡献更可诊断，代码与数据入口已出现。",
+    "researchQuestion": "软体物体任务即使表面完成，也可能伴随滑移或过度挤压。既有基准缺少同时包含策略可见触觉和独立物理真值的完整任务数据，难以判断触觉是否真正改善接触质量。",
+    "contribution": "SoftVTBench不仅判断软物体任务是否完成，还利用策略不可见的FEM状态评估滑移与过度形变；4,000条示范、50余资产和刚性双胞胎对照使触觉贡献更可诊断，代码与数据入口已出现。 综合评分：90/100。评分用于编辑筛选，综合考虑研究增量、证据质量、潜在影响、看板信息价值、复现性与时效性。",
+    "abstract": "Physical interaction quality is central to deformable-object manipulation, yet most benchmarks evaluate task success alone. A policy may complete the task while allowing slip or causing excessive compression. A primary bottleneck is the absence of visuo-tactile datasets that pair policy-visible contact observations with independent physical ground truth over complete tasks. We introduce SoftVTBench, a visuo-tactile dataset for physical-interaction-aware deformable-object manipulation. It contains 4,000 expert demonstrations and more than 50 assets, including volumetric deformable objects and visually matched rigid twins. At 20 Hz, each episode synchronizes multi-view RGB, dual-finger tactile RGB and marker motion, proprioception, language, and binary and continuous gripper actions, alongside evaluator-only finite-element (FEM) states. Building upon this dataset, we establish a closed-loop benchmark that uses fixed object-specific calibration to define the Deformation-aware Success Rate (DSR), which counts a rollout as successful only when it completes the task and keeps peak normalized deformation within tolerance. Across Diffusion Policy, $π_{0.5}$, and FastWAM, all 12 in-distribution configurations contain successful rollouts that violate the deformation tolerance, accounting for 0.7--24% of each configuration's successes. Under distribution shift, visuo-tactile variants achieve higher task success in all six policy--suite comparisons and higher DSR in five, whereas their in-distribution benefits are mixed. These results show that making touch available does not by itself ensure effective multimodal fusion. SoftVTBench therefore provides a common visuo-tactile resource for studying not only whether a policy succeeds, but how it physically interacts with deformable objects and when touch improves that interaction.",
+    "paperUrl": "https://arxiv.org/abs/2608.18701",
+    "projectUrl": "https://softvtbench.github.io/",
+    "codeUrl": "https://github.com/TuojingAI/SoftVTBench",
+    "authors": [
+      "Bowen Jing",
+      "Mingxin Wang",
+      "Ruiyang Hao",
+      "Chenchen Ge",
+      "Hanwen Shen",
+      "Junjie He",
+      "Yang Cui",
+      "Yiming Hou",
+      "Weitao Zhou",
+      "Jiawei Wang",
+      "Minglei Li",
+      "Dandan Zhang",
+      "Ding Zhao",
+      "Houde Liu",
+      "Xiaofan Li",
+      "Si Liu",
+      "Ping Luo",
+      "Haibao Yu"
+    ],
+    "organizations": [
+      "Tuojing AI and collaborating institutions"
+    ],
+    "date": "2026-08-20",
+    "venue": null,
+    "venueStatus": "preprint",
+    "sections": [
+      "data"
+    ],
+    "topics": [
+      "imitation-learning",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "properties": [
+      "open-source",
+      "simulation-only",
+      "large-scale-data"
+    ],
+    "assets": [
+      "code",
+      "dataset",
+      "benchmark"
+    ],
+    "contentType": "paper",
+    "sourceScope": "full-source",
+    "confidence": "medium",
+    "importance": "featured",
+    "selectionScore": 90,
+    "selectionReason": "SoftVTBench不仅判断软物体任务是否完成，还利用策略不可见的FEM状态评估滑移与过度形变；4,000条示范、50余资产和刚性双胞胎对照使触觉贡献更可诊断，代码与数据入口已出现。",
+    "status": "ai-draft"
+  },
+  {
+    "id": "arxiv-2608.17027",
+    "title": "FetchMan: Learning Visual Humanoid Loco-Manipulation Policies from Simulated Experiences",
+    "titleZh": "FetchMan：从仿真经验学习视觉人形移动操作策略",
+    "oneLiner": "FetchMan给出一个有价值的负结论：增加合成示范无法突破BC上限，而从足够强的BC初始化进行Flow-GRPO可把仿真成功率从67%推到83%，并零样本部署Unitree G1。",
+    "researchQuestion": "人形移动操作同时需要行走、平衡、视觉定位和抓取，真实示范成本很高。论文检验大规模合成示范能否直接解决问题，以及强化学习在何处仍然必要。",
+    "contribution": "FetchMan给出一个有价值的负结论：增加合成示范无法突破BC上限，而从足够强的BC初始化进行Flow-GRPO可把仿真成功率从67%推到83%，并零样本部署Unitree G1。 综合评分：86/100。评分用于编辑筛选，综合考虑研究增量、证据质量、潜在影响、看板信息价值、复现性与时效性。",
+    "abstract": "Visual loco-manipulation policies that can generalize to novel scenes and objects have long been a goal of robotics research. However, today's data-hungry algorithms make collecting sufficient demonstrations a struggle for tabletop manipulation, and even more so for humanoids that must also walk and balance. Learning from simulated data and transferring that behavior to the real world, as is commonly done in locomotion, sidesteps this struggle, so we replicate that recipe for loco-manipulation. In doing so, we find that cloning synthetic demonstrations results in a low performance ceiling no matter the amount of training data. Reinforcement learning breaks through it, and refining the cloned policy with Flow-GRPO on a single sparse reward yields performance that synthetic behavior cloning cannot match. Together, these stages form our end-to-end sim-to-real pipeline spanning more than 150,000 scenes, which we use to train FetchMan. We evaluate it on FetchMan-Bench, a simulation benchmark we release, and deploy it zero-shot on a real Unitree G1, where our single-object reach-and-pick policy walks to and grasps a target across unseen scenes at 73.3% success. Finally, we extend this recipe to multi-object training, a first step toward loco-manipulation generalist policies at this data scale.",
+    "paperUrl": "https://arxiv.org/abs/2608.17027",
+    "projectUrl": "https://www.orayyan.com/fetchman",
+    "codeUrl": null,
+    "authors": [
+      "Omar Rayyan",
+      "Zhi Li",
+      "Max Argus",
+      "Yuxin Jiang",
+      "Chang Yu",
+      "Chenfanfu Jiang",
+      "Yuchen Cui"
+    ],
+    "organizations": [
+      "University of California, Los Angeles",
+      "Allen Institute for AI",
+      "University of Washington"
+    ],
+    "date": "2026-08-19",
+    "venue": null,
+    "venueStatus": "preprint",
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "behavior-cloning",
+      "sim-to-real"
+    ],
+    "tasks": [
+      "mobile-manipulation",
+      "humanoid-control"
+    ],
+    "properties": [
+      "real-robot-evaluation",
+      "large-scale-data",
+      "zero-shot"
+    ],
+    "assets": [],
+    "contentType": "paper",
+    "sourceScope": "full-source",
+    "confidence": "medium",
+    "importance": "featured",
+    "selectionScore": 86,
+    "selectionReason": "FetchMan给出一个有价值的负结论：增加合成示范无法突破BC上限，而从足够强的BC初始化进行Flow-GRPO可把仿真成功率从67%推到83%，并零样本部署Unitree G1。",
+    "status": "ai-draft"
+  },
+  {
+    "id": "arxiv-2608.17386",
+    "title": "MANIGUARD: A Benchmark and Data Suite for Specification-Grounded Safety Evaluation and Improvement of Robotic Manipulation",
+    "titleZh": "ManiGuard：面向机器人操作的规格驱动安全评测与数据套件",
+    "oneLiner": "ManiGuard把“完成任务”和“安全完成”拆开，以LTLf约束、自动机监控和确定性复位评测基础模型策略；200个基础任务扩展成1,000个锁定场景，并公开代码与数据套件，适合成为安全评测公共基线。",
+    "researchQuestion": "机器人基础模型通常只按任务成功率比较，但“完成任务”并不等于“安全完成”。缺少可执行、可审计的安全规格，会掩盖碰撞、禁区进入和错误接触等风险。",
+    "contribution": "ManiGuard把“完成任务”和“安全完成”拆开，以LTLf约束、自动机监控和确定性复位评测基础模型策略；200个基础任务扩展成1,000个锁定场景，并公开代码与数据套件，适合成为安全评测公共基线。 综合评分：93/100。评分用于编辑筛选，综合考虑研究增量、证据质量、潜在影响、看板信息价值、复现性与时效性。",
+    "abstract": "Foundation-model policies for robotic manipulation are advancing rapidly on task success, but rigorous evaluation of whether they succeed safely is still lacking. We introduce ManiGuard, a specification-grounded framework for evaluating and improving the safety of foundation-model manipulation, comprising the ManiGuard-Bench task suite and a paired safety-annotated trajectory-generation pipeline. ManiGuard-Bench organizes six contact-rich household task families into 200 locked base tasks along a skill $\\times$ constraint taxonomy, with safety specified independently of task success. Each task is evaluated under one in-distribution and four single-axis out-of-distribution perturbations that hold the safety specification fixed, giving 1,000 locked scenarios. Every rollout is runtime-checked by LTL$_f$-grounded automaton monitors over physics-grounded predicates rather than learned classifiers or LLM judges, in simulation and on a physical Franka platform. The pipeline pairs an automated motion-planning generator with human teleoperation, annotated by the same per-step monitor, and directly supports safety-aware fine-tuning; we release 8,000 safety-annotated demonstrations, 40 per base task. Benchmarking zero-shot and fine-tuned VLAs across more than 23,000 rollouts, we find: (i) safety must be evaluated independently of task success, as 6-21% of successful rollouts violate the specification; (ii) fine-tuning on our suite raises safe task completion from near zero to 7.5-29.8% and engaged-and-safe behavior from 16-40% to 51-72%; but (iii) a gap remains that scaling demonstrations does not close, with 21-42% of engaged rollouts still violating, two of six families below 2% safe success for every policy, and these failures persisting under distribution shift and on hardware.",
+    "paperUrl": "https://arxiv.org/abs/2608.17386",
+    "projectUrl": "https://nu-ideas-lab.github.io/ManiGuard/",
+    "codeUrl": "https://github.com/NU-IDEAS-Lab/ManiGuard",
+    "authors": [
+      "Yiyan Peng",
+      "Philip Wang",
+      "Simon Sinong Zhan",
+      "Yiqi Lyu",
+      "Zhenyang Ni",
+      "Jixin Yan",
+      "Fiorelli Wong",
+      "Ruochen Jiao",
+      "Hang Yin",
+      "Xinyu Cao",
+      "Huajie Shao",
+      "Manling Li",
+      "Ruohan Zhang",
+      "Qi Zhu"
+    ],
+    "organizations": [
+      "Northwestern University",
+      "Stanford University"
+    ],
+    "date": "2026-08-19",
+    "venue": null,
+    "venueStatus": "preprint",
+    "sections": [
+      "data",
+      "infrastructure"
+    ],
+    "topics": [
+      "vla",
+      "control"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "properties": [
+      "open-source",
+      "simulation-only"
+    ],
+    "assets": [
+      "code",
+      "dataset",
+      "benchmark"
+    ],
+    "contentType": "paper",
+    "sourceScope": "full-source",
+    "confidence": "medium",
+    "importance": "featured",
+    "selectionScore": 93,
+    "selectionReason": "ManiGuard把“完成任务”和“安全完成”拆开，以LTLf约束、自动机监控和确定性复位评测基础模型策略；200个基础任务扩展成1,000个锁定场景，并公开代码与数据套件，适合成为安全评测公共基线。",
+    "status": "ai-draft"
+  },
+  {
+    "id": "arxiv-2608.17600",
+    "title": "LIBERO-VIFO: Benchmarking the Capability and Safety of Visual Cue Following in Vision-Language-Action Models",
+    "titleZh": "LIBERO-VIFO：评测 VLA 视觉提示跟随能力与安全性",
+    "oneLiner": "LIBERO-VIFO补充了VLA视觉提示的授权/未授权边界，但证据仍局限LIBERO，且无项目和代码资产；适合作为安全专题常规收录，不与ManiGuard同级。",
+    "researchQuestion": "视觉提示可以帮助机器人定位和执行任务，但模型是否只服从经过授权的提示、能否拒绝未经授权的诱导，目前缺少系统评测。",
+    "contribution": "LIBERO-VIFO补充了VLA视觉提示的授权/未授权边界，但证据仍局限LIBERO，且无项目和代码资产；适合作为安全专题常规收录，不与ManiGuard同级。 综合评分：78/100。评分用于编辑筛选，综合考虑研究增量、证据质量、潜在影响、看板信息价值、复现性与时效性。",
+    "abstract": "Visual cues are increasingly adopted to guide robot learning, but whether Vision-Language-Action (VLA) models can reliably follow authorized cues while disregarding unauthorized ones remains unclear. Existing work covers only a narrow range of cue forms and focuses on final task success, providing only a coarse assessment of cue-following capability. Treating all visual cues as authorized also leaves safety risks of unauthorized following unexplored. To address these gaps, we introduce LIBERO-VIFO, a benchmark to evaluate both the capability and safety of visual cue following in VLA models. LIBERO-VIFO defines eight visual cue families spanning diverse forms. A total of four protocols in two parts are defined: Part I tests cue understanding and authorized following, while Part II evaluates unauthorized visual cue following under language-cue conflict and empty language conditions. Evaluating seven VLA models reveals that although visual cue understanding does not reliably translate into execution, current VLAs are able to execute cue-indicated tasks without language instruction, exposing an emerging risk of unauthorized visual cue following. Extended experiments on scene-instantiated cues, safety-critical settings, and real-robot deployment corroborate these findings. LIBERO-VIFO brings both the capability and safety of visual cue following into systematic evaluation, establishing visual-centric safety as a new perspective for the VLA community.",
+    "paperUrl": "https://arxiv.org/abs/2608.17600",
+    "projectUrl": null,
+    "codeUrl": null,
+    "authors": [
+      "Zhengyan Qian",
+      "Rui Yan",
+      "Alex Jinpeng Wang",
+      "Jinhui Tang"
+    ],
+    "organizations": [],
+    "date": "2026-08-19",
+    "venue": null,
+    "venueStatus": "preprint",
+    "sections": [
+      "data"
+    ],
+    "topics": [
+      "vla",
+      "control"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "properties": [
+      "simulation-only"
+    ],
+    "assets": [],
+    "contentType": "paper",
+    "sourceScope": "full-source",
+    "confidence": "medium",
+    "importance": "normal",
+    "selectionScore": 78,
+    "selectionReason": "LIBERO-VIFO补充了VLA视觉提示的授权/未授权边界，但证据仍局限LIBERO，且无项目和代码资产；适合作为安全专题常规收录，不与ManiGuard同级。",
+    "status": "ai-draft"
+  },
+  {
+    "id": "arxiv-2608.17962",
+    "title": "PRISM: Precision and contact-rich Real-world Industrial Skill dataset with Multimodal sensing",
+    "titleZh": "PRISM：面向精密接触型工业技能的真实多模态数据集",
+    "oneLiner": "PRISM补足家庭数据偏重低接触短任务的空白，提供25+工业任务、5,000+轨迹和45小时同步RGB-D、力/力矩、触觉与状态。基线仍在动态操作和精密力控上明显失败，数据的研究问题清晰。",
+    "researchQuestion": "主流机器人数据集偏重家庭环境中的短时、低接触任务，难以支持工业装配所需的精密控制、力/力矩调节和触觉反馈。",
+    "contribution": "PRISM补足家庭数据偏重低接触短任务的空白，提供25+工业任务、5,000+轨迹和45小时同步RGB-D、力/力矩、触觉与状态。基线仍在动态操作和精密力控上明显失败，数据的研究问题清晰。 综合评分：87/100。评分用于编辑筛选，综合考虑研究增量、证据质量、潜在影响、看板信息价值、复现性与时效性。",
+    "abstract": "Recent progress in robotic learning has been fueled by large-scale datasets collected in everyday environments. However, most existing datasets emphasize short-horizon, low-contact tasks such as pick-and-place, and therefore do not capture the precision control, force/torque or tactile regulation, and multimodal feedback required for industrial assembly. To address this gap, we introduce PRISM, a large-scale multimodal dataset for contact-rich industrial operations. The dataset spans more than 25 manipulation tasks (e.g., electronic components plug/unplug, conveyor-based sorting) and covers diverse mechanical constraints. PRISM includes more than 5,000 trajectories totaling 45 hours of teleoperated demonstrations, recorded using synchronized multi-view RGB-D, force/torque, tactile, and robot-state measurements. In contrast to datasets collected in household or laboratory settings, PRISM provides a realistic benchmark for multimodal perception and control under high-precision industrial constraints, and serves as a foundation for contact-rich, generalizable manipulation in real-world manufacturing environments. The dataset is open-sourced at: https://tengbo-yu.github.io/PRISM/",
+    "paperUrl": "https://arxiv.org/abs/2608.17962",
+    "projectUrl": "https://tengbo-yu.github.io/PRISM/",
+    "codeUrl": "https://github.com/Tengbo-Yu/PRISM",
+    "authors": [
+      "Tengbo Yu",
+      "Jiahao Wu",
+      "Hanning Wang",
+      "Rui Chen",
+      "Chuanhou Liu",
+      "Chuang Sun",
+      "Hangxin Liu"
+    ],
+    "organizations": [
+      "Peking University",
+      "PKU-Wuhan Institute for Artificial Intelligence",
+      "Hubei Humanoid Robot Innovation Center Co., Ltd."
+    ],
+    "date": "2026-08-19",
+    "venue": null,
+    "venueStatus": "preprint",
+    "sections": [
+      "data"
+    ],
+    "topics": [
+      "imitation-learning",
+      "control"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "properties": [
+      "open-source",
+      "real-robot-evaluation",
+      "large-scale-data"
+    ],
+    "assets": [
+      "code"
+    ],
+    "contentType": "paper",
+    "sourceScope": "full-source",
+    "confidence": "medium",
+    "importance": "featured",
+    "selectionScore": 87,
+    "selectionReason": "PRISM补足家庭数据偏重低接触短任务的空白，提供25+工业任务、5,000+轨迹和45小时同步RGB-D、力/力矩、触觉与状态。基线仍在动态操作和精密力控上明显失败，数据的研究问题清晰。",
+    "status": "ai-draft"
+  },
+  {
+    "id": "arxiv-2608.18077",
+    "title": "Hydra-0: Action Flow for Generalist World Modeling and Control",
+    "titleZh": "Hydra-0：用于通用世界建模与控制的动作流",
+    "oneLiner": "Hydra-0用像素运动作为跨embodiment动作接口，使同一世界模型支持预测、开放环策略评测和从人类物体flow反推动作。RoboLab上重放与真实成功率相关系数0.96，但当前闭环和真机验证仍有限。",
+    "researchQuestion": "不同机器人动作空间差异很大，使世界模型难以跨本体共享。论文研究能否把动作统一成视觉空间中的像素运动，让预测、策略评测和控制使用同一种接口。",
+    "contribution": "Hydra-0用像素运动作为跨embodiment动作接口，使同一世界模型支持预测、开放环策略评测和从人类物体flow反推动作。RoboLab上重放与真实成功率相关系数0.96，但当前闭环和真机验证仍有限。 综合评分：89/100。评分用于编辑筛选，综合考虑研究增量、证据质量、潜在影响、看板信息价值、复现性与时效性。",
+    "abstract": "We introduce Hydra-0, a generalist world model conditioned on action flow, which represents robot actions as pixel motion. This shared visual interface enables generalist world modeling and control by learning action consequences across embodiments, tasks, environments, and video-generation backbones. Our best configuration achieves 90.4% lower robot-motion error and 60.2% lower object-motion error than our action-conditioned baseline, while supporting zero-shot composition and data-efficient adaptation. On the RoboLab benchmark, Hydra-0 achieves a Pearson correlation of r=0.96 between replayed and reference success rates. Finally, we uncover an emergent inverse mode of this interface: a world action model that predicts compatible robot motion from desired object flow transferred from a human demonstration. A trained action head maps the resulting latent features to executable actions without requiring task-specific expert robot demonstrations. Together, these results demonstrate the potential of action flow as a shared control interface connecting heterogeneous training data, open-loop policy evaluation, and robot control.",
+    "paperUrl": "https://arxiv.org/abs/2608.18077",
+    "projectUrl": "https://nvidia-isaac.github.io/video_to_data/hydra-0/",
+    "codeUrl": null,
+    "authors": [
+      "Hongyu Li",
+      "Bowen Wen",
+      "Xinghao Zhu",
+      "Yixuan Wang",
+      "Yilun Du",
+      "Yunzhu Li",
+      "George Konidaris",
+      "Stan Birchfield",
+      "Soha Pouya",
+      "Chenran Li",
+      "Yan Chang"
+    ],
+    "organizations": [
+      "NVIDIA",
+      "Brown University",
+      "Columbia University",
+      "Harvard University"
+    ],
+    "date": "2026-08-19",
+    "venue": null,
+    "venueStatus": "preprint",
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model",
+      "representation-learning",
+      "control"
+    ],
+    "tasks": [
+      "generalist-control",
+      "manipulation"
+    ],
+    "properties": [
+      "real-robot-evaluation",
+      "multi-robot"
+    ],
+    "assets": [],
+    "contentType": "paper",
+    "sourceScope": "full-source",
+    "confidence": "medium",
+    "importance": "featured",
+    "selectionScore": 89,
+    "selectionReason": "Hydra-0用像素运动作为跨embodiment动作接口，使同一世界模型支持预测、开放环策略评测和从人类物体flow反推动作。RoboLab上重放与真实成功率相关系数0.96，但当前闭环和真机验证仍有限。",
+    "status": "ai-draft"
+  },
+  {
+    "id": "arxiv-2608.16885",
+    "title": "tau_0-VLA: a Hierarchical Robot Foundation Model with World-Model-Guided Test-Time Computation",
+    "titleZh": "τ0-VLA：世界模型引导测试时计算的分层机器人基础模型",
+    "oneLiner": "这批最强工作。它把额外推理算力放在稀疏的子任务边界，用世界模型预览候选后果并修正执行记忆；四个真机长任务中分层 Plan Once 平均成功率 45.0%，高于同一低层策略直接执行的 27.5%，TTC 又在三项真机任务上继续提升。",
+    "researchQuestion": "长时序机器人不仅要可靠执行单个技能，还要在几十步任务里做出正确的子任务选择。现有分层 VLA 往往每个决策只前向一次，无法把更多计算分配给困难或后果重大的节点。",
+    "contribution": "这批最强工作。它把额外推理算力放在稀疏的子任务边界，用世界模型预览候选后果并修正执行记忆；四个真机长任务中分层 Plan Once 平均成功率 45.0%，高于同一低层策略直接执行的 27.5%，TTC 又在三项真机任务上继续提升。 综合评分：94/100。评分用于编辑筛选，综合考虑研究增量、证据质量、潜在影响、看板信息价值、复现性与时效性。",
+    "abstract": "Long-horizon robot manipulation requires a robot to both execute individual skills reliably and sequence them coherently over extended tasks. Most hierarchical vision-language-action (VLA) models make each such decision with a single forward pass, leaving no mechanism to allocate additional computation to difficult or consequential choices. We introduce $τ_0$-VLA, a hierarchical robot foundation model that formulates high-level subtask generation as a compute-scalable inference problem through world-model-guided test-time computation. At each inference step, the high-level policy uses execution memory to generate a subtask and, when needed, searches over alternatives before committing to its output. A low-level policy then executes the generated subtask across multiple robot embodiments. The policy is trained on 40,115 hours of heterogeneous real-world data with multimodal co-training. Across in-domain and distribution-shifted settings, allocating additional test-time computation substantially improves next-subtask prediction accuracy, and these gains translate into higher closed-loop success on long-horizon robot manipulation tasks.",
+    "paperUrl": "https://arxiv.org/abs/2608.16885",
+    "projectUrl": "https://tau0-vla.github.io/",
+    "codeUrl": "https://github.com/sii-research/tau-0-vla",
+    "authors": [
+      "Xiaowei Cai",
+      "Yunuo Cai",
+      "Bingao Chen",
+      "Jingxiao Chen",
+      "Zhi Chen",
+      "Siyuan Feng",
+      "Tengyu Hou",
+      "Jingshun Huang",
+      "Han Jiang",
+      "Runkun Ju",
+      "Dong Li",
+      "Mingxiang Li",
+      "Shaowei Li",
+      "Xinchen Li",
+      "Yifan Li",
+      "Yi Liu",
+      "Zhongyuan Liu",
+      "Jianlan Luo",
+      "Junwen Miao",
+      "Ruiqi Ni",
+      "Buqing Nie",
+      "Mingjie Pan",
+      "Xinlin Ren",
+      "Jianheng Song",
+      "Jiaxu Wang",
+      "Peiqi Wang",
+      "Sen Wang",
+      "Xiaoyan Wang",
+      "Dafeng Wei",
+      "Dongming Wu",
+      "Pengwei Xie",
+      "Pu Yang",
+      "Hangjian Ye",
+      "Xiangyu Yue",
+      "Jinyu Zhang",
+      "Qinglin Zhang",
+      "Xueyong Zhao",
+      "Pengfei Zhou",
+      "Yue Zhou"
+    ],
+    "organizations": [
+      "Shanghai Innovation Institute and collaborators"
+    ],
+    "date": "2026-08-18",
+    "venue": null,
+    "venueStatus": "preprint",
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "world-model",
+      "planning"
+    ],
+    "tasks": [
+      "generalist-control",
+      "mobile-manipulation"
+    ],
+    "properties": [
+      "real-robot-evaluation",
+      "large-scale-data",
+      "multi-robot"
+    ],
+    "assets": [
+      "code",
+      "model-weights"
+    ],
+    "contentType": "paper",
+    "sourceScope": "full-source",
+    "confidence": "medium",
+    "importance": "featured",
+    "selectionScore": 94,
+    "selectionReason": "这批最强工作。它把额外推理算力放在稀疏的子任务边界，用世界模型预览候选后果并修正执行记忆；四个真机长任务中分层 Plan Once 平均成功率 45.0%，高于同一低层策略直接执行的 27.5%，TTC 又在三项真机任务上继续提升。",
+    "status": "ai-draft"
+  },
+  {
+    "id": "arxiv-2608.14379",
+    "title": "Reflex: Enabling Fast and Predictive Vision-Language-Action Models for Reaction-Critical Manipulation",
+    "titleZh": "Reflex：面向反应关键操作的快速预测式视觉语言动作模型",
+    "oneLiner": "ReflexBench把仿真步进与机器人控制解耦，从而受控研究推理延迟；ReflexVLA将latent future prediction、时序融合与CUDA优化结合，并在三项真机动态任务验证。",
+    "researchQuestion": "多数 VLA 基准是静态任务，模型推理慢一些也不一定失败；在抛接、拦截等动态任务中，延迟和未来状态预测会直接决定能否及时动作。",
+    "contribution": "ReflexBench把仿真步进与机器人控制解耦，从而受控研究推理延迟；ReflexVLA将latent future prediction、时序融合与CUDA优化结合，并在三项真机动态任务验证。 综合评分：81/100。评分用于编辑筛选，综合考虑研究增量、证据质量、潜在影响、看板信息价值、复现性与时效性。",
+    "abstract": "Vision-Language-Action (VLA) models have recently achieved promising performance in robotic manipulation. However, existing benchmarks mainly evaluate generalization on static manipulation tasks and largely overlook dynamic interaction scenarios. To address this gap, we present ReflexBench, a benchmark for reaction-critical manipulation. ReflexBench contains six dynamic tasks and introduces an evaluation framework that decouples simulator stepping from robot control while supporting configurable latency under synchronous and asynchronous inference. Building upon ReflexBench, we propose ReflexVLA, an efficient VLA model designed for reaction-critical manipulation without large-scale robot-data pretraining. ReflexVLA enhances temporal reasoning through latent future prediction and multi-frame temporal fusion within the vision backbone, while reducing deployment latency through batched visual encoding and CUDA Graph replay. Experiments show that ReflexVLA consistently improves dynamic manipulation performance while maintaining competitive accuracy on standard static manipulation benchmarks, and real-world experiments further demonstrate its effectiveness under practical deployment conditions. Project website: https://reflexvla.github.io",
+    "paperUrl": "https://arxiv.org/abs/2608.14379",
+    "projectUrl": "https://reflexvla.github.io/",
+    "codeUrl": null,
+    "authors": [
+      "Yuxuan Chen",
+      "Wanruo Zhang",
+      "Xiao Li"
+    ],
+    "organizations": [
+      "Shanghai Jiao Tong University"
+    ],
+    "date": "2026-08-17",
+    "venue": null,
+    "venueStatus": "preprint",
+    "sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "topics": [
+      "vla",
+      "world-model",
+      "control"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ],
+    "assets": [],
+    "contentType": "paper",
+    "sourceScope": "full-source",
+    "confidence": "medium",
+    "importance": "featured",
+    "selectionScore": 81,
+    "selectionReason": "ReflexBench把仿真步进与机器人控制解耦，从而受控研究推理延迟；ReflexVLA将latent future prediction、时序融合与CUDA优化结合，并在三项真机动态任务验证。",
+    "status": "ai-draft"
+  },
+  {
+    "id": "arxiv-2608.12860",
+    "title": "HumanoidVLN: A Physics-Grounded Simulator and Benchmark for Vision-Language Navigation Across Diverse Humanoid Embodiments",
+    "titleZh": "HumanoidVLN：跨人形本体的物理约束视觉语言导航仿真器与基准",
+    "oneLiner": "HumanoidVLN把VLN从无动力学或轮式代理推进到真实双足约束，覆盖4种人形、87个场景和933条路线，并用20条G1配对轨迹检查仿真—现实相关性。主要扣分来自代码和数据仍为Coming Soon。",
+    "researchQuestion": "现有 VLN 多基于无动力学代理或轮式机器人，无法体现双足行走中的跌倒、形态差异和步态引起的相机扰动，因此不能直接衡量人形机器人导航能力。",
+    "contribution": "HumanoidVLN把VLN从无动力学或轮式代理推进到真实双足约束，覆盖4种人形、87个场景和933条路线，并用20条G1配对轨迹检查仿真—现实相关性。主要扣分来自代码和数据仍为Coming Soon。 综合评分：88/100。评分用于编辑筛选，综合考虑研究增量、证据质量、潜在影响、看板信息价值、复现性与时效性。",
+    "abstract": "Vision-Language Navigation (VLN) for humanoid robots poses challenges existing benchmarks fail to address: bipedal locomotion imposes physical constraints absent from wheeled agents, humanoid morphologies vary across platforms, and egocentric observations are distorted by locomotion-induced camera dynamics. We present HumanoidVLN, a physics-grounded simulator and benchmark for VLN across diverse humanoid embodiments. Built on NVIDIA Isaac Sim, our platform supports an extensible set of humanoid configurations, demonstrated on four robots (Unitree G1, Unitree H1, Internal-A, Internal-B) spanning 10-12 lower-body DoF and heights from 1.17m to 1.80m, via a hierarchical control stack combining a reinforcement learning locomotion policy with interchangeable PD or MPC path trackers. New robots and VLN models integrate with minimal effort; we demonstrate compatibility with NaVILA, DualVLN, StreamVLN, and JanusVLN. Environments are drawn from artist-designed scenes and 3D Gaussian Splatting reconstructions, filtered for navigable areas exceeding 100 square meters. Instructions are generated by a dual generator-reviewer plus paraphraser multi-agent pipeline with human-in-the-loop verification, yielding 933 collision-aware reference episodes, each paired with one fine-grained instruction and three coarse-grained stylistic variants (formal, natural, casual). Across four models and four embodiments, JanusVLN achieves the highest mean success rate of 43.55% and nDTW of 48.38. In a 20-episode sim-to-real pilot with DualVLN and the Unitree G1, navigation errors correlate strongly (r=0.935), with a mean absolute difference of 0.68m and mean trajectory similarity of 0.782 (+/-0.188) nDTW. These results highlight the interaction between VLN models, controllers, and humanoid embodiments under physical execution. Code, benchmark, and data will be released upon acceptance at https://humanoid-vln.github.io/.",
+    "paperUrl": "https://arxiv.org/abs/2608.12860",
+    "projectUrl": "https://humanoid-vln.github.io/",
+    "codeUrl": null,
+    "authors": [
+      "Quan-Dung Pham",
+      "Anh Dao",
+      "The-Anh Nguyen",
+      "Minh Nguyen-Dinh",
+      "Phuong Nam Dang",
+      "Tri Pham",
+      "Hung Tran",
+      "Bach Dao",
+      "Tuyen P. Le",
+      "Truong Nguyen",
+      "Quan Nguyen"
+    ],
+    "organizations": [
+      "VinMotion, Inc.",
+      "University of Southern California"
+    ],
+    "date": "2026-08-14",
+    "venue": null,
+    "venueStatus": "preprint",
+    "sections": [
+      "simulators",
+      "data"
+    ],
+    "topics": [
+      "planning",
+      "control",
+      "sim-to-real"
+    ],
+    "tasks": [
+      "navigation",
+      "humanoid-control"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ],
+    "assets": [],
+    "contentType": "paper",
+    "sourceScope": "full-source",
+    "confidence": "medium",
+    "importance": "featured",
+    "selectionScore": 88,
+    "selectionReason": "HumanoidVLN把VLN从无动力学或轮式代理推进到真实双足约束，覆盖4种人形、87个场景和933条路线，并用20条G1配对轨迹检查仿真—现实相关性。主要扣分来自代码和数据仍为Coming Soon。",
+    "status": "ai-draft"
+  },
+  {
+    "id": "arxiv-2608.13049",
+    "title": "H2R-Bench: Benchmarking Human-to-Robot Manipulation Video Generation in World Models",
+    "titleZh": "H2R-Bench：评测世界模型的人类到机器人操作视频生成能力",
+    "oneLiner": "H2R-Bench首次系统诊断视频模型能否把人类示范转成指定机器人embodiment的视频，分开评估目标、动作事件、功能接触和机器人形态。当前模型在接触和任务执行上仍明显不足。",
+    "researchQuestion": "人类第一视角视频规模巨大，但人体手部与机器人执行器差异明显。仅看生成画面是否逼真，无法判断世界模型是否正确迁移了动作事件、接触关系和目标机器人形态。",
+    "contribution": "H2R-Bench首次系统诊断视频模型能否把人类示范转成指定机器人embodiment的视频，分开评估目标、动作事件、功能接触和机器人形态。当前模型在接触和任务执行上仍明显不足。 综合评分：86/100。评分用于编辑筛选，综合考虑研究增量、证据质量、潜在影响、看板信息价值、复现性与时效性。",
+    "abstract": "Large-scale manipulation data is essential for robot learning, yet collecting robot demonstrations remains expensive and difficult to scale. Meanwhile, abundant egocentric human manipulation videos provide rich behavioral experiences, but transferring them across embodiments remains challenging due to differences between human hands and robotic end-effectors. Recent advances in video world models offer a promising pathway to synthesize robot-centric manipulation videos from human observations, while their cross-embodiment transfer capability remains largely unexplored. Therefore, we introduce H2R-Bench, a benchmark for evaluating cross-embodiment human-to-robot manipulation video generation, where models transform egocentric human demonstrations into robot manipulation videos under specified embodiments. Each benchmark instance contains a human demonstration video, target embodiment constraints, and source-grounded annotations covering task goals, action events, functional contacts, and object responses. H2R-Bench evaluates generated videos through five dimensions, including goal-state completion, action-event completion, functional contact transfer, embodiment correctness, and general video quality. We benchmark eleven state-of-the-art video generation models across six manipulation families and two robot embodiments. Our evaluation reveals that current video world models remain limited in human-to-robot manipulation transfer: even leading models often fail in embodiment consistency, functional interaction, and task execution. H2R-Bench provides a systematic diagnostic framework for evaluating whether video world models can bridge the human-to-robot embodiment gap and convert human manipulation observations into robot-centric training resources.",
+    "paperUrl": "https://arxiv.org/abs/2608.13049",
+    "projectUrl": "https://rongdingyi.github.io/H2R-Bench/",
+    "codeUrl": "https://github.com/Rongdingyi/H2R-Bench",
+    "authors": [
+      "Dingyi Rong",
+      "Yue Shi",
+      "Chaofan Ma",
+      "Jiezhang Cao",
+      "Zongrui Wang",
+      "Zeyu Zhang",
+      "Yao Mu",
+      "Guangtao Zhai",
+      "Ning Liu"
+    ],
+    "organizations": [
+      "H2R-Bench collaboration"
+    ],
+    "date": "2026-08-14",
+    "venue": null,
+    "venueStatus": "preprint",
+    "sections": [
+      "data"
+    ],
+    "topics": [
+      "world-model",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "properties": [
+      "open-source",
+      "simulation-only",
+      "multi-robot"
+    ],
+    "assets": [
+      "code",
+      "benchmark"
+    ],
+    "contentType": "paper",
+    "sourceScope": "full-source",
+    "confidence": "medium",
+    "importance": "featured",
+    "selectionScore": 86,
+    "selectionReason": "H2R-Bench首次系统诊断视频模型能否把人类示范转成指定机器人embodiment的视频，分开评估目标、动作事件、功能接触和机器人形态。当前模型在接触和任务执行上仍明显不足。",
+    "status": "ai-draft"
+  },
+  {
+    "id": "arxiv-2608.13489",
+    "title": "DreamX-Phi 1.0: Action-Conditioned Video World Model for Robotic Manipulation",
+    "titleZh": "DreamX-Phi 1.0：面向机器人操作的动作条件视频世界模型",
+    "oneLiner": "DreamX-Phi在WorldArena快照中排名较高，但下游策略只验证Adjust Bottle，且缺少匹配消融来隔离各模块贡献；保留include，不因排行榜第一自动featured。",
+    "researchQuestion": "视频世界模型即使生成结果逼真，也可能让错误机械臂运动或丢失目标物体。论文研究如何增强动作轨迹与生成视频之间的几何一致性。",
+    "contribution": "DreamX-Phi在WorldArena快照中排名较高，但下游策略只验证Adjust Bottle，且缺少匹配消融来隔离各模块贡献；保留include，不因排行榜第一自动featured。 综合评分：78/100。评分用于编辑筛选，综合考虑研究增量、证据质量、潜在影响、看板信息价值、复现性与时效性。",
+    "abstract": "We present \\textbf{DreamX-Phi 1.0}, an action-conditioned video world model for robotic manipulation that, given an observed frame, a language instruction, and a prescribed action sequence comprising end-effector poses and gripper states, predicts the resulting future observations. Yet realism alone does not guarantee faithfulness: a convincing rollout can still move the wrong arm or lose the manipulated object. To ensure the prediction respects each arm's commanded path, we inject per-arm $\\mathrm{SE}(3)$ transformations into attention via \\textbf{PRoPE-style geometric encoding}, preserving arm identity and rigid-motion structure. Action control alone does not fully constrain scene geometry or the evolution of small manipulated objects. We therefore add a lightweight \\textbf{depth branch} for scene-level geometry and use \\textbf{SAM3 masks} with a frozen \\textbf{V-JEPA teacher} to maintain object consistency throughout grasping. We further distill the multi-step generator into a few-step student via distribution-matching distillation for efficient deployment. At the time of writing, \\model{} achieves first place on Track~1 and second place on Track~2 of the WorldArena~2.0 Challenge. Our model and code will be publicly available.",
+    "paperUrl": "https://arxiv.org/abs/2608.13489",
+    "projectUrl": null,
+    "codeUrl": "https://github.com/AMAP-ML/DreamX-Phi",
+    "authors": [
+      "DreamX Team",
+      "Rui Chen",
+      "Xiangxiang Chu",
+      "Geng Li",
+      "Jifan Li",
+      "Qingfeng Shi",
+      "Datao Tang",
+      "Jing Tang",
+      "Jun Wang",
+      "Pengfei Zhang"
+    ],
+    "organizations": [
+      "AMAP-ML collaboration"
+    ],
+    "date": "2026-08-14",
+    "venue": null,
+    "venueStatus": "preprint",
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "properties": [
+      "simulation-only",
+      "multi-robot"
+    ],
+    "assets": [
+      "code"
+    ],
+    "contentType": "paper",
+    "sourceScope": "full-source",
+    "confidence": "medium",
+    "importance": "normal",
+    "selectionScore": 78,
+    "selectionReason": "DreamX-Phi在WorldArena快照中排名较高，但下游策略只验证Adjust Bottle，且缺少匹配消融来隔离各模块贡献；保留include，不因排行榜第一自动featured。",
+    "status": "ai-draft"
+  },
+  {
     "id": "arxiv-2608.09298",
     "title": "WorldSimProbe: Diagnosing Simulator Faithfulness in Action-Conditioned World Models for Embodied Manipulation",
     "titleZh": "WorldSimProbe：诊断具身操作动作条件世界模型的仿真忠实度",

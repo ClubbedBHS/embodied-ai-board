@@ -1,0 +1,181 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.13049",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "H2R-Bench: Benchmarking Human-to-Robot Manipulation Video Generation in World Models",
+  "title_zh": "H2R-Bench：评测世界模型的人类到机器人操作视频生成能力",
+  "abstract": "Large-scale manipulation data is essential for robot learning, yet collecting robot demonstrations remains expensive and difficult to scale. Meanwhile, abundant egocentric human manipulation videos provide rich behavioral experiences, but transferring them across embodiments remains challenging due to differences between human hands and robotic end-effectors. Recent advances in video world models offer a promising pathway to synthesize robot-centric manipulation videos from human observations, while their cross-embodiment transfer capability remains largely unexplored. Therefore, we introduce H2R-Bench, a benchmark for evaluating cross-embodiment human-to-robot manipulation video generation, where models transform egocentric human demonstrations into robot manipulation videos under specified embodiments. Each benchmark instance contains a human demonstration video, target embodiment constraints, and source-grounded annotations covering task goals, action events, functional contacts, and object responses. H2R-Bench evaluates generated videos through five dimensions, including goal-state completion, action-event completion, functional contact transfer, embodiment correctness, and general video quality. We benchmark eleven state-of-the-art video generation models across six manipulation families and two robot embodiments. Our evaluation reveals that current video world models remain limited in human-to-robot manipulation transfer: even leading models often fail in embodiment consistency, functional interaction, and task execution. H2R-Bench provides a systematic diagnostic framework for evaluating whether video world models can bridge the human-to-robot embodiment gap and convert human manipulation observations into robot-centric training resources.",
+  "paper_url": "https://arxiv.org/abs/2608.13049",
+  "pdf_url": "https://arxiv.org/pdf/2608.13049",
+  "project_url": "https://rongdingyi.github.io/H2R-Bench/",
+  "code_url": "https://github.com/Rongdingyi/H2R-Bench",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Dingyi Rong",
+      "affiliations": []
+    },
+    {
+      "name": "Yue Shi",
+      "affiliations": []
+    },
+    {
+      "name": "Chaofan Ma",
+      "affiliations": []
+    },
+    {
+      "name": "Jiezhang Cao",
+      "affiliations": []
+    },
+    {
+      "name": "Zongrui Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Zeyu Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Yao Mu",
+      "affiliations": []
+    },
+    {
+      "name": "Guangtao Zhai",
+      "affiliations": []
+    },
+    {
+      "name": "Ning Liu",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "h2r-bench-collaboration",
+      "name": "H2R-Bench collaboration",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-14",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data"
+    ],
+    "topics": [
+      "world-model",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "multi-robot"
+    ],
+    "modalities": [
+      "vision",
+      "action"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [
+      "code",
+      "benchmark"
+    ],
+    "properties": [
+      "open-source",
+      "simulation-only",
+      "multi-robot"
+    ]
+  },
+  "paper_type": [
+    "benchmark"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 86,
+    "selection_reason": "H2R-Bench首次系统诊断视频模型能否把人类示范转成指定机器人embodiment的视频，分开评估目标、动作事件、功能接触和机器人形态。当前模型在接触和任务执行上仍明显不足。",
+    "candidate_run": "2026-08-20-weekly-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-20",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "只评估可见证据，不验证物理可执行性或下游策略收益",
+      "仅120个源视频和两个目标embodiment",
+      "数据集按钮仍是占位符"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.13049",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, results and limitations were reviewed from the full HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-20"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.13049"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.13049"
+    },
+    {
+      "type": "project",
+      "url": "https://rongdingyi.github.io/H2R-Bench/"
+    },
+    {
+      "type": "code",
+      "url": "https://github.com/Rongdingyi/H2R-Bench"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "source": "official-project-page",
+      "url": "https://rongdingyi.github.io/H2R-Bench/",
+      "location": "author block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/Rongdingyi/H2R-Bench",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "checked_at": "2026-08-20"
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "placeholder-not-released",
+      "accessible": false,
+      "verification_method": "project-source-scan",
+      "checked_at": "2026-08-20",
+      "note": "Dataset button is commented out with placeholder ORG/H2R-Bench."
+    }
+  ]
+}

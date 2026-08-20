@@ -1,0 +1,175 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.13489",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "DreamX-Phi 1.0: Action-Conditioned Video World Model for Robotic Manipulation",
+  "title_zh": "DreamX-Phi 1.0：面向机器人操作的动作条件视频世界模型",
+  "abstract": "We present \\textbf{DreamX-Phi 1.0}, an action-conditioned video world model for robotic manipulation that, given an observed frame, a language instruction, and a prescribed action sequence comprising end-effector poses and gripper states, predicts the resulting future observations. Yet realism alone does not guarantee faithfulness: a convincing rollout can still move the wrong arm or lose the manipulated object. To ensure the prediction respects each arm's commanded path, we inject per-arm $\\mathrm{SE}(3)$ transformations into attention via \\textbf{PRoPE-style geometric encoding}, preserving arm identity and rigid-motion structure. Action control alone does not fully constrain scene geometry or the evolution of small manipulated objects. We therefore add a lightweight \\textbf{depth branch} for scene-level geometry and use \\textbf{SAM3 masks} with a frozen \\textbf{V-JEPA teacher} to maintain object consistency throughout grasping. We further distill the multi-step generator into a few-step student via distribution-matching distillation for efficient deployment. At the time of writing, \\model{} achieves first place on Track~1 and second place on Track~2 of the WorldArena~2.0 Challenge. Our model and code will be publicly available.",
+  "paper_url": "https://arxiv.org/abs/2608.13489",
+  "pdf_url": "https://arxiv.org/pdf/2608.13489",
+  "project_url": null,
+  "code_url": "https://github.com/AMAP-ML/DreamX-Phi",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "DreamX Team",
+      "affiliations": []
+    },
+    {
+      "name": "Rui Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Xiangxiang Chu",
+      "affiliations": []
+    },
+    {
+      "name": "Geng Li",
+      "affiliations": []
+    },
+    {
+      "name": "Jifan Li",
+      "affiliations": []
+    },
+    {
+      "name": "Qingfeng Shi",
+      "affiliations": []
+    },
+    {
+      "name": "Datao Tang",
+      "affiliations": []
+    },
+    {
+      "name": "Jing Tang",
+      "affiliations": []
+    },
+    {
+      "name": "Jun Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Pengfei Zhang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "amap-ml-collaboration",
+      "name": "AMAP-ML collaboration",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-14",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "multi-robot",
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action",
+      "depth"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [
+      "code"
+    ],
+    "properties": [
+      "simulation-only",
+      "multi-robot"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 78,
+    "selection_reason": "DreamX-Phi在WorldArena快照中排名较高，但下游策略只验证Adjust Bottle，且缺少匹配消融来隔离各模块贡献；保留include，不因排行榜第一自动featured。",
+    "candidate_run": "2026-08-20-weekly-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-20",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "Track 2仅一个任务",
+      "没有真机验证",
+      "完整系统得分无法隔离PRoPE、depth和mask各自贡献",
+      "代码API需重试"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.13489",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, results and limitations were reviewed from the full HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-20"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.13489"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.13489"
+    },
+    {
+      "type": "code",
+      "url": "https://github.com/AMAP-ML/DreamX-Phi"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "source": "official-repository",
+      "url": "https://github.com/AMAP-ML/DreamX-Phi",
+      "location": "repository organization"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/AMAP-ML/DreamX-Phi",
+      "status": "paper-linked-verification-error",
+      "accessible": true,
+      "verification_method": "paper-link-plus-http",
+      "checked_at": "2026-08-20",
+      "note": "API verification was interrupted; retry before publication."
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.17027",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "FetchMan: Learning Visual Humanoid Loco-Manipulation Policies from Simulated Experiences",
+  "title_zh": "FetchMan：从仿真经验学习视觉人形移动操作策略",
+  "abstract": "Visual loco-manipulation policies that can generalize to novel scenes and objects have long been a goal of robotics research. However, today's data-hungry algorithms make collecting sufficient demonstrations a struggle for tabletop manipulation, and even more so for humanoids that must also walk and balance. Learning from simulated data and transferring that behavior to the real world, as is commonly done in locomotion, sidesteps this struggle, so we replicate that recipe for loco-manipulation. In doing so, we find that cloning synthetic demonstrations results in a low performance ceiling no matter the amount of training data. Reinforcement learning breaks through it, and refining the cloned policy with Flow-GRPO on a single sparse reward yields performance that synthetic behavior cloning cannot match. Together, these stages form our end-to-end sim-to-real pipeline spanning more than 150,000 scenes, which we use to train FetchMan. We evaluate it on FetchMan-Bench, a simulation benchmark we release, and deploy it zero-shot on a real Unitree G1, where our single-object reach-and-pick policy walks to and grasps a target across unseen scenes at 73.3% success. Finally, we extend this recipe to multi-object training, a first step toward loco-manipulation generalist policies at this data scale.",
+  "paper_url": "https://arxiv.org/abs/2608.17027",
+  "pdf_url": "https://arxiv.org/pdf/2608.17027",
+  "project_url": "https://www.orayyan.com/fetchman",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Omar Rayyan",
+      "affiliations": []
+    },
+    {
+      "name": "Zhi Li",
+      "affiliations": []
+    },
+    {
+      "name": "Max Argus",
+      "affiliations": []
+    },
+    {
+      "name": "Yuxin Jiang",
+      "affiliations": []
+    },
+    {
+      "name": "Chang Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Chenfanfu Jiang",
+      "affiliations": []
+    },
+    {
+      "name": "Yuchen Cui",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "university-of-california-los-angeles",
+      "name": "University of California, Los Angeles",
+      "role": "primary"
+    },
+    {
+      "id": "allen-institute-for-ai",
+      "name": "Allen Institute for AI",
+      "role": "collaborator"
+    },
+    {
+      "id": "university-of-washington",
+      "name": "University of Washington",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-19",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "behavior-cloning",
+      "sim-to-real"
+    ],
+    "tasks": [
+      "mobile-manipulation",
+      "humanoid-control"
+    ],
+    "platforms": [
+      "humanoid"
+    ],
+    "modalities": [
+      "vision",
+      "proprioception",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation",
+      "large-scale-data",
+      "zero-shot"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 86,
+    "selection_reason": "FetchMan给出一个有价值的负结论：增加合成示范无法突破BC上限，而从足够强的BC初始化进行Flow-GRPO可把仿真成功率从67%推到83%，并零样本部署Unitree G1。",
+    "candidate_run": "2026-08-20-weekly-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-20",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "任务主要限于fetch/reach-and-pick",
+      "真机试验数量有限且多物体结果以定性为主",
+      "项目所列仓库当前API返回404"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.17027",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, results and limitations were reviewed from the full HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-20"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.17027"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.17027"
+    },
+    {
+      "type": "project",
+      "url": "https://www.orayyan.com/fetchman"
+    },
+    {
+      "type": "code",
+      "url": "https://github.com/omarrayyann/fetchman"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "source": "paper-fulltext",
+      "url": "https://arxiv.org/html/2608.17027",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/omarrayyann/fetchman",
+      "status": "project-linked-but-api-404",
+      "accessible": false,
+      "verification_method": "official-project-link-plus-github-api",
+      "checked_at": "2026-08-20",
+      "note": "Project links repository but API returned 404; treat as not currently verified."
+    }
+  ]
+}

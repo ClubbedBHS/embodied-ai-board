@@ -1,0 +1,177 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.17962",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "PRISM: Precision and contact-rich Real-world Industrial Skill dataset with Multimodal sensing",
+  "title_zh": "PRISM：面向精密接触型工业技能的真实多模态数据集",
+  "abstract": "Recent progress in robotic learning has been fueled by large-scale datasets collected in everyday environments. However, most existing datasets emphasize short-horizon, low-contact tasks such as pick-and-place, and therefore do not capture the precision control, force/torque or tactile regulation, and multimodal feedback required for industrial assembly. To address this gap, we introduce PRISM, a large-scale multimodal dataset for contact-rich industrial operations. The dataset spans more than 25 manipulation tasks (e.g., electronic components plug/unplug, conveyor-based sorting) and covers diverse mechanical constraints. PRISM includes more than 5,000 trajectories totaling 45 hours of teleoperated demonstrations, recorded using synchronized multi-view RGB-D, force/torque, tactile, and robot-state measurements. In contrast to datasets collected in household or laboratory settings, PRISM provides a realistic benchmark for multimodal perception and control under high-precision industrial constraints, and serves as a foundation for contact-rich, generalizable manipulation in real-world manufacturing environments. The dataset is open-sourced at: https://tengbo-yu.github.io/PRISM/",
+  "paper_url": "https://arxiv.org/abs/2608.17962",
+  "pdf_url": "https://arxiv.org/pdf/2608.17962",
+  "project_url": "https://tengbo-yu.github.io/PRISM/",
+  "code_url": "https://github.com/Tengbo-Yu/PRISM",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Tengbo Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Jiahao Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Hanning Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Rui Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Chuanhou Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Chuang Sun",
+      "affiliations": []
+    },
+    {
+      "name": "Hangxin Liu",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "peking-university",
+      "name": "Peking University",
+      "role": "primary"
+    },
+    {
+      "id": "pku-wuhan-institute-for-artificial-intelligence",
+      "name": "PKU-Wuhan Institute for Artificial Intelligence",
+      "role": "collaborator"
+    },
+    {
+      "id": "hubei-humanoid-robot-innovation-center-co--ltd",
+      "name": "Hubei Humanoid Robot Innovation Center Co., Ltd.",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-19",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data"
+    ],
+    "topics": [
+      "imitation-learning",
+      "control"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "depth",
+      "tactile",
+      "proprioception",
+      "action"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [
+      "code"
+    ],
+    "properties": [
+      "open-source",
+      "real-robot-evaluation",
+      "large-scale-data"
+    ]
+  },
+  "paper_type": [
+    "dataset",
+    "benchmark"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 87,
+    "selection_reason": "PRISM补足家庭数据偏重低接触短任务的空白，提供25+工业任务、5,000+轨迹和45小时同步RGB-D、力/力矩、触觉与状态。基线仍在动态操作和精密力控上明显失败，数据的研究问题清晰。",
+    "candidate_run": "2026-08-20-weekly-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-20",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "仓库可访问但数据下载完整性仍需人工复核",
+      "整体策略表现仍较低",
+      "工业平台与传感器成本可能限制复现"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.17962",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, results and limitations were reviewed from the full HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-20"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.17962"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.17962"
+    },
+    {
+      "type": "project",
+      "url": "https://tengbo-yu.github.io/PRISM/"
+    },
+    {
+      "type": "code",
+      "url": "https://github.com/Tengbo-Yu/PRISM"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "source": "paper-fulltext",
+      "url": "https://arxiv.org/html/2608.17962",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/Tengbo-Yu/PRISM",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "checked_at": "2026-08-20"
+    }
+  ]
+}

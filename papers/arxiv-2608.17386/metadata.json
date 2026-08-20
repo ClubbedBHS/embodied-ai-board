@@ -1,0 +1,212 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.17386",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "MANIGUARD: A Benchmark and Data Suite for Specification-Grounded Safety Evaluation and Improvement of Robotic Manipulation",
+  "title_zh": "ManiGuard：面向机器人操作的规格驱动安全评测与数据套件",
+  "abstract": "Foundation-model policies for robotic manipulation are advancing rapidly on task success, but rigorous evaluation of whether they succeed safely is still lacking. We introduce ManiGuard, a specification-grounded framework for evaluating and improving the safety of foundation-model manipulation, comprising the ManiGuard-Bench task suite and a paired safety-annotated trajectory-generation pipeline. ManiGuard-Bench organizes six contact-rich household task families into 200 locked base tasks along a skill $\\times$ constraint taxonomy, with safety specified independently of task success. Each task is evaluated under one in-distribution and four single-axis out-of-distribution perturbations that hold the safety specification fixed, giving 1,000 locked scenarios. Every rollout is runtime-checked by LTL$_f$-grounded automaton monitors over physics-grounded predicates rather than learned classifiers or LLM judges, in simulation and on a physical Franka platform. The pipeline pairs an automated motion-planning generator with human teleoperation, annotated by the same per-step monitor, and directly supports safety-aware fine-tuning; we release 8,000 safety-annotated demonstrations, 40 per base task. Benchmarking zero-shot and fine-tuned VLAs across more than 23,000 rollouts, we find: (i) safety must be evaluated independently of task success, as 6-21% of successful rollouts violate the specification; (ii) fine-tuning on our suite raises safe task completion from near zero to 7.5-29.8% and engaged-and-safe behavior from 16-40% to 51-72%; but (iii) a gap remains that scaling demonstrations does not close, with 21-42% of engaged rollouts still violating, two of six families below 2% safe success for every policy, and these failures persisting under distribution shift and on hardware.",
+  "paper_url": "https://arxiv.org/abs/2608.17386",
+  "pdf_url": "https://arxiv.org/pdf/2608.17386",
+  "project_url": "https://nu-ideas-lab.github.io/ManiGuard/",
+  "code_url": "https://github.com/NU-IDEAS-Lab/ManiGuard",
+  "dataset_url": "https://huggingface.co/collections/IDEAS-Lab-Northwestern/maniguard-benchmark-and-datasets-6a83d488178bcba81688cd4e",
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yiyan Peng",
+      "affiliations": []
+    },
+    {
+      "name": "Philip Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Simon Sinong Zhan",
+      "affiliations": []
+    },
+    {
+      "name": "Yiqi Lyu",
+      "affiliations": []
+    },
+    {
+      "name": "Zhenyang Ni",
+      "affiliations": []
+    },
+    {
+      "name": "Jixin Yan",
+      "affiliations": []
+    },
+    {
+      "name": "Fiorelli Wong",
+      "affiliations": []
+    },
+    {
+      "name": "Ruochen Jiao",
+      "affiliations": []
+    },
+    {
+      "name": "Hang Yin",
+      "affiliations": []
+    },
+    {
+      "name": "Xinyu Cao",
+      "affiliations": []
+    },
+    {
+      "name": "Huajie Shao",
+      "affiliations": []
+    },
+    {
+      "name": "Manling Li",
+      "affiliations": []
+    },
+    {
+      "name": "Ruohan Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Qi Zhu",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "northwestern-university",
+      "name": "Northwestern University",
+      "role": "primary"
+    },
+    {
+      "id": "stanford-university",
+      "name": "Stanford University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-19",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data",
+      "infrastructure"
+    ],
+    "topics": [
+      "vla",
+      "control"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [
+      "code",
+      "dataset",
+      "benchmark"
+    ],
+    "properties": [
+      "open-source",
+      "simulation-only"
+    ]
+  },
+  "paper_type": [
+    "benchmark",
+    "dataset",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 93,
+    "selection_reason": "ManiGuard把“完成任务”和“安全完成”拆开，以LTLf约束、自动机监控和确定性复位评测基础模型策略；200个基础任务扩展成1,000个锁定场景，并公开代码与数据套件，适合成为安全评测公共基线。",
+    "candidate_run": "2026-08-20-weekly-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-20",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "主要证据来自仿真而非真实机器人伤害/风险场景",
+      "安全谓词覆盖仍受人工规格和状态可观测性限制"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.17386",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, results and limitations were reviewed from the full HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-20"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.17386"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.17386"
+    },
+    {
+      "type": "project",
+      "url": "https://nu-ideas-lab.github.io/ManiGuard/"
+    },
+    {
+      "type": "code",
+      "url": "https://github.com/NU-IDEAS-Lab/ManiGuard"
+    },
+    {
+      "type": "dataset",
+      "url": "https://huggingface.co/collections/IDEAS-Lab-Northwestern/maniguard-benchmark-and-datasets-6a83d488178bcba81688cd4e"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "source": "paper-fulltext",
+      "url": "https://arxiv.org/html/2608.17386",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/NU-IDEAS-Lab/ManiGuard",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "checked_at": "2026-08-20"
+    },
+    {
+      "kind": "dataset",
+      "url": "https://huggingface.co/collections/IDEAS-Lab-Northwestern/maniguard-benchmark-and-datasets-6a83d488178bcba81688cd4e",
+      "status": "project-linked",
+      "accessible": true,
+      "verification_method": "official-project-link",
+      "checked_at": "2026-08-20"
+    }
+  ]
+}

@@ -1,0 +1,311 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.16885",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "tau_0-VLA: a Hierarchical Robot Foundation Model with World-Model-Guided Test-Time Computation",
+  "title_zh": "τ0-VLA：世界模型引导测试时计算的分层机器人基础模型",
+  "abstract": "Long-horizon robot manipulation requires a robot to both execute individual skills reliably and sequence them coherently over extended tasks. Most hierarchical vision-language-action (VLA) models make each such decision with a single forward pass, leaving no mechanism to allocate additional computation to difficult or consequential choices. We introduce $τ_0$-VLA, a hierarchical robot foundation model that formulates high-level subtask generation as a compute-scalable inference problem through world-model-guided test-time computation. At each inference step, the high-level policy uses execution memory to generate a subtask and, when needed, searches over alternatives before committing to its output. A low-level policy then executes the generated subtask across multiple robot embodiments. The policy is trained on 40,115 hours of heterogeneous real-world data with multimodal co-training. Across in-domain and distribution-shifted settings, allocating additional test-time computation substantially improves next-subtask prediction accuracy, and these gains translate into higher closed-loop success on long-horizon robot manipulation tasks.",
+  "paper_url": "https://arxiv.org/abs/2608.16885",
+  "pdf_url": "https://arxiv.org/pdf/2608.16885",
+  "project_url": "https://tau0-vla.github.io/",
+  "code_url": "https://github.com/sii-research/tau-0-vla",
+  "dataset_url": null,
+  "model_url": "https://huggingface.co/sii-research/tau-0-vla",
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Xiaowei Cai",
+      "affiliations": []
+    },
+    {
+      "name": "Yunuo Cai",
+      "affiliations": []
+    },
+    {
+      "name": "Bingao Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Jingxiao Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Zhi Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Siyuan Feng",
+      "affiliations": []
+    },
+    {
+      "name": "Tengyu Hou",
+      "affiliations": []
+    },
+    {
+      "name": "Jingshun Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Han Jiang",
+      "affiliations": []
+    },
+    {
+      "name": "Runkun Ju",
+      "affiliations": []
+    },
+    {
+      "name": "Dong Li",
+      "affiliations": []
+    },
+    {
+      "name": "Mingxiang Li",
+      "affiliations": []
+    },
+    {
+      "name": "Shaowei Li",
+      "affiliations": []
+    },
+    {
+      "name": "Xinchen Li",
+      "affiliations": []
+    },
+    {
+      "name": "Yifan Li",
+      "affiliations": []
+    },
+    {
+      "name": "Yi Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Zhongyuan Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Jianlan Luo",
+      "affiliations": []
+    },
+    {
+      "name": "Junwen Miao",
+      "affiliations": []
+    },
+    {
+      "name": "Ruiqi Ni",
+      "affiliations": []
+    },
+    {
+      "name": "Buqing Nie",
+      "affiliations": []
+    },
+    {
+      "name": "Mingjie Pan",
+      "affiliations": []
+    },
+    {
+      "name": "Xinlin Ren",
+      "affiliations": []
+    },
+    {
+      "name": "Jianheng Song",
+      "affiliations": []
+    },
+    {
+      "name": "Jiaxu Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Peiqi Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Sen Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaoyan Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Dafeng Wei",
+      "affiliations": []
+    },
+    {
+      "name": "Dongming Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Pengwei Xie",
+      "affiliations": []
+    },
+    {
+      "name": "Pu Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Hangjian Ye",
+      "affiliations": []
+    },
+    {
+      "name": "Xiangyu Yue",
+      "affiliations": []
+    },
+    {
+      "name": "Jinyu Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Qinglin Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Xueyong Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Pengfei Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Yue Zhou",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "shanghai-innovation-institute-and-collaborators",
+      "name": "Shanghai Innovation Institute and collaborators",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-18",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "world-model",
+      "planning"
+    ],
+    "tasks": [
+      "generalist-control",
+      "mobile-manipulation"
+    ],
+    "platforms": [
+      "multi-robot",
+      "humanoid",
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [
+      "code",
+      "model-weights"
+    ],
+    "properties": [
+      "real-robot-evaluation",
+      "large-scale-data",
+      "multi-robot"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "system"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 94,
+    "selection_reason": "这批最强工作。它把额外推理算力放在稀疏的子任务边界，用世界模型预览候选后果并修正执行记忆；四个真机长任务中分层 Plan Once 平均成功率 45.0%，高于同一低层策略直接执行的 27.5%，TTC 又在三项真机任务上继续提升。",
+    "candidate_run": "2026-08-20-weekly-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-20",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "四个长任务每项仅10次真机试验",
+      "40,115小时数据构成复杂，外部团队完整复现成本很高",
+      "项目资产的API级复核需重试"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.16885",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, results and limitations were reviewed from the full HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-20"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.16885"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.16885"
+    },
+    {
+      "type": "project",
+      "url": "https://tau0-vla.github.io/"
+    },
+    {
+      "type": "code",
+      "url": "https://github.com/sii-research/tau-0-vla"
+    },
+    {
+      "type": "model",
+      "url": "https://huggingface.co/sii-research/tau-0-vla"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "source": "official-project-page",
+      "url": "https://tau0-vla.github.io/",
+      "location": "project author and affiliation material"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/sii-research/tau-0-vla",
+      "status": "project-linked-api-verification-error",
+      "accessible": true,
+      "verification_method": "project-link-plus-http",
+      "checked_at": "2026-08-20",
+      "note": "Official project links the repository; GitHub API retry was interrupted, so it is not counted as API-verified."
+    },
+    {
+      "kind": "model",
+      "url": "https://huggingface.co/sii-research/tau-0-vla",
+      "status": "project-linked",
+      "accessible": true,
+      "verification_method": "official-project-link",
+      "checked_at": "2026-08-20"
+    }
+  ]
+}

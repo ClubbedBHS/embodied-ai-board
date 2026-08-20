@@ -1,0 +1,199 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.18077",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Hydra-0: Action Flow for Generalist World Modeling and Control",
+  "title_zh": "Hydra-0：用于通用世界建模与控制的动作流",
+  "abstract": "We introduce Hydra-0, a generalist world model conditioned on action flow, which represents robot actions as pixel motion. This shared visual interface enables generalist world modeling and control by learning action consequences across embodiments, tasks, environments, and video-generation backbones. Our best configuration achieves 90.4% lower robot-motion error and 60.2% lower object-motion error than our action-conditioned baseline, while supporting zero-shot composition and data-efficient adaptation. On the RoboLab benchmark, Hydra-0 achieves a Pearson correlation of r=0.96 between replayed and reference success rates. Finally, we uncover an emergent inverse mode of this interface: a world action model that predicts compatible robot motion from desired object flow transferred from a human demonstration. A trained action head maps the resulting latent features to executable actions without requiring task-specific expert robot demonstrations. Together, these results demonstrate the potential of action flow as a shared control interface connecting heterogeneous training data, open-loop policy evaluation, and robot control.",
+  "paper_url": "https://arxiv.org/abs/2608.18077",
+  "pdf_url": "https://arxiv.org/pdf/2608.18077",
+  "project_url": "https://nvidia-isaac.github.io/video_to_data/hydra-0/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Hongyu Li",
+      "affiliations": []
+    },
+    {
+      "name": "Bowen Wen",
+      "affiliations": []
+    },
+    {
+      "name": "Xinghao Zhu",
+      "affiliations": []
+    },
+    {
+      "name": "Yixuan Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Yilun Du",
+      "affiliations": []
+    },
+    {
+      "name": "Yunzhu Li",
+      "affiliations": []
+    },
+    {
+      "name": "George Konidaris",
+      "affiliations": []
+    },
+    {
+      "name": "Stan Birchfield",
+      "affiliations": []
+    },
+    {
+      "name": "Soha Pouya",
+      "affiliations": []
+    },
+    {
+      "name": "Chenran Li",
+      "affiliations": []
+    },
+    {
+      "name": "Yan Chang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "nvidia",
+      "name": "NVIDIA",
+      "role": "primary"
+    },
+    {
+      "id": "brown-university",
+      "name": "Brown University",
+      "role": "collaborator"
+    },
+    {
+      "id": "columbia-university",
+      "name": "Columbia University",
+      "role": "collaborator"
+    },
+    {
+      "id": "harvard-university",
+      "name": "Harvard University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-19",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model",
+      "representation-learning",
+      "control"
+    ],
+    "tasks": [
+      "generalist-control",
+      "manipulation"
+    ],
+    "platforms": [
+      "multi-robot",
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation",
+      "multi-robot"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "system"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 89,
+    "selection_reason": "Hydra-0用像素运动作为跨embodiment动作接口，使同一世界模型支持预测、开放环策略评测和从人类物体flow反推动作。RoboLab上重放与真实成功率相关系数0.96，但当前闭环和真机验证仍有限。",
+    "candidate_run": "2026-08-20-weekly-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-20",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前主要是开放环评测",
+      "真机腕部相机仅定性proof of concept",
+      "未找到官方代码直链"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.18077",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, results and limitations were reviewed from the full HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-20"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.18077"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.18077"
+    },
+    {
+      "type": "project",
+      "url": "https://nvidia-isaac.github.io/video_to_data/hydra-0/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "source": "paper-fulltext",
+      "url": "https://arxiv.org/html/2608.18077",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://nvidia-isaac.github.io/video_to_data/hydra-0/",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "checked_at": "2026-08-20"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "accessible": false,
+      "verification_method": "paper-and-project-scan",
+      "checked_at": "2026-08-20"
+    }
+  ]
+}

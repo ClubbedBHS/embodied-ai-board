@@ -1,0 +1,206 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.18618",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "LabDex: A Hierarchical Benchmark for Dexterous Manipulation in Laboratories",
+  "title_zh": "LabDex：面向实验室灵巧操作的分层基准",
+  "abstract": "Autonomous laboratories hold great promise for accelerating scientific discovery. To achieve this vision, robots are supposed to dexterously manipulate diverse labware and instruments and execute long-horizon, state-dependent experimental procedures. Yet existing benchmarks do not jointly capture dexterous hand use, real-world laboratory interactions, and multi-stage experimental procedures, limiting systematic training and evaluation. To bridge this gap, we introduce LabDex, a large-scale real-world dataset and benchmark for dexterous manipulation in chemistry laboratories, organized around a hierarchical task taxonomy spanning atomic skills, compositional tasks, and long-horizon experiments. First, LabDex is cross-platform and, for the first time, unifies real-world and simulation platforms under a common framework, providing standardized task definitions, demonstrations, and evaluation protocols. Second, LabDex is large-scale and systematically organizes chemistry laboratory operations into three interconnected levels: Atomic Skills, which characterize fundamental dexterous manipulation capabilities; Compositional Skills; and Long-Horizon Laboratory Workflows. This hierarchical design not only supports the evaluation of end-task performance, but also enables the analysis of how fundamental dexterous skills compose and influence more complex laboratory operations. We conduct cross-level evaluations of representative robot learning methods in both real-world and simulation environments. The experimental results validate the effectiveness of the LabDex task design and demonstration data, and show that the benchmark supports the training and systematic evaluation of existing robotic policies across laboratory dexterous manipulation tasks at different levels, providing a foundation for further research and development of autonomous laboratory robots.",
+  "paper_url": "https://arxiv.org/abs/2608.18618",
+  "pdf_url": "https://arxiv.org/pdf/2608.18618",
+  "project_url": "https://zhipeng-tang.github.io/LabDex/",
+  "code_url": null,
+  "dataset_url": "https://huggingface.co/datasets/serandt/LabDex",
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Zhipeng Tang",
+      "affiliations": []
+    },
+    {
+      "name": "Sihang Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Sha Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Peihao Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Yan Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Wentao Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Xinrui Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Rui Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Wensheng Du",
+      "affiliations": []
+    },
+    {
+      "name": "Yuting Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Jiajun Deng",
+      "affiliations": []
+    },
+    {
+      "name": "Lidian Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Yuan Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Yanyong Zhang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "labdex-collaboration",
+      "name": "LabDex collaboration",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-20",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data"
+    ],
+    "topics": [
+      "imitation-learning",
+      "behavior-cloning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "dexterous-hand",
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "proprioception",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [
+      "dataset"
+    ],
+    "properties": [
+      "real-robot-evaluation",
+      "large-scale-data"
+    ]
+  },
+  "paper_type": [
+    "dataset",
+    "benchmark"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 89,
+    "selection_reason": "LabDex把实验室灵巧操作按原子技能、组合技能和长流程组织，并统一真机与仿真任务定义。结果不只给总成功率，还暴露初始抓取和技能过渡是长流程失败的主要瓶颈，数据入口已提供。",
+    "candidate_run": "2026-08-20-weekly-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-20",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "项目页仍将代码标为Coming Soon",
+      "实验室对象和任务分布较专门",
+      "部分长流程评测仍受低层技能失败主导"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.18618",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, results and limitations were reviewed from the full HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-20"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.18618"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.18618"
+    },
+    {
+      "type": "project",
+      "url": "https://zhipeng-tang.github.io/LabDex/"
+    },
+    {
+      "type": "code",
+      "url": "https://github.com/Zhipeng-Tang/LabDex"
+    },
+    {
+      "type": "dataset",
+      "url": "https://huggingface.co/datasets/serandt/LabDex"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "source": "official-project-page",
+      "url": "https://zhipeng-tang.github.io/LabDex/",
+      "location": "author block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/Zhipeng-Tang/LabDex",
+      "status": "verified-shell-code-coming-soon",
+      "accessible": true,
+      "verification_method": "github-api-plus-project-page",
+      "checked_at": "2026-08-20",
+      "note": "Repository exists, but project labels code Coming Soon; do not award full code credit."
+    },
+    {
+      "kind": "dataset",
+      "url": "https://huggingface.co/datasets/serandt/LabDex",
+      "status": "project-linked",
+      "accessible": true,
+      "verification_method": "official-project-link",
+      "checked_at": "2026-08-20"
+    }
+  ]
+}
