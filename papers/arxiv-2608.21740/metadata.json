@@ -1,0 +1,142 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.21740",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "CounterAlign: Counterfactual Supervision for Vision-Language-Action Models",
+  "title_zh": "CounterAlign：面向VLA的反事实监督",
+  "abstract": "Vision-Language-Action (VLA) models are typically trained with behavior cloning (BC) on expert demonstrations. However, BC provides only positive supervision for expert actions, without explicit negative supervision indicating which actions are instruction-inconsistent or otherwise inappropriate. Reinforcement learning (RL) can provide such corrective signals, but often relies on externally specified rewards or curated non-expert data, both of which are costly to obtain in robotics. We show that offline RL for VLA models need not rely on curated non-expert trajectories: successful expert demonstrations alone can be transformed into dense corrective supervision through instruction relabeling. Specifically, by pairing expert actions with mismatched alternative instructions, we synthesize counterfactual instruction-observation-action tuples from the dataset and combine them with adversarial discriminator training to learn an instruction-grounded reward model for offline RL, without collecting additional rollouts or annotations. On the robustness-focused LIBERO-PRO benchmark, our method improves robustness to object position and task perturbations over a strong state-of-the-art baseline. It also outperforms competitive baselines in real-robot experiments on the TX-G2 (compatible with AGIBot G2). More broadly, our results suggest that, for data-constrained VLA learning, extracting denser supervision from each demonstration can complement collecting additional data.",
+  "paper_url": "https://arxiv.org/abs/2608.21740",
+  "pdf_url": "https://arxiv.org/pdf/2608.21740",
+  "project_url": "https://counteralign.airoa.io/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Haru Kondoh",
+      "affiliations": []
+    },
+    {
+      "name": "Kei Ota",
+      "affiliations": []
+    },
+    {
+      "name": "Asako Kanezaki",
+      "affiliations": []
+    },
+    {
+      "name": "Yueh-Hua Wu",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-08-25",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "reinforcement-learning",
+      "imitation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 79,
+    "selection_reason": "CounterAlign从成功示范构造指令错配反事实样本，学习语言—动作奖励并进行离线RL；LIBERO-PRO在位置和任务扰动上改善，但真机只有10次试验且训练参数从3.4B增至约12.7B，因此先常规收录。",
+    "candidate_run": "2026-08-25-weekly-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-25",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "真机只有10次试验，证据不足以支持强泛化结论",
+      "辅助判别器与critic将训练参数增至约12.7B",
+      "项目页明确写Code Coming Soon"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.21740",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, ablations or discussion, and limitations were reviewed from full HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-25"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.21740"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.21740"
+    },
+    {
+      "type": "project",
+      "url": "https://counteralign.airoa.io/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://counteralign.airoa.io/",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "checked_at": "2026-08-25"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "announced-not-released",
+      "accessible": false,
+      "verification_method": "project-page-scan",
+      "checked_at": "2026-08-25",
+      "note": "Project page says Code Coming Soon."
+    }
+  ]
+}

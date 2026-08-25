@@ -1,0 +1,169 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.20546",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Koala Gripper: Co-designing Robotic Grippers and Data-Capture Devices for Scaling Dexterous Manipulation Learning",
+  "title_zh": "Koala Gripper：面向灵巧操作学习的夹爪与数据采集器协同设计",
+  "abstract": "As the demand for larger manipulation datasets grows, handheld robotic gripper data collection and the associated gripper designs become more vital. Current data collection device designs trend towards matching the morphologies of existing robotic grippers, sacrificing ergonomics and manipulation performance. In this paper, we propose a co-design framework that guides the simultaneous development of both data collection and robotic execution devices by weaving both platform constraints into the design process. Through this workflow, we present the Koala Gripper system, a data capture device and robotic gripper platform that improves dexterity and grasp capability compared to parallel jaw grippers while preserving scalability and ease-of-use. The design introduces a novel force-optimized finger/trigger linkage mechanism with directional reflected mass characteristics, a unique monolithic dual-thumb, and user-centered ergonomic design. The design's actuated robotic fingers are backdrivable, with effective mass on the order of tens of grams. We show that these grippers are capable of secure grasps over a wide range of objects, forceful tool use, and precise singulation. We further validate the platform by deploying it with an end-to-end data collection and policy execution pipeline that highlights its capabilities through learning from demonstration. More information available at http://koalagripper.rai-inst.com",
+  "paper_url": "https://arxiv.org/abs/2608.20546",
+  "pdf_url": "https://arxiv.org/pdf/2608.20546",
+  "project_url": "https://koalagripper.rai-inst.com/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Amar Hajj-Ahmad",
+      "affiliations": []
+    },
+    {
+      "name": "Zubin Kremer Guha",
+      "affiliations": []
+    },
+    {
+      "name": "Tim Fofonoff",
+      "affiliations": []
+    },
+    {
+      "name": "Zhi Ern Teoh",
+      "affiliations": []
+    },
+    {
+      "name": "Ciarán T. O'Neill",
+      "affiliations": []
+    },
+    {
+      "name": "Ben Thacher",
+      "affiliations": []
+    },
+    {
+      "name": "Igor Fala",
+      "affiliations": []
+    },
+    {
+      "name": "Vidullan Surendran",
+      "affiliations": []
+    },
+    {
+      "name": "Murphy Wonsick",
+      "affiliations": []
+    },
+    {
+      "name": "Peter Whitney",
+      "affiliations": []
+    },
+    {
+      "name": "David Watkins",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "the-robotics-and-ai-institute",
+      "name": "The Robotics and AI Institute",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-24",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "infrastructure",
+      "data"
+    ],
+    "topics": [
+      "imitation-learning",
+      "control"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "dexterous-hand",
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "proprioception",
+      "action"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "infrastructure",
+    "system"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 89,
+    "selection_reason": "Koala Gripper把手持采集器与机器人执行夹爪共同设计，在保留便携采集的同时增加双拇指、三自由度、低反射质量和工具使用能力；250条手持与100条遥操作示范验证了数据到扩散策略的完整链路。",
+    "candidate_run": "2026-08-25-weekly-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-25",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "策略结果主要是定性成功展示，缺少系统成功率表",
+      "没有力状态传感，尚不能训练力反馈策略",
+      "任务和数据规模仍小，操作员疲劳未做正式用户研究"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.20546",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, ablations or discussion, and limitations were reviewed from full HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-25"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.20546"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.20546"
+    },
+    {
+      "type": "project",
+      "url": "https://koalagripper.rai-inst.com/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://koalagripper.rai-inst.com/",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "checked_at": "2026-08-25"
+    }
+  ]
+}

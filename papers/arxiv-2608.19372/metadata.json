@@ -1,0 +1,123 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.19372",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "The Missing Touch: Spatially Distributed Tactile Feedback Brings Teleoperation Closer to Human Dexterity",
+  "title_zh": "The Missing Touch：分布式触觉反馈让遥操作更接近人类灵巧性",
+  "abstract": "A fundamental challenge in robotic teleoperation is enabling an operator to control a remote robot as effortlessly and intuitively as their own hands. Despite the growing use of teleoperation to collect demonstration data for training autonomous robot policies, teleoperated robot performance still falls significantly short of human dexterity, even for basic tasks. Here, we present evidence that a key factor contributing to this performance gap is the absence of spatially distributed tactile feedback. Using a two-degree-of-freedom (DoF) bilateral force-feedback telemanipulator paired with a 32-DoF tactile fingertip display, we show that operator performance improves significantly when localized deformations on the remote manipulator are faithfully reproduced on the operator's fingertip. In a series of teleoperation tasks, reproducing distributed contact information not only accelerated task performance but also brought teleoperated movements closer to natural human behavior by minimizing corrective actions and task completion steps, thereby reducing the deviation between teleoperated and natural trajectories by 29$\\unicode{x2013}$79%. Furthermore, we found that increasing the resolution of the tactile feedback$\\unicode{x2014}$by refining how finely the measured displacements were quantized for reproduction$\\unicode{x2014}$compressed the state-space distribution of teleoperated motions, which has been associated with improved training outcomes for autonomous robot policies. Together, these results suggest that spatially distributed tactile feedback is essential for closing the gap between human and teleoperated dexterity and training the next generation of autonomous robots.",
+  "paper_url": "https://arxiv.org/abs/2608.19372",
+  "pdf_url": "https://arxiv.org/pdf/2608.19372",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Rohan Kota",
+      "affiliations": []
+    },
+    {
+      "name": "Gregory Reardon",
+      "affiliations": []
+    },
+    {
+      "name": "J. Edward Colgate",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "northwestern-university-center-for-robotics-and-biosystems",
+      "name": "Northwestern University Center for Robotics and Biosystems",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-21",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "infrastructure",
+      "data"
+    ],
+    "topics": [
+      "imitation-learning",
+      "control"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "tactile",
+      "proprioception",
+      "action"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "infrastructure",
+    "system"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 88,
+    "selection_reason": "The Missing Touch用32自由度触觉显示器把机器人指尖的空间形变回传给操作者；两项受试者实验各48次试验，分布式触觉使遥操作轨迹与自然动作的偏差降低29%–79%，并收紧多操作员数据分布。",
+    "candidate_run": "2026-08-25-weekly-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-25",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "系统只有2自由度，尚未在多指多自由度遥操作中验证",
+      "没有直接训练机器人策略证明数据质量收益",
+      "受试者规模分别为12和10人，硬件复现成本较高"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.19372",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, ablations or discussion, and limitations were reviewed from full HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-25"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.19372"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.19372"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": []
+}

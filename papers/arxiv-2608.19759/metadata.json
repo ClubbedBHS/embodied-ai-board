@@ -1,0 +1,164 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.19759",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "GOAG: Generative and Object-Agnostic Grasp Planner for Dexterous Robotic Manipulation",
+  "title_zh": "GOAG：与物体无关的生成式灵巧抓取规划器",
+  "abstract": "Multifingered grasping is a crucial robotic skill, but current deep-learning grasp planners often struggle to generalize to new objects because they are trained on limited, object-specific datasets. We introduce a fundamentally different approach, grounded in the observation that the gripper and the object share identical surface geometry at their mutual contact points. We propose GOAG: Generative and Object-Agnostic Grasp Planner for Dexterous Robotic Manipulation, a novel deep generative model that learns a compact latent representation of a specific gripper's contact surface distribution, enabling the efficient sampling of valid grasp configurations without relying on object-specific training data. We show that by introducing object features only at inference time, our model can effectively retrieve admissible contact areas that are compatible with the gripper's capabilities. We validate our approach through extensive experiments on established grasp protocols in both simulated and real-world scenarios, demonstrating its effectiveness with different grippers from the literature. Our method delivers state-of-the-art results on the objects from the MultiDex dataset, achieving an average success rate of 86.93%. It offers significantly faster processing when generating numerous grasps, while matching the performance of leading approaches specifically trained on this dataset. Unlike these methods, our approach does not rely on object-specific training data, highlighting the advantages of object-agnostic learning. It effectively addresses the generalization challenges faced by traditional data-driven grasp planners. Code and videos are available on our project website https://cea-list.github.io/goagweb/ .",
+  "paper_url": "https://arxiv.org/abs/2608.19759",
+  "pdf_url": "https://arxiv.org/pdf/2608.19759",
+  "project_url": "https://cea-list.github.io/goagweb/",
+  "code_url": "https://github.com/CEA-LIST/GOAG",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Julien Merand",
+      "affiliations": []
+    },
+    {
+      "name": "Boris Meden",
+      "affiliations": []
+    },
+    {
+      "name": "Mathieu Grossard",
+      "affiliations": []
+    },
+    {
+      "name": "Liming Chen",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "université-paris-saclay-cea-list",
+      "name": "Université Paris-Saclay, CEA List",
+      "role": "primary"
+    },
+    {
+      "id": "école-centrale-de-lyon",
+      "name": "École Centrale de Lyon",
+      "role": "collaborator"
+    },
+    {
+      "id": "cnrs-liris",
+      "name": "CNRS LIRIS",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-21",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "representation-learning",
+      "control"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "dexterous-hand",
+      "robot-arm"
+    ],
+    "modalities": [
+      "point-cloud",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [
+      "code"
+    ],
+    "properties": [
+      "open-source",
+      "real-robot-evaluation",
+      "zero-shot"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 79,
+    "selection_reason": "GOAG只从夹爪自身几何与运动学学习接触分布，在测试时才引入物体；MultiDex平均成功率86.93%，并跨五个基准比较。真机只展示11个YCB物体且缺少重复试验统计，暂不升为featured。",
+    "candidate_run": "2026-08-25-weekly-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-25",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "真机结果是11个物体的成功展示，没有报告重复试验成功率",
+      "仍依赖显式力闭合检查与后处理优化",
+      "对象姿态采样对大型物体效果有限"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.19759",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, ablations or discussion, and limitations were reviewed from full HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-25"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.19759"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.19759"
+    },
+    {
+      "type": "project",
+      "url": "https://cea-list.github.io/goagweb/"
+    },
+    {
+      "type": "code",
+      "url": "https://github.com/CEA-LIST/GOAG"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://cea-list.github.io/goagweb/",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "checked_at": "2026-08-25"
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/CEA-LIST/GOAG",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "checked_at": "2026-08-25"
+    }
+  ]
+}

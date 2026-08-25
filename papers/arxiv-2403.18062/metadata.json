@@ -1,0 +1,166 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2403.18062",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "ShapeGrasp: Zero-Shot Task-Oriented Grasping with Large Language Models through Geometric Decomposition",
+  "title_zh": "ShapeGrasp：通过几何分解与大语言模型实现零样本任务导向抓取",
+  "abstract": "Task-oriented grasping of unfamiliar objects is a necessary skill for robots in dynamic in-home environments. Inspired by the human capability to grasp such objects through intuition about their shape and structure, we present a novel zero-shot task-oriented grasping method leveraging a geometric decomposition of the target object into simple, convex shapes that we represent in a graph structure, including geometric attributes and spatial relationships. Our approach employs minimal essential information - the object's name and the intended task - to facilitate zero-shot task-oriented grasping. We utilize the commonsense reasoning capabilities of large language models to dynamically assign semantic meaning to each decomposed part and subsequently reason over the utility of each part for the intended task. Through extensive experiments on a real-world robotics platform, we demonstrate that our grasping approach's decomposition and reasoning pipeline is capable of selecting the correct part in 92% of the cases and successfully grasping the object in 82% of the tasks we evaluate. Additional videos, experiments, code, and data are available on our project website: https://shapegrasp.github.io/.",
+  "paper_url": "https://arxiv.org/abs/2403.18062",
+  "pdf_url": "https://arxiv.org/pdf/2403.18062",
+  "project_url": "https://shapegrasp.github.io/",
+  "code_url": "https://github.com/samwli/ShapeGrasp",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Samuel Li",
+      "affiliations": []
+    },
+    {
+      "name": "Sarthak Bhagat",
+      "affiliations": []
+    },
+    {
+      "name": "Joseph Campbell",
+      "affiliations": []
+    },
+    {
+      "name": "Yaqi Xie",
+      "affiliations": []
+    },
+    {
+      "name": "Woojun Kim",
+      "affiliations": []
+    },
+    {
+      "name": "Katia Sycara",
+      "affiliations": []
+    },
+    {
+      "name": "Simon Stepputtis",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "carnegie-mellon-university",
+      "name": "Carnegie Mellon University",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2024-03-26",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "foundation-model",
+      "planning",
+      "control"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "point-cloud",
+      "action"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [
+      "code"
+    ],
+    "properties": [
+      "open-source",
+      "real-robot-evaluation",
+      "zero-shot"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 83,
+    "selection_reason": "ShapeGrasp把凸几何分解、结构图和LLM常识推理组合为零样本任务导向抓取管线；真机上正确选中目标部件92%，抓取成功率82%，明显高于GPT-4V与GraspGPT对照。它是Yaqi Xie作品中最直接、证据较完整的机器人操作工作之一。",
+    "candidate_run": "2026-08-10-yaqi-xie",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-25",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "依赖合理的凸分解和已知物体名称",
+      "只执行自上而下抓取，复杂姿态与遮挡覆盖有限",
+      "推理时间约30秒"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2403.18062",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, ablations and limitations were reviewed from full HTML during the author-portfolio scan.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-10"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2403.18062"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2403.18062"
+    },
+    {
+      "type": "project",
+      "url": "https://shapegrasp.github.io/"
+    },
+    {
+      "type": "code",
+      "url": "https://github.com/samwli/ShapeGrasp"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "source": "official-project-page",
+      "url": "https://shapegrasp.github.io/",
+      "location": "author block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/samwli/ShapeGrasp",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "checked_at": "2026-08-10"
+    }
+  ]
+}

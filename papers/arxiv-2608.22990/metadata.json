@@ -1,0 +1,220 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.22990",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "InstructMove: A Text-Indispensable Benchmark for Instruction-Following Manipulation",
+  "title_zh": "InstructMove：让文字不可替代的指令跟随操作基准",
+  "abstract": "Vision-language-action (VLA) models have made general-purpose robot manipulation increasingly plausible by conditioning robot actions on natural-language instructions. A key test of such generality is whether policies actually follow language instructions. Yet many manipulation benchmarks leave this ability underdetermined: the intended object or destination is often visually salient or uniquely feasible, allowing policies to succeed without grounding the instruction. We argue that instruction-following evaluation should be text-indispensable: multiple actions should be visually and physically plausible, while only one should be consistent with the language instruction. We introduce InstructMove, a text-indispensable benchmark for instruction-following manipulation. InstructMove instantiates this principle in pick-and-place scenes with semantic distractors, decomposing instruction following into category identification, attribute discrimination, spatial reasoning, and compositional pick-and-place. InstructMove supports a train-eval protocol with InstructMove training data and held-out evaluation tasks, with additional diagnostics for language dependence. Experiments with representative VLA policies show that InstructMove provides a controlled testbed for diagnosing visual shortcuts and that InstructMove simulation data can improve real-world instruction-following manipulation performance. Code: https://github.com/HorizonRobotics/RoboOrchardSim",
+  "paper_url": "https://arxiv.org/abs/2608.22990",
+  "pdf_url": "https://arxiv.org/pdf/2608.22990",
+  "project_url": null,
+  "code_url": "https://github.com/HorizonRobotics/RoboOrchardSim",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Mengao Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Ziang Li",
+      "affiliations": []
+    },
+    {
+      "name": "Chaodong Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Mengchen Ma",
+      "affiliations": []
+    },
+    {
+      "name": "Haoyi Jiang",
+      "affiliations": []
+    },
+    {
+      "name": "Yiwei Jin",
+      "affiliations": []
+    },
+    {
+      "name": "Xinjie Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Yun Du",
+      "affiliations": []
+    },
+    {
+      "name": "Xuewu Lin",
+      "affiliations": []
+    },
+    {
+      "name": "Taojun Ding",
+      "affiliations": []
+    },
+    {
+      "name": "Hongyu Xie",
+      "affiliations": []
+    },
+    {
+      "name": "Jackson Jiang",
+      "affiliations": []
+    },
+    {
+      "name": "Chunlei Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Kaihua Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Lichao Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Liu Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Tianwei Lin",
+      "affiliations": []
+    },
+    {
+      "name": "Zhizhong Su",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "horizon-robotics",
+      "name": "Horizon Robotics",
+      "role": "primary"
+    },
+    {
+      "id": "wuwenai",
+      "name": "WuwenAI",
+      "role": "collaborator"
+    },
+    {
+      "id": "southeast-university",
+      "name": "Southeast University",
+      "role": "collaborator"
+    },
+    {
+      "id": "huazhong-university-of-science-and-technology",
+      "name": "Huazhong University of Science and Technology",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-25",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data",
+      "infrastructure"
+    ],
+    "topics": [
+      "vla",
+      "sim-to-real",
+      "imitation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "multi-robot",
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "depth",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [
+      "code",
+      "benchmark"
+    ],
+    "properties": [
+      "open-source",
+      "real-robot-evaluation",
+      "multi-robot"
+    ]
+  },
+  "paper_type": [
+    "benchmark",
+    "dataset",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 89,
+    "selection_reason": "InstructMove强制同一场景存在多个可行目标，让语言成为动作选择的必要变量；1,757个验证资产、四类任务、逐阶段指标和反事实指令诊断揭示视觉捷径，混合2,000条仿真与200条真机示范取得最佳真机结果。",
+    "candidate_run": "2026-08-25-weekly-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-25",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前评测在相同任务族上微调，可能混入模板适配收益",
+      "50次真机评测不足以证明仿真排名可预测真实排名",
+      "主要限于桌面pick-and-place"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.22990",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, ablations or discussion, and limitations were reviewed from full HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-25"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.22990"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.22990"
+    },
+    {
+      "type": "code",
+      "url": "https://github.com/HorizonRobotics/RoboOrchardSim"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/HorizonRobotics/RoboOrchardSim",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "checked_at": "2026-08-25"
+    }
+  ]
+}

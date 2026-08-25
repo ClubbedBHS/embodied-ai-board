@@ -1,0 +1,166 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.21290",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "VT-MUSE: Multimodal Unified Sequential Visuotactile Representation Learning for Manipulation",
+  "title_zh": "VT-MUSE：统一序列视觉触觉表征学习",
+  "abstract": "We propose VT-MUSE, a Multimodal Unified SEquential representation learning framework for visuotactilemanipulation. Existing approaches often encode visual and tactile observations independently before fusion, limiting their ability to capture fine-grained cross-modal dependencies. Moreover, most methods focus on observations at the current time step and overlook the temporal evolution of contact. VT-MUSE addresses both limitations through a two-stage representation learning framework. In Stage I, modality specific encoders are jointly adapted via cross-modal temporal alignment and masked-view consistency. In Stage II, a conditional variational latent model processes masked visual sequences together with full tactile histories. Auxiliary decoders reconstruct the masked recent visual observations and predict tactile depth changes, encouraging the latent representation to retain both global visual context and local contact dynamics. The learned representation is subsequently integrated into a lightweight Transformer policy through gated cross-attention. On the simulation benchmark, VT-MUSE outperforms the strongest baseline evaluated on all tasks by 11 percentage points and also achieves substantial improvements in real-world experiments.",
+  "paper_url": "https://arxiv.org/abs/2608.21290",
+  "pdf_url": "https://arxiv.org/pdf/2608.21290",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Congsheng Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Qiaochu Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Fangyuan Shi",
+      "affiliations": []
+    },
+    {
+      "name": "Yifan Han",
+      "affiliations": []
+    },
+    {
+      "name": "Baijun Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Yiming Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Haonan Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Daolin Ma",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaokang Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Hesheng Wang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "xense-robotics",
+      "name": "Xense Robotics",
+      "role": "primary"
+    },
+    {
+      "id": "shanghai-jiao-tong-university",
+      "name": "Shanghai Jiao Tong University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-24",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "representation-learning",
+      "imitation-learning",
+      "control"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "tactile",
+      "proprioception",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 87,
+    "selection_reason": "VT-MUSE用跨模态时序对齐、遮蔽视觉重建和触觉深度变化预测学习统一视觉触觉记忆；四项仿真任务平均领先最强对照11个百分点，四项真机任务80次试验成功76次。",
+    "candidate_run": "2026-08-25-weekly-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-25",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "官方项目链接当前返回GitHub Pages 404",
+      "预训练最多只有7项任务，尚无规模规律",
+      "固定采样步长和窗口限制了时序适应性"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.21290",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, ablations or discussion, and limitations were reviewed from full HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-25"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.21290"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.21290"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://vt-series.github.io/VT-MUSE/",
+      "status": "project-linked-http-404",
+      "accessible": false,
+      "verification_method": "http-get",
+      "checked_at": "2026-08-25",
+      "note": "Official paper links this project URL, but it currently resolves to a GitHub Pages 404."
+    }
+  ]
+}

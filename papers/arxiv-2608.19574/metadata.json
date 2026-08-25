@@ -1,0 +1,144 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.19574",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "HiTac-WAM: A Hierarchical Tactile World Action Model for Contact-Rich Robot Manipulation",
+  "title_zh": "HiTac-WAM：面向接触密集操作的分层触觉世界动作模型",
+  "abstract": "World action models jointly predict future visual observations and actions, whereas existing tactile-aware variants typically represent future touch as an image or latent stream without modeling the physical dependencies that organize tactile states hierarchically. We present HiTac-WAM, a hierarchical tactile world action model that forecasts a sequence of future tactile states for each candidate action chunk before execution. The forecast factorizes into contact state, a 3D deformation field, and slip risk, organized as a directed hierarchy in which each downstream stage is conditioned on stop-gradient signals from preceding stages. A directed attention mask allows tactile queries to attend to the video-action context of each candidate while preventing video and action queries from attending to tactile tokens. For planning, HiTac-WAM ranks candidate action chunks using tactile forecasts and task-progress estimates. For execution, the selected tactile forecast is retained as a reference; persistent discrepancies between predicted and observed tactile states trigger corrective replanning. HiTac-WAM achieves a mean contact F1 of 0.921; under matched training budgets, the directed hierarchy reduces 3D displacement L2 error by 17.6% relative to the deformation-only predictor and improves slip AUPRC by 60.4% relative to the slip-only predictor. Across chip grasping, blackboard erasing, and USB insertion, selection guided by the hierarchical forecasts increases the average real-robot success rate from 31.1% to 61.1%, while the full system attains 72.2%.",
+  "paper_url": "https://arxiv.org/abs/2608.19574",
+  "pdf_url": "https://arxiv.org/pdf/2608.19574",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Chao Xue",
+      "affiliations": []
+    },
+    {
+      "name": "Chaofan Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Wenxuan Ma",
+      "affiliations": []
+    },
+    {
+      "name": "Guocai Yao",
+      "affiliations": []
+    },
+    {
+      "name": "Shaowei Cui",
+      "affiliations": []
+    },
+    {
+      "name": "Shuo Wang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "institute-of-automation-chinese-academy-of-sciences",
+      "name": "Institute of Automation, Chinese Academy of Sciences",
+      "role": "primary"
+    },
+    {
+      "id": "imprintx-robotics",
+      "name": "ImprintX Robotics",
+      "role": "collaborator"
+    },
+    {
+      "id": "beijing-academy-of-artificial-intelligence",
+      "name": "Beijing Academy of Artificial Intelligence",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-21",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model",
+      "planning",
+      "control"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "tactile",
+      "action"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 91,
+    "selection_reason": "HiTac-WAM把接触、3D形变和滑移风险组织成有向触觉层级，并让预测同时参与候选动作选择和在线复核；三项真机任务中选择机制把平均成功率从31.1%提高到61.1%，完整系统达到72.2%。",
+    "candidate_run": "2026-08-25-weekly-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-25",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "仅三个任务且每项30次真机试验",
+      "未单独评估模型生成动作块上的预测质量",
+      "滑移概率尚未为在线检测完成校准，未发现公开资产"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.19574",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, ablations or discussion, and limitations were reviewed from full HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-25"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.19574"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.19574"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": []
+}

@@ -1,0 +1,157 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.20114",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "DECOWAM: Decoupled Whole-Body World-Action Model for Legged Mobile Manipulation",
+  "title_zh": "DECOWAM：面向腿式移动操作的解耦全身世界动作模型",
+  "abstract": "Mobile manipulation requires a robot to predict how locomotion and arm motion jointly alter future observations and control. Existing world-action models, developed largely for fixed-base platforms, do not explicitly distinguish camera ego-motion from base and arm actions. Here we introduce DECOWAM, a whole-body world-action model that separates these factors through dedicated conditional interfaces. DECOWAM freezes an adapted FastWAM backbone and trains residual adapters, an action-equivalent future bottleneck distilled from privileged observations, adversarially separated base and arm latents, and base-velocity conditioning for video prediction. We further introduce ARMDOG, a real-robot dataset that synchronizes video, whole-body state and action, and language. On a fixed replay protocol, DECOWAM improved both future-video and action prediction over FastWAM, reducing action MSE by 21.7% with 25.95M trainable adaptation parameters. Across 79 closed-loop trials per method, it achieved the highest observed whole-body coordination and base-displacement robustness among the compared systems, while task completion remained comparable to the strongest baseline. These results show that embodiment-aware factorization can support parameter-efficient joint visual prediction and whole-body control under moving viewpoints.",
+  "paper_url": "https://arxiv.org/abs/2608.20114",
+  "pdf_url": "https://arxiv.org/pdf/2608.20114",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Siyuan Ma",
+      "affiliations": []
+    },
+    {
+      "name": "Boshi Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Yutian Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Qinglian Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Jiaqi Zhai",
+      "affiliations": []
+    },
+    {
+      "name": "Dong Wei",
+      "affiliations": []
+    },
+    {
+      "name": "Qiaojun Yu",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "tsinghua-university",
+      "name": "Tsinghua University",
+      "role": "primary"
+    },
+    {
+      "id": "shanghai-artificial-intelligence-laboratory",
+      "name": "Shanghai Artificial Intelligence Laboratory",
+      "role": "collaborator"
+    },
+    {
+      "id": "harbin-institute-of-technology",
+      "name": "Harbin Institute of Technology",
+      "role": "collaborator"
+    },
+    {
+      "id": "deep-robotics",
+      "name": "DEEP Robotics",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-21",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data"
+    ],
+    "topics": [
+      "world-model",
+      "control",
+      "representation-learning"
+    ],
+    "tasks": [
+      "mobile-manipulation"
+    ],
+    "platforms": [
+      "quadruped",
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "proprioception",
+      "action"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "dataset"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 89,
+    "selection_reason": "DECOWAM显式拆分腿式移动操作中的基座、机械臂与相机自运动，并配套ARMDOG真机数据；1,487个清洗回合、34万帧和每方法79次闭环试验支持全身协调与扰动鲁棒性判断。",
+    "candidate_run": "2026-08-25-weekly-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-25",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "主要数据由两个物体操作任务组成，分布较窄",
+      "任务完成率与最强基线相当，优势集中在协调和扰动指标",
+      "数据与代码均为计划发布，尚无可核验直链"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.20114",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, ablations or discussion, and limitations were reviewed from full HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-25"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.20114"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.20114"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": []
+}

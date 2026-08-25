@@ -1,0 +1,134 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.23224",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Think Only When Needed: Prompt-Authority Control for Selective Slow-Path Intervention in Vision-Language-Action Manipulation",
+  "title_zh": "TOWN-VLA：只在必要时思考的提示权限控制",
+  "abstract": "Retrieval can efficiently and effectively augment a frozen vision--language--action (VLA) policy without retraining, yet retrieved text becomes a control intervention once it enters the executed prompt. In a matched audit, raw appended text reduces mean success from 92.47\\% to 3.00\\%, while meaningful and length-matched meaningless appends both fail on all 500 states. This result identifies \\emph{prompt-form collapse}: changing the instruction form, rather than adding useful semantics, can dominate execution. We introduce TOWN-VLA (Think Only When Needed), a prompt-authority interface that separates candidate generation from permission to alter the policy input. A fixed compatibility rule authorizes a canonical compact instruction; otherwise, the interface restores the original Base prompt exactly. Across 900 audited routes, every route follows this contract: 525 routes recover Base with matching hashes, and all 375 authorized prompts preserve the task signature. On a matched $4\\times7$ LIBERO-Plus evaluation with 10{,}030 episodes per method, success rises from 69.5\\% to 73.1\\% ($+362$ episodes; 95\\% CI 1.89--5.45 points), improving on six perturbation axes and all four suites. On a physical PiPER arm with a frozen \\pizerofive{} checkpoint, success rises from 52.7\\% to 78.7\\% over 150 trials per method ($p=3.16\\times10^{-6}$). Prompt authority is enforceable for a frozen controller; oracle-free admission calibration is the next deployment target.",
+  "paper_url": "https://arxiv.org/abs/2608.23224",
+  "pdf_url": "https://arxiv.org/pdf/2608.23224",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Zhiruo Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Zelin Li",
+      "affiliations": []
+    },
+    {
+      "name": "Xiwen Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Jiazhuo Li",
+      "affiliations": []
+    },
+    {
+      "name": "Chenwei Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Huiming Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaojun Zhu",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-08-25",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "topics": [
+      "vla",
+      "planning",
+      "control"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "system"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 92,
+    "selection_reason": "TOWN-VLA发现检索文本直接追加会让成功率从92.47%跌到3.00%，并用“提示权限”决定是否允许慢路径改写指令；10,030回合/方法的LIBERO-Plus和150次/方法的PiPER真机均显示增益。",
+    "candidate_run": "2026-08-25-weekly-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-25",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "权限规则仍依赖同域48条记忆和文本兼容性",
+      "真机是单任务、单操作员且人工判分",
+      "缺少无需oracle的准入校准与公开资产"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.23224",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, ablations or discussion, and limitations were reviewed from full HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-25"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.23224"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.23224"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": []
+}

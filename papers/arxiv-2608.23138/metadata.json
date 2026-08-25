@@ -1,0 +1,128 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.23138",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Pointing-VLA: Typed Spatial Grounding Interfaces for Vision-Language-Action Manipulation",
+  "title_zh": "Pointing-VLA：面向VLA操作的类型化空间落地接口",
+  "abstract": "Vision-language-action (VLA) models often expose spatial grounding through autoregressive text coordinates or opaque action tokens, creating brittle interfaces between multimodal reasoning and robot execution. We present Pointing-VLA, a typed hidden-state spatial readout built on Embodied-R1. Geometry-specific heads predict normalized points, object-functional grounding (OFG) heatmaps, and visual trajectories without serializing geometry as text. For the evaluated Bridge/WidowX and physical pick-place deployments, an explicit execution contract assigns PICK to source-conditioned OFG and PLACE to Pointing, providing direct stage-aligned spatial targets. Pointing-VLA achieves SOTA performance on Bridge/WidowX, averaging 72.9\\% across the evaluated four-task set without Bridge-specific finetuning under collision-enabled CuRobo execution. Pointing and OFG show complementary strengths across native and cross-dataset evaluations. The OFG/contact readout transfers to NORA-1.5, preserving or improving success while reducing recorded controller time by more than 20$\\times$; typed heads are also 6.68--6.90$\\times$ faster than Embodied-R1 text decoding on a shared external suite. When integrated as spatial guidance for a $π_{0.5}$ action policy, Pointing-VLA raises autonomous real-robot success from 52.7\\% to 80.7\\% across three visual contexts. These results establish typed spatial readouts as an efficient, inspectable interface between embodied reasoning and robot execution.",
+  "paper_url": "https://arxiv.org/abs/2608.23138",
+  "pdf_url": "https://arxiv.org/pdf/2608.23138",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Xiwen Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Zelin Li",
+      "affiliations": []
+    },
+    {
+      "name": "Zhiruo Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Huiming Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Chenwei Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaojun Zhu",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-08-25",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "representation-learning",
+      "control"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 93,
+    "selection_reason": "Pointing-VLA把点、功能区域和轨迹做成不同的机器人接口，而非文本坐标；Bridge/WidowX四任务平均72.9%，真机150次试验中把π0.5成功率从52.7%提高到80.7%，速度和失败阶段证据都较清晰。",
+    "candidate_run": "2026-08-25-weekly-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-25",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "全文未列机构，团队仍待官方来源补充",
+      "固定pick/place执行契约尚未覆盖更复杂任务分解",
+      "未发现公开代码或项目页"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.23138",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, ablations or discussion, and limitations were reviewed from full HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-25"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.23138"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.23138"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": []
+}

@@ -1,0 +1,193 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2606.01621",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Goal2Pixel: Grounding Goals to Pixels for Vision-Language Navigation",
+  "title_zh": "Goal2Pixel：将导航目标落到图像像素",
+  "abstract": "Vision-language models (VLMs) have become a common foundation for vision-and-language navigation in continuous environments (VLN-CE). Yet most VLM-based methods cast navigation as low-level action prediction, an interface that is ambiguous, tied to short-horizon motion primitives, and inefficient due to repeated VLM querying. We propose Goal2Pixel, a pure pixel-based paradigm that reformulates VLN-CE as navigable pixel grounding. Rather than predicting actions, Goal2Pixel uses the image plane as a unified spatial interface between VLM reasoning and robot motion: the model predicts a visible navigable pixel to the agent, which is back-projected into a 3D waypoint for forward navigation. For non-forward actions, we append auxiliary directive regions to the image plane, where the left/right/bottom regions are interpreted as turning left, turning right, and stopping, respectively. To enable long-horizon navigation, we propose a visibility-aware keyframe memory for compact and informative history representation. To adapt pretrained VLMs to navigable pixel grounding, we introduce semantic embeddings and coordinate-aware auxiliary losses. Goal2Pixel achieves competitive state-of-the-art performance while requiring fewer VLM inference calls than prior methods. On R2R-CE Val-Unseen it achieves 54.1% SR and 52.5% SPL with just 7.75 VLM calls per episode, 6x fewer than the 46.62 required by direct action prediction at 32.9% SR. The same trend holds on RxR-CE.Project Page: https://baobao0926.github.io/Goal2Pixel/.",
+  "paper_url": "https://arxiv.org/abs/2606.01621",
+  "pdf_url": "https://arxiv.org/pdf/2606.01621",
+  "project_url": "https://baobao0926.github.io/Goal2Pixel/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Muyi Bao",
+      "affiliations": []
+    },
+    {
+      "name": "Yuxin Cai",
+      "affiliations": []
+    },
+    {
+      "name": "Hang Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Zongtai Li",
+      "affiliations": []
+    },
+    {
+      "name": "Jinxi He",
+      "affiliations": []
+    },
+    {
+      "name": "Jingfan Tang",
+      "affiliations": []
+    },
+    {
+      "name": "Chen Lv",
+      "affiliations": []
+    },
+    {
+      "name": "Ji Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Yaqi Xie",
+      "affiliations": []
+    },
+    {
+      "name": "Wenshan Wang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "carnegie-mellon-university",
+      "name": "Carnegie Mellon University",
+      "role": "primary"
+    },
+    {
+      "id": "nanyang-technological-university",
+      "name": "Nanyang Technological University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-06-01",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "foundation-model",
+      "planning",
+      "control"
+    ],
+    "tasks": [
+      "navigation"
+    ],
+    "platforms": [
+      "mobile-robot"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "depth",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 84,
+    "selection_reason": "Goal2Pixel用图像中的可导航像素替代低层动作作为VLM与机器人运动的接口；在R2R-CE Val-Unseen达到54.1% SR、52.5% SPL，每回合仅7.75次VLM调用，相比直接动作预测的46.62次约少6倍。其主要增量是更清晰、低频的空间控制接口。",
+    "candidate_run": "2026-08-10-yaqi-xie",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-25",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "依赖深度信息",
+      "验证集中在室内VLN-CE，真机结果规模较小",
+      "代码与数据仍未发布"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2606.01621",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, ablations and limitations were reviewed from full HTML during the author-portfolio scan.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-10"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2606.01621"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2606.01621"
+    },
+    {
+      "type": "project",
+      "url": "https://baobao0926.github.io/Goal2Pixel/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "source": "paper-fulltext",
+      "url": "https://arxiv.org/html/2606.01621",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://baobao0926.github.io/Goal2Pixel/",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "http-get",
+      "checked_at": "2026-08-10"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "announced-not-released",
+      "accessible": false,
+      "verification_method": "project-page-scan",
+      "checked_at": "2026-08-10",
+      "note": "Project page says Code Coming Soon; not counted."
+    },
+    {
+      "kind": "dataset",
+      "url": null,
+      "status": "announced-not-released",
+      "accessible": false,
+      "verification_method": "project-page-scan",
+      "checked_at": "2026-08-10",
+      "note": "Project page says Data Coming Soon; not counted."
+    }
+  ]
+}

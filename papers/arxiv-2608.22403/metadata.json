@@ -1,0 +1,168 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.22403",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "LD4WAM: Learning Latent Dynamics from Human Videos for World Action Models",
+  "title_zh": "LD4WAM：从人类视频学习世界动作模型的潜在动力学",
+  "abstract": "Human video is playing an increasingly central role in training World Action Models (WAMs), owing to its diversity and low collection cost relative to teleoperated robot data. However, most WAMs learn from such video only by predicting pixel-level future frames, giving dynamics that are not directly actionable, whereas motion retargeting recovers directly actionable actions but leaves a large visual gap across embodiments. We therefore propose motion-aligned latent dynamics as an embodiment-agnostic representation to bridge video priors and low-level actions. We further present LD4WAM, which pairs a Latent Dynamics Model trained with semantic reconstruction and real motion alignment with a World Dynamics Action Model built as a mixture-of-transformers (MoT), which preserves full future-video generation and uses learnable queries to distill these latent dynamics from generated futures for action conditioning. Pretrained on our curated unified dataset of over 5{,}000 hours of human and robot data, LD4WAM performs strongly in RoboTwin simulation and on real robots equipped with both grippers and dexterous hands, while generalizing well to unseen objects and backgrounds.",
+  "paper_url": "https://arxiv.org/abs/2608.22403",
+  "pdf_url": "https://arxiv.org/pdf/2608.22403",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Zhenhao Shen",
+      "affiliations": []
+    },
+    {
+      "name": "Jiaqi Liang",
+      "affiliations": []
+    },
+    {
+      "name": "Jasper Lu",
+      "affiliations": []
+    },
+    {
+      "name": "Feng Jiang",
+      "affiliations": []
+    },
+    {
+      "name": "Yuran Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Chuanbo Wei",
+      "affiliations": []
+    },
+    {
+      "name": "Jiayi Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Jianchun Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Qize Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Jiadi You",
+      "affiliations": []
+    },
+    {
+      "name": "Ce Hao",
+      "affiliations": []
+    },
+    {
+      "name": "Guanqi He",
+      "affiliations": []
+    },
+    {
+      "name": "Chen Xie",
+      "affiliations": []
+    },
+    {
+      "name": "Ruihai Wu",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-08-25",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data"
+    ],
+    "topics": [
+      "world-model",
+      "representation-learning",
+      "imitation-learning"
+    ],
+    "tasks": [
+      "manipulation",
+      "generalist-control"
+    ],
+    "platforms": [
+      "multi-robot",
+      "robot-arm",
+      "dexterous-hand"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "proprioception",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "large-scale-data",
+      "real-robot-evaluation",
+      "multi-robot"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "dataset"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 94,
+    "selection_reason": "LD4WAM用与真实运动对齐的潜在动力学连接人类视频和机器人动作；5,000小时、2.7亿帧预训练，RoboTwin与两类真机本体形成较完整证据链，完整模型真机平均成功率63.7%，较40.0%基线提高23.7个百分点。",
+    "candidate_run": "2026-08-25-weekly-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-25",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "超大规模预训练数据与算力使完整复现成本很高",
+      "论文未提供可核验的项目、代码或模型直链",
+      "真实任务仍集中在桌面操作"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.22403",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, ablations or discussion, and limitations were reviewed from full HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-25"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.22403"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.22403"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [],
+  "asset_checks": []
+}

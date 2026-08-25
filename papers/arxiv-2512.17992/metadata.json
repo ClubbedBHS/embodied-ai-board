@@ -1,0 +1,192 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2512.17992",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Unifying Deep Predicate Invention with Pre-trained Foundation Models",
+  "title_zh": "UniPred：统一深度谓词发明与预训练基础模型",
+  "abstract": "Long-horizon robotic tasks are hard due to continuous state-action spaces and sparse feedback. Symbolic world models help by decomposing tasks into discrete predicates that capture object properties and relations. Existing methods learn predicates either top-down, by prompting foundation models without data grounding, or bottom-up, from demonstrations without high-level priors. We introduce UniPred, a bilevel learning framework that unifies both. UniPred uses large language models (LLMs) to propose predicate effect distributions that supervise neural predicate learning from low-level data, while learned feedback iteratively refines the LLM hypotheses. Leveraging strong visual foundation model features, UniPred learns robust predicate classifiers in cluttered scenes. We further propose a predicate evaluation method that supports symbolic models beyond STRIPS assumptions. Across five simulated and one real-robot domains, UniPred achieves 2-4 times higher success rates than top-down methods and 3-4 times faster learning than bottom-up approaches, advancing scalable and flexible symbolic world modeling for robotics.",
+  "paper_url": "https://arxiv.org/abs/2512.17992",
+  "pdf_url": "https://arxiv.org/pdf/2512.17992",
+  "project_url": "https://unipred.github.io/",
+  "code_url": "https://github.com/weiqianwang123/UniPred",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Qianwei Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Bowen Li",
+      "affiliations": []
+    },
+    {
+      "name": "Zhanpeng Luo",
+      "affiliations": []
+    },
+    {
+      "name": "Yifan Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Alexander Gray",
+      "affiliations": []
+    },
+    {
+      "name": "Tom Silver",
+      "affiliations": []
+    },
+    {
+      "name": "Sebastian Scherer",
+      "affiliations": []
+    },
+    {
+      "name": "Katia Sycara",
+      "affiliations": []
+    },
+    {
+      "name": "Yaqi Xie",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "carnegie-mellon-university",
+      "name": "Carnegie Mellon University",
+      "role": "primary"
+    },
+    {
+      "id": "university-of-michigan",
+      "name": "University of Michigan",
+      "role": "collaborator"
+    },
+    {
+      "id": "university-of-pittsburgh",
+      "name": "University of Pittsburgh",
+      "role": "collaborator"
+    },
+    {
+      "id": "centaur-ai-institute",
+      "name": "Centaur AI Institute",
+      "role": "collaborator"
+    },
+    {
+      "id": "princeton-university",
+      "name": "Princeton University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2025-12-19",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "planning",
+      "world-model",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation",
+      "generalist-control"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [
+      "code"
+    ],
+    "properties": [
+      "open-source",
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 90,
+    "selection_reason": "UniPred把基础模型的高层先验与示范数据中的低层视觉证据放入同一双层学习闭环；五个仿真域和一个真机域显示其成功率较纯自上而下方法高约2–4倍、学习速度较纯自下而上方法快约3–4倍。它补足看板中神经符号世界模型与长时序规划的空白。",
+    "candidate_run": "2026-08-10-yaqi-xie",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-25",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "假设低层控制器集合固定且环境完全可观测、确定性",
+      "谓词仍受人工先验和控制器—算子映射约束"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2512.17992",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, ablations and limitations were reviewed from full HTML during the author-portfolio scan.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-10"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2512.17992"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2512.17992"
+    },
+    {
+      "type": "project",
+      "url": "https://unipred.github.io/"
+    },
+    {
+      "type": "code",
+      "url": "https://github.com/weiqianwang123/UniPred"
+    }
+  ],
+  "suggested_new_tags": [],
+  "organization_evidence": [
+    {
+      "source": "paper-fulltext",
+      "url": "https://arxiv.org/html/2512.17992",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/weiqianwang123/UniPred",
+      "status": "verified",
+      "accessible": true,
+      "verification_method": "github-api",
+      "checked_at": "2026-08-10"
+    }
+  ]
+}

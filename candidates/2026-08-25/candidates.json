@@ -1,0 +1,1019 @@
+{
+  "run": {
+    "run_at": "2026-08-25",
+    "window_start": "2026-08-21",
+    "window_end": "2026-08-25",
+    "sources_checked": [
+      "arXiv official cs.RO pastweek list",
+      "arXiv API metadata",
+      "arXiv HTML full text",
+      "official project pages",
+      "GitHub API"
+    ],
+    "source_entry_count": 166,
+    "triage_match_count": 54,
+    "fulltext_review_count": 12,
+    "rubric_version": "0.1",
+    "watchlist_version": "0.1",
+    "note": "Priority full-text batch. Scores are editorial triage and do not publish papers automatically."
+  },
+  "candidates": [
+    {
+      "id": "arxiv-2608.22403",
+      "title": "LD4WAM: Learning Latent Dynamics from Human Videos for World Action Models",
+      "paper_url": "https://arxiv.org/abs/2608.22403",
+      "first_publication": "2026-08-25",
+      "authors": [
+        "Zhenhao Shen",
+        "Jiaqi Liang",
+        "Jasper Lu",
+        "Feng Jiang",
+        "Yuran Wang",
+        "Chuanbo Wei",
+        "Jiayi Liu",
+        "Jianchun Yang",
+        "Qize Yu",
+        "Jiadi You",
+        "Ce Hao",
+        "Guanqi He",
+        "Chen Xie",
+        "Ruihai Wu"
+      ],
+      "organizations": [],
+      "project_url": null,
+      "code_url": null,
+      "abstract": "Human video is playing an increasingly central role in training World Action Models (WAMs), owing to its diversity and low collection cost relative to teleoperated robot data. However, most WAMs learn from such video only by predicting pixel-level future frames, giving dynamics that are not directly actionable, whereas motion retargeting recovers directly actionable actions but leaves a large visual gap across embodiments. We therefore propose motion-aligned latent dynamics as an embodiment-agnostic representation to bridge video priors and low-level actions. We further present LD4WAM, which pairs a Latent Dynamics Model trained with semantic reconstruction and real motion alignment with a World Dynamics Action Model built as a mixture-of-transformers (MoT), which preserves full future-video generation and uses learnable queries to distill these latent dynamics from generated futures for action conditioning. Pretrained on our curated unified dataset of over 5{,}000 hours of human and robot data, LD4WAM performs strongly in RoboTwin simulation and on real robots equipped with both grippers and dexterous hands, while generalizing well to unseen objects and backgrounds.",
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2608.22403",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "Direct robot manipulation, navigation, teleoperation, data, or policy evaluation."
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Official arXiv metadata and HTML full text were reviewed."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "LD4WAM用与真实运动对齐的潜在动力学连接人类视频和机器人动作；5,000小时、2.7亿帧预训练，RoboTwin与两类真机本体形成较完整证据链，完整模型真机平均成功率63.7%，较40.0%基线提高23.7个百分点。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Quantitative experiments and stated limitations were checked in the full text."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Method, experiments, ablations or discussion, and conclusion were read."
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 19,
+        "evidence_quality": 18,
+        "potential_impact": 15,
+        "board_information_gain": 9,
+        "reproducibility": 8,
+        "timeliness": 5,
+        "total": 94
+      },
+      "decision": "featured",
+      "selection_reason": "LD4WAM用与真实运动对齐的潜在动力学连接人类视频和机器人动作；5,000小时、2.7亿帧预训练，RoboTwin与两类真机本体形成较完整证据链，完整模型真机平均成功率63.7%，较40.0%基线提高23.7个百分点。",
+      "risks_or_uncertainties": [
+        "超大规模预训练数据与算力使完整复现成本很高",
+        "论文未提供可核验的项目、代码或模型直链",
+        "真实任务仍集中在桌面操作"
+      ],
+      "suggested_sections": [
+        "algorithms",
+        "data"
+      ],
+      "suggested_topics": [
+        "world-model",
+        "representation-learning",
+        "imitation-learning"
+      ],
+      "asset_checks": []
+    },
+    {
+      "id": "arxiv-2608.23138",
+      "title": "Pointing-VLA: Typed Spatial Grounding Interfaces for Vision-Language-Action Manipulation",
+      "paper_url": "https://arxiv.org/abs/2608.23138",
+      "first_publication": "2026-08-25",
+      "authors": [
+        "Xiwen Chen",
+        "Zelin Li",
+        "Zhiruo Zhou",
+        "Huiming Chen",
+        "Chenwei Wang",
+        "Xiaojun Zhu"
+      ],
+      "organizations": [],
+      "project_url": null,
+      "code_url": null,
+      "abstract": "Vision-language-action (VLA) models often expose spatial grounding through autoregressive text coordinates or opaque action tokens, creating brittle interfaces between multimodal reasoning and robot execution. We present Pointing-VLA, a typed hidden-state spatial readout built on Embodied-R1. Geometry-specific heads predict normalized points, object-functional grounding (OFG) heatmaps, and visual trajectories without serializing geometry as text. For the evaluated Bridge/WidowX and physical pick-place deployments, an explicit execution contract assigns PICK to source-conditioned OFG and PLACE to Pointing, providing direct stage-aligned spatial targets. Pointing-VLA achieves SOTA performance on Bridge/WidowX, averaging 72.9\\% across the evaluated four-task set without Bridge-specific finetuning under collision-enabled CuRobo execution. Pointing and OFG show complementary strengths across native and cross-dataset evaluations. The OFG/contact readout transfers to NORA-1.5, preserving or improving success while reducing recorded controller time by more than 20$\\times$; typed heads are also 6.68--6.90$\\times$ faster than Embodied-R1 text decoding on a shared external suite. When integrated as spatial guidance for a $π_{0.5}$ action policy, Pointing-VLA raises autonomous real-robot success from 52.7\\% to 80.7\\% across three visual contexts. These results establish typed spatial readouts as an efficient, inspectable interface between embodied reasoning and robot execution.",
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2608.23138",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "Direct robot manipulation, navigation, teleoperation, data, or policy evaluation."
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Official arXiv metadata and HTML full text were reviewed."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "Pointing-VLA把点、功能区域和轨迹做成不同的机器人接口，而非文本坐标；Bridge/WidowX四任务平均72.9%，真机150次试验中把π0.5成功率从52.7%提高到80.7%，速度和失败阶段证据都较清晰。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Quantitative experiments and stated limitations were checked in the full text."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Method, experiments, ablations or discussion, and conclusion were read."
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 19,
+        "evidence_quality": 19,
+        "potential_impact": 14,
+        "board_information_gain": 9,
+        "reproducibility": 7,
+        "timeliness": 5,
+        "total": 93
+      },
+      "decision": "featured",
+      "selection_reason": "Pointing-VLA把点、功能区域和轨迹做成不同的机器人接口，而非文本坐标；Bridge/WidowX四任务平均72.9%，真机150次试验中把π0.5成功率从52.7%提高到80.7%，速度和失败阶段证据都较清晰。",
+      "risks_or_uncertainties": [
+        "全文未列机构，团队仍待官方来源补充",
+        "固定pick/place执行契约尚未覆盖更复杂任务分解",
+        "未发现公开代码或项目页"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "vla",
+        "representation-learning",
+        "control"
+      ],
+      "asset_checks": []
+    },
+    {
+      "id": "arxiv-2608.23224",
+      "title": "Think Only When Needed: Prompt-Authority Control for Selective Slow-Path Intervention in Vision-Language-Action Manipulation",
+      "paper_url": "https://arxiv.org/abs/2608.23224",
+      "first_publication": "2026-08-25",
+      "authors": [
+        "Zhiruo Zhou",
+        "Zelin Li",
+        "Xiwen Chen",
+        "Jiazhuo Li",
+        "Chenwei Wang",
+        "Huiming Chen",
+        "Xiaojun Zhu"
+      ],
+      "organizations": [],
+      "project_url": null,
+      "code_url": null,
+      "abstract": "Retrieval can efficiently and effectively augment a frozen vision--language--action (VLA) policy without retraining, yet retrieved text becomes a control intervention once it enters the executed prompt. In a matched audit, raw appended text reduces mean success from 92.47\\% to 3.00\\%, while meaningful and length-matched meaningless appends both fail on all 500 states. This result identifies \\emph{prompt-form collapse}: changing the instruction form, rather than adding useful semantics, can dominate execution. We introduce TOWN-VLA (Think Only When Needed), a prompt-authority interface that separates candidate generation from permission to alter the policy input. A fixed compatibility rule authorizes a canonical compact instruction; otherwise, the interface restores the original Base prompt exactly. Across 900 audited routes, every route follows this contract: 525 routes recover Base with matching hashes, and all 375 authorized prompts preserve the task signature. On a matched $4\\times7$ LIBERO-Plus evaluation with 10{,}030 episodes per method, success rises from 69.5\\% to 73.1\\% ($+362$ episodes; 95\\% CI 1.89--5.45 points), improving on six perturbation axes and all four suites. On a physical PiPER arm with a frozen \\pizerofive{} checkpoint, success rises from 52.7\\% to 78.7\\% over 150 trials per method ($p=3.16\\times10^{-6}$). Prompt authority is enforceable for a frozen controller; oracle-free admission calibration is the next deployment target.",
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2608.23224",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "Direct robot manipulation, navigation, teleoperation, data, or policy evaluation."
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Official arXiv metadata and HTML full text were reviewed."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "TOWN-VLA发现检索文本直接追加会让成功率从92.47%跌到3.00%，并用“提示权限”决定是否允许慢路径改写指令；10,030回合/方法的LIBERO-Plus和150次/方法的PiPER真机均显示增益。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Quantitative experiments and stated limitations were checked in the full text."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Method, experiments, ablations or discussion, and conclusion were read."
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 19,
+        "evidence_quality": 19,
+        "potential_impact": 14,
+        "board_information_gain": 9,
+        "reproducibility": 6,
+        "timeliness": 5,
+        "total": 92
+      },
+      "decision": "featured",
+      "selection_reason": "TOWN-VLA发现检索文本直接追加会让成功率从92.47%跌到3.00%，并用“提示权限”决定是否允许慢路径改写指令；10,030回合/方法的LIBERO-Plus和150次/方法的PiPER真机均显示增益。",
+      "risks_or_uncertainties": [
+        "权限规则仍依赖同域48条记忆和文本兼容性",
+        "真机是单任务、单操作员且人工判分",
+        "缺少无需oracle的准入校准与公开资产"
+      ],
+      "suggested_sections": [
+        "algorithms",
+        "infrastructure"
+      ],
+      "suggested_topics": [
+        "vla",
+        "planning",
+        "control"
+      ],
+      "asset_checks": []
+    },
+    {
+      "id": "arxiv-2608.19574",
+      "title": "HiTac-WAM: A Hierarchical Tactile World Action Model for Contact-Rich Robot Manipulation",
+      "paper_url": "https://arxiv.org/abs/2608.19574",
+      "first_publication": "2026-08-21",
+      "authors": [
+        "Chao Xue",
+        "Chaofan Zhang",
+        "Wenxuan Ma",
+        "Guocai Yao",
+        "Shaowei Cui",
+        "Shuo Wang"
+      ],
+      "organizations": [
+        "Institute of Automation, Chinese Academy of Sciences",
+        "ImprintX Robotics",
+        "Beijing Academy of Artificial Intelligence"
+      ],
+      "project_url": null,
+      "code_url": null,
+      "abstract": "World action models jointly predict future visual observations and actions, whereas existing tactile-aware variants typically represent future touch as an image or latent stream without modeling the physical dependencies that organize tactile states hierarchically. We present HiTac-WAM, a hierarchical tactile world action model that forecasts a sequence of future tactile states for each candidate action chunk before execution. The forecast factorizes into contact state, a 3D deformation field, and slip risk, organized as a directed hierarchy in which each downstream stage is conditioned on stop-gradient signals from preceding stages. A directed attention mask allows tactile queries to attend to the video-action context of each candidate while preventing video and action queries from attending to tactile tokens. For planning, HiTac-WAM ranks candidate action chunks using tactile forecasts and task-progress estimates. For execution, the selected tactile forecast is retained as a reference; persistent discrepancies between predicted and observed tactile states trigger corrective replanning. HiTac-WAM achieves a mean contact F1 of 0.921; under matched training budgets, the directed hierarchy reduces 3D displacement L2 error by 17.6% relative to the deformation-only predictor and improves slip AUPRC by 60.4% relative to the slip-only predictor. Across chip grasping, blackboard erasing, and USB insertion, selection guided by the hierarchical forecasts increases the average real-robot success rate from 31.1% to 61.1%, while the full system attains 72.2%.",
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2608.19574",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "Direct robot manipulation, navigation, teleoperation, data, or policy evaluation."
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Official arXiv metadata and HTML full text were reviewed."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "HiTac-WAM把接触、3D形变和滑移风险组织成有向触觉层级，并让预测同时参与候选动作选择和在线复核；三项真机任务中选择机制把平均成功率从31.1%提高到61.1%，完整系统达到72.2%。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Quantitative experiments and stated limitations were checked in the full text."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Method, experiments, ablations or discussion, and conclusion were read."
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 19,
+        "evidence_quality": 18,
+        "potential_impact": 14,
+        "board_information_gain": 9,
+        "reproducibility": 6,
+        "timeliness": 5,
+        "total": 91
+      },
+      "decision": "featured",
+      "selection_reason": "HiTac-WAM把接触、3D形变和滑移风险组织成有向触觉层级，并让预测同时参与候选动作选择和在线复核；三项真机任务中选择机制把平均成功率从31.1%提高到61.1%，完整系统达到72.2%。",
+      "risks_or_uncertainties": [
+        "仅三个任务且每项30次真机试验",
+        "未单独评估模型生成动作块上的预测质量",
+        "滑移概率尚未为在线检测完成校准，未发现公开资产"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "world-model",
+        "planning",
+        "control"
+      ],
+      "asset_checks": []
+    },
+    {
+      "id": "arxiv-2608.20114",
+      "title": "DECOWAM: Decoupled Whole-Body World-Action Model for Legged Mobile Manipulation",
+      "paper_url": "https://arxiv.org/abs/2608.20114",
+      "first_publication": "2026-08-21",
+      "authors": [
+        "Siyuan Ma",
+        "Boshi Zhang",
+        "Yutian Zhang",
+        "Qinglian Wu",
+        "Jiaqi Zhai",
+        "Dong Wei",
+        "Qiaojun Yu"
+      ],
+      "organizations": [
+        "Tsinghua University",
+        "Shanghai Artificial Intelligence Laboratory",
+        "Harbin Institute of Technology",
+        "DEEP Robotics"
+      ],
+      "project_url": null,
+      "code_url": null,
+      "abstract": "Mobile manipulation requires a robot to predict how locomotion and arm motion jointly alter future observations and control. Existing world-action models, developed largely for fixed-base platforms, do not explicitly distinguish camera ego-motion from base and arm actions. Here we introduce DECOWAM, a whole-body world-action model that separates these factors through dedicated conditional interfaces. DECOWAM freezes an adapted FastWAM backbone and trains residual adapters, an action-equivalent future bottleneck distilled from privileged observations, adversarially separated base and arm latents, and base-velocity conditioning for video prediction. We further introduce ARMDOG, a real-robot dataset that synchronizes video, whole-body state and action, and language. On a fixed replay protocol, DECOWAM improved both future-video and action prediction over FastWAM, reducing action MSE by 21.7% with 25.95M trainable adaptation parameters. Across 79 closed-loop trials per method, it achieved the highest observed whole-body coordination and base-displacement robustness among the compared systems, while task completion remained comparable to the strongest baseline. These results show that embodiment-aware factorization can support parameter-efficient joint visual prediction and whole-body control under moving viewpoints.",
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2608.20114",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "Direct robot manipulation, navigation, teleoperation, data, or policy evaluation."
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Official arXiv metadata and HTML full text were reviewed."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "DECOWAM显式拆分腿式移动操作中的基座、机械臂与相机自运动，并配套ARMDOG真机数据；1,487个清洗回合、34万帧和每方法79次闭环试验支持全身协调与扰动鲁棒性判断。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Quantitative experiments and stated limitations were checked in the full text."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Method, experiments, ablations or discussion, and conclusion were read."
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 18,
+        "evidence_quality": 18,
+        "potential_impact": 13,
+        "board_information_gain": 9,
+        "reproducibility": 6,
+        "timeliness": 5,
+        "total": 89
+      },
+      "decision": "featured",
+      "selection_reason": "DECOWAM显式拆分腿式移动操作中的基座、机械臂与相机自运动，并配套ARMDOG真机数据；1,487个清洗回合、34万帧和每方法79次闭环试验支持全身协调与扰动鲁棒性判断。",
+      "risks_or_uncertainties": [
+        "主要数据由两个物体操作任务组成，分布较窄",
+        "任务完成率与最强基线相当，优势集中在协调和扰动指标",
+        "数据与代码均为计划发布，尚无可核验直链"
+      ],
+      "suggested_sections": [
+        "algorithms",
+        "data"
+      ],
+      "suggested_topics": [
+        "world-model",
+        "control",
+        "representation-learning"
+      ],
+      "asset_checks": []
+    },
+    {
+      "id": "arxiv-2608.20546",
+      "title": "Koala Gripper: Co-designing Robotic Grippers and Data-Capture Devices for Scaling Dexterous Manipulation Learning",
+      "paper_url": "https://arxiv.org/abs/2608.20546",
+      "first_publication": "2026-08-24",
+      "authors": [
+        "Amar Hajj-Ahmad",
+        "Zubin Kremer Guha",
+        "Tim Fofonoff",
+        "Zhi Ern Teoh",
+        "Ciarán T. O'Neill",
+        "Ben Thacher",
+        "Igor Fala",
+        "Vidullan Surendran",
+        "Murphy Wonsick",
+        "Peter Whitney",
+        "David Watkins"
+      ],
+      "organizations": [
+        "The Robotics and AI Institute"
+      ],
+      "project_url": "https://koalagripper.rai-inst.com/",
+      "code_url": null,
+      "abstract": "As the demand for larger manipulation datasets grows, handheld robotic gripper data collection and the associated gripper designs become more vital. Current data collection device designs trend towards matching the morphologies of existing robotic grippers, sacrificing ergonomics and manipulation performance. In this paper, we propose a co-design framework that guides the simultaneous development of both data collection and robotic execution devices by weaving both platform constraints into the design process. Through this workflow, we present the Koala Gripper system, a data capture device and robotic gripper platform that improves dexterity and grasp capability compared to parallel jaw grippers while preserving scalability and ease-of-use. The design introduces a novel force-optimized finger/trigger linkage mechanism with directional reflected mass characteristics, a unique monolithic dual-thumb, and user-centered ergonomic design. The design's actuated robotic fingers are backdrivable, with effective mass on the order of tens of grams. We show that these grippers are capable of secure grasps over a wide range of objects, forceful tool use, and precise singulation. We further validate the platform by deploying it with an end-to-end data collection and policy execution pipeline that highlights its capabilities through learning from demonstration. More information available at http://koalagripper.rai-inst.com",
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2608.20546",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "Direct robot manipulation, navigation, teleoperation, data, or policy evaluation."
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Official arXiv metadata and HTML full text were reviewed."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "Koala Gripper把手持采集器与机器人执行夹爪共同设计，在保留便携采集的同时增加双拇指、三自由度、低反射质量和工具使用能力；250条手持与100条遥操作示范验证了数据到扩散策略的完整链路。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Quantitative experiments and stated limitations were checked in the full text."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Method, experiments, ablations or discussion, and conclusion were read."
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 19,
+        "evidence_quality": 17,
+        "potential_impact": 13,
+        "board_information_gain": 9,
+        "reproducibility": 6,
+        "timeliness": 5,
+        "total": 89
+      },
+      "decision": "featured",
+      "selection_reason": "Koala Gripper把手持采集器与机器人执行夹爪共同设计，在保留便携采集的同时增加双拇指、三自由度、低反射质量和工具使用能力；250条手持与100条遥操作示范验证了数据到扩散策略的完整链路。",
+      "risks_or_uncertainties": [
+        "策略结果主要是定性成功展示，缺少系统成功率表",
+        "没有力状态传感，尚不能训练力反馈策略",
+        "任务和数据规模仍小，操作员疲劳未做正式用户研究"
+      ],
+      "suggested_sections": [
+        "infrastructure",
+        "data"
+      ],
+      "suggested_topics": [
+        "imitation-learning",
+        "control"
+      ],
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://koalagripper.rai-inst.com/",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "http-get",
+          "checked_at": "2026-08-25"
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2608.22990",
+      "title": "InstructMove: A Text-Indispensable Benchmark for Instruction-Following Manipulation",
+      "paper_url": "https://arxiv.org/abs/2608.22990",
+      "first_publication": "2026-08-25",
+      "authors": [
+        "Mengao Zhao",
+        "Ziang Li",
+        "Chaodong Huang",
+        "Mengchen Ma",
+        "Haoyi Jiang",
+        "Yiwei Jin",
+        "Xinjie Wang",
+        "Yun Du",
+        "Xuewu Lin",
+        "Taojun Ding",
+        "Hongyu Xie",
+        "Jackson Jiang",
+        "Chunlei Yu",
+        "Kaihua Zhang",
+        "Lichao Huang",
+        "Liu Liu",
+        "Tianwei Lin",
+        "Zhizhong Su"
+      ],
+      "organizations": [
+        "Horizon Robotics",
+        "WuwenAI",
+        "Southeast University",
+        "Huazhong University of Science and Technology"
+      ],
+      "project_url": null,
+      "code_url": "https://github.com/HorizonRobotics/RoboOrchardSim",
+      "abstract": "Vision-language-action (VLA) models have made general-purpose robot manipulation increasingly plausible by conditioning robot actions on natural-language instructions. A key test of such generality is whether policies actually follow language instructions. Yet many manipulation benchmarks leave this ability underdetermined: the intended object or destination is often visually salient or uniquely feasible, allowing policies to succeed without grounding the instruction. We argue that instruction-following evaluation should be text-indispensable: multiple actions should be visually and physically plausible, while only one should be consistent with the language instruction. We introduce InstructMove, a text-indispensable benchmark for instruction-following manipulation. InstructMove instantiates this principle in pick-and-place scenes with semantic distractors, decomposing instruction following into category identification, attribute discrimination, spatial reasoning, and compositional pick-and-place. InstructMove supports a train-eval protocol with InstructMove training data and held-out evaluation tasks, with additional diagnostics for language dependence. Experiments with representative VLA policies show that InstructMove provides a controlled testbed for diagnosing visual shortcuts and that InstructMove simulation data can improve real-world instruction-following manipulation performance. Code: https://github.com/HorizonRobotics/RoboOrchardSim",
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2608.22990",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "Direct robot manipulation, navigation, teleoperation, data, or policy evaluation."
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Official arXiv metadata and HTML full text were reviewed."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "InstructMove强制同一场景存在多个可行目标，让语言成为动作选择的必要变量；1,757个验证资产、四类任务、逐阶段指标和反事实指令诊断揭示视觉捷径，混合2,000条仿真与200条真机示范取得最佳真机结果。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Quantitative experiments and stated limitations were checked in the full text."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Method, experiments, ablations or discussion, and conclusion were read."
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 18,
+        "evidence_quality": 19,
+        "potential_impact": 12,
+        "board_information_gain": 9,
+        "reproducibility": 6,
+        "timeliness": 5,
+        "total": 89
+      },
+      "decision": "featured",
+      "selection_reason": "InstructMove强制同一场景存在多个可行目标，让语言成为动作选择的必要变量；1,757个验证资产、四类任务、逐阶段指标和反事实指令诊断揭示视觉捷径，混合2,000条仿真与200条真机示范取得最佳真机结果。",
+      "risks_or_uncertainties": [
+        "当前评测在相同任务族上微调，可能混入模板适配收益",
+        "50次真机评测不足以证明仿真排名可预测真实排名",
+        "主要限于桌面pick-and-place"
+      ],
+      "suggested_sections": [
+        "data",
+        "infrastructure"
+      ],
+      "suggested_topics": [
+        "vla",
+        "sim-to-real",
+        "imitation-learning"
+      ],
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": "https://github.com/HorizonRobotics/RoboOrchardSim",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "github-api",
+          "checked_at": "2026-08-25"
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2608.19372",
+      "title": "The Missing Touch: Spatially Distributed Tactile Feedback Brings Teleoperation Closer to Human Dexterity",
+      "paper_url": "https://arxiv.org/abs/2608.19372",
+      "first_publication": "2026-08-21",
+      "authors": [
+        "Rohan Kota",
+        "Gregory Reardon",
+        "J. Edward Colgate"
+      ],
+      "organizations": [
+        "Northwestern University Center for Robotics and Biosystems"
+      ],
+      "project_url": null,
+      "code_url": null,
+      "abstract": "A fundamental challenge in robotic teleoperation is enabling an operator to control a remote robot as effortlessly and intuitively as their own hands. Despite the growing use of teleoperation to collect demonstration data for training autonomous robot policies, teleoperated robot performance still falls significantly short of human dexterity, even for basic tasks. Here, we present evidence that a key factor contributing to this performance gap is the absence of spatially distributed tactile feedback. Using a two-degree-of-freedom (DoF) bilateral force-feedback telemanipulator paired with a 32-DoF tactile fingertip display, we show that operator performance improves significantly when localized deformations on the remote manipulator are faithfully reproduced on the operator's fingertip. In a series of teleoperation tasks, reproducing distributed contact information not only accelerated task performance but also brought teleoperated movements closer to natural human behavior by minimizing corrective actions and task completion steps, thereby reducing the deviation between teleoperated and natural trajectories by 29$\\unicode{x2013}$79%. Furthermore, we found that increasing the resolution of the tactile feedback$\\unicode{x2014}$by refining how finely the measured displacements were quantized for reproduction$\\unicode{x2014}$compressed the state-space distribution of teleoperated motions, which has been associated with improved training outcomes for autonomous robot policies. Together, these results suggest that spatially distributed tactile feedback is essential for closing the gap between human and teleoperated dexterity and training the next generation of autonomous robots.",
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2608.19372",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "Direct robot manipulation, navigation, teleoperation, data, or policy evaluation."
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Official arXiv metadata and HTML full text were reviewed."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "The Missing Touch用32自由度触觉显示器把机器人指尖的空间形变回传给操作者；两项受试者实验各48次试验，分布式触觉使遥操作轨迹与自然动作的偏差降低29%–79%，并收紧多操作员数据分布。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Quantitative experiments and stated limitations were checked in the full text."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Method, experiments, ablations or discussion, and conclusion were read."
+        }
+      },
+      "scores": {
+        "relevance": 18,
+        "novelty": 19,
+        "evidence_quality": 19,
+        "potential_impact": 13,
+        "board_information_gain": 9,
+        "reproducibility": 5,
+        "timeliness": 5,
+        "total": 88
+      },
+      "decision": "featured",
+      "selection_reason": "The Missing Touch用32自由度触觉显示器把机器人指尖的空间形变回传给操作者；两项受试者实验各48次试验，分布式触觉使遥操作轨迹与自然动作的偏差降低29%–79%，并收紧多操作员数据分布。",
+      "risks_or_uncertainties": [
+        "系统只有2自由度，尚未在多指多自由度遥操作中验证",
+        "没有直接训练机器人策略证明数据质量收益",
+        "受试者规模分别为12和10人，硬件复现成本较高"
+      ],
+      "suggested_sections": [
+        "infrastructure",
+        "data"
+      ],
+      "suggested_topics": [
+        "imitation-learning",
+        "control"
+      ],
+      "asset_checks": []
+    },
+    {
+      "id": "arxiv-2608.20735",
+      "title": "ForeTime-VLA: Causal Future-Token Distillation from a World Action Model for Conveyor-Belt Manipulation",
+      "paper_url": "https://arxiv.org/abs/2608.20735",
+      "first_publication": "2026-08-24",
+      "authors": [
+        "Siyuan Ma",
+        "Yutian Zhang",
+        "Boshi Zhang",
+        "Qinglian Wu",
+        "Jiaqi Zhai",
+        "Dong Wei",
+        "Xiaojin Huang"
+      ],
+      "organizations": [
+        "Tsinghua University",
+        "Shanghai Artificial Intelligence Laboratory",
+        "Harbin Institute of Technology",
+        "DEEP Robotics"
+      ],
+      "project_url": null,
+      "code_url": null,
+      "abstract": "Manipulating moving objects requires a policy to anticipate contact events, yet vision-language-action (VLA) policies are commonly fine-tuned from the current observation alone. World action models (WAMs) learn predictive dynamics, but running a video-scale teacher or explicitly imagining future frames at deployment is costly. We introduce ForeTime-VLA, a dense pi0.5 policy that distills a future-aware, action-equivalent representation from a frozen Fast-WAM-derived teacher while remaining causal at inference. Offline, current and future video latents are compressed into a whitened 64-D target. Online, an eight-frame history encoder predicts this target together with manipulation phase and normalized time-to-transition. Four future tokens and one phase token condition the VLM prefix, while the predicted future and transition horizon condition the action expert. Training retains the original flow-matching action target and adds cosine, relational geometry, phase, time-to-transition, and action-equivalence objectives. On a deduplicated conveyor-belt dataset, we compare 40k-step checkpoints on 768 matched windows per split. Test MAE decreases from 0.134119 to 0.130593 (2.63%; paired-bootstrap 95% CI: 0.82-4.48% improvement), and test L2 decreases by 3.02%, at a 2.46-2.93% latency cost. In quantitative real-robot evaluation, ForeTime-VLA achieves 81.1% stationary and 58.9% slow-moving grasp success, exceeding the next-best reference by 12.2 and 22.2 percentage points, respectively. Across three belt speeds, it completes 44/90 grasps versus 23/90 for pi0.5, including 11/30 versus 2/30 at fast speed. The agreement between offline orientation gains and reduced real-robot contact-pose failures supports causal future-token distillation as an effective way to improve dynamic manipulation without deploying the world-model teacher.",
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2608.20735",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "Direct robot manipulation, navigation, teleoperation, data, or policy evaluation."
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Official arXiv metadata and HTML full text were reviewed."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "ForeTime-VLA把离线WAM未来信息蒸馏成部署时因果的未来、阶段与转移时间token；真机跨三种传送带速度完成44/90次抓取，而π0.5为23/90，额外延迟低于3%。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Quantitative experiments and stated limitations were checked in the full text."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Method, experiments, ablations or discussion, and conclusion were read."
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 18,
+        "evidence_quality": 18,
+        "potential_impact": 12,
+        "board_information_gain": 8,
+        "reproducibility": 7,
+        "timeliness": 5,
+        "total": 88
+      },
+      "decision": "featured",
+      "selection_reason": "ForeTime-VLA把离线WAM未来信息蒸馏成部署时因果的未来、阶段与转移时间token；真机跨三种传送带速度完成44/90次抓取，而π0.5为23/90，额外延迟低于3%。",
+      "risks_or_uncertainties": [
+        "只覆盖单一传送带抓取本体和固定视频教师",
+        "离线指标改进约3%，主要价值依赖单一动态任务",
+        "未发现公开代码或项目页"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "vla",
+        "world-model",
+        "representation-learning"
+      ],
+      "asset_checks": []
+    },
+    {
+      "id": "arxiv-2608.21290",
+      "title": "VT-MUSE: Multimodal Unified Sequential Visuotactile Representation Learning for Manipulation",
+      "paper_url": "https://arxiv.org/abs/2608.21290",
+      "first_publication": "2026-08-24",
+      "authors": [
+        "Congsheng Xu",
+        "Qiaochu Yang",
+        "Fangyuan Shi",
+        "Yifan Han",
+        "Baijun Chen",
+        "Yiming Wang",
+        "Haonan Zhao",
+        "Daolin Ma",
+        "Xiaokang Yang",
+        "Hesheng Wang"
+      ],
+      "organizations": [
+        "Xense Robotics",
+        "Shanghai Jiao Tong University"
+      ],
+      "project_url": "https://vt-series.github.io/VT-MUSE/",
+      "code_url": null,
+      "abstract": "We propose VT-MUSE, a Multimodal Unified SEquential representation learning framework for visuotactilemanipulation. Existing approaches often encode visual and tactile observations independently before fusion, limiting their ability to capture fine-grained cross-modal dependencies. Moreover, most methods focus on observations at the current time step and overlook the temporal evolution of contact. VT-MUSE addresses both limitations through a two-stage representation learning framework. In Stage I, modality specific encoders are jointly adapted via cross-modal temporal alignment and masked-view consistency. In Stage II, a conditional variational latent model processes masked visual sequences together with full tactile histories. Auxiliary decoders reconstruct the masked recent visual observations and predict tactile depth changes, encouraging the latent representation to retain both global visual context and local contact dynamics. The learned representation is subsequently integrated into a lightweight Transformer policy through gated cross-attention. On the simulation benchmark, VT-MUSE outperforms the strongest baseline evaluated on all tasks by 11 percentage points and also achieves substantial improvements in real-world experiments.",
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2608.21290",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "Direct robot manipulation, navigation, teleoperation, data, or policy evaluation."
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Official arXiv metadata and HTML full text were reviewed."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "VT-MUSE用跨模态时序对齐、遮蔽视觉重建和触觉深度变化预测学习统一视觉触觉记忆；四项仿真任务平均领先最强对照11个百分点，四项真机任务80次试验成功76次。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Quantitative experiments and stated limitations were checked in the full text."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Method, experiments, ablations or discussion, and conclusion were read."
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 17,
+        "evidence_quality": 18,
+        "potential_impact": 12,
+        "board_information_gain": 8,
+        "reproducibility": 7,
+        "timeliness": 5,
+        "total": 87
+      },
+      "decision": "featured",
+      "selection_reason": "VT-MUSE用跨模态时序对齐、遮蔽视觉重建和触觉深度变化预测学习统一视觉触觉记忆；四项仿真任务平均领先最强对照11个百分点，四项真机任务80次试验成功76次。",
+      "risks_or_uncertainties": [
+        "官方项目链接当前返回GitHub Pages 404",
+        "预训练最多只有7项任务，尚无规模规律",
+        "固定采样步长和窗口限制了时序适应性"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "representation-learning",
+        "imitation-learning",
+        "control"
+      ],
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://vt-series.github.io/VT-MUSE/",
+          "status": "project-linked-http-404",
+          "accessible": false,
+          "verification_method": "http-get",
+          "checked_at": "2026-08-25",
+          "note": "Official paper links this project URL, but it currently resolves to a GitHub Pages 404."
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2608.19759",
+      "title": "GOAG: Generative and Object-Agnostic Grasp Planner for Dexterous Robotic Manipulation",
+      "paper_url": "https://arxiv.org/abs/2608.19759",
+      "first_publication": "2026-08-21",
+      "authors": [
+        "Julien Merand",
+        "Boris Meden",
+        "Mathieu Grossard",
+        "Liming Chen"
+      ],
+      "organizations": [
+        "Université Paris-Saclay, CEA List",
+        "École Centrale de Lyon",
+        "CNRS LIRIS"
+      ],
+      "project_url": "https://cea-list.github.io/goagweb/",
+      "code_url": "https://github.com/CEA-LIST/GOAG",
+      "abstract": "Multifingered grasping is a crucial robotic skill, but current deep-learning grasp planners often struggle to generalize to new objects because they are trained on limited, object-specific datasets. We introduce a fundamentally different approach, grounded in the observation that the gripper and the object share identical surface geometry at their mutual contact points. We propose GOAG: Generative and Object-Agnostic Grasp Planner for Dexterous Robotic Manipulation, a novel deep generative model that learns a compact latent representation of a specific gripper's contact surface distribution, enabling the efficient sampling of valid grasp configurations without relying on object-specific training data. We show that by introducing object features only at inference time, our model can effectively retrieve admissible contact areas that are compatible with the gripper's capabilities. We validate our approach through extensive experiments on established grasp protocols in both simulated and real-world scenarios, demonstrating its effectiveness with different grippers from the literature. Our method delivers state-of-the-art results on the objects from the MultiDex dataset, achieving an average success rate of 86.93%. It offers significantly faster processing when generating numerous grasps, while matching the performance of leading approaches specifically trained on this dataset. Unlike these methods, our approach does not rely on object-specific training data, highlighting the advantages of object-agnostic learning. It effectively addresses the generalization challenges faced by traditional data-driven grasp planners. Code and videos are available on our project website https://cea-list.github.io/goagweb/ .",
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2608.19759",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "Direct robot manipulation, navigation, teleoperation, data, or policy evaluation."
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Official arXiv metadata and HTML full text were reviewed."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "GOAG只从夹爪自身几何与运动学学习接触分布，在测试时才引入物体；MultiDex平均成功率86.93%，并跨五个基准比较。真机只展示11个YCB物体且缺少重复试验统计，暂不升为featured。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Quantitative experiments and stated limitations were checked in the full text."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Method, experiments, ablations or discussion, and conclusion were read."
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 18,
+        "evidence_quality": 16,
+        "potential_impact": 10,
+        "board_information_gain": 6,
+        "reproducibility": 4,
+        "timeliness": 5,
+        "total": 79
+      },
+      "decision": "include",
+      "selection_reason": "GOAG只从夹爪自身几何与运动学学习接触分布，在测试时才引入物体；MultiDex平均成功率86.93%，并跨五个基准比较。真机只展示11个YCB物体且缺少重复试验统计，暂不升为featured。",
+      "risks_or_uncertainties": [
+        "真机结果是11个物体的成功展示，没有报告重复试验成功率",
+        "仍依赖显式力闭合检查与后处理优化",
+        "对象姿态采样对大型物体效果有限"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "representation-learning",
+        "control"
+      ],
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://cea-list.github.io/goagweb/",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "http-get",
+          "checked_at": "2026-08-25"
+        },
+        {
+          "kind": "code",
+          "url": "https://github.com/CEA-LIST/GOAG",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "github-api",
+          "checked_at": "2026-08-25"
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2608.21740",
+      "title": "CounterAlign: Counterfactual Supervision for Vision-Language-Action Models",
+      "paper_url": "https://arxiv.org/abs/2608.21740",
+      "first_publication": "2026-08-25",
+      "authors": [
+        "Haru Kondoh",
+        "Kei Ota",
+        "Asako Kanezaki",
+        "Yueh-Hua Wu"
+      ],
+      "organizations": [],
+      "project_url": "https://counteralign.airoa.io/",
+      "code_url": null,
+      "abstract": "Vision-Language-Action (VLA) models are typically trained with behavior cloning (BC) on expert demonstrations. However, BC provides only positive supervision for expert actions, without explicit negative supervision indicating which actions are instruction-inconsistent or otherwise inappropriate. Reinforcement learning (RL) can provide such corrective signals, but often relies on externally specified rewards or curated non-expert data, both of which are costly to obtain in robotics. We show that offline RL for VLA models need not rely on curated non-expert trajectories: successful expert demonstrations alone can be transformed into dense corrective supervision through instruction relabeling. Specifically, by pairing expert actions with mismatched alternative instructions, we synthesize counterfactual instruction-observation-action tuples from the dataset and combine them with adversarial discriminator training to learn an instruction-grounded reward model for offline RL, without collecting additional rollouts or annotations. On the robustness-focused LIBERO-PRO benchmark, our method improves robustness to object position and task perturbations over a strong state-of-the-art baseline. It also outperforms competitive baselines in real-robot experiments on the TX-G2 (compatible with AGIBot G2). More broadly, our results suggest that, for data-constrained VLA learning, extracting denser supervision from each demonstration can complement collecting additional data.",
+      "discovered_via": [
+        "arxiv-cs.RO-recent"
+      ],
+      "watchlist_matches": [],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "fulltext_url": "https://arxiv.org/html/2608.21740",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "Direct robot manipulation, navigation, teleoperation, data, or policy evaluation."
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Official arXiv metadata and HTML full text were reviewed."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "CounterAlign从成功示范构造指令错配反事实样本，学习语言—动作奖励并进行离线RL；LIBERO-PRO在位置和任务扰动上改善，但真机只有10次试验且训练参数从3.4B增至约12.7B，因此先常规收录。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Quantitative experiments and stated limitations were checked in the full text."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Method, experiments, ablations or discussion, and conclusion were read."
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 17,
+        "evidence_quality": 15,
+        "potential_impact": 10,
+        "board_information_gain": 7,
+        "reproducibility": 5,
+        "timeliness": 5,
+        "total": 79
+      },
+      "decision": "include",
+      "selection_reason": "CounterAlign从成功示范构造指令错配反事实样本，学习语言—动作奖励并进行离线RL；LIBERO-PRO在位置和任务扰动上改善，但真机只有10次试验且训练参数从3.4B增至约12.7B，因此先常规收录。",
+      "risks_or_uncertainties": [
+        "真机只有10次试验，证据不足以支持强泛化结论",
+        "辅助判别器与critic将训练参数增至约12.7B",
+        "项目页明确写Code Coming Soon"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "vla",
+        "reinforcement-learning",
+        "imitation-learning"
+      ],
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://counteralign.airoa.io/",
+          "status": "verified",
+          "accessible": true,
+          "verification_method": "http-get",
+          "checked_at": "2026-08-25"
+        },
+        {
+          "kind": "code",
+          "url": null,
+          "status": "announced-not-released",
+          "accessible": false,
+          "verification_method": "project-page-scan",
+          "checked_at": "2026-08-25",
+          "note": "Project page says Code Coming Soon."
+        }
+      ]
+    }
+  ]
+}
