@@ -2,6 +2,8 @@
 
 Embodied AI Board 是一个以论文内容为核心的具身智能知识看板，计划持续收录并整理算法、数据、仿真器、基础设施和综述等方向的研究成果。
 
+在线访问：[https://clubbedbhs.github.io/embodied-ai-board/](https://clubbedbhs.github.io/embodied-ai-board/)
+
 项目当前处于内容规范验证与持续更新阶段。本目录定义论文发现、原始材料下载、候选筛选、AI 中文摘要、人工审核和网页发布的完整边界。
 
 ## 当前文档
@@ -60,6 +62,10 @@ workbench/
 1. 从 `papers/` 重新生成 `site/app/papers.generated.json`；
 2. 构建纯静态站点到 `site/pages-dist/`；
 3. 发布到 GitHub Pages。
+
+### Cloudflare Web Analytics
+
+静态构建支持 Cloudflare Web Analytics。先在 Cloudflare Web Analytics 中添加站点 `clubbedbhs.github.io`，然后将生成的 Site Token 保存为 GitHub 仓库变量 `CLOUDFLARE_WEB_ANALYTICS_TOKEN`。Pages 工作流会在构建时自动注入 Beacon；未配置变量时不会加载任何统计脚本。
 
 本地验证：
 

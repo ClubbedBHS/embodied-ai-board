@@ -36,6 +36,8 @@ jobs:
 
       - name: Build static site
         run: npm run build:pages
+        env:
+          CLOUDFLARE_WEB_ANALYTICS_TOKEN: ${{ vars.CLOUDFLARE_WEB_ANALYTICS_TOKEN }}
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
