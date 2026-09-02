@@ -1,0 +1,193 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.24885",
+  "title": "Do Robotic World Models Really Follow Actions? Diagnosing and Aligning Action-Conditioned Generation for Policy Learning",
+  "title_zh": null,
+  "abstract": "Action-conditioned world models are increasingly used as learned simulators for policy evaluation and improvement, yet their effectiveness rests on an unverified assumption: generated futures faithfully reflect arbitrary valid actions. Existing benchmarks are typically confined to expert demonstrations, leaving off-expert action following inadequately evaluated. To address this gap, we introduce WorldEcho, which probes action following over a broader action distribution using visual integrity and SE(3) trajectory alignment. Our diagnosis shows that current world models reasonably execute expert actions but struggle with diverse off-expert trajectories, either ignoring the commanded actions or producing visually invalid rollouts. We further propose WorldSync, which strengthens action following along three complementary axes: distributional coverage, representational grounding, and intervention-effect alignment. It broadens the training distribution over action consequences, grounds intermediate video representations in action-induced robot dynamics through an Action-Forcing Expert, and aligns predicted changes under action interventions with the corresponding changes in ground-truth futures. Experiments on RoboTwin benchmarks and real-robot tasks show that WorldSync improves WorldEcho metrics and serves as a more reliable simulator for iterative policy improvement, enabling policies to achieve higher success rates.",
+  "paper_url": "https://arxiv.org/abs/2608.24885",
+  "pdf_url": "https://arxiv.org/pdf/2608.24885",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Sixiang Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Jiaming Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Jixian Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Yichen Guo",
+      "affiliations": []
+    },
+    {
+      "name": "Tinghao Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Siyuan Qian",
+      "affiliations": []
+    },
+    {
+      "name": "Hao Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Jiajun Cao",
+      "affiliations": []
+    },
+    {
+      "name": "Jian Tang",
+      "affiliations": []
+    },
+    {
+      "name": "Shanghang Zhang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "peking-university",
+      "name": "Peking University",
+      "role": "primary"
+    },
+    {
+      "id": "beijing-innovation-center-of-humanoid-robotics",
+      "name": "Beijing Innovation Center of Humanoid Robotics",
+      "role": "collaborator"
+    },
+    {
+      "id": "new-york-university",
+      "name": "New York University",
+      "role": "collaborator"
+    },
+    {
+      "id": "university-of-electronic-science-and-technology-of-china",
+      "name": "University of Electronic Science and Technology of China",
+      "role": "collaborator"
+    },
+    {
+      "id": "nanyang-technological-university",
+      "name": "Nanyang Technological University",
+      "role": "collaborator"
+    },
+    {
+      "id": "the-chinese-university-of-hong-kong",
+      "name": "The Chinese University of Hong Kong",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-25",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "platform-agnostic"
+    ],
+    "modalities": [
+      "vision",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ],
+    "assets": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 90,
+    "selection_reason": "WorldEcho指出现有机器人世界模型在专家轨迹外会忽略动作或生成失真视频，WorldSync再针对这一诊断改进训练；它补上了WAM作为策略模拟器时长期缺失的动作服从评测。",
+    "candidate_run": "2026-08-29",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-29",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "未确认公开代码或评测套件",
+      "开放世界、长时程和更多本体仍未覆盖",
+      "部分提升依赖作者构造的完整性门控指标"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.24885"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.24885"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "evaluation",
+      "name": "evaluation",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "WorldEcho指出现有机器人世界模型在专家轨迹外会忽略动作或生成失真视频，WorldSync再针对这一诊断改进训练；它补上了WAM作为策略模拟器时长期缺失的动作服从评测。"
+    },
+    {
+      "dimension": "topics",
+      "slug": "model-based-rl",
+      "name": "model-based-rl",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "WorldEcho指出现有机器人世界模型在专家轨迹外会忽略动作或生成失真视频，WorldSync再针对这一诊断改进训练；它补上了WAM作为策略模拟器时长期缺失的动作服从评测。"
+    }
+  ],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.24885",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, conclusion and limitations were reviewed in official arXiv HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-29"
+  },
+  "organization_evidence": [
+    {
+      "source": "arXiv HTML author block",
+      "url": "https://arxiv.org/html/2608.24885",
+      "evidence": "The paper lists six numbered affiliations below the abstract."
+    }
+  ],
+  "asset_checks": []
+}

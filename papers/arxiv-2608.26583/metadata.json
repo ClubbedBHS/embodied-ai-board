@@ -1,0 +1,260 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.26583",
+  "title": "SOLO: Stable Omni-terrain Long-Horizon Perceptive Humanoid Locomotion",
+  "title_zh": null,
+  "abstract": "Humans traverse complex terrain over long distances without losing balance, whereas perceptive humanoid policies become fragile as perception and control errors accumulate. We present SOLO, a unified framework addressing two compounding causes of this long-horizon fragility: dense terrain reconstruction smooths action-critical details, and pointwise imitation lacks temporal credit assignment. Its Query Reconstructor (QR) uses Fourier-encoded cell queries to retrieve spatially specific evidence from depth-proprioception tokens, preserving sharp terrain boundaries. Trajectory-Aware MSE (TA-MSE) Distillation adds next-state teacher-student disagreement to the PPO reward, enabling Generalized Advantage Estimation to propagate future disagreement penalties to preceding actions. In simulation, QR reduces height-map L1 error by factors of 3.3-4.0, while TA-MSE surpasses PPO and MSE+PPO in curriculum progression. On stress-test terrains, SOLO achieves 97.5% mean traversal success and 96% stepping-stone success, versus 75.0-75.6% and 0-3% for dense-reconstructor variants. Deployed zero-shot with only a chest-mounted depth camera and proprioception, SOLO completes a continuous 1.5-km outdoor route and an indoor mixed-terrain course. Project page: https://sunpihai-up.github.io/solo/",
+  "paper_url": "https://arxiv.org/abs/2608.26583",
+  "pdf_url": "https://arxiv.org/pdf/2608.26583",
+  "project_url": "https://sunpihai-up.github.io/solo/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Pihai Sun",
+      "affiliations": []
+    },
+    {
+      "name": "Gang Han",
+      "affiliations": []
+    },
+    {
+      "name": "Jingkai Sun",
+      "affiliations": []
+    },
+    {
+      "name": "Jiahao Ma",
+      "affiliations": []
+    },
+    {
+      "name": "Zeran Su",
+      "affiliations": []
+    },
+    {
+      "name": "Zelin Tao",
+      "affiliations": []
+    },
+    {
+      "name": "Peiran Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Shuai Shi",
+      "affiliations": []
+    },
+    {
+      "name": "Wei Cui",
+      "affiliations": []
+    },
+    {
+      "name": "Zifan Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Jialin Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Wen Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Kangning Yin",
+      "affiliations": []
+    },
+    {
+      "name": "Jiaxu Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Jiahang Cao",
+      "affiliations": []
+    },
+    {
+      "name": "Lingfeng Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Hao Cheng",
+      "affiliations": []
+    },
+    {
+      "name": "Jian Tang",
+      "affiliations": []
+    },
+    {
+      "name": "Yijie Guo",
+      "affiliations": []
+    },
+    {
+      "name": "Qiang Zhang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "x-humanoid",
+      "name": "X-Humanoid",
+      "role": "primary"
+    },
+    {
+      "id": "ustc-agi-institute",
+      "name": "USTC AGI Institute",
+      "role": "collaborator"
+    },
+    {
+      "id": "hkust-guangzhou",
+      "name": "HKUST (Guangzhou)",
+      "role": "collaborator"
+    },
+    {
+      "id": "the-university-of-hong-kong",
+      "name": "The University of Hong Kong",
+      "role": "collaborator"
+    },
+    {
+      "id": "the-australian-national-university",
+      "name": "The Australian National University",
+      "role": "collaborator"
+    },
+    {
+      "id": "shanghai-jiao-tong-university",
+      "name": "Shanghai Jiao Tong University",
+      "role": "collaborator"
+    },
+    {
+      "id": "the-chinese-university-of-hong-kong",
+      "name": "The Chinese University of Hong Kong",
+      "role": "collaborator"
+    },
+    {
+      "id": "tsinghua-university",
+      "name": "Tsinghua University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-27",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "reinforcement-learning"
+    ],
+    "tasks": [
+      "locomotion",
+      "humanoid-control"
+    ],
+    "platforms": [
+      "humanoid"
+    ],
+    "modalities": [
+      "vision",
+      "action",
+      "tactile",
+      "proprioception"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "properties": [
+      "real-robot-evaluation",
+      "zero-shot"
+    ],
+    "assets": [
+      "project-page"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 88,
+    "selection_reason": "SOLO同时修复地形重建过度平滑和逐点蒸馏缺少时序信用两个问题；仿真压力测试97.5%，真机零样本连续行走1.5公里，并公开说明后视盲区与2.5D地形表示限制。",
+    "candidate_run": "2026-08-29",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-29",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "没有公开代码或训练资产",
+      "仍由人提供平面速度指令，不是自主导航系统",
+      "后向运动盲区、反光透明表面和多层地形仍受限制"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.26583"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.26583"
+    },
+    {
+      "type": "project-page",
+      "url": "https://sunpihai-up.github.io/solo/"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "humanoid",
+      "name": "humanoid",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "SOLO同时修复地形重建过度平滑和逐点蒸馏缺少时序信用两个问题；仿真压力测试97.5%，真机零样本连续行走1.5公里，并公开说明后视盲区与2.5D地形表示限制。"
+    },
+    {
+      "dimension": "topics",
+      "slug": "locomotion",
+      "name": "locomotion",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "SOLO同时修复地形重建过度平滑和逐点蒸馏缺少时序信用两个问题；仿真压力测试97.5%，真机零样本连续行走1.5公里，并公开说明后视盲区与2.5D地形表示限制。"
+    }
+  ],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.26583",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, conclusion and limitations were reviewed in official arXiv HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-29"
+  },
+  "organization_evidence": [
+    {
+      "source": "official project page",
+      "url": "https://sunpihai-up.github.io/solo/",
+      "evidence": "Project page maps the eight numbered affiliations."
+    }
+  ],
+  "asset_checks": [
+    {
+      "type": "project",
+      "url": "https://sunpihai-up.github.io/solo/",
+      "status": "verified",
+      "evidence": "Accessible official page with method, videos, field results and affiliations; no code link found."
+    }
+  ]
+}

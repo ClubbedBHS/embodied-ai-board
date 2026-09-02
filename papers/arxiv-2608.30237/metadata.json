@@ -1,0 +1,230 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.30237",
+  "title": "Motus2: A Self-Evolving General World Model for Dexterous Manipulation",
+  "title_zh": null,
+  "abstract": "General embodied agents should perceive, predict, act, evaluate, and improve within a unified system. World models have shown great promise in building such agents, yet existing models typically append an action output head to a world simulator, without coupling them into a closed decision-and-learning loop for policy improvement. We present Motus2, a self-evolving general world model for dexterous manipulation. Motus2 advances world modeling through model scaling and data scaling. For model scaling, a single model with shared weights exposes three control interfaces: a policy (world-action model), a simulator (action-conditioned world model), and an evaluator (value model). The policy proposes candidate action chunks, the simulator predicts their visual consequences, and the evaluator assesses the predicted outcomes. Their coupling forms a closed decision-and-learning loop for policy improvement. This formulation uses curated expert demonstrations for action learning, while failed and suboptimal interactions provide valuable evidence for dynamics modeling and value learning. For data scaling, Motus2 progresses from large-scale monocular egocentric data to synchronized stereo egocentric data, followed by robot-domain adaptation with robot trajectories and supplementary human-robot alignment data. Motus2 further studies global-autoregressive and hybrid-memory extensions of its sliding-window context, adds tactile feedback for contact-aware control, and is instantiated on a fully biomimetic platform with stereo vision, dual arms, dual dexterous hands, and tactile sensing. Together, egocentric data scaling and closed-loop general world model scaling provide a general path toward self-evolving dexterous manipulation.",
+  "paper_url": "https://arxiv.org/abs/2608.30237",
+  "pdf_url": "https://arxiv.org/pdf/2608.30237",
+  "project_url": "https://motus-robotics.github.io/motus2",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Hongzhe Bi",
+      "affiliations": []
+    },
+    {
+      "name": "Zihao Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Yihang Tang",
+      "affiliations": []
+    },
+    {
+      "name": "Jingrui Pang",
+      "affiliations": []
+    },
+    {
+      "name": "Shuhe Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Haitian Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Runqing Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Shuai Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Yichen Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Yiming Cheng",
+      "affiliations": []
+    },
+    {
+      "name": "Ruowen Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Zhenghua Li",
+      "affiliations": []
+    },
+    {
+      "name": "Hengkai Tan",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaolong Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Jinhui Wan",
+      "affiliations": []
+    },
+    {
+      "name": "Jiabao Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Min Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Fan Bao",
+      "affiliations": []
+    },
+    {
+      "name": "Jun Zhu",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "genspi",
+      "name": "GensPI",
+      "role": "primary"
+    },
+    {
+      "id": "tsinghua-university",
+      "name": "Tsinghua University",
+      "role": "collaborator"
+    },
+    {
+      "id": "beihang-university",
+      "name": "Beihang University",
+      "role": "collaborator"
+    },
+    {
+      "id": "beijing-institute-of-technology",
+      "name": "Beijing Institute of Technology",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-31",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "topics": [
+      "world-model"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "dexterous-hand",
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "action",
+      "tactile"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "properties": [
+      "simulation-only",
+      "large-scale-data"
+    ],
+    "assets": [
+      "project-page"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 95,
+    "selection_reason": "Motus2把策略、可交互世界模型和价值评估器统一到一个可持续自进化系统中，并把视觉、工作记忆和触觉用于灵巧操作闭环，是本批系统完整性和潜在影响最高的工作之一。",
+    "candidate_run": "2026-09-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-09-01",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "触觉手套存在噪声与形态差异，论文明确指出跨本体触觉不能直接迁移",
+      "项目页已声明，但尚未确认完整训练代码和模型权重"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.30237"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.30237"
+    },
+    {
+      "type": "project-page",
+      "url": "https://motus-robotics.github.io/motus2"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "model-based-rl",
+      "name": "model-based-rl",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "Motus2把策略、可交互世界模型和价值评估器统一到一个可持续自进化系统中，并把视觉、工作记忆和触觉用于灵巧操作闭环，是本批系统完整性和潜在影响最高的工作之一。"
+    },
+    {
+      "dimension": "topics",
+      "slug": "dexterous-manipulation",
+      "name": "dexterous-manipulation",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "Motus2把策略、可交互世界模型和价值评估器统一到一个可持续自进化系统中，并把视觉、工作记忆和触觉用于灵巧操作闭环，是本批系统完整性和潜在影响最高的工作之一。"
+    }
+  ],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.30237",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, conclusion and limitations were reviewed in official arXiv HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-09-01"
+  },
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "type": "project",
+      "url": "https://motus-robotics.github.io/motus2",
+      "status": "project-page-only",
+      "evidence": "Official project URL appears in the paper."
+    }
+  ]
+}

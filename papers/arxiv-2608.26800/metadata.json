@@ -1,0 +1,159 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.26800",
+  "title": "Rapid On-Robot Learning for Dynamic Manipulation Skills: Robot Juggling",
+  "title_zh": null,
+  "abstract": "We present an online learning framework that enables a bimanual robot to acquire diverse juggling patterns directly on physical hardware within minutes, even with a significant sim2real gap. One of the most important lessons from this work is that a model, even when far from reality, can be extremely useful for learning. This motivates a central philosophy of our approach: learning should build upon the robot's current knowledge rather than replace it. Our regularized memory-based learning puts this principle into practice by learning a local model from accumulated experience while retaining the global prior model to extrapolate where experience is sparse. This enables efficient and stable online learning from each new experience without resorting to uninformed exploration over a vast space of possible behaviors. Equally important to continual on-robot learning is safety, allowing the robot to repeatedly practice and improve in the real world. We construct a mutually reachable set that allows safe transitions between successive throws and catches, without driving either arm into a state from which its next action would require violating the robot's joint or actuator limits. Together, these ideas enable a bimanual robot with multi-fingered hands and onboard vision to safely learn and compose five canonical three-ball juggling patterns, including cascade, tennis, half-shower, shower, and box, within less than 5 minutes of real-world interaction. More broadly, this work points toward robots that build upon imperfect prior knowledge and continually refine their behavior through their own real-world experience.",
+  "paper_url": "https://arxiv.org/abs/2608.26800",
+  "pdf_url": "https://arxiv.org/pdf/2608.26800",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Taeyoon Lee",
+      "affiliations": []
+    },
+    {
+      "name": "Chunpeng Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Christopher G. Atkeson",
+      "affiliations": []
+    },
+    {
+      "name": "Alfred A. Rizzi",
+      "affiliations": []
+    },
+    {
+      "name": "Nicolas Rojas",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "robotics-and-ai-institute",
+      "name": "Robotics and AI Institute",
+      "role": "primary"
+    },
+    {
+      "id": "carnegie-mellon-university-robotics-institute",
+      "name": "Carnegie Mellon University Robotics Institute",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-27",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "dexterous-hand",
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "action"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ],
+    "assets": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 90,
+    "selection_reason": "这项工作让双臂多指机器人直接在真机上用不到5分钟学习并组合五种三球杂耍模式；价值不在炫技本身，而在展示“差的先验模型+安全局部在线修正”可实现快速持续学习。",
+    "candidate_run": "2026-08-29",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-29",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "没有确认到官方代码或项目页",
+      "单一高端硬件系统的结果能否迁移到其他动态技能仍未知",
+      "论文缺少独立训练基线在完全相同安全预算下的直接比较"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.26800"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.26800"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "continual-learning",
+      "name": "continual-learning",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "这项工作让双臂多指机器人直接在真机上用不到5分钟学习并组合五种三球杂耍模式；价值不在炫技本身，而在展示“差的先验模型+安全局部在线修正”可实现快速持续学习。"
+    },
+    {
+      "dimension": "topics",
+      "slug": "dexterous-manipulation",
+      "name": "dexterous-manipulation",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "这项工作让双臂多指机器人直接在真机上用不到5分钟学习并组合五种三球杂耍模式；价值不在炫技本身，而在展示“差的先验模型+安全局部在线修正”可实现快速持续学习。"
+    },
+    {
+      "dimension": "topics",
+      "slug": "safe-learning",
+      "name": "safe-learning",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "这项工作让双臂多指机器人直接在真机上用不到5分钟学习并组合五种三球杂耍模式；价值不在炫技本身，而在展示“差的先验模型+安全局部在线修正”可实现快速持续学习。"
+    }
+  ],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.26800",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, conclusion and limitations were reviewed in official arXiv HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-29"
+  },
+  "organization_evidence": [
+    {
+      "source": "arXiv HTML author block",
+      "url": "https://arxiv.org/html/2608.26800",
+      "evidence": "All authors list RAI; Christopher Atkeson also lists CMU Robotics Institute."
+    }
+  ],
+  "asset_checks": []
+}

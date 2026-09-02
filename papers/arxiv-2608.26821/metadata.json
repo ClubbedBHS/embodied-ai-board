@@ -1,0 +1,190 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.26821",
+  "title": "TemporalFlow-VLA: Learning Physically Grounded Execution History for Long-Horizon Robot Manipulation",
+  "title_zh": null,
+  "abstract": "Vision-language-action (VLA) models leverage pretrained vision-language representations for robot control, yet simply adding historical frames does not reliably capture recent physical change. This is especially problematic in multi-stage manipulation, where visually similar states may require different actions depending on prior execution. To address this challenge, we present TemporalFlow-VLA, which learns compact execution history through physically grounded temporal supervision. Using recorded robot states, robot geometry, and calibrated cameras, we construct robot-surface temporal flow as a training-only target and supervise two execution-aligned temporal queries that provide structured history to the action expert. The geometric supervision path is not evaluated at deployment. TemporalFlow-VLA achieves 97.63 +/- 0.26% average success on LIBERO, including 96.60 +/- 0.87% on LIBERO Long, and 85.5%/84.2% Clean/Randomized success across 12 RoboTwin tasks. It shows its clearest advantage over prior methods on longer-horizon, multi-stage manipulation. Controlled history interventions show that action prediction depends on both historical content and temporal order. With asynchronous feature caching, temporal conditioning maintains single-frame-level server-side sampling latency without additional historical-encoding overhead. Overall, TemporalFlow-VLA provides a compact, physically grounded interface for exploiting ordered execution history without explicit motion estimation or geometric processing at deployment.",
+  "paper_url": "https://arxiv.org/abs/2608.26821",
+  "pdf_url": "https://arxiv.org/pdf/2608.26821",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Jiarui Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Yehao Lu",
+      "affiliations": []
+    },
+    {
+      "name": "Yuning Su",
+      "affiliations": []
+    },
+    {
+      "name": "Yu Zhong",
+      "affiliations": []
+    },
+    {
+      "name": "Yufeng Xie",
+      "affiliations": []
+    },
+    {
+      "name": "Yazhou Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Haiyu Lan",
+      "affiliations": []
+    },
+    {
+      "name": "Kaixiang Lu",
+      "affiliations": []
+    },
+    {
+      "name": "Peiwen Lin",
+      "affiliations": []
+    },
+    {
+      "name": "Chuang Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Junwei Liang",
+      "affiliations": []
+    },
+    {
+      "name": "Enyu Li",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "the-hong-kong-university-of-science-and-technology-guangzhou",
+      "name": "The Hong Kong University of Science and Technology (Guangzhou)",
+      "role": "primary"
+    },
+    {
+      "id": "zhejiang-university",
+      "name": "Zhejiang University",
+      "role": "collaborator"
+    },
+    {
+      "id": "simon-fraser-university",
+      "name": "Simon Fraser University",
+      "role": "collaborator"
+    },
+    {
+      "id": "agibot",
+      "name": "AgiBot",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-27",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "properties": [],
+    "assets": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 80,
+    "selection_reason": "TemporalFlow-VLA不简单堆历史帧，而用训练期机器人表面时序流监督两个执行历史查询；LIBERO平均97.63%，RoboTwin 12任务为85.5/84.2%，且部署延迟维持单帧编码水平。",
+    "candidate_run": "2026-08-29",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-29",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "未确认代码或项目页",
+      "核心增益仍主要来自标准仿真基准，真机统计规模有限",
+      "训练需要机器人几何和相机标定，数据管线成本较高"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.26821"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.26821"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "memory",
+      "name": "memory",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "TemporalFlow-VLA不简单堆历史帧，而用训练期机器人表面时序流监督两个执行历史查询；LIBERO平均97.63%，RoboTwin 12任务为85.5/84.2%，且部署延迟维持单帧编码水平。"
+    },
+    {
+      "dimension": "topics",
+      "slug": "long-horizon-manipulation",
+      "name": "long-horizon-manipulation",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "TemporalFlow-VLA不简单堆历史帧，而用训练期机器人表面时序流监督两个执行历史查询；LIBERO平均97.63%，RoboTwin 12任务为85.5/84.2%，且部署延迟维持单帧编码水平。"
+    }
+  ],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.26821",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, conclusion and limitations were reviewed in official arXiv HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-29"
+  },
+  "organization_evidence": [
+    {
+      "source": "arXiv HTML author block",
+      "url": "https://arxiv.org/html/2608.26821",
+      "evidence": "Affiliations are mapped author by author in the header."
+    }
+  ],
+  "asset_checks": []
+}

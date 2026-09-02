@@ -1,0 +1,171 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.28578",
+  "title": "Aero Hand Open: A Simulation-Ready Tendon-Driven Hand for Dexterous Manipulation Learning",
+  "title_zh": null,
+  "abstract": "Tendon-driven hands are anthropomorphic, and moving the actuators off the joints is what makes a hand of this capability affordable to build. Two effects produce that saving. Routing force through a cable removes the requirement that a motor fit inside the joint it drives, so smaller and cheaper motors suffice, and one motor can drive several joints through a single cable, so fewer motors are needed. They are also harder to learn on than a direct-drive hand. The underactuated transmission that produces the saving is itself difficult to represent in a simulator, and the joints one cable drives are not independently commandable. We present Aero Hand Open, a tendon-driven anthropomorphic hand that is released simulation-ready. Three things ship with it. A simulation model reproduces the cable transmission itself. An identified actuation map connects that model to the motor commands in both directions, including the three-way coupling of the thumb. A reinforcement learning package trains policies for the hand. Together they let a policy be trained entirely in simulation and run on the hand with no fine-tuning and no state estimation. We release the mechanical design, the simulation model, the identified mapping, the training environment and the deployment stack.",
+  "paper_url": "https://arxiv.org/abs/2608.28578",
+  "pdf_url": "https://arxiv.org/pdf/2608.28578",
+  "project_url": "https://tetheria.github.io/aero-hand-open/",
+  "code_url": "https://github.com/TetherIA/aero-hand-open",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Nan Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Mohit Yadav",
+      "affiliations": []
+    },
+    {
+      "name": "Jonathan Wulff",
+      "affiliations": []
+    },
+    {
+      "name": "Aidan Rosenbaum",
+      "affiliations": []
+    },
+    {
+      "name": "Kezhou Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Yuvan Sharma",
+      "affiliations": []
+    },
+    {
+      "name": "Xu Dong",
+      "affiliations": []
+    },
+    {
+      "name": "Yiwei Tao",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "tetheria",
+      "name": "TetherIA",
+      "role": "primary"
+    },
+    {
+      "id": "california-institute-of-technology",
+      "name": "California Institute of Technology",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-28",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "infrastructure",
+      "simulators"
+    ],
+    "topics": [
+      "sim-to-real",
+      "control",
+      "reinforcement-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "dexterous-hand",
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "action",
+      "tactile",
+      "point-cloud"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "properties": [
+      "simulation-only",
+      "zero-shot"
+    ],
+    "assets": [
+      "code",
+      "project-page"
+    ]
+  },
+  "paper_type": [
+    "simulator",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 93,
+    "selection_reason": "Aero Hand Open提供从可3D打印硬件、固件、ROS 2到MuJoCo与强化学习部署的完整开放栈，并用系统辨识的腱驱动模型实现立方体旋转零样本仿真到现实，是本批复现价值最高的机器人硬件工作。",
+    "candidate_run": "2026-09-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-09-01",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "零样本迁移目前以立方体旋转为主，复杂物体与长期耐用性仍需验证",
+      "低成本腱驱动结构的维护和标定负担需要更多独立复现"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.28578"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.28578"
+    },
+    {
+      "type": "project-page",
+      "url": "https://tetheria.github.io/aero-hand-open/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.28578",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, conclusion and limitations were reviewed in official arXiv HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-09-01"
+  },
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "type": "code",
+      "url": "https://github.com/TetherIA/aero-hand-open",
+      "status": "verified",
+      "evidence": "Public repository contains hardware, firmware, ROS 2, SDK, MuJoCo, training and deployment files."
+    },
+    {
+      "type": "project",
+      "url": "https://tetheria.github.io/aero-hand-open/",
+      "status": "verified",
+      "evidence": "Official project page is accessible."
+    }
+  ]
+}

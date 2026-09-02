@@ -1,0 +1,206 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.26578",
+  "title": "TrapVLA: Trapping Vision-Language-Action Models in Configured Failure Modes",
+  "title_zh": null,
+  "abstract": "This work introduces Configured Failure Trapping, a novel backdoor attack task against Vision-Language-Action (VLA) models, which aims to activate attacks through stealthy textual triggers and induce configured failure modes. Unlike prior backdoor attacks that treat any task failure as a successful attack, Configured Failure Trapping requires the attacker to control how the robot fails (e.g., causing the robot to grasp with a specified positional offset), making it substantially more challenging and hard to detect. To support the new task, we propose an effective data engine for synthesizing high-quality target trajectories and an automated suite for measuring configured-failure fidelity. Then, based on this foundation, we construct two new benchmarks, namely Trap-LIBERO and Trap-RoboTwin, that instantiate Configured Failure Trapping across four representative failure modes. To address this task, we identify sparse action deviation as a critical challenge and accordingly propose a novel method named TrapVLA, which explicitly learns trigger-induced action residuals to steer the policy toward the configured failure behavior. Extensive experiments across simulation benchmarks and real-world robotic settings show that TrapVLA effectively injects configured failure modes into VLA models while largely preserving performance on clean data. Project page: https://john-liua.github.io/TrapVLA/",
+  "paper_url": "https://arxiv.org/abs/2608.26578",
+  "pdf_url": "https://arxiv.org/pdf/2608.26578",
+  "project_url": "https://john-liua.github.io/TrapVLA/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Jun-Hui Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Kun-Yu Lin",
+      "affiliations": []
+    },
+    {
+      "name": "Yi-Lin Wei",
+      "affiliations": []
+    },
+    {
+      "name": "Xu-Han Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Yinghao Li",
+      "affiliations": []
+    },
+    {
+      "name": "Zhuohao Li",
+      "affiliations": []
+    },
+    {
+      "name": "Yuan-Ming Li",
+      "affiliations": []
+    },
+    {
+      "name": "Qing Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaoyi Fan",
+      "affiliations": []
+    },
+    {
+      "name": "Dongmei Jiang",
+      "affiliations": []
+    },
+    {
+      "name": "Yan Li",
+      "affiliations": []
+    },
+    {
+      "name": "Wei-Shi Zheng",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "sun-yat-sen-university",
+      "name": "Sun Yat-sen University",
+      "role": "primary"
+    },
+    {
+      "id": "pengcheng-laboratory",
+      "name": "Pengcheng Laboratory",
+      "role": "collaborator"
+    },
+    {
+      "id": "the-university-of-hong-kong",
+      "name": "The University of Hong Kong",
+      "role": "collaborator"
+    },
+    {
+      "id": "jiangxing-intelligence",
+      "name": "Jiangxing Intelligence",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-27",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla"
+    ],
+    "tasks": [
+      "manipulation",
+      "generalist-control"
+    ],
+    "platforms": [
+      "dexterous-hand"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ],
+    "assets": [
+      "project-page"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 88,
+    "selection_reason": "TrapVLA把VLA后门从“让任务失败”推进到“精确控制如何失败”，并给出四类故障、两个基准和自动评测；对实际部署安全而言，这比普通触发式攻击更难察觉也更有警示价值。",
+    "candidate_run": "2026-08-29",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-29",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文展示的是攻击能力而非防御方案",
+      "尚未确认代码和基准资产公开",
+      "真机部分以演示为主，统计强度低于仿真"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.26578"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.26578"
+    },
+    {
+      "type": "project-page",
+      "url": "https://john-liua.github.io/TrapVLA/"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "security",
+      "name": "security",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "TrapVLA把VLA后门从“让任务失败”推进到“精确控制如何失败”，并给出四类故障、两个基准和自动评测；对实际部署安全而言，这比普通触发式攻击更难察觉也更有警示价值。"
+    },
+    {
+      "dimension": "topics",
+      "slug": "safety",
+      "name": "safety",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "TrapVLA把VLA后门从“让任务失败”推进到“精确控制如何失败”，并给出四类故障、两个基准和自动评测；对实际部署安全而言，这比普通触发式攻击更难察觉也更有警示价值。"
+    }
+  ],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.26578",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, conclusion and limitations were reviewed in official arXiv HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-29"
+  },
+  "organization_evidence": [
+    {
+      "source": "arXiv HTML author block",
+      "url": "https://arxiv.org/html/2608.26578",
+      "evidence": "Four numbered affiliations are stated below the abstract."
+    }
+  ],
+  "asset_checks": [
+    {
+      "type": "project",
+      "url": "https://john-liua.github.io/TrapVLA/",
+      "status": "verification-error",
+      "evidence": "Official URL appears in the paper; the verifier returned an internal fetch error."
+    }
+  ]
+}

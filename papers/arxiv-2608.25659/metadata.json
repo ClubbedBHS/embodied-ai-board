@@ -1,0 +1,206 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.25659",
+  "title": "GaussianDream++: Efficient 3D Gaussian World Modeling for Robotic Manipulation",
+  "title_zh": null,
+  "abstract": "Vision-Language-Action (VLA) policies have advanced language-conditioned robotic manipulation, yet action-imitation objectives provide only weak supervision for metric 3D structure and short-horizon physical evolution. Geometry-enhanced policies mainly improve current-scene grounding, whereas predictive policies often model future dynamics in RGB or latent spaces and may incur substantial deployment cost. GaussianDream demonstrates that training-time current Gaussian reconstruction and future Gaussian prediction provide effective 3D supervision, but its dense VGGT/TGE-based prefix jointly carries state, dynamics, and action-conditioning information. We present \\textbf{\\methodname}, a compact, policy-native extension that inserts \\textbf{World State Tokens} and \\textbf{World Prediction Tokens} directly into the VLA backbone. A training-only \\textbf{World Representation Head} decodes these tokens into a Current World and coupled Future Prediction over shared Gaussian primitives, while static--dynamic factorization preserves persistent structure and focuses residual motion on interaction-relevant regions. At inference, the head, renderer, auxiliary objectives, and VGGT/TGE pathway are removed, leaving only 20 world tokens without online Gaussian decoding or rollout. \\method achieves \\textbf{98.6\\%} on LIBERO and \\textbf{87.8\\%} on LIBERO-Plus, with clear gains under Camera and Layout shifts. Real-robot experiments further improve average success from 29.2\\% to 52.5\\% over reproduced $π_{0.5}$ while maintaining efficient closed-loop control.",
+  "paper_url": "https://arxiv.org/abs/2608.25659",
+  "pdf_url": "https://arxiv.org/pdf/2608.25659",
+  "project_url": "https://tuojingai.github.io/GaussianDream-Series-project-page/",
+  "code_url": "https://github.com/TuojingAI/GaussianDream",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yuqing Jiang",
+      "affiliations": []
+    },
+    {
+      "name": "Zijian Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Weitao Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Jiawei Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Junjie He",
+      "affiliations": []
+    },
+    {
+      "name": "Lei Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Haifang Qing",
+      "affiliations": []
+    },
+    {
+      "name": "Si Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Ding Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Ping Luo",
+      "affiliations": []
+    },
+    {
+      "name": "Haibao Yu",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "tuojing-intelligence",
+      "name": "Tuojing Intelligence",
+      "role": "primary"
+    },
+    {
+      "id": "institute-of-automation-chinese-academy-of-sciences",
+      "name": "Institute of Automation, Chinese Academy of Sciences",
+      "role": "collaborator"
+    },
+    {
+      "id": "tsinghua-university",
+      "name": "Tsinghua University",
+      "role": "collaborator"
+    },
+    {
+      "id": "carnegie-mellon-university",
+      "name": "Carnegie Mellon University",
+      "role": "collaborator"
+    },
+    {
+      "id": "the-university-of-hong-kong",
+      "name": "The University of Hong Kong",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-26",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model",
+      "vla"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action",
+      "point-cloud"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ],
+    "assets": [
+      "project-page"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 89,
+    "selection_reason": "GaussianDream++把训练期3D高斯世界监督压缩为20个策略内token，部署时移除重建与渲染路径；LIBERO 98.6%、LIBERO-Plus 87.8%，真机平均成功率从复现的π0.5的29.2%升至52.5%。",
+    "candidate_run": "2026-08-29",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-29",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "现有仓库明确覆盖GaussianDream，但尚未确认++版本核心实现",
+      "真机任务仍是桌面操作，跨平台结论有限"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.25659"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.25659"
+    },
+    {
+      "type": "project-page",
+      "url": "https://tuojingai.github.io/GaussianDream-Series-project-page/"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "3d-representation",
+      "name": "3d-representation",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "GaussianDream++把训练期3D高斯世界监督压缩为20个策略内token，部署时移除重建与渲染路径；LIBERO 98.6%、LIBERO-Plus 87.8%，真机平均成功率从复现的π0.5的29.2%升至52.5%。"
+    }
+  ],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.25659",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, conclusion and limitations were reviewed in official arXiv HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-29"
+  },
+  "organization_evidence": [
+    {
+      "source": "arXiv HTML author block",
+      "url": "https://arxiv.org/html/2608.25659",
+      "evidence": "Affiliations are explicitly mapped in the paper header."
+    }
+  ],
+  "asset_checks": [
+    {
+      "type": "code",
+      "url": "https://github.com/TuojingAI/GaussianDream",
+      "status": "partial",
+      "evidence": "Public repository contains runnable GaussianDream code and evaluation tracks, but its README does not yet identify a GaussianDream++ release."
+    },
+    {
+      "type": "project",
+      "url": "https://tuojingai.github.io/GaussianDream-Series-project-page/",
+      "status": "verification-error",
+      "evidence": "Official URL appears in the paper; the verifier returned an internal fetch error."
+    }
+  ]
+}

@@ -48,7 +48,7 @@ function formatDate(value: string | null | undefined) {
   return value.replaceAll("-", ".");
 }
 
-const BOARD_UPDATED_AT = "2026-08-25";
+const BOARD_UPDATED_AT = "2026-09-01";
 const DAY_MS = 24 * 60 * 60 * 1000;
 
 function parseDate(value: string) {

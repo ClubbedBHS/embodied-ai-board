@@ -1,0 +1,171 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.28718",
+  "title": "RoboPhys-3D: A Comprehensive Embodied World Model Evaluation via 3D Reconstruction",
+  "title_zh": null,
+  "abstract": "Video world models increasingly serve as data engines, action planners, and simulators for embodied AI, but conventional embodied world model (EWM) benchmarks lack a unified 3D-grounded protocol for establishing whether generated rollouts preserve the underlying 3D scene state or translate into executable actions. We introduce RoboPhys-3D, a 3D-grounded EWM benchmark built on RoboTwin 2.0, covering 50 manipulation tasks across four regimes, with 5,000 episodes and 25,000 multi-view ground-truth videos. A defining feature of RoboPhys-3D is that generated and ground-truth videos are processed through the same 3D reconstruction pipeline, enabling reconstruction-induced error to be distinguished from generation-induced error. The RoboPhys-3D benchmark organizes 50 complementary metrics into 18 sub-dimensions across four levels: pixel-level fidelity, 3D geometry consistency, state-level understanding, and task-level completeness. We further introduce Average Full Score, a hierarchical score averaging all 50 metrics for comprehensive evaluation, and RoboPhyscore, a compact task-aligned score averaging the metrics most strongly correlated with task success. Among the four representative video world models, Cosmos 3 achieves the highest RoboPhyscore (0.6330, 92.7% of ground truth), while state- and execution-grounded metrics reveal substantial failures that perceptual and vision-language model-based judgments fail to capture. RoboPhyscore further exhibits strong agreement with human evaluation (Pearson r = 0.9761 and Spearman \\r{ho} = 0.8962), demonstrating the importance of grounded, execution-aware evaluation for EWM capability.",
+  "paper_url": "https://arxiv.org/abs/2608.28718",
+  "pdf_url": "https://arxiv.org/pdf/2608.28718",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Tianyi Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Jiazhou Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Yiming Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Xiangyu Li",
+      "affiliations": []
+    },
+    {
+      "name": "Tianyi Zeng",
+      "affiliations": []
+    },
+    {
+      "name": "Chih-Hsien Chou",
+      "affiliations": []
+    },
+    {
+      "name": "Ning Lu",
+      "affiliations": []
+    },
+    {
+      "name": "Liang Peng",
+      "affiliations": []
+    },
+    {
+      "name": "Junfeng Jiao",
+      "affiliations": []
+    },
+    {
+      "name": "Christian Claudel",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "the-university-of-texas-at-austin",
+      "name": "The University of Texas at Austin",
+      "role": "primary"
+    },
+    {
+      "id": "purdue-university",
+      "name": "Purdue University",
+      "role": "collaborator"
+    },
+    {
+      "id": "futurewei-technologies",
+      "name": "Futurewei Technologies",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-28",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "infrastructure",
+      "simulators"
+    ],
+    "topics": [
+      "world-model",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action",
+      "point-cloud"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "properties": [
+      "simulation-only",
+      "large-scale-data"
+    ],
+    "assets": []
+  },
+  "paper_type": [
+    "simulator",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 91,
+    "selection_reason": "RoboPhys-3D不再只用视频相似度评测世界模型，而是通过3D重建检查物体状态、几何和物理一致性；50项任务、50个指标和很高的人类一致性使它成为重要的世界模型诊断基准。",
+    "candidate_run": "2026-09-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-09-01",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前数据来自单一仿真平台和单一本体",
+      "论文不同段落分别报告2.5万基准视频和14.5万总生成/重建视频，使用时需区分口径",
+      "未找到官方代码或数据入口"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.28718"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.28718"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "benchmark",
+      "name": "benchmark",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "RoboPhys-3D不再只用视频相似度评测世界模型，而是通过3D重建检查物体状态、几何和物理一致性；50项任务、50个指标和很高的人类一致性使它成为重要的世界模型诊断基准。"
+    }
+  ],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.28718",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, conclusion and limitations were reviewed in official arXiv HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-09-01"
+  },
+  "organization_evidence": [],
+  "asset_checks": []
+}

@@ -1,0 +1,194 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.27033",
+  "title": "Riemann-1.0: An Embodied World Action Model for Physical AI",
+  "title_zh": null,
+  "abstract": "We introduce Riemann-1.0, a fully causal autoregressive World Action Model for embodied intelligence. Riemann-1.0 jointly models multi-view visual observations, robot states, and embodiment-specific actions within a unified causal autoregressive sequence, representing robot actions and world evolution as causal state transitions. Unlike existing WAMs based on joint generation, video-first prediction, or decoupled modeling paradigms, Riemann-1.0 unifies online robot policy execution and action-conditioned world simulation within a single model, enabling it to function as both an executable robot policy and a multi-embodiment visual world simulator. To scale embodied experience across heterogeneous data sources, we further develop a progressive embodied pretraining framework that unifies learning from egocentric human videos, handheld-gripper demonstrations, and heterogeneous robot trajectories under a shared World Action Modeling objective. Built upon 200K+ hours of interaction data, Riemann-1.0 progressively transfers large-scale embodied experience into executable robot manipulation capabilities. Riemann-1.0 achieves state-of-the-art performance across both simulation benchmarks and real-world manipulation tasks. It achieves success rates of 94.3% on RoboTwin2.0, 99.0% on LIBERO, and 62.6% on the long-horizon compositional benchmark RoboCasa-365, outperforming the previous best method by 8.4% On long-horizon real-world manipulation tasks, Riemann-1.0 achieves a Success Rate (SR) of 85.0% and a Progress Success Rate (PSR) of 94.4%, exceeding the strongest open-source baseline by 15% in SR. These results demonstrate that unified World Action Modeling together with progressive embodied pretraining effectively transforms large-scale embodied experience into generalizable robot manipulation capabilities.",
+  "paper_url": "https://arxiv.org/abs/2608.27033",
+  "pdf_url": "https://arxiv.org/pdf/2608.27033",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Haofeng Sun",
+      "affiliations": []
+    },
+    {
+      "name": "Jiangbo Pei",
+      "affiliations": []
+    },
+    {
+      "name": "Fei Kang",
+      "affiliations": []
+    },
+    {
+      "name": "Zexiang Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Yaokun Li",
+      "affiliations": []
+    },
+    {
+      "name": "Boyi Jiang",
+      "affiliations": []
+    },
+    {
+      "name": "Hua Xue",
+      "affiliations": []
+    },
+    {
+      "name": "Cindy Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Wei Li",
+      "affiliations": []
+    },
+    {
+      "name": "Yichen Wei",
+      "affiliations": []
+    },
+    {
+      "name": "Mengyin An",
+      "affiliations": []
+    },
+    {
+      "name": "Fanliang Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Biao Jiang",
+      "affiliations": []
+    },
+    {
+      "name": "Zile Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Yang Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Yangguang Li",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "riemann-dynamics",
+      "name": "Riemann Dynamics",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-27",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data"
+    ],
+    "topics": [
+      "world-model",
+      "vla",
+      "foundation-model"
+    ],
+    "tasks": [
+      "manipulation",
+      "generalist-control"
+    ],
+    "platforms": [
+      "dexterous-hand",
+      "robot-arm",
+      "multi-robot"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "properties": [
+      "real-robot-evaluation",
+      "large-scale-data"
+    ],
+    "assets": []
+  },
+  "paper_type": [
+    "method",
+    "dataset"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 85,
+    "selection_reason": "Riemann-1.0以统一因果序列同时承担机器人策略与多本体视觉模拟器，并把20万小时人类、手持夹爪和机器人数据逐级对齐；三个仿真基准和长时程真机结果都很强。",
+    "candidate_run": "2026-08-29",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-29",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "没有确认到代码、模型或数据入口，200K小时规模难以独立复核",
+      "同系列闭源数据与内部训练细节会显著影响公平比较",
+      "论文未单列局限性章节"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.27033"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.27033"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "cross-embodiment",
+      "name": "cross-embodiment",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "Riemann-1.0以统一因果序列同时承担机器人策略与多本体视觉模拟器，并把20万小时人类、手持夹爪和机器人数据逐级对齐；三个仿真基准和长时程真机结果都很强。"
+    }
+  ],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.27033",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, conclusion and limitations were reviewed in official arXiv HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-29"
+  },
+  "organization_evidence": [
+    {
+      "source": "arXiv HTML author block",
+      "url": "https://arxiv.org/html/2608.27033",
+      "evidence": "The author block identifies Riemann Dynamics."
+    }
+  ],
+  "asset_checks": []
+}

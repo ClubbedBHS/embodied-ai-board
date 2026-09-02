@@ -1,0 +1,179 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.30880",
+  "title": "Zeva: In-Context Causal Learning for Generalizable Embodied Manipulation",
+  "title_zh": null,
+  "abstract": "Generalizable embodied manipulation remains difficult to achieve through pretraining alone, due to unseen physical conditions in the real world. We argue that robots need to learn from their own physical interactions on the fly during real-world deployment and use this knowledge to inform subsequent actions. We present Zeva, the first framework that enables in-context learning from a robot's own physical interaction experience while keeping the policy model frozen. Zeva employs a Causal Interaction Extractor to encode an executed action and its induced state change into a causal interaction signal, which is stored in a dual-timescale causal memory. For subsequent actions, relevant causal interaction signals are retrieved from memory and injected into the frozen policy model as context. Experiments in simulation and real-world manipulation demonstrate that Zeva achieves the best performance among the compared frontier VLAs and WAMs and, more importantly, enables self-evolution during deployment without gradient updates. Its success rate continues to improve as the robot accumulates interaction experience. Furthermore, the acquired interaction experience can generalize across tasks.",
+  "paper_url": "https://arxiv.org/abs/2608.30880",
+  "pdf_url": "https://arxiv.org/pdf/2608.30880",
+  "project_url": "https://air-embodied-brain.github.io/Zeva",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Fu Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Xin Ding",
+      "affiliations": []
+    },
+    {
+      "name": "Bingjia Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Xiangyu Li",
+      "affiliations": []
+    },
+    {
+      "name": "Mingju Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Jiawei He",
+      "affiliations": []
+    },
+    {
+      "name": "Kun Li",
+      "affiliations": []
+    },
+    {
+      "name": "Wei Sun",
+      "affiliations": []
+    },
+    {
+      "name": "Yunxin Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Hao Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Ting Cao",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "tsinghua-university-air",
+      "name": "Tsinghua University AIR",
+      "role": "primary"
+    },
+    {
+      "id": "z-trans-ai",
+      "name": "Z-Trans AI",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-31",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "foundation-model",
+      "planning"
+    ],
+    "tasks": [
+      "manipulation",
+      "generalist-control"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "language",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ],
+    "assets": [
+      "project-page"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 89,
+    "selection_reason": "Zeva让冻结策略通过双时间尺度记忆积累因果交互信号，无需梯度更新即可跨episode自我改进；这种部署期因果记忆路线与常规参数微调形成了有价值的对照。",
+    "candidate_run": "2026-09-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-09-01",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文没有独立局限性章节",
+      "真实验证集中在ChemLab场景",
+      "未找到官方代码"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.30880"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.30880"
+    },
+    {
+      "type": "project-page",
+      "url": "https://air-embodied-brain.github.io/Zeva"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "in-context-learning",
+      "name": "in-context-learning",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "Zeva让冻结策略通过双时间尺度记忆积累因果交互信号，无需梯度更新即可跨episode自我改进；这种部署期因果记忆路线与常规参数微调形成了有价值的对照。"
+    }
+  ],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.30880",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, conclusion and limitations were reviewed in official arXiv HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-09-01"
+  },
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "type": "project",
+      "url": "https://air-embodied-brain.github.io/Zeva",
+      "status": "project-page-only",
+      "evidence": "Official project page found; no code repository was located."
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "promoted_at": "2026-09-01",
+  "count": 24,
+  "records": [
+    {
+      "id": "arxiv-2608.27406",
+      "run": "2026-08-29",
+      "score": 95,
+      "decision": "featured"
+    },
+    {
+      "id": "arxiv-2608.26103",
+      "run": "2026-08-29",
+      "score": 90,
+      "decision": "featured"
+    },
+    {
+      "id": "arxiv-2608.25659",
+      "run": "2026-08-29",
+      "score": 89,
+      "decision": "featured"
+    },
+    {
+      "id": "arxiv-2608.26800",
+      "run": "2026-08-29",
+      "score": 90,
+      "decision": "featured"
+    },
+    {
+      "id": "arxiv-2608.24885",
+      "run": "2026-08-29",
+      "score": 90,
+      "decision": "featured"
+    },
+    {
+      "id": "arxiv-2608.23863",
+      "run": "2026-08-29",
+      "score": 88,
+      "decision": "featured"
+    },
+    {
+      "id": "arxiv-2608.23831",
+      "run": "2026-08-29",
+      "score": 88,
+      "decision": "featured"
+    },
+    {
+      "id": "arxiv-2608.26578",
+      "run": "2026-08-29",
+      "score": 88,
+      "decision": "featured"
+    },
+    {
+      "id": "arxiv-2608.27033",
+      "run": "2026-08-29",
+      "score": 85,
+      "decision": "featured"
+    },
+    {
+      "id": "arxiv-2608.26583",
+      "run": "2026-08-29",
+      "score": 88,
+      "decision": "featured"
+    },
+    {
+      "id": "arxiv-2608.25864",
+      "run": "2026-08-29",
+      "score": 89,
+      "decision": "featured"
+    },
+    {
+      "id": "arxiv-2608.26821",
+      "run": "2026-08-29",
+      "score": 80,
+      "decision": "featured"
+    },
+    {
+      "id": "arxiv-2608.30237",
+      "run": "2026-09-01",
+      "score": 95,
+      "decision": "featured"
+    },
+    {
+      "id": "arxiv-2608.29601",
+      "run": "2026-09-01",
+      "score": 95,
+      "decision": "featured"
+    },
+    {
+      "id": "arxiv-2608.29242",
+      "run": "2026-09-01",
+      "score": 92,
+      "decision": "featured"
+    },
+    {
+      "id": "arxiv-2608.28995",
+      "run": "2026-09-01",
+      "score": 92,
+      "decision": "featured"
+    },
+    {
+      "id": "arxiv-2608.30880",
+      "run": "2026-09-01",
+      "score": 89,
+      "decision": "include"
+    },
+    {
+      "id": "arxiv-2608.30536",
+      "run": "2026-09-01",
+      "score": 88,
+      "decision": "include"
+    },
+    {
+      "id": "arxiv-2608.28718",
+      "run": "2026-09-01",
+      "score": 91,
+      "decision": "featured"
+    },
+    {
+      "id": "arxiv-2608.29487",
+      "run": "2026-09-01",
+      "score": 90,
+      "decision": "featured"
+    },
+    {
+      "id": "arxiv-2608.29769",
+      "run": "2026-09-01",
+      "score": 92,
+      "decision": "featured"
+    },
+    {
+      "id": "arxiv-2608.27550",
+      "run": "2026-09-01",
+      "score": 91,
+      "decision": "featured"
+    },
+    {
+      "id": "arxiv-2608.30289",
+      "run": "2026-09-01",
+      "score": 88,
+      "decision": "include"
+    },
+    {
+      "id": "arxiv-2608.28578",
+      "run": "2026-09-01",
+      "score": 93,
+      "decision": "featured"
+    }
+  ]
+}

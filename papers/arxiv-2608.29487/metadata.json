@@ -1,0 +1,169 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.29487",
+  "title": "Blind Dexterity: Whole-Body Humanoid Manipulation via Pure Proprioception",
+  "title_zh": null,
+  "abstract": "We present blind, whole-body manipulation skills on a Unitree G1 humanoid using only onboard proprioception, without cameras, markers, force-torque, or tactile sensors. Despite this minimal sensing, the trained policies exhibit surprising capability across qualitatively different tasks: push-resilient bipedal walking without IMU feedback, active soccer ball trapping with a foot, seeking and lifting a suitcase by its handle, and mounting a randomly positioned skateboard. We argue that these capabilities arise from a key underappreciated signal: the way the joint encoder readouts evolve under purposeful compliant contact, effectively forming a whole-body tactile channel. By generating contact-rich motions, the trained policies actively probe the environment; as a result, task-relevant object state (e.g., pose) becomes increasingly decodable from short proprioceptive histories. We expose this information using compact task-specific state estimators trained alongside, but fully separately from, the policies; their prediction errors decrease rapidly after informative contact. Our results indicate that joint encoder-based proprioception, combined with compliant actuation (now widely available on commercial robots and low-cost motors) is already a strong, practical substrate for whole-body dexterous manipulation and interactive perception, and therefore a natural foundation on which richer sensing can be layered.",
+  "paper_url": "https://arxiv.org/abs/2608.29487",
+  "pdf_url": "https://arxiv.org/pdf/2608.29487",
+  "project_url": "https://aditya.bhatts.org/BlindDexterity/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Aditya Bhatt",
+      "affiliations": []
+    },
+    {
+      "name": "Oleg Kaidanov",
+      "affiliations": []
+    },
+    {
+      "name": "Puze Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Jan Peters",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "tu-darmstadt",
+      "name": "TU Darmstadt",
+      "role": "primary"
+    },
+    {
+      "id": "hessian-ai",
+      "name": "hessian.AI",
+      "role": "collaborator"
+    },
+    {
+      "id": "dfki",
+      "name": "DFKI",
+      "role": "collaborator"
+    },
+    {
+      "id": "tongji-university",
+      "name": "Tongji University",
+      "role": "collaborator"
+    },
+    {
+      "id": "robotics-ai-germany",
+      "name": "Robotics AI Germany",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-30",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "control",
+      "reinforcement-learning"
+    ],
+    "tasks": [
+      "humanoid-control",
+      "manipulation",
+      "generalist-control"
+    ],
+    "platforms": [
+      "humanoid",
+      "dexterous-hand",
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "action",
+      "tactile",
+      "proprioception"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "properties": [],
+    "assets": [
+      "project-page"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 90,
+    "selection_reason": "Blind Dexterity证明Unitree G1只靠关节编码器形成的低分辨率主动触觉，也能完成行走、踢球、搬箱和滑板等全身接触任务，为不依赖视觉的稳健人形控制提供了极简而有启发性的路线。",
+    "candidate_run": "2026-09-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-09-01",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "关节编码器提供的接触位置分辨率很低且存在歧义",
+      "任务依赖接触探索，难以覆盖需要远距离预判的场景",
+      "未找到官方代码"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.29487"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.29487"
+    },
+    {
+      "type": "project-page",
+      "url": "https://aditya.bhatts.org/BlindDexterity/"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "proprioception",
+      "name": "proprioception",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "Blind Dexterity证明Unitree G1只靠关节编码器形成的低分辨率主动触觉，也能完成行走、踢球、搬箱和滑板等全身接触任务，为不依赖视觉的稳健人形控制提供了极简而有启发性的路线。"
+    }
+  ],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.29487",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, conclusion and limitations were reviewed in official arXiv HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-09-01"
+  },
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "type": "project",
+      "url": "https://aditya.bhatts.org/BlindDexterity/",
+      "status": "project-page-only",
+      "evidence": "Official project page found; no repository was located."
+    }
+  ]
+}

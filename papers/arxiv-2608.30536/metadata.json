@@ -1,0 +1,181 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.30536",
+  "title": "Behavior-Skill: A Fine-Grained Benchmark for Evaluating Vision-Language-Action Policies in Long-Horizon Tasks",
+  "title_zh": null,
+  "abstract": "Reliable execution of long-horizon mobile manipulation tasks remains challenging because overall task success depends on the successful completion of multiple constituent skills. Existing benchmarks, however, still rely primarily on full-task rollouts and aggregate task-level metrics, making intermediate failures difficult to observe and analyze. We present Behavior-Skill, a benchmark that reformulates the learning and evaluation of long-horizon tasks around executable constituent skills. It contains 235,492 skill instances from 10,000 demonstrations across 50 household tasks and 34 semantic skill categories. Each instance pairs a skill instruction with an aligned observation-action segment, and is further associated with a restorable intermediate state and a skill success condition to enable independent evaluation under valid preconditions. We further introduce trajectory-level and skill-level metrics to characterize policy capability beyond aggregate task success. Extensive experiments across representative VLA policies including pi0.5 and GR00T on the complete 50-task benchmark show that failures are highly non-uniform across skills, with contact-rich manipulation skills forming persistent bottlenecks. These results demonstrate that Behavior-Skill complements full-task evaluation by exposing intermediate capability profiles for analyzing and improving long-horizon VLA policies. Behavior-Skill is publicly available at https://github.com/nubot-nudt/Behavior-Skill.",
+  "paper_url": "https://arxiv.org/abs/2608.30536",
+  "pdf_url": "https://arxiv.org/pdf/2608.30536",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Chunyun Ma",
+      "affiliations": []
+    },
+    {
+      "name": "Lun Luo",
+      "affiliations": []
+    },
+    {
+      "name": "Xingjian Luo",
+      "affiliations": []
+    },
+    {
+      "name": "Xiexing Feng",
+      "affiliations": []
+    },
+    {
+      "name": "Hang Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Wei Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Feng Qiao",
+      "affiliations": []
+    },
+    {
+      "name": "Yaonan Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Huimin Lu",
+      "affiliations": []
+    },
+    {
+      "name": "Xieyuanli Chen",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "national-university-of-defense-technology",
+      "name": "National University of Defense Technology",
+      "role": "primary"
+    },
+    {
+      "id": "xpeng",
+      "name": "XPENG",
+      "role": "collaborator"
+    },
+    {
+      "id": "the-chinese-university-of-hong-kong",
+      "name": "The Chinese University of Hong Kong",
+      "role": "collaborator"
+    },
+    {
+      "id": "hunan-university",
+      "name": "Hunan University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-31",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data",
+      "infrastructure"
+    ],
+    "topics": [
+      "vla",
+      "planning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "mobile-robot",
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "properties": [
+      "large-scale-data"
+    ],
+    "assets": []
+  },
+  "paper_type": [
+    "dataset",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 88,
+    "selection_reason": "Behavior-Skill把长时程任务拆成可恢复、可诊断的细粒度技能，提供23.5万技能实例、1万演示和明确成功条件，能比单一任务成功率更准确地定位VLA的接触技能瓶颈。",
+    "candidate_run": "2026-09-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-09-01",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "论文声明的GitHub仓库当前返回404，暂不能复现",
+      "基准主要集中于家庭任务与既定技能分类"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.30536"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.30536"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "benchmark",
+      "name": "benchmark",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "Behavior-Skill把长时程任务拆成可恢复、可诊断的细粒度技能，提供23.5万技能实例、1万演示和明确成功条件，能比单一任务成功率更准确地定位VLA的接触技能瓶颈。"
+    }
+  ],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.30536",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, conclusion and limitations were reviewed in official arXiv HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-09-01"
+  },
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "type": "code",
+      "url": "https://github.com/nubot-nudt/Behavior-Skill",
+      "status": "not-found",
+      "evidence": "The paper-declared repository returned HTTP 404 on 2026-09-01."
+    }
+  ]
+}

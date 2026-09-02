@@ -1,0 +1,163 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.29601",
+  "title": "N0-Foundation: Towards the Age of Tactile Intelligence",
+  "title_zh": null,
+  "abstract": "We present $\\mathcal{N}_0$-Foundation, a paradigm for tactile-enabled embodied manipulation, which integrates tactile sensing hardware, large-scale multimodal data, tactile representation learning, and standardized evaluation. First, we engineer the infrastructure for scalable data collection, including a vision-based tactile sensor, a tactile Universal Manipulation Interface (UMI), and a synchronized visuo-tactile data collection system supporting both robot embodiments and UMI-based demonstrations. Leveraging this infrastructure, we construct NeoData, which contains more than 30000 hours of synchronized visual and tactile demonstrations, spanning six embodiments, 450 tasks, and billions of paired RGB and tactile frames collected through a mixture of real-robot teleoperation and UMI-based demonstrations. To facilitate open research, we further release OpenNeoData, a 5000-hour open-source subset of NeoData. The dataset addresses a central limitation of existing manipulation corpora, critical for deformable-object manipulation, precise assembly, delicate force control, and sustained surface interaction. Capitalizing on the large-scale, heterogeneous tactile measurements, we propose NeoForce, a visuo-tactile representation model that learn transferable tactile representations across different sensor designs. To enable systematic evaluation of tactile embodied models built upon our infrastructure, datasets and tactile representations, we further propose a comprehensive benchmark, which combines the real-world NeoReal suite and the simulated NeoSim suite for standardized evaluation. Experiments across both suites show that policies benefit from the physical contact state rather than from the device-specific appearance of the tactile signal. We release the dataset, the representation, and the benchmark, aiming at supporting future work on tactile-enabled embodied manipulation.",
+  "paper_url": "https://arxiv.org/abs/2608.29601",
+  "pdf_url": "https://arxiv.org/pdf/2608.29601",
+  "project_url": "https://research.neoteai.com/n0-foundation/",
+  "code_url": "https://github.com/neoteai/N0-Foundation",
+  "dataset_url": "https://huggingface.co/datasets/NeoteAIEmbodied/OpenNeoData",
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "NeoteAI Team",
+      "affiliations": []
+    },
+    {
+      "name": "Fudan TEAI Team",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "neoteai",
+      "name": "NeoteAI",
+      "role": "primary"
+    },
+    {
+      "id": "fudan-university-teai-lab",
+      "name": "Fudan University TEAI Lab",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-30",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data",
+      "infrastructure",
+      "simulators"
+    ],
+    "topics": [
+      "foundation-model",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation",
+      "generalist-control"
+    ],
+    "platforms": [
+      "dexterous-hand",
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "action",
+      "tactile"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "properties": [
+      "real-robot-evaluation",
+      "large-scale-data"
+    ],
+    "assets": [
+      "code",
+      "dataset",
+      "project-page"
+    ]
+  },
+  "paper_type": [
+    "dataset",
+    "simulator",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 95,
+    "selection_reason": "N0-Foundation不是单一模型，而是把触觉硬件、3万小时多本体数据、统一力场表示和真实/仿真评测打通；其中5千小时数据、NeoForce与NeoSim已经开放，基础设施价值很高。",
+    "candidate_run": "2026-09-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-09-01",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "完整3万小时语料并未全部开放，公开子集为5千小时",
+      "不同触觉硬件映射到统一力场后的误差与长期可维护性仍待社区验证"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.29601"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.29601"
+    },
+    {
+      "type": "project-page",
+      "url": "https://research.neoteai.com/n0-foundation/"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "tactile-learning",
+      "name": "tactile-learning",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "N0-Foundation不是单一模型，而是把触觉硬件、3万小时多本体数据、统一力场表示和真实/仿真评测打通；其中5千小时数据、NeoForce与NeoSim已经开放，基础设施价值很高。"
+    }
+  ],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.29601",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, conclusion and limitations were reviewed in official arXiv HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-09-01"
+  },
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "type": "code",
+      "url": "https://github.com/neoteai/N0-Foundation",
+      "status": "verified",
+      "evidence": "Public repository releases NeoForce and NeoSim components."
+    },
+    {
+      "type": "dataset",
+      "url": "https://huggingface.co/datasets/NeoteAIEmbodied/OpenNeoData",
+      "status": "verified",
+      "evidence": "Official OpenNeoData dataset page is linked by the project."
+    },
+    {
+      "type": "project",
+      "url": "https://research.neoteai.com/n0-foundation/",
+      "status": "verified",
+      "evidence": "Official project page is accessible."
+    }
+  ]
+}

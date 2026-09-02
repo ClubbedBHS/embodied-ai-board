@@ -1,0 +1,169 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.30289",
+  "title": "CometVLA: Co-Training on an Embodied Data Pyramid towards Physical Understanding",
+  "title_zh": null,
+  "abstract": "Vision-language-action (VLA) models remain brittle in manipulation tasks that require physical commonsense. Current physical VQA data is typically disembodied and misaligned with robot action domains. Egocentric videos are used only as auxiliary pre-training. It remains unclear whether improved VLM physical understanding actually benefits downstream action generation. Therefore, we present CometVLA to close this gap. We construct CometData and CometBench, an embodied physical VQA corpus and benchmark strictly aligned with the robot's action data and embodiment. We introduce Global Action Prior (GAP) tokens, a compact learnable bottleneck that isolates task-agnostic motion regularities and lets the action head consume physical commonsense without corrupting the pre-trained VLM backbone. We co-train CometVLA across the embodied data pyramid, spanning teleoperation, simulation, egocentric trajectories, and VQA layers. On real-world manipulation tasks and RoboTwin simulation, CometVLA consistently outperforms strong VLA baselines. Correlation analysis shows that stronger VLM performance on CometBench indicates higher VLA success rates. Results demonstrate that physical understanding pre-training genuinely benefits downstream manipulation.",
+  "paper_url": "https://arxiv.org/abs/2608.30289",
+  "pdf_url": "https://arxiv.org/pdf/2608.30289",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Hanwen Wan",
+      "affiliations": []
+    },
+    {
+      "name": "Dafeng Chi",
+      "affiliations": []
+    },
+    {
+      "name": "Linbo Zhai",
+      "affiliations": []
+    },
+    {
+      "name": "Tianao Shen",
+      "affiliations": []
+    },
+    {
+      "name": "Yuzheng Zhuang",
+      "affiliations": []
+    },
+    {
+      "name": "Tianle Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Peidong Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Liang Lin",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaoqiang Ji",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "jd-explore-academy",
+      "name": "JD Explore Academy",
+      "role": "primary"
+    },
+    {
+      "id": "the-chinese-university-of-hong-kong-shenzhen",
+      "name": "The Chinese University of Hong Kong, Shenzhen",
+      "role": "collaborator"
+    },
+    {
+      "id": "shenzhen-institute-of-artificial-intelligence-and-robotics-for-society",
+      "name": "Shenzhen Institute of Artificial Intelligence and Robotics for Society",
+      "role": "collaborator"
+    },
+    {
+      "id": "south-china-university-of-technology",
+      "name": "South China University of Technology",
+      "role": "collaborator"
+    },
+    {
+      "id": "sun-yat-sen-university",
+      "name": "Sun Yat-sen University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-31",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data"
+    ],
+    "topics": [
+      "vla",
+      "foundation-model",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation",
+      "generalist-control"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ],
+    "assets": []
+  },
+  "paper_type": [
+    "method",
+    "dataset"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 88,
+    "selection_reason": "CometVLA通过物理VQA、机器人动作数据和数据金字塔联合训练，把“物理理解”与动作执行显式对齐；仿真和真实双臂实验表明该方向有潜力，但当前证据广度仍弱于本批90分以上工作。",
+    "candidate_run": "2026-09-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-09-01",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "不同检查点的物理理解分数集中在约85%，相关性结论仍需更宽范围验证",
+      "真实场景数量有限",
+      "未找到官方代码"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.30289"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.30289"
+    }
+  ],
+  "suggested_new_tags": [],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.30289",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, conclusion and limitations were reviewed in official arXiv HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-09-01"
+  },
+  "organization_evidence": [],
+  "asset_checks": []
+}

@@ -1,0 +1,159 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.29769",
+  "title": "Learning Agile Perceptive Traversal of Sparse 3D Structures for Humanoids",
+  "title_zh": null,
+  "abstract": "Traversing sparse 3D structures requires humanoid robots to perceive thin, overhanging geometry while executing agile, accurate whole-body motions. We study this problem through monkey-bar traversal, where the robot must jump to the structure, traverse it through sparse bar interactions, and land safely. For this task, we present a reinforcement-learning-based perceptive control system that operates directly on observations from a head-mounted solid-state lidar. To extract task-relevant geometry from the sparse returns, the policy consumes the raw lidar scan through an attention-based encoder with recurrent memory. This policy is obtained by a phase-scheduled teacher- student pipeline that combines privileged experts for jumping up, brachiating, and jumping down. For transfer to hardware, we model lidar noise, battery-voltage sag, and actuator thermal limits, and equip the humanoid with passive hook end-effectors for robust bar interaction. On hardware, the resulting policy completes the full jump-up->brachiation->jump-down sequence in 14 of 15 trials across three bar configurations and reaches brachiation speeds up to 0.5 m/s. Beyond brachiation, the same perception backbone supports a separately trained policy that ducks beneath thin overhead obstacles with 2 cm cross-sections.",
+  "paper_url": "https://arxiv.org/abs/2608.29769",
+  "pdf_url": "https://arxiv.org/pdf/2608.29769",
+  "project_url": "https://nemantor.github.io/sparse-3d-traversal-website/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Efe Ongan",
+      "affiliations": []
+    },
+    {
+      "name": "Chong Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Boyang Sun",
+      "affiliations": []
+    },
+    {
+      "name": "Andrei Cramariuc",
+      "affiliations": []
+    },
+    {
+      "name": "Cesar Cadena",
+      "affiliations": []
+    },
+    {
+      "name": "Marco Hutter",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "eth-zurich-robotic-systems-lab",
+      "name": "ETH Zurich Robotic Systems Lab",
+      "role": "primary"
+    },
+    {
+      "id": "eth-ai-center",
+      "name": "ETH AI Center",
+      "role": "collaborator"
+    },
+    {
+      "id": "eth-zurich-computer-vision-and-geometry-group",
+      "name": "ETH Zurich Computer Vision and Geometry Group",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-30",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "control",
+      "reinforcement-learning",
+      "planning"
+    ],
+    "tasks": [
+      "locomotion",
+      "humanoid-control"
+    ],
+    "platforms": [
+      "humanoid"
+    ],
+    "modalities": [
+      "vision",
+      "action",
+      "tactile",
+      "point-cloud"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ],
+    "assets": [
+      "project-page"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 92,
+    "selection_reason": "该工作让人形机器人用头部激光雷达完成起跳、抓杠、摆荡和落地的完整单杠穿越，在15次真机试验中成功14次；同一感知编码器还能处理2厘米障碍，展示了稀疏3D结构上的敏捷感知控制。",
+    "candidate_run": "2026-09-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-09-01",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "手部采用被动挂钩，不能直接代表通用灵巧抓握",
+      "真实实验场景仍较受控",
+      "未找到官方代码"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.29769"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.29769"
+    },
+    {
+      "type": "project-page",
+      "url": "https://nemantor.github.io/sparse-3d-traversal-website/"
+    }
+  ],
+  "suggested_new_tags": [],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.29769",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, conclusion and limitations were reviewed in official arXiv HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-09-01"
+  },
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "type": "project",
+      "url": "https://nemantor.github.io/sparse-3d-traversal-website/",
+      "status": "project-page-only",
+      "evidence": "Official project page found; no repository was located."
+    }
+  ]
+}

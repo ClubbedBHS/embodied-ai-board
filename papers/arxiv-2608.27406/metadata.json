@@ -1,0 +1,161 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.27406",
+  "title": "CLAP: Cross-Embodiment Video World Models are Zero-Shot Physical Simulators",
+  "title_zh": null,
+  "abstract": "State-of-the-art action-conditioned video models are typically restricted to a single robot embodiment, preventing them from leveraging the vast corpus of heterogeneous video data that contains rich signals for learning generalizable physics. To bridge this gap, we introduce CLAP, a framework for cross-embodiment action-conditioned video generation capable of being trained on diverse, internet-scale videos across human and robotic agents. CLAP is grounded in the insight that universal physical laws govern spatiotemporal dynamics regardless of the actor. However, cross-embodiment learning is non-trivial because action representations vary sharply across robot platforms and are typically absent in human videos. CLAP addresses this fundamental challenge through the following core contributions. First, CLAP reconciles disparate action spaces using end-effector poses, language instructions, and latent actions. Second, to resolve their individual limitations, CLAP introduces a curriculum-based cross-embodiment learning recipe that first learns foundational physical priors across unlabeled video data using latent actions and subsequently grounds them in end-effector action spaces for zero-shot deployment to real-world tasks. Crucially, CLAP approaches or surpasses state-of-the-art single-embodiment video models in challenging environments like DROID. These performance advantages compound via few-shot adaptation to establish a novel paradigm for training single-embodiment video world models. Ultimately, CLAP delivers the most comprehensive suite of action-conditioned video world models to date - spanning diverse action-conditioning spaces (end-effector, language, and latent) and robot morphologies (including cross-embodiment, DROID, Bridge, bimanual YAM robots, and G1 humanoids). We open-source all code and models. Project Website at https://omni-clap.github.io .",
+  "paper_url": "https://arxiv.org/abs/2608.27406",
+  "pdf_url": "https://arxiv.org/pdf/2608.27406",
+  "project_url": "https://omni-clap.github.io/",
+  "code_url": "https://github.com/omni-CLAP/clap",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Kechen Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Ola Shorinwa",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "princeton-university",
+      "name": "Princeton University",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-27",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "topics": [
+      "world-model"
+    ],
+    "tasks": [
+      "humanoid-control",
+      "generalist-control"
+    ],
+    "platforms": [
+      "humanoid",
+      "multi-robot"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "properties": [
+      "real-robot-evaluation",
+      "zero-shot"
+    ],
+    "assets": [
+      "code",
+      "project-page"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 95,
+    "selection_reason": "CLAP把跨本体视频世界模型从表示问题推进到可部署的统一动作接口，并覆盖零样本真机规划、策略微调与少样本本体适配；代码和模型体系已经公开，是本批最完整的系统工作。",
+    "candidate_run": "2026-08-29",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-29",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "核心训练需要8张80GB级GPU和大规模底层视频数据",
+      "部分单本体基线由作者重新训练，跨论文绝对数值仍需谨慎比较"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.27406"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.27406"
+    },
+    {
+      "type": "project-page",
+      "url": "https://omni-clap.github.io/"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "cross-embodiment",
+      "name": "cross-embodiment",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "CLAP把跨本体视频世界模型从表示问题推进到可部署的统一动作接口，并覆盖零样本真机规划、策略微调与少样本本体适配；代码和模型体系已经公开，是本批最完整的系统工作。"
+    },
+    {
+      "dimension": "topics",
+      "slug": "model-based-rl",
+      "name": "model-based-rl",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "CLAP把跨本体视频世界模型从表示问题推进到可部署的统一动作接口，并覆盖零样本真机规划、策略微调与少样本本体适配；代码和模型体系已经公开，是本批最完整的系统工作。"
+    }
+  ],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.27406",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, conclusion and limitations were reviewed in official arXiv HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-29"
+  },
+  "organization_evidence": [
+    {
+      "source": "arXiv HTML author block",
+      "url": "https://arxiv.org/html/2608.27406",
+      "evidence": "The paper identifies Princeton University in the author header."
+    }
+  ],
+  "asset_checks": [
+    {
+      "type": "code",
+      "url": "https://github.com/omni-CLAP/clap",
+      "status": "verified",
+      "evidence": "Public repository contains install, training, evaluation, rollout and deployment instructions."
+    },
+    {
+      "type": "project",
+      "url": "https://omni-clap.github.io/",
+      "status": "verification-error",
+      "evidence": "Official URL is stated in the paper; the verifier returned an internal fetch error."
+    }
+  ]
+}

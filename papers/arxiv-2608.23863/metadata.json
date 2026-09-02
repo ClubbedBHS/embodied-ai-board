@@ -1,0 +1,147 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.23863",
+  "title": "DreamLedger: Where to Refuse World-Model Imagination Using Execution-Settled Credit",
+  "title_zh": null,
+  "abstract": "Robots are beginning to act on world-model predictions, yet reliability is still expressed through instantaneous, model-internal signals that say whether a prediction looks trustworthy now, not where comparable imagination has already failed. DreamLedger instead treats reliability as a persistent deployment object: an execution-settled credit file recording how often consumed predictions are borne out, indexed by operating condition, region, and prediction horizon, and consulted before each use. Each consumed prediction is registered as a claim and settled against arriving reality without manual labels; the resulting credit gates consumption (low credit shortens reliance or triggers observation), and every reliance event remains auditable via dependency tickets and replayable logs. Persistent credit changes where the gate refuses rather than what the model gets wrong: 69% of denials land on cells that have already failed, episode-local reset triples off-target denials in healthy conditions, and under a localized recurrent degradation persistent credit halves burned imagination, at a cost in task completion. Across three simulated domains, unmodified DreamerV3, TD-MPC2, and V-JEPA 2-AC mounts, and a real Franka, paired quadrotor evaluation shows credit-gated planning reduces burned imagination by 62% (95% CI 43-81%) versus blind consumption; settlement-grounded calibration yields moderate, seed-consistent operating points where raw instantaneous gates collapse to extremes, while persistent books trade verification for reliance (manipulation probes 1.00 to 0.36/episode at success 0.98 vs. 0.94). The trust layer spans decoder-, latent-, and token-space interfaces. On hardware, settlement runs under real sensing and contact noise, both models are priced creditworthy at the frozen 9-cm tolerance, a failure loop is re-priced online, and all 1,062 registered spends replay from the audit logs.",
+  "paper_url": "https://arxiv.org/abs/2608.23863",
+  "pdf_url": "https://arxiv.org/pdf/2608.23863",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Xianyao Li",
+      "affiliations": []
+    },
+    {
+      "name": "Ruitong Tian",
+      "affiliations": []
+    },
+    {
+      "name": "Rui Min",
+      "affiliations": []
+    },
+    {
+      "name": "Fang Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Jing Du",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "university-of-florida",
+      "name": "University of Florida",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-24",
+    "last_revision": "2026-08-26"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "topics": [
+      "world-model"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [],
+    "environments": [
+      "real-world"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ],
+    "assets": []
+  },
+  "paper_type": [
+    "method",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 88,
+    "selection_reason": "DreamLedger让世界模型的失败经验跨episode持久化，并在再次消费相似预测前定价；跨三种接口与模型的门控把“烧掉的想象”降低62%，且1,062次真机消费均可审计回放。",
+    "candidate_run": "2026-08-29",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-29",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "硬件实验仅限Franka推物且门控与盲用试验不是随机并行对照",
+      "空账本保守且依赖部署期积累，不能零样本跨站点迁移",
+      "未确认公开实现"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.23863"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.23863"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "safety",
+      "name": "safety",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "DreamLedger让世界模型的失败经验跨episode持久化，并在再次消费相似预测前定价；跨三种接口与模型的门控把“烧掉的想象”降低62%，且1,062次真机消费均可审计回放。"
+    },
+    {
+      "dimension": "topics",
+      "slug": "uncertainty",
+      "name": "uncertainty",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "DreamLedger让世界模型的失败经验跨episode持久化，并在再次消费相似预测前定价；跨三种接口与模型的门控把“烧掉的想象”降低62%，且1,062次真机消费均可审计回放。"
+    }
+  ],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.23863",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, conclusion and limitations were reviewed in official arXiv HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-29"
+  },
+  "organization_evidence": [
+    {
+      "source": "arXiv HTML author block",
+      "url": "https://arxiv.org/html/2608.23863",
+      "evidence": "Authors list the University of Florida departments of Civil and Coastal Engineering and Mechanical and Aerospace Engineering."
+    }
+  ],
+  "asset_checks": []
+}

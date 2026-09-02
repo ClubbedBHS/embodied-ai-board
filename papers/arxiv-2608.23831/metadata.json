@@ -1,0 +1,226 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.23831",
+  "title": "Learning to Act While Waiting: RL Finetuning of Generalist Robot Policies Under Inference Latency",
+  "title_zh": null,
+  "abstract": "While reinforcement learning (RL) allows generalist robot policies to continually improve during deployment, the large model size of modern generalist policies, such as VLAs, poses a fundamental obstacle to effective RL improvement. In particular, their severe inference latency---which can lead to pauses or jerky movements---can alter the effective environment dynamics and, if not correctly accounted for, break the Markov assumption that RL relies on, causing standard RL algorithms to fail completely. In this work, we introduce a latency-aware framework, Asynchronous RL with Intermediate Information (ARLI), that enables RL-based improvement of generalist policies under inference delays. Our framework builds on asynchronous inference approaches, which interleave action generation with execution to hide latency, and addresses its incompatibility with RL by providing a low-latency RL policy design that maximizes reactivity within the inference window through two contributions: state augmentations that restore near-Markovian structure by incorporating committed actions and a mid-inference observation. We evaluate our approach across simulated and real-world manipulation tasks, and find that it enables effective finetuning under inference delays where standard RL fails entirely, even matching or exceeding the performance of standard RL in idealized no-latency settings.",
+  "paper_url": "https://arxiv.org/abs/2608.23831",
+  "pdf_url": "https://arxiv.org/pdf/2608.23831",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Brian Zhu",
+      "affiliations": []
+    },
+    {
+      "name": "Momen Khalil",
+      "affiliations": []
+    },
+    {
+      "name": "E Harrison",
+      "affiliations": []
+    },
+    {
+      "name": "Emanuele Poggi",
+      "affiliations": []
+    },
+    {
+      "name": "Philipp Schmitt",
+      "affiliations": []
+    },
+    {
+      "name": "Bernd Kast",
+      "affiliations": []
+    },
+    {
+      "name": "Philine Meister",
+      "affiliations": []
+    },
+    {
+      "name": "Pranav Atreya",
+      "affiliations": []
+    },
+    {
+      "name": "Qiyang Li",
+      "affiliations": []
+    },
+    {
+      "name": "Finn Ferchau",
+      "affiliations": []
+    },
+    {
+      "name": "Cesar Colmenero",
+      "affiliations": []
+    },
+    {
+      "name": "Yash Shahapurkar",
+      "affiliations": []
+    },
+    {
+      "name": "Gokul Narayanan",
+      "affiliations": []
+    },
+    {
+      "name": "Melih Erdogan",
+      "affiliations": []
+    },
+    {
+      "name": "Kai Wurm",
+      "affiliations": []
+    },
+    {
+      "name": "Georg von Wichert",
+      "affiliations": []
+    },
+    {
+      "name": "Oier Mees",
+      "affiliations": []
+    },
+    {
+      "name": "Eugen Solowjow",
+      "affiliations": []
+    },
+    {
+      "name": "Andrew Wagenmaker",
+      "affiliations": []
+    },
+    {
+      "name": "Sergey Levine",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "siemens",
+      "name": "Siemens",
+      "role": "primary"
+    },
+    {
+      "id": "university-of-california-berkeley",
+      "name": "University of California, Berkeley",
+      "role": "collaborator"
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft",
+      "role": "collaborator"
+    },
+    {
+      "id": "eth-zurich",
+      "name": "ETH Zurich",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-24",
+    "last_revision": "2026-08-26"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "vla"
+    ],
+    "tasks": [
+      "manipulation",
+      "generalist-control"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "language",
+      "action",
+      "tactile"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ],
+    "assets": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 88,
+    "selection_reason": "ARLI把VLA推理延迟视为RL状态定义问题，通过已承诺动作和推理中途观测恢复近似Markov结构；在标准RL因延迟完全失效的设置中仍能学习，并覆盖仿真与真机操作。",
+    "candidate_run": "2026-08-29",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-08-29",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "依赖可拆分VLM骨干与动作专家的策略结构",
+      "沿用的DSRL在部分任务上本身可能难以学习",
+      "未确认公开实现"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.23831"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.23831"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "latency",
+      "name": "latency",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "ARLI把VLA推理延迟视为RL状态定义问题，通过已承诺动作和推理中途观测恢复近似Markov结构；在标准RL因延迟完全失效的设置中仍能学习，并覆盖仿真与真机操作。"
+    },
+    {
+      "dimension": "topics",
+      "slug": "online-learning",
+      "name": "online-learning",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "ARLI把VLA推理延迟视为RL状态定义问题，通过已承诺动作和推理中途观测恢复近似Markov结构；在标准RL因延迟完全失效的设置中仍能学习，并覆盖仿真与真机操作。"
+    }
+  ],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.23831",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, conclusion and limitations were reviewed in official arXiv HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-08-29"
+  },
+  "organization_evidence": [
+    {
+      "source": "arXiv HTML author block",
+      "url": "https://arxiv.org/html/2608.23831",
+      "evidence": "The paper header lists Siemens, UC Berkeley, Microsoft and ETH Zurich affiliations."
+    }
+  ],
+  "asset_checks": []
+}

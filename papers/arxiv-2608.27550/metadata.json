@@ -1,0 +1,170 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.27550",
+  "title": "Beyond Data Scaling: Representation-Centric Continued Pre-training for Vision-Language-Action Models",
+  "title_zh": null,
+  "abstract": "Scaling robot data is crucial for building generalist Vision-Language-Action (VLA) models, yet robot trajectories are harder to scale than web-scale image-text data because embodied collection is costly and sparsely covers the physical world. This makes representation quality a central bottleneck: under a fixed robot-data budget, continued pre-training must turn limited trajectories into transferable visual-action knowledge rather than merely fit actions. We propose VLAct, a VLA-oriented VLM backbone trained on broad, heterogeneous, multi-embodiment robot data before task-specific fine-tuning. VLAct preserves the broad VLM prior and encourages shared action semantics across embodiments through VLM-prior preservation, multi-head continuous action co-supervision, and a partially unified cross-embodiment action layout, while allowing task-specific action heads during fine-tuning. Across simulation, real-world, and unseen-embodiment transfer, VLAct consistently improves downstream performance under fixed fine-tuning protocols. On LIBERO-Plus and RoboTwin 2.0, VLAct surpasses industrial VLA systems including ABot-M0 and LingBot-VLA, achieving success rates of 82.6% and 92.5%. On RoboDojo, VLAct ranks sixth among all policies by success rate and outperforms all explicitly designated world-action model (WAM) entries on both metrics. Most notably, on RoboCasa-GR1, an unseen humanoid embodiment, VLAct using only 20% of downstream trajectories outperforms the full-data GR00T-N1.6 baseline. These results are obtained using fully open-source data and only a 16-GPU training setup, showing that representation-centric continued pre-training can deliver highly competitive performance under a modest compute budget and is an important independent axis of VLA progress beyond data scaling.",
+  "paper_url": "https://arxiv.org/abs/2608.27550",
+  "pdf_url": "https://arxiv.org/pdf/2608.27550",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Senqiao Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Chengyao Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Yuxin Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Zixuan Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Longxiang Tang",
+      "affiliations": []
+    },
+    {
+      "name": "Haokun Gui",
+      "affiliations": []
+    },
+    {
+      "name": "Jinhui Ye",
+      "affiliations": []
+    },
+    {
+      "name": "Changsheng Lu",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaoyang Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Mingkang Zhu",
+      "affiliations": []
+    },
+    {
+      "name": "Pengguang Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Shu Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Zhuotao Tian",
+      "affiliations": []
+    },
+    {
+      "name": "Hengshuang Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Bei Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Jiaya Jia",
+      "affiliations": []
+    }
+  ],
+  "organizations": [],
+  "dates": {
+    "first_publication": "2026-08-27",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "foundation-model",
+      "representation-learning"
+    ],
+    "tasks": [
+      "humanoid-control",
+      "generalist-control"
+    ],
+    "platforms": [
+      "humanoid",
+      "multi-robot"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ],
+    "assets": []
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 91,
+    "selection_reason": "VLAct强调VLA提升不只来自数据量，而来自保持视觉语言能力并引入多动作头监督的表示中心继续预训练；它在LIBERO、RoboTwin和未见RoboCasa GR1上都给出强结果，且训练只用公开数据和16张GPU。",
+    "candidate_run": "2026-09-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-09-01",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "当前只验证4B级骨干，规模规律尚不明确",
+      "未找到官方代码或训练权重",
+      "论文HTML未提供可可靠规范化的机构信息，因此团队暂不猜测"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.27550"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.27550"
+    }
+  ],
+  "suggested_new_tags": [],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.27550",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, conclusion and limitations were reviewed in official arXiv HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-09-01"
+  },
+  "organization_evidence": [],
+  "asset_checks": []
+}

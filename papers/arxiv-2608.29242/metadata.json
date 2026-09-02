@@ -1,0 +1,209 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2608.29242",
+  "title": "AnyWorld: Factorized Egocentric World Models for Cross-Embodiment Generalization",
+  "title_zh": null,
+  "abstract": "Collecting contact-rich robot experiences at scale remains a major bottleneck for generalizable manipulation. Beyond data quantity, robot learning also requires diverse experiences across embodiments, viewpoints, and scenes. Human egocentric videos provide abundant physical interactions, but each video captures only a narrow slice of experience under a single body, camera trajectory, and environment. We propose AnyWorld, a cross-embodiment world modeling framework that expands a single human interaction into diverse robot-native rollouts without paired human-robot demonstrations. Our model factorizes an interaction into action, camera, and embodiment: action controls capture the motion structure, camera controls specify viewpoint evolution, and the target embodiment context defines the acting body and its interaction geometry. This formulation enables independent recomposition of embodiment, viewpoint, and scene factors, allowing a single model to generate many robot-domain experiences while preserving the underlying dynamics and object interactions. We train the model with large-scale human interaction pretraining followed by mixed-embodiment fine-tuning. Experiments show that our model supports controllable recomposition across embodiments, viewpoints, and scenes, and we further demonstrate that the generated data can improve manipulation performance on the RoboCasa GR1 tabletop benchmark and a real IRON humanoid robot. Beyond aggregate gains, we test whether unpaired human experience can be recomposed into robot-native video-action pairs that target a policy gap. Controlled IRON interventions correct a spurious completion prior and establish language-grounded spatial target selection; an action-only counterfactual intervention fails to learn the latter reliably, showing that both action calibration and visual recomposition are necessary.",
+  "paper_url": "https://arxiv.org/abs/2608.29242",
+  "pdf_url": "https://arxiv.org/pdf/2608.29242",
+  "project_url": "https://xpeng-robotics.github.io/anyworld/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Cheng Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Jerry Bai",
+      "affiliations": []
+    },
+    {
+      "name": "Jiacheng Wei",
+      "affiliations": []
+    },
+    {
+      "name": "Boyu Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaoji Zheng",
+      "affiliations": []
+    },
+    {
+      "name": "Fan Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Minghao Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Tianrun Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Ruibo Li",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaoyu Yue",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaoyang Guo",
+      "affiliations": []
+    },
+    {
+      "name": "Yixiao Ge",
+      "affiliations": []
+    },
+    {
+      "name": "Guosheng Lin",
+      "affiliations": []
+    },
+    {
+      "name": "Fayao Liu",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "nanyang-technological-university",
+      "name": "Nanyang Technological University",
+      "role": "primary"
+    },
+    {
+      "id": "a-star",
+      "name": "A*STAR",
+      "role": "collaborator"
+    },
+    {
+      "id": "xpeng-robotics",
+      "name": "XPENG Robotics",
+      "role": "collaborator"
+    },
+    {
+      "id": "zhejiang-university",
+      "name": "Zhejiang University",
+      "role": "collaborator"
+    },
+    {
+      "id": "the-chinese-university-of-hong-kong",
+      "name": "The Chinese University of Hong Kong",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-08-29",
+    "last_revision": "2026-09-01"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model",
+      "representation-learning"
+    ],
+    "tasks": [
+      "humanoid-control",
+      "manipulation"
+    ],
+    "platforms": [
+      "humanoid",
+      "robot-arm",
+      "multi-robot"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "action"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "properties": [
+      "large-scale-data"
+    ],
+    "assets": [
+      "project-page"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 92,
+    "selection_reason": "AnyWorld把动作、相机运动和本体外观分解建模，使第一视角世界模型能够跨机器人迁移；它同时覆盖RoboCasa中的GR1与真实IRON人形机器人，直接回应世界模型的跨本体泛化问题。",
+    "candidate_run": "2026-09-01",
+    "status": "ai-draft"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-09-01",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "尚未纳入力觉或触觉",
+      "动作与相机分解依赖提取质量，失败会传导到生成结果",
+      "目前只覆盖三类本体且未找到官方代码"
+    ]
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2608.29242"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2608.29242"
+    },
+    {
+      "type": "project-page",
+      "url": "https://xpeng-robotics.github.io/anyworld/"
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "cross-embodiment",
+      "name": "cross-embodiment",
+      "reason": "候选筛选中出现，但尚未进入受控标签词表。",
+      "evidence": "AnyWorld把动作、相机运动和本体外观分解建模，使第一视角世界模型能够跨机器人迁移；它同时覆盖RoboCasa中的GR1与真实IRON人形机器人，直接回应世界模型的跨本体泛化问题。"
+    }
+  ],
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "source_access": {
+    "metadata_source": "arxiv-api",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2608.29242",
+    "fulltext_accessed": true,
+    "fulltext_note": "Method, experiments, conclusion and limitations were reviewed in official arXiv HTML.",
+    "sections_detected": [
+      "Method/Approach",
+      "Experiments/Evaluation",
+      "Conclusion/Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-09-01"
+  },
+  "organization_evidence": [],
+  "asset_checks": [
+    {
+      "type": "project",
+      "url": "https://xpeng-robotics.github.io/anyworld/",
+      "status": "project-page-only",
+      "evidence": "Official project URL appears in the paper; no official repository was found."
+    }
+  ]
+}
