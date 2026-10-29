@@ -59,9 +59,13 @@ workbench/
 
 网页静态版本由 `.github/workflows/pages.yml` 自动发布。每次推送 `main` 后，工作流会：
 
-1. 从 `papers/` 重新生成 `site/app/papers.generated.json`；
+1. 从 `papers/` 重新生成 `site/app/papers.generated.json` 和 `site/app/board.generated.json`；
 2. 构建纯静态站点到 `site/pages-dist/`；
 3. 发布到 GitHub Pages。
+
+页面“上次更新”取内容记录中最新的 `ai_generation.generated_at`、`editorial.updated_at` 或 `editorial.approved_for_inclusion_at`，不使用论文发表日期或构建时间。人工修改已有论文时，请同步设置该论文的 `editorial.updated_at`（ISO 日期或时间）。近 30 天精选独立按访问当天计算，不受上次内容更新日期限制。
+
+日期同步回归测试：在 `site/` 运行 `node --test tests/content-sync.test.mjs`。
 
 ### Cloudflare Web Analytics
 

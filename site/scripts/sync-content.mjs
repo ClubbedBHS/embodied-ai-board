@@ -32,6 +32,7 @@ function oneLiner(md) {
 
 const folders = (await readdir(papersRoot, { withFileTypes: true })).filter((entry) => entry.isDirectory());
 const papers = [];
+const contentDates = [];
 
 for (const folder of folders) {
   const base = path.join(papersRoot, folder.name);
@@ -40,6 +41,18 @@ for (const folder of folders) {
     readFile(path.join(base, "summary.zh.md"), "utf8"),
   ]);
   const metadata = JSON.parse(metadataRaw);
+  // Content timestamps, not build time or paper publication dates, determine
+  // when the board was last updated. Editorial corrections can set updated_at.
+  for (const value of [
+    metadata.ai_generation?.generated_at,
+    metadata.editorial?.updated_at,
+    metadata.editorial?.approved_for_inclusion_at,
+  ]) {
+    const date = typeof value === "string" ? value.slice(0, 10) : "";
+    if (/^\d{4}-\d{2}-\d{2}$/.test(date) && !Number.isNaN(Date.parse(date))) {
+      contentDates.push(date);
+    }
+  }
 
   papers.push({
     id: metadata.id,
@@ -74,4 +87,10 @@ for (const folder of folders) {
 
 papers.sort((a, b) => (b.date || "").localeCompare(a.date || ""));
 await writeFile(path.join(siteRoot, "app/papers.generated.json"), `${JSON.stringify(papers, null, 2)}\n`);
+const updatedAt = contentDates.sort().at(-1);
+if (!updatedAt) throw new Error("No content update date found in paper metadata.");
+await writeFile(
+  path.join(siteRoot, "app/board.generated.json"),
+  `${JSON.stringify({ updatedAt, paperCount: papers.length }, null, 2)}\n`,
+);
 console.log(`Synced ${papers.length} papers.`);

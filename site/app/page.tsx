@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import papers from "./papers.generated.json";
+import board from "./board.generated.json";
 
 type Paper = (typeof papers)[number];
 
@@ -48,7 +49,7 @@ function formatDate(value: string | null | undefined) {
   return value.replaceAll("-", ".");
 }
 
-const BOARD_UPDATED_AT = "2026-09-01";
+const BOARD_UPDATED_AT = board.updatedAt;
 const DAY_MS = 24 * 60 * 60 * 1000;
 
 function parseDate(value: string) {
@@ -66,6 +67,12 @@ function dateDaysBefore(value: string, days: number) {
 }
 
 export default function Home() {
+  // The rolling window follows the visitor's current day, independently of
+  // the last content update shown in the navigation bar.
+  const [recentAnchor] = useState(() => {
+    const today = new Date();
+    return `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
+  });
   const [section, setSection] = useState("all");
   const [topic, setTopic] = useState("all");
   const [query, setQuery] = useState("");
@@ -90,10 +97,10 @@ export default function Home() {
     });
   }, [query, section, topic]);
 
-  const recentStart = dateDaysBefore(BOARD_UPDATED_AT, 29);
+  const recentStart = dateDaysBefore(recentAnchor, 29);
   const recentHighlights = papers
     .filter((paper) =>
-      isWithinDays(paper.date, BOARD_UPDATED_AT, 30) &&
+      isWithinDays(paper.date, recentAnchor, 30) &&
       (paper.selectionScore || 0) >= 90
     )
     .sort((a, b) =>
@@ -129,7 +136,7 @@ export default function Home() {
       <section className="monthly-focus" id="top" aria-labelledby="monthly-title">
         <div className="monthly-heading">
           <div>
-            <span className="eyebrow">30-DAY SIGNAL · {formatDate(recentStart)}—{formatDate(BOARD_UPDATED_AT)}</span>
+            <span className="eyebrow">30-DAY SIGNAL · {formatDate(recentStart)}—{formatDate(recentAnchor)}</span>
             <h1 id="monthly-title">近 30 天<br /><em>值得关注的工作</em></h1>
           </div>
         </div>
