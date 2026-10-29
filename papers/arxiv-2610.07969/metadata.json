@@ -1,0 +1,300 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2610.07969",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "EmbodiedSmith: Scaling Embodied Data through Recursive Self-Improvement Flywheel in Simulation",
+  "title_zh": "EmbodiedSmith：通过场景—任务迭代生成可执行具身数据",
+  "abstract": "Scaling robotic foundation models requires diverse training data and reliable evaluation environments. Simulation offers a scalable solution, yet existing generation pipelines remain constrained by predefined assets and skills, a disconnect between scene generation and task generation, and limited support for complex embodiments and physics. We introduce EmbodiedSmith, a framework for scalable embodied data generation through recursive self-improvement (RSI). EmbodiedSmith unifies asset, scene, and task generation in a pipeline that supports autonomous creation and language-driven customization. Its core is an agentic refinement loop: scene generation anticipates downstream task requirements, while task generation guides targeted scene edits, allowing scenes and tasks to iteratively improve one another. This joint refinement improves task generation success, including for long-horizon tasks. The framework further supports mobile manipulators, humanoids, and dexterous hands, as well as interactions involving deformable objects and fluids, broadening the range of behaviors and physical phenomena represented in generated data. Together, these capabilities provide a flexible simulation engine for both robot pretraining and evaluation. Extensive experiments validate the quality, diversity, and generation efficiency of the resulting data, while downstream policy experiments demonstrate that increased data diversity improves generalization.",
+  "paper_url": "https://arxiv.org/abs/2610.07969",
+  "pdf_url": "https://arxiv.org/pdf/2610.07969",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yikai Qin",
+      "affiliations": []
+    },
+    {
+      "name": "Yifei Deng",
+      "affiliations": []
+    },
+    {
+      "name": "Mingjian Liang",
+      "affiliations": []
+    },
+    {
+      "name": "Wenxuan Song",
+      "affiliations": []
+    },
+    {
+      "name": "Zepeng Lin",
+      "affiliations": []
+    },
+    {
+      "name": "Zhiyi Jiang",
+      "affiliations": []
+    },
+    {
+      "name": "Jiajun Fu",
+      "affiliations": []
+    },
+    {
+      "name": "Qiao Sun",
+      "affiliations": []
+    },
+    {
+      "name": "Huashuo Lei",
+      "affiliations": []
+    },
+    {
+      "name": "Xicheng Gong",
+      "affiliations": []
+    },
+    {
+      "name": "Jiayi Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Han Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Shuanghao Bai",
+      "affiliations": []
+    },
+    {
+      "name": "Pengxiang Ding",
+      "affiliations": []
+    },
+    {
+      "name": "Pengwei Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Haoang Li",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "hong-kong-university-of-science-and-technology-guangzhou",
+      "name": "Hong Kong University of Science and Technology (Guangzhou)",
+      "role": "primary"
+    },
+    {
+      "id": "xiaomi-robotics",
+      "name": "Xiaomi Robotics",
+      "role": "collaborator"
+    },
+    {
+      "id": "southeastern-university",
+      "name": "Southeastern University",
+      "role": "collaborator"
+    },
+    {
+      "id": "tsinghua-university",
+      "name": "Tsinghua University",
+      "role": "collaborator"
+    },
+    {
+      "id": "zhejiang-university",
+      "name": "Zhejiang University",
+      "role": "collaborator"
+    },
+    {
+      "id": "westlake-university",
+      "name": "Westlake University",
+      "role": "collaborator"
+    },
+    {
+      "id": "symbiosis-robotics",
+      "name": "Symbiosis Robotics",
+      "role": "collaborator"
+    },
+    {
+      "id": "peking-university",
+      "name": "Peking University",
+      "role": "collaborator"
+    },
+    {
+      "id": "xi-an-jiaotong-university",
+      "name": "Xi’an Jiaotong University",
+      "role": "collaborator"
+    },
+    {
+      "id": "beijing-academy-of-artificial-intelligence",
+      "name": "Beijing Academy of Artificial Intelligence",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-10-06",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "topics": [
+      "planning",
+      "imitation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "action"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [],
+    "properties": [
+      "simulation-only"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 84,
+    "selection_scores": {
+      "relevance": 20,
+      "novelty": 17,
+      "evidence_quality": 16,
+      "potential_impact": 13,
+      "board_information_gain": 9,
+      "reproducibility": 5,
+      "timeliness": 4,
+      "total": 84
+    },
+    "selection_reason": "联合生成并迭代修复资产、场景和任务程序，扩展到移动操作、人形、灵巧手、变形物与流体。",
+    "candidate_run": "2026-10-28",
+    "status": "ai-draft",
+    "approved_for_inclusion_at": "2026-10-28"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-10-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "部分感知质量由 VLM 评分，物理可用性需与几何测量分开解读。",
+      "部分变形物恢复仍是已知限制；完整生成器集成仍有后续工作。",
+      "未找到官方实现入口。"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2610.07969",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Method",
+      "Experiments",
+      "Conclusion / Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-10-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2610.07969"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2610.07969"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "Hong Kong University of Science and Technology (Guangzhou)",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.07969",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Xiaomi Robotics",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.07969",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Southeastern University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.07969",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Tsinghua University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.07969",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Zhejiang University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.07969",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Westlake University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.07969",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Symbiosis Robotics",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.07969",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Peking University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.07969",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Xi’an Jiaotong University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.07969",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Beijing Academy of Artificial Intelligence",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.07969",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "verification_method": "official-source-scan",
+      "checked_at": "2026-10-28",
+      "note": null
+    }
+  ],
+  "suggested_new_tags": []
+}

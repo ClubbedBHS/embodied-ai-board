@@ -1,0 +1,199 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2610.08863",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Trajectory Planning without Trajectory Data: A Manifold-Guided Approach",
+  "title_zh": "Ariadne：不依赖轨迹数据的流形引导规划",
+  "abstract": "A common way for trajectory planning is to leverage generative models trained on large collections of expert trajectories. At inference time, the model generates executable trajectories by conditioning on task goal constraints. However, trajectory-based methods rely on costly supervision, scale poorly with sequence length, and often generalize poorly to unseen constraints such as novel start-goal pairs. We propose an alternative to learn the underlying state-space manifold and use the geometry of the manifold for trajectory planning. This approach requires only state observations and enables generalization to unseen constraints by con- structing trajectories on the learned manifold of the state space. Experiments on Maze2D and robotic motion-planning benchmarks show that Ariadne constructs feasible paths from state-only supervision and generalizes to unseen start-goal combinations. On high-dimensional dual-arm planning, it remains competitive with trajectory-supervised and classical planners, while requiring no trajectory data for training.",
+  "paper_url": "https://arxiv.org/abs/2610.08863",
+  "pdf_url": "https://arxiv.org/pdf/2610.08863",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Silong Yong",
+      "affiliations": []
+    },
+    {
+      "name": "Anji Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Cunxi Dai",
+      "affiliations": []
+    },
+    {
+      "name": "Carl Busart",
+      "affiliations": []
+    },
+    {
+      "name": "Guanya Shi",
+      "affiliations": []
+    },
+    {
+      "name": "Yilun Du",
+      "affiliations": []
+    },
+    {
+      "name": "Katia Sycara",
+      "affiliations": []
+    },
+    {
+      "name": "Yaqi Xie",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "carnegie-mellon-university",
+      "name": "Carnegie Mellon University",
+      "role": "primary"
+    },
+    {
+      "id": "national-university-of-singapore",
+      "name": "National University of Singapore",
+      "role": "collaborator"
+    },
+    {
+      "id": "devcom-army-research-laboratory",
+      "name": "DEVCOM Army Research Laboratory",
+      "role": "collaborator"
+    },
+    {
+      "id": "harvard-university",
+      "name": "Harvard University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-10-05",
+    "last_revision": null
+  },
+  "venue": {
+    "name": "NeurIPS",
+    "year": 2026,
+    "status": "accepted"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "planning",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "action"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [],
+    "properties": [
+      "simulation-only"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 87,
+    "selection_scores": {
+      "relevance": 19,
+      "novelty": 19,
+      "evidence_quality": 17,
+      "potential_impact": 13,
+      "board_information_gain": 10,
+      "reproducibility": 5,
+      "timeliness": 4,
+      "total": 87
+    },
+    "selection_reason": "不训练完整专家轨迹分布，只从状态观测学习可行流形，并沿流形构造连接新起终点的路径。",
+    "candidate_run": "2026-10-28/batch-02",
+    "status": "ai-draft",
+    "approved_for_inclusion_at": "2026-10-28"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-10-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "需要足够的可行状态覆盖；状态分布本身不是动态可执行性保证。",
+      "离散积分、score 估计和非连通流形仍可能造成路径偏离。",
+      "论文链接仓库当前只有 README、论文和 teaser，没有实现。"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2610.08863",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Method",
+      "Experiments",
+      "Conclusion / Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-10-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2610.08863"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2610.08863"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "Carnegie Mellon University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.08863",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "National University of Singapore",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.08863",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "DEVCOM Army Research Laboratory",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.08863",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Harvard University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.08863",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": "https://github.com/SilongYong/Ariadne",
+      "status": "project-page-only",
+      "verification_method": "github-api-contents",
+      "checked_at": "2026-10-28",
+      "note": "Repository accessible but does not contain method implementation."
+    }
+  ],
+  "suggested_new_tags": []
+}

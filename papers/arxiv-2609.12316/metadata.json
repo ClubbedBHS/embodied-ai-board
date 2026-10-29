@@ -1,0 +1,175 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2609.12316",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "DATAFARM: Distribution-Aligned Task and Motion Planning for Fine-Tuning Vision-Language-Action Models",
+  "title_zh": "DATAFARM：为 VLA 微调生成分布对齐的规划示范",
+  "abstract": "Collecting high-quality robot data remains a fundamental challenge for training robot foundation models. Task and motion planning (TAMP) offers a scalable way to generate demonstrations, but our experiments show that raw TAMP trajectories provide surprisingly little benefit when used to fine-tune pretrained vision-language-action (VLA) models, despite successfully solving the target tasks. We hypothesize that this failure arises from a behavioral distribution mismatch between planner-generated trajectories and the data used to pretrain the VLA. To address this mismatch, we introduce DATAFARM: Distribution-Aligned Task And motion planning for Fine-tuning A Robot foundation Model, an approach that incorporates the pretraining distribution directly into TAMP trajectory generation. DATAFARM aligns generated trajectories with the pretraining data in robot joint configurations, motion style, and temporal execution profiles. We evaluate DATAFARM on three tabletop manipulation tasks that TAMP can perform and a cloth-folding task beyond the capability of TAMP. DATAFARM achieves an average success rate of 56.7%, substantially outperforming raw TAMP (8.3%) while approaching human teleoperation (61.7%). On Deformable Object Manipulation, which is outside the fine-tuning distribution, the fine-tuned model retains 85% success, compared with 90% for the pretrained model. These results show that aligning planner-generated demonstrations with the pretraining distribution can make TAMP an effective source of data for VLA fine-tuning. Website and code: this https URL",
+  "paper_url": "https://arxiv.org/abs/2609.12316",
+  "pdf_url": "https://arxiv.org/pdf/2609.12316",
+  "project_url": "https://prpl-group.com/datafarm/",
+  "code_url": "https://github.com/SamratSahoo/DATAFARM",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Samrat Sahoo",
+      "affiliations": []
+    },
+    {
+      "name": "Yixuan Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Tom Silver",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "stanford-university",
+      "name": "Stanford University",
+      "role": "primary"
+    },
+    {
+      "id": "princeton-university",
+      "name": "Princeton University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-09-11",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data"
+    ],
+    "topics": [
+      "planning",
+      "vla",
+      "imitation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "action"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [
+      "code"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 90,
+    "selection_scores": {
+      "relevance": 20,
+      "novelty": 18,
+      "evidence_quality": 18,
+      "potential_impact": 13,
+      "board_information_gain": 10,
+      "reproducibility": 9,
+      "timeliness": 2,
+      "total": 90
+    },
+    "selection_reason": "指出原始 TAMP 轨迹即使完成任务也可能不适合微调 VLA；通过对齐预训练分布中的关节配置、运动风格和时序提高数据效用。",
+    "candidate_run": "2026-10-28",
+    "status": "ai-draft",
+    "approved_for_inclusion_at": "2026-10-28"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-10-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "目标任务只有三项，并依赖可规划的几何状态。",
+      "样本量小，且结论针对特定预训练策略与参考数据。"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2609.12316",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Method",
+      "Experiments",
+      "Conclusion / Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-10-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2609.12316"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2609.12316"
+    },
+    {
+      "type": "project-page",
+      "url": "https://prpl-group.com/datafarm/"
+    },
+    {
+      "type": "code",
+      "url": "https://github.com/SamratSahoo/DATAFARM"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "Stanford University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2609.12316",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Princeton University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2609.12316",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://prpl-group.com/datafarm/",
+      "status": "verified",
+      "verification_method": "http-get",
+      "checked_at": "2026-10-28"
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/SamratSahoo/DATAFARM",
+      "status": "verified",
+      "verification_method": "github-api-contents",
+      "checked_at": "2026-10-28",
+      "note": null
+    }
+  ],
+  "suggested_new_tags": []
+}

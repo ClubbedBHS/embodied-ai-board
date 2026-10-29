@@ -1,0 +1,267 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2610.30876",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "LocoManiLab: A Unified Testbed for Data, Policies, Controllers, and Deployment in Humanoid Loco-Manipulation",
+  "title_zh": "LocoManiLab：统一人形移动操作的数据、策略、控制器与部署评测",
+  "abstract": "Humanoid robots must coordinate locomotion and manipulation in everyday environments, yet progress is difficult to assess across differing policies, controllers, and task settings. LocoManiLab provides an integrated testbed spanning data collection and generation, policy training, evaluation, and physical deployment. Its task suite covers 234 atomic and compositional tasks across five household scene categories, supported by 51.5 hours of simulated teleoperation. The evaluation covers twelve policies with a shared controller across task and scene splits and perturbation levels, two policies across five controllers, and studies of demonstration scale and data-source mixtures. Success rates fall on unseen tasks and scenes and generally decline as visual perturbations increase, with differences in generalization and robustness across policies. For data generation, a humanoid motion generation model is fine-tuned for loco-manipulation to study the alignment of its outputs with task execution requirements and its integration into the data generation pipeline. Three simulated loco-manipulation tasks closely match real-world setups, enabling evaluation of three policies in both domains. Similar policy rankings support the reliability of simulation-based evaluation.",
+  "paper_url": "https://arxiv.org/abs/2610.30876",
+  "pdf_url": "https://arxiv.org/pdf/2610.30876",
+  "project_url": "https://locomanilab.github.io/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Dewei Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Jinrui Han",
+      "affiliations": []
+    },
+    {
+      "name": "Jiyuan Shi",
+      "affiliations": []
+    },
+    {
+      "name": "Chenyun Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Xianbo Lu",
+      "affiliations": []
+    },
+    {
+      "name": "Jiabao Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Jiqin Feng",
+      "affiliations": []
+    },
+    {
+      "name": "Jipeng Kong",
+      "affiliations": []
+    },
+    {
+      "name": "Xinzhe Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Ping Luo",
+      "affiliations": []
+    },
+    {
+      "name": "Chenjia Bai",
+      "affiliations": []
+    },
+    {
+      "name": "Xuelong Li",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "teleai-china-telecom",
+      "name": "TeleAI, China Telecom",
+      "role": "primary"
+    },
+    {
+      "id": "university-of-science-and-technology-of-china",
+      "name": "University of Science and Technology of China",
+      "role": "collaborator"
+    },
+    {
+      "id": "the-university-of-hong-kong",
+      "name": "The University of Hong Kong",
+      "role": "collaborator"
+    },
+    {
+      "id": "zhejiang-university",
+      "name": "Zhejiang University",
+      "role": "collaborator"
+    },
+    {
+      "id": "shanghai-jiao-tong-university",
+      "name": "Shanghai Jiao Tong University",
+      "role": "collaborator"
+    },
+    {
+      "id": "shanghaitech-university",
+      "name": "ShanghaiTech University",
+      "role": "collaborator"
+    },
+    {
+      "id": "gamma-robotics",
+      "name": "Gamma Robotics",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-10-22",
+    "last_revision": "2026-10-26"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data",
+      "simulators",
+      "infrastructure"
+    ],
+    "topics": [
+      "control",
+      "vla",
+      "imitation-learning"
+    ],
+    "tasks": [
+      "mobile-manipulation",
+      "humanoid-control"
+    ],
+    "platforms": [
+      "humanoid"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "proprioception",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "benchmark",
+    "infrastructure"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 89,
+    "selection_scores": {
+      "relevance": 20,
+      "novelty": 17,
+      "evidence_quality": 18,
+      "potential_impact": 14,
+      "board_information_gain": 10,
+      "reproducibility": 5,
+      "timeliness": 5,
+      "total": 89
+    },
+    "selection_reason": "统一人形移动操作的数据、策略、控制器、任务和部署接口，为跨模型评估提供系统化基础。",
+    "candidate_run": "2026-10-28/batch-02",
+    "status": "ai-draft",
+    "approved_for_inclusion_at": "2026-10-28"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-10-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "代码和数据均为 coming soon，不能算已开放基建。",
+      "真实策略分别用真实示范训练，不是仿真训练策略直接零样本迁移。",
+      "真机仅三任务，不能以平均排名一致推断任意策略 sim-to-real 排名一致。"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2610.30876",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Method",
+      "Experiments",
+      "Conclusion / Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-10-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2610.30876"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2610.30876"
+    },
+    {
+      "type": "project-page",
+      "url": "https://locomanilab.github.io/"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "TeleAI, China Telecom",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.30876",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University of Science and Technology of China",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.30876",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "The University of Hong Kong",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.30876",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Zhejiang University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.30876",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Shanghai Jiao Tong University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.30876",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "ShanghaiTech University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.30876",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Gamma Robotics",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.30876",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://locomanilab.github.io/",
+      "status": "verified",
+      "verification_method": "http-get",
+      "checked_at": "2026-10-28",
+      "note": null
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "announced",
+      "verification_method": "official-source-scan",
+      "checked_at": "2026-10-28",
+      "note": null
+    }
+  ],
+  "suggested_new_tags": []
+}

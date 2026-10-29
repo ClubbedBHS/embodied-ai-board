@@ -1,0 +1,238 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2610.18873",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "LoopWAM: Closed-Loop Generalist Policy Improvement from Deployment Rollouts",
+  "title_zh": "LoopWAM：从部署轨迹闭环改进通用机器人策略",
+  "abstract": "Scaling expert demonstrations alone does not enable generalist robot policies to improve from deployment. Real-world rollouts contain successes, suboptimal behavior, and failures: imitating every recorded action can reinforce poor behavior, while filtering out failures discards evidence of physical interactions and their consequences. We introduce LoopWAM, a closed-loop world-action model that learns directly from this full quality spectrum, using rollouts from both itself and other deployed policies. Source-dependent noise sampling unifies behavior learning and action-conditioned world modeling, while quality steering and quality-weighted supervision retain full video supervision across qualities and regulate action imitation. Video and action tokens interact throughout parallel denoising, allowing learned consequences to inform action generation directly. On RoboChallenge Table30-V2, three deployment-and-training rounds raise success from 23.67% to 43.33%, a 19.7-percentage-point gain, with a final score of 56.80. LoopWAM also achieves 94.5% average success on RoboTwin 2.0 and 49.5% overall success on RoboCasa365 without additional embodied pretraining, obtaining the best overall results among the compared methods across all three benchmarks. On challenging shirt folding task, two rounds of deployment-driven improvement after single-task post-training raise success from 13.20% to 55.56%. These results demonstrate closed-loop improvement from mixed-quality experience under both multi-task learning and single-task post-training. Project page: this https URL",
+  "paper_url": "https://arxiv.org/abs/2610.18873",
+  "pdf_url": "https://arxiv.org/pdf/2610.18873",
+  "project_url": "https://loop-wam.github.io/",
+  "code_url": "https://github.com/loop-wam/LoopWAM",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Wenxuan Guo",
+      "affiliations": []
+    },
+    {
+      "name": "Yingping Liang",
+      "affiliations": []
+    },
+    {
+      "name": "Zhaoguo Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Ziyuan Li",
+      "affiliations": []
+    },
+    {
+      "name": "Angyuan Ma",
+      "affiliations": []
+    },
+    {
+      "name": "Zhenyu Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Chengkun Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Bingyao Yu",
+      "affiliations": []
+    },
+    {
+      "name": "Ze Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Borui Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Xiuwei Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Meng Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Erjin Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Jiwen Lu",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "tsinghua-university",
+      "name": "Tsinghua University",
+      "role": "primary"
+    },
+    {
+      "id": "dexmal",
+      "name": "Dexmal",
+      "role": "collaborator"
+    },
+    {
+      "id": "loopeva",
+      "name": "Loopeva",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-10-13",
+    "last_revision": "2026-10-15"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model",
+      "vla",
+      "imitation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [
+      "code"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "system"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 94,
+    "selection_scores": {
+      "relevance": 20,
+      "novelty": 19,
+      "evidence_quality": 19,
+      "potential_impact": 14,
+      "board_information_gain": 9,
+      "reproducibility": 8,
+      "timeliness": 5,
+      "total": 94
+    },
+    "selection_reason": "保留成功、次优与失败 rollout 的视频监督，同时用质量条件和加权动作监督避免模仿差动作，直接验证多轮部署改进。",
+    "candidate_run": "2026-10-28",
+    "status": "ai-draft",
+    "approved_for_inclusion_at": "2026-10-28"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-10-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "质量标注依赖人工/VLM，粗标注还包含人为平滑度判断。",
+      "多轮训练和数据量同时增长，需要结合消融解释因果贡献。"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2610.18873",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Method",
+      "Experiments",
+      "Conclusion / Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-10-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2610.18873"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2610.18873"
+    },
+    {
+      "type": "project-page",
+      "url": "https://loop-wam.github.io/"
+    },
+    {
+      "type": "code",
+      "url": "https://github.com/loop-wam/LoopWAM"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "Tsinghua University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.18873",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Dexmal",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.18873",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Loopeva",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.18873",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://loop-wam.github.io/",
+      "status": "verified",
+      "verification_method": "http-get",
+      "checked_at": "2026-10-28"
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/loop-wam/LoopWAM",
+      "status": "verified",
+      "verification_method": "github-api-contents",
+      "checked_at": "2026-10-28",
+      "note": null
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "world-action-model",
+      "name": "World Action Model",
+      "reason": "区分动作条件预测与直接执行控制的共同建模。",
+      "evidence": "并行去噪中联合视频与动作；按专家/rollout 来源采样噪声，用轨迹质量调节动作学习，各质量视频均用于世界建模。"
+    }
+  ]
+}

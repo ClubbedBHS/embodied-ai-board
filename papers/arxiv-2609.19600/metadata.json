@@ -1,0 +1,198 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2609.19600",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "WorldContact: A Contact-Centric World Model for Scalable Robot Learning",
+  "title_zh": "WorldContact：用于变形物数据生成的接触中心世界模型",
+  "abstract": "Adapting robots to new objects and tasks requires interaction experience that can be costly to obtain. We present WorldContact, a contact-centric world model for deformable-object manipulation, constructed from a limited set of high-quality trajectories to generate additional training data efficiently. It predicts object dynamics using larger time steps than the source numerical simulator, which requires small integration steps to resolve rapid motion and prevent interpenetration. We evaluate WorldContact across 16 shopping-bag manipulation tasks. State-rollout measurements on a single H100 GPU show a $10\\times$ speedup over the source simulator, excluding rendering and disk I/O. We use the generated data to fine-tune an existing vision-language-action policy and deploy it directly on a real robot. In bag lifting, the same policy achieves 65% single-attempt success when fine-tuned on source simulation data alone, compared with 95% when fine-tuned on the dataset expanded with WorldContact. These results support efficient data generation with WorldContact for robot policy adaptation.",
+  "paper_url": "https://arxiv.org/abs/2609.19600",
+  "pdf_url": "https://arxiv.org/pdf/2609.19600",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Caoliwen Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Mengdi Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Heng Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Shixun Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Siyuan Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Chao Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Anpei Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Zhendong Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Peter Yichen Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Huamin Wang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "university-of-british-columbia",
+      "name": "University of British Columbia",
+      "role": "primary"
+    },
+    {
+      "id": "westlake-university",
+      "name": "Westlake University",
+      "role": "collaborator"
+    },
+    {
+      "id": "style3d-research",
+      "name": "Style3D Research",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-09-17",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data"
+    ],
+    "topics": [
+      "world-model",
+      "sim-to-real"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 84,
+    "selection_scores": {
+      "relevance": 20,
+      "novelty": 18,
+      "evidence_quality": 16,
+      "potential_impact": 13,
+      "board_information_gain": 10,
+      "reproducibility": 5,
+      "timeliness": 2,
+      "total": 84
+    },
+    "selection_reason": "用显式接触特征学习变形袋体状态动力学，以较大时间步生成数据并改善真机 VLA 适配。",
+    "candidate_run": "2026-10-28/batch-02",
+    "status": "ai-draft",
+    "approved_for_inclusion_at": "2026-10-28"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-10-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "真实策略证据仅一项提袋任务、每设置 20 次。",
+      "10 倍加速只计算状态预测。",
+      "对象材料与模拟器参数相对固定，跨材料泛化有限。",
+      "未找到官方代码、模型或数据。"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2609.19600",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Method",
+      "Experiments",
+      "Conclusion / Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-10-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2609.19600"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2609.19600"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "University of British Columbia",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2609.19600",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Westlake University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2609.19600",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Style3D Research",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2609.19600",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "verification_method": "official-source-scan",
+      "checked_at": "2026-10-28",
+      "note": null
+    }
+  ],
+  "suggested_new_tags": []
+}

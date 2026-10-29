@@ -1,0 +1,81 @@
+{
+  "promoted_at": "2026-10-28",
+  "approval": "用户要求收录本批可收录候选并 push 部署",
+  "count": 10,
+  "excluded": [
+    {
+      "id": "arxiv-2610.35604",
+      "decision": "watch"
+    },
+    {
+      "id": "arxiv-2610.32554",
+      "decision": "defer"
+    },
+    {
+      "id": "arxiv-2609.07398",
+      "decision": "defer"
+    }
+  ],
+  "papers": [
+    {
+      "id": "arxiv-2610.31762",
+      "title": "See What I Need, Dream What I Want: A Navigation Foundation Model on a Self-Constructed Representation Space",
+      "score": 90,
+      "status": "ai-draft"
+    },
+    {
+      "id": "arxiv-2610.30876",
+      "title": "LocoManiLab: A Unified Testbed for Data, Policies, Controllers, and Deployment in Humanoid Loco-Manipulation",
+      "score": 89,
+      "status": "ai-draft"
+    },
+    {
+      "id": "arxiv-2609.39870",
+      "title": "Magic-W0: A Structured World-Action Foundation Model for Physical Intelligence",
+      "score": 88,
+      "status": "ai-draft"
+    },
+    {
+      "id": "arxiv-2610.34186",
+      "title": "HuGe: Scaling Humanoid Generalist Vision-Language-Action Models with Egocentric Experience",
+      "score": 88,
+      "status": "ai-draft"
+    },
+    {
+      "id": "arxiv-2610.01744",
+      "title": "3DROID: A Renderable 3D Gaussian Dataset with Measured Per-Scene Reliability",
+      "score": 87,
+      "status": "ai-draft"
+    },
+    {
+      "id": "arxiv-2609.10243",
+      "title": "RoboFolDeX: A Physical-World Benchmark for Long-Horizon Robotic Manipulation of Deformable Objects",
+      "score": 87,
+      "status": "ai-draft"
+    },
+    {
+      "id": "arxiv-2610.08863",
+      "title": "Trajectory Planning without Trajectory Data: A Manifold-Guided Approach",
+      "score": 87,
+      "status": "ai-draft"
+    },
+    {
+      "id": "arxiv-2609.12036",
+      "title": "Pelican-Sim 1.0: A General World Model Simulator for Embodied Intelligence",
+      "score": 87,
+      "status": "ai-draft"
+    },
+    {
+      "id": "arxiv-2609.19600",
+      "title": "WorldContact: A Contact-Centric World Model for Scalable Robot Learning",
+      "score": 84,
+      "status": "ai-draft"
+    },
+    {
+      "id": "arxiv-2610.36662",
+      "title": "SWIM: Learning What Matters from Behaviors for JEPA World Models",
+      "score": 81,
+      "status": "ai-draft"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version":"0.3",
+  "id":"arxiv-2510.20813",
+  "content_type":"paper",
+  "source_scope":"full-source",
+  "title":"GSWorld: Closed-Loop Photo-Realistic Simulation Suite for Robotic Manipulation",
+  "title_zh":"GSWorld：面向机器人操作的闭环照片级真实感仿真套件",
+  "abstract":"This paper presents GSWorld, a robust, photo-realistic simulator for robotics manipulation that combines 3D Gaussian Splatting with physics engines. Our framework advocates closing the loop of developing manipulation policies with reproducible evaluation of policies learned from real-robot data and sim2real policy training without using real robots. To enable photo-realistic rendering of diverse scenes, we propose a new asset format, which we term GSDF (Gaussian Scene Description File), that infuses Gaussian-on-Mesh representation with robot URDF and other objects. With a streamlined reconstruction pipeline, we curate a database of GSDF that contains 3 robot embodiments for single-arm and bimanual manipulation, as well as more than 40 objects. Combining GSDF with physics engines, we demonstrate applications including zero-shot sim2real policy learning, automated DAgger data collection, reproducible benchmarking, virtual teleoperation, and zero-shot sim2real visual reinforcement learning.",
+  "paper_url":"https://arxiv.org/abs/2510.20813",
+  "pdf_url":"https://arxiv.org/pdf/2510.20813",
+  "project_url":"https://3dgsworld.github.io/",
+  "code_url":"https://github.com/luccachiang/GSWorld",
+  "dataset_url":null,
+  "model_url":null,
+  "video_url":null,
+  "authors":[
+    {"name":"Guangqi Jiang","affiliations":[]},{"name":"Haoran Chang","affiliations":[]},{"name":"Ri-Zhao Qiu","affiliations":[]},{"name":"Yutong Liang","affiliations":[]},{"name":"Mazeyu Ji","affiliations":[]},{"name":"Jiyue Zhu","affiliations":[]},{"name":"Zhao Dong","affiliations":[]},{"name":"Xueyan Zou","affiliations":[]},{"name":"Xiaolong Wang","affiliations":[]}
+  ],
+  "organizations":[
+    {"id":"ucsd","name":"University of California San Diego","role":"primary"},
+    {"id":"ucla","name":"University of California Los Angeles","role":"collaborator"},
+    {"id":"meta","name":"Meta","role":"collaborator"}
+  ],
+  "dates":{"first_publication":"2025-10-23","last_revision":null},
+  "venue":{"name":"IEEE International Conference on Robotics and Automation","year":2026,"status":"accepted"},
+  "labels": {
+    "sections":["simulators","infrastructure","data"],
+    "topics":["sim-to-real","imitation-learning","reinforcement-learning"],
+    "tasks":["manipulation"],
+    "platforms":["robot-arm","multi-robot"],
+    "modalities":["vision","depth","action"],
+    "environments":["mixed"],
+    "assets":["code","simulator"],
+    "properties":["open-source","real-robot-evaluation","multi-robot"]
+  },
+  "paper_type":["simulator","infrastructure","system"],
+  "editorial":{"importance":"featured","selection_score":92,"selection_reason":"将 3D Gaussian Splatting 与物理引擎组合为闭环操作仿真套件，覆盖三种机器人、40 余物体以及训练、纠错数据、评测和遥操作用途，代码可用。","candidate_run":"2026-09-13-related-work","status":"ai-draft"},
+  "ai_generation":{"model":"openai-codex","generated_at":"2026-09-14","confidence":"high","needs_human_review":true,"uncertainties":["公开资产库的完整授权与全部重建数据覆盖仍需使用者逐项确认。"]},
+  "source_access":{"metadata_source":"arxiv-abstract-html","fulltext_source":"arxiv-latexml-html","fulltext_url":"https://arxiv.org/html/2510.20813","fulltext_accessed":true,"sections_detected":["Introduction","GSDF","Applications","Experiments","Conclusion"],"figure_images_accessed":false,"accessed_at":"2026-09-13"},
+  "sources":[{"type":"paper","url":"https://arxiv.org/abs/2510.20813"},{"type":"fulltext","url":"https://arxiv.org/html/2510.20813"},{"type":"project-page","url":"https://3dgsworld.github.io/"},{"type":"code","url":"https://github.com/luccachiang/GSWorld"}],
+  "organization_evidence":[{"organization":"University of California San Diego; University of California Los Angeles; Meta","source":"paper-html","url":"https://arxiv.org/html/2510.20813","location":"author affiliation block"}],
+  "asset_checks":[{"kind":"code","url":"https://github.com/luccachiang/GSWorld","status":"verified","accessible":true,"verification_method":"github-page-get","evidence_source":"official-project-page","checked_at":"2026-09-13"}],
+  "suggested_new_tags":[{"dimension":"topics","slug":"real2sim","name":"Real2Sim","reason":"工作核心是从真实场景构造照片级可交互数字环境。","evidence":"GSDF 与场景重建管线服务真实策略评测和 sim-to-real。"},{"dimension":"topics","slug":"recovery-data","name":"Recovery Data","reason":"自动 DAgger 纠错数据是其明确应用。","evidence":"系统从失败轨迹的可恢复状态收集 motion-planned corrective data。"}]
+}

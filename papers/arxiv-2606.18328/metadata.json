@@ -1,0 +1,38 @@
+{
+  "schema_version":"0.3",
+  "id":"arxiv-2606.18328",
+  "content_type":"paper",
+  "source_scope":"full-source",
+  "title":"Recover, Discover, Plan: Learning Skills and Concepts from Robot Failures",
+  "title_zh":"恢复、发现与规划：从机器人失败中学习技能与概念",
+  "abstract":"Intelligent robots should not only recover from failures, but also acquire the abstract knowledge needed to avoid them in the future. While reinforcement learning can learn reactive recovery behaviors, training a separate policy for every distinct failure mode is highly inefficient. We introduce Recovery-Driven Synthesis of Relational Concepts (ReSYNC), an approach that progressively discovers and refines state abstractions (relational predicates) from failure-recovery experience to support abstract planning. ReSYNC jointly learns skills and concepts through an incremental dual-learning process. In the skill-learning phase, the robot uses reinforcement learning to recover from failures seen in training tasks. In the concept-learning phase, it discovers relational predicates and refines its abstract planning model to explain and generalize the learned recovery behaviors. Across four simulated domains, ReSYNC outperforms strong baselines by over 50% on unseen long-horizon problems and demonstrates sim-to-real transfer for non-prehensile manipulation.",
+  "paper_url":"https://arxiv.org/abs/2606.18328",
+  "pdf_url":"https://arxiv.org/pdf/2606.18328",
+  "project_url":"https://jaraxxus-me.github.io/ReSYNC/",
+  "code_url":null,
+  "dataset_url":null,
+  "model_url":null,
+  "video_url":null,
+  "authors":[
+    {"name":"Bowen Li","affiliations":[]},{"name":"Mayank Mishra","affiliations":[]},{"name":"Y. Isabel Liu","affiliations":[]},{"name":"Stone Tao","affiliations":[]},{"name":"Nishanth Kumar","affiliations":[]},{"name":"Alexander G. Gray","affiliations":[]},{"name":"Ruwan Wickramarachchi","affiliations":[]},{"name":"Jonathan Francis","affiliations":[]},{"name":"Sebastian Scherer","affiliations":[]},{"name":"Tom Silver","affiliations":[]}
+  ],
+  "organizations":[
+    {"id":"cmu","name":"Carnegie Mellon University","role":"primary"},
+    {"id":"princeton","name":"Princeton University","role":"collaborator"},
+    {"id":"ai2","name":"Allen Institute for AI","role":"collaborator"},
+    {"id":"mit","name":"Massachusetts Institute of Technology","role":"collaborator"},
+    {"id":"centaur-ai","name":"Centaur AI Institute","role":"collaborator"},
+    {"id":"bosch-research","name":"Bosch Research","role":"collaborator"}
+  ],
+  "dates":{"first_publication":"2026-06-16","last_revision":null},
+  "venue":{"name":null,"year":null,"status":"preprint"},
+  "labels":{"sections":["algorithms"],"topics":["planning","reinforcement-learning","representation-learning","sim-to-real"],"tasks":["manipulation"],"platforms":["robot-arm"],"modalities":["vision","proprioception","action"],"environments":["mixed"],"assets":[],"properties":["real-robot-evaluation"]},
+  "paper_type":["method","system"],
+  "editorial":{"importance":"featured","selection_score":91,"selection_reason":"从失败经历中先学习恢复技能，再发明能解释这些技能的关系谓词，把局部恢复转化为对新任务的全局失败规避。","candidate_run":"2026-09-13-related-work","status":"ai-draft"},
+  "ai_generation":{"model":"openai-codex","generated_at":"2026-09-14","confidence":"high","needs_human_review":true,"uncertainties":["项目页未提供可验证的官方实现入口。","每种新恢复技能仍需要强化学习训练。"]},
+  "source_access":{"metadata_source":"arxiv-abstract-html","fulltext_source":"arxiv-latexml-html","fulltext_url":"https://arxiv.org/html/2606.18328","fulltext_accessed":true,"sections_detected":["Introduction","Approach","Experiments","Conclusion"],"figure_images_accessed":false,"accessed_at":"2026-09-13"},
+  "sources":[{"type":"paper","url":"https://arxiv.org/abs/2606.18328"},{"type":"fulltext","url":"https://arxiv.org/html/2606.18328"},{"type":"project-page","url":"https://jaraxxus-me.github.io/ReSYNC/"}],
+  "organization_evidence":[{"organization":"Affiliations listed in organizations","source":"paper-html","url":"https://arxiv.org/html/2606.18328","location":"author affiliation block"}],
+  "asset_checks":[{"kind":"project","url":"https://jaraxxus-me.github.io/ReSYNC/","status":"verified","accessible":true,"verification_method":"http-get","evidence_source":"arxiv-comments","checked_at":"2026-09-13"},{"kind":"code","url":null,"status":"not-found","accessible":false,"verification_method":"official-source-scan","evidence_source":"paper-and-project-page","checked_at":"2026-09-13"}],
+  "suggested_new_tags":[{"dimension":"topics","slug":"predicate-invention","name":"Predicate Invention","reason":"工作会从失败经验中新增关系谓词，而不仅是使用已有符号。","evidence":"Concept-learning phase discovers relational predicates。"},{"dimension":"topics","slug":"failure-recovery","name":"Failure Recovery","reason":"恢复技能学习是双循环的起点。","evidence":"Skill-learning phase uses RL to reach states where the planner can resume。"}]
+}

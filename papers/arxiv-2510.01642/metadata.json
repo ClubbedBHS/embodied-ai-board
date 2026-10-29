@@ -1,0 +1,31 @@
+{
+  "schema_version":"0.3",
+  "id":"arxiv-2510.01642",
+  "content_type":"paper",
+  "source_scope":"full-source",
+  "title":"FailSafe: Reasoning and Recovery from Failures in Vision-Language-Action Models",
+  "title_zh":"FailSafe：视觉—语言—动作模型的故障推理与恢复",
+  "abstract":"Recent advances in robotic manipulation have integrated low-level robotic control into Vision-Language Models, extending them into Vision-Language-Action models. Although state-of-the-art VLAs achieve strong performance, they still inevitably encounter failures during execution. Existing manipulation datasets primarily provide ground-truth trajectories, and failure-detection datasets often offer only textual explanations. FailSafe is a failure generation and recovery system that automatically produces diverse failure cases paired with executable recovery actions. It can be adapted to manipulation tasks in simulators with motion-planning support, enabling scalable creation of failure-action data. The authors fine-tune LLaVA-OneVision-7B to build FailSafe-VLM. It improves Pi-0-FAST, OpenVLA, and OpenVLA-OFT by up to 22.6% on average across ManiSkill tasks and generalizes across spatial configurations, camera viewpoints, objects, and robot embodiments.",
+  "paper_url":"https://arxiv.org/abs/2510.01642",
+  "pdf_url":"https://arxiv.org/pdf/2510.01642",
+  "project_url":"https://jimntu.github.io/FailSafe/",
+  "code_url":"https://github.com/Jimntu/FailSafe_code",
+  "dataset_url":null,
+  "model_url":null,
+  "video_url":null,
+  "authors":[
+    {"name":"Zijun Lin","affiliations":["ntu","astar-cfar"]},{"name":"Jiafei Duan","affiliations":["ai2","uw"]},{"name":"Haoquan Fang","affiliations":["ai2","uw"]},{"name":"Dieter Fox","affiliations":["ai2","uw"]},{"name":"Ranjay Krishna","affiliations":["ai2","uw"]},{"name":"Cheston Tan","affiliations":["astar-cfar"]},{"name":"Bihan Wen","affiliations":["ntu"]}
+  ],
+  "organizations":[{"id":"ntu","name":"Nanyang Technological University","role":"primary"},{"id":"astar-cfar","name":"A*STAR Centre for Frontier AI Research","role":"collaborator"},{"id":"ai2","name":"Allen Institute for AI","role":"collaborator"},{"id":"uw","name":"University of Washington","role":"collaborator"}],
+  "dates":{"first_publication":"2025-10-02","last_revision":"2026-07-07"},
+  "venue":{"name":"IEEE/RSJ International Conference on Intelligent Robots and Systems","year":2026,"status":"accepted"},
+  "labels":{"sections":["algorithms","data"],"topics":["vla","foundation-model","planning"],"tasks":["manipulation"],"platforms":["robot-arm"],"modalities":["vision","language","action"],"environments":["simulation"],"assets":["code"],"properties":["open-source","simulation-only","large-scale-data"]},
+  "paper_type":["method","dataset","system"],
+  "editorial":{"importance":"featured","selection_score":91,"selection_reason":"自动生成可执行的失败—恢复样本并训练外部恢复 VLM，在三种 VLA 上给出显著提升；官方数据生成代码已核验。","candidate_run":"2026-09-13-related-work","status":"ai-draft"},
+  "ai_generation":{"model":"openai-codex","generated_at":"2026-09-14","confidence":"high","needs_human_review":true,"uncertainties":["恢复动作依赖成功轨迹附近的参考位姿。","失败来自人工设计的注入分布，未覆盖真实部署中的全部错误。"]},
+  "source_access":{"metadata_source":"arxiv-abstract-html","fulltext_source":"arxiv-latexml-html","fulltext_url":"https://arxiv.org/html/2510.01642","fulltext_accessed":true,"sections_detected":["Introduction","Method","Experiments","Conclusion"],"figure_images_accessed":false,"accessed_at":"2026-09-13"},
+  "sources":[{"type":"paper","url":"https://arxiv.org/abs/2510.01642"},{"type":"fulltext","url":"https://arxiv.org/html/2510.01642"},{"type":"project-page","url":"https://jimntu.github.io/FailSafe/"},{"type":"code","url":"https://github.com/Jimntu/FailSafe_code"}],
+  "organization_evidence":[{"organization":"All listed organizations","source":"paper-html","url":"https://arxiv.org/html/2510.01642","location":"author affiliation block"}],
+  "asset_checks":[{"kind":"code","url":"https://github.com/Jimntu/FailSafe_code","status":"verified","accessible":true,"verification_method":"github-page-get","evidence_source":"official-project-page","checked_at":"2026-09-13"}],
+  "suggested_new_tags":[{"dimension":"topics","slug":"failure-recovery","name":"Failure Recovery","reason":"论文的主任务是检测故障并输出可执行恢复动作。","evidence":"FailSafe-VLM is deployed as an external recovery module。"},{"dimension":"topics","slug":"synthetic-data","name":"Synthetic Data","reason":"核心资产是自动生成的失败—动作对。","evidence":"Failure injection, motion-planned correction and replay verification produce training pairs。"}]
+}

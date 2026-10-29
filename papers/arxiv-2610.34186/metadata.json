@@ -1,0 +1,323 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2610.34186",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "HuGe: Scaling Humanoid Generalist Vision-Language-Action Models with Egocentric Experience",
+  "title_zh": "HuGe：从第一视角经验扩展人形通用视觉—语言—动作模型",
+  "abstract": "Extending Vision-Language-Action models (VLAs) to humanoid robots requires coordinated whole-body control and diverse demonstrations that are costly to collect in real-world scenarios. Although egocentric human demonstrations provide a complementary source of task experience, differences in visual embodiment and missing robot proprioception complicate transfer to humanoid policies. To address these challenges, we introduce HuGe, a family of Humanoid Generalist VLAs pre-trained on over 2,000 hours of egocentric human and robot data. Specifically, HuGe employs three existing representative VLA architectures to predict latent motion tokens for a pretrained whole-body controller, together with hand-control signals. Based on this, we introduce a three-stage training pipeline that combines egocentric pre-training, humanoid adaptation, and downstream fine-tuning. To facilitate transfer across embodiments, we construct pseudo-proprioceptive states through simulation playback during pre-training and modify arm appearance in egocentric observations through re-rendering during downstream fine-tuning. With this pipeline, HuGe achieves the state-of-the-art on simulation benchmark HumanoidArena. Furthermore, real-world experiments on the Unitree G1 indicate that augmenting robot demonstrations with visually adapted egocentric demonstrations significantly increases success on a pick-and-drop task.",
+  "paper_url": "https://arxiv.org/abs/2610.34186",
+  "pdf_url": "https://arxiv.org/pdf/2610.34186",
+  "project_url": "https://yliu-cs.github.io/HuGe",
+  "code_url": "https://github.com/yliu-cs/HuGe",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Yang Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Jiacheng Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Hengtao Li",
+      "affiliations": []
+    },
+    {
+      "name": "Yuheng Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Zijian Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Ji Dai",
+      "affiliations": []
+    },
+    {
+      "name": "Maoxin Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Yi Gao",
+      "affiliations": []
+    },
+    {
+      "name": "Qishen Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Baohua Yin",
+      "affiliations": []
+    },
+    {
+      "name": "Peiyang Li",
+      "affiliations": []
+    },
+    {
+      "name": "Shuanghao Bai",
+      "affiliations": []
+    },
+    {
+      "name": "Mingyang Sun",
+      "affiliations": []
+    },
+    {
+      "name": "Pengxiang Ding",
+      "affiliations": []
+    },
+    {
+      "name": "Jianqin Yin",
+      "affiliations": []
+    },
+    {
+      "name": "Lixin Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Donglin Wang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "westlake-university",
+      "name": "Westlake University",
+      "role": "primary"
+    },
+    {
+      "id": "zhejiang-university",
+      "name": "Zhejiang University",
+      "role": "collaborator"
+    },
+    {
+      "id": "shanghai-innovation-institute",
+      "name": "Shanghai Innovation Institute",
+      "role": "collaborator"
+    },
+    {
+      "id": "hebei-university-of-technology",
+      "name": "Hebei University of Technology",
+      "role": "collaborator"
+    },
+    {
+      "id": "beijing-university-of-posts-and-telecommunications",
+      "name": "Beijing University of Posts and Telecommunications",
+      "role": "collaborator"
+    },
+    {
+      "id": "southwest-university-of-finance-and-economics",
+      "name": "Southwest University of Finance and Economics",
+      "role": "collaborator"
+    },
+    {
+      "id": "university-of-science-and-technology-of-china",
+      "name": "University of Science and Technology of China",
+      "role": "collaborator"
+    },
+    {
+      "id": "university-of-sussex",
+      "name": "University of Sussex",
+      "role": "collaborator"
+    },
+    {
+      "id": "xi-an-jiaotong-university",
+      "name": "Xi’an Jiaotong University",
+      "role": "collaborator"
+    },
+    {
+      "id": "shanghai-jiao-tong-university",
+      "name": "Shanghai Jiao Tong University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-10-25",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "representation-learning",
+      "control"
+    ],
+    "tasks": [
+      "mobile-manipulation",
+      "humanoid-control"
+    ],
+    "platforms": [
+      "humanoid"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "proprioception",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [
+      "code"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 88,
+    "selection_scores": {
+      "relevance": 20,
+      "novelty": 17,
+      "evidence_quality": 17,
+      "potential_impact": 13,
+      "board_information_gain": 8,
+      "reproducibility": 8,
+      "timeliness": 5,
+      "total": 88
+    },
+    "selection_reason": "用人类第一视角与机器人数据的分阶段训练，把三种 VLA 架构接到共同的人形运动潜空间。",
+    "candidate_run": "2026-10-28/batch-02",
+    "status": "ai-draft",
+    "approved_for_inclusion_at": "2026-10-28"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-10-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "与 VioLA 一样需要共享运动接口，但 HuGe 真实结果包含任务微调，不能直接对比 VioLA 无任务微调分数。",
+      "真实任务覆盖有限。",
+      "项目页作者和部分机构比当前 HTML 更完整，正式制作时需按作者版本核对。"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2610.34186",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Method",
+      "Experiments",
+      "Conclusion / Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-10-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2610.34186"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2610.34186"
+    },
+    {
+      "type": "project-page",
+      "url": "https://yliu-cs.github.io/HuGe"
+    },
+    {
+      "type": "code",
+      "url": "https://github.com/yliu-cs/HuGe"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "Westlake University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.34186",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Zhejiang University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.34186",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Shanghai Innovation Institute",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.34186",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Hebei University of Technology",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.34186",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Beijing University of Posts and Telecommunications",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.34186",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Southwest University of Finance and Economics",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.34186",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University of Science and Technology of China",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.34186",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University of Sussex",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.34186",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Xi’an Jiaotong University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.34186",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Shanghai Jiao Tong University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.34186",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://yliu-cs.github.io/HuGe",
+      "status": "verified",
+      "verification_method": "http-get",
+      "checked_at": "2026-10-28",
+      "note": null
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/yliu-cs/HuGe",
+      "status": "verified",
+      "verification_method": "github-api-contents",
+      "checked_at": "2026-10-28",
+      "note": null
+    }
+  ],
+  "suggested_new_tags": []
+}

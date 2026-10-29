@@ -1,0 +1,254 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2610.34356",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "RynnVLA-Latent: Scaling Robotic Manipulation Foundation Models with 3D-Grounded Latent Actions",
+  "title_zh": "RynnVLA-Latent：用三维潜动作扩展机器人操作预训练",
+  "abstract": "Scaling vision-language-action (VLA) models is constrained by scarce action-labeled demonstrations and incompatible control spaces across robot embodiments. We present RynnVLA-Latent, a framework that turns heterogeneous interaction videos into scalable supervision for robot policy pretraining. At its core, RynnLAM learns continuous, 3D-grounded latent actions from visual transitions without requiring native robot controls. By combining residual future-feature prediction, camera-compensated 3D-flow supervision, and camera-motion decoupling, RynnLAM encourages representations that capture control-relevant motion rather than appearance changes alone. We apply RynnLAM to 30.1K hours of human, robot, and simulation videos, producing 745.52M latent-action descriptors. RynnVLA-Latent then learns to predict latent-action chunks from visual observations and language through flow matching, before adapting its pretrained backbone and action expert to embodiment-specific robot actions. The resulting 4B policy achieves 98.8% success on LIBERO, 84.7% on LIBERO-Plus without benchmark-specific adaptation, 51.9% average success across five VLABench tracks, and 88.6% average success on the RoboTwin 2.0 bimanual benchmark. It also achieves the highest observed success rates among the compared methods on six real-world manipulation tasks across dexterous-hand and mobile-gripper platforms. Together with representation ablations and data-scaling results, these findings demonstrate the potential of latent-action supervision for scaling robot policy learning beyond native action-labeled data.",
+  "paper_url": "https://arxiv.org/abs/2610.34356",
+  "pdf_url": "https://arxiv.org/pdf/2610.34356",
+  "project_url": "https://alibaba-damo-academy.github.io/RynnVLA-Latent.github.io",
+  "code_url": "https://github.com/alibaba-damo-academy/RynnVLA-Latent",
+  "dataset_url": null,
+  "model_url": "https://huggingface.co/Alibaba-DAMO-Academy/RynnVLA-Latent-4B",
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Haoyu Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Xingyue Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Zhian Su",
+      "affiliations": []
+    },
+    {
+      "name": "Bohan Hou",
+      "affiliations": []
+    },
+    {
+      "name": "Yinzhou Tang",
+      "affiliations": []
+    },
+    {
+      "name": "Fengyi Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Kehan Li",
+      "affiliations": []
+    },
+    {
+      "name": "Yuming Jiang",
+      "affiliations": []
+    },
+    {
+      "name": "Siteng Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Xin Li",
+      "affiliations": []
+    },
+    {
+      "name": "Zhenyu Zeng",
+      "affiliations": []
+    },
+    {
+      "name": "Mingxiu Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Deli Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Zhongyu Li",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "damo-academy-alibaba-group",
+      "name": "DAMO Academy, Alibaba Group",
+      "role": "primary"
+    },
+    {
+      "id": "hong-kong-embodied-ai-lab",
+      "name": "Hong Kong Embodied AI Lab",
+      "role": "collaborator"
+    },
+    {
+      "id": "the-chinese-university-of-hong-kong",
+      "name": "The Chinese University of Hong Kong",
+      "role": "collaborator"
+    },
+    {
+      "id": "hupan-lab",
+      "name": "Hupan Lab",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-10-25",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "representation-learning",
+      "foundation-model"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "dexterous-hand",
+      "mobile-robot"
+    ],
+    "modalities": [
+      "vision",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [
+      "code",
+      "model-weights"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 93,
+    "selection_scores": {
+      "relevance": 20,
+      "novelty": 18,
+      "evidence_quality": 18,
+      "potential_impact": 14,
+      "board_information_gain": 9,
+      "reproducibility": 9,
+      "timeliness": 5,
+      "total": 93
+    },
+    "selection_reason": "用 3D-grounded 连续潜动作把 30.1K 小时异构视频变成策略预训练监督，降低对统一原生机器人动作标签的依赖。",
+    "candidate_run": "2026-10-28",
+    "status": "ai-draft",
+    "approved_for_inclusion_at": "2026-10-28"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-10-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "公开权重是第一阶段潜动作预训练模型，仍需第二阶段本体适配后才能闭环控制。",
+      "正文与结论中的 RoboTwin 汇总数字存在 88.6/88.3 不一致，发布摘要前应复核版本。",
+      "部分比较提升很小，不能据此宣称统计显著。"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2610.34356",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Method",
+      "Experiments",
+      "Conclusion / Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-10-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2610.34356"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2610.34356"
+    },
+    {
+      "type": "project-page",
+      "url": "https://alibaba-damo-academy.github.io/RynnVLA-Latent.github.io"
+    },
+    {
+      "type": "code",
+      "url": "https://github.com/alibaba-damo-academy/RynnVLA-Latent"
+    },
+    {
+      "type": "model",
+      "url": "https://huggingface.co/Alibaba-DAMO-Academy/RynnVLA-Latent-4B"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "DAMO Academy, Alibaba Group",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.34356",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Hong Kong Embodied AI Lab",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.34356",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "The Chinese University of Hong Kong",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.34356",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Hupan Lab",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.34356",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://alibaba-damo-academy.github.io/RynnVLA-Latent.github.io",
+      "status": "verified",
+      "verification_method": "http-get",
+      "checked_at": "2026-10-28"
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/alibaba-damo-academy/RynnVLA-Latent",
+      "status": "verified",
+      "verification_method": "github-api-contents",
+      "checked_at": "2026-10-28",
+      "note": null
+    },
+    {
+      "kind": "model",
+      "url": "https://huggingface.co/Alibaba-DAMO-Academy/RynnVLA-Latent-4B",
+      "status": "verified",
+      "verification_method": "huggingface-api",
+      "checked_at": "2026-10-28"
+    }
+  ],
+  "suggested_new_tags": []
+}

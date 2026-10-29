@@ -1,0 +1,255 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2610.36791",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "RynnWorld-Latent: A Cross-Embodiment World Model Conditioned on Universal Latent Actions",
+  "title_zh": "RynnWorld-Latent：以通用潜动作条件化的跨本体世界模型",
+  "abstract": "Learning controllable world dynamics from heterogeneous interaction videos is challenging because robot embodiments use incompatible action spaces, while human videos lack native control labels. We present RynnWorld-Latent, a cross-embodiment video world model that uses the 3D-grounded latent actions introduced by RynnLAM as a shared conditioning interface. This representation enables joint pretraining on human interaction videos, robot demonstrations, and simulation rollouts without requiring a common native action space. Built on a pretrained video transformer, RynnWorld-Latent combines global action tokens with an identity-initialized local pathway that aligns actions with future video latents. We pretrain on 23 datasets comprising approximately 553.5M frames and adapt the model to target robots through post-training. The framework supports two data-generation routes: digital teleoperation uses target robot commands to generate action-video demonstrations, while latent-action synthesis transfers source motion to an edited initial frame and pairs the resulting rollout with retargeted pseudo robot actions. Experiments show improved video prediction metrics on public benchmarks and two real-robot platforms, alongside qualitative action following when different action sequences share the same initial observation. Synthetic mid-training improves policy success rates on LIBERO and LIBERO-Plus, and both generation routes improve real-world policy success rates over real-demonstration-only training in the evaluated settings. These results support universal latent actions as a scalable interface for learning controllable visual dynamics across heterogeneous embodiments.",
+  "paper_url": "https://arxiv.org/abs/2610.36791",
+  "pdf_url": "https://arxiv.org/pdf/2610.36791",
+  "project_url": "https://alibaba-damo-academy.github.io/RynnWorld-Latent.github.io",
+  "code_url": "https://github.com/alibaba-damo-academy/RynnWorld-Latent",
+  "dataset_url": null,
+  "model_url": "https://huggingface.co/Alibaba-DAMO-Academy/RynnWorld-Latent",
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Haoyu Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Yinzhou Tang",
+      "affiliations": []
+    },
+    {
+      "name": "Zixuan Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Minghao Zhu",
+      "affiliations": []
+    },
+    {
+      "name": "Dongchi Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Xingyue Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Qin Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Kehan Li",
+      "affiliations": []
+    },
+    {
+      "name": "Siteng Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Xin Li",
+      "affiliations": []
+    },
+    {
+      "name": "Zhenyu Zeng",
+      "affiliations": []
+    },
+    {
+      "name": "Mingxiu Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Deli Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Zhongyu Li",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "damo-academy-alibaba-group",
+      "name": "DAMO Academy, Alibaba Group",
+      "role": "primary"
+    },
+    {
+      "id": "hong-kong-embodied-ai-lab",
+      "name": "Hong Kong Embodied AI Lab",
+      "role": "collaborator"
+    },
+    {
+      "id": "the-chinese-university-of-hong-kong",
+      "name": "The Chinese University of Hong Kong",
+      "role": "collaborator"
+    },
+    {
+      "id": "hupan-lab",
+      "name": "Hupan Lab",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-10-27",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data"
+    ],
+    "topics": [
+      "world-model",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "dexterous-hand",
+      "mobile-robot"
+    ],
+    "modalities": [
+      "vision",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [
+      "code",
+      "model-weights"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "system"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 89,
+    "selection_scores": {
+      "relevance": 20,
+      "novelty": 18,
+      "evidence_quality": 17,
+      "potential_impact": 13,
+      "board_information_gain": 8,
+      "reproducibility": 8,
+      "timeliness": 5,
+      "total": 89
+    },
+    "selection_reason": "用与 RynnVLA 共享的潜动作条件化视频世界模型，支持数字遥操作与从人类视频合成机器人数据。",
+    "candidate_run": "2026-10-28",
+    "status": "ai-draft",
+    "approved_for_inclusion_at": "2026-10-28"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-10-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "数据与额外优化算力的贡献尚未分离。",
+      "合成视频与重定向动作分别生成，过滤不能保证物理一致。",
+      "仓库 README 与论文描述的训练数据规模不一致，需要进一步核对。"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2610.36791",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Method",
+      "Experiments",
+      "Conclusion / Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-10-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2610.36791"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2610.36791"
+    },
+    {
+      "type": "project-page",
+      "url": "https://alibaba-damo-academy.github.io/RynnWorld-Latent.github.io"
+    },
+    {
+      "type": "code",
+      "url": "https://github.com/alibaba-damo-academy/RynnWorld-Latent"
+    },
+    {
+      "type": "model",
+      "url": "https://huggingface.co/Alibaba-DAMO-Academy/RynnWorld-Latent"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "DAMO Academy, Alibaba Group",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.36791",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Hong Kong Embodied AI Lab",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.36791",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "The Chinese University of Hong Kong",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.36791",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Hupan Lab",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.36791",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://alibaba-damo-academy.github.io/RynnWorld-Latent.github.io",
+      "status": "verified",
+      "verification_method": "http-get",
+      "checked_at": "2026-10-28"
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/alibaba-damo-academy/RynnWorld-Latent",
+      "status": "verified",
+      "verification_method": "github-api-contents",
+      "checked_at": "2026-10-28",
+      "note": null
+    },
+    {
+      "kind": "model",
+      "url": "https://huggingface.co/Alibaba-DAMO-Academy/RynnWorld-Latent",
+      "status": "verified",
+      "verification_method": "huggingface-api",
+      "checked_at": "2026-10-28"
+    }
+  ],
+  "suggested_new_tags": []
+}

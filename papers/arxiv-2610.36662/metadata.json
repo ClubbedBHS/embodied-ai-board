@@ -1,0 +1,203 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2610.36662",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "SWIM: Learning What Matters from Behaviors for JEPA World Models",
+  "title_zh": "SWIM：从行为学习 JEPA 世界模型应关注的状态维度",
+  "abstract": "Joint-embedding predictive architectures (JEPAs) enable world models to plan from images by predicting future embeddings. However, their visual prediction objectives do not explicitly incorporate task-relevant state information, so the physical state that determines task progress may not be reliably captured in the latent space. Supervising world models with simulator state can make planning more informative, but it requires deciding which state features matter. Features are typically selected by hand or weighted uniformly, and a uniform weighting gives every standardized state feature equal influence, so redundant coordinates can overcount the same variation, while irrelevant ones can obscure task-relevant differences. To address this limitation, we propose SWIM (State Weighting with Inverse-Dynamics Model), which learns state weights from offline trajectories by predicting recorded actions from current states and observed future displacements. The learned weights quantify each feature&#39;s contribution to action prediction and define a weighted state metric for state-supervised training, which we demonstrate by aligning latent and state distances. The inverse-dynamics model is used only during training, so the resulting world model plans from images with no additional planning-time computation. Across five simulated robotic manipulation tasks, SWIM consistently improves planning success over uniform state weighting.",
+  "paper_url": "https://arxiv.org/abs/2610.36662",
+  "pdf_url": "https://arxiv.org/pdf/2610.36662",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Jiaming Hu",
+      "affiliations": []
+    },
+    {
+      "name": "Shi Bo",
+      "affiliations": []
+    },
+    {
+      "name": "Yan Zheng",
+      "affiliations": []
+    },
+    {
+      "name": "Tian Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Florian Dubost",
+      "affiliations": []
+    },
+    {
+      "name": "Alejandro Mottini",
+      "affiliations": []
+    },
+    {
+      "name": "Junze Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Arvind Srinivasan",
+      "affiliations": []
+    },
+    {
+      "name": "Kai Zhong",
+      "affiliations": []
+    },
+    {
+      "name": "Kun Qian",
+      "affiliations": []
+    },
+    {
+      "name": "Sharon Gao",
+      "affiliations": []
+    },
+    {
+      "name": "Vianne Gao",
+      "affiliations": []
+    },
+    {
+      "name": "Houyu Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Qingjun Cui",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "boston-university",
+      "name": "Boston University",
+      "role": "primary"
+    },
+    {
+      "id": "unity-technologies",
+      "name": "Unity Technologies",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-10-27",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model",
+      "representation-learning",
+      "planning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "action"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [],
+    "properties": [
+      "simulation-only"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 81,
+    "selection_scores": {
+      "relevance": 19,
+      "novelty": 16,
+      "evidence_quality": 16,
+      "potential_impact": 11,
+      "board_information_gain": 9,
+      "reproducibility": 5,
+      "timeliness": 5,
+      "total": 81
+    },
+    "selection_reason": "用离线动作预测学习状态各坐标的行为相关性，再用加权状态距离校准 JEPA 潜空间。",
+    "candidate_run": "2026-10-28/batch-02",
+    "status": "ai-draft",
+    "approved_for_inclusion_at": "2026-10-28"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-10-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "增益较小，不能表述为显著跨越能力边界。",
+      "依赖训练时提供的状态变量与离线行为覆盖。",
+      "只有仿真，通过 SCALE 展示，尚无真机和其他目标验证。",
+      "没有发现官方实现。"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2610.36662",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Method",
+      "Experiments",
+      "Conclusion / Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-10-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2610.36662"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2610.36662"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "Boston University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.36662",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Unity Technologies",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.36662",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "verification_method": "official-source-scan",
+      "checked_at": "2026-10-28",
+      "note": null
+    }
+  ],
+  "suggested_new_tags": []
+}

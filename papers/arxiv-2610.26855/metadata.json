@@ -1,0 +1,271 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2610.26855",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Ropedia W0: Scaling Loco-Manipulation World Models across Embodiments with Human Experience",
+  "title_zh": "Ropedia W0：从人类经验扩展跨本体移动—操作世界模型",
+  "abstract": "World models enable embodied agents to anticipate action consequences, yet jointly modeling locomotion and manipulation across diverse embodiments remains challenging due to heterogeneous action spaces and limited multimodal supervision. We present Ropedia W0, the first egocentric loco-manipulation world foundation model spanning humans and robots with diverse embodiments. We curate Xp-Data, comprising 10k hours of egocentric human data and 3k hours of robot data with unified multimodal annotations and systematic quality control. A unified kinematic representation encodes locomotion through camera poses and manipulation through projected skeletons, with robot skeletons combining embodiment-specific forward kinematics with extensive manual keypoint annotation and correction. We also introduce Xp-Teleop, a long-horizon loco-manipulation benchmark based on high-quality dexterous humanoid teleoperation data. Evaluations demonstrate state-of-the-art performance across five cross-embodiment benchmarks (DreamDojo, $\\Psi_0$, $\\omega$-HOME, Xp-Teleop, and AgiBot) and on held-out human egocentric video, from zero-shot inference to few-shot and full-data post-training. Scaling human pre-training data improves performance on both human and robot evaluations. After distillation, our model supports real-time, minute-long rollouts, enabling live VR interaction. Applications in policy evaluation, model-based planning, and world-action modeling further demonstrate the model&#39;s utility for embodied decision-making.",
+  "paper_url": "https://arxiv.org/abs/2610.26855",
+  "pdf_url": "https://arxiv.org/pdf/2610.26855",
+  "project_url": "https://ropedia.github.io/ropedia-w0/",
+  "code_url": "https://github.com/Ropedia/ropedia-w0",
+  "dataset_url": null,
+  "model_url": "https://huggingface.co/ropedia-ai/Ropedia-W0",
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Tianqi Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Hanfei Zhao",
+      "affiliations": []
+    },
+    {
+      "name": "Qifeng Liang",
+      "affiliations": []
+    },
+    {
+      "name": "Hui En Pang",
+      "affiliations": []
+    },
+    {
+      "name": "Jiarui Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Sayang Mu",
+      "affiliations": []
+    },
+    {
+      "name": "Penghao Qiu",
+      "affiliations": []
+    },
+    {
+      "name": "YingSheng Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Jun Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Ziang Cao",
+      "affiliations": []
+    },
+    {
+      "name": "Mingze Sun",
+      "affiliations": []
+    },
+    {
+      "name": "Yukang Cao",
+      "affiliations": []
+    },
+    {
+      "name": "Fangzhou Hong",
+      "affiliations": []
+    },
+    {
+      "name": "Zhaoxi Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Ziwei Liu",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "nanyang-technological-university",
+      "name": "Nanyang Technological University",
+      "role": "primary"
+    },
+    {
+      "id": "ropedia",
+      "name": "Ropedia",
+      "role": "collaborator"
+    },
+    {
+      "id": "duke-university",
+      "name": "Duke University",
+      "role": "collaborator"
+    },
+    {
+      "id": "university-of-california-san-diego",
+      "name": "University of California San Diego",
+      "role": "collaborator"
+    },
+    {
+      "id": "tsinghua-university",
+      "name": "Tsinghua University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-10-19",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data"
+    ],
+    "topics": [
+      "world-model",
+      "foundation-model",
+      "planning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "humanoid",
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [
+      "code",
+      "model-weights"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "system"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 92,
+    "selection_scores": {
+      "relevance": 20,
+      "novelty": 18,
+      "evidence_quality": 17,
+      "potential_impact": 14,
+      "board_information_gain": 9,
+      "reproducibility": 9,
+      "timeliness": 5,
+      "total": 92
+    },
+    "selection_reason": "用 10K 小时人类与 3K 小时机器人数据，将移动和操作统一到第一视角世界模型，并提供权重与推理实现。",
+    "candidate_run": "2026-10-28",
+    "status": "ai-draft",
+    "approved_for_inclusion_at": "2026-10-28"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-10-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "任务进度不等同于整项任务成功率。",
+      "照片级视频预测并不能单独证明动力学正确。",
+      "公开权重与完整 13K 小时训练语料应分开表述。"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2610.26855",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Method",
+      "Experiments",
+      "Conclusion / Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-10-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2610.26855"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2610.26855"
+    },
+    {
+      "type": "project-page",
+      "url": "https://ropedia.github.io/ropedia-w0/"
+    },
+    {
+      "type": "code",
+      "url": "https://github.com/Ropedia/ropedia-w0"
+    },
+    {
+      "type": "model",
+      "url": "https://huggingface.co/ropedia-ai/Ropedia-W0"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "Nanyang Technological University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.26855",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Ropedia",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.26855",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Duke University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.26855",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University of California San Diego",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.26855",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Tsinghua University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.26855",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://ropedia.github.io/ropedia-w0/",
+      "status": "verified",
+      "verification_method": "http-get",
+      "checked_at": "2026-10-28"
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/Ropedia/ropedia-w0",
+      "status": "verified",
+      "verification_method": "github-api-contents",
+      "checked_at": "2026-10-28",
+      "note": null
+    },
+    {
+      "kind": "model",
+      "url": "https://huggingface.co/ropedia-ai/Ropedia-W0",
+      "status": "verified",
+      "verification_method": "huggingface-api",
+      "checked_at": "2026-10-28"
+    }
+  ],
+  "suggested_new_tags": []
+}

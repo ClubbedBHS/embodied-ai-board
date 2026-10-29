@@ -1,0 +1,199 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2610.19155",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "FACT: A Multimodal Force-Action-Track Foundation Model for Human-to-Robot Dexterity",
+  "title_zh": "FACT：从人类力觉经验学习灵巧操作的力—动作—轨迹模型",
+  "abstract": "Human demonstrations offer a scalable alternative to costly robot data collection for dexterous manipulation, but most human datasets lack force measurements. Dexterous manipulation requires not only visual and proprioceptive understanding but also the ability to anticipate and regulate interaction forces. To scale force-aware human-robot co-training, we introduce EgoForce, a large-scale human tactile dataset capturing force-rich manipulation experience, and combine it with robot demonstrations for pretraining. We present FACT, a robot foundation model that cascades from prospective visual planning to force-aware refinement for dexterous manipulation. FACT comprises two jointly trained components. A Track-Guided Coarse Planner jointly predicts actions, future video, and visual tracks. Future video and visual tracks also provide a shared task representation that facilitates cross-embodiment knowledge transfer and coarse action generation. Building on this coarse plan, a Force-Action Joint Refiner jointly predicts future force and refines the coarse action, allowing anticipated force and action to shape each other during refinement. We evaluate the model on ten tasks requiring fine-grained coordination and force feedback, including tool use, musical instruments, and precision laboratory procedures. Using as few as 10 robot trajectories with 90 human trajectories for fine-tuning, FACT outperforms both baselines, with success-rate gains of up to 60 percentage points over T-Rex. Ablations show that force supervision in human pretraining data is crucial for downstream robot performance after fine-tuning, while visual track prediction and training with future-force prediction improve dexterous execution. Experiments varying the human-robot data ratio during fine-tuning further suggest that FACT learns from human demonstrations nearly as effectively as from robot demonstrations.",
+  "paper_url": "https://arxiv.org/abs/2610.19155",
+  "pdf_url": "https://arxiv.org/pdf/2610.19155",
+  "project_url": "https://fact-1-0.github.io/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Zhi Cao",
+      "affiliations": []
+    },
+    {
+      "name": "Yining Hong",
+      "affiliations": []
+    },
+    {
+      "name": "Jiaolong Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Yejin Choi",
+      "affiliations": []
+    },
+    {
+      "name": "Fei-Fei Li",
+      "affiliations": []
+    },
+    {
+      "name": "Jiajun Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Huang Huang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "university-of-michigan",
+      "name": "University of Michigan",
+      "role": "primary"
+    },
+    {
+      "id": "stanford-university",
+      "name": "Stanford University",
+      "role": "collaborator"
+    },
+    {
+      "id": "microsoft-research",
+      "name": "Microsoft Research",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-10-13",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "data"
+    ],
+    "topics": [
+      "world-model",
+      "control",
+      "foundation-model"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "dexterous-hand"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "tactile",
+      "action"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "dataset"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 88,
+    "selection_scores": {
+      "relevance": 20,
+      "novelty": 18,
+      "evidence_quality": 16,
+      "potential_impact": 14,
+      "board_information_gain": 10,
+      "reproducibility": 5,
+      "timeliness": 5,
+      "total": 88
+    },
+    "selection_reason": "从人类力觉示范预训练，让视觉规划与力—动作修正协同；EgoForce 约 2K 小时、40K episodes、1K 任务和示范者。",
+    "candidate_run": "2026-10-28",
+    "status": "ai-draft",
+    "approved_for_inclusion_at": "2026-10-28"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-10-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "每项二值任务仅 10 次评测，乐器用音符数、移液器用误差，不能混成统一平均成功率。",
+      "项目页没有直接代码、数据或权重入口。"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2610.19155",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Method",
+      "Experiments",
+      "Conclusion / Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-10-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2610.19155"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2610.19155"
+    },
+    {
+      "type": "project-page",
+      "url": "https://fact-1-0.github.io/"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "University of Michigan",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.19155",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Stanford University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.19155",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Microsoft Research",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.19155",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://fact-1-0.github.io/",
+      "status": "verified",
+      "verification_method": "http-get",
+      "checked_at": "2026-10-28"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "verification_method": "official-source-scan",
+      "checked_at": "2026-10-28",
+      "note": null
+    }
+  ],
+  "suggested_new_tags": []
+}

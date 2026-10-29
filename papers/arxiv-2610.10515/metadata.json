@@ -1,0 +1,234 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2610.10515",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "RoboJEPA: Scaling Robotic Latent World Models",
+  "title_zh": "RoboJEPA：机器人潜空间世界模型的规模规律",
+  "abstract": "Latent world models have shown a remarkable ability to predict future states and to plan in the real world. In practice, however, we lack a principled way to estimate how their capabilities scale with model size, data, and compute, an open problem that slows progress in the field. In this work we present RoboJEPA, a world model based on the Joint Embedding Predictive Architecture (JEPA) and trained on a large-scale dataset spanning 12 robotic embodiments. We show that RoboJEPA&#39;s imagination error, the error of its latent rollouts, follows a second-order power law in compute, allowing us to predict model quality well beyond the scale at which the law is fit. We further show that downstream robotic planning performance improves predictably with compute, and that imagination error is strongly correlated with it, making it a reliable proxy for real-robot evaluation. Finally, we demonstrate that latent world models can be deployed zero-shot as robotic agents, planning toward a single goal image to solve tasks requiring long-horizon planning on real hardware. We release all model checkpoints together with our training and robot deployment code. To our knowledge, this is the first work to establish scaling laws for multi-embodiment robotic world models trained on real robot data, and RoboJEPA, at 8B parameters, is the largest JEPA predictor model trained to date.",
+  "paper_url": "https://arxiv.org/abs/2610.10515",
+  "pdf_url": "https://arxiv.org/pdf/2610.10515",
+  "project_url": "https://robojepa.github.io",
+  "code_url": "https://github.com/facebookresearch/robo_jepa",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Artem Zholus",
+      "affiliations": []
+    },
+    {
+      "name": "Nicolas Beltran-Velez",
+      "affiliations": []
+    },
+    {
+      "name": "Jianhao Yuan",
+      "affiliations": []
+    },
+    {
+      "name": "Sarath Chandar",
+      "affiliations": []
+    },
+    {
+      "name": "Tushar Nagarajan",
+      "affiliations": []
+    },
+    {
+      "name": "Daniel Severo",
+      "affiliations": []
+    },
+    {
+      "name": "Koustuv Sinha",
+      "affiliations": []
+    },
+    {
+      "name": "Michal Drozdzal",
+      "affiliations": []
+    },
+    {
+      "name": "Adriana Romero Soriano",
+      "affiliations": []
+    },
+    {
+      "name": "Jeannette Bohg",
+      "affiliations": []
+    },
+    {
+      "name": "Nicolas Ballas",
+      "affiliations": []
+    },
+    {
+      "name": "Mahmoud Assran",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "fair-at-meta",
+      "name": "FAIR at Meta",
+      "role": "primary"
+    },
+    {
+      "id": "chandar-research-lab",
+      "name": "Chandar Research Lab",
+      "role": "collaborator"
+    },
+    {
+      "id": "mila",
+      "name": "Mila",
+      "role": "collaborator"
+    },
+    {
+      "id": "polytechnique-montre-al",
+      "name": "Polytechnique Montréal",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-10-07",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "topics": [
+      "world-model",
+      "planning",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [
+      "code"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "analysis"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 95,
+    "selection_scores": {
+      "relevance": 20,
+      "novelty": 19,
+      "evidence_quality": 19,
+      "potential_impact": 15,
+      "board_information_gain": 9,
+      "reproducibility": 9,
+      "timeliness": 4,
+      "total": 95
+    },
+    "selection_reason": "将潜空间世界模型从 22M 扩展到 8B，在 12 类机器人数据上建立预测误差与训练算力、下游规划之间的关系。",
+    "candidate_run": "2026-10-28",
+    "status": "ai-draft",
+    "approved_for_inclusion_at": "2026-10-28"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-10-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "潜空间误差是本文数据与任务内的代理指标，不能当作通用物理理解评分。",
+      "简单任务较早饱和，复杂物体交互需要更大计算量。"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2610.10515",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Method",
+      "Experiments",
+      "Conclusion / Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-10-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2610.10515"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2610.10515"
+    },
+    {
+      "type": "project-page",
+      "url": "https://robojepa.github.io"
+    },
+    {
+      "type": "code",
+      "url": "https://github.com/facebookresearch/robo_jepa"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "FAIR at Meta",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.10515",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Chandar Research Lab",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.10515",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Mila",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.10515",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Polytechnique Montréal",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.10515",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://robojepa.github.io",
+      "status": "verified",
+      "verification_method": "http-get",
+      "checked_at": "2026-10-28"
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/facebookresearch/robo_jepa",
+      "status": "verified",
+      "verification_method": "github-api-contents",
+      "checked_at": "2026-10-28",
+      "note": null
+    }
+  ],
+  "suggested_new_tags": []
+}

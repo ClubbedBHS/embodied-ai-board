@@ -1,0 +1,212 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2609.10243",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "RoboFolDeX: A Physical-World Benchmark for Long-Horizon Robotic Manipulation of Deformable Objects",
+  "title_zh": "RoboFolDeX：长程变形物操作的真实机器人数据与评测",
+  "abstract": "Embodied AI, including vision-language-action and world-action models, must operate reliably in the physical world. Yet methods that perform well in simulation can degrade substantially on real robots, especially in long-horizon deformable-object manipulation, where policies must track changing states and execute reliable multi-stage bimanual interactions. Existing real-robot benchmarks mainly focus on short-horizon rigid-object tasks and offer limited coverage of long-horizon deformable manipulation. We introduce RoboFolDeX, a physical-world benchmark built entirely from real-robot data, with garment folding as its primary task. Since real-robot data collection is costly, RoboFolDeX studies how heterogeneous physical experience can be reused efficiently. The benchmark is organized around four research axes: leveraging human intervention and recovery data collected during deployment; transferring data across tasks, including across garment categories and from rigid to deformable-object manipulation; reusing data across scenes with changes in lighting, background, and layout; and transferring data across robotic embodiments. RoboFolDeX provides 2,000+ hours of real-robot data spanning 20+ tasks and 10+ embodiments. We also establish a fair real-robot evaluation platform for externally submitted policies, with standardized tasks, held-out physical objects, controlled initializations, and a unified execution protocol. The platform is publicly accessible at this https URL . We hope RoboFolDeX will serve as a unified testbed for heterogeneous real-robot data reuse and reliable long-horizon deformable manipulation.",
+  "paper_url": "https://arxiv.org/abs/2609.10243",
+  "pdf_url": "https://arxiv.org/pdf/2609.10243",
+  "project_url": "https://ai.midea.com/#/fold-challenge",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Chenhuan Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Yi Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Feng Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Hanyang Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Wenxiao Kuai",
+      "affiliations": []
+    },
+    {
+      "name": "Weihao Ding",
+      "affiliations": []
+    },
+    {
+      "name": "Shan Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Yang Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Shuyong Gao",
+      "affiliations": []
+    },
+    {
+      "name": "Wenqiang Zhang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "fudan-university",
+      "name": "Fudan University",
+      "role": "primary"
+    },
+    {
+      "id": "ai-research-center-midea-group-shanghai-co-ltd",
+      "name": "AI Research Center, Midea Group (Shanghai) Co., Ltd.",
+      "role": "collaborator"
+    },
+    {
+      "id": "carnegie-mellon-university",
+      "name": "Carnegie Mellon University",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-09-09",
+    "last_revision": "2026-09-18"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data"
+    ],
+    "topics": [
+      "vla",
+      "imitation-learning",
+      "control"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "language",
+      "proprioception",
+      "action"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "benchmark",
+    "dataset"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 87,
+    "selection_scores": {
+      "relevance": 20,
+      "novelty": 17,
+      "evidence_quality": 18,
+      "potential_impact": 15,
+      "board_information_gain": 10,
+      "reproducibility": 5,
+      "timeliness": 2,
+      "total": 87
+    },
+    "selection_reason": "面向真实长程衣物操作的数据复用与统一实体评测，明确区分恢复、任务、场景、本体四条研究轴。",
+    "candidate_run": "2026-10-28/batch-02",
+    "status": "ai-draft",
+    "approved_for_inclusion_at": "2026-10-28"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-10-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "全文对外部平台地址和匿名评审隐藏地址的描述并存，需要按最终版本确认资源。",
+      "完整训练数据的直接下载入口尚未验证。",
+      "四条 track 是初步协议与结果，不是穷尽方法比较。"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2609.10243",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Method",
+      "Experiments",
+      "Conclusion / Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-10-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2609.10243"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2609.10243"
+    },
+    {
+      "type": "project-page",
+      "url": "https://ai.midea.com/#/fold-challenge"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "Fudan University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2609.10243",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "AI Research Center, Midea Group (Shanghai) Co., Ltd.",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2609.10243",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Carnegie Mellon University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2609.10243",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://ai.midea.com/#/fold-challenge",
+      "status": "verified",
+      "verification_method": "http-get",
+      "checked_at": "2026-10-28",
+      "note": "Official site root GET returned HTTP 200 with an SPA shell; the hash-route evaluation application was not interactively inspected. This does not verify data downloads."
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "verification_method": "official-source-scan",
+      "checked_at": "2026-10-28",
+      "note": null
+    }
+  ],
+  "suggested_new_tags": []
+}

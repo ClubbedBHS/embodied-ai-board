@@ -1,0 +1,193 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2609.15213",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "X-WBC: A Cross-Embodiment Foundation Model for Humanoid Whole-Body Control",
+  "title_zh": "X-WBC：跨本体人形全身控制基础框架",
+  "abstract": "Scaling humanoid whole-body control toward general-purpose deployment requires large human motion corpora and training experience shared across robot bodies. Existing methods usually train one policy per robot, leaving motion experience isolated across embodiments. We introduce X-WBC, a cross-embodiment foundation framework that separates relatively shared human motion semantics from embodiment-specific physical execution. Human-centered command tokens align full human motion, robot reference motion, and sparse VR observations. A causal Transformer learns reusable temporal structure from mixed multi-robot rollouts, while lightweight robot-specific modules map the shared representation to each robot&#39;s proprioception and action space. Across nine simulated embodiments, external motions, and four real robots, experiments show that joint training improves tracking, the aligned representation supports consistent control across command sources, and the learned policy remains competitive beyond the training corpus. These results support heterogeneous humanoids as joint data sources and establish cross-embodiment joint training as a practical route toward whole-body control foundation models.",
+  "paper_url": "https://arxiv.org/abs/2609.15213",
+  "pdf_url": "https://arxiv.org/pdf/2609.15213",
+  "project_url": "https://logosintelligencelab.github.io/x-wbc/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Juntong Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Chun Gu",
+      "affiliations": []
+    },
+    {
+      "name": "Li Zhang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "shanghai-innovation-institute",
+      "name": "Shanghai Innovation Institute",
+      "role": "primary"
+    },
+    {
+      "id": "tongji-university",
+      "name": "Tongji University",
+      "role": "collaborator"
+    },
+    {
+      "id": "fudan-university",
+      "name": "Fudan University",
+      "role": "collaborator"
+    },
+    {
+      "id": "logos-intelligence-lab",
+      "name": "Logos Intelligence Lab",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-09-14",
+    "last_revision": "2026-10-25"
+  },
+  "venue": {
+    "name": "Conference on Robot Learning",
+    "year": 2026,
+    "status": "accepted"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "control",
+      "reinforcement-learning",
+      "representation-learning"
+    ],
+    "tasks": [
+      "humanoid-control",
+      "locomotion"
+    ],
+    "platforms": [
+      "humanoid"
+    ],
+    "modalities": [
+      "proprioception",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "system"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 87,
+    "selection_scores": {
+      "relevance": 20,
+      "novelty": 18,
+      "evidence_quality": 18,
+      "potential_impact": 13,
+      "board_information_gain": 10,
+      "reproducibility": 5,
+      "timeliness": 3,
+      "total": 87
+    },
+    "selection_reason": "将人类运动语义与机器人执行分开，共享 Transformer 在九类人形身体上联合训练，以轻量本体模块适配状态和动作。",
+    "candidate_run": "2026-10-28",
+    "status": "ai-draft",
+    "approved_for_inclusion_at": "2026-10-28"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-10-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "仓库只有 README 和 docs，不能算方法实现开放。",
+      "真实部署主要定性，不是未见本体零样本迁移。",
+      "不同外部系统保留各自输入接口，不能把比较视为完全等条件。"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2609.15213",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Method",
+      "Experiments",
+      "Conclusion / Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-10-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2609.15213"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2609.15213"
+    },
+    {
+      "type": "project-page",
+      "url": "https://logosintelligencelab.github.io/x-wbc/"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "Shanghai Innovation Institute",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2609.15213",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Tongji University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2609.15213",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Fudan University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2609.15213",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Logos Intelligence Lab",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2609.15213",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://logosintelligencelab.github.io/x-wbc/",
+      "status": "verified",
+      "verification_method": "http-get",
+      "checked_at": "2026-10-28"
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/LogosIntelligenceLab/x-wbc",
+      "status": "project-page-only",
+      "verification_method": "github-api-contents",
+      "checked_at": "2026-10-28",
+      "note": "API lists only README.md and docs; no implementation."
+    }
+  ],
+  "suggested_new_tags": []
+}

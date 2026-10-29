@@ -1,0 +1,98 @@
+{
+  "promoted_at": "2026-10-28",
+  "approval": "用户：不错。收录这些，然后继续扫描",
+  "count": 13,
+  "papers": [
+    {
+      "id": "arxiv-2610.10515",
+      "title": "RoboJEPA: Scaling Robotic Latent World Models",
+      "score": 95,
+      "directory": "papers/arxiv-2610.10515",
+      "status": "ai-draft"
+    },
+    {
+      "id": "arxiv-2610.18873",
+      "title": "LoopWAM: Closed-Loop Generalist Policy Improvement from Deployment Rollouts",
+      "score": 94,
+      "directory": "papers/arxiv-2610.18873",
+      "status": "ai-draft"
+    },
+    {
+      "id": "arxiv-2610.34356",
+      "title": "RynnVLA-Latent: Scaling Robotic Manipulation Foundation Models with 3D-Grounded Latent Actions",
+      "score": 93,
+      "directory": "papers/arxiv-2610.34356",
+      "status": "ai-draft"
+    },
+    {
+      "id": "arxiv-2610.26855",
+      "title": "Ropedia W0: Scaling Loco-Manipulation World Models across Embodiments with Human Experience",
+      "score": 92,
+      "directory": "papers/arxiv-2610.26855",
+      "status": "ai-draft"
+    },
+    {
+      "id": "arxiv-2610.36068",
+      "title": "Rollback: Experience Backtracking in World Models for Policy Improvement",
+      "score": 91,
+      "directory": "papers/arxiv-2610.36068",
+      "status": "ai-draft"
+    },
+    {
+      "id": "arxiv-2609.12316",
+      "title": "DATAFARM: Distribution-Aligned Task and Motion Planning for Fine-Tuning Vision-Language-Action Models",
+      "score": 90,
+      "directory": "papers/arxiv-2609.12316",
+      "status": "ai-draft"
+    },
+    {
+      "id": "arxiv-2610.07922",
+      "title": "OpenWAM: An Open Framework for Composable World-Action Models",
+      "score": 90,
+      "directory": "papers/arxiv-2610.07922",
+      "status": "ai-draft"
+    },
+    {
+      "id": "arxiv-2610.36791",
+      "title": "RynnWorld-Latent: A Cross-Embodiment World Model Conditioned on Universal Latent Actions",
+      "score": 89,
+      "directory": "papers/arxiv-2610.36791",
+      "status": "ai-draft"
+    },
+    {
+      "id": "arxiv-2610.19155",
+      "title": "FACT: A Multimodal Force-Action-Track Foundation Model for Human-to-Robot Dexterity",
+      "score": 88,
+      "directory": "papers/arxiv-2610.19155",
+      "status": "ai-draft"
+    },
+    {
+      "id": "arxiv-2610.12435",
+      "title": "VioLA: Learning Generalist Humanoid Control Policies from Human Data",
+      "score": 87,
+      "directory": "papers/arxiv-2610.12435",
+      "status": "ai-draft"
+    },
+    {
+      "id": "arxiv-2609.15213",
+      "title": "X-WBC: A Cross-Embodiment Foundation Model for Humanoid Whole-Body Control",
+      "score": 87,
+      "directory": "papers/arxiv-2609.15213",
+      "status": "ai-draft"
+    },
+    {
+      "id": "arxiv-2609.26292",
+      "title": "RoboTwin-Phys: Do WAMs and VLAs Understand the Physical World?",
+      "score": 84,
+      "directory": "papers/arxiv-2609.26292",
+      "status": "ai-draft"
+    },
+    {
+      "id": "arxiv-2610.07969",
+      "title": "EmbodiedSmith: Scaling Embodied Data through Recursive Self-Improvement Flywheel in Simulation",
+      "score": 84,
+      "directory": "papers/arxiv-2610.07969",
+      "status": "ai-draft"
+    }
+  ]
+}

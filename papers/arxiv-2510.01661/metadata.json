@@ -1,0 +1,53 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2510.01661",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "SymSkill: Symbol and Skill Co-Invention for Data-Efficient and Reactive Long-Horizon Manipulation",
+  "title_zh": "SymSkill：面向数据高效与反应式长程操作的符号—技能协同发明",
+  "abstract": "Multi-step manipulation in dynamic environments remains challenging. Imitation learning (IL) is reactive but lacks compositional generalization, since monolithic policies do not decide which skill to reuse when scenes change. Classical task-and-motion planning (TAMP) offers compositionality, but its high planning latency prevents real-time failure recovery. We introduce SymSkill, a unified framework that jointly learns predicates, operators, and skills from unlabeled, unsegmented demonstrations, combining compositional generalization with real-time recovery. Offline, SymSkill learns symbolic abstractions and goal-oriented skills directly from demonstrations. Online, given a conjunction of learned predicates, it uses a symbolic planner to compose and reorder skills to achieve symbolic goals while recovering from failures at both the motion and symbolic levels in real time. Coupled with a compliant controller, SymSkill supports safe execution under human and environmental disturbances. In RoboCasa simulation, SymSkill executes 12 single-step tasks with 85% success and composes them into multi-step plans without additional data. On a real Franka robot, it learns from 5 minutes of play data and performs 12-step tasks from goal specifications.",
+  "paper_url": "https://arxiv.org/abs/2510.01661",
+  "pdf_url": "https://arxiv.org/pdf/2510.01661",
+  "project_url": "https://symskill.github.io/",
+  "code_url": "https://github.com/shaoyifei96/Symskill",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {"name":"Yifei Simon Shao","affiliations":["upenn-grasp"]},
+    {"name":"Yuchen Zheng","affiliations":["upenn-grasp"]},
+    {"name":"Sunan Sun","affiliations":["upenn-grasp"]},
+    {"name":"Pratik Chaudhari","affiliations":["upenn-grasp"]},
+    {"name":"Vijay Kumar","affiliations":["upenn-grasp"]},
+    {"name":"Nadia Figueroa","affiliations":["upenn-grasp"]}
+  ],
+  "organizations": [{"id":"upenn-grasp","name":"University of Pennsylvania GRASP Laboratory","role":"primary"}],
+  "dates": {"first_publication":"2025-10-02","last_revision":"2026-06-08"},
+  "venue": {"name":"IEEE International Conference on Robotics and Automation","year":2026,"status":"accepted"},
+  "labels": {
+    "sections":["algorithms"],
+    "topics":["imitation-learning","planning","representation-learning","control"],
+    "tasks":["manipulation"],
+    "platforms":["robot-arm"],
+    "modalities":["vision","proprioception","action"],
+    "environments":["mixed"],
+    "assets":["code"],
+    "properties":["open-source","real-robot-evaluation","few-shot"]
+  },
+  "paper_type":["method","system"],
+  "editorial": {"importance":"featured","selection_score":94,"selection_reason":"同时从无标签、未分段示范中学习谓词、算子和技能，并以符号规划实现组合泛化与在线恢复；仿真、真机和官方代码证据完整。","candidate_run":"2026-09-13-related-work","status":"ai-draft"},
+  "ai_generation": {"model":"openai-codex","generated_at":"2026-09-14","confidence":"high","needs_human_review":true,"uncertainties":["学习到的前置条件来自示范边界，不能覆盖技能全部可用状态。"]},
+  "source_access": {"metadata_source":"arxiv-abstract-html","fulltext_source":"arxiv-latexml-html","fulltext_url":"https://arxiv.org/html/2510.01661","fulltext_accessed":true,"sections_detected":["Introduction","Method","Experiments","Conclusion"],"figure_images_accessed":false,"accessed_at":"2026-09-13"},
+  "sources": [
+    {"type":"paper","url":"https://arxiv.org/abs/2510.01661"},
+    {"type":"fulltext","url":"https://arxiv.org/html/2510.01661"},
+    {"type":"project-page","url":"https://symskill.github.io/"},
+    {"type":"code","url":"https://github.com/shaoyifei96/Symskill"}
+  ],
+  "organization_evidence": [{"organization":"University of Pennsylvania GRASP Laboratory","source":"paper-html","url":"https://arxiv.org/html/2510.01661","location":"author affiliation block"}],
+  "asset_checks": [{"kind":"code","url":"https://github.com/shaoyifei96/Symskill","status":"verified","accessible":true,"verification_method":"github-page-get","evidence_source":"official-project-page","checked_at":"2026-09-13"}],
+  "suggested_new_tags": [
+    {"dimension":"topics","slug":"neuro-symbolic","name":"Neuro-Symbolic","reason":"现有 planning 与 representation-learning 无法区分可执行谓词、算子和技能的联合学习。","evidence":"论文联合学习 predicates, operators and skills。"},
+    {"dimension":"topics","slug":"failure-recovery","name":"Failure Recovery","reason":"在线恢复是方法的核心能力。","evidence":"系统在运动层和符号层进行实时恢复。"}
+  ]
+}

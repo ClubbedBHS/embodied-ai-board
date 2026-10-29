@@ -1,0 +1,170 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2610.01744",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "3DROID: A Renderable 3D Gaussian Dataset with Measured Per-Scene Reliability",
+  "title_zh": "3DROID：附带逐场景可靠性度量的可渲染三维机器人数据",
+  "abstract": "Robot manipulation models primarily reason from 2D observations while acting in the 3D physical world. To bridge this gap, recent work has augmented robot data with geometric priors such as depth, point clouds, and 3D trajectories, while renderable 3D Gaussian representations provide another promising form of 3D supervision. However, 3DGS representation is designed mainly for photometric fidelity and may not preserve real-world metric scale, particularly when the supplied camera extrinsics are unreliable. We study the effect of extrinsic reliability and pose conditioning on feed-forward 3DGS, and propose a calibration-aware pipeline that anchors reconstructed scenes to the robot&#39;s metric workspace. Our experiments show that pose conditioning improves novel-view fidelity, while its geometric benefit depends on the reliability of the injected extrinsics. Using this pipeline, we present a renderable, metric-pose-anchored dataset with scene-level reliability information for robot manipulation research. Our dataset is available at this https URL",
+  "paper_url": "https://arxiv.org/abs/2610.01744",
+  "pdf_url": "https://arxiv.org/pdf/2610.01744",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": "https://huggingface.co/datasets/wonguen/3DROID",
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Wonguen Cho",
+      "affiliations": []
+    },
+    {
+      "name": "Junhoo Lee",
+      "affiliations": []
+    },
+    {
+      "name": "Nojun Kwak",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "seoul-national-university",
+      "name": "Seoul National University",
+      "role": "primary"
+    },
+    {
+      "id": "kaist",
+      "name": "KAIST",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-10-01",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data",
+      "infrastructure"
+    ],
+    "topics": [
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "depth",
+      "point-cloud"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [
+      "dataset"
+    ],
+    "properties": []
+  },
+  "paper_type": [
+    "dataset",
+    "analysis"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 87,
+    "selection_scores": {
+      "relevance": 19,
+      "novelty": 17,
+      "evidence_quality": 17,
+      "potential_impact": 13,
+      "board_information_gain": 10,
+      "reproducibility": 7,
+      "timeliness": 4,
+      "total": 87
+    },
+    "selection_reason": "为 DROID 的可渲染三维场景附上标定与逐场景可靠性证据，强调视觉真实感不等于机器人坐标正确。",
+    "candidate_run": "2026-10-28/batch-02",
+    "status": "ai-draft",
+    "approved_for_inclusion_at": "2026-10-28"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-10-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "只有静态快照，不是时序交互模拟器。",
+      "不声称完整场景几何真值或下游操作成功率改善。",
+      "几何评估只覆盖可获得机器人表面或 stereo 支持的区域。"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2610.01744",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Method",
+      "Experiments",
+      "Conclusion / Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-10-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2610.01744"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2610.01744"
+    },
+    {
+      "type": "dataset",
+      "url": "https://huggingface.co/datasets/wonguen/3DROID"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "Seoul National University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.01744",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "KAIST",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.01744",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "verification_method": "official-source-scan",
+      "checked_at": "2026-10-28",
+      "note": null
+    },
+    {
+      "kind": "dataset",
+      "url": "https://huggingface.co/datasets/wonguen/3DROID",
+      "status": "verified",
+      "verification_method": "huggingface-api",
+      "checked_at": "2026-10-28"
+    }
+  ],
+  "suggested_new_tags": []
+}

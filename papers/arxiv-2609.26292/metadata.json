@@ -1,0 +1,193 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2609.26292",
+  "content_type": "technical-report",
+  "source_scope": "full-source",
+  "title": "RoboTwin-Phys: Do WAMs and VLAs Understand the Physical World?",
+  "title_zh": "RoboTwin-Phys：世界—动作模型与 VLA 的物理变化鲁棒性评测",
+  "abstract": "Physical-condition diversity is largely missing from current benchmarks for robot manipulation. While large-scale simulation benchmarks increasingly incorporate variations in object appearance, scene layout, and visual observations, they typically keep the underlying physical parameters fixed. As a result, important sources of real-world variability, such as changes in mass, friction, and joint dynamics, remain largely untested. We introduce RoboTwin-Phys, a physics-diverse benchmark that treats physical-condition diversity as an explicit dimension of robot manipulation evaluation. The benchmark continuously varies 13 physical attributes within physically plausible ranges, providing a unified setting for evaluating policies across diverse physical operating conditions. We further release more than 5,000 expert demonstrations with ground-truth physical parameters, enabling physical-attribute estimation, condition-aware modeling, and physics-conditioned policy training. Evaluations of representative WAMs and VLAs reveal a substantial robustness gap: models that remain effective under existing visual and layout randomization can degrade markedly under changes in physical conditions. RoboTwin-Phys provides the benchmark, data, and evaluation protocol needed to systematically measure and improve robustness to physical-condition diversity in robot manipulation.",
+  "paper_url": "https://arxiv.org/abs/2609.26292",
+  "pdf_url": "https://arxiv.org/pdf/2609.26292",
+  "project_url": null,
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Jiaqi Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Feng Ye",
+      "affiliations": []
+    },
+    {
+      "name": "Mingjia Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Zhihong Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Mingkang Xiang",
+      "affiliations": []
+    },
+    {
+      "name": "Xinglin Yao",
+      "affiliations": []
+    },
+    {
+      "name": "Yanbin Li",
+      "affiliations": []
+    },
+    {
+      "name": "Siwei Ma",
+      "affiliations": []
+    },
+    {
+      "name": "Chuanmin Jia",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "peking-university",
+      "name": "Peking University",
+      "role": "primary"
+    },
+    {
+      "id": "advanced-institute-of-information-technology-peking-university",
+      "name": "Advanced Institute of Information Technology, Peking University",
+      "role": "collaborator"
+    },
+    {
+      "id": "memo",
+      "name": "Memo",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-09-22",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "data",
+      "simulators"
+    ],
+    "topics": [
+      "world-model",
+      "vla"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "action"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [],
+    "properties": [
+      "simulation-only"
+    ]
+  },
+  "paper_type": [
+    "benchmark",
+    "dataset"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 84,
+    "selection_scores": {
+      "relevance": 20,
+      "novelty": 18,
+      "evidence_quality": 16,
+      "potential_impact": 13,
+      "board_information_gain": 10,
+      "reproducibility": 5,
+      "timeliness": 2,
+      "total": 84
+    },
+    "selection_reason": "把质量、摩擦、质心和关节动力学等 13 种物理属性变化纳入操作评测，揭示视觉随机化以外的性能缺口。",
+    "candidate_run": "2026-10-28",
+    "status": "ai-draft",
+    "approved_for_inclusion_at": "2026-10-28"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-10-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "clean/random 结果从既有公开评测引入，不能把全部下降归因于同条件重测。",
+      "论文声明资源发布，但本轮未发现可确认的直接仓库或数据地址。"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2609.26292",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Method",
+      "Experiments",
+      "Conclusion / Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-10-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2609.26292"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2609.26292"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "Peking University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2609.26292",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Advanced Institute of Information Technology, Peking University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2609.26292",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Memo",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2609.26292",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "verification_method": "official-source-scan",
+      "checked_at": "2026-10-28",
+      "note": null
+    }
+  ],
+  "suggested_new_tags": []
+}

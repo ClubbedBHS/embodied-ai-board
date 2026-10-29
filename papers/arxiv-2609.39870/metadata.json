@@ -1,0 +1,225 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2609.39870",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Magic-W0: A Structured World-Action Foundation Model for Physical Intelligence",
+  "title_zh": "Magic-W0：以结构化世界转移驱动机器人动作生成",
+  "abstract": "World-action models (WAMs) augment robot policies with action-conditioned environment dynamics, yet existing approaches largely rely on future observation reconstruction or generic latent prediction and lack structured, control-oriented world representations tightly coupled with action generation. We introduce Magic-W0, a world-action foundation model that jointly models structured physical state evolution and continuous actions. Magic-W0 represents interaction as a Structured World Transition consisting of Current State, Transition, and Future State. Current State combines vision-language context with Current 3D Geometry; Transition is represented by 3D Motion capturing action-induced three-dimensional changes; and Future State is represented by Future Semantics describing task-relevant outcomes. To couple prediction and control, we propose a layer-aligned world-action interaction architecture in which evolving action hypotheses condition world-transition prediction, while predicted world representations continuously inform action generation. Magic-W0 is pre-trained on large-scale egocentric human manipulation, UMI, real-robot, and simulation data, with latent supervision for geometry, 3D motion, and future semantics from pre-trained visual models. Inference-time interventions show that structured world representations respond systematically to changes in candidate actions and that action-related information propagates through shared 3D representations into future semantic predictions. On RoboDojo-Sim, Magic-W0 achieves an average Score of 27.10, the highest among the compared WAMs. Across multiple real-robot tasks, it also demonstrates strong downstream performance after fine-tuning with limited downstream data, supporting generalization and rapid adaptation.",
+  "paper_url": "https://arxiv.org/abs/2609.39870",
+  "pdf_url": "https://arxiv.org/pdf/2609.39870",
+  "project_url": "https://embodied.magiclab.top/works/wam/magic-w0/index.html",
+  "code_url": "https://github.com/MagiclabRobotics/Magic-W0",
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Xuhua Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Zhenhan Yin",
+      "affiliations": []
+    },
+    {
+      "name": "Yuan Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Lingfeng Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "He Zheng",
+      "affiliations": []
+    },
+    {
+      "name": "Tong Mu",
+      "affiliations": []
+    },
+    {
+      "name": "Shun Zuo",
+      "affiliations": []
+    },
+    {
+      "name": "Dian Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Di Wu",
+      "affiliations": []
+    },
+    {
+      "name": "Xuan Zhou",
+      "affiliations": []
+    },
+    {
+      "name": "Shaojie Wan",
+      "affiliations": []
+    },
+    {
+      "name": "Rongtian Shen",
+      "affiliations": []
+    },
+    {
+      "name": "Qiulong Xu",
+      "affiliations": []
+    },
+    {
+      "name": "Yiduo Li",
+      "affiliations": []
+    },
+    {
+      "name": "Yinglong Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Yanqian Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Kun Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Tao Zhang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "magiclab-robotics-inc",
+      "name": "Magiclab Robotics Inc.",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-09-30",
+    "last_revision": "2026-10-03"
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model",
+      "vla",
+      "representation-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [
+      "code"
+    ],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 88,
+    "selection_scores": {
+      "relevance": 20,
+      "novelty": 18,
+      "evidence_quality": 17,
+      "potential_impact": 14,
+      "board_information_gain": 9,
+      "reproducibility": 8,
+      "timeliness": 2,
+      "total": 88
+    },
+    "selection_reason": "用当前三维几何、三维运动与未来语义组织结构化世界转移，与连续动作在多层交互。",
+    "candidate_run": "2026-10-28/batch-02",
+    "status": "ai-draft",
+    "approved_for_inclusion_at": "2026-10-28"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-10-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "摘要入口、正文和项目页的 RoboDojo 汇总值不一致，需要发布前统一版本。",
+      "真机收益平均为 2.8 个百分点，不应只强调最高单项或最高排名。",
+      "公开代码不等同于全部预训练数据和模型开放。"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2609.39870",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Method",
+      "Experiments",
+      "Conclusion / Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-10-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2609.39870"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2609.39870"
+    },
+    {
+      "type": "project-page",
+      "url": "https://embodied.magiclab.top/works/wam/magic-w0/index.html"
+    },
+    {
+      "type": "code",
+      "url": "https://github.com/MagiclabRobotics/Magic-W0"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "Magiclab Robotics Inc.",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2609.39870",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://embodied.magiclab.top/works/wam/magic-w0/index.html",
+      "status": "verified",
+      "verification_method": "http-get",
+      "checked_at": "2026-10-28",
+      "note": null
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/MagiclabRobotics/Magic-W0",
+      "status": "verified",
+      "verification_method": "github-api-contents",
+      "checked_at": "2026-10-28",
+      "note": null
+    }
+  ],
+  "suggested_new_tags": []
+}

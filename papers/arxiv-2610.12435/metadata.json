@@ -1,0 +1,228 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2610.12435",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "VioLA: Learning Generalist Humanoid Control Policies from Human Data",
+  "title_zh": "VioLA：从人类数据学习通用人形控制策略",
+  "abstract": "Teaching a humanoid to follow instructions with its whole body runs into two obstacles. Its action space is large and tightly coupled: legs, arms, and fingers must move together while the robot keeps its balance, which makes joint-level actions hard to learn. And humanoid demonstrations are scarce, so current humanoid generalist policies do not follow new instructions out of the box and are fine-tuned on teleoperated demonstrations of each task before deployment. Human demonstrations exist in far larger numbers, but a person&#39;s motion is not a robot command. We remove both obstacles by changing what the generalist policy predicts. We introduce VioLA, a generalist humanoid policy that predicts body and hand motion latents instead of joint commands. A pretrained body- and hand-controller execute these latents on the robot. Their corresponding motion encoders map human and robot motion into the same latent spaces. A human recording is therefore labeled in the policy&#39;s action space, and the training demonstration pool contains 140.6 million frames, 93.2% of them human. As a result, VioLA follows locomotion instructions on the real robot zero-shot, without task-specific fine-tuning, reaching 100% success where GR00T N1.7 and $\\Psi_0$ reach 16.7% and 0%, respectively. It also reaches 88.6% manipulation success without task-specific fine-tuning. The same approach works across two VLA and one world-action model backbones. A generalist policy trained on human demonstrations alone performs locomotion tasks on the real robot zero-shot. Code and checkpoints will be released.",
+  "paper_url": "https://arxiv.org/abs/2610.12435",
+  "pdf_url": "https://arxiv.org/pdf/2610.12435",
+  "project_url": "https://viola.is.tue.mpg.de/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Mert Albaba",
+      "affiliations": []
+    },
+    {
+      "name": "Jens Beißwenger",
+      "affiliations": []
+    },
+    {
+      "name": "Anna Manasyan",
+      "affiliations": []
+    },
+    {
+      "name": "Daniel Marta",
+      "affiliations": []
+    },
+    {
+      "name": "Michael J. Black",
+      "affiliations": []
+    },
+    {
+      "name": "Wieland Brendel",
+      "affiliations": []
+    },
+    {
+      "name": "Andreas Krause",
+      "affiliations": []
+    },
+    {
+      "name": "Georg Martius",
+      "affiliations": []
+    },
+    {
+      "name": "Martin Riedmiller",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "vesoma",
+      "name": "Vesoma",
+      "role": "primary"
+    },
+    {
+      "id": "eth-zu-rich",
+      "name": "ETH Zürich",
+      "role": "collaborator"
+    },
+    {
+      "id": "max-planck-institute-for-intelligent-systems",
+      "name": "Max Planck Institute for Intelligent Systems",
+      "role": "collaborator"
+    },
+    {
+      "id": "university-of-tu-bingen",
+      "name": "University of Tübingen",
+      "role": "collaborator"
+    },
+    {
+      "id": "ellis-institute",
+      "name": "ELLIS Institute",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-10-08",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "vla",
+      "representation-learning",
+      "control"
+    ],
+    "tasks": [
+      "humanoid-control",
+      "locomotion"
+    ],
+    "platforms": [
+      "humanoid"
+    ],
+    "modalities": [
+      "vision",
+      "action"
+    ],
+    "environments": [
+      "real-world"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 87,
+    "selection_scores": {
+      "relevance": 20,
+      "novelty": 18,
+      "evidence_quality": 16,
+      "potential_impact": 14,
+      "board_information_gain": 10,
+      "reproducibility": 5,
+      "timeliness": 4,
+      "total": 87
+    },
+    "selection_reason": "让人形通用策略预测身体与手的运动潜变量，由冻结控制器执行，使人类运动可以直接监督策略输出。",
+    "candidate_run": "2026-10-28",
+    "status": "ai-draft",
+    "approved_for_inclusion_at": "2026-10-28"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-10-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "zero-shot 仅指无需任务专属微调，任务家族在训练中存在。",
+      "每任务 5 次试验，额外抓瓶行走为 0/5。",
+      "人类混合训练并非全面优于 robot-only。",
+      "代码 coming soon。"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2610.12435",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Method",
+      "Experiments",
+      "Conclusion / Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-10-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2610.12435"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2610.12435"
+    },
+    {
+      "type": "project-page",
+      "url": "https://viola.is.tue.mpg.de/"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "Vesoma",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.12435",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "ETH Zürich",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.12435",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Max Planck Institute for Intelligent Systems",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.12435",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University of Tübingen",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.12435",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "ELLIS Institute",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.12435",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://viola.is.tue.mpg.de/",
+      "status": "verified",
+      "verification_method": "http-get",
+      "checked_at": "2026-10-28"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "announced",
+      "verification_method": "official-source-scan",
+      "checked_at": "2026-10-28",
+      "note": null
+    }
+  ],
+  "suggested_new_tags": []
+}

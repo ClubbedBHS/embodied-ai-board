@@ -1,0 +1,231 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2610.31762",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "See What I Need, Dream What I Want: A Navigation Foundation Model on a Self-Constructed Representation Space",
+  "title_zh": "RepresentNav：在任务驱动的视觉表示中预测未来并导航",
+  "abstract": "What visual representation should a navigation policy act on? Navigation policies built on vision foundation models largely leave representation design to the encoders&#39; pretraining objectives. We present RepresentNav, a navigation foundation model built on a self-constructed representation space: a visual representation constructed by the policy&#39;s own objectives from vision foundation models. RepresentNav builds this space with Representation Residuals, a compact three-layer transformer that attends over features spanning the full depth of multiple complementary vision foundation models, so that the policy learns to see what it needs for navigation. In the same space it dreams what it wants: before every action a latent chain-of-thought predicts the representation of the scene a moment ahead. The dream is trained end-to-end with the policy as a joint-embedding predictive architecture (JEPA), with a next-representation prediction loss and a regularizer on its targets. RepresentNav sets a new state of the art on VLNVerse, VLN-CE R2R, EVT-Bench, and two point-goal benchmarks, and its gains carry over to a physical robot amid clutter and moving people. On VLNVerse fine-grained, RepresentNav achieves 83.80% success, outperforming the previous state of the art by 20.05 percentage points, and on EVT-Bench distracted tracking it reaches 85.5% with a single camera (+10.1). With the same encoders, the self-constructed space clearly outperforms concatenating their outputs and learns to weight their layers unevenly, and a dream in it cuts collisions by a quarter. A single dreamed latent decodes into the depth, semantics, and 3D occupancy of the scene a moment ahead, more accurately than pretrained encoders applied to the real future frame, although occupancy is never supervised, and the rollout tracks the robot&#39;s own motion over the next second: the dream emerges as a compact latent world model.",
+  "paper_url": "https://arxiv.org/abs/2610.31762",
+  "pdf_url": "https://arxiv.org/pdf/2610.31762",
+  "project_url": "https://wang-yinxi.github.io/representnav/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Jiawei Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Yinxi Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Zihan Yang",
+      "affiliations": []
+    },
+    {
+      "name": "Meijun Gao",
+      "affiliations": []
+    },
+    {
+      "name": "Yaowei Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Shuming Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Zecheng Li",
+      "affiliations": []
+    },
+    {
+      "name": "Xiangju Mi",
+      "affiliations": []
+    },
+    {
+      "name": "Yuxuan Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Runzhong Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Tianlin Li",
+      "affiliations": []
+    },
+    {
+      "name": "Xun Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Zhengyang Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Xu Miao",
+      "affiliations": []
+    },
+    {
+      "name": "Tong Yang",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "peking-university",
+      "name": "Peking University",
+      "role": "primary"
+    },
+    {
+      "id": "university-college-london",
+      "name": "University College London",
+      "role": "collaborator"
+    },
+    {
+      "id": "datacanvas",
+      "name": "DataCanvas",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-10-22",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms"
+    ],
+    "topics": [
+      "world-model",
+      "representation-learning",
+      "planning"
+    ],
+    "tasks": [
+      "navigation"
+    ],
+    "platforms": [
+      "quadruped",
+      "humanoid",
+      "mobile-robot"
+    ],
+    "modalities": [
+      "vision",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 90,
+    "selection_scores": {
+      "relevance": 20,
+      "novelty": 19,
+      "evidence_quality": 18,
+      "potential_impact": 14,
+      "board_information_gain": 10,
+      "reproducibility": 4,
+      "timeliness": 5,
+      "total": 90
+    },
+    "selection_reason": "让导航目标自己构建视觉表示，再在同一潜空间预测未来；覆盖多类导航、跟踪基准与两类真实机器人。",
+    "candidate_run": "2026-10-28/batch-02",
+    "status": "ai-draft",
+    "approved_for_inclusion_at": "2026-10-28"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-10-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "代码仓库当前只有 README；项目页明确 code coming soon。",
+      "部分对手分数来自既有文献，观察设置不同应分组解释。",
+      "真机总共 40 测试用例，仍需更广环境验证。"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2610.31762",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Method",
+      "Experiments",
+      "Conclusion / Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-10-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2610.31762"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2610.31762"
+    },
+    {
+      "type": "project-page",
+      "url": "https://wang-yinxi.github.io/representnav/"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "Peking University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.31762",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "University College London",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.31762",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "DataCanvas",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.31762",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://wang-yinxi.github.io/representnav/",
+      "status": "verified",
+      "verification_method": "http-get",
+      "checked_at": "2026-10-28",
+      "note": null
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/wang-yinxi/RepresentNav",
+      "status": "project-page-only",
+      "verification_method": "github-api-contents",
+      "checked_at": "2026-10-28",
+      "note": "Repository accessible but does not contain method implementation."
+    }
+  ],
+  "suggested_new_tags": []
+}

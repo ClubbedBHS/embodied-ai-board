@@ -1,0 +1,1612 @@
+{
+  "run": {
+    "run_at": "2026-10-28",
+    "window_start": "2026-09-01",
+    "window_end": "2026-10-28",
+    "run_type": "two-month-catchup-batch-02",
+    "sources_checked": [
+      "Official arXiv abstract and HTML full texts",
+      "official project pages",
+      "GitHub API contents",
+      "Hugging Face dataset API",
+      "ar5iv fallback"
+    ],
+    "queue_count": 13,
+    "fulltext_review_count": 12,
+    "scored_count": 11,
+    "featured_candidate_count": 10,
+    "watch_count": 1,
+    "defer_count": 2,
+    "score_90_plus_count": 1,
+    "rubric_version": "0.1",
+    "discovery_spec_version": "0.2",
+    "note": "Continuation of the first pass. The first 13 papers were promoted under explicit user approval; this batch remains candidate-only. Watchlist hits are discovery signals and do not add score."
+  },
+  "candidates": [
+    {
+      "id": "arxiv-2610.31762",
+      "short_name": "RepresentNav",
+      "title": "See What I Need, Dream What I Want: A Navigation Foundation Model on a Self-Constructed Representation Space",
+      "paper_url": "https://arxiv.org/abs/2610.31762",
+      "fulltext_url": "https://arxiv.org/html/2610.31762",
+      "first_publication": "2026-10-22",
+      "authors": [
+        "Jiawei Chen",
+        "Yinxi Wang",
+        "Zihan Yang",
+        "Meijun Gao",
+        "Yaowei Liu",
+        "Shuming Zhang",
+        "Zecheng Li",
+        "Xiangju Mi",
+        "Yuxuan Liu",
+        "Runzhong Huang",
+        "Tianlin Li",
+        "Xun Zhang",
+        "Zhengyang Wang",
+        "Xu Miao",
+        "Tong Yang"
+      ],
+      "organizations": [
+        "Peking University",
+        "University College London",
+        "DataCanvas"
+      ],
+      "organization_evidence": [
+        {
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2610.31762",
+          "location": "author affiliation block"
+        }
+      ],
+      "project_url": "https://wang-yinxi.github.io/representnav/",
+      "code_url": null,
+      "dataset_url": null,
+      "model_url": null,
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "discovered_via": [
+        "prior pending queue",
+        "arXiv monthly index thematic expansion"
+      ],
+      "watchlist_matches": [],
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "让导航目标自己构建视觉表示，再在同一潜空间预测未来；覆盖多类导航、跟踪基准与两类真实机器人。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Official arXiv HTML accessed."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "三层 Representation Residuals 从多个冻结视觉基础模型的不同深度读取特征；四个连续潜变量预测未来表示，规划头输出未来航点。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "VLNVerse fine-grained 成功率 83.80%；真机 20 项 VLN 完成 14 项、20 项跟踪完成 18 项，Uni-NaVid 分别 7/20、8/20；有同编码器比较和两阶段训练消融（Table 1、Appendix）。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Reviewed method, experimental protocol and conclusion/limitations."
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 19,
+        "evidence_quality": 18,
+        "potential_impact": 14,
+        "board_information_gain": 10,
+        "reproducibility": 4,
+        "timeliness": 5,
+        "total": 90
+      },
+      "score_evidence": {
+        "relevance": "让导航目标自己构建视觉表示，再在同一潜空间预测未来；覆盖多类导航、跟踪基准与两类真实机器人。",
+        "novelty": "三层 Representation Residuals 从多个冻结视觉基础模型的不同深度读取特征；四个连续潜变量预测未来表示，规划头输出未来航点。",
+        "evidence_quality": "VLNVerse fine-grained 成功率 83.80%；真机 20 项 VLN 完成 14 项、20 项跟踪完成 18 项，Uni-NaVid 分别 7/20、8/20；有同编码器比较和两阶段训练消融（Table 1、Appendix）。",
+        "potential_impact": "让导航目标自己构建视觉表示，再在同一潜空间预测未来；覆盖多类导航、跟踪基准与两类真实机器人。",
+        "board_information_gain": "看板目前偏操作；本工作把 JEPA 与任务驱动视觉表示具体连接到导航和跟踪。",
+        "reproducibility": [
+          {
+            "kind": "project",
+            "url": "https://wang-yinxi.github.io/representnav/",
+            "status": "verified",
+            "verification_method": "http-get",
+            "checked_at": "2026-10-28",
+            "note": null
+          },
+          {
+            "kind": "code",
+            "url": "https://github.com/wang-yinxi/RepresentNav",
+            "status": "project-page-only",
+            "verification_method": "github-api-contents",
+            "checked_at": "2026-10-28",
+            "note": "Repository accessible but does not contain method implementation."
+          }
+        ],
+        "timeliness": "2026/10/22"
+      },
+      "decision": "featured",
+      "selection_reason": "让导航目标自己构建视觉表示，再在同一潜空间预测未来；覆盖多类导航、跟踪基准与两类真实机器人。",
+      "risks_or_uncertainties": [
+        "代码仓库当前只有 README；项目页明确 code coming soon。",
+        "部分对手分数来自既有文献，观察设置不同应分组解释。",
+        "真机总共 40 测试用例，仍需更广环境验证。"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "world-model",
+        "representation-learning",
+        "planning"
+      ],
+      "evidence": {
+        "problem": "让导航目标自己构建视觉表示，再在同一潜空间预测未来；覆盖多类导航、跟踪基准与两类真实机器人。",
+        "method": "三层 Representation Residuals 从多个冻结视觉基础模型的不同深度读取特征；四个连续潜变量预测未来表示，规划头输出未来航点。",
+        "experiments": "VLNVerse fine-grained 成功率 83.80%；真机 20 项 VLN 完成 14 项、20 项跟踪完成 18 项，Uni-NaVid 分别 7/20、8/20；有同编码器比较和两阶段训练消融（Table 1、Appendix）。"
+      },
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://wang-yinxi.github.io/representnav/",
+          "status": "verified",
+          "verification_method": "http-get",
+          "checked_at": "2026-10-28",
+          "note": null
+        },
+        {
+          "kind": "code",
+          "url": "https://github.com/wang-yinxi/RepresentNav",
+          "status": "project-page-only",
+          "verification_method": "github-api-contents",
+          "checked_at": "2026-10-28",
+          "note": "Repository accessible but does not contain method implementation."
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2610.30876",
+      "short_name": "LocoManiLab",
+      "title": "LocoManiLab: A Unified Testbed for Data, Policies, Controllers, and Deployment in Humanoid Loco-Manipulation",
+      "paper_url": "https://arxiv.org/abs/2610.30876",
+      "fulltext_url": "https://arxiv.org/html/2610.30876",
+      "first_publication": "2026-10-22",
+      "authors": [
+        "Dewei Wang",
+        "Jinrui Han",
+        "Jiyuan Shi",
+        "Chenyun Zhang",
+        "Xianbo Lu",
+        "Jiabao Wu",
+        "Jiqin Feng",
+        "Jipeng Kong",
+        "Xinzhe Liu",
+        "Ping Luo",
+        "Chenjia Bai",
+        "Xuelong Li"
+      ],
+      "organizations": [
+        "TeleAI, China Telecom",
+        "University of Science and Technology of China",
+        "The University of Hong Kong",
+        "Zhejiang University",
+        "Shanghai Jiao Tong University",
+        "ShanghaiTech University",
+        "Gamma Robotics"
+      ],
+      "organization_evidence": [
+        {
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2610.30876",
+          "location": "author affiliation block"
+        }
+      ],
+      "project_url": "https://locomanilab.github.io/",
+      "code_url": null,
+      "dataset_url": null,
+      "model_url": null,
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "discovered_via": [
+        "prior pending queue",
+        "arXiv monthly index thematic expansion"
+      ],
+      "watchlist_matches": [],
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "统一人形移动操作的数据、策略、控制器、任务和部署接口，为跨模型评估提供系统化基础。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Official arXiv HTML accessed."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "构建 234 个原子与组合任务及 51.5 小时仿真遥操作；共享控制器比较 12 个策略，并用两种策略比较五个控制器。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "五类家庭场景；三项真实 G1 任务、三类策略，每模型每任务 10 次真机试验；平均排名相似，但个别任务排序逆转（§4，Table 6）。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Reviewed method, experimental protocol and conclusion/limitations."
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 17,
+        "evidence_quality": 18,
+        "potential_impact": 14,
+        "board_information_gain": 10,
+        "reproducibility": 5,
+        "timeliness": 5,
+        "total": 89
+      },
+      "score_evidence": {
+        "relevance": "统一人形移动操作的数据、策略、控制器、任务和部署接口，为跨模型评估提供系统化基础。",
+        "novelty": "构建 234 个原子与组合任务及 51.5 小时仿真遥操作；共享控制器比较 12 个策略，并用两种策略比较五个控制器。",
+        "evidence_quality": "五类家庭场景；三项真实 G1 任务、三类策略，每模型每任务 10 次真机试验；平均排名相似，但个别任务排序逆转（§4，Table 6）。",
+        "potential_impact": "统一人形移动操作的数据、策略、控制器、任务和部署接口，为跨模型评估提供系统化基础。",
+        "board_information_gain": "与独立人形算法不同，重点补齐数据—高层策略—低层控制器之间的可比较接口。",
+        "reproducibility": [
+          {
+            "kind": "project",
+            "url": "https://locomanilab.github.io/",
+            "status": "verified",
+            "verification_method": "http-get",
+            "checked_at": "2026-10-28",
+            "note": null
+          },
+          {
+            "kind": "code",
+            "url": null,
+            "status": "announced",
+            "verification_method": "official-source-scan",
+            "checked_at": "2026-10-28",
+            "note": null
+          }
+        ],
+        "timeliness": "2026/10/22"
+      },
+      "decision": "featured",
+      "selection_reason": "统一人形移动操作的数据、策略、控制器、任务和部署接口，为跨模型评估提供系统化基础。",
+      "risks_or_uncertainties": [
+        "代码和数据均为 coming soon，不能算已开放基建。",
+        "真实策略分别用真实示范训练，不是仿真训练策略直接零样本迁移。",
+        "真机仅三任务，不能以平均排名一致推断任意策略 sim-to-real 排名一致。"
+      ],
+      "suggested_sections": [
+        "data",
+        "simulators",
+        "infrastructure"
+      ],
+      "suggested_topics": [
+        "control",
+        "vla",
+        "imitation-learning"
+      ],
+      "evidence": {
+        "problem": "统一人形移动操作的数据、策略、控制器、任务和部署接口，为跨模型评估提供系统化基础。",
+        "method": "构建 234 个原子与组合任务及 51.5 小时仿真遥操作；共享控制器比较 12 个策略，并用两种策略比较五个控制器。",
+        "experiments": "五类家庭场景；三项真实 G1 任务、三类策略，每模型每任务 10 次真机试验；平均排名相似，但个别任务排序逆转（§4，Table 6）。"
+      },
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://locomanilab.github.io/",
+          "status": "verified",
+          "verification_method": "http-get",
+          "checked_at": "2026-10-28",
+          "note": null
+        },
+        {
+          "kind": "code",
+          "url": null,
+          "status": "announced",
+          "verification_method": "official-source-scan",
+          "checked_at": "2026-10-28",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2609.39870",
+      "short_name": "Magic-W0",
+      "title": "Magic-W0: A Structured World-Action Foundation Model for Physical Intelligence",
+      "paper_url": "https://arxiv.org/abs/2609.39870",
+      "fulltext_url": "https://arxiv.org/html/2609.39870",
+      "first_publication": "2026-09-30",
+      "authors": [
+        "Xuhua Chen",
+        "Zhenhan Yin",
+        "Yuan Zhang",
+        "Lingfeng Zhang",
+        "He Zheng",
+        "Tong Mu",
+        "Shun Zuo",
+        "Dian Zhou",
+        "Di Wu",
+        "Xuan Zhou",
+        "Shaojie Wan",
+        "Rongtian Shen",
+        "Qiulong Xu",
+        "Yiduo Li",
+        "Yinglong Wang",
+        "Yanqian Wang",
+        "Kun Wang",
+        "Tao Zhang"
+      ],
+      "organizations": [
+        "Magiclab Robotics Inc."
+      ],
+      "organization_evidence": [
+        {
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2609.39870",
+          "location": "author affiliation block"
+        }
+      ],
+      "project_url": "https://embodied.magiclab.top/works/wam/magic-w0/index.html",
+      "code_url": "https://github.com/MagiclabRobotics/Magic-W0",
+      "dataset_url": null,
+      "model_url": null,
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "discovered_via": [
+        "prior pending queue",
+        "arXiv monthly index thematic expansion"
+      ],
+      "watchlist_matches": [],
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "用当前三维几何、三维运动与未来语义组织结构化世界转移，与连续动作在多层交互。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Official arXiv HTML accessed."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "将 Current State–Transition–Future State 的几何、运动和语义表征接入动作流，双方在去噪层中交换信息；通过动作替换和连接遮蔽分析信息路径。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "五项真实任务每项每方法 100 次，Magic-W0 平均 94.6%，π0.5 为 91.8%；RoboDojo 正文版本总分 36.75，但摘要入口仍有 27.10 的旧值（§6）。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Reviewed method, experimental protocol and conclusion/limitations."
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 18,
+        "evidence_quality": 17,
+        "potential_impact": 14,
+        "board_information_gain": 9,
+        "reproducibility": 8,
+        "timeliness": 2,
+        "total": 88
+      },
+      "score_evidence": {
+        "relevance": "用当前三维几何、三维运动与未来语义组织结构化世界转移，与连续动作在多层交互。",
+        "novelty": "将 Current State–Transition–Future State 的几何、运动和语义表征接入动作流，双方在去噪层中交换信息；通过动作替换和连接遮蔽分析信息路径。",
+        "evidence_quality": "五项真实任务每项每方法 100 次，Magic-W0 平均 94.6%，π0.5 为 91.8%；RoboDojo 正文版本总分 36.75，但摘要入口仍有 27.10 的旧值（§6）。",
+        "potential_impact": "用当前三维几何、三维运动与未来语义组织结构化世界转移，与连续动作在多层交互。",
+        "board_information_gain": "相较 TacPAC 的触觉反馈与 Rynn 潜动作，明确研究三维结构化世界信息如何参与动作生成。",
+        "reproducibility": [
+          {
+            "kind": "project",
+            "url": "https://embodied.magiclab.top/works/wam/magic-w0/index.html",
+            "status": "verified",
+            "verification_method": "http-get",
+            "checked_at": "2026-10-28",
+            "note": null
+          },
+          {
+            "kind": "code",
+            "url": "https://github.com/MagiclabRobotics/Magic-W0",
+            "status": "verified",
+            "verification_method": "github-api-contents",
+            "checked_at": "2026-10-28",
+            "note": null
+          }
+        ],
+        "timeliness": "2026/09/30"
+      },
+      "decision": "featured",
+      "selection_reason": "用当前三维几何、三维运动与未来语义组织结构化世界转移，与连续动作在多层交互。",
+      "risks_or_uncertainties": [
+        "摘要入口、正文和项目页的 RoboDojo 汇总值不一致，需要发布前统一版本。",
+        "真机收益平均为 2.8 个百分点，不应只强调最高单项或最高排名。",
+        "公开代码不等同于全部预训练数据和模型开放。"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "world-model",
+        "vla",
+        "representation-learning"
+      ],
+      "evidence": {
+        "problem": "用当前三维几何、三维运动与未来语义组织结构化世界转移，与连续动作在多层交互。",
+        "method": "将 Current State–Transition–Future State 的几何、运动和语义表征接入动作流，双方在去噪层中交换信息；通过动作替换和连接遮蔽分析信息路径。",
+        "experiments": "五项真实任务每项每方法 100 次，Magic-W0 平均 94.6%，π0.5 为 91.8%；RoboDojo 正文版本总分 36.75，但摘要入口仍有 27.10 的旧值（§6）。"
+      },
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://embodied.magiclab.top/works/wam/magic-w0/index.html",
+          "status": "verified",
+          "verification_method": "http-get",
+          "checked_at": "2026-10-28",
+          "note": null
+        },
+        {
+          "kind": "code",
+          "url": "https://github.com/MagiclabRobotics/Magic-W0",
+          "status": "verified",
+          "verification_method": "github-api-contents",
+          "checked_at": "2026-10-28",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2610.34186",
+      "short_name": "HuGe",
+      "title": "HuGe: Scaling Humanoid Generalist Vision-Language-Action Models with Egocentric Experience",
+      "paper_url": "https://arxiv.org/abs/2610.34186",
+      "fulltext_url": "https://arxiv.org/html/2610.34186",
+      "first_publication": "2026-10-25",
+      "authors": [
+        "Yang Liu",
+        "Jiacheng Liu",
+        "Hengtao Li",
+        "Yuheng Huang",
+        "Zijian Yang",
+        "Ji Dai",
+        "Maoxin Wang",
+        "Yi Gao",
+        "Qishen Wang",
+        "Baohua Yin",
+        "Peiyang Li",
+        "Shuanghao Bai",
+        "Mingyang Sun",
+        "Pengxiang Ding",
+        "Jianqin Yin",
+        "Lixin Yang",
+        "Donglin Wang"
+      ],
+      "organizations": [
+        "Westlake University",
+        "Zhejiang University",
+        "Shanghai Innovation Institute",
+        "Hebei University of Technology",
+        "Beijing University of Posts and Telecommunications",
+        "Southwest University of Finance and Economics",
+        "University of Science and Technology of China",
+        "University of Sussex",
+        "Xi’an Jiaotong University",
+        "Shanghai Jiao Tong University"
+      ],
+      "organization_evidence": [
+        {
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2610.34186",
+          "location": "author affiliation block"
+        }
+      ],
+      "project_url": "https://yliu-cs.github.io/HuGe",
+      "code_url": "https://github.com/yliu-cs/HuGe",
+      "dataset_url": null,
+      "model_url": null,
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "discovered_via": [
+        "prior pending queue",
+        "arXiv monthly index thematic expansion"
+      ],
+      "watchlist_matches": [],
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "用人类第一视角与机器人数据的分阶段训练，把三种 VLA 架构接到共同的人形运动潜空间。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Official arXiv HTML accessed."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "冻结 SONIC 全身控制器；模拟回放补人类数据的伪本体状态，经历第一视角预训练、人形适配、任务微调；真实微调用重渲染适配手臂外观。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "超过 2000 小时预训练经验；七项 HumanoidArena 任务每任务 60 回合；HuGe-GR00T / Pi 平均 66.67% / 65.00%；真机主要 pick-and-drop 实验（§4）。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Reviewed method, experimental protocol and conclusion/limitations."
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 17,
+        "evidence_quality": 17,
+        "potential_impact": 13,
+        "board_information_gain": 8,
+        "reproducibility": 8,
+        "timeliness": 5,
+        "total": 88
+      },
+      "score_evidence": {
+        "relevance": "用人类第一视角与机器人数据的分阶段训练，把三种 VLA 架构接到共同的人形运动潜空间。",
+        "novelty": "冻结 SONIC 全身控制器；模拟回放补人类数据的伪本体状态，经历第一视角预训练、人形适配、任务微调；真实微调用重渲染适配手臂外观。",
+        "evidence_quality": "超过 2000 小时预训练经验；七项 HumanoidArena 任务每任务 60 回合；HuGe-GR00T / Pi 平均 66.67% / 65.00%；真机主要 pick-and-drop 实验（§4）。",
+        "potential_impact": "用人类第一视角与机器人数据的分阶段训练，把三种 VLA 架构接到共同的人形运动潜空间。",
+        "board_information_gain": "为 VioLA 的人体运动迁移路线提供独立训练方案和骨干比较；公开实现包含训练配置。",
+        "reproducibility": [
+          {
+            "kind": "project",
+            "url": "https://yliu-cs.github.io/HuGe",
+            "status": "verified",
+            "verification_method": "http-get",
+            "checked_at": "2026-10-28",
+            "note": null
+          },
+          {
+            "kind": "code",
+            "url": "https://github.com/yliu-cs/HuGe",
+            "status": "verified",
+            "verification_method": "github-api-contents",
+            "checked_at": "2026-10-28",
+            "note": null
+          }
+        ],
+        "timeliness": "2026/10/25"
+      },
+      "decision": "featured",
+      "selection_reason": "用人类第一视角与机器人数据的分阶段训练，把三种 VLA 架构接到共同的人形运动潜空间。",
+      "risks_or_uncertainties": [
+        "与 VioLA 一样需要共享运动接口，但 HuGe 真实结果包含任务微调，不能直接对比 VioLA 无任务微调分数。",
+        "真实任务覆盖有限。",
+        "项目页作者和部分机构比当前 HTML 更完整，正式制作时需按作者版本核对。"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "vla",
+        "representation-learning",
+        "control"
+      ],
+      "evidence": {
+        "problem": "用人类第一视角与机器人数据的分阶段训练，把三种 VLA 架构接到共同的人形运动潜空间。",
+        "method": "冻结 SONIC 全身控制器；模拟回放补人类数据的伪本体状态，经历第一视角预训练、人形适配、任务微调；真实微调用重渲染适配手臂外观。",
+        "experiments": "超过 2000 小时预训练经验；七项 HumanoidArena 任务每任务 60 回合；HuGe-GR00T / Pi 平均 66.67% / 65.00%；真机主要 pick-and-drop 实验（§4）。"
+      },
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://yliu-cs.github.io/HuGe",
+          "status": "verified",
+          "verification_method": "http-get",
+          "checked_at": "2026-10-28",
+          "note": null
+        },
+        {
+          "kind": "code",
+          "url": "https://github.com/yliu-cs/HuGe",
+          "status": "verified",
+          "verification_method": "github-api-contents",
+          "checked_at": "2026-10-28",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2610.01744",
+      "short_name": "3DROID",
+      "title": "3DROID: A Renderable 3D Gaussian Dataset with Measured Per-Scene Reliability",
+      "paper_url": "https://arxiv.org/abs/2610.01744",
+      "fulltext_url": "https://arxiv.org/html/2610.01744",
+      "first_publication": "2026-10-01",
+      "authors": [
+        "Wonguen Cho",
+        "Junhoo Lee",
+        "Nojun Kwak"
+      ],
+      "organizations": [
+        "Seoul National University",
+        "KAIST"
+      ],
+      "organization_evidence": [
+        {
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2610.01744",
+          "location": "author affiliation block"
+        }
+      ],
+      "project_url": null,
+      "code_url": null,
+      "dataset_url": "https://huggingface.co/datasets/wonguen/3DROID",
+      "model_url": null,
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "discovered_via": [
+        "prior pending queue",
+        "arXiv monthly index thematic expansion"
+      ],
+      "watchlist_matches": [],
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "为 DROID 的可渲染三维场景附上标定与逐场景可靠性证据，强调视觉真实感不等于机器人坐标正确。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Official arXiv HTML accessed."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "在 pose-conditioned 3DGS 前验证外参，分别以机器人几何投影、覆盖率和经典立体深度一致性评估重建；不把 stereo 当作几何真值。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "发布 114 个场景；110 个可评估场景中 YoNoSplat / ZipSplat PSNR 联合改善约 3.24 / 3.52 dB，但该比较同时改变外参与 pose conditioning（Tables 2–4）。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Reviewed method, experimental protocol and conclusion/limitations."
+        }
+      },
+      "scores": {
+        "relevance": 19,
+        "novelty": 17,
+        "evidence_quality": 17,
+        "potential_impact": 13,
+        "board_information_gain": 10,
+        "reproducibility": 7,
+        "timeliness": 4,
+        "total": 87
+      },
+      "score_evidence": {
+        "relevance": "为 DROID 的可渲染三维场景附上标定与逐场景可靠性证据，强调视觉真实感不等于机器人坐标正确。",
+        "novelty": "在 pose-conditioned 3DGS 前验证外参，分别以机器人几何投影、覆盖率和经典立体深度一致性评估重建；不把 stereo 当作几何真值。",
+        "evidence_quality": "发布 114 个场景；110 个可评估场景中 YoNoSplat / ZipSplat PSNR 联合改善约 3.24 / 3.52 dB，但该比较同时改变外参与 pose conditioning（Tables 2–4）。",
+        "potential_impact": "为 DROID 的可渲染三维场景附上标定与逐场景可靠性证据，强调视觉真实感不等于机器人坐标正确。",
+        "board_information_gain": "对 GSWorld/Real2Sim 路线补充关键质量控制：渲染外观、真实尺度和机器人参考几何应分别检验。",
+        "reproducibility": [
+          {
+            "kind": "code",
+            "url": null,
+            "status": "not-found",
+            "verification_method": "official-source-scan",
+            "checked_at": "2026-10-28",
+            "note": null
+          },
+          {
+            "kind": "dataset",
+            "url": "https://huggingface.co/datasets/wonguen/3DROID",
+            "status": "verified",
+            "verification_method": "huggingface-api",
+            "checked_at": "2026-10-28"
+          }
+        ],
+        "timeliness": "2026/10/01"
+      },
+      "decision": "featured",
+      "selection_reason": "为 DROID 的可渲染三维场景附上标定与逐场景可靠性证据，强调视觉真实感不等于机器人坐标正确。",
+      "risks_or_uncertainties": [
+        "只有静态快照，不是时序交互模拟器。",
+        "不声称完整场景几何真值或下游操作成功率改善。",
+        "几何评估只覆盖可获得机器人表面或 stereo 支持的区域。"
+      ],
+      "suggested_sections": [
+        "data",
+        "infrastructure"
+      ],
+      "suggested_topics": [
+        "representation-learning"
+      ],
+      "evidence": {
+        "problem": "为 DROID 的可渲染三维场景附上标定与逐场景可靠性证据，强调视觉真实感不等于机器人坐标正确。",
+        "method": "在 pose-conditioned 3DGS 前验证外参，分别以机器人几何投影、覆盖率和经典立体深度一致性评估重建；不把 stereo 当作几何真值。",
+        "experiments": "发布 114 个场景；110 个可评估场景中 YoNoSplat / ZipSplat PSNR 联合改善约 3.24 / 3.52 dB，但该比较同时改变外参与 pose conditioning（Tables 2–4）。"
+      },
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "verification_method": "official-source-scan",
+          "checked_at": "2026-10-28",
+          "note": null
+        },
+        {
+          "kind": "dataset",
+          "url": "https://huggingface.co/datasets/wonguen/3DROID",
+          "status": "verified",
+          "verification_method": "huggingface-api",
+          "checked_at": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2609.10243",
+      "short_name": "RoboFolDeX",
+      "title": "RoboFolDeX: A Physical-World Benchmark for Long-Horizon Robotic Manipulation of Deformable Objects",
+      "paper_url": "https://arxiv.org/abs/2609.10243",
+      "fulltext_url": "https://arxiv.org/html/2609.10243",
+      "first_publication": "2026-09-09",
+      "authors": [
+        "Chenhuan Liu",
+        "Yi Xu",
+        "Feng Wu",
+        "Hanyang Wang",
+        "Wenxiao Kuai",
+        "Weihao Ding",
+        "Shan Wang",
+        "Yang Liu",
+        "Shuyong Gao",
+        "Wenqiang Zhang"
+      ],
+      "organizations": [
+        "Fudan University",
+        "AI Research Center, Midea Group (Shanghai) Co., Ltd.",
+        "Carnegie Mellon University"
+      ],
+      "organization_evidence": [
+        {
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2609.10243",
+          "location": "author affiliation block"
+        }
+      ],
+      "project_url": "https://ai.midea.com/#/fold-challenge",
+      "code_url": null,
+      "dataset_url": null,
+      "model_url": null,
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "discovered_via": [
+        "prior pending queue",
+        "arXiv monthly index thematic expansion"
+      ],
+      "watchlist_matches": [],
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "面向真实长程衣物操作的数据复用与统一实体评测，明确区分恢复、任务、场景、本体四条研究轴。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Official arXiv HTML accessed."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "以标准化任务、留出衣物、受控初态和统一执行协议评估外部策略；同时比较多任务/专用训练、RTC 和 DAgger 恢复数据。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "2000+ 小时、20+ 任务、10+ 本体；主要衣物类别每类 30 次真机评测；RTC 多任务平均成功率 80.75%，标准多任务 72.50%，专用 RTC 为 82.50%（Table 2）。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Reviewed method, experimental protocol and conclusion/limitations."
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 17,
+        "evidence_quality": 18,
+        "potential_impact": 15,
+        "board_information_gain": 10,
+        "reproducibility": 5,
+        "timeliness": 2,
+        "total": 87
+      },
+      "score_evidence": {
+        "relevance": "面向真实长程衣物操作的数据复用与统一实体评测，明确区分恢复、任务、场景、本体四条研究轴。",
+        "novelty": "以标准化任务、留出衣物、受控初态和统一执行协议评估外部策略；同时比较多任务/专用训练、RTC 和 DAgger 恢复数据。",
+        "evidence_quality": "2000+ 小时、20+ 任务、10+ 本体；主要衣物类别每类 30 次真机评测；RTC 多任务平均成功率 80.75%，标准多任务 72.50%，专用 RTC 为 82.50%（Table 2）。",
+        "potential_impact": "面向真实长程衣物操作的数据复用与统一实体评测，明确区分恢复、任务、场景、本体四条研究轴。",
+        "board_information_gain": "将先前 RaC/LoopWAM 的恢复数据问题放入真实变形物任务中，且把成功、质量和时间分别度量。",
+        "reproducibility": [
+          {
+            "kind": "project",
+            "url": "https://ai.midea.com/#/fold-challenge",
+            "status": "verification-error",
+            "verification_method": "http-get",
+            "checked_at": "2026-10-28",
+            "note": "Official URL identified; access check pending / network-limited, not proof of absence."
+          },
+          {
+            "kind": "code",
+            "url": null,
+            "status": "not-found",
+            "verification_method": "official-source-scan",
+            "checked_at": "2026-10-28",
+            "note": null
+          }
+        ],
+        "timeliness": "2026/09/09"
+      },
+      "decision": "featured",
+      "selection_reason": "面向真实长程衣物操作的数据复用与统一实体评测，明确区分恢复、任务、场景、本体四条研究轴。",
+      "risks_or_uncertainties": [
+        "全文对外部平台地址和匿名评审隐藏地址的描述并存，需要按最终版本确认资源。",
+        "完整训练数据的直接下载入口尚未验证。",
+        "四条 track 是初步协议与结果，不是穷尽方法比较。"
+      ],
+      "suggested_sections": [
+        "data"
+      ],
+      "suggested_topics": [
+        "vla",
+        "imitation-learning",
+        "control"
+      ],
+      "evidence": {
+        "problem": "面向真实长程衣物操作的数据复用与统一实体评测，明确区分恢复、任务、场景、本体四条研究轴。",
+        "method": "以标准化任务、留出衣物、受控初态和统一执行协议评估外部策略；同时比较多任务/专用训练、RTC 和 DAgger 恢复数据。",
+        "experiments": "2000+ 小时、20+ 任务、10+ 本体；主要衣物类别每类 30 次真机评测；RTC 多任务平均成功率 80.75%，标准多任务 72.50%，专用 RTC 为 82.50%（Table 2）。"
+      },
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://ai.midea.com/#/fold-challenge",
+          "status": "verified",
+          "verification_method": "http-get",
+          "checked_at": "2026-10-28",
+          "note": "Official site root GET returned HTTP 200 with an SPA shell; the hash-route evaluation application was not interactively inspected. This does not verify data downloads."
+        },
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "verification_method": "official-source-scan",
+          "checked_at": "2026-10-28",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2610.08863",
+      "short_name": "Ariadne",
+      "title": "Trajectory Planning without Trajectory Data: A Manifold-Guided Approach",
+      "paper_url": "https://arxiv.org/abs/2610.08863",
+      "fulltext_url": "https://arxiv.org/html/2610.08863",
+      "first_publication": "2026-10-05",
+      "authors": [
+        "Silong Yong",
+        "Anji Liu",
+        "Cunxi Dai",
+        "Carl Busart",
+        "Guanya Shi",
+        "Yilun Du",
+        "Katia Sycara",
+        "Yaqi Xie"
+      ],
+      "organizations": [
+        "Carnegie Mellon University",
+        "National University of Singapore",
+        "DEVCOM Army Research Laboratory",
+        "Harvard University"
+      ],
+      "organization_evidence": [
+        {
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2610.08863",
+          "location": "author affiliation block"
+        }
+      ],
+      "project_url": null,
+      "code_url": null,
+      "dataset_url": null,
+      "model_url": null,
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "discovered_via": [
+        "prior pending queue",
+        "arXiv monthly index thematic expansion",
+        "author watchlist"
+      ],
+      "watchlist_matches": [
+        "author:yaqi-xie",
+        "author:guanya-shi"
+      ],
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "不训练完整专家轨迹分布，只从状态观测学习可行流形，并沿流形构造连接新起终点的路径。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Official arXiv HTML accessed."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "从状态扩散模型 score 的 Jacobian 获取多维法向信息，用流形投影与端点约束设计 ODE 路径构造。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "Maze2D 与机器人运动规划任务验证未见起终点；高维双臂与 Diffuser 等轨迹监督方法和经典规划器比较；NeurIPS 2026 接收（Experiments）。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Reviewed method, experimental protocol and conclusion/limitations."
+        }
+      },
+      "scores": {
+        "relevance": 19,
+        "novelty": 19,
+        "evidence_quality": 17,
+        "potential_impact": 13,
+        "board_information_gain": 10,
+        "reproducibility": 5,
+        "timeliness": 4,
+        "total": 87
+      },
+      "score_evidence": {
+        "relevance": "不训练完整专家轨迹分布，只从状态观测学习可行流形，并沿流形构造连接新起终点的路径。",
+        "novelty": "从状态扩散模型 score 的 Jacobian 获取多维法向信息，用流形投影与端点约束设计 ODE 路径构造。",
+        "evidence_quality": "Maze2D 与机器人运动规划任务验证未见起终点；高维双臂与 Diffuser 等轨迹监督方法和经典规划器比较；NeurIPS 2026 接收（Experiments）。",
+        "potential_impact": "不训练完整专家轨迹分布，只从状态观测学习可行流形，并沿流形构造连接新起终点的路径。",
+        "board_information_gain": "Yaqi Xie / Guanya Shi 观察名单命中；与 DATAFARM 生成示范不同，它研究如何在没有轨迹监督时做规划。",
+        "reproducibility": [
+          {
+            "kind": "code",
+            "url": "https://github.com/SilongYong/Ariadne",
+            "status": "project-page-only",
+            "verification_method": "github-api-contents",
+            "checked_at": "2026-10-28",
+            "note": "Repository accessible but does not contain method implementation."
+          }
+        ],
+        "timeliness": "2026/10/05"
+      },
+      "decision": "featured",
+      "selection_reason": "不训练完整专家轨迹分布，只从状态观测学习可行流形，并沿流形构造连接新起终点的路径。",
+      "risks_or_uncertainties": [
+        "需要足够的可行状态覆盖；状态分布本身不是动态可执行性保证。",
+        "离散积分、score 估计和非连通流形仍可能造成路径偏离。",
+        "论文链接仓库当前只有 README、论文和 teaser，没有实现。"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "planning",
+        "representation-learning"
+      ],
+      "evidence": {
+        "problem": "不训练完整专家轨迹分布，只从状态观测学习可行流形，并沿流形构造连接新起终点的路径。",
+        "method": "从状态扩散模型 score 的 Jacobian 获取多维法向信息，用流形投影与端点约束设计 ODE 路径构造。",
+        "experiments": "Maze2D 与机器人运动规划任务验证未见起终点；高维双臂与 Diffuser 等轨迹监督方法和经典规划器比较；NeurIPS 2026 接收（Experiments）。"
+      },
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": "https://github.com/SilongYong/Ariadne",
+          "status": "project-page-only",
+          "verification_method": "github-api-contents",
+          "checked_at": "2026-10-28",
+          "note": "Repository accessible but does not contain method implementation."
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2609.12036",
+      "short_name": "Pelican-Sim 1.0",
+      "title": "Pelican-Sim 1.0: A General World Model Simulator for Embodied Intelligence",
+      "paper_url": "https://arxiv.org/abs/2609.12036",
+      "fulltext_url": "https://arxiv.org/html/2609.12036",
+      "first_publication": "2026-09-10",
+      "authors": [
+        "Shilong Zou",
+        "Shilin Zhang",
+        "Yingji Zhang",
+        "Yuhang Huang",
+        "Yi Zhang",
+        "Zeyuan Ding",
+        "Han Dong",
+        "Junwei Liao",
+        "Yong Dai",
+        "Jian Tang",
+        "Xiaozhu Ju"
+      ],
+      "organizations": [
+        "Beijing Innovation Center of Humanoid Robotics (X-Humanoid), WFM System Group"
+      ],
+      "organization_evidence": [
+        {
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2609.12036",
+          "location": "author affiliation block"
+        }
+      ],
+      "project_url": "https://zoushilong1024.github.io/Pelican-Sim1.0/",
+      "code_url": null,
+      "dataset_url": null,
+      "model_url": null,
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "discovered_via": [
+        "prior pending queue",
+        "arXiv monthly index thematic expansion"
+      ],
+      "watchlist_matches": [],
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "以统一动作向量和 URDF 动作视频结合，训练跨来源动作条件世界模型，并检验数据、评估、选择和策略改进用途。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Official arXiv HTML accessed."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "28 维数值动作与相机对齐的动作渲染双路注入稀疏 MoE 视频模型；因果适配和四步蒸馏支持高频想象。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "约 1M 轨迹、8000 小时交互；同数据重训预测基线；五项 RoboTwin 任务三种子策略改善达 75.4%，初始 SFT 62.7%（Table 14）；五 checkpoint 评价是较窄设置。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Reviewed method, experimental protocol and conclusion/limitations."
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 18,
+        "evidence_quality": 18,
+        "potential_impact": 14,
+        "board_information_gain": 10,
+        "reproducibility": 5,
+        "timeliness": 2,
+        "total": 87
+      },
+      "score_evidence": {
+        "relevance": "以统一动作向量和 URDF 动作视频结合，训练跨来源动作条件世界模型，并检验数据、评估、选择和策略改进用途。",
+        "novelty": "28 维数值动作与相机对齐的动作渲染双路注入稀疏 MoE 视频模型；因果适配和四步蒸馏支持高频想象。",
+        "evidence_quality": "约 1M 轨迹、8000 小时交互；同数据重训预测基线；五项 RoboTwin 任务三种子策略改善达 75.4%，初始 SFT 62.7%（Table 14）；五 checkpoint 评价是较窄设置。",
+        "potential_impact": "以统一动作向量和 URDF 动作视频结合，训练跨来源动作条件世界模型，并检验数据、评估、选择和策略改进用途。",
+        "board_information_gain": "补齐世界模型作为训练环境和评估代理的实证；需要把模型、judge 和优化算法的贡献分开解释。",
+        "reproducibility": [
+          {
+            "kind": "project",
+            "url": "https://zoushilong1024.github.io/Pelican-Sim1.0/",
+            "status": "verified",
+            "verification_method": "http-get",
+            "checked_at": "2026-10-28",
+            "note": null
+          },
+          {
+            "kind": "code",
+            "url": "https://github.com/ZouShilong1024/Pelican-Sim1.0",
+            "status": "project-page-only",
+            "verification_method": "github-api-contents",
+            "checked_at": "2026-10-28",
+            "note": "Repository accessible but does not contain method implementation."
+          },
+          {
+            "kind": "code",
+            "url": "https://github.com/Open-X-Humanoid/Pelican-Sim1.0",
+            "status": "not-found",
+            "verification_method": "github-api-404",
+            "checked_at": "2026-10-28",
+            "note": "Actual author repository discovered from project page and retained separately."
+          }
+        ],
+        "timeliness": "2026/09/10"
+      },
+      "decision": "featured",
+      "selection_reason": "以统一动作向量和 URDF 动作视频结合，训练跨来源动作条件世界模型，并检验数据、评估、选择和策略改进用途。",
+      "risks_or_uncertainties": [
+        "项目页实际作者仓库只有 LICENSE/README；论文中的组织仓库为 404。",
+        "权重 coming soon。",
+        "摘要 70%→93% 与正文 Table 8 的 70%→72% 对应设置不一致，不能混用。",
+        "关键下游应用依赖另行微调的 VLM evaluator。"
+      ],
+      "suggested_sections": [
+        "algorithms",
+        "simulators"
+      ],
+      "suggested_topics": [
+        "world-model",
+        "planning"
+      ],
+      "evidence": {
+        "problem": "以统一动作向量和 URDF 动作视频结合，训练跨来源动作条件世界模型，并检验数据、评估、选择和策略改进用途。",
+        "method": "28 维数值动作与相机对齐的动作渲染双路注入稀疏 MoE 视频模型；因果适配和四步蒸馏支持高频想象。",
+        "experiments": "约 1M 轨迹、8000 小时交互；同数据重训预测基线；五项 RoboTwin 任务三种子策略改善达 75.4%，初始 SFT 62.7%（Table 14）；五 checkpoint 评价是较窄设置。"
+      },
+      "asset_checks": [
+        {
+          "kind": "project",
+          "url": "https://zoushilong1024.github.io/Pelican-Sim1.0/",
+          "status": "verified",
+          "verification_method": "http-get",
+          "checked_at": "2026-10-28",
+          "note": null
+        },
+        {
+          "kind": "code",
+          "url": "https://github.com/ZouShilong1024/Pelican-Sim1.0",
+          "status": "project-page-only",
+          "verification_method": "github-api-contents",
+          "checked_at": "2026-10-28",
+          "note": "Repository accessible but does not contain method implementation."
+        },
+        {
+          "kind": "code",
+          "url": "https://github.com/Open-X-Humanoid/Pelican-Sim1.0",
+          "status": "not-found",
+          "verification_method": "github-api-404",
+          "checked_at": "2026-10-28",
+          "note": "Actual author repository discovered from project page and retained separately."
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2609.19600",
+      "short_name": "WorldContact",
+      "title": "WorldContact: A Contact-Centric World Model for Scalable Robot Learning",
+      "paper_url": "https://arxiv.org/abs/2609.19600",
+      "fulltext_url": "https://arxiv.org/html/2609.19600",
+      "first_publication": "2026-09-17",
+      "authors": [
+        "Caoliwen Wang",
+        "Mengdi Wang",
+        "Heng Zhang",
+        "Shixun Huang",
+        "Siyuan Chen",
+        "Chao Liu",
+        "Anpei Chen",
+        "Zhendong Wang",
+        "Peter Yichen Chen",
+        "Huamin Wang"
+      ],
+      "organizations": [
+        "University of British Columbia",
+        "Westlake University",
+        "Style3D Research"
+      ],
+      "organization_evidence": [
+        {
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2609.19600",
+          "location": "author affiliation block"
+        }
+      ],
+      "project_url": null,
+      "code_url": null,
+      "dataset_url": null,
+      "model_url": null,
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "discovered_via": [
+        "prior pending queue",
+        "arXiv monthly index thematic expansion"
+      ],
+      "watchlist_matches": [],
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "用显式接触特征学习变形袋体状态动力学，以较大时间步生成数据并改善真机 VLA 适配。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Official arXiv HTML accessed."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "contact-centric 顶点 tokenizer 编码局部几何与接触，结合全局上下文预测形变；再渲染状态轨迹构造策略示范。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "16 项购物袋仿真任务；H100 状态 rollout 比源模拟器快 10 倍（不含渲染/I/O）；25 条源轨迹扩到 150 条，单项真机提袋从 13/20 到 19/20（§IV）。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Reviewed method, experimental protocol and conclusion/limitations."
+        }
+      },
+      "scores": {
+        "relevance": 20,
+        "novelty": 18,
+        "evidence_quality": 16,
+        "potential_impact": 13,
+        "board_information_gain": 10,
+        "reproducibility": 5,
+        "timeliness": 2,
+        "total": 84
+      },
+      "score_evidence": {
+        "relevance": "用显式接触特征学习变形袋体状态动力学，以较大时间步生成数据并改善真机 VLA 适配。",
+        "novelty": "contact-centric 顶点 tokenizer 编码局部几何与接触，结合全局上下文预测形变；再渲染状态轨迹构造策略示范。",
+        "evidence_quality": "16 项购物袋仿真任务；H100 状态 rollout 比源模拟器快 10 倍（不含渲染/I/O）；25 条源轨迹扩到 150 条，单项真机提袋从 13/20 到 19/20（§IV）。",
+        "potential_impact": "用显式接触特征学习变形袋体状态动力学，以较大时间步生成数据并改善真机 VLA 适配。",
+        "board_information_gain": "与纯视频想象不同，提供接触感知状态空间世界模型，适合检验变形物模拟数据的可靠性。",
+        "reproducibility": [
+          {
+            "kind": "code",
+            "url": null,
+            "status": "not-found",
+            "verification_method": "official-source-scan",
+            "checked_at": "2026-10-28",
+            "note": null
+          }
+        ],
+        "timeliness": "2026/09/17"
+      },
+      "decision": "featured",
+      "selection_reason": "用显式接触特征学习变形袋体状态动力学，以较大时间步生成数据并改善真机 VLA 适配。",
+      "risks_or_uncertainties": [
+        "真实策略证据仅一项提袋任务、每设置 20 次。",
+        "10 倍加速只计算状态预测。",
+        "对象材料与模拟器参数相对固定，跨材料泛化有限。",
+        "未找到官方代码、模型或数据。"
+      ],
+      "suggested_sections": [
+        "algorithms",
+        "data"
+      ],
+      "suggested_topics": [
+        "world-model",
+        "sim-to-real"
+      ],
+      "evidence": {
+        "problem": "用显式接触特征学习变形袋体状态动力学，以较大时间步生成数据并改善真机 VLA 适配。",
+        "method": "contact-centric 顶点 tokenizer 编码局部几何与接触，结合全局上下文预测形变；再渲染状态轨迹构造策略示范。",
+        "experiments": "16 项购物袋仿真任务；H100 状态 rollout 比源模拟器快 10 倍（不含渲染/I/O）；25 条源轨迹扩到 150 条，单项真机提袋从 13/20 到 19/20（§IV）。"
+      },
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "verification_method": "official-source-scan",
+          "checked_at": "2026-10-28",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2610.36662",
+      "short_name": "SWIM",
+      "title": "SWIM: Learning What Matters from Behaviors for JEPA World Models",
+      "paper_url": "https://arxiv.org/abs/2610.36662",
+      "fulltext_url": "https://arxiv.org/html/2610.36662",
+      "first_publication": "2026-10-27",
+      "authors": [
+        "Jiaming Hu",
+        "Shi Bo",
+        "Yan Zheng",
+        "Tian Wang",
+        "Florian Dubost",
+        "Alejandro Mottini",
+        "Junze Liu",
+        "Arvind Srinivasan",
+        "Kai Zhong",
+        "Kun Qian",
+        "Sharon Gao",
+        "Vianne Gao",
+        "Houyu Zhang",
+        "Qingjun Cui"
+      ],
+      "organizations": [
+        "Boston University",
+        "Unity Technologies"
+      ],
+      "organization_evidence": [
+        {
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2610.36662",
+          "location": "author affiliation block"
+        }
+      ],
+      "project_url": null,
+      "code_url": null,
+      "dataset_url": null,
+      "model_url": null,
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "discovered_via": [
+        "prior pending queue",
+        "arXiv monthly index thematic expansion"
+      ],
+      "watchlist_matches": [],
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "用离线动作预测学习状态各坐标的行为相关性，再用加权状态距离校准 JEPA 潜空间。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Official arXiv HTML accessed."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "门控逆动力学模型从当前状态和未来位移预测动作，所得相对权重进入 SCALE 状态距离；推理时仍只用图像潜规划，不增加状态输入。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "五项 OGBench 仿真任务、CEM 与 iCEM；较统一状态权重增加约 0.9–1.0 个百分点，报告 p<0.05；结构化干扰状态消融支持抑制无关维度（Experiments）。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Reviewed method, experimental protocol and conclusion/limitations."
+        }
+      },
+      "scores": {
+        "relevance": 19,
+        "novelty": 16,
+        "evidence_quality": 16,
+        "potential_impact": 11,
+        "board_information_gain": 9,
+        "reproducibility": 5,
+        "timeliness": 5,
+        "total": 81
+      },
+      "score_evidence": {
+        "relevance": "用离线动作预测学习状态各坐标的行为相关性，再用加权状态距离校准 JEPA 潜空间。",
+        "novelty": "门控逆动力学模型从当前状态和未来位移预测动作，所得相对权重进入 SCALE 状态距离；推理时仍只用图像潜规划，不增加状态输入。",
+        "evidence_quality": "五项 OGBench 仿真任务、CEM 与 iCEM；较统一状态权重增加约 0.9–1.0 个百分点，报告 p<0.05；结构化干扰状态消融支持抑制无关维度（Experiments）。",
+        "potential_impact": "用离线动作预测学习状态各坐标的行为相关性，再用加权状态距离校准 JEPA 潜空间。",
+        "board_information_gain": "与 RoboJEPA 的 scaling 互补：不仅要增加模型大小，也要检验潜空间规划距离是否反映任务相关变化。",
+        "reproducibility": [
+          {
+            "kind": "code",
+            "url": null,
+            "status": "not-found",
+            "verification_method": "official-source-scan",
+            "checked_at": "2026-10-28",
+            "note": null
+          }
+        ],
+        "timeliness": "2026/10/27"
+      },
+      "decision": "featured",
+      "selection_reason": "用离线动作预测学习状态各坐标的行为相关性，再用加权状态距离校准 JEPA 潜空间。",
+      "risks_or_uncertainties": [
+        "增益较小，不能表述为显著跨越能力边界。",
+        "依赖训练时提供的状态变量与离线行为覆盖。",
+        "只有仿真，通过 SCALE 展示，尚无真机和其他目标验证。",
+        "没有发现官方实现。"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "world-model",
+        "representation-learning",
+        "planning"
+      ],
+      "evidence": {
+        "problem": "用离线动作预测学习状态各坐标的行为相关性，再用加权状态距离校准 JEPA 潜空间。",
+        "method": "门控逆动力学模型从当前状态和未来位移预测动作，所得相对权重进入 SCALE 状态距离；推理时仍只用图像潜规划，不增加状态输入。",
+        "experiments": "五项 OGBench 仿真任务、CEM 与 iCEM；较统一状态权重增加约 0.9–1.0 个百分点，报告 p<0.05；结构化干扰状态消融支持抑制无关维度（Experiments）。"
+      },
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "verification_method": "official-source-scan",
+          "checked_at": "2026-10-28",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2610.35604",
+      "short_name": "RoboDoctor",
+      "title": "RoboDoctor: Training-Free Recursive Self-Improvement for Robot Policies",
+      "paper_url": "https://arxiv.org/abs/2610.35604",
+      "fulltext_url": "https://arxiv.org/html/2610.35604",
+      "first_publication": "2026-10-26",
+      "authors": [
+        "Heyang Yu",
+        "Haomin Li",
+        "Sihang Li",
+        "Jixin Yan",
+        "Shiyun Peng",
+        "Wanqi Zhong",
+        "Tianyu Xin",
+        "Yuan Yao",
+        "Xiaoyu Tian",
+        "Yiming Li"
+      ],
+      "organizations": [
+        "Tsinghua University",
+        "New York University",
+        "Northwestern University"
+      ],
+      "organization_evidence": [
+        {
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2610.35604",
+          "location": "author affiliation block"
+        }
+      ],
+      "project_url": null,
+      "code_url": null,
+      "dataset_url": null,
+      "model_url": null,
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "discovered_via": [
+        "prior pending queue",
+        "arXiv monthly index thematic expansion"
+      ],
+      "watchlist_matches": [],
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true,
+          "evidence": "冻结策略和语言模型，借执行诊断、选择干预与外部经验记录调整控制方式；当前证据主要为历史归档分析。"
+        },
+        "primary_source": {
+          "pass": true,
+          "evidence": "Official arXiv HTML accessed."
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "控制器路由、选择性替换动作、局部物理方法修订三个层次相连；记录决策理由、尝试、结果与适用条件。"
+        },
+        "claim_support": {
+          "pass": true,
+          "evidence": "54 项 RoboDojo-Sim 归档条目，精选结果平均分 57.10、原生成功率 49.44%；模型版本、预算和覆盖不一致，长程维度下降（§4，Tables 1–2）。"
+        },
+        "fulltext_for_recommendation": {
+          "pass": true,
+          "evidence": "Reviewed method, experimental protocol and conclusion/limitations."
+        }
+      },
+      "scores": {
+        "relevance": 18,
+        "novelty": 14,
+        "evidence_quality": 5,
+        "potential_impact": 9,
+        "board_information_gain": 8,
+        "reproducibility": 2,
+        "timeliness": 5,
+        "total": 61
+      },
+      "score_evidence": {
+        "relevance": "冻结策略和语言模型，借执行诊断、选择干预与外部经验记录调整控制方式；当前证据主要为历史归档分析。",
+        "novelty": "控制器路由、选择性替换动作、局部物理方法修订三个层次相连；记录决策理由、尝试、结果与适用条件。",
+        "evidence_quality": "54 项 RoboDojo-Sim 归档条目，精选结果平均分 57.10、原生成功率 49.44%；模型版本、预算和覆盖不一致，长程维度下降（§4，Tables 1–2）。",
+        "potential_impact": "冻结策略和语言模型，借执行诊断、选择干预与外部经验记录调整控制方式；当前证据主要为历史归档分析。",
+        "board_information_gain": "保留为执行期经验机制线索，但按看板规则不生成正式推荐长摘要。",
+        "reproducibility": [
+          {
+            "kind": "code",
+            "url": null,
+            "status": "not-found",
+            "verification_method": "official-source-scan",
+            "checked_at": "2026-10-28",
+            "note": null
+          }
+        ],
+        "timeliness": "2026/10/26"
+      },
+      "decision": "watch",
+      "selection_reason": "冻结策略和语言模型，借执行诊断、选择干预与外部经验记录调整控制方式；当前证据主要为历史归档分析。",
+      "risks_or_uncertainties": [
+        "回顾性结果选择和不等预算不能隔离经验机制的因果收益。",
+        "不能据此声称超过公开榜单方法或证明跨 episode 自我改进。",
+        "无对应当前论文的官方实现。"
+      ],
+      "suggested_sections": [
+        "algorithms"
+      ],
+      "suggested_topics": [
+        "planning",
+        "vla"
+      ],
+      "evidence": {
+        "problem": "冻结策略和语言模型，借执行诊断、选择干预与外部经验记录调整控制方式；当前证据主要为历史归档分析。",
+        "method": "控制器路由、选择性替换动作、局部物理方法修订三个层次相连；记录决策理由、尝试、结果与适用条件。",
+        "experiments": "54 项 RoboDojo-Sim 归档条目，精选结果平均分 57.10、原生成功率 49.44%；模型版本、预算和覆盖不一致，长程维度下降（§4，Tables 1–2）。"
+      },
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": null,
+          "status": "not-found",
+          "verification_method": "official-source-scan",
+          "checked_at": "2026-10-28",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2610.32554",
+      "short_name": "HGWM",
+      "title": "HGWM: Hierarchical Graph-Guided World Model for Zero-Shot Object Navigation via Graph Matching",
+      "paper_url": "https://arxiv.org/abs/2610.32554",
+      "fulltext_url": "https://arxiv.org/html/2610.32554",
+      "first_publication": "2026-10-23",
+      "authors": [
+        "I-Tak Ieong",
+        "Hao Tang"
+      ],
+      "organizations": [
+        "Tsinghua University",
+        "Peking University"
+      ],
+      "organization_evidence": [
+        {
+          "source": "paper-html",
+          "url": "https://arxiv.org/html/2610.32554",
+          "location": "author block"
+        }
+      ],
+      "already_on_board": false,
+      "source_scope": "full-source",
+      "project_url": "https://itak04.github.io/HGWM/",
+      "code_url": "https://github.com/itak04/HGWM",
+      "scores": null,
+      "decision": "defer",
+      "hard_gates": {
+        "embodied_relevance": {
+          "pass": true
+        },
+        "primary_source": {
+          "pass": true
+        },
+        "incremental_contribution": {
+          "pass": true,
+          "evidence": "Hierarchical room-anchor prior with persistent graph memory and explicit compatibility scoring."
+        },
+        "claim_support": {
+          "pass": false,
+          "evidence": "Aggregate results are author-reported; episode-level rerun records are not available, and local implementation fixes passed only offline tests."
+        },
+        "fulltext_for_recommendation": {
+          "pass": true
+        }
+      },
+      "selection_reason": "方法和实现可读，但未取得可复核的逐回合基准记录，暂不做正式推荐。",
+      "risks_or_uncertainties": [
+        "HM3D v0.1、v0.2 不能混成同一组实验。",
+        "HM3D 的 SPL 增益较小，运行范围包括对手点估计。",
+        "项目页仍声称未分配 arXiv 编号，明显未同步当前版本。"
+      ],
+      "asset_checks": [
+        {
+          "kind": "code",
+          "url": "https://github.com/itak04/HGWM",
+          "status": "verified",
+          "verification_method": "github-api-contents",
+          "checked_at": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "id": "arxiv-2609.07398",
+      "short_name": "OpenWAM (September)",
+      "title": "OpenWAM: An Open, Modular Exploration Towards Systematic World-Action Model Pretraining",
+      "paper_url": "https://arxiv.org/abs/2609.07398",
+      "first_publication": "2026-09-07",
+      "source_scope": "abstract-and-metadata",
+      "already_on_board": false,
+      "decision": "defer",
+      "scores": null,
+      "selection_reason": "官方 HTML 返回 404，ar5iv 35 秒超时；后续需 PDF/其他正文入口读取后评分。与 Stanford 2610.07922 不同。",
+      "asset_checks": []
+    }
+  ]
+}

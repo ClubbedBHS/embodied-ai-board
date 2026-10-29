@@ -1,0 +1,201 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2609.12036",
+  "content_type": "technical-report",
+  "source_scope": "full-source",
+  "title": "Pelican-Sim 1.0: A General World Model Simulator for Embodied Intelligence",
+  "title_zh": "Pelican-Sim 1.0：动作条件具身世界模型模拟器",
+  "abstract": "In this technical report, we propose Pelican-Sim 1.0, a general world model simulator for embodied intelligence that predicts future observations from visual context and robot actions to support downstream learning and decision making. The model incorporates four key design features: (1) Unified action representation: a 28-dimensional action value space covering most mainstream embodiments, keeping one model valid across heterogeneous devices. (2) Action-visual injection: URDF- and camera-rendered action videos bridge actions and pixels, giving markedly better controllability across embodiments, scenes, and tasks (PSNR +0.904 over alternative fusion baselines). (3) Sparse mixture-of-experts (MoE): sparse MoE layers add capacity for heterogeneous dynamics and absorb the action modality while reducing inter-modality conflict (FVD -6.530 vs. the dense backbone). (4) Efficient rollout generation: causal adaptation and few-step distillation yield a four-step autoregressive simulator, achieving a 5.67-fold speedup over the 35-step model. Benefiting from these designs, we train on approximately one million real-world and simulated trajectories and obtain large gains in action controllability and video quality: PSNR improves over the strongest evaluated baselines by 4.636 on AgiBotWorld Beta, 2.080 on RoboMIND, and 10.343 on RoboTwin, with the adapted EWMBench DYN score up 0.426 on RoboTwin. Relying on this, four downstream applications on RoboTwin succeed: 500 generated trajectories added to 50 demonstrations per task raise policy success from 70% to 93%; policy evaluation reaches a Pearson correlation of 0.994 across five checkpoints; and relative success gains reach 47.7% for action selection and 20.3% for policy improvement. Qualitative generalization across trajectory, scene, object, embodiment, and viewpoint shifts highlights its potential as a general-purpose world model simulator.",
+  "paper_url": "https://arxiv.org/abs/2609.12036",
+  "pdf_url": "https://arxiv.org/pdf/2609.12036",
+  "project_url": "https://zoushilong1024.github.io/Pelican-Sim1.0/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Shilong Zou",
+      "affiliations": []
+    },
+    {
+      "name": "Shilin Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Yingji Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Yuhang Huang",
+      "affiliations": []
+    },
+    {
+      "name": "Yi Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Zeyuan Ding",
+      "affiliations": []
+    },
+    {
+      "name": "Han Dong",
+      "affiliations": []
+    },
+    {
+      "name": "Junwei Liao",
+      "affiliations": []
+    },
+    {
+      "name": "Yong Dai",
+      "affiliations": []
+    },
+    {
+      "name": "Jian Tang",
+      "affiliations": []
+    },
+    {
+      "name": "Xiaozhu Ju",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "beijing-innovation-center-of-humanoid-robotics-x-humanoid-wfm-system-group",
+      "name": "Beijing Innovation Center of Humanoid Robotics (X-Humanoid), WFM System Group",
+      "role": "primary"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-09-10",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "simulators"
+    ],
+    "topics": [
+      "world-model",
+      "planning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "action"
+    ],
+    "environments": [
+      "simulation"
+    ],
+    "assets": [],
+    "properties": [
+      "simulation-only"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "simulator"
+  ],
+  "editorial": {
+    "importance": "normal",
+    "selection_score": 87,
+    "selection_scores": {
+      "relevance": 20,
+      "novelty": 18,
+      "evidence_quality": 18,
+      "potential_impact": 14,
+      "board_information_gain": 10,
+      "reproducibility": 5,
+      "timeliness": 2,
+      "total": 87
+    },
+    "selection_reason": "以统一动作向量和 URDF 动作视频结合，训练跨来源动作条件世界模型，并检验数据、评估、选择和策略改进用途。",
+    "candidate_run": "2026-10-28/batch-02",
+    "status": "ai-draft",
+    "approved_for_inclusion_at": "2026-10-28"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-10-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "项目页实际作者仓库只有 LICENSE/README；论文中的组织仓库为 404。",
+      "权重 coming soon。",
+      "摘要 70%→93% 与正文 Table 8 的 70%→72% 对应设置不一致，不能混用。",
+      "关键下游应用依赖另行微调的 VLM evaluator。"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2609.12036",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Method",
+      "Experiments",
+      "Conclusion / Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-10-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2609.12036"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2609.12036"
+    },
+    {
+      "type": "project-page",
+      "url": "https://zoushilong1024.github.io/Pelican-Sim1.0/"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "Beijing Innovation Center of Humanoid Robotics (X-Humanoid), WFM System Group",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2609.12036",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://zoushilong1024.github.io/Pelican-Sim1.0/",
+      "status": "verified",
+      "verification_method": "http-get",
+      "checked_at": "2026-10-28",
+      "note": null
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/ZouShilong1024/Pelican-Sim1.0",
+      "status": "project-page-only",
+      "verification_method": "github-api-contents",
+      "checked_at": "2026-10-28",
+      "note": "Repository accessible but does not contain method implementation."
+    },
+    {
+      "kind": "code",
+      "url": "https://github.com/Open-X-Humanoid/Pelican-Sim1.0",
+      "status": "not-found",
+      "verification_method": "github-api-404",
+      "checked_at": "2026-10-28",
+      "note": "Actual author repository discovered from project page and retained separately."
+    }
+  ],
+  "suggested_new_tags": []
+}

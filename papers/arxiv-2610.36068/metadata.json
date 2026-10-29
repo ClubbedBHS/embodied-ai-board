@@ -1,0 +1,243 @@
+{
+  "schema_version": "0.3",
+  "id": "arxiv-2610.36068",
+  "content_type": "paper",
+  "source_scope": "full-source",
+  "title": "Rollback: Experience Backtracking in World Models for Policy Improvement",
+  "title_zh": "Rollback：利用世界模型中的经验回溯改进机器人策略",
+  "abstract": "Action-conditioned world models offer a scalable alternative to costly real-world interaction for improving robot policies. However, existing world-model-based methods largely treat world models as forward-only surrogates of the physical environment, leaving untapped a capability no physical environment affords: rewinding to past decision points to explore counterfactual futures. We introduce Rollback, a policy improvement paradigm that turns world models from passive simulators into counterfactual engines: it rolls back to critical decision points, branches into alternative actions, and contrasts their outcomes to attribute success to individual decisions. This concentrates imagination where it matters most and distills counterfactual outcomes into fine-grained, action-level supervision without a separately learned value model. We build a scalable training system that unifies distributed world-model search with asynchronous real-robot execution, forming a self-reinforcing cycle: real-world experience continually sharpens the world model, and a sharper world model in turn drives further policy improvement. We term the world-model side of this cycle test-time physics grounding, a capability that hand-built physics simulators lack: while the world model serves as the training environment, real transitions from the policy it trains correct its dynamics through a lightweight LoRA pipeline. Experiments on three challenging real-world tasks show that Rollback improves success rates over the strongest baseline by an absolute 10.67%, 11.11%, and 11.85% on block extraction, ball tossing, and tabletop curling, respectively, while achieving more stable improvement throughout training. Although initialized from teleoperated demonstrations far below human level, Rollback surpasses the average success rate of human players on both ball tossing and tabletop curling within 8 hours of training.",
+  "paper_url": "https://arxiv.org/abs/2610.36068",
+  "pdf_url": "https://arxiv.org/pdf/2610.36068",
+  "project_url": "https://rollback-wm.github.io/",
+  "code_url": null,
+  "dataset_url": null,
+  "model_url": null,
+  "video_url": null,
+  "authors": [
+    {
+      "name": "Jiayi Luo",
+      "affiliations": []
+    },
+    {
+      "name": "Yang Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Liliang Chen",
+      "affiliations": []
+    },
+    {
+      "name": "Nan Wang",
+      "affiliations": []
+    },
+    {
+      "name": "Chen Gao",
+      "affiliations": []
+    },
+    {
+      "name": "Boxiang Qiu",
+      "affiliations": []
+    },
+    {
+      "name": "Zhuoxuan Li",
+      "affiliations": []
+    },
+    {
+      "name": "Baorui Peng",
+      "affiliations": []
+    },
+    {
+      "name": "Chuankang Li",
+      "affiliations": []
+    },
+    {
+      "name": "Yuxiang Yan",
+      "affiliations": []
+    },
+    {
+      "name": "Si Liu",
+      "affiliations": []
+    },
+    {
+      "name": "Qingyun Sun",
+      "affiliations": []
+    },
+    {
+      "name": "Shuicheng Yan",
+      "affiliations": []
+    },
+    {
+      "name": "Maoqing Yao",
+      "affiliations": []
+    },
+    {
+      "name": "Jianxin Li",
+      "affiliations": []
+    },
+    {
+      "name": "Guanghui Ren",
+      "affiliations": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "agibot",
+      "name": "AgiBot",
+      "role": "primary"
+    },
+    {
+      "id": "beihang-university",
+      "name": "Beihang University",
+      "role": "collaborator"
+    },
+    {
+      "id": "national-university-of-singapore",
+      "name": "National University of Singapore",
+      "role": "collaborator"
+    }
+  ],
+  "dates": {
+    "first_publication": "2026-10-26",
+    "last_revision": null
+  },
+  "venue": {
+    "name": null,
+    "year": null,
+    "status": "preprint"
+  },
+  "labels": {
+    "sections": [
+      "algorithms",
+      "infrastructure"
+    ],
+    "topics": [
+      "world-model",
+      "planning",
+      "reinforcement-learning"
+    ],
+    "tasks": [
+      "manipulation"
+    ],
+    "platforms": [
+      "robot-arm"
+    ],
+    "modalities": [
+      "vision",
+      "action"
+    ],
+    "environments": [
+      "mixed"
+    ],
+    "assets": [],
+    "properties": [
+      "real-robot-evaluation"
+    ]
+  },
+  "paper_type": [
+    "method",
+    "system"
+  ],
+  "editorial": {
+    "importance": "featured",
+    "selection_score": 91,
+    "selection_scores": {
+      "relevance": 20,
+      "novelty": 19,
+      "evidence_quality": 18,
+      "potential_impact": 14,
+      "board_information_gain": 10,
+      "reproducibility": 5,
+      "timeliness": 5,
+      "total": 91
+    },
+    "selection_reason": "把世界模型的回退能力用于关键决策点分支搜索，以同状态兄弟分支结果产生动作级相对监督，并用真实 rollout 更新模型。",
+    "candidate_run": "2026-10-28",
+    "status": "ai-draft",
+    "approved_for_inclusion_at": "2026-10-28"
+  },
+  "ai_generation": {
+    "model": "openai-codex",
+    "generated_at": "2026-10-28",
+    "confidence": "medium",
+    "needs_human_review": true,
+    "uncertainties": [
+      "回退对象是学习型世界模型状态，不能混同物理模拟器快照。",
+      "48 张 H200 和任务专属暖启动让复现成本很高。",
+      "超过人类平均仅对应三名参与者的两个小游戏。",
+      "官方项目页未提供代码入口。"
+    ]
+  },
+  "source_access": {
+    "metadata_source": "arxiv-abstract-html",
+    "fulltext_source": "arxiv-latexml-html",
+    "fulltext_url": "https://arxiv.org/html/2610.36068",
+    "fulltext_accessed": true,
+    "sections_detected": [
+      "Method",
+      "Experiments",
+      "Conclusion / Limitations"
+    ],
+    "figure_images_accessed": false,
+    "accessed_at": "2026-10-28"
+  },
+  "sources": [
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2610.36068"
+    },
+    {
+      "type": "fulltext",
+      "url": "https://arxiv.org/html/2610.36068"
+    },
+    {
+      "type": "project-page",
+      "url": "https://rollback-wm.github.io/"
+    }
+  ],
+  "organization_evidence": [
+    {
+      "organization": "AgiBot",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.36068",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "Beihang University",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.36068",
+      "location": "author affiliation block"
+    },
+    {
+      "organization": "National University of Singapore",
+      "source": "paper-html",
+      "url": "https://arxiv.org/html/2610.36068",
+      "location": "author affiliation block"
+    }
+  ],
+  "asset_checks": [
+    {
+      "kind": "project",
+      "url": "https://rollback-wm.github.io/",
+      "status": "verified",
+      "verification_method": "http-get",
+      "checked_at": "2026-10-28"
+    },
+    {
+      "kind": "code",
+      "url": null,
+      "status": "not-found",
+      "verification_method": "official-source-scan",
+      "checked_at": "2026-10-28",
+      "note": null
+    }
+  ],
+  "suggested_new_tags": [
+    {
+      "dimension": "topics",
+      "slug": "world-action-model",
+      "name": "World Action Model",
+      "reason": "区分动作条件预测与直接执行控制的共同建模。",
+      "evidence": "MCTS 搜索已保存的世界模型决策状态；树结构估计相对价值；异步真实执行、策略训练、LoRA 世界模型适配与蒸馏协同运行。"
+    }
+  ]
+}
